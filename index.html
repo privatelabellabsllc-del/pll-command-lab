@@ -518,9 +518,29 @@ function dispatch(heard){
   status('Dispatching to ' + agent + '…', true);
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', command: heard, routed_to: agent, ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { say('Copy that. Routed to the ' + agent + '. It will be handled — check Tasklet or your email for the result.'); status('Dispatched ✓', true); }
+  .then(r => { if (r.ok) { say('Copy that. Routed to the ' + agent + '. Give me a moment — I will read the answer back when it lands.'); status('Dispatched ✓ — waiting for reply…', true); pollAnswer(new Date().toISOString()); }
                else { say('Dispatch line rejected it. Check the link setup.'); } })
   .catch(() => say('Could not reach the dispatch line. Check your connection.'));
+}
+
+// ===== ANSWER READ-BACK: poll answers.json for the agent's reply and speak it =====
+var pollTimer = null;
+function pollAnswer(sinceTs){
+  if (pollTimer) clearInterval(pollTimer);
+  var tries = 0;
+  pollTimer = setInterval(function(){
+    tries++;
+    if (tries > 18) { clearInterval(pollTimer); pollTimer = null; status('No spoken reply yet — full answer is in Tasklet', false); return; }
+    fetch('answers.json?v=' + Math.random(), { cache: 'no-store' })
+      .then(function(r){ return r.json(); })
+      .then(function(a){
+        if (a && a.ts && a.ts > sinceTs && a.text) {
+          clearInterval(pollTimer); pollTimer = null;
+          status('Reply received ✓', true);
+          say(a.text);
+        }
+      }).catch(function(){});
+  }, 12000);
 }
 
 </script>
