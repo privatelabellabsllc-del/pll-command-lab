@@ -518,7 +518,7 @@ function dispatch(heard){
   status('Dispatching to ' + agent + '…', true);
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', command: heard, routed_to: agent, ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { say('Copy that. Routed to the ' + agent + '. Give me a moment — I will read the answer back when it lands.'); status('Dispatched ✓ — waiting for reply…', true); pollAnswer(new Date().toISOString()); }
+  .then(r => { if (r.ok) { say('Give me a second to check — I\'ll ask the ' + agent + ' and read it back to you.'); status('Dispatched ✓ — waiting for reply…', true); pollAnswer(new Date().toISOString()); }
                else { say('Dispatch line rejected it. Check the link setup.'); } })
   .catch(() => say('Could not reach the dispatch line. Check your connection.'));
 }
