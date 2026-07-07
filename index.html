@@ -359,7 +359,7 @@ function say(text, cb) {
   if (muted || !('speechSynthesis' in window)) { cb && cb(); return; }
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
-  u.voice = sternVoice(); u.pitch = 0.55; u.rate = 0.92; u.volume = 1;
+  u.voice = sternVoice(); u.pitch = 0.92; u.rate = 0.98; u.volume = 1;
   u.onstart = () => wave(true);
   u.onend = () => { wave(false); cb && cb(); };
   speechSynthesis.speak(u);
@@ -377,12 +377,12 @@ function speakBrief() {
   status("Delivering the brief", true);
   const hot = BRIEF.filter(b => b.hot).map(b => b.t).join(' ');
   const rest = BRIEF.filter(b => !b.hot).slice(0, 3).map(b => b.t).join(' ');
-  say(`Listen up. Here's the state of Private Label Labs. Top of the stack: ${hot} Also on the board: ${rest} That's the brief. Now execute.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
+  say(`Alright, here's where Private Label Labs stands today. First, the priorities: ${hot} Also on the board: ${rest} That's the picture. Let's get after it.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
 }
 function speakNext() {
   switchTab('queue');
   status("Assigning your lane", true);
-  say(`One lane. ${NEXT[0]} ${NEXT[1]} ${NEXT[2]} No detours. Move.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
+  say(`Here's your lane. ${NEXT[0]} ${NEXT[1]} ${NEXT[2]} One thing at a time — start with the first.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
 }
 function status(msg, hot) {
   const el = document.getElementById('statusLine');
@@ -442,7 +442,7 @@ function handleSpeech(heard) {
       awake = true;
       document.getElementById('stage').classList.add('awake');
       micState('awake'); status('Awake — listening', true);
-      say("Command Lab online. All systems hot. Three agents connected. What do you need, boss?");
+      say("Command Lab online. Good to see you. So — what are we doing today? Say brief for the full picture, or ask me what's next.");
     }
     return;
   }
@@ -451,7 +451,7 @@ function handleSpeech(heard) {
     awake = false;
     document.getElementById('stage').classList.remove('awake');
     micState('listening');
-    say("Standing down. I'll be here. Don't slow down out there.", () => status('Powered — say “Command Lab”', false));
+    say("Standing down. I'll be right here when you need me.", () => status('Powered — say “Command Lab”', false));
     return;
   }
   if (/brief|briefing|state of|rundown|update me|my day/.test(heard)) { speakBrief(); return; }
@@ -461,8 +461,8 @@ function handleSpeech(heard) {
     say("Three agents on the grid. PLL Consultant — live. CRM Developer and Email Agent — routed through the consultant. Dispatch runs from the Tasklet deck. This is the field unit.");
     return;
   }
-  if (/thank|good work|nice/.test(heard)) { say("Save the thanks. Close the deals."); return; }
-  say("Heard you. For live dispatch, use the Tasklet deck. Out here I give you the brief and your next move. Say brief, or say what's next.");
+  if (/thank|good work|nice/.test(heard)) { say("Anytime. Now go close those deals."); return; }
+  say("I've got you. Out here I can give you the daily brief or your next move — just say brief, or ask what's next. For live dispatch, hop into the Tasklet deck.");
 }
 
 // warm the voice list (Chrome loads async)
