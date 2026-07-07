@@ -202,6 +202,7 @@
     <button class="btn primary" id="powerBtn" onclick="togglePower()">⚡ Power On</button>
     <button class="btn" onclick="speakBrief()">📢 Brief Me</button>
     <button class="btn" onclick="speakNext()">🎯 What's Next</button>
+    <button class="btn" onclick="setHook()">🔗 Link</button>
     <button class="btn" id="muteBtn" onclick="toggleMute()">🔊 Voice On</button>
   </div>
 
@@ -355,13 +356,15 @@ function sternVoice() {
   }
   return vs.find(v => /en[-_](US|GB)/i.test(v.lang)) || vs[0];
 }
+var speaking = false;
 function say(text, cb) {
   if (muted || !('speechSynthesis' in window)) { cb && cb(); return; }
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.voice = sternVoice(); u.pitch = 0.92; u.rate = 0.98; u.volume = 1;
-  u.onstart = () => wave(true);
-  u.onend = () => { wave(false); cb && cb(); };
+  u.onstart = () => { speaking = true; wave(true); if (rec) { try { rec.abort(); } catch(e){} } };
+  const done = () => { wave(false); setTimeout(() => { speaking = false; if (powered && rec) { try { rec.start(); } catch(e){} } }, 350); cb && cb(); };
+  u.onend = done; u.onerror = done;
   speechSynthesis.speak(u);
 }
 function wave(on) { document.getElementById('wave').classList.toggle('on', on); }
@@ -430,12 +433,13 @@ function startListening() {
     const heard = e.results[e.results.length - 1][0].transcript.toLowerCase().trim();
     handleSpeech(heard);
   };
-  rec.onend = () => { if (powered) { try { rec.start(); } catch(e){} } };
+  rec.onend = () => { if (powered && !speaking) { try { rec.start(); } catch(e){} } };
   rec.onerror = () => {};
   try { rec.start(); } catch(e) {}
 }
 
 function handleSpeech(heard) {
+  if (speaking) return;
   if (!awake) {
     // wakes on just "command lab" (and common mishears), with or without "wake up"
     if (/(command\s*lab|come on lab|commander lab|command love|command lap)/.test(heard) || /^wake up$/.test(heard)) {
@@ -454,6 +458,7 @@ function handleSpeech(heard) {
     say("Standing down. I'll be right here when you need me.", () => status('Powered — say “Command Lab”', false));
     return;
   }
+  if (/add a task|create a task|task for|tell the|i need the|update the crm|crm update|send an email|remind|log this|make a note|dispatch/.test(heard)) { dispatch(heard); return; }
   if (/brief|briefing|state of|rundown|update me|my day/.test(heard)) { speakBrief(); return; }
   if (/next|tackle|priorit|what should i|focus/.test(heard)) { speakNext(); return; }
   if (/who('| i)?s connected|agents|status report|systems/.test(heard)) {
@@ -462,12 +467,36 @@ function handleSpeech(heard) {
     return;
   }
   if (/thank|good work|nice/.test(heard)) { say("Anytime. Now go close those deals."); return; }
-  say("I've got you. Out here I can give you the daily brief or your next move — just say brief, or ask what's next. For live dispatch, hop into the Tasklet deck.");
+  dispatch(heard);
 }
 
 // warm the voice list (Chrome loads async)
 function loadVoices(){ const v = speechSynthesis.getVoices(); if (v.length) voiceCache = v; }
 if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = loadVoices; loadVoices(); setTimeout(loadVoices, 500); setTimeout(loadVoices, 1500); }
+
+// ================= LIVE DISPATCH =================
+function hookUrl(){ return localStorage.getItem('pll_hook') || ''; }
+function setHook(){
+  const u = prompt('Paste the Command Lab dispatch link (webhook URL from Tasklet):', hookUrl());
+  if (u && u.startsWith('http')) { localStorage.setItem('pll_hook', u.trim()); say('Dispatch line connected. Every command you give me now reaches the team.'); }
+}
+function targetAgent(t){
+  if (/crm|developer|update the|bug|fix/.test(t)) return 'CRM Developer';
+  if (/email|inbox|send.*mail/.test(t)) return 'Email Agent';
+  return 'PLL Consultant';
+}
+function dispatch(heard){
+  const url = hookUrl();
+  if (!url) { say("I heard you, but the dispatch line isn't connected yet. Tap the link button at the bottom and paste in the dispatch URL — then I can route commands to the team."); return; }
+  const agent = targetAgent(heard);
+  status('Dispatching to ' + agent + '…', true);
+  fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ source: 'pll-command-lab', command: heard, routed_to: agent, ts: new Date().toISOString() }) })
+  .then(r => { if (r.ok) { say('Copy that. Routed to the ' + agent + '. It will be handled — check Tasklet or your email for the result.'); status('Dispatched ✓', true); }
+               else { say('Dispatch line rejected it. Check the link setup.'); } })
+  .catch(() => say('Could not reach the dispatch line. Check your connection.'));
+}
+
 </script>
 </body>
 </html>
