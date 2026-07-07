@@ -379,7 +379,7 @@ function say(text, cb) {
   u.voice = sternVoice(); u.pitch = 0.92; u.rate = 0.98; u.volume = 1;
   u.onstart = () => { speaking = true; wave(true); if (rec) { try { rec.abort(); } catch(e){} } };
   if (awake) armSleep();
-  const done = () => { wave(false); setTimeout(() => { speaking = false; if (powered && rec) { try { rec.start(); } catch(e){} } }, 350); cb && cb(); };
+  const done = () => { wave(false); setTimeout(() => { speaking = false; if (powered && rec) { try { rec.start(); } catch(e){} } }, 200); cb && cb(); };
   u.onend = done; u.onerror = done;
   speechSynthesis.speak(u);
 }
@@ -471,8 +471,11 @@ function startListening() {
     const heard = e.results[e.results.length - 1][0].transcript.toLowerCase().trim();
     handleSpeech(heard);
   };
-  rec.onend = () => { if (powered && !speaking) { try { rec.start(); } catch(e){} } };
-  rec.onerror = () => {};
+  rec.onend = () => { if (powered && !speaking) { setTimeout(() => { try { rec.start(); } catch(e){} }, 120); } };
+  rec.onerror = (ev) => { // 'no-speech'/'network' shouldn't kill the mic — bounce it back up
+    if (ev && ev.error === 'aborted') return;
+    if (powered && !speaking) { setTimeout(() => { try { rec.start(); } catch(e){} }, 200); }
+  };
   try { rec.start(); } catch(e) {}
 }
 
@@ -531,8 +534,8 @@ function handleSpeech(heard) {
   // No onboard answer. Ignore short/undirected background chatter so it doesn't
   // butt into conversations with other people. Only respond to clearly-directed questions.
   const words = heard.split(/\s+/).filter(Boolean).length;
-  const directed = /\b(what|when|where|who|why|how|is|are|can|should|could|would|do|does|did|tell|find|check|status|give me|update|write|draft|explain|help|make|calculate|whats|what's)\b/.test(heard);
-  if (words < 3 || !directed) { return; } // stay quiet; sleep timer keeps running
+  if (words < 2) { return; } // ignore only single-word noise; hear everything else
+  armSleep(); // heard something aimed at it — keep the window open
   // ===== AI BRAIN: any directed question we can't answer onboard goes straight
   // to the live AI brain (no yes/no gate). It thinks and reads the answer back.
   armSleep();
