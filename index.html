@@ -397,6 +397,12 @@ function speakBrief() {
   const rest = BRIEF.filter(b => !b.hot).slice(0, 3).map(b => b.t).join(' ');
   say(`Alright, here's where Private Label Labs stands today. First, the priorities: ${hot} Also on the board: ${rest} That's the picture. Let's get after it.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
 }
+function speakAgenda() {
+  switchTab('brief');
+  status("Reading your top three", true);
+  const top = BRIEF.slice(0, 3).map((b, i) => `Number ${i+1}. ${b.t}`).join(' ');
+  say(`Here are your three big tasks for today. ${top} Start with number one. One lane at a time.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
+}
 function speakNext() {
   switchTab('queue');
   status("Assigning your lane", true);
@@ -497,6 +503,7 @@ function handleSpeech(heard) {
     });
     if (best && bestScore >= 4) { say(best.a); return; }
   }
+  if (/agenda|top (three|3)|three (things|tasks)|what('| i)?s on|on my plate|main tasks|big (three|3)|today's tasks|whats today|what is today/.test(heard)) { speakAgenda(); return; }
   if (/brief|briefing|state of|rundown|update me|my day/.test(heard)) { speakBrief(); return; }
   if (/next|tackle|priorit|what should i|focus/.test(heard)) { speakNext(); return; }
   if (/who('| i)?s connected|agents|status report|systems/.test(heard)) {
