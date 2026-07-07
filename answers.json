@@ -1,4 +1,4 @@
 {
-  "ts": "2026-07-07T16:22:10.000Z",
-  "text": "Brain's online, loud and clear. On the weather — I can pull a live forecast, but I need to know which city you're in. Tell me your location once and I'll remember it. In the meantime, your real forecast today is the Valeva backlog: seven orders still need to ship. That's the storm to clear first."
+  "ts": "2026-07-07T16:23:20.000Z",
+  "text": "Yes — I can connect this to a real Alexa. I'd build a custom Alexa Skill so you say, Alexa, ask Command Lab what's on my agenda, on any Echo device, no phone needed. It needs an Amazon developer account and a small always-on link on my side, and it carries a small running cost. Say the word and I'll start it after the Valeva backlog is cleared. Full details are in your chat."
 }
