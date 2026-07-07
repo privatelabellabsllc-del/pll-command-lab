@@ -420,6 +420,7 @@ let rec = null, powered = false, awake = false;
 let pendingDispatch = null;
 let sleepTimer = null;
 let pauseTimer = null, speechBuf = '';
+let working = false;  // true while thinking/dispatching — mic stays off until the reply comes back
 const SLEEP_MS = 25000; // auto-sleep after 25s with no interaction
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -478,6 +479,16 @@ function startListening() {
     speechBuf = (finalTxt + interim).toLowerCase().trim();
     // Every time new words arrive, reset the "you're still talking" timer
     clearTimeout(pauseTimer);
+    // "Go for it" style phrase = I'm done talking, act now and stop listening
+    const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|that'?s all)\s*[.!?]?$/;
+    if (GO.test(speechBuf)) {
+      const done = speechBuf.replace(GO, '').trim();
+      speechBuf = '';
+      clearTimeout(pauseTimer);
+      try { rec.stop(); } catch(err){}
+      if (done) handleSpeech(done);
+      return;
+    }
     pauseTimer = setTimeout(() => {
       const done = speechBuf.trim();
       speechBuf = '';
@@ -485,10 +496,10 @@ function startListening() {
       if (done) handleSpeech(done);
     }, 1200);
   };
-  rec.onend = () => { if (powered && !speaking) { setTimeout(() => { try { rec.start(); } catch(e){} }, 120); } };
+  rec.onend = () => { if (powered && !speaking && !working) { setTimeout(() => { try { rec.start(); } catch(e){} }, 120); } };
   rec.onerror = (ev) => { // 'no-speech'/'network' shouldn't kill the mic — bounce it back up
     if (ev && ev.error === 'aborted') return;
-    if (powered && !speaking) { setTimeout(() => { try { rec.start(); } catch(e){} }, 200); }
+    if (powered && !speaking && !working) { setTimeout(() => { try { rec.start(); } catch(e){} }, 200); }
   };
   try { rec.start(); } catch(e) {}
 }
@@ -611,12 +622,13 @@ function dispatch(heard){
   const url = hookUrl();
   if (!url) { say("I heard you, but the dispatch line isn't connected yet. Tap the link button at the bottom and paste in the dispatch URL — then I can route commands to the team."); return; }
   const agent = targetAgent(heard);
+  working = true; try { if (rec) rec.stop(); } catch(e){}   // stop listening while it works — replies when done
   status('Dispatching to ' + agent + '…', true);
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', command: heard, routed_to: agent, ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { say('Give me a second to check — I\'ll ask the ' + agent + ' and read it back to you.'); status('Dispatched ✓ — waiting for reply…', true); pollAnswer(new Date().toISOString()); }
-               else { say('Dispatch line rejected it. Check the link setup.'); } })
-  .catch(() => say('Could not reach the dispatch line. Check your connection.'));
+  .then(r => { if (r.ok) { say('On it. I\'ll take it from here and let you know when it\'s done.'); status('Working… will report when done', true); pollAnswer(new Date().toISOString()); }
+               else { working = false; say('Dispatch line rejected it. Check the link setup.'); } })
+  .catch(() => { working = false; say('Could not reach the dispatch line. Check your connection.'); });
 }
 
 // ===== ANSWER READ-BACK: poll answers.json for the agent's reply and speak it =====
@@ -626,12 +638,13 @@ function pollAnswer(sinceTs){
   var tries = 0;
   pollTimer = setInterval(function(){
     tries++;
-    if (tries > 40) { clearInterval(pollTimer); pollTimer = null; status('No spoken reply yet — full answer is in Tasklet', false); return; }
+    if (tries > 40) { clearInterval(pollTimer); pollTimer = null; working = false; status('No spoken reply yet — full answer is in Tasklet', false); if (powered && rec) { try { rec.start(); } catch(e){} } return; }
     fetch('answers.json?v=' + Math.random(), { cache: 'no-store' })
       .then(function(r){ return r.json(); })
       .then(function(a){
         if (a && a.ts && a.ts > sinceTs && a.text) {
           clearInterval(pollTimer); pollTimer = null;
+          working = false;   // release the mic — it'll restart after speaking the reply
           status('Reply received ✓', true);
           say(a.text);
         }
