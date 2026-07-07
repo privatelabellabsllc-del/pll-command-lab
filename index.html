@@ -529,13 +529,26 @@ function handleSpeech(heard) {
   }
   if (/thank|good work|nice/.test(heard)) { say("Anytime. Now go close those deals."); return; }
   // No onboard answer. Ignore short/undirected background chatter so it doesn't
-  // butt into conversations with other people. Only prompt on clearly-directed questions.
+  // butt into conversations with other people. Only respond to clearly-directed questions.
   const words = heard.split(/\s+/).filter(Boolean).length;
-  const directed = /\b(what|when|where|who|why|how|is|are|can|should|do|does|tell|find|check|status|give me|update)\b/.test(heard);
-  if (words < 4 || !directed) { return; } // stay quiet; sleep timer keeps running
-  pendingDispatch = heard;
+  const directed = /\b(what|when|where|who|why|how|is|are|can|should|could|would|do|does|did|tell|find|check|status|give me|update|write|draft|explain|help|make|calculate|whats|what's)\b/.test(heard);
+  if (words < 3 || !directed) { return; } // stay quiet; sleep timer keeps running
+  // ===== AI BRAIN: any directed question we can't answer onboard goes straight
+  // to the live AI brain (no yes/no gate). It thinks and reads the answer back.
   armSleep();
-  say("I don't have that onboard. Want me to ask the agent? Yes or no.");
+  askBrain(heard);
+}
+
+// ===== AI BRAIN: routes general questions to the live AI, speaks the answer =====
+function askBrain(heard){
+  const url = hookUrl();
+  if (!url) { say("I'd need the brain line connected first. Tap the link button at the bottom and paste the dispatch URL."); return; }
+  status('Thinking…', true);
+  fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({ source: 'pll-command-lab', kind: 'ai-question', command: heard, routed_to: 'AI Brain', ts: new Date().toISOString() }) })
+  .then(r => { if (r.ok) { say('Let me think on that.'); status('Thinking…', true); pollAnswer(new Date().toISOString()); }
+               else { say('Brain line rejected that. Check the link setup.'); } })
+  .catch(() => say('Could not reach the brain line. Check your connection.'));
 }
 
 // warm the voice list (Chrome loads async)
@@ -596,7 +609,7 @@ function pollAnswer(sinceTs){
   var tries = 0;
   pollTimer = setInterval(function(){
     tries++;
-    if (tries > 18) { clearInterval(pollTimer); pollTimer = null; status('No spoken reply yet — full answer is in Tasklet', false); return; }
+    if (tries > 40) { clearInterval(pollTimer); pollTimer = null; status('No spoken reply yet — full answer is in Tasklet', false); return; }
     fetch('answers.json?v=' + Math.random(), { cache: 'no-store' })
       .then(function(r){ return r.json(); })
       .then(function(a){
@@ -606,7 +619,7 @@ function pollAnswer(sinceTs){
           say(a.text);
         }
       }).catch(function(){});
-  }, 12000);
+  }, 5000);
 }
 
 </script>
