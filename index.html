@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PLL Command Lab">
+<meta name="theme-color" content="#05080f">
+<title>PLL Command Lab</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%2305080f' stroke='%2322d3ee' stroke-width='3'/%3E%3Ctext x='32' y='41' font-family='Arial Black' font-size='22' fill='%2322d3ee' text-anchor='middle' font-weight='900'%3EPLL%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #05080f;
+    --panel: rgba(13, 22, 38, 0.72);
+    --line: rgba(34, 211, 238, 0.18);
+    --cyan: #22d3ee;
+    --amber: #fbbf24;
+    --red: #f87171;
+    --text: #dbeafe;
+    --dim: #64748b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+  /* ambient grid + glow */
+  body::before {
+    content: '';
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 50% 0%, rgba(34,211,238,0.08), transparent 70%),
+      radial-gradient(ellipse 50% 35% at 50% 100%, rgba(251,191,36,0.05), transparent 70%),
+      repeating-linear-gradient(0deg, transparent 0 39px, rgba(34,211,238,0.035) 39px 40px),
+      repeating-linear-gradient(90deg, transparent 0 39px, rgba(34,211,238,0.035) 39px 40px);
+    pointer-events: none; z-index: 0;
+  }
+  /* scanline */
+  body::after {
+    content: '';
+    position: fixed; left: 0; right: 0; height: 120px; top: -120px;
+    background: linear-gradient(180deg, transparent, rgba(34,211,238,0.05), transparent);
+    animation: scan 7s linear infinite;
+    pointer-events: none; z-index: 1;
+  }
+  @keyframes scan { 0% { top: -120px; } 100% { top: 110vh; } }
+
+  .wrap { position: relative; z-index: 2; max-width: 1060px; margin: 0 auto; padding: 22px 18px 60px; }
+
+  /* ============ HEADER ============ */
+  header { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 26px; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-right: auto; }
+  .brand h1 { font-size: 21px; letter-spacing: 3px; font-weight: 900; }
+  .brand h1 .accent { color: var(--cyan); text-shadow: 0 0 18px rgba(34,211,238,0.6); }
+  .brand .sub { font-size: 10px; letter-spacing: 4px; color: var(--dim); text-transform: uppercase; margin-top: 3px; }
+  .pill {
+    border: 1px solid var(--line); background: var(--panel); border-radius: 999px;
+    padding: 7px 16px; font-size: 12px; letter-spacing: 1px; color: var(--dim);
+    display: flex; align-items: center; gap: 8px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--dim); }
+  .dot.live { background: var(--cyan); box-shadow: 0 0 10px var(--cyan); animation: pulse 1.6s ease-in-out infinite; }
+  .dot.amber { background: var(--amber); box-shadow: 0 0 10px var(--amber); animation: pulse 1.1s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+  /* ============ CORE ============ */
+  .stage { display: flex; flex-direction: column; align-items: center; padding: 12px 0 8px; }
+  .core { position: relative; width: 280px; height: 280px; display: flex; align-items: center; justify-content: center; }
+  .ring { position: absolute; border-radius: 50%; border: 1px solid rgba(34,211,238,0.25); }
+  .ring.r1 { inset: 0; border-style: dashed; animation: spin 24s linear infinite; }
+  .ring.r2 { inset: 22px; border-color: rgba(34,211,238,0.35); border-top-color: var(--cyan); animation: spin 8s linear infinite; }
+  .ring.r3 { inset: 44px; border-style: dotted; border-color: rgba(251,191,36,0.35); animation: spinRev 14s linear infinite; }
+  .ring.r4 { inset: 66px; border-color: rgba(34,211,238,0.5); border-bottom-color: transparent; border-left-color: transparent; animation: spin 4s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @keyframes spinRev { to { transform: rotate(-360deg); } }
+  .tick { position: absolute; inset: 10px; border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0deg 84deg, rgba(34,211,238,0.5) 86deg 90deg, transparent 92deg 360deg);
+    -webkit-mask: radial-gradient(circle, transparent 62%, black 63%, black 66%, transparent 67%);
+            mask: radial-gradient(circle, transparent 62%, black 63%, black 66%, transparent 67%);
+    animation: spin 6s linear infinite;
+  }
+  .heart {
+    position: relative; width: 128px; height: 128px; border-radius: 50%;
+    background: radial-gradient(circle at 50% 42%, rgba(34,211,238,0.30), rgba(13,22,38,0.9) 70%);
+    border: 1px solid rgba(34,211,238,0.6);
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    box-shadow: 0 0 45px rgba(34,211,238,0.35), inset 0 0 30px rgba(34,211,238,0.18);
+    transition: box-shadow 0.6s;
+  }
+  .awake .heart { box-shadow: 0 0 90px rgba(34,211,238,0.7), inset 0 0 40px rgba(34,211,238,0.35); animation: breathe 2.4s ease-in-out infinite; }
+  @keyframes breathe { 0%,100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+  .heart .pll { font-size: 30px; font-weight: 900; letter-spacing: 3px; color: var(--cyan); text-shadow: 0 0 22px rgba(34,211,238,0.9); }
+  .heart .cc { font-size: 8px; letter-spacing: 3px; color: rgba(219,234,254,0.65); margin-top: 3px; text-transform: uppercase; }
+  .status-line { margin-top: 18px; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--dim); min-height: 18px; text-align: center; }
+  .status-line.hot { color: var(--cyan); text-shadow: 0 0 12px rgba(34,211,238,0.5); }
+
+  /* waveform bars */
+  .wave { display: flex; gap: 4px; height: 26px; align-items: center; justify-content: center; margin-top: 10px; opacity: 0; transition: opacity 0.4s; }
+  .wave.on { opacity: 1; }
+  .wave span { width: 4px; border-radius: 2px; background: var(--cyan); height: 6px; box-shadow: 0 0 8px rgba(34,211,238,0.6); animation: wv 0.9s ease-in-out infinite; }
+  .wave span:nth-child(2) { animation-delay: 0.12s; } .wave span:nth-child(3) { animation-delay: 0.24s; }
+  .wave span:nth-child(4) { animation-delay: 0.36s; } .wave span:nth-child(5) { animation-delay: 0.48s; }
+  .wave span:nth-child(6) { animation-delay: 0.60s; } .wave span:nth-child(7) { animation-delay: 0.72s; }
+  @keyframes wv { 0%,100% { height: 5px; } 50% { height: 24px; } }
+
+  /* ============ CONTROLS ============ */
+  .controls { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin: 20px 0 30px; }
+  .btn {
+    border: 1px solid var(--line); background: var(--panel); color: var(--text);
+    border-radius: 12px; padding: 13px 22px; font-size: 14px; font-weight: 700; letter-spacing: 1px;
+    cursor: pointer; display: flex; align-items: center; gap: 9px; transition: all 0.2s;
+    text-transform: uppercase;
+  }
+  .btn:hover { border-color: var(--cyan); box-shadow: 0 0 18px rgba(34,211,238,0.25); transform: translateY(-1px); }
+  .btn.primary { background: linear-gradient(135deg, rgba(34,211,238,0.2), rgba(34,211,238,0.05)); border-color: rgba(34,211,238,0.6); color: var(--cyan); }
+  .btn.hot { border-color: var(--amber); color: var(--amber); box-shadow: 0 0 18px rgba(251,191,36,0.3); }
+
+  /* ============ PANELS ============ */
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+  .panel {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 16px;
+    padding: 18px 20px; backdrop-filter: blur(8px); position: relative; overflow: hidden;
+  }
+  .panel::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(34,211,238,0.6), transparent); }
+  .panel h2 { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--dim); margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .panel h2 .glyph { color: var(--cyan); }
+  .item { display: flex; gap: 10px; padding: 9px 0; border-bottom: 1px solid rgba(100,116,139,0.12); font-size: 13.5px; line-height: 1.45; }
+  .item:last-child { border-bottom: none; }
+  .item .n { color: var(--cyan); font-weight: 800; min-width: 20px; }
+  .item .hot-tag { color: var(--amber); font-weight: 700; }
+  .agents .item .n { min-width: 0; }
+  .agent-name { font-weight: 800; color: var(--text); }
+  .agent-role { color: var(--dim); font-size: 12px; }
+
+  footer { text-align: center; margin-top: 34px; font-size: 11px; letter-spacing: 2px; color: rgba(100,116,139,0.6); text-transform: uppercase; }
+
+  @media (max-width: 640px) {
+    .core { width: 230px; height: 230px; }
+    .heart { width: 106px; height: 106px; }
+    .brand h1 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+  <header>
+    <div class="brand">
+      <svg width="52" height="52" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="rgba(34,211,238,0.35)" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <circle cx="32" cy="32" r="22" fill="rgba(13,22,38,0.9)" stroke="#22d3ee" stroke-width="1.6"/>
+        <text x="32" y="38" font-family="Arial Black, sans-serif" font-size="15" fill="#22d3ee" text-anchor="middle" font-weight="900">PLL</text>
+      </svg>
+      <div>
+        <h1>PLL <span class="accent">COMMAND LAB</span></h1>
+        <div class="sub">Private Label Labs · Operations HUD</div>
+      </div>
+    </div>
+    <div class="pill"><span class="dot live"></span> SYSTEMS NOMINAL</div>
+    <div class="pill" id="micPill"><span class="dot" id="micDot"></span> <span id="micLabel">MIC OFFLINE</span></div>
+  </header>
+
+  <div class="stage" id="stage">
+    <div class="core">
+      <div class="ring r1"></div>
+      <div class="ring r2"></div>
+      <div class="ring r3"></div>
+      <div class="ring r4"></div>
+      <div class="tick"></div>
+      <div class="heart">
+        <div class="pll">PLL</div>
+        <div class="cc">Command Lab</div>
+      </div>
+    </div>
+    <div class="wave" id="wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="status-line" id="statusLine">Standing by — power on, then say “Command Lab, wake up”</div>
+  </div>
+
+  <div class="controls">
+    <button class="btn primary" id="powerBtn" onclick="togglePower()">⚡ Power On</button>
+    <button class="btn" onclick="speakBrief()">📢 Brief Me</button>
+    <button class="btn" onclick="speakNext()">🎯 What's Next</button>
+    <button class="btn" id="muteBtn" onclick="toggleMute()">🔊 Voice On</button>
+  </div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2><span class="glyph">◈</span> Today's Brief</h2>
+      <div id="briefList"></div>
+    </div>
+    <div class="panel">
+      <h2><span class="glyph">◎</span> Priority Queue</h2>
+      <div id="nextList"></div>
+    </div>
+    <div class="panel agents">
+      <h2><span class="glyph">⬡</span> Connected Agents</h2>
+      <div class="item"><div><div class="agent-name">PLL Consultant <span style="color:var(--cyan)">●</span></div><div class="agent-role">CEO advisor · ops, accountability, pipeline — live inside Tasklet</div></div></div>
+      <div class="item"><div><div class="agent-name">CRM Developer <span style="color:var(--amber)">●</span></div><div class="agent-role">Bug fixes & CRM changes — routed via CRM UPDATE REQUEST tickets</div></div></div>
+      <div class="item"><div><div class="agent-name">Email Agent <span style="color:var(--amber)">●</span></div><div class="agent-role">Shared inbox operations — routed via privatelabellabsllc@gmail.com</div></div></div>
+      <div class="item" style="border-top:1px solid rgba(100,116,139,0.15); margin-top:6px; padding-top:12px;">
+        <div style="font-size:12px; color:var(--dim);">⚠ Live dispatch to agents runs inside Tasklet. This field unit handles voice brief + status.</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>PLL Command Lab · Field Unit · Voice-enabled</footer>
+</div>
+
+<script>
+// ================= DATA (baked at build time) =================
+const BRIEF = [
+  { t: "Valeva backlog — 7 orders unshipped. Booky and warehouse, first thing. Revenue sitting on the floor.", hot: true },
+  { t: "Tiffany is leaving for Africa — lock the call THIS WEEK. 6,400 TikTok videos ready. Do not let this one slip.", hot: true },
+  { t: "Elmar pricing blocked — need Aidan's packaging costs and fill rate before any 65% margin quote goes out.", hot: false },
+  { t: "Aidan: Pure Good + Terra Lotus pricing due July 8. Evelyn: Terra Lotus samples due July 7. Deadlines are watched.", hot: false },
+  { t: "Kristen Reed — $10K baby-safe barrier spray. Laura owes scope and R&D quote.", hot: false },
+  { t: "Sky & Sol sample follow-up Friday July 10 — client back from vacation on the 11th.", hot: false }
+];
+const NEXT = [
+  "One lane: Booky and the Valeva shipments. Nothing else until that's moving.",
+  "Then Tiffany — reply on WhatsApp, lock in the call before she flies.",
+  "Everything else is my problem until those two are done."
+];
+
+// ================= RENDER =================
+const briefList = document.getElementById('briefList');
+BRIEF.forEach((b, i) => {
+  briefList.innerHTML += `<div class="item"><span class="n">${String(i+1).padStart(2,'0')}</span><span>${b.hot ? '<span class="hot-tag">▲ HOT · </span>' : ''}${b.t}</span></div>`;
+});
+const nextList = document.getElementById('nextList');
+NEXT.forEach((n, i) => {
+  nextList.innerHTML += `<div class="item"><span class="n">${i+1}.</span><span>${n}</span></div>`;
+});
+
+// ================= VOICE OUT (stern CEO) =================
+let muted = false;
+function sternVoice() {
+  const vs = speechSynthesis.getVoices();
+  return vs.find(v => /en/i.test(v.lang) && /male|daniel|david|fred|alex|george/i.test(v.name)) || vs.find(v => /en-US|en_GB|en-GB/i.test(v.lang)) || vs[0];
+}
+function say(text, cb) {
+  if (muted || !('speechSynthesis' in window)) { cb && cb(); return; }
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.voice = sternVoice(); u.pitch = 0.62; u.rate = 0.94; u.volume = 1;
+  u.onstart = () => wave(true);
+  u.onend = () => { wave(false); cb && cb(); };
+  speechSynthesis.speak(u);
+}
+function wave(on) { document.getElementById('wave').classList.toggle('on', on); }
+function toggleMute() {
+  muted = !muted;
+  document.getElementById('muteBtn').textContent = muted ? '🔇 Voice Off' : '🔊 Voice On';
+  if (muted) speechSynthesis.cancel();
+}
+
+// ================= BRIEF / NEXT =================
+function speakBrief() {
+  status("Delivering the brief", true);
+  const hot = BRIEF.filter(b => b.hot).map(b => b.t).join(' ');
+  const rest = BRIEF.filter(b => !b.hot).slice(0, 3).map(b => b.t).join(' ');
+  say(`Listen up. Here's the state of Private Label Labs. Top of the stack: ${hot} Also on the board: ${rest} That's the brief. Now execute.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
+}
+function speakNext() {
+  status("Assigning your lane", true);
+  say(`One lane. ${NEXT[0]} ${NEXT[1]} ${NEXT[2]} No detours. Move.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
+}
+function status(msg, hot) {
+  const el = document.getElementById('statusLine');
+  el.textContent = msg;
+  el.classList.toggle('hot', !!hot);
+}
+
+// ================= WAKE WORD / VOICE IN =================
+let rec = null, powered = false, awake = false;
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+function togglePower() {
+  if (!powered) {
+    powered = true;
+    document.getElementById('powerBtn').textContent = '⏻ Power Off';
+    document.getElementById('powerBtn').classList.add('hot');
+    // unlock speech synthesis with a silent utterance on user gesture
+    if ('speechSynthesis' in window) { speechSynthesis.getVoices(); }
+    if (SR) { startListening(); micState('listening'); status('Powered — say “Command Lab, wake up”', false); }
+    else { micState('unsupported'); status('Mic not supported in this browser — buttons still work', false); }
+  } else {
+    powered = false; awake = false;
+    document.getElementById('powerBtn').textContent = '⚡ Power On';
+    document.getElementById('powerBtn').classList.remove('hot');
+    document.getElementById('stage').classList.remove('awake');
+    if (rec) { try { rec.stop(); } catch(e){} rec = null; }
+    speechSynthesis.cancel();
+    micState('off'); status('Standing by — power on, then say “Command Lab, wake up”', false);
+  }
+}
+
+function micState(s) {
+  const dot = document.getElementById('micDot'), label = document.getElementById('micLabel');
+  dot.className = 'dot';
+  if (s === 'listening') { dot.classList.add('live'); label.textContent = 'MIC LIVE'; }
+  else if (s === 'awake') { dot.classList.add('amber'); label.textContent = 'AWAKE'; }
+  else if (s === 'unsupported') { label.textContent = 'MIC N/A'; }
+  else { label.textContent = 'MIC OFFLINE'; }
+}
+
+function startListening() {
+  if (!SR) return;
+  rec = new SR();
+  rec.continuous = true; rec.interimResults = false; rec.lang = 'en-US';
+  rec.onresult = (e) => {
+    const heard = e.results[e.results.length - 1][0].transcript.toLowerCase().trim();
+    handleSpeech(heard);
+  };
+  rec.onend = () => { if (powered) { try { rec.start(); } catch(e){} } };
+  rec.onerror = () => {};
+  try { rec.start(); } catch(e) {}
+}
+
+function handleSpeech(heard) {
+  if (!awake) {
+    if (/(command\s*lab|commander|come on lab).{0,12}(wake|week)\s*up|wake\s*up.{0,12}command\s*lab/.test(heard) || /^wake up$/.test(heard)) {
+      awake = true;
+      document.getElementById('stage').classList.add('awake');
+      micState('awake'); status('Awake — listening', true);
+      say("Command Lab online. All systems hot. Three agents connected. What do you need, boss?");
+    }
+    return;
+  }
+  // awake — handle commands
+  if (/stand\s*down|go to sleep|power down|sleep now/.test(heard)) {
+    awake = false;
+    document.getElementById('stage').classList.remove('awake');
+    micState('listening');
+    say("Standing down. I'll be here. Don't slow down out there.", () => status('Powered — say “Command Lab, wake up”', false));
+    return;
+  }
+  if (/brief|briefing|state of|rundown|update me|my day/.test(heard)) { speakBrief(); return; }
+  if (/next|tackle|priorit|what should i|focus/.test(heard)) { speakNext(); return; }
+  if (/who('| i)?s connected|agents|status report|systems/.test(heard)) {
+    say("Three agents on the grid. PLL Consultant — live. CRM Developer and Email Agent — routed through the consultant. Dispatch runs from the Tasklet deck. This is the field unit.");
+    return;
+  }
+  if (/thank|good work|nice/.test(heard)) { say("Save the thanks. Close the deals."); return; }
+  // fallback
+  say("Heard you. For live dispatch, use the Tasklet deck. Out here I give you the brief and your next move. Say brief, or say what's next.");
+}
+
+// warm the voice list (Chrome loads async)
+if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = () => {}; speechSynthesis.getVoices(); }
+</script>
+</body>
+</html>
