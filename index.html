@@ -241,6 +241,7 @@
 </div>
 
 <script>
+var voiceCache = [];
 // ================= PARTICLE FIELD (science / molecular theme) =================
 (function () {
   const c = document.getElementById('particles'), ctx = c.getContext('2d');
@@ -340,11 +341,12 @@ NEXT.forEach((n, i) => {
 // ================= VOICE OUT (stern, deep, male) =================
 let muted = false;
 function sternVoice() {
-  const vs = speechSynthesis.getVoices();
-  // ranked preference: known deep male voices first
+  const vs = voiceCache.length ? voiceCache : speechSynthesis.getVoices();
+  // ranked preference: known deep male voices first (iPhone: Aaron/Arthur/Daniel/Fred/Rishi)
   const prefs = [
+    /aaron.*enhanced|enhanced.*aaron/i, /daniel.*enhanced|enhanced.*daniel/i, /arthur/i, /aaron/i, /daniel/i,
     /google uk english male/i, /microsoft (guy|davis|eric|christopher|andrew)/i,
-    /daniel/i, /alex(?!a)/i, /david/i, /fred/i, /george/i, /james/i, /rishi/i, /aaron/i,
+    /alex(?!a)/i, /fred/i, /rishi/i, /gordon/i, /reed/i, /david/i, /george/i, /james/i,
     /\bmale\b/i
   ];
   for (const rx of prefs) {
@@ -464,7 +466,8 @@ function handleSpeech(heard) {
 }
 
 // warm the voice list (Chrome loads async)
-if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = () => {}; speechSynthesis.getVoices(); }
+function loadVoices(){ const v = speechSynthesis.getVoices(); if (v.length) voiceCache = v; }
+if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = loadVoices; loadVoices(); setTimeout(loadVoices, 500); setTimeout(loadVoices, 1500); }
 </script>
 </body>
 </html>
