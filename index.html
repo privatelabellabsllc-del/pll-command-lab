@@ -378,6 +378,7 @@ function say(text, cb) {
   const u = new SpeechSynthesisUtterance(text);
   u.voice = sternVoice(); u.pitch = 0.92; u.rate = 0.98; u.volume = 1;
   u.onstart = () => { speaking = true; wave(true); if (rec) { try { rec.abort(); } catch(e){} } };
+  if (awake) armSleep();
   const done = () => { wave(false); setTimeout(() => { speaking = false; if (powered && rec) { try { rec.start(); } catch(e){} } }, 350); cb && cb(); };
   u.onend = done; u.onerror = done;
   speechSynthesis.speak(u);
@@ -417,7 +418,22 @@ function status(msg, hot) {
 // ================= WAKE WORD / VOICE IN =================
 let rec = null, powered = false, awake = false;
 let pendingDispatch = null;
+let sleepTimer = null;
+const SLEEP_MS = 25000; // auto-sleep after 25s with no interaction
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+function armSleep() {
+  clearTimeout(sleepTimer);
+  sleepTimer = setTimeout(goToSleep, SLEEP_MS);
+}
+function goToSleep() {
+  if (!awake) return;
+  awake = false; pendingDispatch = null;
+  clearTimeout(sleepTimer);
+  document.getElementById('stage').classList.remove('awake');
+  micState('listening');
+  status('Powered — say “Command Lab”', false);
+}
 
 function togglePower() {
   if (!powered) {
@@ -428,7 +444,7 @@ function togglePower() {
     if (SR) { startListening(); micState('listening'); status('Powered — say “Command Lab”', false); }
     else { micState('unsupported'); status('Mic not supported in this browser — buttons still work', false); }
   } else {
-    powered = false; awake = false;
+    powered = false; awake = false; pendingDispatch = null; clearTimeout(sleepTimer);
     document.getElementById('powerBtn').textContent = '⚡ Power On';
     document.getElementById('powerBtn').classList.remove('hot');
     document.getElementById('stage').classList.remove('awake');
@@ -465,7 +481,7 @@ function handleSpeech(heard) {
   if (!awake) {
     // wakes on just "command lab" (and common mishears), with or without "wake up"
     if (/(command\s*lab|come on lab|commander lab|command love|command lap)/.test(heard) || /^wake up$/.test(heard)) {
-      awake = true;
+      awake = true; armSleep();
       document.getElementById('stage').classList.add('awake');
       micState('awake'); status('Awake — listening', true);
       say("Command Lab online. Good to see you. So — what are we doing today? Say brief for the full picture, or ask me what's next.");
@@ -512,8 +528,13 @@ function handleSpeech(heard) {
     return;
   }
   if (/thank|good work|nice/.test(heard)) { say("Anytime. Now go close those deals."); return; }
-  // No onboard answer — ask before dispatching
+  // No onboard answer. Ignore short/undirected background chatter so it doesn't
+  // butt into conversations with other people. Only prompt on clearly-directed questions.
+  const words = heard.split(/\s+/).filter(Boolean).length;
+  const directed = /\b(what|when|where|who|why|how|is|are|can|should|do|does|tell|find|check|status|give me|update)\b/.test(heard);
+  if (words < 4 || !directed) { return; } // stay quiet; sleep timer keeps running
   pendingDispatch = heard;
+  armSleep();
   say("I don't have that onboard. Want me to ask the agent? Yes or no.");
 }
 
