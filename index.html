@@ -344,12 +344,12 @@ function renderLists(){
   });
 }
 renderLists();
-var BRIEF_DATE = '';
+var BRIEF_DATE = ''; var KB = [];
 // Pull the freshest morning brief (updated daily at 7am by the PLL Consultant agent)
 fetch('brief.json?v=' + Math.random(), { cache: 'no-store' })
   .then(r => r.json())
   .then(d => {
-    if (d && d.brief && d.brief.length) { BRIEF = d.brief; NEXT = d.next || NEXT; BRIEF_DATE = d.date || ''; renderLists(); }
+    if (d && d.brief && d.brief.length) { BRIEF = d.brief; NEXT = d.next || NEXT; BRIEF_DATE = d.date || ''; KB = d.kb || []; renderLists(); }
   }).catch(function(){});
 
 // ================= VOICE OUT (stern, deep, male) =================
@@ -473,7 +473,17 @@ function handleSpeech(heard) {
     say("Standing down. I'll be right here when you need me.", () => status('Powered — say “Command Lab”', false));
     return;
   }
-  if (/add a task|create a task|task for|tell the|i need the|update the crm|crm update|send an email|remind|log this|make a note|dispatch/.test(heard)) { dispatch(heard); return; }
+  if (/add a task|create a task|task for|tell the|update the crm|crm update|send an email|remind|log this|make a note|dispatch/.test(heard)) { dispatch(heard); return; }
+  // ===== ONBOARD KNOWLEDGE: instant answers, refreshed daily at 7am =====
+  if (KB.length) {
+    let best = null, bestScore = 0;
+    KB.forEach(k => {
+      let score = 0;
+      k.keys.forEach(kw => { if (heard.includes(kw)) score += kw.length; });
+      if (score > bestScore) { bestScore = score; best = k; }
+    });
+    if (best && bestScore >= 4) { say(best.a); return; }
+  }
   if (/brief|briefing|state of|rundown|update me|my day/.test(heard)) { speakBrief(); return; }
   if (/next|tackle|priorit|what should i|focus/.test(heard)) { speakNext(); return; }
   if (/who('| i)?s connected|agents|status report|systems/.test(heard)) {
