@@ -419,6 +419,7 @@ function status(msg, hot) {
 let rec = null, powered = false, awake = false;
 let pendingDispatch = null;
 let sleepTimer = null;
+let pauseTimer = null, speechBuf = '';
 const SLEEP_MS = 25000; // auto-sleep after 25s with no interaction
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 
@@ -466,10 +467,23 @@ function micState(s) {
 function startListening() {
   if (!SR) return;
   rec = new SR();
-  rec.continuous = true; rec.interimResults = false; rec.lang = 'en-US';
+  rec.continuous = true; rec.interimResults = true; rec.lang = 'en-US';
   rec.onresult = (e) => {
-    const heard = e.results[e.results.length - 1][0].transcript.toLowerCase().trim();
-    handleSpeech(heard);
+    // Build the full utterance from all final pieces; wait for a real pause before acting
+    let finalTxt = '', interim = '';
+    for (let i = 0; i < e.results.length; i++) {
+      if (e.results[i].isFinal) finalTxt += e.results[i][0].transcript + ' ';
+      else interim += e.results[i][0].transcript + ' ';
+    }
+    speechBuf = (finalTxt + interim).toLowerCase().trim();
+    // Every time new words arrive, reset the "you're still talking" timer
+    clearTimeout(pauseTimer);
+    pauseTimer = setTimeout(() => {
+      const done = speechBuf.trim();
+      speechBuf = '';
+      try { rec.stop(); } catch(err){}   // reset the transcript buffer so next sentence is clean
+      if (done) handleSpeech(done);
+    }, 1200);
   };
   rec.onend = () => { if (powered && !speaking) { setTimeout(() => { try { rec.start(); } catch(e){} }, 120); } };
   rec.onerror = (ev) => { // 'no-speech'/'network' shouldn't kill the mic — bounce it back up
@@ -487,7 +501,7 @@ function handleSpeech(heard) {
       awake = true; armSleep();
       document.getElementById('stage').classList.add('awake');
       micState('awake'); status('Awake — listening', true);
-      say("Command Lab online. Good to see you. So — what are we doing today? Say brief for the full picture, or ask me what's next.");
+      say("Command Lab. What can I do for you?");
     }
     return;
   }
