@@ -316,7 +316,7 @@ function switchTab(name) {
 }
 
 // ================= DATA (baked at build time) =================
-const BRIEF = [
+var BRIEF = [
   { t: "Valeva backlog — 7 orders unshipped. Booky and warehouse, first thing. Revenue sitting on the floor.", hot: true },
   { t: "Tiffany is leaving for Africa — lock the call THIS WEEK. 6,400 TikTok videos ready. Do not let this one slip.", hot: true },
   { t: "Elmar pricing blocked — need Aidan's packaging costs and fill rate before any 65% margin quote goes out.", hot: false },
@@ -324,21 +324,33 @@ const BRIEF = [
   { t: "Kristen Reed — $10K baby-safe barrier spray. Laura owes scope and R&D quote.", hot: false },
   { t: "Sky & Sol sample follow-up Friday July 10 — client back from vacation on the 11th.", hot: false }
 ];
-const NEXT = [
+var NEXT = [
   "One lane: Booky and the Valeva shipments. Nothing else until that's moving.",
   "Then Tiffany — reply on WhatsApp, lock in the call before she flies.",
   "Everything else is my problem until those two are done."
 ];
 
 // ================= RENDER =================
-const briefList = document.getElementById('briefList');
-BRIEF.forEach((b, i) => {
-  briefList.innerHTML += `<div class="item"><span class="n">${String(i+1).padStart(2,'0')}</span><span>${b.hot ? '<span class="hot-tag">▲ HOT · </span>' : ''}${b.t}</span></div>`;
-});
-const nextList = document.getElementById('nextList');
-NEXT.forEach((n, i) => {
-  nextList.innerHTML += `<div class="item"><span class="n">${i+1}.</span><span>${n}</span></div>`;
-});
+function renderLists(){
+  const briefList = document.getElementById('briefList');
+  briefList.innerHTML = '';
+  BRIEF.forEach((b, i) => {
+    briefList.innerHTML += `<div class="item"><span class="n">${String(i+1).padStart(2,'0')}</span><span>${b.hot ? '<span class="hot-tag">▲ HOT · </span>' : ''}${b.t}</span></div>`;
+  });
+  const nextList = document.getElementById('nextList');
+  nextList.innerHTML = '';
+  NEXT.forEach((n, i) => {
+    nextList.innerHTML += `<div class="item"><span class="n">${i+1}.</span><span>${n}</span></div>`;
+  });
+}
+renderLists();
+var BRIEF_DATE = '';
+// Pull the freshest morning brief (updated daily at 7am by the PLL Consultant agent)
+fetch('brief.json?v=' + Math.random(), { cache: 'no-store' })
+  .then(r => r.json())
+  .then(d => {
+    if (d && d.brief && d.brief.length) { BRIEF = d.brief; NEXT = d.next || NEXT; BRIEF_DATE = d.date || ''; renderLists(); }
+  }).catch(function(){});
 
 // ================= VOICE OUT (stern, deep, male) =================
 let muted = false;
