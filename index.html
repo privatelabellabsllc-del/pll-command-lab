@@ -410,6 +410,7 @@ function status(msg, hot) {
 
 // ================= WAKE WORD / VOICE IN =================
 let rec = null, powered = false, awake = false;
+let pendingDispatch = null;
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 function togglePower() {
@@ -465,6 +466,18 @@ function handleSpeech(heard) {
     }
     return;
   }
+  // pending dispatch confirmation: yes/no gate
+  if (pendingDispatch) {
+    if (/\b(yes|yeah|yep|sure|do it|go ahead|send it|affirmative)\b/.test(heard)) {
+      const q = pendingDispatch; pendingDispatch = null;
+      dispatch(q); return;
+    }
+    if (/\b(no|nope|nah|cancel|never mind|nevermind|negative|forget it|don't)\b/.test(heard)) {
+      pendingDispatch = null;
+      say("Copy. Dropped it. What else?"); return;
+    }
+    pendingDispatch = null; // anything else: treat as new utterance
+  }
   // awake — handle commands
   if (/stand\s*down|go to sleep|power down|sleep now/.test(heard)) {
     awake = false;
@@ -492,7 +505,9 @@ function handleSpeech(heard) {
     return;
   }
   if (/thank|good work|nice/.test(heard)) { say("Anytime. Now go close those deals."); return; }
-  dispatch(heard);
+  // No onboard answer — ask before dispatching
+  pendingDispatch = heard;
+  say("I don't have that onboard. Want me to ask the agent? Yes or no.");
 }
 
 // warm the voice list (Chrome loads async)
