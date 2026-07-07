@@ -502,7 +502,8 @@ function cycleVoice(){
   localStorage.setItem('clVoice', v.name);
   status('Voice ' + (vpIdx+1) + '/' + vpList.length + ': ' + v.name, false);
   speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance('Command Lab. This is ' + v.name + '. What are we doing today?');
+  if (rec) { try { rec.abort(); } catch(e){} }
+  const u = new SpeechSynthesisUtterance('Command Lab voice check. This is ' + v.name + '.');
   u.voice = v; u.pitch = 0.92; u.rate = 0.98;
   u.onstart = () => { if (rec) { try { rec.abort(); } catch(e){} } };
   u.onend = () => { setTimeout(() => { if (powered && rec) { try { rec.start(); } catch(e){} } }, 350); };
