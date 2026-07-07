@@ -203,6 +203,7 @@
     <button class="btn" onclick="speakBrief()">📢 Brief Me</button>
     <button class="btn" onclick="speakNext()">🎯 What's Next</button>
     <button class="btn" onclick="setHook()">🔗 Link</button>
+    <button class="btn" onclick="cycleVoice()">🗣 Voice</button>
     <button class="btn" id="muteBtn" onclick="toggleMute()">🔊 Voice On</button>
   </div>
 
@@ -343,6 +344,8 @@ NEXT.forEach((n, i) => {
 let muted = false;
 function sternVoice() {
   const vs = voiceCache.length ? voiceCache : speechSynthesis.getVoices();
+  const savedName = localStorage.getItem('clVoice');
+  if (savedName) { const sv = vs.find(v => v.name === savedName); if (sv) return sv; }
   // ranked preference: known deep male voices first (iPhone: Aaron/Arthur/Daniel/Fred/Rishi)
   const prefs = [
     /aaron.*enhanced|enhanced.*aaron/i, /daniel.*enhanced|enhanced.*daniel/i, /arthur/i, /aaron/i, /daniel/i,
@@ -471,6 +474,29 @@ function handleSpeech(heard) {
 }
 
 // warm the voice list (Chrome loads async)
+
+// ===== VOICE PICKER: cycle through device's English voices, persist choice =====
+var vpList = null, vpIdx = -1;
+function cycleVoice(){
+  const vs = (voiceCache.length ? voiceCache : speechSynthesis.getVoices()).filter(v => /en/i.test(v.lang));
+  if (!vs.length) { status('No voices loaded yet — power on first, then try again', false); return; }
+  if (!vpList || vpList.length !== vs.length) {
+    vpList = vs;
+    const saved = localStorage.getItem('clVoice');
+    vpIdx = saved ? vpList.findIndex(v => v.name === saved) : -1;
+  }
+  vpIdx = (vpIdx + 1) % vpList.length;
+  const v = vpList[vpIdx];
+  localStorage.setItem('clVoice', v.name);
+  status('Voice ' + (vpIdx+1) + '/' + vpList.length + ': ' + v.name, false);
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance('Command Lab. This is ' + v.name + '. What are we doing today?');
+  u.voice = v; u.pitch = 0.92; u.rate = 0.98;
+  u.onstart = () => { if (rec) { try { rec.abort(); } catch(e){} } };
+  u.onend = () => { setTimeout(() => { if (powered && rec) { try { rec.start(); } catch(e){} } }, 350); };
+  speechSynthesis.speak(u);
+}
+
 function loadVoices(){ const v = speechSynthesis.getVoices(); if (v.length) voiceCache = v; }
 if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = loadVoices; loadVoices(); setTimeout(loadVoices, 500); setTimeout(loadVoices, 1500); }
 
