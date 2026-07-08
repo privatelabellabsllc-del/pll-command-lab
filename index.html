@@ -263,6 +263,7 @@
 <footer>PLL Command Lab</footer>
 
 <script>
+const DEFAULT_HOOK = 'https://webhooks.tasklet.ai/v1/public/webhook/a_h6n0pc3gdpg7qk8fa3r8?token=c5b45e5290b8055e81eca0a586eba826';
 var voiceCache = [];
 var briefOk = null; // null=pending, true/false after fetch
 
@@ -389,6 +390,7 @@ var brainMode = 'off';
 // ================= GAUGES =================
 function drawGauge(id, val, max, color){
   const el = document.getElementById(id);
+  if (!el) return;
   const pct = max ? Math.min(1, val/max) : 0, r = 25, circ = 2*Math.PI*r;
   el.innerHTML = '<svg width="58" height="58"><circle cx="29" cy="29" r="'+r+'" fill="none" stroke="rgba(19,65,86,.6)" stroke-width="3"/>'+
     '<circle cx="29" cy="29" r="'+r+'" fill="none" stroke="'+color+'" stroke-width="3" stroke-linecap="round" stroke-dasharray="'+(circ*pct)+' '+circ+'"/></svg>'+
@@ -421,6 +423,7 @@ function renderLists(){
       '<span class="nm" title="'+b.t.replace(/"/g,'&quot;')+'">'+b.t+'</span><span class="bar"><i style="width:'+w+'%"></i></span></div>';
   });
   const nl = document.getElementById('nextList');
+  if (!nl) return;
   nl.innerHTML = '';
   NEXT.forEach((n, i) => {
     nl.innerHTML += '<div class="row"><span class="tag" style="color:var(--cy2)">'+(i+1)+'.</span><span class="nm" style="white-space:normal">'+n+'</span></div>';
@@ -738,7 +741,6 @@ function loadVoices(){ const v = speechSynthesis.getVoices(); if (v.length) voic
 if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = loadVoices; loadVoices(); setTimeout(loadVoices, 500); setTimeout(loadVoices, 1500); }
 
 // ================= LIVE DISPATCH =================
-const DEFAULT_HOOK = 'https://webhooks.tasklet.ai/v1/public/webhook/a_h6n0pc3gdpg7qk8fa3r8?token=c5b45e5290b8055e81eca0a586eba826';
 function hookUrl(){ return localStorage.getItem('pll_hook') || DEFAULT_HOOK; }
 function setHook(){
   const u = prompt('Paste the Command Lab dispatch link (webhook URL from Tasklet):', hookUrl());
