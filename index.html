@@ -517,13 +517,23 @@ function status(msg, hot) {
   document.getElementById('statusWrap').classList.toggle('hot', !!hot);
 }
 
+// Live on-screen feedback while Sam is talking, so he can see it's hearing him.
+function showLiveTranscript(t) {
+  const el = document.getElementById('statusLine');
+  if (t) { el.textContent = '“' + t + '…'; document.getElementById('statusWrap').classList.add('hot'); }
+}
+
 // ================= WAKE WORD / VOICE IN =================
 let rec = null, powered = false, awake = false;
 let pendingDispatch = null;
 let sleepTimer = null;
 let pauseTimer = null, speechBuf = '';
 let working = false;  // true while thinking/dispatching — mic stays off until the reply comes back
-const SLEEP_MS = 25000;
+const SLEEP_MS = 45000;
+let finalAccum = '';        // survives engine restarts within one awake turn
+let deliberateStop = false; // true only when WE stop rec to finalize a command
+const SILENCE_LONG = 3500;  // slow talker: wait this long after last words
+const SILENCE_SHORT = 1500; // finalize faster if phrase sounds complete
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 const IS_MOBILE = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const IS_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -618,35 +628,67 @@ function dedupeStutter(t) {
   return out.join(' ');
 }
 
+// Does the phrase sound finished? (lets us finalize faster without cutting off pausers)
+function soundsComplete(t) {
+  if (!t) return false;
+  const words = t.split(/\s+/).filter(Boolean);
+  if (words.length < 2) return false;
+  // trailing filler/conjunction => user is probably mid-thought, wait longer
+  if (/\b(and|but|so|or|the|a|to|for|with|that|because|then|also|um|uh|like|i|we|it'?s|its)$/.test(t)) return false;
+  return true;
+}
+
+// Finalize the accumulated turn and send it
+function finalizeTurn() {
+  clearTimeout(pauseTimer);
+  const done = dedupeStutter((finalAccum + ' ' + speechBuf).toLowerCase().trim()).trim();
+  finalAccum = ''; speechBuf = '';
+  deliberateStop = true;
+  try { rec.stop(); } catch(err){}
+  if (done) handleSpeech(done);
+}
+
 function startListening() {
   if (!SR) return;
   rec = new SR();
-  rec.continuous = true; rec.interimResults = true; rec.lang = 'en-US';
+  // iOS Safari is unreliable with continuous; single-shot + seamless restart works better there
+  rec.continuous = IS_IOS ? false : true;
+  rec.interimResults = true; rec.lang = 'en-US';
   rec.onresult = (e) => {
     let finalTxt = '', interim = '';
     for (let i = 0; i < e.results.length; i++) {
       if (e.results[i].isFinal) finalTxt += e.results[i][0].transcript + ' ';
       else interim = e.results[i][0].transcript; // latest guess only — mobile repeats otherwise
     }
-    speechBuf = dedupeStutter((finalTxt + ' ' + interim).toLowerCase().trim());
+    // speechBuf = what's been said in THIS engine session; finalAccum = earlier sessions this turn
+    speechBuf = (finalTxt + ' ' + interim).trim();
+    const shown = dedupeStutter((finalAccum + ' ' + speechBuf).toLowerCase().trim());
+    if (awake) { armSleep(); showLiveTranscript(shown); }   // re-arm sleep on any speech
     clearTimeout(pauseTimer);
     const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|that'?s all)\s*[.!?]?$/;
-    if (GO.test(speechBuf)) {
-      const done = speechBuf.replace(GO, '').trim();
-      speechBuf = '';
+    if (GO.test(shown)) {
+      const done = dedupeStutter(shown.replace(GO, '').trim());
+      finalAccum = ''; speechBuf = '';
       clearTimeout(pauseTimer);
+      deliberateStop = true;
       try { rec.stop(); } catch(err){}
       if (done) handleSpeech(done);
       return;
     }
-    pauseTimer = setTimeout(() => {
-      const done = speechBuf.trim();
-      speechBuf = '';
-      try { rec.stop(); } catch(err){}
-      if (done) handleSpeech(done);
-    }, 1200);
+    // adaptive silence window: shorter if the phrase already sounds complete
+    const wait = soundsComplete(shown) ? SILENCE_SHORT : SILENCE_LONG;
+    pauseTimer = setTimeout(finalizeTurn, wait);
   };
-  rec.onend = () => { if (powered && !speaking && !working) { setTimeout(() => { try { rec.start(); } catch(e){} }, IS_MOBILE ? 300 : 120); } };
+  rec.onend = () => {
+    // Roll this session's words into the turn accumulator so a mid-sentence
+    // engine restart never loses or splits what was already said.
+    if (!deliberateStop && speechBuf) {
+      finalAccum = dedupeStutter((finalAccum + ' ' + speechBuf).toLowerCase().trim());
+      speechBuf = '';
+    }
+    deliberateStop = false;
+    if (powered && !speaking && !working) { setTimeout(() => { try { rec.start(); } catch(e){} }, IS_MOBILE ? 150 : 80); }
+  };
   rec.onerror = (ev) => {
     if (ev && ev.error === 'aborted') return;
     if (ev && (ev.error === 'not-allowed' || ev.error === 'service-not-allowed')) {
