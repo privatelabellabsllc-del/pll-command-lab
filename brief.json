@@ -1,136 +1,269 @@
 {
- "date": "2026-07-07",
+ "date": "2026-07-08",
  "brief": [
   {
-   "t": "Valeva backlog, seven orders unshipped. Booky and warehouse first thing. Confirm trucks are moving before you touch anything else.",
+   "t": "Kyle at Aloe Tallow is about to refund a stuck order. USPS tracking never scanned and he asked twice about inventory. Message Kyle and Booky first, confirm the shipment scan, inventory, and the Valeva status in one go.",
    "hot": true
   },
   {
-   "t": "Payroll is due today in Gusto. Austen is out on his honeymoon and did not reconcile June. Log in and confirm payroll ran.",
+   "t": "Ryan Fiore from EPHIX is confirmed for noon eastern today on Google Meet. Be ready ten minutes early. This is a live deal call.",
    "hot": true
   },
   {
-   "t": "Asphalt work at the building today, flagged high by the landlord. Make sure it doesn't block the Valeva trucks or the move.",
+   "t": "Victor Armendarez replied overnight. He sent an Edge Gel formula and wants turnkey pricing, plus two thousand pieces to restock inventory. Get the quote moving today.",
    "hot": true
   },
   {
-   "t": "Ben Kar at Tavro is your biggest lead, ninety percent, about thirty thousand units. His call was June 30th and no proposal has gone out. Send it today. I'm drafting it.",
+   "t": "Nikkie needs three things. The Oreka commission of eighty five hundred fifty five dollars, second reminder. A yes or no on deformulation projects for a prospective client. And Uberto paid invoice fourteen thirty three, about twenty two hundred forty dollars, needs logging.",
    "hot": true
   },
   {
-   "t": "Tiffany is leaving for Africa. Lock the call this week on WhatsApp. Give me the time slot and I'll send it.",
-   "hot": true
+   "t": "Raw materials quote pricing fix is confirmed live in the CRM. I verified it this morning against a real quote. Send me your corrected raw material prices and I will load them.",
+   "hot": false
   },
   {
-   "t": "Elmar pricing is unblocked. Ronald sent full costing overnight. I'm computing your firm 65 percent margin sell prices today.",
+   "t": "Aidan owes three quotes today. Atlas for Kenna, Pure Good pricing, and Terra Lotus. HALENE also wants bakuchiol tracking. I am on him. Also give me the green light to add the thirty thousand unit cleanser to his Terra Lotus task.",
+   "hot": false
+  },
+  {
+   "t": "Petit Nuage signed the NDA yesterday. Laura is handling. New client warming up nicely.",
    "hot": false
   }
  ],
  "next": [
-  "One lane: Booky and the Valeva shipments. Nothing else until trucks are moving.",
-  "Then run payroll in Gusto and clear the asphalt email with the landlord.",
-  "Then Ben Kar, send the Tavro proposal. Then lock Tiffany's call. Everything else is my lane."
+  "One lane: Kyle and Booky on WhatsApp. Shipment scan, inventory, Valeva. Nothing else first.",
+  "Noon: Ryan Fiore EPHIX call on Google Meet.",
+  "Then Victor's Edge Gel quote and Nikkie's three items.",
+  "Then approve the Terra Lotus task update and the Oreka CRM cleanup so I can execute."
  ],
  "kb": [
   {
-   "keys": ["valeva", "booky", "warehouse", "shipping", "shipment"],
+   "keys": [
+    "valeva",
+    "booky",
+    "warehouse",
+    "shipping",
+    "shipment"
+   ],
    "a": "Valeva, seven orders still unshipped at the warehouse, plus Snail Mucin units need filling. This is your number one today. Get Booky moving first thing, confirm trucks are rolling, and check the stove is off. That's revenue sitting on the floor."
   },
   {
-   "keys": ["payroll", "gusto"],
+   "keys": [
+    "payroll",
+    "gusto"
+   ],
    "a": "Payroll is due today in Gusto for the June 15 to 28 period. Austen your bookkeeper is out on his honeymoon until July 15th and did not reconcile June yet. He pre-set payroll but you need to log in and confirm it actually runs. Five minutes."
   },
   {
-   "keys": ["asphalt", "parking", "building", "landlord", "denise"],
+   "keys": [
+    "asphalt",
+    "parking",
+    "building",
+    "landlord",
+    "denise"
+   ],
    "a": "The landlord, Denise Cook, flagged high priority: Guardian Sealcoat is doing asphalt work in the parking lot at 24600 North Industrial today. Make sure it doesn't block the Valeva trucks or the facility move. Read her email and reply."
   },
   {
-   "keys": ["ben", "kar", "tavro"],
+   "keys": [
+    "ben",
+    "kar",
+    "tavro"
+   ],
    "a": "Ben Kar at Tavro is your biggest lead, ninety percent close, about thirty thousand units, custom beef tallow and argan sun spray. His discovery call was June 30th and no proposal has gone out in a week. This is the single highest value action on your board. I'm drafting the proposal, you review and send."
   },
   {
-   "keys": ["victor", "armendarez", "curl defining"],
-   "a": "Victor Armendarez, eighty two percent close, two thousand units turnkey Curl Defining Cream, formula in hand, NDA signed. You committed to a cost breakdown this week. He's ready and waiting on a number. I'm prepping the pricing for your review."
+   "keys": [
+    "victor",
+    "armendarez",
+    "edge gel"
+   ],
+   "a": "Victor Armendarez sent an Edge Gel formula overnight and wants turnkey pricing, plus two thousand pieces to restock. Quote needs to move today."
   },
   {
-   "keys": ["elmar", "nasibov", "mist", "peptide cream", "serum"],
+   "keys": [
+    "elmar",
+    "nasibov",
+    "mist",
+    "peptide cream",
+    "serum"
+   ],
    "a": "Elmar Nasibov, three products at 65 percent margin. This is now unblocked. Ronald sent full formulation and costing overnight, not just raw ingredients. I'm computing the all-in cost and your firm sell price per unit for the Mist, Serum, and Cream today."
   },
   {
-   "keys": ["nadia", "oreka"],
-   "a": "Nadia at Oreka, heads up. A new order came in yesterday, number 1438, seventeen thousand one hundred ten total with an eight thousand dollar deposit already paid, for a thousand units each of Peptide Cream and Peptide Serum. This changes the earlier cleanup. I'm reconciling it against Q-0007 before I touch anything in the CRM."
+   "keys": [
+    "nadia",
+    "oreka",
+    "commission"
+   ],
+   "a": "Oreka quote Q zero zero zero seven is accepted and Sam confirmed full payment of eighty five hundred fifty five dollars. Pending: log the payment, open the production job for one thousand peptide creams, delete the orphan formula, and pay Nikkie's commission."
   },
   {
-   "keys": ["kristen", "reed", "baby", "barrier spray"],
+   "keys": [
+    "kristen",
+    "reed",
+    "baby",
+    "barrier spray"
+   ],
    "a": "Kristen Reed, new lead, about ten thousand dollar intro, baby-safe skin barrier spray. Laura's intro call happened yesterday and she accepted. I'm creating the CRM task for Laura to deliver the scope and R&D quote, high priority."
   },
   {
-   "keys": ["tiffany", "africa"],
+   "keys": [
+    "tiffany",
+    "africa"
+   ],
    "a": "Tiffany, hot lead, leaving for Africa. She wants to talk this week before she flies, and she's got sixty four hundred TikTok videos and marketing running. Give me a time slot and I'll lock the call on WhatsApp today."
   },
   {
-   "keys": ["kenna", "pure good", "q 0028", "tallow conditioner", "roon"],
+   "keys": [
+    "kenna",
+    "pure good",
+    "q 0028",
+    "tallow conditioner",
+    "roon"
+   ],
    "a": "Kenna gatekeeps everything Pure Good, including quote Q-0028, roughly 329 thousand dollars. Aidan has a task due July 8th for her Cleanser and Hair Mask prices, ten thousand units each. She also sent an updated formula for Roon overnight. If she stalls on pricing, that's your relationship to push."
   },
   {
-   "keys": ["terra lotus", "evelyn"],
-   "a": "Terra Lotus, four products left. Evelyn owes confirmation the raw material samples are ordered, due today July 7th. Aidan owes the quotes by July 8th. Evelyn also owes Raul the two COA documents for STRUCK. I'm holding both to their deadlines and escalating if they stall."
+   "keys": [
+    "terra lotus",
+    "evelyn",
+    "kenna cleanser"
+   ],
+   "a": "Kenna expanded Terra Lotus: thirty thousand units of face cleanser in tubes plus shampoo, conditioner, and body wash samples. Aidan's quote task due today does not include the cleanser yet, Sam needs to approve the update. Evelyn's sample task went overdue July 7."
   },
   {
-   "keys": ["aidan", "aiden"],
-   "a": "Aidan has two high-priority tasks due tomorrow July 8th: Kenna's Pure Good prices, and the Terra Lotus quotes. He's also the blocker on Elmar's packaging costs. I'm watching all of it."
+   "keys": [
+    "aidan",
+    "aiden"
+   ],
+   "a": "Aidan owes three quotes today: Atlas for Kenna, Pure Good pricing, and Terra Lotus. HALENE is also waiting on bakuchiol shipment tracking from him. Being monitored, escalation tonight if they slip."
   },
   {
-   "keys": ["ronald", "chemist"],
+   "keys": [
+    "ronald",
+    "chemist"
+   ],
    "a": "Ronald delivered the full Elmar costing overnight. Still open on his desk: the jojoba substitute, the Smoke Oak and Iron Pine fragrances, and the dish detergent question. Maqui Berry is parked waiting on the client, not stalled."
   },
   {
-   "keys": ["raul", "struck"],
+   "keys": [
+    "raul",
+    "struck"
+   ],
    "a": "Raul at STRUCK, existing client, happy. Two open items: he owes the HRIPT submission form from Rania at SS Analytics, and Evelyn owes him both COA documents. I'm confirming Evelyn sent them and following up with Raul."
   },
   {
-   "keys": ["laura"],
-   "a": "Laura, three things. Her intro call with Kristen Reed happened yesterday, so she now owes Kristen a scope and R&D quote, I'm tasking that. She's on the August trademark deadline for 1 Time Bargain. And her CRM pipeline access is still locked, ticket's with the developer."
+   "keys": [
+    "laura"
+   ],
+   "a": "Laura is handling One Time Bargain bottles and trademark photos, Petit Nuage's NDA which is now signed, and the ASSEA NDA details. Her CRM lockout fix is a fresh sign out and sign in, awaiting her confirmation."
   },
   {
-   "keys": ["crm developer", "laura access", "ticket"],
-   "a": "The CRM developer still hasn't confirmed Laura's pipeline access fix, and the developer agent hit ninety five percent of its daily limit overnight so it may be throttled. I'm re-pinging and I'll verify any fix live plus spot-check for regressions. We never take their word for it."
+   "keys": [
+    "crm developer",
+    "ticket",
+    "raw materials"
+   ],
+   "a": "Raw materials pricing fix is confirmed live, verified against quote Q zero zero two nine. Laura's lockout could not be reproduced, sign out steps were relayed. Two new tickets are open: formula ingredient upload failing on first attempt, and production pipeline tasks opening a blank screen."
   },
   {
-   "keys": ["cold", "follow up", "phoebe", "chantell", "amy saylor", "sarah dale", "ambrose", "silent"],
+   "keys": [
+    "cold",
+    "follow up",
+    "phoebe",
+    "chantell",
+    "amy saylor",
+    "sarah dale",
+    "ambrose",
+    "silent"
+   ],
    "a": "Six high-value leads have gone silent twenty five to forty plus days: Phoebe at eighty percent, Chantell seventy eight, Amy Saylor seventy eight and five thousand units, Sarah Dale, Ambrose, and Veronica. That's thirty to eighty thousand in idle pipeline. I'm drafting re-engagement emails for you to approve in a batch."
   },
   {
-   "keys": ["ephix", "ryan", "fiore", "hawke"],
-   "a": "EPHIX, the kickoff with Hawke Media happened yesterday. Desiree Moore sent follow-up items and shared decks. Ryan Fiore call was proposed for Wednesday noon Eastern. Tell me if you want me to work the follow-ups."
+   "keys": [
+    "ephix",
+    "ryan",
+    "fiore"
+   ],
+   "a": "Ryan Fiore of EPHIX is confirmed for today, Wednesday July 8 at noon eastern, Google Meet. Live deal call, be on time."
   },
   {
-   "keys": ["sky", "sol", "soul"],
+   "keys": [
+    "sky",
+    "sol",
+    "soul"
+   ],
    "a": "Sky and Sol, sample already went out, client's back from vacation Friday July 11th. Your CRM task is due Thursday the 10th. Follow up Friday morning, nothing to do before then. I'll remind you."
   },
   {
-   "keys": ["james", "bailey", "morning glory"],
+   "keys": [
+    "james",
+    "bailey",
+    "morning glory"
+   ],
    "a": "James Bailey, Morning Glory pricing, you left a voicemail, no reply. One thousand MOQ at eight seventy four, five thousand around six dollars against his four to five target. If no reply by end of day July 9th I'm flagging it back to you."
   },
   {
-   "keys": ["loutra", "mason", "depoy", "duplicate"],
+   "keys": [
+    "loutra",
+    "mason",
+    "depoy",
+    "duplicate"
+   ],
    "a": "Loutra, two duplicate quotes for the Mason Depoy Cleanser, both eighty four hundred one dollars, one day apart. I'm identifying the live one and sending the developer a ticket to delete the duplicate."
   },
   {
-   "keys": ["kyle", "aloe", "tallow inventory"],
-   "a": "Kyle from AloeTallow asked on WhatsApp whether we got inventory. Still unresolved, I need to check the CRM and get him an answer."
+   "keys": [
+    "kyle",
+    "aloe",
+    "tallow"
+   ],
+   "a": "Kyle at Aloe Tallow is about to refund a stuck order. USPS tracking never scanned and his inventory question went unanswered twice. Today's first move: message Kyle and Booky, confirm the scan, inventory arrival, and Valeva status."
   },
   {
-   "keys": ["atlas"],
+   "keys": [
+    "atlas"
+   ],
    "a": "Atlas Skin, Kenna's lead, thirty four thousand three hundred, quote Q-2005. That's your lane, direct relationship. No movement by end of week and I'm flagging it."
   },
   {
-   "keys": ["facility", "move", "lease"],
+   "keys": [
+    "facility",
+    "move",
+    "lease"
+   ],
    "a": "New facility, lease closed, move is imminent, and asphalt work is happening at the building today. Move checklist is on my desk to draft, you'll review before anything goes live."
   },
   {
-   "keys": ["password", "security"],
+   "keys": [
+    "password",
+    "security"
+   ],
    "a": "Sam, you shared your Gmail password in chat and there are already new sign-in alerts. Rotate it today, that's not optional. Two minutes."
+  },
+  {
+   "keys": [
+    "assea",
+    "apostolia",
+    "greece"
+   ],
+   "a": "ASSEA needs chemist shipping guidance for refrigerated samples, the NDA which Laura is preparing from Apostolia's details, and HS code documents which Aiden is reviewing. She also asked whether year old fridge samples are worth sending for comparison testing, Ronald to answer."
+  },
+  {
+   "keys": [
+    "petit",
+    "nuage",
+    "kristina"
+   ],
+   "a": "Le Petit Nuage, Kristina Manukyan from Ohio, signed the NDA yesterday. Discovery call happened Tuesday. Laura is point. New client in early stage."
+  },
+  {
+   "keys": [
+    "aran",
+    "scent samples"
+   ],
+   "a": "Aran Beauty wants four scent samples: vanilla, jasmine, rose, and sweet orange. Ronald is being asked for feasibility and timing, then the client gets an update on WhatsApp."
   }
  ]
 }
