@@ -605,6 +605,19 @@ function micState(s) {
   else { chip.textContent = 'OFF'; chip.className = 'err'; }
 }
 
+// Collapse phone speech stutter: "what what are what are my tasks" -> "what are my tasks"
+function dedupeStutter(t) {
+  const w = t.split(/\s+/).filter(Boolean); const out = [];
+  for (let i = 0; i < w.length; i++) {
+    let dup = false;
+    for (let n = Math.min(6, out.length); n >= 1; n--) {
+      if (i + n <= w.length && out.slice(-n).join(' ') === w.slice(i, i + n).join(' ')) { i += n - 1; dup = true; break; }
+    }
+    if (!dup) out.push(w[i]);
+  }
+  return out.join(' ');
+}
+
 function startListening() {
   if (!SR) return;
   rec = new SR();
@@ -613,9 +626,9 @@ function startListening() {
     let finalTxt = '', interim = '';
     for (let i = 0; i < e.results.length; i++) {
       if (e.results[i].isFinal) finalTxt += e.results[i][0].transcript + ' ';
-      else interim += e.results[i][0].transcript + ' ';
+      else interim = e.results[i][0].transcript; // latest guess only — mobile repeats otherwise
     }
-    speechBuf = (finalTxt + interim).toLowerCase().trim();
+    speechBuf = dedupeStutter((finalTxt + ' ' + interim).toLowerCase().trim());
     clearTimeout(pauseTimer);
     const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|that'?s all)\s*[.!?]?$/;
     if (GO.test(speechBuf)) {
@@ -686,7 +699,7 @@ function handleSpeech(heard) {
     });
     if (best && bestScore >= 4) { say(best.a); return; }
   }
-  if (/agenda|top (three|3)|three (things|tasks)|what('| i)?s on|on my plate|main tasks|big (three|3)|today's tasks|whats today|what is today/.test(heard)) { speakAgenda(); return; }
+  if (/agenda|top (three|3)|three (things|tasks)|what('| i)?s on|on my plate|main tasks|big (three|3)|today's tasks|whats today|what is today|(my |the )?tasks?( for)? (today|tomorrow)|tomorrow'?s tasks/.test(heard)) { speakAgenda(); return; }
   if (/brief|briefing|state of|rundown|update me|my day/.test(heard)) { speakBrief(); return; }
   if (/next|tackle|priorit|what should i|focus/.test(heard)) { speakNext(); return; }
   if (/who('| i)?s connected|agents|status report|systems/.test(heard)) {
