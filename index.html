@@ -713,18 +713,35 @@ function handleSpeech(heard) {
   askBrain(heard);
 }
 
-// ===== AI BRAIN =====
+// ===== AI BRAIN — instant onboard answers, no dispatch =====
 function askBrain(heard){
-  const url = hookUrl();
-  if (!url) { say("I'd need the brain line connected first. Tap the link button at the bottom and paste the dispatch URL."); return; }
   working = true; try { if (rec) rec.stop(); } catch(e){}
   status('Thinking…', true); coreState('thinking','think');
   clog('→ AI Brain: ' + heard);
+  var sys = 'You are Command Lab, the spoken voice assistant for Sam, CEO of Private Label Labs, a private label skincare and cosmetics manufacturer. Answer the question directly in one to three short spoken sentences. Plain conversational text only. No markdown, no emojis, no lists, no headings.';
+  var ctrl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
+  var timer = setTimeout(function(){ if (ctrl) ctrl.abort(); }, 15000);
+  fetch('https://text.pollinations.ai/' + encodeURIComponent(heard) + '?system=' + encodeURIComponent(sys), ctrl ? { signal: ctrl.signal } : {})
+    .then(function(r){ clearTimeout(timer); if (!r.ok) throw new Error('bad'); return r.text(); })
+    .then(function(txt){
+      txt = (txt || '').replace(/[*#_`>|]/g, ' ').replace(/\s+/g, ' ').trim();
+      if (txt.length < 2) throw new Error('empty');
+      if (txt.length > 700) txt = txt.slice(0, txt.lastIndexOf('.', 700) + 1 || 700);
+      working = false; status(awake ? 'Awake — listening' : 'Standing by', awake);
+      clog('AI Brain: ' + txt, 'hi');
+      say(txt);
+    })
+    .catch(function(){ clearTimeout(timer); brainFallback(heard); });
+}
+// Fallback: brain service unreachable — route the question to the consultant agent
+function brainFallback(heard){
+  const url = hookUrl();
+  if (!url) { working = false; say("I couldn't reach my brain service and the dispatch line isn't linked. Try again in a moment."); return; }
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ source: 'pll-command-lab', kind: 'ai-question', command: heard, routed_to: 'AI Brain', ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { say('Let me think on that.'); status('Thinking…', true); coreState('thinking','think'); pollAnswer(new Date().toISOString()); }
-               else { working = false; say('Brain line rejected that. Check the link setup.'); } })
-  .catch(() => { working = false; say('Could not reach the brain line. Check your connection.'); });
+    body: JSON.stringify({ source: 'pll-command-lab', kind: 'ai-question', command: heard, routed_to: 'AI Brain (fallback)', ts: new Date().toISOString() }) })
+  .then(r => { if (r.ok) { say('My onboard brain is down, so I sent that to the consultant. Give it a minute.'); status('Thinking…', true); coreState('thinking','think'); pollAnswer(new Date().toISOString()); }
+               else { working = false; say('Brain service and dispatch line are both down. Try again shortly.'); } })
+  .catch(() => { working = false; say('Brain service and dispatch line are both down. Try again shortly.'); });
 }
 
 // ===== VOICE PICKER =====
