@@ -10,12 +10,13 @@
 <link rel="manifest" href="manifest.json">
 <style>
   :root{
-    --bg:#04090f; --panel:#071019; --panel2:#081420;
-    --line:#0e2c3d; --line2:#134156;
-    --cy:#8fe3ff; --cy2:#4fc3e8; --dim:#3d6a80; --dimmer:#28495c;
-    --green:#3dff9c; --amber:#ffc14d; --red:#ff5d5d;
-    --glow:rgba(90,210,255,0.25);
-    --mono:'Courier New',ui-monospace,SFMono-Regular,Menlo,monospace;
+    --bg:#040f09; --panel:#071911; --panel2:#082014;
+    --line:#0e3d26; --line2:#135636;
+    --cy:#a9ffd2; --cy2:#34ff96; --dim:#3d805c; --dimmer:#285c42;
+    --green:#34ff96; --amber:#ffc14d; --red:#ff5d5d;
+    --glow:rgba(52,255,150,0.25);
+    --mono:'Segoe UI',system-ui,-apple-system,sans-serif;
+    --term:'Courier New',ui-monospace,SFMono-Regular,Menlo,monospace;
   }
   *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
   html,body{height:100%;}
@@ -49,7 +50,7 @@
   .brand{font-size:14px; font-weight:700; letter-spacing:3px; white-space:nowrap;}
   .brand b{color:#fff;} .brand span{color:var(--cy2);} .brand em{color:var(--dim); font-style:normal; letter-spacing:2px; font-size:11px;}
   .clockbox{display:flex; align-items:baseline; gap:10px; border-left:1px solid var(--line2); padding-left:16px;}
-  #clock{font-size:26px; color:#dff4ff; text-shadow:0 0 12px var(--glow); letter-spacing:3px;}
+  #clock{font-size:26px; color:#dfffef; text-shadow:0 0 12px var(--glow); letter-spacing:3px;}
   #dateline{font-size:10px; color:var(--dim); letter-spacing:2px; text-transform:uppercase;}
   .chips{display:flex; gap:6px; flex-wrap:wrap; margin-left:auto;}
   .chip{
@@ -82,7 +83,7 @@
   .gauge{text-align:center; width:74px;}
   .gring{position:relative; width:58px; height:58px; margin:0 auto;}
   .gring svg{transform:rotate(-90deg);}
-  .gval{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:13px; color:#eaf8ff;}
+  .gval{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:13px; color:#eaffef;}
   .glab{font-size:8px; letter-spacing:1.5px; color:var(--dim); text-transform:uppercase; margin-top:6px;}
   /* pipeline rows */
   .row{display:flex; align-items:center; gap:8px; padding:7px 0; border-bottom:1px dashed rgba(19,65,86,.4); font-size:11px;}
@@ -101,7 +102,7 @@
     padding:8px 12px; min-width:150px;
   }
   .hud .hl{font-size:8px; letter-spacing:2px; color:var(--dim); text-transform:uppercase;}
-  .hud .hv{font-size:22px; color:#eaf8ff; letter-spacing:2px; text-shadow:0 0 10px var(--glow); margin-top:2px;}
+  .hud .hv{font-size:22px; color:#eaffef; letter-spacing:2px; text-shadow:0 0 10px var(--glow); margin-top:2px;}
   .statebox{
     position:absolute; right:14px; top:14px; z-index:3; text-align:right;
   }
@@ -123,7 +124,7 @@
   .wave span:nth-child(4){animation-delay:.3s}.wave span:nth-child(5){animation-delay:.4s}
   @keyframes wv{0%,100%{transform:scaleY(.4)}50%{transform:scaleY(1.6)}}
   /* ── console log ── */
-  .console{height:190px; overflow-y:auto; font-size:10px; line-height:1.7; padding:8px 12px;}
+  .console{height:190px; overflow-y:auto; font-size:10px; line-height:1.7; padding:8px 12px; font-family:var(--term);}
   .console div{color:var(--dim); word-break:break-word;}
   .console div b{color:var(--cy2); font-weight:400;}
   .console div.hi{color:#bfe6f8;}
@@ -160,6 +161,24 @@
     .chips{margin-left:0; width:100%;}
     .stage{min-height:300px;}
   }
+
+  /* living color states */
+  #brain{transition:filter 1.2s ease;}
+  body[data-mood="off"] #brain{filter:saturate(.55) brightness(.65);}
+  body[data-mood="idle"] #brain{filter:saturate(1.1);}
+  body[data-mood="awake"] #brain{filter:saturate(1.55) brightness(1.12);}
+  body[data-mood="think"] #brain{filter:saturate(1.65) brightness(1.18);}
+  body[data-mood="speak"] #brain{filter:saturate(1.35) brightness(1.3) hue-rotate(-14deg);}
+  body.night .panel{filter:brightness(.92) saturate(.9);}
+  body.dimmed .grid, body.dimmed .controls{filter:brightness(.55) saturate(.8); transition:filter 1.4s ease;}
+  .grid,.controls{transition:filter 1.4s ease;}
+  /* services */
+  .svc{display:flex; align-items:center; gap:8px; padding:5px 0; border-bottom:1px dashed var(--line); font-size:12px;}
+  .svc .sn{flex:1; color:var(--cy);}
+  .pill{font-size:9px; letter-spacing:1px; padding:2px 7px; border-radius:9px; font-weight:700;}
+  .pill.ok{background:rgba(52,255,150,.12); color:var(--green); border:1px solid rgba(52,255,150,.4);}
+  .pill.err{background:rgba(255,93,93,.1); color:var(--red); border:1px solid rgba(255,93,93,.4);}
+  .pill.warn{background:rgba(255,193,77,.1); color:var(--amber); border:1px solid rgba(255,193,77,.4);}
 </style>
 </head>
 <body>
@@ -178,6 +197,7 @@
     <div id="dateline">—</div>
   </div>
   <div class="chips">
+    <span class="chip">HOT/ITEMS <b id="chipCount" class="warn">0/0</b></span>
     <span class="chip">AGENT <b id="chipAgent" class="err">SET</b></span>
     <span class="chip">BRIEF <b id="chipBrief" class="warn">…</b></span>
     <span class="chip">MIC <b id="chipMic" class="err">OFF</b></span>
@@ -223,6 +243,8 @@
       <div class="agent"><span class="adot a"></span><span class="an">CRM Developer</span><span class="ar">via UPDATE REQUEST</span></div>
       <div class="agent"><span class="adot a"></span><span class="an">Email Agent</span><span class="ar">via shared inbox</span></div>
     </div>
+    <h2>Services <small>CONNECT</small></h2>
+    <div class="pbody" id="svcList"></div>
     <h2>Ops Log <small>LIVE FEED</small></h2>
     <div class="console" id="console"></div>
   </div>
@@ -247,6 +269,29 @@
 
 <script>
 var voiceCache = [];
+var briefOk = null; // null=pending, true/false after fetch
+
+function renderServices(){
+  const items = [
+    ['Dispatch Line', !!hookUrl()],
+    ['Morning Brief', briefOk === null ? 'warn' : briefOk],
+    ['AI Brain', !!hookUrl()],
+    ['CRM Route', !!hookUrl()],
+    ['Mic / Wake Word', !!(window.SpeechRecognition || window.webkitSpeechRecognition)],
+    ['Voice Engine', 'speechSynthesis' in window]
+  ];
+  document.getElementById('svcList').innerHTML = items.map(function(it){
+    const st = it[1];
+    const cls = st === 'warn' ? 'warn' : (st ? 'ok' : 'err');
+    const lbl = st === 'warn' ? 'SYNCING' : (st ? 'CONNECTED' : 'OFFLINE');
+    return '<div class="svc"><span class="sn">'+it[0]+'</span><span class="pill '+cls+'">'+lbl+'</span></div>';
+  }).join('');
+}
+
+function daypart(){ const h = new Date().getHours(); return h < 12 ? 'Good morning' : h < 18 ? 'Good afternoon' : 'Good evening'; }
+function applyNight(){ const h = new Date().getHours(); document.body.classList.toggle('night', h >= 21 || h < 6); }
+applyNight(); setInterval(applyNight, 60000);
+
 
 // ================= CLOCK =================
 (function(){
@@ -280,6 +325,7 @@ function coreState(txt, mode){ // mode: off|idle|awake|think|speak
   cs.classList.toggle('hot', mode==='awake'||mode==='think'||mode==='speak');
   td.className = 'tdot' + (mode==='off' ? '' : (mode==='idle' ? ' on' : ' amber'));
   brainMode = mode || 'off';
+  document.body.dataset.mood = brainMode;
 }
 
 // ================= PARTICLE BRAIN (sphere network) =================
@@ -322,7 +368,7 @@ var brainMode = 'off';
       for (let j=i+1;j<proj.length;j++){
         const dx=proj[i].x-proj[j].x, dy=proj[i].y-proj[j].y, d=Math.hypot(dx,dy);
         if (d<LINK){
-          ctx.strokeStyle = 'rgba(90,200,255,'+(0.10*(1-d/LINK)*alpha)+')';
+          ctx.strokeStyle = 'rgba(80,255,170,'+(0.10*(1-d/LINK)*alpha)+')';
           ctx.beginPath(); ctx.moveTo(proj[i].x,proj[i].y); ctx.lineTo(proj[j].x,proj[j].y); ctx.stroke();
         }
       }
@@ -330,13 +376,13 @@ var brainMode = 'off';
     // nodes
     for (const q of proj){
       const front = q.z>0;
-      ctx.fillStyle = front ? 'rgba(160,235,255,'+(0.85*alpha)+')' : 'rgba(70,140,180,'+(0.4*alpha)+')';
-      if (front){ ctx.shadowColor='rgba(120,220,255,0.9)'; ctx.shadowBlur=5*devicePixelRatio; }
+      ctx.fillStyle = front ? 'rgba(175,255,215,'+(0.85*alpha)+')' : 'rgba(60,180,125,'+(0.4*alpha)+')';
+      if (front){ ctx.shadowColor='rgba(90,255,170,0.9)'; ctx.shadowBlur=5*devicePixelRatio; }
       ctx.beginPath(); ctx.arc(q.x,q.y,(front?1.6:1.1)*devicePixelRatio*q.sc,0,Math.PI*2); ctx.fill();
       ctx.shadowBlur=0;
     }
     // outer dashed halo
-    ctx.strokeStyle='rgba(60,130,170,'+(0.35*alpha)+')'; ctx.setLineDash([3*devicePixelRatio,6*devicePixelRatio]);
+    ctx.strokeStyle='rgba(50,170,110,'+(0.35*alpha)+')'; ctx.setLineDash([3*devicePixelRatio,6*devicePixelRatio]);
     ctx.lineWidth=devicePixelRatio;
     ctx.beginPath(); ctx.arc(CX,CY,R*1.25,0,Math.PI*2); ctx.stroke();
     ctx.setLineDash([]);
@@ -389,8 +435,11 @@ function renderLists(){
   drawGauge('g2', BRIEF.length, Math.max(BRIEF.length,1), 'var(--cy2)');
   drawGauge('g3', 3, 3, 'var(--green)');
   document.getElementById('laneVal').textContent = '1 / ' + BRIEF.length;
+  document.getElementById('chipCount').textContent = hot + '/' + BRIEF.length;
+  document.getElementById('chipCount').className = hot > 0 ? 'warn' : 'ok';
 }
 renderLists();
+renderServices();
 var BRIEF_DATE = ''; var KB = [];
 fetch('brief.json?v=' + Math.random(), { cache: 'no-store' })
   .then(r => r.json())
@@ -398,11 +447,13 @@ fetch('brief.json?v=' + Math.random(), { cache: 'no-store' })
     if (d && d.brief && d.brief.length) {
       BRIEF = d.brief; NEXT = d.next || NEXT; BRIEF_DATE = d.date || ''; KB = d.kb || [];
       renderLists();
+      briefOk = true; renderServices();
       document.getElementById('chipBrief').textContent = 'OK'; document.getElementById('chipBrief').className = 'ok';
       document.getElementById('syncTag').textContent = 'SYNC ' + (BRIEF_DATE || 'OK');
       clog('Brief synced' + (BRIEF_DATE ? ' · ' + BRIEF_DATE : '') + ' — ' + BRIEF.length + ' items.', 'hi');
     }
   }).catch(function(){
+    briefOk = false; renderServices();
     document.getElementById('chipBrief').textContent = 'ERR'; document.getElementById('chipBrief').className = 'err';
     clog('Brief sync failed — using baked data.', 'warn');
   });
@@ -480,6 +531,7 @@ const IS_MOBILE = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const IS_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 function armSleep() {
+  document.body.classList.remove('dimmed');
   clearTimeout(sleepTimer);
   sleepTimer = setTimeout(goToSleep, SLEEP_MS);
 }
@@ -489,8 +541,9 @@ function goToSleep() {
   clearTimeout(sleepTimer);
   micState('listening');
   coreState('listening','idle');
+  document.body.classList.add('dimmed');
   status('Powered — say “Command Lab”', false);
-  clog('Auto-sleep — wake word required.');
+  clog('Auto-sleep — deck dimmed. Wake word required.');
 }
 
 function togglePower() {
@@ -499,15 +552,16 @@ function togglePower() {
     document.getElementById('powerBtn').textContent = '⏻ Power Off';
     document.getElementById('powerBtn').classList.add('hot');
     if ('speechSynthesis' in window) { speechSynthesis.getVoices(); }
-    if (SR) { startListening(); micState('listening'); coreState('listening','idle'); status('Powered — say “Command Lab”', false); clog('Power ON — mic live, wake word armed.', 'hi'); }
-    else { micState('unsupported'); coreState('no mic','idle'); status('Mic not supported in this browser — buttons still work', false); }
+    if (SR) { startListening(); micState('listening'); }
+    else { micState('unsupported'); }
+    bootSeq();
   } else {
     powered = false; awake = false; pendingDispatch = null; clearTimeout(sleepTimer);
     document.getElementById('powerBtn').textContent = '⚡ Power On';
     document.getElementById('powerBtn').classList.remove('hot');
     if (rec) { try { rec.stop(); } catch(e){} rec = null; }
     speechSynthesis.cancel();
-    micState('off'); coreState('offline','off'); status('Standing by — power on, then say “Command Lab”', false);
+    micState('off'); coreState('offline','off'); document.body.classList.remove('dimmed'); renderServices(); status('Standing by — power on, then say “Command Lab”', false);
     clog('Power OFF.');
   }
 }
@@ -523,6 +577,27 @@ document.getElementById('stage').addEventListener('click', () => {
   status('Awake — talk to me', false);
   clog('Tap-to-talk — awake, mic live.');
 });
+
+function bootSeq(){
+  document.body.classList.remove('dimmed');
+  coreState('booting','think');
+  const lines = [
+    ['CORE ONLINE — spinning up neural lattice…','hi'],
+    ['Dispatch line… ' + (hookUrl() ? 'CONNECTED' : 'OFFLINE'), hookUrl() ? 'hi' : 'warn'],
+    ['Morning brief… ' + (briefOk ? 'SYNCED — ' + BRIEF.length + ' items' : briefOk === null ? 'SYNCING' : 'BAKED FALLBACK'), 'hi'],
+    ['Agent grid… 3 AGENTS ON CALL','hi'],
+    ['Voice systems… ' + ('speechSynthesis' in window ? 'LIVE' : 'N/A'),'hi'],
+    ['All systems nominal.','hi']
+  ];
+  lines.forEach(function(l, i){ setTimeout(function(){ clog(l[0], l[1]); }, 250 + i*350); });
+  setTimeout(function(){
+    renderServices();
+    if (!SR) { coreState('no mic','idle'); status('Mic not supported in this browser — buttons still work', false); return; }
+    coreState('listening','idle');
+    status('Powered — say “Command Lab”', false);
+    say(daypart() + ", Sam. Command Lab online.");
+  }, 250 + lines.length*350);
+}
 
 function micState(s) {
   const chip = document.getElementById('chipMic');
