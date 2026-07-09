@@ -240,6 +240,8 @@
       <div class="agent"><span class="adot a"></span><span class="an">Email Agent</span><span class="ar">via shared inbox</span></div>
     </div>
     <div class="pbody" id="svcList" style="display:none"></div>
+    <h2>Dispatch Log <small>LAST 10</small></h2>
+    <div class="pbody" id="dlog" style="max-height:160px;overflow-y:auto"></div>
     <h2>Log</h2>
     <div class="console" id="console"></div>
   </div>
@@ -438,23 +440,44 @@ function renderLists(){
 }
 renderLists();
 renderServices();
-var BRIEF_DATE = ''; var KB = [];
-fetch('brief.json?v=' + Math.random(), { cache: 'no-store' })
-  .then(r => r.json())
-  .then(d => {
-    if (d && d.brief && d.brief.length) {
-      BRIEF = d.brief; NEXT = d.next || NEXT; BRIEF_DATE = d.date || ''; KB = d.kb || [];
-      renderLists();
-      briefOk = true; renderServices();
-      document.getElementById('chipBrief').textContent = 'OK'; document.getElementById('chipBrief').className = 'ok';
-      document.getElementById('syncTag').textContent = 'SYNC ' + (BRIEF_DATE || 'OK');
-      clog('Brief synced' + (BRIEF_DATE ? ' · ' + BRIEF_DATE : '') + ' — ' + BRIEF.length + ' items.', 'hi');
-    }
-  }).catch(function(){
-    briefOk = false; renderServices();
-    document.getElementById('chipBrief').textContent = 'ERR'; document.getElementById('chipBrief').className = 'err';
-    clog('Brief sync failed — using baked data.', 'warn');
-  });
+var BRIEF_DATE = ''; var KB = []; var BRIEF_TS = null; var BRIEF_EXTRA = {};
+function checkFreshness(){
+  // Amber staleness warning if the pack is older than 26h (spec rule).
+  const tag = document.getElementById('syncTag');
+  let stale = false, ageTxt = BRIEF_DATE || 'OK';
+  if (BRIEF_TS) {
+    const hrs = (Date.now() - new Date(BRIEF_TS).getTime()) / 3600000;
+    stale = hrs > 26;
+    ageTxt = Math.round(hrs) + 'H AGO';
+  } else if (BRIEF_DATE) {
+    const today = new Date().toISOString().slice(0,10);
+    stale = BRIEF_DATE < today; // no timestamp — treat a past-dated pack as stale
+  }
+  tag.textContent = (stale ? '⚠ STALE ' : 'SYNC ') + ageTxt;
+  tag.style.color = stale ? 'var(--amber)' : '';
+  if (stale) clog('Data pack is stale (' + ageTxt + ') — ask the agent to refresh the brief.', 'warn');
+}
+function loadBrief(){
+  return fetch('brief.json?v=' + Math.random(), { cache: 'no-store' })
+    .then(r => r.json())
+    .then(d => {
+      if (d && d.brief && d.brief.length) {
+        BRIEF = d.brief; NEXT = d.next || NEXT; BRIEF_DATE = d.date || ''; KB = d.kb || [];
+        BRIEF_TS = d.ts || null;
+        BRIEF_EXTRA = { signal: d.signal, redflags: d.redflags, team: d.team, pipeline: d.pipeline, noise: d.noise };
+        renderLists();
+        briefOk = true; renderServices();
+        document.getElementById('chipBrief').textContent = 'OK'; document.getElementById('chipBrief').className = 'ok';
+        checkFreshness();
+        clog('Brief synced' + (BRIEF_DATE ? ' · ' + BRIEF_DATE : '') + ' — ' + BRIEF.length + ' items.', 'hi');
+      }
+    }).catch(function(){
+      briefOk = false; renderServices();
+      document.getElementById('chipBrief').textContent = 'ERR'; document.getElementById('chipBrief').className = 'err';
+      clog('Brief sync failed — using baked data.', 'warn');
+    });
+}
+loadBrief();
 if (localStorage.getItem('pll_hook')) { document.getElementById('chipAgent').textContent='LIVE'; document.getElementById('chipAgent').className='ok'; }
 
 // ================= VOICE OUT (stern, deep, male) =================
@@ -496,11 +519,37 @@ function toggleMute() {
 }
 
 // ================= BRIEF / NEXT =================
+function kbAnswer(key){
+  const k = (KB || []).find(x => x.keys && x.keys.indexOf(key) !== -1);
+  return k ? k.a : '';
+}
 function speakBrief() {
   status("Delivering the brief", true);
-  const hot = BRIEF.filter(b => b.hot).map(b => b.t).join(' ');
-  const rest = BRIEF.filter(b => !b.hot).slice(0, 3).map(b => b.t).join(' ');
-  say(`Alright, here's where Private Label Labs stands today. First, the priorities: ${hot} Also on the board: ${rest} That's the picture. Let's get after it.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
+  const X = BRIEF_EXTRA || {};
+  // 1 — SIGNAL: top 3 must-do (prefer structured field, else hot items)
+  const signal = (X.signal && X.signal.length)
+    ? X.signal.slice(0,3).join(' ')
+    : BRIEF.filter(b => b.hot).slice(0,3).map(b => b.t).join(' ');
+  // 2 — RED FLAGS: anything risky
+  const riskRx = /overdue|blocked|dispute|disputing|angry|refund|silent|stalled|lockout|late|missed/i;
+  const redflags = (X.redflags && X.redflags.length)
+    ? X.redflags.join(' ')
+    : BRIEF.filter(b => riskRx.test(b.t)).slice(0,3).map(b => b.t).join(' ');
+  // 3 — TEAM SCOREBOARD
+  const team = (X.team && X.team.length) ? X.team.join(' ') : kbAnswer('aidan');
+  // 4 — PIPELINE PULSE
+  const pipeline = X.pipeline || kbAnswer('pipeline');
+  // 5 — NOISE it filtered
+  const held = Math.max(0, BRIEF.length - BRIEF.filter(b => b.hot).slice(0,3).length);
+  const noise = X.noise || ("I'm holding " + held + " lower-priority items. Ask if you want them.");
+
+  let script = "Good morning, Sam. Here's where Private Label Labs stands today. ";
+  script += "First, your signal — the three that matter most. " + signal + " ";
+  if (redflags) script += "Red flags. " + redflags + " ";
+  if (team) script += "On the team. " + team + " ";
+  if (pipeline) script += "Pipeline. " + pipeline + " ";
+  script += noise + " That's the picture. Let's get after it.";
+  say(script, () => status(awake ? "Awake — listening" : "Standing by", awake));
 }
 function speakAgenda() {
   status("Reading your top three", true);
@@ -714,6 +763,9 @@ function handleSpeech(heard) {
     return;
   }
   clog('› ' + heard, 'hi');
+  if (pendingRetry && /\b(retry|try again|resend|send it again)\b/.test(heard)) {
+    const q = pendingRetry; pendingRetry = null; dispatch(q); return;
+  }
   if (pendingDispatch) {
     if (/\b(yes|yeah|yep|sure|do it|go ahead|send it|affirmative)\b/.test(heard)) {
       const q = pendingDispatch; pendingDispatch = null;
@@ -759,6 +811,10 @@ function handleSpeech(heard) {
 function askBrain(heard){
   working = true; try { if (rec) rec.stop(); } catch(e){}
   status('Thinking…', true); coreState('thinking','think');
+  // spoken filler so Sam knows it heard him while the brain thinks (~5-8s)
+  if (!muted && 'speechSynthesis' in window) {
+    try { const f = new SpeechSynthesisUtterance('Let me think about that.'); f.voice = sternVoice(); f.pitch = 0.92; f.rate = 1.0; speechSynthesis.speak(f); } catch(e){}
+  }
   clog('→ AI Brain: ' + heard);
   var sys = 'You are Command Lab, the spoken voice assistant for Sam, CEO of Private Label Labs, a private label skincare and cosmetics manufacturer. Answer the question directly in one to three short spoken sentences. Plain conversational text only. No markdown, no emojis, no lists, no headings.';
   var ctrl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
@@ -823,27 +879,45 @@ function setHook(){
   }
 }
 function targetAgent(t){
-  if (/crm|developer|update the|bug|fix/.test(t)) return 'CRM Developer';
-  if (/email|inbox|send.*mail/.test(t)) return 'Email Agent';
+  if (/crm|developer|bug|fix|broken|feature|pipeline build|ticket/.test(t)) return 'CRM Developer';
+  if (/email|inbox|outlook|send.*mail|draft.*(reply|email|mail)|check.*mail/.test(t)) return 'Email Agent';
   return 'PLL Consultant';
 }
+// The routing key the agent side reads to know where to send the command.
+function targetKey(agent){
+  if (agent === 'CRM Developer') return 'crm-developer';
+  if (agent === 'Email Agent') return 'email';
+  return 'consultant';
+}
+// Commands that CHANGE data get a spoken repeat-back before firing.
+function isChangeCommand(t){
+  return /\b(add|create|assign|mark|update|set|log|make|remind|tell|send|delete|remove|schedule|book|complete|draft)\b/.test(t);
+}
+var pendingRetry = null;
 function dispatch(heard){
   const url = hookUrl();
   if (!url) { say("I heard you, but the dispatch line isn't connected yet. Tap the link button at the bottom and paste in the dispatch URL — then I can route commands to the team."); return; }
   const agent = targetAgent(heard);
+  const tgt = targetKey(agent);
+  const logId = dlogAdd(heard, agent);
   working = true; try { if (rec) rec.stop(); } catch(e){}
+  // Repeat-back for data-changing actions so Sam can catch a misheard command.
+  const ack = isChangeCommand(heard)
+    ? ("Got it — " + heard + ". Sending to " + agent + " now.")
+    : ("On it. Routing that to " + agent + " now.");
+  dlogSet(logId, 'DISPATCHED');
   status('Dispatching to ' + agent + '…', true); coreState('working','think');
-  clog('→ Dispatch [' + agent + ']: ' + heard, 'warn');
+  clog('→ Dispatch [' + agent + ' · ' + tgt + ']: ' + heard, 'warn');
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ source: 'pll-command-lab', command: heard, routed_to: agent, ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { say('On it. I\'ll take it from here and let you know when it\'s done.'); status('Working… will report when done', true); coreState('working','think'); pollAnswer(new Date().toISOString()); }
-               else { working = false; say('Dispatch line rejected it. Check the link setup.'); } })
-  .catch(() => { working = false; say('Could not reach the dispatch line. Check your connection.'); });
+    body: JSON.stringify({ source: 'pll-command-lab', command: heard, target: tgt, routed_to: agent, ts: new Date().toISOString() }) })
+  .then(r => { if (r.ok) { dlogSet(logId, 'DELIVERED'); say(ack + " I'll report back when it's done."); status('Working… will report when done', true); coreState('working','think'); pollAnswer(new Date().toISOString(), logId); }
+               else { working = false; dlogSet(logId, 'FAILED'); pendingRetry = heard; say('The dispatch line rejected that. Say "retry" and I\'ll send it again.'); } })
+  .catch(() => { working = false; dlogSet(logId, 'FAILED'); pendingRetry = heard; say('Could not reach the dispatch line. Say "retry" and I\'ll send it again.'); });
 }
 
 // ===== ANSWER READ-BACK =====
 var pollTimer = null;
-function pollAnswer(sinceTs){
+function pollAnswer(sinceTs, logId){
   if (pollTimer) clearInterval(pollTimer);
   var tries = 0;
   pollTimer = setInterval(function(){
@@ -855,6 +929,7 @@ function pollAnswer(sinceTs){
         if (a && a.ts && a.ts > sinceTs && a.text) {
           clearInterval(pollTimer); pollTimer = null;
           working = false;
+          if (logId) dlogSet(logId, 'ANSWERED');
           status('Reply received ✓', true);
           clog('← Reply received.', 'hi');
           say(a.text);
@@ -862,6 +937,52 @@ function pollAnswer(sinceTs){
       }).catch(function(){});
   }, 5000);
 }
+
+// ================= DISPATCH LOG (status chips) =================
+var dlogItems = [];
+function dlogAdd(cmd, agent){
+  const id = 'd' + Date.now() + Math.floor(Math.random()*1000);
+  dlogItems.unshift({ id: id, cmd: cmd, agent: agent, state: 'HEARD', t: new Date() });
+  while (dlogItems.length > 10) dlogItems.pop();
+  dlogRender();
+  return id;
+}
+function dlogSet(id, state){
+  const it = dlogItems.find(x => x.id === id);
+  if (it) { it.state = state; dlogRender(); }
+}
+function dlogRender(){
+  const el = document.getElementById('dlog');
+  if (!el) return;
+  if (!dlogItems.length){ el.innerHTML = '<div style="color:var(--dimmer);font-size:10px;letter-spacing:1px">No commands yet.</div>'; return; }
+  el.innerHTML = dlogItems.map(function(it){
+    const ts = [it.t.getHours(),it.t.getMinutes()].map(x=>String(x).padStart(2,'0')).join(':');
+    const cls = it.state==='FAILED' ? 'err' : (it.state==='ANSWERED'||it.state==='DELIVERED') ? 'ok' : 'warn';
+    const cmd = it.cmd.length > 46 ? it.cmd.slice(0,46)+'…' : it.cmd;
+    return '<div class="dl"><div class="dlhead"><span class="dltime">'+ts+'</span>'+
+      '<span class="dlagent">'+it.agent+'</span>'+
+      '<span class="pill '+cls+'">'+it.state+'</span></div>'+
+      '<div class="dlcmd" title="'+it.cmd.replace(/"/g,'&quot;')+'">'+cmd+'</div></div>';
+  }).join('');
+}
+dlogRender();
+
+// ================= KIOSK RESILIENCE =================
+// Nightly self-refresh (~4am) so an 8+ hour unattended run stays healthy.
+setInterval(function(){
+  const n = new Date();
+  if (n.getHours() === 4 && n.getMinutes() < 2) { clog('Nightly refresh.', 'hi'); setTimeout(function(){ location.reload(); }, 1500); }
+}, 60000);
+// When the tab regains focus after throttling, make sure the mic is actually running.
+document.addEventListener('visibilitychange', function(){
+  if (!document.hidden && powered && !speaking && !working && SR) {
+    try { if (rec) rec.abort(); } catch(e){}
+    setTimeout(function(){ try { startListening(); } catch(e){} }, 200);
+    clog('Tab active — mic re-armed.');
+  }
+});
+// Re-pull the brief every few hours so a machine left on overnight refreshes its data.
+setInterval(function(){ if (!document.hidden) loadBrief(); }, 3*3600000);
 </script>
 </body>
 </html>
