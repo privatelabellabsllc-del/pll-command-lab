@@ -642,9 +642,9 @@ function say(text, cb) {
   speechSynthesis.cancel();
   const u = new SpeechSynthesisUtterance(text);
   u.voice = sternVoice(); u.pitch = 0.92; u.rate = 0.98; u.volume = 1;
-  u.onstart = () => { speaking = true; wave(true); coreState('speaking','speak'); if (rec) { try { rec.abort(); } catch(e){} } };
-  if (awake) armSleep();
-  const done = () => { wave(false); coreState(awake?'awake':(powered?'listening':'offline'), awake?'awake':(powered?'idle':'off')); setTimeout(() => { speaking = false; if (powered && rec && !working) { try { rec.start(); } catch(e){} } }, 200); cb && cb(); };
+  u.onstart = () => { speaking = true; wave(true); toMicOff(); };
+  let fired = false;
+  const done = () => { if (fired) return; fired = true; speaking = false; wave(false); if (cb) cb(); if (micShouldBeLive()) pumpMic(); };
   u.onend = done; u.onerror = done;
   speechSynthesis.speak(u);
 }
@@ -686,7 +686,7 @@ function speakBrief() {
 function speakAgenda() {
   status("Reading your top three", true);
   const top = BRIEF.slice(0, 3).map((b, i) => `Number ${i+1}. ${b.t}`).join(' ');
-  say(`Here are your three big tasks for today. ${top} Start with number one. One lane at a time.`, () => status(awake ? "Awake — listening" : "Standing by", awake));
+  respond(`Here are your three big tasks for today. ${top} Start with number one. One lane at a time.`);
 }
 function speakNext() {
   status("Assigning your lane", true);
@@ -702,35 +702,101 @@ function showLiveTranscript(t) {
   if (t) { el.textContent = '“' + t + '…'; document.getElementById('statusWrap').classList.add('hot'); }
 }
 
-// ================= WAKE WORD / VOICE IN =================
-let rec = null, powered = false, awake = false;
-let pendingDispatch = null;
-let sleepTimer = null;
-let pauseTimer = null, speechBuf = '';
-let working = false;
-const SLEEP_MS = 45000;
-let finalAccum = '';
-let deliberateStop = false;
-const SILENCE_LONG = 3500;
-const SILENCE_SHORT = 1500;
+// ================= WAKE WORD / VOICE IN — V4 STATE MACHINE =================
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 const IS_MOBILE = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const IS_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
+let rec = null, powered = false;
+let awake = false, working = false;            // legacy mirrors of voiceState
+let pendingDispatch = null;
+let voiceState = 'OFF';                          // OFF ASLEEP ATTENTIVE CAPTURING THINKING SPEAKING FOLLOWUP
+let restartInFlight = false, lastStartTs = 0, micLive = false;
+let latestCmd = '', captureStartTs = 0;
+let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTimer = null;
+let followupCount = 0;
+const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|send it|that'?s all)\s*[.!?]?$/;
+
+// ---- earcons (Web Audio, no files) ----
+let _actx = null;
+function ac(){ if(!_actx){ try{ _actx = new (window.AudioContext||window.webkitAudioContext)(); }catch(e){} } return _actx; }
+function beep(freqs, dur, gain){ const c = ac(); if(!c) return; const now = c.currentTime; freqs.forEach(function(f,i){ const o=c.createOscillator(), g=c.createGain(); o.type='sine'; o.frequency.value=f; o.connect(g); g.connect(c.destination); const t=now+i*(dur*0.55); g.gain.setValueAtTime(0.0001,t); g.gain.linearRampToValueAtTime(gain||0.06,t+0.015); g.gain.exponentialRampToValueAtTime(0.0001,t+dur); o.start(t); o.stop(t+dur+0.02); }); }
+function earcon(kind){ if(muted) return; try{
+  if(kind==='wake') beep([620,940],0.13,0.07);
+  else if(kind==='endpoint') beep([860,430],0.09,0.045);
+  else if(kind==='followup') beep([720],0.08,0.035);
+  else if(kind==='standdown') beep([430,320],0.11,0.04);
+  else if(kind==='error') beep([200,170],0.16,0.06);
+}catch(e){} }
+
+// ---- fuzzy wake-word matching (runs on interim results) ----
+function normalize(t){ return (t||'').toLowerCase().replace(/[^\w\s']/g,' ').replace(/\s+/g,' ').trim(); }
+const WAKE_RX = /\b(command\s*lab|command\s*lap|command\s*lad|command\s*lav|command\s*love|commandlab|come\s*and\s*lab|commander\s*lab|common\s*lab|demand\s*lab|command\s*center|wake\s*up)\b/;
+function lev(a,b){ const m=a.length,n=b.length; if(!m)return n; if(!n)return m; const d=[]; for(let i=0;i<=m;i++)d[i]=[i]; for(let j=0;j<=n;j++)d[0][j]=j; for(let i=1;i<=m;i++)for(let j=1;j<=n;j++){ d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1)); } return d[m][n]; }
+function wakeMatch(t){
+  const m = WAKE_RX.exec(t);
+  if(m) return { index: m.index, len: m[0].length };
+  const w = t.split(/\s+/);
+  for(let i=0;i<w.length-1;i++){ if(lev(w[i]+' '+w[i+1],'command lab')<=2) return { index:-1, len:0, fuzzy:true }; }
+  for(let i=0;i<w.length;i++){ if(lev(w[i],'commandlab')<=2) return { index:-1, len:0, fuzzy:true }; }
+  return null;
+}
+function soundsWordy(t){ return t && t.split(/\s+/).filter(Boolean).length >= 2; }
+
+// ---- single mic owner: only the state machine starts/stops the mic ----
+function micShouldBeLive(){ return powered && (voiceState==='ASLEEP'||voiceState==='ATTENTIVE'||voiceState==='CAPTURING'||voiceState==='FOLLOWUP'); }
+function pumpMic(){ if(!SR||!powered||!micShouldBeLive()||restartInFlight) return; const gap=Date.now()-lastStartTs; if(gap<300){ setTimeout(pumpMic,300-gap); return; } restartInFlight=true; if(!rec) buildRec(); try{ rec.start(); lastStartTs=Date.now(); }catch(e){} setTimeout(function(){ restartInFlight=false; },400); }
+function toMicOff(){ if(rec){ try{ rec.abort(); }catch(e){} } }
+function toMicOn(){ pumpMic(); }
+function freshMic(){ if(rec){ try{ rec.abort(); }catch(e){} } else { pumpMic(); } }
+function buildRec(){
+  rec = new SR();
+  rec.continuous = !IS_IOS; rec.interimResults = true; rec.lang = 'en-US';
+  rec.onstart = function(){ restartInFlight = false; micLive = true; };
+  rec.onresult = onResult;
+  rec.onend = function(){ restartInFlight = false; micLive = false; if(micShouldBeLive() && !speaking) setTimeout(pumpMic, 250); };
+  rec.onerror = function(ev){ restartInFlight = false; micLive = false;
+    if(ev && ev.error === 'aborted') return;
+    if(ev && (ev.error === 'not-allowed' || ev.error === 'service-not-allowed')){ micState('unsupported'); coreState('mic blocked','off'); status('Mic blocked — allow microphone for this site, then tap the orb', false); clog('Mic permission denied. Enable mic, then tap the orb.', 'hi'); return; }
+    if(micShouldBeLive() && !speaking) setTimeout(pumpMic, 300);
+  };
+}
+
+const MIC_OFF = ['OFF','THINKING','SPEAKING'];
+function setVoiceState(next){
+  const prev = voiceState; voiceState = next;
+  awake = (next==='ATTENTIVE'||next==='CAPTURING'||next==='FOLLOWUP');
+  working = (next==='THINKING');
+  if(next!=='ATTENTIVE') clearTimeout(attentiveTimer);
+  if(next!=='CAPTURING') clearTimeout(endpointTimer);
+  if(next!=='FOLLOWUP') clearTimeout(followupTimer);
+  updateStateUI(next);
+  if(MIC_OFF.indexOf(next)>=0){ toMicOff(); }
+  else if(MIC_OFF.indexOf(prev)>=0){ toMicOn(); }
+}
+function updateStateUI(s){
+  if(s==='OFF'){ micState('off'); coreState('offline','off'); }
+  else if(s==='ASLEEP'){ micState('listening'); coreState('listening','idle'); }
+  else if(s==='ATTENTIVE'){ micState('awake'); coreState('awake','awake'); status('Listening — go ahead', true); }
+  else if(s==='CAPTURING'){ micState('awake'); coreState('awake','awake'); }
+  else if(s==='THINKING'){ coreState('thinking','think'); status('Thinking…', true); }
+  else if(s==='SPEAKING'){ coreState('speaking','speak'); }
+  else if(s==='FOLLOWUP'){ micState('awake'); coreState('awake','awake'); status('Still listening — follow up or stay quiet', true); }
+}
+
+function standDown(){ followupCount = 0; latestCmd=''; pendingDispatch=null; setVoiceState('ASLEEP'); document.body.classList.add('dimmed'); status('Powered — say “Command Lab”', false); clog('Stood down — wake word required.'); }
+function armAttentive(){ clearTimeout(attentiveTimer); attentiveTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 8000); }
+function armFollowup(){ clearTimeout(followupTimer); followupTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 6000); }
+function armEndpoint(cmd){ latestCmd = cmd; armSleep(); clearTimeout(endpointTimer); clearTimeout(attentiveTimer); clearTimeout(followupTimer); if(captureStartTs && Date.now()-captureStartTs > 30000){ endpoint(); return; } const wait = soundsComplete(cmd) ? 1400 : 2200; endpointTimer = setTimeout(endpoint, wait); }
+function endpoint(){ const cmd = (latestCmd||'').trim(); latestCmd=''; if(!cmd){ setVoiceState('ATTENTIVE'); armAttentive(); return; } earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd); }
+function respond(text){ setVoiceState('SPEAKING'); say(text, powered ? enterFollowup : function(){ setVoiceState('OFF'); }); }
+function respondThenSleep(text){ setVoiceState('SPEAKING'); say(text, standDown); }
+function enterFollowup(){ followupCount++; if(followupCount > 3){ standDown(); return; } setVoiceState('FOLLOWUP'); earcon('followup'); armFollowup(); }
+
 function armSleep() {
   document.body.classList.remove('dimmed');
   clearTimeout(sleepTimer);
-  sleepTimer = setTimeout(goToSleep, SLEEP_MS);
-}
-function goToSleep() {
-  if (!awake) return;
-  awake = false; pendingDispatch = null;
-  clearTimeout(sleepTimer);
-  micState('listening');
-  coreState('listening','idle');
-  document.body.classList.add('dimmed');
-  status('Powered — say “Command Lab”', false);
-  clog('Auto-sleep — deck dimmed. Wake word required.');
+  sleepTimer = setTimeout(function(){ if (awake) standDown(); }, 90000);
 }
 
 function togglePower() {
@@ -739,30 +805,30 @@ function togglePower() {
     document.getElementById('powerBtn').textContent = '⏻ Off';
     document.getElementById('powerBtn').classList.add('hot');
     if ('speechSynthesis' in window) { speechSynthesis.getVoices(); }
-    if (SR) { startListening(); micState('listening'); }
-    else { micState('unsupported'); }
+    try { const c = ac(); if (c && c.resume) c.resume(); } catch(e){}
     startMicMeter();
+    if (SR) { setVoiceState('ASLEEP'); } else { micState('unsupported'); }
     bootSeq();
   } else {
-    powered = false; awake = false; pendingDispatch = null; clearTimeout(sleepTimer);
+    powered = false; clearTimeout(sleepTimer);
     document.getElementById('powerBtn').textContent = '⚡ Power';
     document.getElementById('powerBtn').classList.remove('hot');
-    if (rec) { try { rec.stop(); } catch(e){} rec = null; }
+    setVoiceState('OFF');
+    if (rec) { try { rec.abort(); } catch(e){} }
     speechSynthesis.cancel();
-    micState('off'); coreState('offline','off'); document.body.classList.remove('dimmed'); renderServices(); status('Standing by — power on, then say “Command Lab”', false);
+    document.body.classList.remove('dimmed'); renderServices();
+    status('Standing by — power on, then say “Command Lab”', false);
     clog('Power OFF.');
   }
 }
 
-// Tap-to-talk: tapping the orb wakes it + forces the mic on
+// Tap-to-talk: tapping the orb wakes it straight to attentive (skips wake word)
 document.querySelector('.stage').addEventListener('click', () => {
   if (speaking || working) return;
   if (!powered) { togglePower(); return; }
-  if (rec) { try { rec.stop(); } catch(e){} rec = null; }
-  awake = true; armSleep();
-  micState('awake'); coreState('awake','awake');
-  startListening();
-  status('Awake — talk to me', false);
+  earcon('wake'); followupCount = 0;
+  setVoiceState('ATTENTIVE'); freshMic(); armAttentive();
+  status('Tap-to-talk — listening', true);
   clog('Tap-to-talk — awake, mic live.');
 });
 
@@ -815,97 +881,67 @@ function soundsComplete(t) {
   return true;
 }
 
-function finalizeTurn() {
-  clearTimeout(pauseTimer);
-  const done = dedupeStutter((finalAccum + ' ' + speechBuf).toLowerCase().trim()).trim();
-  finalAccum = ''; speechBuf = '';
-  deliberateStop = true;
-  try { rec.stop(); } catch(err){}
-  if (done) handleSpeech(done);
-}
+function fireGo(cmd){ const d = dedupeStutter(cmd.replace(GO,'').trim()); clearTimeout(endpointTimer); if(d){ earcon('endpoint'); showLiveTranscript(d); setVoiceState('THINKING'); handleSpeech(d); } }
 
-function startListening() {
-  if (!SR) return;
-  rec = new SR();
-  rec.continuous = IS_IOS ? false : true;
-  rec.interimResults = true; rec.lang = 'en-US';
-  rec.onresult = (e) => {
-    let finalTxt = '', interim = '';
-    for (let i = 0; i < e.results.length; i++) {
-      if (e.results[i].isFinal) finalTxt += e.results[i][0].transcript + ' ';
-      else interim = e.results[i][0].transcript;
-    }
-    speechBuf = (finalTxt + ' ' + interim).trim();
-    const shown = dedupeStutter((finalAccum + ' ' + speechBuf).toLowerCase().trim());
-    if (awake) { armSleep(); showLiveTranscript(shown); }
-    clearTimeout(pauseTimer);
-    const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|that'?s all)\s*[.!?]?$/;
-    if (GO.test(shown)) {
-      const done = dedupeStutter(shown.replace(GO, '').trim());
-      finalAccum = ''; speechBuf = '';
-      clearTimeout(pauseTimer);
-      deliberateStop = true;
-      try { rec.stop(); } catch(err){}
-      if (done) handleSpeech(done);
-      return;
-    }
-    const wait = soundsComplete(shown) ? SILENCE_SHORT : SILENCE_LONG;
-    pauseTimer = setTimeout(finalizeTurn, wait);
-  };
-  rec.onend = () => {
-    if (!deliberateStop && speechBuf) {
-      finalAccum = dedupeStutter((finalAccum + ' ' + speechBuf).toLowerCase().trim());
-      speechBuf = '';
-    }
-    deliberateStop = false;
-    if (powered && !speaking && !working) { setTimeout(() => { try { rec.start(); } catch(e){} }, IS_MOBILE ? 150 : 80); }
-  };
-  rec.onerror = (ev) => {
-    if (ev && ev.error === 'aborted') return;
-    if (ev && (ev.error === 'not-allowed' || ev.error === 'service-not-allowed')) {
-      micState('unsupported'); coreState('mic blocked','off');
-      status('Mic blocked — allow microphone for this site, then tap the orb', false);
-      clog('Mic permission denied. Enable mic in browser settings, then tap the orb to retry.', 'hi');
-      return;
-    }
-    if (powered && !speaking && !working) { setTimeout(() => { try { rec.start(); } catch(e){} }, IS_MOBILE ? 300 : 200); }
-  };
-  try { rec.start(); } catch(e) {}
-}
+function onResult(e){
+  let full = '';
+  for (let i = 0; i < e.results.length; i++) full += e.results[i][0].transcript + ' ';
+  full = dedupeStutter(normalize(full));
+  if (!full) return;
 
-function handleSpeech(heard) {
-  if (speaking) return;
-  if (!awake) {
-    if (/(command\s*lab|come on lab|commander lab|command love|command lap|command center)/.test(heard) || /^wake up$/.test(heard)) {
-      awake = true; armSleep();
-      micState('awake'); coreState('awake','awake'); status('Awake — listening', true);
-      clog('Wake word detected.', 'hi');
-      say("Command Center. What can I do for you?");
-    }
+  if (voiceState === 'ASLEEP') {
+    const m = wakeMatch(full);
+    if (!m) return;
+    earcon('wake'); followupCount = 0; armSleep();
+    clog('Wake word detected.', 'hi');
+    const trailing = (m.index >= 0) ? full.slice(m.index + m.len).trim() : '';
+    if (soundsWordy(trailing)) { setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(trailing); if (GO.test(trailing)) { fireGo(trailing); return; } armEndpoint(trailing); }
+    else { setVoiceState('ATTENTIVE'); armAttentive(); }
     return;
   }
+
+  if (voiceState === 'ATTENTIVE' || voiceState === 'CAPTURING') {
+    let cmd = full; const m = wakeMatch(full);
+    if (m && m.index >= 0) cmd = full.slice(m.index + m.len).trim();
+    if (!cmd) return;
+    if (voiceState === 'ATTENTIVE') { setVoiceState('CAPTURING'); captureStartTs = Date.now(); }
+    showLiveTranscript(cmd);
+    if (GO.test(cmd)) { fireGo(cmd); return; }
+    armEndpoint(cmd);
+    return;
+  }
+
+  if (voiceState === 'FOLLOWUP') {
+    const cmd = full.trim();
+    if (!cmd) return;
+    setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(cmd);
+    if (GO.test(cmd)) { fireGo(cmd); return; }
+    armEndpoint(cmd);
+    return;
+  }
+}
+function startListening(){ freshMic(); }
+
+function handleSpeech(heard) {
   clog('› ' + heard, 'hi');
   if (pendingRetry && /\b(retry|try again|resend|send it again)\b/.test(heard)) {
     const q = pendingRetry; pendingRetry = null; dispatch(q); return;
   }
   if (pendingDispatch) {
-    if (/\b(yes|yeah|yep|sure|do it|go ahead|send it|affirmative)\b/.test(heard)) {
+    if (/\b(yes|yeah|yep|sure|do it|go ahead|send it|affirmative|please|correct)\b/.test(heard)) {
       const q = pendingDispatch; pendingDispatch = null;
       dispatch(q); return;
     }
-    if (/\b(no|nope|nah|cancel|never mind|nevermind|negative|forget it|don't)\b/.test(heard)) {
+    if (/\b(no|nope|nah|cancel|never mind|nevermind|negative|forget it|don'?t)\b/.test(heard)) {
       pendingDispatch = null;
-      say("Copy. Dropped it. What else?"); return;
+      respond("Copy. Dropped it. What else?"); return;
     }
     pendingDispatch = null;
   }
-  if (/stand\s*down|go to sleep|power down|sleep now|stop listening|be quiet|shut up|that's all|that is all/.test(heard)) {
-    awake = false;
-    micState('listening'); coreState('listening','idle');
-    say("Standing down. I'll be right here when you need me.", () => status('Powered — say “Command Lab”', false));
+  if (/stand\s*down|go to sleep|power down|sleep now|stop listening|be quiet|shut up|that'?s all|that is all/.test(heard)) {
+    respondThenSleep("Standing down. I'll be right here when you need me.");
     return;
   }
-  if (/add a task|create a task|task for|tell the|update the crm|crm update|send an email|remind|log this|make a note|dispatch/.test(heard)) { dispatch(heard); return; }
   if (KB.length) {
     let best = null, bestScore = 0;
     KB.forEach(k => {
@@ -913,28 +949,27 @@ function handleSpeech(heard) {
       k.keys.forEach(kw => { if (heard.includes(kw)) score += kw.length; });
       if (score > bestScore) { bestScore = score; best = k; }
     });
-    if (best && bestScore >= 4) { say(best.a); return; }
+    if (best && bestScore >= 4) { respond(best.a); return; }
   }
-  if (/agenda|top (three|3)|three (things|tasks)|what('| i)?s on|on my plate|main tasks|big (three|3)|today's tasks|whats today|what is today|(my |the )?tasks?( for)? (today|tomorrow)|tomorrow'?s tasks/.test(heard)) { speakAgenda(); return; }
-  if (/brief|briefing|state of|rundown|update me|my day/.test(heard)) { speakBrief(); return; }
-  if (/next|tackle|priorit|what should i|focus/.test(heard)) { speakNext(); return; }
+  if (/agenda|top (three|3)|three (things|tasks)|what('| i)?s on|on my plate|main tasks|big (three|3)|today'?s tasks|what'?s today|what is today|(my |the )?tasks?( for)? (today|tomorrow)|tomorrow'?s tasks|what'?s first|top (task|priority)|what should i (do|work)/.test(heard)) { speakAgenda(); return; }
+  if (/brief|briefing|state of|rundown|update me|my day|where do (we|things) stand/.test(heard)) { speakBrief(); return; }
+  if (/what'?s next|tackle|priorit|focus|my lane/.test(heard)) { speakNext(); return; }
   if (/who('| i)?s connected|agents|status report|systems/.test(heard)) {
-    say("Three agents on the grid. PLL Consultant — live. CRM Developer and Email Agent — routed through the consultant. Dispatch runs from the Tasklet deck. This is the field unit.");
+    respond("Three agents on the grid. PLL Consultant — live. CRM Developer and Email Agent — routed through the consultant. Dispatch runs from the Tasklet deck. This is the field unit.");
     return;
   }
-  if (/thank|good work|nice/.test(heard)) { say("Anytime. Now go close those deals."); return; }
+  if (/thank|good work|nice job|appreciate/.test(heard)) { respond("Anytime. Now go close those deals."); return; }
+  if (isChangeCommand(heard) || /add a task|create a task|task for|tell the|update the crm|crm update|send an email|remind|log this|make a note|dispatch|route this|open a ticket|file a bug|check.*(inbox|mail|outlook)/.test(heard)) { dispatch(heard); return; }
   const words = heard.split(/\s+/).filter(Boolean).length;
-  if (words < 2) { return; }
-  armSleep();
+  if (words < 2) { setVoiceState('FOLLOWUP'); armFollowup(); return; }
   askBrain(heard);
 }
 
 // ===== AI BRAIN — instant onboard answers, no dispatch =====
 function askBrain(heard){
-  working = true; try { if (rec) rec.stop(); } catch(e){}
-  status('Thinking…', true); coreState('thinking','think');
+  setVoiceState('THINKING');
   if (!muted && 'speechSynthesis' in window) {
-    try { const f = new SpeechSynthesisUtterance('Let me think about that.'); f.voice = sternVoice(); f.pitch = 0.92; f.rate = 1.0; speechSynthesis.speak(f); } catch(e){}
+    try { const f = new SpeechSynthesisUtterance('Let me check.'); f.voice = sternVoice(); f.pitch = 0.92; f.rate = 1.0; speechSynthesis.speak(f); } catch(e){}
   }
   clog('→ AI Brain: ' + heard);
   var sys = 'You are Command Center, the spoken voice assistant for Sam, CEO of Private Label Labs, a private label skincare and cosmetics manufacturer. Answer the question directly in one to three short spoken sentences. Plain conversational text only. No markdown, no emojis, no lists, no headings.';
@@ -946,20 +981,14 @@ function askBrain(heard){
       txt = (txt || '').replace(/[*#_`>|]/g, ' ').replace(/\s+/g, ' ').trim();
       if (txt.length < 2) throw new Error('empty');
       if (txt.length > 700) txt = txt.slice(0, txt.lastIndexOf('.', 700) + 1 || 700);
-      working = false; status(awake ? 'Awake — listening' : 'Standing by', awake);
       clog('AI Brain: ' + txt, 'hi');
-      say(txt);
+      respond(txt);
     })
-    .catch(function(){ clearTimeout(timer); brainFallback(heard); });
+    .catch(function(){ clearTimeout(timer); askConsultantFallback(heard); });
 }
-function brainFallback(heard){
-  const url = hookUrl();
-  if (!url) { working = false; say("I couldn't reach my brain service and the dispatch line isn't linked. Try again in a moment."); return; }
-  fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ source: 'pll-command-lab', kind: 'ai-question', command: heard, routed_to: 'AI Brain (fallback)', ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { say('My onboard brain is down, so I sent that to the consultant. Give it a minute.'); status('Thinking…', true); coreState('thinking','think'); pollAnswer(new Date().toISOString()); }
-               else { working = false; say('Brain service and dispatch line are both down. Try again shortly.'); } })
-  .catch(() => { working = false; say('Brain service and dispatch line are both down. Try again shortly.'); });
+function askConsultantFallback(heard){
+  pendingDispatch = heard;
+  respond("I don't have that one onboard. Want me to send it to the consultant? Yes or no.");
 }
 
 // ===== VOICE PICKER =====
@@ -1015,11 +1044,11 @@ function isChangeCommand(t){
 var pendingRetry = null;
 function dispatch(heard){
   const url = hookUrl();
-  if (!url) { say("I heard you, but the dispatch line isn't connected yet. Tap the Link button in the top bar and paste in the dispatch URL — then I can route commands to the team."); return; }
+  if (!url) { respond("I heard you, but the dispatch line isn't connected yet. Tap the Link button in the top bar and paste in the dispatch URL — then I can route commands to the team."); return; }
   const agent = targetAgent(heard);
   const tgt = targetKey(agent);
   const logId = dlogAdd(heard, agent);
-  working = true; try { if (rec) rec.stop(); } catch(e){}
+  setVoiceState('THINKING');
   orbBurst(); // fire the comet toward the dispatch log
   const ack = isChangeCommand(heard)
     ? ("Got it — " + heard + ". Sending to " + agent + " now.")
@@ -1030,8 +1059,8 @@ function dispatch(heard){
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', command: heard, target: tgt, routed_to: agent, ts: new Date().toISOString() }) })
   .then(r => { if (r.ok) { dlogSet(logId, 'DELIVERED'); say(ack + " I'll report back when it's done."); status('Working… will report when done', true); coreState('working','think'); pollAnswer(new Date().toISOString(), logId); }
-               else { working = false; dlogSet(logId, 'FAILED'); pendingRetry = heard; say('The dispatch line rejected that. Say "retry" and I\'ll send it again.'); } })
-  .catch(() => { working = false; dlogSet(logId, 'FAILED'); pendingRetry = heard; say('Could not reach the dispatch line. Say "retry" and I\'ll send it again.'); });
+               else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('The dispatch line rejected that. Say "retry" and I\'ll send it again.'); } })
+  .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('Could not reach the dispatch line. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
 }
 
 // ===== ANSWER READ-BACK =====
@@ -1041,17 +1070,16 @@ function pollAnswer(sinceTs, logId){
   var tries = 0;
   pollTimer = setInterval(function(){
     tries++;
-    if (tries > 40) { clearInterval(pollTimer); pollTimer = null; working = false; status('No spoken reply yet — full answer is in Tasklet', false); coreState(awake?'awake':'listening', awake?'awake':'idle'); if (powered && rec) { try { rec.start(); } catch(e){} } return; }
+    if (tries > 40) { clearInterval(pollTimer); pollTimer = null; status('No spoken reply yet — full answer is in Tasklet', false); if (powered) { enterFollowup(); } else { setVoiceState('OFF'); } return; }
     fetch('answers.json?v=' + Math.random(), { cache: 'no-store' })
       .then(function(r){ return r.json(); })
       .then(function(a){
         if (a && a.ts && a.ts > sinceTs && a.text) {
           clearInterval(pollTimer); pollTimer = null;
-          working = false;
           if (logId) dlogSet(logId, 'ANSWERED');
           status('Reply received ✓', true);
           clog('← Reply received.', 'hi');
-          say(a.text);
+          respond(a.text);
         }
       }).catch(function(){});
   }, 5000);
