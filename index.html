@@ -1058,32 +1058,111 @@ function dispatch(heard){
   clog('→ Dispatch [' + agent + ' · ' + tgt + ']: ' + heard, 'warn');
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', command: heard, target: tgt, routed_to: agent, ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { dlogSet(logId, 'DELIVERED'); say(ack + " I'll report back when it's done."); status('Working… will report when done', true); coreState('working','think'); pollAnswer(new Date().toISOString(), logId); }
+  .then(r => { if (r.ok) { dlogSet(logId, 'DELIVERED'); say(ack + " I'll report back when it's done."); status('Working… will report when done', true); coreState('working','think'); startAnswerWatcher(heard, logId); }
                else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('The dispatch line rejected that. Say "retry" and I\'ll send it again.'); } })
   .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('Could not reach the dispatch line. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
 }
 
-// ===== ANSWER READ-BACK =====
-var pollTimer = null;
-function pollAnswer(sinceTs, logId){
-  if (pollTimer) clearInterval(pollTimer);
-  var tries = 0;
-  pollTimer = setInterval(function(){
-    tries++;
-    if (tries > 40) { clearInterval(pollTimer); pollTimer = null; status('No spoken reply yet — full answer is in Tasklet', false); if (powered) { enterFollowup(); } else { setVoiceState('OFF'); } return; }
-    fetch('answers.json?v=' + Math.random(), { cache: 'no-store' })
+// ===== ANSWER READ-BACK (V4.1 — persistent watcher) =====
+// Survives the full round-trip: agent work time + GitHub Pages rebuild + CDN propagation.
+// Poll for 15 min with backoff; persist across reloads; ID-based dedupe (no clock compare).
+var answerWatchTimer = null;      // self-rescheduling setTimeout handle
+var pendingSpokenAnswer = null;   // answer text queued because voice was busy
+var headsUpGiven = false;         // 3-min "still working" fired once
+
+function markSpoken(a){
+  if (a && a.id) localStorage.setItem('pll_lastAnswerId', a.id);
+  if (a && a.ts) localStorage.setItem('pll_lastAnswerTs', a.ts);
+}
+function isNewAnswer(a){
+  if (!a || !a.text) return false;
+  if (a.id) { return a.id !== localStorage.getItem('pll_lastAnswerId'); }   // preferred path
+  if (a.ts) { return a.ts !== localStorage.getItem('pll_lastAnswerTs'); }   // legacy fallback (inequality, skew-proof)
+  return false;
+}
+function speakAnswer(a, logId){
+  if (logId) dlogSet(logId, 'ANSWERED');
+  status('Reply received ✓', true);
+  clog('← Reply received.', 'hi');
+  // Defer if the user is mid-interaction; deliver the moment we're free.
+  if (voiceState === 'CAPTURING' || voiceState === 'SPEAKING') {
+    pendingSpokenAnswer = a.text;
+    return;
+  }
+  earcon('wake'); // attention chime on the TV
+  respond(a.text);
+}
+// Flush a deferred answer once the mic frees up.
+setInterval(function(){
+  if (pendingSpokenAnswer && voiceState !== 'CAPTURING' && voiceState !== 'SPEAKING') {
+    var t = pendingSpokenAnswer; pendingSpokenAnswer = null;
+    earcon('wake'); respond(t);
+  }
+}, 1000);
+
+function startAnswerWatcher(cmd, logId){
+  // persist so a reload / tab-switch can't lose the pending reply
+  localStorage.setItem('pll_pendingDispatch', JSON.stringify({ cmd: cmd, logId: logId || null, t: Date.now() }));
+  runAnswerWatcher(Date.now(), logId);
+}
+function runAnswerWatcher(startedAt, logId){
+  if (answerWatchTimer) { clearTimeout(answerWatchTimer); answerWatchTimer = null; }
+  headsUpGiven = false;
+  function stop(){ if (answerWatchTimer){ clearTimeout(answerWatchTimer); answerWatchTimer=null; } localStorage.removeItem('pll_pendingDispatch'); }
+  function delayFor(elapsed){
+    if (elapsed < 120000) return 5000;    // 0–2 min
+    if (elapsed < 480000) return 10000;   // 2–8 min
+    return 20000;                          // 8–15 min
+  }
+  function tick(){
+    var elapsed = Date.now() - startedAt;
+    if (elapsed > 900000) { // 15 min hard stop
+      stop();
+      if (logId) dlogSet(logId, 'TIMEOUT');
+      status('Reply is taking long — full answer will be in Tasklet', false);
+      clog('Answer watcher timed out (15m).', 'warn');
+      if (voiceState === 'ASLEEP' || voiceState === 'FOLLOWUP') respond("That one's taking longer than it should. The full answer will be in Tasklet — and I'll flag it.");
+      return;
+    }
+    if (!headsUpGiven && elapsed >= 180000) { // 3-min gentle heads-up, once
+      headsUpGiven = true;
+      status('Working… still waiting on the reply', true);
+      if (voiceState === 'ASLEEP' || voiceState === 'FOLLOWUP') respond("Still working on it. I'll speak up the moment it lands.");
+    }
+    fetch('answers.json?v=' + Date.now(), { cache: 'no-store' })
       .then(function(r){ return r.json(); })
       .then(function(a){
-        if (a && a.ts && a.ts > sinceTs && a.text) {
-          clearInterval(pollTimer); pollTimer = null;
-          if (logId) dlogSet(logId, 'ANSWERED');
-          status('Reply received ✓', true);
-          clog('← Reply received.', 'hi');
-          respond(a.text);
-        }
-      }).catch(function(){});
-  }, 5000);
+        if (isNewAnswer(a)) { stop(); markSpoken(a); speakAnswer(a, logId); return; }
+        answerWatchTimer = setTimeout(tick, delayFor(Date.now() - startedAt));
+      })
+      .catch(function(){ // Pages may serve 404/HTML mid-rebuild — survive it
+        answerWatchTimer = setTimeout(tick, delayFor(Date.now() - startedAt));
+      });
+  }
+  tick();
 }
+// Immediate check when the TV tab comes back to the foreground.
+function pokeAnswerWatcher(){
+  var raw = localStorage.getItem('pll_pendingDispatch');
+  if (!raw) return;
+  try {
+    var p = JSON.parse(raw);
+    if (Date.now() - p.t > 1800000) { localStorage.removeItem('pll_pendingDispatch'); return; } // stale >30m
+    if (!answerWatchTimer) runAnswerWatcher(p.t, p.logId);
+    else { if (answerWatchTimer){ clearTimeout(answerWatchTimer); } runAnswerWatcher(p.t, p.logId); }
+  } catch(e){ localStorage.removeItem('pll_pendingDispatch'); }
+}
+// Restore a pending watcher on load (kiosk reloads, nightly refresh, etc.)
+(function resumePendingDispatch(){
+  var raw = localStorage.getItem('pll_pendingDispatch');
+  if (!raw) return;
+  try {
+    var p = JSON.parse(raw);
+    if (Date.now() - p.t > 1800000) { localStorage.removeItem('pll_pendingDispatch'); return; }
+    clog('Resuming pending dispatch — still watching for the reply.', 'warn');
+    runAnswerWatcher(p.t, p.logId);
+  } catch(e){ localStorage.removeItem('pll_pendingDispatch'); }
+})();
 
 // ================= DISPATCH LOG (status chips) =================
 var dlogItems = [];
