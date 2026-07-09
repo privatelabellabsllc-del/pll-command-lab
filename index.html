@@ -942,6 +942,9 @@ function handleSpeech(heard) {
     respondThenSleep("Standing down. I'll be right here when you need me.");
     return;
   }
+  // V4.2: action intent wins BEFORE any KB/agenda lookup — "put a task in for
+  // Aidan" must dispatch, not read Aidan's tasks back.
+  if (isActionCommand(heard)) { dispatch(heard); return; }
   if (KB.length) {
     let best = null, bestScore = 0;
     KB.forEach(k => {
@@ -959,7 +962,6 @@ function handleSpeech(heard) {
     return;
   }
   if (/thank|good work|nice job|appreciate/.test(heard)) { respond("Anytime. Now go close those deals."); return; }
-  if (isChangeCommand(heard) || /add a task|create a task|task for|tell the|update the crm|crm update|send an email|remind|log this|make a note|dispatch|route this|open a ticket|file a bug|check.*(inbox|mail|outlook)/.test(heard)) { dispatch(heard); return; }
   const words = heard.split(/\s+/).filter(Boolean).length;
   if (words < 2) { setVoiceState('FOLLOWUP'); armFollowup(); return; }
   askBrain(heard);
@@ -1039,7 +1041,14 @@ function targetKey(agent){
   return 'consultant';
 }
 function isChangeCommand(t){
-  return /\b(add|create|assign|mark|update|set|log|make|remind|tell|send|delete|remove|schedule|book|complete|draft)\b/.test(t);
+  return /\b(add|create|assign|mark|update|set|log|make|remind|tell|send|delete|remove|schedule|book|complete|draft|put|give|get|have|open|file|push|move|enter|start)\b/.test(t);
+}
+// V4.2: single source of truth for action-vs-question routing.
+// Questions (interrogative openers, incl. "give me"/"show me" forms) are never actions.
+function isActionCommand(t){
+  if (/^\s*(what('?s| is| are| was)?|who('?s)?|when|where|why|how|does|do (we|i|you)|is\b|are\b|did\b|was\b|were\b|can you (tell|show|read|give) me|tell me|show me|read me|give me)/.test(t)) return false;
+  return isChangeCommand(t)
+    || /add a task|create a task|task (in )?for|put in a task|tell the|update the crm|crm update|send an email|remind|log this|make a note|dispatch|route this|open a ticket|file a bug|follow up with|kick off|check.*(inbox|mail|outlook)/.test(t);
 }
 var pendingRetry = null;
 function dispatch(heard){
