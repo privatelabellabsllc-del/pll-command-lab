@@ -1,51 +1,53 @@
 {
- "date": "2026-07-08",
+ "date": "2026-07-09",
  "brief": [
   {
-   "t": "Kyle at Aloe Tallow is about to refund a stuck order. USPS tracking never scanned and he asked twice about inventory. Message Kyle and Booky first, confirm the shipment scan, inventory, and the Valeva status in one go.",
+   "t": "The new deals pipeline is live in the CRM and I verified it this morning. Ten open deals worth one point three seven million dollars, staged hot, warm, and new, with stale flags. I start plugging in the missing deals today.",
    "hot": true
   },
   {
-   "t": "Ryan Fiore from EPHIX is confirmed for noon eastern today on Google Meet. Be ready ten minutes early. This is a live deal call.",
+   "t": "Valeva is still showing overdue from Tuesday with a backlog of seven orders. Confirm it shipped or tell me what is blocking. This is item one.",
    "hot": true
   },
   {
-   "t": "Victor Armendarez replied overnight. He sent an Edge Gel formula and wants turnkey pricing, plus two thousand pieces to restock inventory. Get the quote moving today.",
+   "t": "Ben Kar proposal is a day overdue. I am drafting the full proposal this morning. You review and send it once, then we stop chasing and his silence is his problem.",
    "hot": true
   },
   {
-   "t": "Nikkie needs three things. The Oreka commission of eighty five hundred fifty five dollars, second reminder. A yes or no on deformulation projects for a prospective client. And Uberto paid invoice fourteen thirty three, about twenty two hundred forty dollars, needs logging.",
+   "t": "Plot twist on Dan Gonyea. He emailed yesterday in writing, copying his whole team, asking for fifty thousand unit pricing on Unshrinkit before placing the order. Flake or not, that is an order forming. Decide today: quote him or officially pass.",
    "hot": true
   },
   {
-   "t": "Raw materials quote pricing fix is confirmed live in the CRM. I verified it this morning against a real quote. Send me your corrected raw material prices and I will load them.",
-   "hot": false
+   "t": "Victor Armendarez confirmed specs, both SKUs turnkey, Edge Gel in the six ounce jar. His numbers are due tomorrow. I am building the cost breakdown today, you just review and send.",
+   "hot": true
   },
   {
-   "t": "Aidan owes three quotes today. Atlas for Kenna, Pure Good pricing, and Terra Lotus. HALENE also wants bakuchiol tracking. I am on him. Also give me the green light to add the thirty thousand unit cleanser to his Terra Lotus task.",
-   "hot": false
+   "t": "WhatsApp needs attention. Halene asked if their order lands by Friday. Ashley at Earth and Ash is disputing whether Miron glass bottles were included in her quote, eight unread messages. And AloeTallow asked if we are fulfilling first thing this morning.",
+   "hot": true
   },
   {
-   "t": "Petit Nuage signed the NDA yesterday. Laura is handling. New client warming up nicely.",
+   "t": "Developer scorecard: production blank screen fix verified and closed. Formula upload fix deployed but stays open until Evelyn's next real upload proves it. Laura's lockout ticket still open.",
    "hot": false
   }
  ],
  "next": [
-  "One lane: Kyle and Booky on WhatsApp. Shipment scan, inventory, Valeva. Nothing else first.",
-  "Noon: Ryan Fiore EPHIX call on Google Meet.",
-  "Then Victor's Edge Gel quote and Nikkie's three items.",
-  "Then approve the Terra Lotus task update and the Oreka CRM cleanup so I can execute."
+  "One lane: confirm Valeva shipped, or unblock it. Nothing else first.",
+  "Then review and fire the Ben Kar proposal I draft this morning.",
+  "Then decide on Dan Gonyea's fifty thousand unit Unshrinkit request.",
+  "I handle Victor's numbers, the pipeline board population, and WhatsApp triage."
  ],
  "kb": [
   {
    "keys": [
-    "valeva",
+    "aloetallow",
     "booky",
-    "warehouse",
+    "kyle",
+    "shipment",
     "shipping",
-    "shipment"
+    "valeva",
+    "warehouse"
    ],
-   "a": "Valeva, seven orders still unshipped at the warehouse, plus Snail Mucin units need filling. This is your number one today. Get Booky moving first thing, confirm trucks are rolling, and check the stove is off. That's revenue sitting on the floor."
+   "a": "Kyle at AloeTallow asked overnight whether we are fulfilling first thing this morning. Confirm with Booky that fulfillment is moving."
   },
   {
    "keys": [
@@ -67,18 +69,20 @@
   {
    "keys": [
     "ben",
+    "ben kar",
     "kar",
     "tavro"
    ],
-   "a": "Ben Kar at Tavro is your biggest lead, ninety percent close, about thirty thousand units, custom beef tallow and argan sun spray. His discovery call was June 30th and no proposal has gone out in a week. This is the single highest value action on your board. I'm drafting the proposal, you review and send."
+   "a": "Ben Kar of Tavro, roughly thirty thousand units custom tallow and argan oil, ninety percent close but silent since June thirtieth and never received a proposal. The agent is drafting the full proposal today. Sam sends it once by email and WhatsApp, then we stop chasing."
   },
   {
    "keys": [
-    "victor",
     "armendarez",
-    "edge gel"
+    "curl",
+    "edge gel",
+    "victor"
    ],
-   "a": "Victor Armendarez sent an Edge Gel formula overnight and wants turnkey pricing, plus two thousand pieces to restock. Quote needs to move today."
+   "a": "Victor Armendarez, eighty seven percent close, two thousand units per SKU of Curl Defining Cream and Edge Gel, both turnkey in six ounce jars. He confirmed specs by email. Cost breakdown and sixty five percent margin pricing due Friday July tenth. The agent is building the numbers, Sam reviews and sends."
   },
   {
    "keys": [
@@ -161,11 +165,14 @@
   },
   {
    "keys": [
+    "bug",
     "crm developer",
-    "ticket",
-    "raw materials"
+    "crm fix",
+    "developer",
+    "raw materials",
+    "ticket"
    ],
-   "a": "Raw materials pricing fix is confirmed live, verified against quote Q zero zero two nine. Laura's lockout could not be reproduced, sign out steps were relayed. Two new tickets are open: formula ingredient upload failing on first attempt, and production pipeline tasks opening a blank screen."
+   "a": "Four tickets. Production blank screen: fixed and verified, closed. Formula first save upload: fix deployed, open until Evelyn's next real upload proves it. Laura's pipeline lockout: still open. Raw materials pricing in quotes: confirmed and closed."
   },
   {
    "keys": [
@@ -183,10 +190,10 @@
   {
    "keys": [
     "ephix",
-    "ryan",
-    "fiore"
+    "fiore",
+    "ryan"
    ],
-   "a": "Ryan Fiore of EPHIX is confirmed for today, Wednesday July 8 at noon eastern, Google Meet. Live deal call, be on time."
+   "a": "The Ryan Fiore EPHIX call was Wednesday at noon. Also, the law firm emailed asking whether to proceed with filing the certificate of assumed name for EPHIX. Sam or Aidan needs to reply."
   },
   {
    "keys": [
@@ -264,6 +271,47 @@
     "scent samples"
    ],
    "a": "Aran Beauty wants four scent samples: vanilla, jasmine, rose, and sweet orange. Ronald is being asked for feasibility and timing, then the client gets an update on WhatsApp."
+  },
+  {
+   "keys": [
+    "dan",
+    "gonyea",
+    "unshrinkit",
+    "52launch"
+   ],
+   "a": "Dan Gonyea at fifty two launch emailed July eighth asking for fifty thousand unit tiered pricing on Unshrinkit before placing an order, with his whole team copied. Sam previously called him a quote shopper. Decision needed today: quote him or officially pass."
+  },
+  {
+   "keys": [
+    "pipeline",
+    "deals",
+    "board",
+    "kanban"
+   ],
+   "a": "The new deals pipeline is live and verified. Ten open deals worth about one point three seven million dollars across New Lead, Warm Lead, Hot Lead, Quoted, Closed Won and Closed Lost, with stale flags and a deals tab on every customer. The agent is populating missing deals like Victor, Ben Kar, Terra Lotus and Elmar today."
+  },
+  {
+   "keys": [
+    "halene",
+    "bakuchiol"
+   ],
+   "a": "Halene, the bakuchiol skincare client, asked on WhatsApp whether their order lands by Friday. Needs a straight answer today, check with Aidan on tracking."
+  },
+  {
+   "keys": [
+    "ashley",
+    "earth and ash",
+    "miron"
+   ],
+   "a": "Ashley English at Earth and Ash is disputing her quote on WhatsApp, eight unread messages. She believes Miron glass bottles and closures were included in the agreed price. Someone needs to pull the quote document and clarify before this turns into an angry customer."
+  },
+  {
+   "keys": [
+    "mina",
+    "elias",
+    "trivium"
+   ],
+   "a": "Mina Elias of Trivium booked a thirty minute call with Sam for Wednesday July twenty ninth at two thirty eastern."
   }
  ]
 }
