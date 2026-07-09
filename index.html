@@ -725,7 +725,7 @@ function handleSpeech(heard) {
     }
     pendingDispatch = null;
   }
-  if (/stand\s*down|go to sleep|power down|sleep now/.test(heard)) {
+  if (/stand\s*down|go to sleep|power down|sleep now|stop listening|be quiet|shut up|that's all|that is all/.test(heard)) {
     awake = false;
     micState('listening'); coreState('listening','idle');
     say("Standing down. I'll be right here when you need me.", () => status('Powered — say “Command Lab”', false));
