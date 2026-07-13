@@ -1144,9 +1144,10 @@ function handleSpeech(heard) {
     if (/\b(go back|back to (the )?dashboard|dismiss|close|exit|done)\b/.test(heard)) { exitTopTask(); return; }
     if (/\b(next( task| one)?|another|after that|forward)\b/.test(heard)) { enterTopTask(topTaskIdx + 1); return; }
   }
-  // Top Task → full-screen takeover
+  // Top Task → full-screen takeover (skip if the ask is about a specific person)
   if (/\b(top|number ?one|number 1|no\.? ?1|#?1|single most|most important|biggest|main|first)\b[\s\w']{0,26}\b(task|priority|thing|focus|move|to ?do)\b/.test(heard)
-      && !/\b(three|3|list|all|every|next three)\b/.test(heard)) {
+      && !/\b(three|3|list|all|every|next three)\b/.test(heard)
+      && !detectTeamMember(heard)) {
     enterTopTask(0); return;
   }
   // Revenue-generating action I can do now
