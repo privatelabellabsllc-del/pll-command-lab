@@ -216,6 +216,8 @@
     .missionrow{flex-direction:column;} .hero{width:100%; min-width:0;}
     .qcard{width:100%;}
     .tbtns{flex-wrap:wrap;}
+    .stage{min-height:280px; touch-action:manipulation;}
+    .stage canvas{touch-action:manipulation;}
   }
 </style>
 </head>
@@ -483,9 +485,11 @@ function orbBurst(){ burstT = 1; }
 })();
 
 // ---- best-effort mic amplitude analyser (independent of SpeechRecognition; degrades silently) ----
+// DISABLED on iOS — getUserMedia fights SpeechRecognition for the mic, causing silent failures
 var micAnalyserOn = false;
 function startMicMeter(){
   if (micAnalyserOn) return;
+  if (IS_IOS) { micAnalyserOn = true; return; } // skip on iOS to avoid mic conflict
   try {
     const AC = window.AudioContext || window.webkitAudioContext;
     if (!AC || !navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) return;
@@ -745,21 +749,99 @@ function soundsWordy(t){ return t && t.split(/\s+/).filter(Boolean).length >= 2;
 
 // ---- single mic owner: only the state machine starts/stops the mic ----
 function micShouldBeLive(){ return powered && (voiceState==='ASLEEP'||voiceState==='ATTENTIVE'||voiceState==='CAPTURING'||voiceState==='FOLLOWUP'); }
-function pumpMic(){ if(!SR||!powered||!micShouldBeLive()||restartInFlight) return; const gap=Date.now()-lastStartTs; if(gap<300){ setTimeout(pumpMic,300-gap); return; } restartInFlight=true; if(!rec) buildRec(); try{ rec.start(); lastStartTs=Date.now(); }catch(e){} setTimeout(function(){ restartInFlight=false; },400); }
+var iosRestartFails = 0;  // track consecutive restart failures on iOS
+function pumpMic(){
+  if(!SR||!powered||!micShouldBeLive()||restartInFlight) return;
+  var gap = Date.now()-lastStartTs;
+  if(gap<300){ setTimeout(pumpMic,300-gap); return; }
+  restartInFlight = true;
+  if(!rec) buildRec();
+  try {
+    rec.start(); lastStartTs=Date.now();
+  } catch(e){
+    // On mobile, start() can throw if not in user-gesture context
+    restartInFlight = false;
+    if(IS_IOS || IS_MOBILE){
+      iosRestartFails++;
+      if(iosRestartFails >= 2){
+        showTapPrompt();
+        clog('Mic needs tap to restart (mobile restriction).','warn');
+      }
+    }
+    return;
+  }
+  setTimeout(function(){ restartInFlight=false; },400);
+}
 function toMicOff(){ if(rec){ try{ rec.abort(); }catch(e){} } }
 function toMicOn(){ pumpMic(); }
-function freshMic(){ if(rec){ try{ rec.abort(); }catch(e){} } else { pumpMic(); } }
+// freshMic: abort + explicitly restart (don't rely on async onend alone)
+function freshMic(){
+  if(rec){ try{ rec.abort(); }catch(e){} }
+  // always schedule a restart — don't rely solely on onend which can race on mobile
+  setTimeout(pumpMic, 150);
+}
 function buildRec(){
   rec = new SR();
   rec.continuous = !IS_IOS; rec.interimResults = true; rec.lang = 'en-US';
-  rec.onstart = function(){ restartInFlight = false; micLive = true; };
+  rec.onstart = function(){ restartInFlight = false; micLive = true; iosRestartFails = 0; hideTapPrompt(); };
   rec.onresult = onResult;
-  rec.onend = function(){ restartInFlight = false; micLive = false; if(micShouldBeLive() && !speaking) setTimeout(pumpMic, 250); };
+  rec.onend = function(){
+    restartInFlight = false; micLive = false;
+    if(micShouldBeLive() && !speaking){
+      if(IS_IOS){
+        // iOS: non-user-gesture restart may silently fail — use shorter delay and track failures
+        setTimeout(function(){
+          pumpMic();
+          // If start didn't fire within 600ms, show tap prompt
+          setTimeout(function(){
+            if(!micLive && micShouldBeLive() && !speaking){
+              iosRestartFails++;
+              if(iosRestartFails >= 2) showTapPrompt();
+            }
+          }, 600);
+        }, 200);
+      } else {
+        setTimeout(pumpMic, 250);
+      }
+    }
+  };
   rec.onerror = function(ev){ restartInFlight = false; micLive = false;
     if(ev && ev.error === 'aborted') return;
     if(ev && (ev.error === 'not-allowed' || ev.error === 'service-not-allowed')){ micState('unsupported'); coreState('mic blocked','off'); status('Mic blocked — allow microphone for this site, then tap the orb', false); clog('Mic permission denied. Enable mic, then tap the orb.', 'hi'); return; }
+    if(IS_IOS && ev && ev.error === 'no-speech'){ iosRestartFails++; if(iosRestartFails >= 3){ showTapPrompt(); return; } }
     if(micShouldBeLive() && !speaking) setTimeout(pumpMic, 300);
   };
+}
+
+// ---- mobile tap-to-talk prompt (shown when auto-restart fails) ----
+function showTapPrompt(){
+  if(document.getElementById('tapPrompt')) return;
+  var btn = document.createElement('button');
+  btn.id = 'tapPrompt';
+  btn.textContent = '🎤 TAP TO TALK';
+  btn.style.cssText = 'position:fixed;bottom:28px;left:50%;transform:translateX(-50%);z-index:9999;font-family:var(--mono);font-size:16px;font-weight:800;letter-spacing:3px;color:#03110a;background:var(--green);border:2px solid #fff;border-radius:50px;padding:18px 36px;cursor:pointer;box-shadow:0 0 30px rgba(52,255,150,.5);animation:tapPulse 1.5s infinite;-webkit-tap-highlight-color:transparent;';
+  var style = document.createElement('style');
+  style.textContent = '@keyframes tapPulse{0%,100%{box-shadow:0 0 20px rgba(52,255,150,.4);}50%{box-shadow:0 0 40px rgba(52,255,150,.8);}}';
+  document.head.appendChild(style);
+  btn.addEventListener('click', function(e){
+    e.stopPropagation();
+    iosRestartFails = 0;
+    hideTapPrompt();
+    // User gesture context — mic start will succeed
+    try{ var c = ac(); if(c && c.resume) c.resume(); }catch(ex){}
+    if(rec){ try{ rec.abort(); }catch(ex){} }
+    rec = null; buildRec();
+    setVoiceState('ATTENTIVE'); pumpMic(); armAttentive();
+    status('Tap-to-talk — listening', true);
+    clog('Tap-to-talk — mic restarted.','hi');
+  });
+  btn.addEventListener('touchend', function(e){ e.preventDefault(); btn.click(); });
+  document.body.appendChild(btn);
+  status('Tap the button or orb to speak', false);
+}
+function hideTapPrompt(){
+  var el = document.getElementById('tapPrompt');
+  if(el) el.remove();
 }
 
 const MIC_OFF = ['OFF','THINKING','SPEAKING'];
@@ -826,11 +908,25 @@ function togglePower() {
 document.querySelector('.stage').addEventListener('click', () => {
   if (speaking || working) return;
   if (!powered) { togglePower(); return; }
+  // Resume AudioContext on user gesture (required by mobile browsers)
+  try { const c = ac(); if (c && c.resume) c.resume(); } catch(e){}
+  iosRestartFails = 0; hideTapPrompt();
   earcon('wake'); followupCount = 0;
-  setVoiceState('ATTENTIVE'); freshMic(); armAttentive();
+  // On mobile: rebuild rec fresh in user-gesture context for reliable start
+  if (IS_MOBILE && rec) { try { rec.abort(); } catch(e){} rec = null; }
+  buildRec();
+  setVoiceState('ATTENTIVE'); pumpMic(); armAttentive();
   status('Tap-to-talk — listening', true);
   clog('Tap-to-talk — awake, mic live.');
 });
+// iOS: touchend fires before click and counts as user gesture more reliably
+if (IS_MOBILE) {
+  document.querySelector('.stage').addEventListener('touchend', function(e) {
+    if (speaking || working || !powered) return;
+    e.preventDefault(); // prevent duplicate click
+    document.querySelector('.stage').click();
+  }, { passive: false });
+}
 
 function bootSeq(){
   document.body.classList.remove('dimmed');
