@@ -1,4 +1,17 @@
 <!DOCTYPE html>
+<!--
+  PLL COMMAND CENTER — V5.0 "Company Brain"  (2026-07-13)
+  Changelog vs V4.4:
+   + Top Task full-screen takeover ("show me the top task") — huge type, 15s auto-dismiss
+     with countdown ring, exit by tap / ✕ / voice ("go back", "next task").
+   + Team-member queries ("what's Aidan's top task", "Laura's priorities") — structured,
+     flags overdue counts; falls back to KB then agent.
+   + Revenue-action intent ("give me a revenue task I can do now") — cycles with "next".
+   + Pipeline/company-status intent ("what's going on with the company").
+   + Additive brief.json fields: topTasks[], teamMembers{}, revenueActions[], pipelineStat{}.
+     All optional — app degrades gracefully to KB / AI brain / agent when absent.
+   * NO changes to webhook dispatch, tap-to-talk mic model, or existing brief.json keys.
+-->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -219,6 +232,44 @@
     .stage{min-height:280px; touch-action:manipulation;}
     .stage canvas{touch-action:manipulation;}
   }
+  /* ═══════════ V5.0 — TOP TASK FULL-SCREEN ═══════════ */
+  #topTaskOverlay{
+    position:fixed; inset:0; z-index:999; display:none;
+    flex-direction:column; align-items:center; justify-content:center;
+    padding:34px 30px; cursor:pointer;
+    background:
+      radial-gradient(ellipse 90% 70% at 50% 0%, rgba(20,90,60,.35), transparent 70%),
+      radial-gradient(ellipse 80% 60% at 50% 120%, rgba(15,60,40,.25), transparent 70%),
+      #03110a;
+    background-color:#03110a;
+    animation:ttFade .28s ease both;
+  }
+  #topTaskOverlay.on{display:flex;}
+  @keyframes ttFade{from{opacity:0; transform:scale(.985);}to{opacity:1; transform:scale(1);}}
+  .ttinner{max-width:1100px; width:100%; text-align:center; pointer-events:none;}
+  .ttkicker{display:flex; gap:12px; align-items:center; justify-content:center; margin-bottom:22px;}
+  #ttRank{font-size:14px; letter-spacing:6px; text-transform:uppercase; color:var(--cy2); text-shadow:0 0 18px var(--glow);}
+  .tthot{font-size:12px; letter-spacing:3px; padding:5px 12px; border-radius:20px; background:rgba(255,93,93,.14); border:1px solid var(--red); color:var(--red); animation:blink 1.2s infinite;}
+  .tttitle{font-size:clamp(30px,6.2vw,74px); line-height:1.08; font-weight:800; color:#eaffef; text-shadow:0 0 30px var(--glow); letter-spacing:.5px;}
+  .ttwhy{font-size:clamp(16px,2.4vw,28px); line-height:1.4; color:var(--cy); margin-top:26px; max-width:900px; margin-left:auto; margin-right:auto;}
+  .ttmeta{display:flex; gap:14px; flex-wrap:wrap; justify-content:center; margin-top:30px;}
+  .ttmeta .mchip{font-size:clamp(12px,1.5vw,16px); letter-spacing:1.5px; text-transform:uppercase; color:#bff8dc; border:1px solid var(--line2); background:rgba(10,30,22,.6); border-radius:8px; padding:9px 15px;}
+  .ttmeta .mchip b{color:#fff;}
+  .ttmeta .mchip.hi{border-color:var(--amber); color:var(--amber);}
+  .tthint{font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--dim); margin-top:36px;}
+  .ttring{position:absolute; top:26px; left:26px; width:66px; height:66px; pointer-events:none;}
+  .ttring svg{width:100%; height:100%; transform:rotate(-90deg);}
+  .ttring circle{fill:none; stroke-width:5;}
+  .ttring .ttbg{stroke:rgba(19,86,54,.4);}
+  .ttring .ttfg{stroke:var(--cy2); stroke-linecap:round; filter:drop-shadow(0 0 6px var(--glow)); transition:stroke-dashoffset 1s linear;}
+  .ttring #ttCount{position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:22px; color:#eaffef; font-variant-numeric:tabular-nums; text-shadow:0 0 12px var(--glow);}
+  .ttclose{position:absolute; top:30px; right:30px; z-index:2; width:52px; height:52px; border-radius:50%; font-size:20px; background:rgba(10,30,22,.85); color:var(--cy); border:1px solid var(--line2); cursor:pointer;}
+  .ttclose:hover{border-color:var(--red); color:var(--red);}
+  @media (max-width:640px){
+    .ttring{top:16px; left:16px; width:52px; height:52px;} .ttring #ttCount{font-size:17px;}
+    .ttclose{top:18px; right:18px; width:44px; height:44px;}
+    .ttwhy{margin-top:18px;} .ttmeta{margin-top:20px;} .tthint{margin-top:24px;}
+  }
 </style>
 </head>
 <body class="booting">
@@ -310,6 +361,19 @@
       <div class="queuelab">On deck</div>
       <div class="qscroll" id="missionQueue"></div>
     </div>
+  </div>
+</div>
+
+<!-- ═══════════ V5.0 — TOP TASK FULL-SCREEN TAKEOVER ═══════════ -->
+<div id="topTaskOverlay" aria-hidden="true" onclick="exitTopTask()">
+  <div class="ttring"><svg viewBox="0 0 120 120"><circle class="ttbg" cx="60" cy="60" r="54"></circle><circle id="ttArc" class="ttfg" cx="60" cy="60" r="54"></circle></svg><span id="ttCount">15</span></div>
+  <button class="ttclose" onclick="exitTopTask()" aria-label="Close">✕</button>
+  <div class="ttinner">
+    <div class="ttkicker"><span id="ttRank">TOP TASK</span><span id="ttHot" class="tthot" style="display:none">HOT</span></div>
+    <div class="tttitle" id="ttTitle">—</div>
+    <div class="ttwhy" id="ttWhy"></div>
+    <div class="ttmeta" id="ttMeta"></div>
+    <div class="tthint">Tap anywhere or say “go back” · say “next task” for the next one</div>
   </div>
 </div>
 
@@ -605,7 +669,9 @@ function loadBrief(){
       if (d && d.brief && d.brief.length) {
         BRIEF = d.brief; NEXT = d.next || NEXT; BRIEF_DATE = d.date || ''; KB = d.kb || [];
         BRIEF_TS = d.ts || null;
-        BRIEF_EXTRA = { signal: d.signal, redflags: d.redflags, team: d.team, pipeline: d.pipeline, pipelineDeals: d.pipelineDeals, noise: d.noise };
+        BRIEF_EXTRA = { signal: d.signal, redflags: d.redflags, team: d.team, pipeline: d.pipeline, pipelineDeals: d.pipelineDeals, noise: d.noise,
+          teamMembers: d.teamMembers || null, revenueActions: d.revenueActions || null, pipelineStat: d.pipelineStat || null,
+          topTasks: d.topTasks || null };
         renderLists();
         briefOk = true; renderServices();
         const cb = document.getElementById('chipBrief'); if (cb){ cb.textContent = 'OK'; cb.className = 'ok'; }
@@ -1071,6 +1137,40 @@ function handleSpeech(heard) {
   // V4.2: action intent wins BEFORE any KB/agenda lookup — "put a task in for
   // Aidan" must dispatch, not read Aidan's tasks back.
   if (isActionCommand(heard)) { dispatch(heard); return; }
+
+  // ===== V5.0 — ONBOARD COMPANY-BRAIN INTENTS (answer instantly, no dispatch) =====
+  // If we're already in top-task full-screen, capture navigation words first.
+  if (topTaskActive) {
+    if (/\b(go back|back to (the )?dashboard|dismiss|close|exit|done)\b/.test(heard)) { exitTopTask(); return; }
+    if (/\b(next( task| one)?|another|after that|forward)\b/.test(heard)) { enterTopTask(topTaskIdx + 1); return; }
+  }
+  // Top Task → full-screen takeover
+  if (/\b(top|number ?one|number 1|no\.? ?1|#?1|single most|most important|biggest|main|first)\b[\s\w']{0,26}\b(task|priority|thing|focus|move|to ?do)\b/.test(heard)
+      && !/\b(three|3|list|all|every|next three)\b/.test(heard)) {
+    enterTopTask(0); return;
+  }
+  // Revenue-generating action I can do now
+  if (/\b(revenue|money|cash|income|earn\w*|profit)\b/.test(heard)
+      || /\bwhat (can|should) i do (right )?now\b/.test(heard)
+      || /\bmake (me |some )?money\b/.test(heard)
+      || /\b(generat\w*)\b[\s\w']{0,20}\b(task|activit\w*|revenue)\b/.test(heard)) {
+    speakRevenue(0); return;
+  }
+  // "next" while cycling revenue actions
+  if (revActive && /\b(next|another|one more|after that)\b/.test(heard)) { speakRevenue(revIdx + 1); return; }
+  // Team member's tasks / priorities
+  var tm = detectTeamMember(heard);
+  if (tm && /\b(task|tasks|priorit\w*|working on|on (his|her|their) plate|to ?do|doing|top|overdue|status|up to|handling)\b/.test(heard)) {
+    speakTeamMember(tm); return;
+  }
+  // Pipeline / company status
+  if (/\b(what'?s going on|going on)\b.{0,20}\b(company|business|shop|pll)\b/.test(heard)
+      || /\bpipeline\b/.test(heard)
+      || /\bhow (are|is|'?s) (the )?(deals?|business|company|pipeline|things|we)\b/.test(heard)
+      || /\bcompany (status|update|overview)\b|\bstate of (the )?(company|business)\b/.test(heard)) {
+    speakPipeline(); return;
+  }
+
   if (KB.length) {
     let best = null, bestScore = 0;
     KB.forEach(k => {
@@ -1091,6 +1191,153 @@ function handleSpeech(heard) {
   const words = heard.split(/\s+/).filter(Boolean).length;
   if (words < 2) { setVoiceState('FOLLOWUP'); armFollowup(); return; }
   askBrain(heard);
+}
+
+// ═══════════ V5.0 — COMPANY-BRAIN HELPERS ═══════════
+// Top tasks: prefer rich topTasks[], else derive from the mission brief.
+function getTopTasks(){
+  var X = BRIEF_EXTRA || {};
+  if (X.topTasks && X.topTasks.length) return X.topTasks;
+  return (BRIEF || []).map(function(b, i){
+    var seg = (b.t || '').split(/[—–-]/);
+    var title = (seg.length > 1 ? seg[0] : (b.t || '')).replace(/^(fire|task)\s*(one|two|three|four|five|\d+)[.:]?\s*/i, '').trim();
+    if (title.length > 64) title = title.slice(0, 64).trim() + '…';
+    return { rank: i + 1, title: title || ('Task ' + (i + 1)), why: b.t || '', hot: !!b.hot };
+  });
+}
+// ---- Top Task full-screen mode ----
+var topTaskActive = false, topTaskIdx = 0, ttTimer = null, ttCountTimer = null;
+function enterTopTask(idx){
+  var list = getTopTasks();
+  if (!list.length) { respond("I don't have a top task loaded yet. Want me to ask the agent? Yes or no."); pendingDispatch = "what's my top task"; return; }
+  if (idx < 0) idx = 0;
+  if (idx >= list.length) { respond("That's the end of the list — that was the last task."); return; }
+  topTaskIdx = idx; topTaskActive = true;
+  var t = list[idx];
+  var rank = t.rank ? ('#' + t.rank + ' — Top Task') : (idx === 0 ? 'TOP TASK' : 'TASK ' + (idx + 1));
+  document.getElementById('ttRank').textContent = rank;
+  document.getElementById('ttHot').style.display = t.hot ? 'inline-block' : 'none';
+  document.getElementById('ttTitle').textContent = t.title || t.t || '—';
+  document.getElementById('ttWhy').textContent = t.why || '';
+  var meta = '';
+  if (t.owner) meta += '<span class="mchip">Owner: <b>' + esc(t.owner) + '</b></span>';
+  if (t.due) meta += '<span class="mchip">Due: <b>' + esc(t.due) + '</b></span>';
+  if (t.priority) meta += '<span class="mchip' + (/high|urgent/i.test(t.priority) ? ' hi' : '') + '">' + esc(t.priority) + '</span>';
+  if (t.revenue) meta += '<span class="mchip hi">Revenue</span>';
+  document.getElementById('ttMeta').innerHTML = meta;
+  var ov = document.getElementById('topTaskOverlay');
+  ov.classList.add('on'); ov.setAttribute('aria-hidden', 'false');
+  startTtCountdown();
+  respond((idx === 0 ? "Your top task. " : "Next up. ") + (t.title || '') + ". " + (t.why || ''));
+}
+function startTtCountdown(){
+  clearTimeout(ttTimer); clearInterval(ttCountTimer);
+  var secs = 15, arc = document.getElementById('ttArc'), lbl = document.getElementById('ttCount');
+  var C = 2 * Math.PI * 54; arc.style.strokeDasharray = C; arc.style.strokeDashoffset = 0;
+  lbl.textContent = secs;
+  ttCountTimer = setInterval(function(){
+    secs--; if (secs < 0) secs = 0; lbl.textContent = secs;
+    arc.style.strokeDashoffset = C * (1 - secs / 15);
+  }, 1000);
+  ttTimer = setTimeout(exitTopTask, 15000);
+}
+function exitTopTask(){
+  if (!topTaskActive) return;
+  topTaskActive = false;
+  clearTimeout(ttTimer); clearInterval(ttCountTimer);
+  var ov = document.getElementById('topTaskOverlay');
+  ov.classList.remove('on'); ov.setAttribute('aria-hidden', 'true');
+  status(awake ? 'Awake — listening' : 'Standing by', awake);
+}
+function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+// ---- Revenue-generating action right now ----
+var revActive = false, revIdx = 0;
+function speakRevenue(idx){
+  var list = (BRIEF_EXTRA && BRIEF_EXTRA.revenueActions) || null;
+  if (!list || !list.length) {
+    // Fallback: first hot brief item is the money move.
+    var hot = (BRIEF || []).filter(function(b){ return b.hot; });
+    if (hot.length) { revActive = true; revIdx = 0; respond("Revenue move you can do right now. " + hot[0].t + (hot.length > 1 ? " Say 'next' for another." : "")); return; }
+    respond("I don't have a revenue action loaded yet. Want me to ask the agent? Yes or no."); pendingDispatch = "what revenue task can I do now"; return;
+  }
+  if (idx < 0) idx = 0;
+  if (idx >= list.length) { respond("That's every revenue action I've got queued."); return; }
+  revActive = true; revIdx = idx;
+  var a = list[idx];
+  var s = "Revenue move" + (idx === 0 ? " you can do right now. " : " number " + (idx + 1) + ". ") + (a.title || '') + ". ";
+  if (a.why) s += a.why + " ";
+  if (a.est_value) s += "Worth about " + a.est_value + ". ";
+  if (a.next_step) s += "Next step: " + a.next_step + ". ";
+  if (idx < list.length - 1) s += "Say 'next' for another.";
+  respond(s.trim());
+}
+
+// ---- Team member tasks / priorities ----
+function teamKeyList(){
+  var tm = (BRIEF_EXTRA && BRIEF_EXTRA.teamMembers) || null;
+  if (tm) return Object.keys(tm);
+  return ['aidan','laura','ronald','evelyn','steve','max','aaron','courtney'];
+}
+function detectTeamMember(heard){
+  var keys = teamKeyList();
+  var words = heard.split(/\s+/).filter(Boolean);
+  // exact/substring first
+  for (var i = 0; i < keys.length; i++){ if (heard.indexOf(keys[i]) !== -1) return keys[i]; }
+  // fuzzy (aiden->aidan, ronny->ronald, etc.)
+  for (var w = 0; w < words.length; w++){
+    if (words[w].length < 3) continue;
+    for (var k = 0; k < keys.length; k++){
+      if (lev(words[w], keys[k]) <= 1) return keys[k];
+    }
+  }
+  return null;
+}
+function speakTeamMember(key){
+  var tm = (BRIEF_EXTRA && BRIEF_EXTRA.teamMembers) || null;
+  if (tm && tm[key]) {
+    var m = tm[key];
+    var name = m.display_name || (key.charAt(0).toUpperCase() + key.slice(1));
+    var s = name + "'s ";
+    if (m.top_task) s += "top task is: " + m.top_task + ". ";
+    var tasks = m.tasks || [];
+    if (tasks.length) {
+      s += (m.top_task ? "Also on " : "On ") + name + "'s plate: ";
+      s += tasks.slice(0, 5).map(function(t){
+        var line = t.title || '';
+        if (t.overdue_days && t.overdue_days > 0) line += ", " + t.overdue_days + " days overdue";
+        else if (t.due) line += ", due " + t.due;
+        return line;
+      }).join('. ') + ". ";
+    }
+    if (m.notes) s += m.notes;
+    respond(s.trim());
+    return;
+  }
+  // Fallback to the knowledge base entry for that name.
+  var kb = kbAnswer(key);
+  if (kb) { respond(kb); return; }
+  respond("I don't have " + (key.charAt(0).toUpperCase() + key.slice(1)) + "'s tasks loaded yet. Want me to ask the agent? Yes or no.");
+  pendingDispatch = "what are " + key + "'s tasks today";
+}
+
+// ---- Pipeline / company status ----
+function speakPipeline(){
+  var X = BRIEF_EXTRA || {};
+  var p = X.pipelineStat || null;
+  if (p) {
+    var s = "Here's the company picture. ";
+    if (p.total_value) s += "Pipeline is " + p.total_value + " across " + (p.active_deals || 'several') + " active deals. ";
+    if (p.hot && p.hot.length) s += "Hot right now: " + p.hot.join(', ') + ". ";
+    if (p.stalled && p.stalled.length) s += "Stalled and needs a push: " + p.stalled.join(', ') + ". ";
+    respond(s.trim());
+    return;
+  }
+  if (X.pipeline) { respond("Company picture. " + X.pipeline); return; }
+  var kb = kbAnswer('pipeline');
+  if (kb) { respond("Company picture. " + kb); return; }
+  respond("I don't have the pipeline numbers loaded yet. Want me to ask the agent? Yes or no.");
+  pendingDispatch = "what's the pipeline status";
 }
 
 // ===== AI BRAIN — instant onboard answers, no dispatch =====
