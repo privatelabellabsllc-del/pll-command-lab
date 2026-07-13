@@ -489,7 +489,7 @@ function orbBurst(){ burstT = 1; }
 var micAnalyserOn = false;
 function startMicMeter(){
   if (micAnalyserOn) return;
-  if (IS_IOS) { micAnalyserOn = true; return; } // skip on iOS to avoid mic conflict
+  if (IS_MOBILE) { micAnalyserOn = true; return; } // skip on mobile to avoid mic conflict with SpeechRecognition
   try {
     const AC = window.AudioContext || window.webkitAudioContext;
     if (!AC || !navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) return;
@@ -748,7 +748,12 @@ function wakeMatch(t){
 function soundsWordy(t){ return t && t.split(/\s+/).filter(Boolean).length >= 2; }
 
 // ---- single mic owner: only the state machine starts/stops the mic ----
-function micShouldBeLive(){ return powered && (voiceState==='ASLEEP'||voiceState==='ATTENTIVE'||voiceState==='CAPTURING'||voiceState==='FOLLOWUP'); }
+function micShouldBeLive(){
+  if (!powered) return false;
+  // On mobile: never auto-listen in ASLEEP — wake word loop can't survive without user gesture
+  if (IS_MOBILE && voiceState === 'ASLEEP') return false;
+  return voiceState==='ASLEEP'||voiceState==='ATTENTIVE'||voiceState==='CAPTURING'||voiceState==='FOLLOWUP';
+}
 var iosRestartFails = 0;  // track consecutive restart failures on iOS
 function pumpMic(){
   if(!SR||!powered||!micShouldBeLive()||restartInFlight) return;
@@ -831,11 +836,19 @@ function showTapPrompt(){
     try{ var c = ac(); if(c && c.resume) c.resume(); }catch(ex){}
     if(rec){ try{ rec.abort(); }catch(ex){} }
     rec = null; buildRec();
-    setVoiceState('ATTENTIVE'); pumpMic(); armAttentive();
-    status('Tap-to-talk — listening', true);
-    clog('Tap-to-talk — mic restarted.','hi');
+    voiceState = 'ATTENTIVE';
+    micState('awake'); coreState('awake','awake');
+    try {
+      rec.start(); lastStartTs = Date.now();
+      clog('Tap-to-talk — mic started.','hi');
+      status('Listening — go ahead', true);
+    } catch(ex) {
+      clog('Tap-to-talk — mic failed: ' + ex.message,'warn');
+      status('Mic failed — tap again', false);
+      showTapPrompt();
+    }
+    armAttentive();
   });
-  btn.addEventListener('touchend', function(e){ e.preventDefault(); btn.click(); });
   document.body.appendChild(btn);
   status('Tap the button or orb to speak', false);
 }
@@ -866,7 +879,10 @@ function updateStateUI(s){
   else if(s==='FOLLOWUP'){ micState('awake'); coreState('awake','awake'); status('Still listening — follow up or stay quiet', true); }
 }
 
-function standDown(){ followupCount = 0; latestCmd=''; pendingDispatch=null; setVoiceState('ASLEEP'); document.body.classList.add('dimmed'); status('Powered — say “Command Lab”', false); clog('Stood down — wake word required.'); }
+function standDown(){ followupCount = 0; latestCmd=''; pendingDispatch=null; setVoiceState('ASLEEP'); document.body.classList.add('dimmed');
+  if (IS_MOBILE) { status('Tap the orb to speak', false); clog('Stood down — tap orb to speak.'); showTapPrompt(); }
+  else { status('Powered — say “Command Lab”', false); clog('Stood down — wake word required.'); }
+}
 function armAttentive(){ clearTimeout(attentiveTimer); attentiveTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 8000); }
 function armFollowup(){ clearTimeout(followupTimer); followupTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 6000); }
 function armEndpoint(cmd){ latestCmd = cmd; armSleep(); clearTimeout(endpointTimer); clearTimeout(attentiveTimer); clearTimeout(followupTimer); if(captureStartTs && Date.now()-captureStartTs > 30000){ endpoint(); return; } const wait = soundsComplete(cmd) ? 1400 : 2200; endpointTimer = setTimeout(endpoint, wait); }
@@ -904,29 +920,37 @@ function togglePower() {
   }
 }
 
-// Tap-to-talk: tapping the orb wakes it straight to attentive (skips wake word)
-document.querySelector('.stage').addEventListener('click', () => {
+// Tap-to-talk: tapping the orb wakes it straight to attentive (skips wake word).
+// IMPORTANT: Do NOT use a touchend→synthetic .click() bounce — synthetic clicks
+// are NOT user gestures on mobile, so rec.start() silently fails.
+// touch-action:manipulation on .stage already kills the 300ms click delay.
+document.querySelector('.stage').addEventListener('click', function(e) {
   if (speaking || working) return;
   if (!powered) { togglePower(); return; }
   // Resume AudioContext on user gesture (required by mobile browsers)
-  try { const c = ac(); if (c && c.resume) c.resume(); } catch(e){}
+  try { var c = ac(); if (c && c.resume) c.resume(); } catch(ex){}
   iosRestartFails = 0; hideTapPrompt();
   earcon('wake'); followupCount = 0;
-  // On mobile: rebuild rec fresh in user-gesture context for reliable start
-  if (IS_MOBILE && rec) { try { rec.abort(); } catch(e){} rec = null; }
+  // Kill existing rec and build fresh — critical for mobile user-gesture context
+  if (rec) { try { rec.abort(); } catch(ex){} }
+  rec = null;
   buildRec();
-  setVoiceState('ATTENTIVE'); pumpMic(); armAttentive();
-  status('Tap-to-talk — listening', true);
-  clog('Tap-to-talk — awake, mic live.');
+  // Set state directly to avoid setVoiceState side-effects triggering toMicOn/pumpMic
+  voiceState = 'ATTENTIVE';
+  micState('awake'); coreState('awake','awake');
+  // Start mic DIRECTLY in this user-gesture call stack — don't go through
+  // pumpMic() which has throttling/guards that can swallow the start
+  try {
+    rec.start(); lastStartTs = Date.now();
+    clog('Tap-to-talk — mic started.', 'hi');
+    status('Listening — go ahead', true);
+  } catch(ex) {
+    clog('Tap-to-talk — mic failed: ' + ex.message, 'warn');
+    status('Mic failed — tap again', false);
+    showTapPrompt();
+  }
+  armAttentive();
 });
-// iOS: touchend fires before click and counts as user gesture more reliably
-if (IS_MOBILE) {
-  document.querySelector('.stage').addEventListener('touchend', function(e) {
-    if (speaking || working || !powered) return;
-    e.preventDefault(); // prevent duplicate click
-    document.querySelector('.stage').click();
-  }, { passive: false });
-}
 
 function bootSeq(){
   document.body.classList.remove('dimmed');
@@ -943,9 +967,15 @@ function bootSeq(){
   setTimeout(function(){
     renderServices();
     if (!SR) { coreState('no mic','idle'); status('Mic not supported in this browser — buttons still work', false); return; }
-    coreState('listening','idle');
-    status('Powered — say “Command Lab”', false);
-    say(daypart() + ", Sam. Command Center online.");
+    if (IS_MOBILE) {
+      coreState('tap to talk','idle');
+      status('Tap the orb to speak', false);
+      say(daypart() + ", Sam. Command Center online. Tap the orb to talk.");
+    } else {
+      coreState('listening','idle');
+      status('Powered — say “Command Lab”', false);
+      say(daypart() + ", Sam. Command Center online.");
+    }
   }, 250 + lines.length*350);
 }
 
