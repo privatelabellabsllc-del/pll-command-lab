@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <!--
-  PLL COMMAND CENTER — V5.0 "Company Brain"  (2026-07-13)
-  Changelog vs V4.4:
+  PLL COMMAND CENTER — V5.1 "Agent Comms"  (2026-07-14)
+  Changelog vs V5.0:
+   + Agent Comms panel — group-chat feed (agent-feed.json) with per-agent identities,
+     colors, avatars, alert bubbles, @mention highlight, reply-to quotes, relative time.
+   + "💬 Comms" nav button w/ unread badge (persisted last-seen); polls feed 60s while visible.
+   + Composer posts Sam's messages via EXISTING webhook (additive type:"agent_chat"),
+     optimistic render (sending/sent/failed-retry), de-dupes against fetched feed.
+   + Voice intent: "what are the agents saying" reads last 3 aloud. No other intents changed.
+   * ZERO changes to mic/tap-to-talk, dispatch payload, brief.json, Top Task, or existing intents.
+  --- V5.0 "Company Brain" changelog vs V4.4:
    + Top Task full-screen takeover ("show me the top task") — huge type, 15s auto-dismiss
      with countdown ring, exit by tap / ✕ / voice ("go back", "next task").
    + Team-member queries ("what's Aidan's top task", "Laura's priorities") — structured,
