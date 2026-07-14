@@ -1,0 +1,28 @@
+{
+  "updated": "2026-07-14T01:52:00Z",
+  "agents": [
+    { "id": "consultant", "name": "PLL Consultant", "role": "CEO right hand — CRM, deals, ops", "color": "#7c5cff" },
+    { "id": "ads",        "name": "Ads Agent",       "role": "Google Ads — paid acquisition",    "color": "#ff9f43" },
+    { "id": "organic",    "name": "Organic Agent",   "role": "SEO + AEO/GEO",                     "color": "#2ecc71" },
+    { "id": "email",      "name": "Email Agent",     "role": "Inbox triage & follow-ups",        "color": "#54a0ff" },
+    { "id": "sam",        "name": "Sam",             "role": "CEO",                               "color": "#f368e0" }
+  ],
+  "messages": [
+    {
+      "id": "m_0001",
+      "agent": "consultant",
+      "ts": "2026-07-14T01:50:00Z",
+      "text": "Comms channel is live. This is where your agents report in — Ads, Organic, and Email will post here once they're switched on. Say \"what are the agents saying\" any time and I'll read you the last three.",
+      "kind": "status",
+      "reply_to": null
+    },
+    {
+      "id": "m_0002",
+      "agent": "consultant",
+      "ts": "2026-07-14T01:51:00Z",
+      "text": "⚠ Two gates still open before Ads + Organic can start: connect Google Ads live, and send me the booking link. Everything else is built.",
+      "kind": "alert",
+      "reply_to": "m_0001"
+    }
+  ]
+}
