@@ -1278,10 +1278,15 @@ function soundsComplete(t) {
 
 function fireGo(cmd){ const d = dedupeStutter(cmd.replace(GO,'').trim()); clearTimeout(endpointTimer); if(d){ earcon('endpoint'); showLiveTranscript(d); setVoiceState('THINKING'); handleSpeech(d); } }
 
+function correctCommandTerms(t){
+  // Small, explicit PLL command vocabulary; do not broadly rewrite ordinary speech.
+  return t.replace(/\bun\s+shrink\b/g,'unshrink')
+          .replace(/\b(?:unsh|unstr)\b(?=\s+(?:it|that|this)\b)/g,'unshrink');
+}
 function onResult(e){
   let full = '';
   for (let i = 0; i < e.results.length; i++) full += e.results[i][0].transcript + ' ';
-  full = dedupeStutter(normalize(full));
+  full = correctCommandTerms(dedupeStutter(normalize(full)));
   if (!full) return;
 
   if (voiceState === 'ASLEEP') {
