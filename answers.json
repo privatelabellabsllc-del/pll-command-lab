@@ -1,8 +1,8 @@
 {
-  "id": "cmd_mrtnzgji_ikvkpfm-completed",
-  "request_id": "cmd_mrtnzgji_ikvkpfm",
-  "ts": "2026-07-20T20:15:50Z",
-  "agent": "PLL Consultant",
+  "id": "test_direct_email_20260720_1645-completed",
+  "request_id": "test_direct_email_20260720_1645",
+  "ts": "2026-07-20T20:50:00Z",
+  "agent": "Email Agent",
   "status": "completed",
-  "text": "I did not understand that clearly. Did you mean: \u201cWhat is the dollar cost per kilo for Everything Juice?\u201d If yes, tell me which formula or product record you mean so I do not give you a bad number."
+  "text": "Connectivity test acknowledged. No email sent and no data changed, as instructed. Command Center Dispatch webhook is receiving assignments and the callback path is working."
 }
