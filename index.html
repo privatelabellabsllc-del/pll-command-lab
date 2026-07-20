@@ -1669,6 +1669,11 @@ function targetKey(agent){
   if (agent === 'PLL Architect') return 'architect';
   return 'consultant';
 }
+function wantsConsultantOversight(t){
+  t = String(t || '').toLowerCase();
+  return /\b(pll consultant|consultant)\b/.test(t)
+    && /\b(also|copy|cc|oversee|oversight|supervise|review|watch|keep an eye)\b/.test(t);
+}
 function compactSummary(t){
   var s = String(t || '').trim().replace(/\s+/g, ' ');
   // Common multi-task narration: keep the meaning, drop verbal scaffolding.
@@ -1724,16 +1729,17 @@ function dispatch(heard, opts){
   if (!url) { respond("I heard you, but that dispatch line isn't connected yet."); return; }
   const rid = requestId();
   const priorContext = contextRead();
+  const overseer = ((tgt === 'email' || tgt === 'ads' || tgt === 'crm') && wantsConsultantOversight(heard)) ? 'consultant' : null;
   contextAdd('sam', heard, rid, agent);
   const logId = dlogAdd(heard, agent);
   setVoiceState('THINKING');
   orbBurst();
-  const ack = opts.question ? ("Checking with " + agent + ".") : ("Routing to " + agent + ".");
+  const ack = overseer ? ("Routing to " + agent + " with PLL Consultant oversight.") : (opts.question ? ("Checking with " + agent + ".") : ("Routing to " + agent + "."));
   dlogSet(logId, 'DISPATCHED');
-  status('Routing to ' + agent + '…', true); coreState('working','think');
-  clog('→ Route [' + agent + ' · ' + tgt + ' · ' + rid + ']: ' + heard, 'warn');
+  status('Routing to ' + agent + (overseer ? ' + PLL Consultant oversight' : '') + '…', true); coreState('working','think');
+  clog('→ Route [' + agent + ' · ' + tgt + (overseer ? ' · overseen' : '') + ' · ' + rid + ']: ' + heard, 'warn');
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, context: priorContext, ts: new Date().toISOString() }) })
+    body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, overseer: overseer, context: priorContext, ts: new Date().toISOString() }) })
   .then(r => { if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); status('Router accepted — waiting for ' + agent, true); coreState('working','think'); startAnswerWatcher(heard, logId, rid); }
                else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respondForConfirmation('The router rejected that. Say "retry" and I\'ll send it again.'); } })
   .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respondForConfirmation('Could not reach the router. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
