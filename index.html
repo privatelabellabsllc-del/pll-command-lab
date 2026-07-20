@@ -129,7 +129,9 @@
   /* ── CENTER STAGE ── */
   .stage{align-items:stretch;}
   .stagewrap{position:relative; flex:1; min-height:0; display:flex; flex-direction:column;}
-  #brain{position:absolute; inset:0; width:100%; height:100%;}
+  #brain,#brain-front{position:absolute; inset:0; width:100%; height:100%; pointer-events:none;}
+  #brain{z-index:1;} #brain-front{z-index:3;}
+  .hud,.statebox,.statusline{z-index:5;}
   .hud{position:absolute; left:16px; top:14px; z-index:3; border:1px solid var(--line2); background:rgba(6,18,13,.82); border-radius:6px; padding:9px 13px; min-width:120px;}
   .hud .hl{font-size:8px; letter-spacing:2px; color:var(--dim); text-transform:uppercase;}
   .hud .hv{font-size:22px; color:#eaffef; letter-spacing:2px; text-shadow:0 0 12px var(--glow); margin-top:3px;}
@@ -210,12 +212,12 @@
   .qcard.hot .qn{color:var(--amber);}
 
   /* ═══════════ MOOD / AMBIENT STATES ═══════════ */
-  #brain{transition:filter 1.2s ease;}
-  body[data-mood="off"] #brain{filter:saturate(.5) brightness(.6);}
-  body[data-mood="idle"] #brain{filter:saturate(1.15);}
-  body[data-mood="awake"] #brain{filter:saturate(1.6) brightness(1.14);}
-  body[data-mood="think"] #brain{filter:saturate(1.7) brightness(1.2);}
-  body[data-mood="speak"] #brain{filter:saturate(1.4) brightness(1.32) hue-rotate(-12deg);}
+  #brain,#brain-front{transition:filter 1.2s ease;}
+  body[data-mood="off"] #brain,body[data-mood="off"] #brain-front{filter:saturate(.5) brightness(.6);}
+  body[data-mood="idle"] #brain,body[data-mood="idle"] #brain-front{filter:saturate(1.15);}
+  body[data-mood="awake"] #brain,body[data-mood="awake"] #brain-front{filter:saturate(1.6) brightness(1.14);}
+  body[data-mood="think"] #brain,body[data-mood="think"] #brain-front{filter:saturate(1.7) brightness(1.2);}
+  body[data-mood="speak"] #brain,body[data-mood="speak"] #brain-front{filter:saturate(1.4) brightness(1.32) hue-rotate(-12deg);}
   body.night{filter:brightness(.95);}
   body.dimmed .main, body.dimmed .dock{filter:brightness(.5) saturate(.75); transition:filter 1.5s ease;}
   .main,.dock{transition:filter 1.5s ease;}
@@ -393,7 +395,7 @@
   .logo-halo{position:absolute;inset:-16%;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.96) 0 37%,rgba(45,122,79,.11) 52%,rgba(18,158,208,.07) 64%,transparent 70%);filter:drop-shadow(0 14px 22px rgba(38,89,62,.15));animation:haloBreath 4s ease-in-out infinite;}
   .logo-disc{position:absolute;inset:9%;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 36% 28%,#fff 0 35%,#f4f8f3 63%,#dfeae2 100%);border:1px solid rgba(45,122,79,.26);box-shadow:inset -12px -14px 24px rgba(45,122,79,.12),inset 8px 9px 18px rgba(255,255,255,.94),0 12px 28px rgba(31,79,52,.18);transform-style:preserve-3d;animation:logoFloat 7s ease-in-out infinite;}
   .logo-disc::before{content:'';position:absolute;inset:5%;border-radius:50%;border:1px solid rgba(18,158,208,.14);box-shadow:0 0 20px rgba(18,158,208,.08);}
-  .logo-disc img{width:78%;height:78%;object-fit:contain;transform:translateZ(28px);filter:drop-shadow(0 9px 8px rgba(28,76,45,.22)) saturate(1.08);}
+  .logo-disc img{width:78%;height:78%;object-fit:contain;transform:translateZ(5px);filter:drop-shadow(0 9px 8px rgba(28,76,45,.22)) saturate(1.08);}
   @keyframes logoFloat{0%,100%{transform:rotateX(4deg) rotateY(-5deg) translateY(0)}50%{transform:rotateX(-3deg) rotateY(6deg) translateY(-5px)}}
   @keyframes haloBreath{0%,100%{transform:scale(.97);opacity:.74}50%{transform:scale(1.045);opacity:1}}
   body[data-mood="awake"] .logo-core{filter:drop-shadow(0 0 18px rgba(35,174,77,.28))} body[data-mood="awake"] .logo-halo{animation-duration:1.15s;}
@@ -462,6 +464,7 @@
         <div class="logo-halo"></div>
         <div class="logo-disc"><img src="pll-mark.png" alt=""></div>
       </div>
+      <canvas id="brain-front" aria-hidden="true"></canvas>
       <div class="hud">
         <div class="hl">Today's Lane</div>
         <div class="hv" id="laneVal">1 / 1</div>
@@ -609,12 +612,12 @@ var micLevel = 0;      // 0..1 live mic amplitude (best-effort; falls back to st
 var burstT = 0;        // >0 while a dispatch comet is flying
 function orbBurst(){ burstT = 1; }
 (function(){
-  const c = document.getElementById('brain'), ctx = c.getContext('2d');
+  const c = document.getElementById('brain'), ctx = c.getContext('2d'), cf = document.getElementById('brain-front'), fctx = cf.getContext('2d');
   let W,H,CX,CY,R,pts=[];
-  const N = 260;
+  const N = 320;
   function resize(){
     const r = c.parentElement.getBoundingClientRect();
-    W = c.width = Math.max(2,r.width) * devicePixelRatio; H = c.height = Math.max(2,r.height) * devicePixelRatio;
+    W = c.width = cf.width = Math.max(2,r.width) * devicePixelRatio; H = c.height = cf.height = Math.max(2,r.height) * devicePixelRatio;
     CX = W/2; CY = H/2 - 6*devicePixelRatio; R = Math.min(W,H)*0.30;
     if (!pts.length){
       for (let i=0;i<N;i++){
@@ -626,7 +629,7 @@ function orbBurst(){ burstT = 1; }
   resize(); addEventListener('resize', resize);
   let rot = 0, t = 0, ringRot = 0, breathe = 0;
   function frame(){
-    ctx.clearRect(0,0,W,H);
+    ctx.clearRect(0,0,W,H); fctx.clearRect(0,0,W,H);
     t += 0.016;
     const listening = brainMode==='awake';
     const speed = brainMode==='off' ? 0.0012 : brainMode==='idle' ? 0.003 : brainMode==='think' ? 0.014 : brainMode==='speak' ? 0.009 : 0.006;
@@ -664,23 +667,26 @@ function orbBurst(){ burstT = 1; }
       const sc = 1 + z3/(R*2.2);
       proj.push({x: CX + x3*sc, y: CY + y3, z: z3, sc, size:p.size});
     }
-    const LINK = R*0.32;
-    ctx.lineWidth = devicePixelRatio*0.6;
+    const LINK = R*0.29;
+    ctx.lineWidth = fctx.lineWidth = devicePixelRatio*0.8;
     for (let i=0;i<proj.length;i++){
       for (let j=i+1;j<proj.length;j++){
         const dx=proj[i].x-proj[j].x, dy=proj[i].y-proj[j].y, d=Math.hypot(dx,dy);
         if (d<LINK){
-          ctx.strokeStyle = 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.075*(1-d/LINK)*alpha)+')';
-          ctx.beginPath(); ctx.moveTo(proj[i].x,proj[i].y); ctx.lineTo(proj[j].x,proj[j].y); ctx.stroke();
+          const frontLink=(proj[i].z+proj[j].z)>0, target=frontLink?fctx:ctx;
+          const linkAlpha=(frontLink?0.19:0.11)*(1-d/LINK)*alpha;
+          target.strokeStyle='rgba('+accent[0]+','+accent[1]+','+accent[2]+','+linkAlpha+')';
+          target.beginPath(); target.moveTo(proj[i].x,proj[i].y); target.lineTo(proj[j].x,proj[j].y); target.stroke();
         }
       }
     }
     for (const q of proj){
-      const front = q.z>0;
-      ctx.fillStyle = front ? 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.94*alpha)+')' : 'rgba(55,158,101,'+(0.48*alpha)+')';
-      if (front){ ctx.shadowColor='rgba('+accent[0]+','+accent[1]+','+accent[2]+',0.9)'; ctx.shadowBlur=5*devicePixelRatio; }
-      ctx.beginPath(); ctx.arc(q.x,q.y,(front?1.72:1.05)*q.size*devicePixelRatio*q.sc,0,Math.PI*2); ctx.fill();
-      ctx.shadowBlur=0;
+      const front=q.z>0, target=front?fctx:ctx;
+      target.fillStyle=front ? 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.98*alpha)+')' : 'rgba(45,142,84,'+(0.68*alpha)+')';
+      target.shadowColor='rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(front?0.95:0.38)+')';
+      target.shadowBlur=(front?7:3)*devicePixelRatio;
+      target.beginPath(); target.arc(q.x,q.y,(front?2.05:1.35)*q.size*devicePixelRatio*q.sc,0,Math.PI*2); target.fill();
+      target.shadowBlur=0;
     }
     // bright core
     const cg = ctx.createRadialGradient(CX,CY,0,CX,CY,R*0.6);
