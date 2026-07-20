@@ -1124,9 +1124,27 @@ function armFollowup(){ clearTimeout(followupTimer); followupTimer = setTimeout(
 function mergeCaptured(previous, incoming){
   const a = normalize(previous), b = normalize(incoming);
   if(!a) return b; if(!b) return a;
-  if(b.indexOf(a)===0) return b;       // same recognition session expanded
-  if(a.indexOf(b)===0) return a;       // shorter interim correction; keep fuller text
-  return dedupeStutter((a + ' ' + b).trim()); // browser restarted mid-sentence
+  if(b === a || b.indexOf(a)===0) return b; // same session expanded
+  if(a.indexOf(b)===0) return a;            // temporary shorter interim
+  if(a.indexOf(b)>=0) return a;
+  if(b.indexOf(a)>=0) return b;
+
+  const aw=a.split(' '), bw=b.split(' '), shortest=Math.min(aw.length,bw.length);
+  let prefix=0;
+  while(prefix<shortest && aw[prefix]===bw[prefix]) prefix++;
+  // Web Speech repeatedly revises the tail of one interim transcript. Treat a
+  // substantial shared opening as a revision, never as a second utterance.
+  if((prefix>=3 && prefix/shortest>=0.45) || (prefix>=2 && prefix/shortest>=0.60)){
+    return bw.length >= aw.length*0.7 ? b : a;
+  }
+
+  // A genuine browser restart can begin with the end of the prior session.
+  // Join only the non-overlapping continuation.
+  let overlap=0;
+  for(let n=shortest;n>=1;n--){
+    if(aw.slice(-n).join(' ')===bw.slice(0,n).join(' ')){ overlap=n; break; }
+  }
+  return dedupeStutter(aw.concat(bw.slice(overlap)).join(' '));
 }
 function armEndpoint(cmd){
   latestCmd = mergeCaptured(latestCmd, cmd);
