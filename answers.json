@@ -1,8 +1,8 @@
 {
-  "id": "consultant-result-cmd-mrtn3qxc-c94pzgb",
-  "request_id": "cmd_mrtn3qxc_c94pzgb",
-  "ts": "2026-07-20T19:51:10.000Z",
-  "agent": "PLL Consultant",
-  "status": "blocked",
-  "text": "I may have misheard that. I’m not putting you off—tell me the task or question you want handled, and I’ll take it directly."
+  "id": "ads-handshake-fb2748771038-completed",
+  "request_id": "ads-handshake-fb2748771038",
+  "ts": "2026-07-20T19:57:00Z",
+  "agent": "Ads Agent",
+  "status": "completed",
+  "text": "Ads Agent connection confirmed."
 }
