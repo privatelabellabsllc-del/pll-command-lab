@@ -1,40 +1,40 @@
 {
-  "date": "2026-07-18",
+  "date": "2026-07-20",
   "brief": [
     {
-      "t": "First, restore the Email Agent credit capacity and have it contact Ashley at Inspiring Hair today. She needs formulation and manufacturing for five hundred to one thousand units by August first, and the response lane is blocked until the agent is back online.",
+      "t": "First, reply to Oussama Salmi’s new afghani oil haircare inquiry from 3:38 A M. Keep it short and human. Qualify the product, formula path, service needed, target quantity and timing. Do not ask budget in the first reply.",
       "hot": true
     },
     {
-      "t": "Next, start James Bailey’s paid production handoff. His five thousand six hundred eighty-one dollar deposit is in for one thousand Menthol Infused Shampoo units, and you promised him a branded sample bottle. Assign the kickoff and make sure the sample is produced and shipped.",
+      "t": "Next, answer Anfal Mohammed in Shopify. He has repeatedly asked for serum or cream per-unit pricing above and below one hundred units. Give only verified pricing and clarify the exact product, size and quantity before quoting.",
       "hot": true
     },
     {
-      "t": "Run the overdue Gusto payroll now. Friday’s payroll deadline for the June twenty-ninth through July twelfth pay period was missed. Prevent an employee pay delay or penalties before moving on.",
+      "t": "Have Aidan call Jonathan at Ethnic Gals now. Get the warehouse to count the brand’s purchased ingredients and send Jonathan a written inventory and pickup status today. He tried calling after asking for the inventory spec sheet.",
       "hot": true
     },
     {
-      "t": "Decide the Coast Southwest payment. P O twenty twenty six dash zero zero zero four will not ship until funds land, and those raw materials are blocking production. Release it or send Jessica the hold reason today.",
+      "t": "Be ready for the Kenna meeting at eleven A M Eastern. Before it starts, get Aidan’s overdue Pure Good and Terra Lotus pricing status and leave the meeting with a named owner and deadline.",
       "hot": true
     },
     {
-      "t": "Reset Ronald’s CRM access, then direct him to enter Victor’s ingredient costs. Ronald’s lockout is blocking Victor’s overdue quote and Elior’s quote. Victor is eighty-seven percent close, so unblock the revenue work before any CRM development follow-up.",
+      "t": "Launch James Bailey’s paid production handoff: one thousand twelve-ounce Menthol Infused Shampoo units. Assign and confirm the branded marketing sample bottle, including its ship date.",
       "hot": true
     },
     {
-      "t": "Review and sign the Michigan Office Movers paperwork, then decide on the two thousand seven hundred fifty dollar deposit. The lease amendment is already signed and returned, so do not spend time on it.",
-      "hot": true
-    },
-    {
-      "t": "If the six actions above are done, give a one-line Ephix status for Desiree at Hawke Media. She has checked in twice and the account is cooling. Also protect Ads Agent capacity; it is nearing its daily credit limit.",
+      "t": "Clear customer delivery blockers: Laura must give Nadia at Oreka the cream-jar update and review the Canadian label changes; she must also return Drake’s 200 milliliter jar sourcing options for five hundred and one thousand units.",
       "hot": false
+    },
+    {
+      "t": "Then close the operating risks: run overdue Gusto payroll, decide Coast Southwest P O twenty twenty six dash zero zero zero four payment or send the hold reason, and restore Ronald’s CRM access so Victor’s overdue costs can move. No CRM developer fix is confirmed.",
+      "hot": true
     }
   ],
   "next": [
-    "First: restore Email Agent capacity and confirm Ashley at Inspiring Hair is contacted today",
-    "Second: launch James Bailey’s paid production handoff and branded sample bottle",
-    "Third: run the overdue Gusto payroll immediately",
-    "Fourth: release or hold Coast Southwest payment, then reset Ronald and review mover paperwork"
+    "Reply to Oussama Salmi and Anfal Mohammed before other work",
+    "Get Jonathan’s inventory count and complete the 11 A M Kenna meeting",
+    "Launch James Bailey production and branded sample bottle",
+    "Resolve payroll, Coast Southwest, and Ronald access after customer actions"
   ],
   "kb": [
     {
@@ -131,7 +131,7 @@
         "commission",
         "nikkie"
       ],
-      "a": "Nadia Dupuis at Oreka Skincare: quote Q dash zero zero zero seven is accepted. Three cleanup steps ready pending Sam's confirm: log the eight thousand five hundred fifty five dollar payment, open the production job for a thousand units of Peptide Cream, and delete the orphan Peptide Serum formula on Q dash zero zero zero six. Nikkie's commission folds in once the production job opens."
+      "a": "Nadia Dupuis at Oreka Skincare previously accepted quote Q-0007. On July 16 she sent a PDF of proposed Canadian label changes and asked for review; Laura replied she is working on the cream jar, and Nadia thanked her. Today Laura must return the cream-jar update and review the label changes. Do not treat label compliance as approved without qualified review."
     },
     {
       "keys": [
@@ -153,7 +153,7 @@
         "lotus",
         "atlas"
       ],
-      "a": "Aidan is still overdue on the number one revenue task, Kenna Pure Good and Terra Lotus pricing, due July eighth, now more than a week late. Good news, Aidan just signed the ISO twenty two seven sixteen certification deal. Agent to nudge him on the overdue pricing via Team Chat."
+      "a": "Aidan's Kenna Pure Good and Terra Lotus pricing was due July 8 and remains overdue in the CRM. A Kenna meeting is scheduled for July 20 at 11 AM Eastern; obtain Aidan's status before it and leave with a named owner and deadline."
     },
     {
       "keys": [
@@ -185,7 +185,7 @@
         "hair",
         "lead"
       ],
-      "a": "The Email Agent has reached its daily credit limit and is paused, so customer routing and follow-ups are blocked. Ashley from Inspiring Hair is a new website lead seeking formulation and manufacturing for five hundred to one thousand haircare units by August first. Restore Email Agent capacity first, then ensure Ashley receives a prompt response."
+      "a": "Previous briefing said the Email Agent had reached its daily credit limit and Ashley at Inspiring Hair needed a response. Capacity and Ashley-contact status are not independently verified in this morning's evidence. New Shopify leads Oussama Salmi and Anfal Mohammed require a prompt owner response regardless."
     },
     {
       "keys": [
@@ -198,7 +198,7 @@
         "deposit",
         "sample"
       ],
-      "a": "James Bailey paid a five thousand six hundred eighty-one dollar, sixty-five percent Shopify deposit for one thousand twelve-ounce Menthol Infused Shampoo units, total project value eight thousand seven hundred forty dollars. Sam promised a branded marketing sample bottle with James's logo. Treat this as a paid production kickoff: assign the production handoff and make sure the sample is produced and shipped."
+      "a": "James Bailey paid a $5,681, 65 percent Shopify deposit for 1,000 twelve-ounce Menthol Infused Shampoo units, total project value $8,740. He requested a logo-branded bottle for marketing. No completed production handoff or sample shipment is confirmed; assign it and confirm a ship date."
     },
     {
       "keys": [
@@ -244,7 +244,7 @@
         "elior",
         "bom"
       ],
-      "a": "Ronald is locked out of the PLL CRM and could not reset his passcode. This blocks entry of the B O M and ingredient costs needed for Victor Armendarez and Elior quotes. Reset Ronald's access first, then direct him to provide Victor's costs; Victor is eighty-seven percent close and his quote has been overdue since July tenth."
+      "a": "Ronald was locked out of the PLL CRM, blocking entry of BOM and ingredient costs for Victor Armendarez and Elior. There is no confirmation that access was restored. Reset access, then direct him to enter Victor's raw ingredient costs; Victor is 87 percent close and overdue since July 10."
     },
     {
       "keys": [
@@ -265,7 +265,7 @@
         "tickets",
         "verification"
       ],
-      "a": "There is still no CRM developer reply, no ready-for-verification notice, no API reply, and four reported tickets remain open. Do not mark CRM work complete or make CRM changes until a fix is delivered and independently verified."
+      "a": "No CRM UPDATE REQUEST or CRM developer reply was found after July 17. There is no ready-for-verification fix or API reply. Do not mark CRM work complete or make CRM changes based on an assumed fix."
     },
     {
       "keys": [
@@ -277,155 +277,209 @@
         "followup"
       ],
       "a": "Desiree Moore at Hawke Media has checked in twice for an Ephix kickoff status and timeline. No new email movement was found. Provide a one-line status so a reply can go out before the account cools further."
+    },
+    {
+      "keys": [
+        "oussama",
+        "salmi",
+        "afghani",
+        "oil",
+        "shopify",
+        "haircare",
+        "lead"
+      ],
+      "a": "A new unread Shopify contact-form lead arrived July 20 at 3:38 AM: Oussama Salmi, brand afghani oil, haircare, email osalmi890@gmail.com and phone +1 707 731 6379. The visible body truncates the service-needed field. Respond promptly and qualify product, service, quantity, timing and budget rather than assuming the incomplete details."
+    },
+    {
+      "keys": [
+        "anfal",
+        "mohammed",
+        "shopify",
+        "serum",
+        "cream",
+        "unit",
+        "price"
+      ],
+      "a": "Anfal Mohammed sent repeated Shopify Inbox questions on July 19 seeking serum or cream per-unit cost, including for above and below 100 units. Reply in Shopify using only verified pricing; first confirm product, size and quantity. Do not quote an invented unit price."
+    },
+    {
+      "keys": [
+        "ethnic",
+        "gals",
+        "jonathan",
+        "caesar",
+        "inventory",
+        "pickup"
+      ],
+      "a": "Jonathan Caesar at Ethnic Gals asked July 13 for an inventory spec sheet and the amount of purchased ingredients available for pickup. Warehouse count was promised. On July 15 Aidan asked Jonathan to call; Jonathan replied that he tried calling. Aidan should call now and warehouse should send a written count and pickup status today."
+    },
+    {
+      "keys": [
+        "drake",
+        "jar",
+        "200",
+        "milliliter",
+        "packaging",
+        "moq"
+      ],
+      "a": "For True Revival, client revised to a 200 mL (6.8 oz declared contents) dark-green, light-blocking, shower-safe jar with gold branding. Drake accepts 500 or 1,000 jar MOQ. Laura reported stateside custom jars may require 5,000 MOQ and is sourcing alternatives; return options including stock jars with domestic decoration or lower-MOQ custom sourcing."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Restore Email Agent capacity and contact Ashley",
-      "why": "A new August first haircare opportunity cannot be routed while the Email Agent is paused at its daily credit limit.",
-      "owner": "Sam",
-      "due": "Today, first",
+      "title": "Qualify and respond to Oussama Salmi",
+      "why": "New unread Shopify haircare lead arrived at 3:38 AM.",
+      "owner": "Sam / sales",
+      "due": "This morning",
       "priority": "critical",
-      "revenue": "New 500 to 1,000 unit formulation and manufacturing opportunity"
+      "revenue": "New haircare inquiry; value not stated"
     },
     {
       "rank": 2,
-      "title": "Kick off James Bailey production and branded sample",
-      "why": "The 65 percent deposit has been paid; fast execution protects a newly won order and Sam’s sample commitment.",
-      "owner": "Sam",
-      "due": "Today",
+      "title": "Answer Anfal Mohammed’s Shopify pricing questions",
+      "why": "Repeated unanswered questions show active purchase intent.",
+      "owner": "Sales",
+      "due": "This morning",
       "priority": "critical",
-      "revenue": "5,681 dollars deposit received; 8,740 dollars total project value"
+      "revenue": "Serum or cream inquiry; value not stated"
     },
     {
       "rank": 3,
-      "title": "Run overdue Gusto payroll",
-      "why": "The July 17 payroll deadline was missed and employee pay or compliance risk is immediate.",
-      "owner": "Sam",
-      "due": "Immediately",
+      "title": "Resolve Ethnic Gals inventory request",
+      "why": "Jonathan requested an inventory spec/count and tried calling.",
+      "owner": "Aidan / warehouse",
+      "due": "Today",
       "priority": "critical",
-      "revenue": "Operational and payroll-risk protection"
+      "revenue": "Existing customer; value not stated"
     },
     {
       "rank": 4,
-      "title": "Decide Coast Southwest payment",
-      "why": "Raw materials will not ship until funds are received, holding up production.",
-      "owner": "Sam",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "Protects production capacity; amount not stated in available evidence"
+      "title": "Attend Kenna meeting and unblock pricing",
+      "why": "Kenna meeting is at 11 AM; Pure Good and Terra Lotus pricing remains overdue.",
+      "owner": "Sam / Aidan",
+      "due": "11 AM ET",
+      "priority": "critical",
+      "revenue": "Pricing opportunity; amount not stated"
     },
     {
       "rank": 5,
-      "title": "Reset Ronald CRM access and unblock Victor costs",
-      "why": "Ronald cannot enter costs; Victor’s 87 percent-close quote is overdue and Elior is also blocked.",
-      "owner": "Sam",
+      "title": "Kick off James Bailey production and branded sample",
+      "why": "Deposit paid for 1,000 Menthol Infused Shampoo units; sample was requested.",
+      "owner": "Sam / operations",
       "due": "Today",
       "priority": "high",
-      "revenue": "Victor quote opportunity; amount not stated in available evidence"
+      "revenue": "$5,681 deposit received; $8,740 total project value"
     },
     {
       "rank": 6,
-      "title": "Review Michigan Office Movers paperwork",
-      "why": "The paperwork is received and requires a 2,750 dollar deposit decision before the move.",
+      "title": "Run payroll, decide Coast payment, and restore Ronald access",
+      "why": "Payroll is overdue; materials and overdue quotes remain blocked.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Protects facility move continuity"
+      "revenue": "Operational protection; Coast and quote values not stated"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Restore Email Agent capacity and contact Ashley at Inspiring Hair today",
+      "top_task": "Respond to new Shopify leads, then attend the 11 AM Kenna meeting",
       "tasks": [
         {
-          "title": "Restore Email Agent capacity and contact Ashley at Inspiring Hair",
-          "due": "Today, first"
+          "title": "Qualify Oussama Salmi / afghani oil haircare lead",
+          "due": "This morning"
         },
         {
-          "title": "Kick off James Bailey production and branded sample bottle",
+          "title": "Ensure Anfal Mohammed receives verified pricing response",
+          "due": "This morning"
+        },
+        {
+          "title": "Attend Meeting | Kenna",
+          "due": "July 20, 11 AM ET"
+        },
+        {
+          "title": "Launch James Bailey production and branded sample",
           "due": "Today"
         },
         {
-          "title": "Run overdue Gusto payroll for the June 29 through July 12 pay period",
-          "due": "Immediately",
-          "overdue_days": 1
-        },
-        {
-          "title": "Release or explicitly hold Coast Southwest payment for PO 2026-0004",
-          "due": "Today"
-        },
-        {
-          "title": "Reset Ronald's CRM access and unblock Victor's costs",
-          "due": "Today"
-        },
-        {
-          "title": "Review Michigan Office Movers paperwork and decide on the $2,750 deposit",
+          "title": "Run overdue Gusto payroll; decide Coast Southwest payment; restore Ronald access",
           "due": "Today"
         }
       ],
-      "notes": "CEO. Owns today's decisions: agent capacity, payroll, payments, access, and move paperwork. If the six actions are done, provide a one-line Ephix status for Desiree at Hawke Media and protect Ads Agent capacity."
+      "notes": "CEO. Customer and revenue responses lead the day. No CRM developer fix is confirmed."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Complete Kenna Pure Good and Terra Lotus pricing",
+      "top_task": "Call Jonathan at Ethnic Gals and deliver a warehouse-backed inventory status",
       "tasks": [
         {
-          "title": "Kenna Pure Good and Terra Lotus pricing",
-          "due": "July 8",
-          "overdue_days": 10
+          "title": "Call Jonathan Caesar",
+          "due": "This morning"
+        },
+        {
+          "title": "Obtain and send Ethnic Gals ingredient inventory count and pickup status",
+          "due": "Today"
+        },
+        {
+          "title": "Complete Kenna Pure Good and Terra Lotus pricing status before Kenna meeting",
+          "due": "Before 11 AM ET"
         }
       ],
-      "notes": "Overdue on the number one revenue task; he also signed the ISO 22716 GMP certification deal on July 16 for $14,700."
+      "notes": "Jonathan tried calling after requesting an inventory spec sheet. Pure Good and Terra Lotus pricing remains overdue."
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Complete STRUCK box art revisions",
+      "top_task": "Return Oreka cream-jar and Canadian-label update",
       "tasks": [
         {
-          "title": "Correct STRUCK bottle size to 20 milliliters, remove redundant ounces data, and add the Made in USA flag clipart"
+          "title": "Review Oreka Canadian label changes and update Nadia on cream jar",
+          "due": "Today"
+        },
+        {
+          "title": "Return Drake 200 mL jar sourcing options for 500 and 1,000 units",
+          "due": "Today"
+        },
+        {
+          "title": "Complete STRUCK box-art revisions",
+          "due": "Today"
         }
       ],
-      "notes": "Raul Guardado sent the STRUCK box art revisions; the work was routed to Laura and the agent is confirming she is on it."
+      "notes": "Oreka provided a Canadian-label changes PDF; Nadia is awaiting cream-jar status. Drake accepts 500 or 1,000 jar MOQ; stateside custom options may be 5,000 MOQ."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Restore CRM access, then enter Victor's ingredient costs",
+      "top_task": "Restore CRM access, then enter Victor's raw ingredient costs",
       "tasks": [
         {
           "title": "Restore CRM access",
           "due": "Today"
         },
         {
-          "title": "Enter Victor Armendarez's raw ingredient costs for Curl Defining Cream and Edge Gel",
+          "title": "Enter Victor Armendarez raw ingredient costs",
           "due": "Today"
         },
         {
-          "title": "Provide Elior's raw ingredient costs and BOM inputs",
+          "title": "Provide Elior BOM inputs",
           "due": "Today"
-        },
-        {
-          "title": "Provide Aran Beauty scent samples in Vanilla, Jasmine, Rose, and Sweet Orange"
         }
       ],
-      "notes": "Chemist. Locked out of the PLL CRM and could not reset his passcode. Victor is an 87 percent close and his quote has been overdue since July 10; Elior's quote is also blocked."
+      "notes": "Victor and Elior quotes remain blocked. Access is not confirmed restored."
     },
     "emailagent": {
       "display_name": "Email Agent",
-      "top_task": "Restore capacity and contact Ashley at Inspiring Hair",
+      "top_task": "Route and respond to Oussama Salmi and Anfal Mohammed",
       "tasks": [
         {
-          "title": "Restore daily credit capacity",
-          "due": "Today, first"
+          "title": "Respond and qualify Oussama Salmi Shopify lead",
+          "due": "This morning"
         },
         {
-          "title": "Contact Ashley at Inspiring Hair about formulation and manufacturing for 500 to 1,000 haircare units by August 1",
-          "due": "Today"
+          "title": "Answer Anfal Mohammed with verified pricing guidance",
+          "due": "This morning"
         }
       ],
-      "notes": "Inbox follow-up and routing. Paused at its daily credit limit, so customer routing and follow-ups are blocked."
+      "notes": "Prior capacity status is not independently verified this morning; customer responses must not wait."
     },
     "adsagent": {
       "display_name": "Ads Agent",
@@ -436,55 +490,65 @@
           "due": "Today"
         }
       ],
-      "notes": "Paid acquisition. Nearing its daily credit limit; adjust or protect capacity after Email Agent is restored."
+      "notes": "Paid acquisition capacity was previously near its daily limit."
     },
     "crmdeveloper": {
       "display_name": "CRM Developer",
       "top_task": "Deliver a CRM fix ready for independent verification",
       "tasks": [
         {
-          "title": "Provide a ready-for-verification CRM fix"
+          "title": "Provide ready-for-verification CRM fix",
+          "due": "Unconfirmed"
         }
       ],
-      "notes": "External developer. No new reply, ready-for-verification notice, or API reply; four reported tickets remain open. Do not mark CRM work complete or make CRM changes until a fix is delivered and independently verified."
+      "notes": "No CRM UPDATE REQUEST or developer reply after July 17; do not mark fixes complete or change CRM records on that basis."
     }
   },
   "revenueActions": [
     {
-      "title": "Contact Ashley at Inspiring Hair",
-      "why": "A new August 1 haircare opportunity cannot be routed while the Email Agent is paused at its daily credit limit.",
-      "est_value": "500 to 1,000 unit formulation and manufacturing lead; August 1 timeline",
-      "next_step": "Restore Email Agent capacity, then ensure Ashley receives a prompt response.",
-      "owner": "Email Agent after Sam restores capacity",
+      "title": "Qualify Oussama Salmi / afghani oil",
+      "why": "A new unread Shopify haircare inquiry arrived overnight.",
+      "est_value": "Not stated",
+      "next_step": "Respond, clarify service needed, product, quantity, timing and budget, then schedule next step.",
+      "owner": "Sam / sales",
+      "timing": "This morning",
+      "value": "New haircare lead; value not stated"
+    },
+    {
+      "title": "Answer Anfal Mohammed",
+      "why": "Multiple Shopify messages seek per-unit serum or cream costs around 100 units.",
+      "est_value": "Not stated",
+      "next_step": "Reply from verified pricing; first confirm product, size and quantity. Do not invent a unit price.",
+      "owner": "Sales",
+      "timing": "This morning",
+      "value": "Active product-pricing inquiry; value not stated"
+    },
+    {
+      "title": "Resolve Ethnic Gals inventory request",
+      "why": "Customer requested purchased-ingredient inventory details and tried calling.",
+      "est_value": "Not stated",
+      "next_step": "Aidan calls; warehouse produces count and pickup status; send written report today.",
+      "owner": "Aidan / warehouse",
       "timing": "Today",
-      "value": "500 to 1,000 unit formulation and manufacturing lead; August 1 timeline"
+      "value": "Existing customer continuation; value not stated"
     },
     {
       "title": "Launch James Bailey production and branded sample",
-      "why": "The 65 percent deposit has been paid; fast execution protects a newly won order and Sam's sample commitment.",
+      "why": "Deposit is paid and a branded marketing bottle was requested.",
       "est_value": "$5,681 deposit received; $8,740 total project value",
-      "next_step": "Assign the production handoff and produce and ship James's branded marketing sample bottle.",
-      "owner": "Sam",
+      "next_step": "Assign production handoff and confirm branded sample bottle ship date.",
+      "owner": "Sam / operations",
       "timing": "Today",
       "value": "$5,681 deposit received; $8,740 total project value"
     },
     {
-      "title": "Release or explicitly hold Coast Southwest payment",
-      "why": "Raw materials will not ship until funds are received, holding up production.",
-      "est_value": "Amount not available in available evidence",
-      "next_step": "Release payment for PO 2026-0004 or send Jessica Gutierrez the hold reason today.",
-      "owner": "Sam",
+      "title": "Unblock Kenna pricing and Victor costs",
+      "why": "Kenna-related pricing is overdue; Victor quote remains blocked on costs.",
+      "est_value": "Amounts not stated",
+      "next_step": "Get Aidan's status before 11 AM; restore Ronald access and obtain Victor's costs.",
+      "owner": "Sam, Aidan, Ronald",
       "timing": "Today",
-      "value": "Raw-material shipment is holding production; amount not available"
-    },
-    {
-      "title": "Restore Ronald's access and obtain Victor's costs",
-      "why": "Ronald cannot enter costs; Victor's 87 percent-close quote is overdue and Elior is also blocked.",
-      "est_value": "Victor quote opportunity; amount not stated in available evidence",
-      "next_step": "Reset Ronald's CRM access, then direct him to enter Victor's ingredient costs.",
-      "owner": "Sam then Ronald",
-      "timing": "Today",
-      "value": "Victor quote opportunity; amount not stated in available evidence"
+      "value": "Pipeline conversion protection; amounts not stated"
     }
   ],
   "pipelineStat": {
@@ -496,12 +560,13 @@
     ],
     "stalled": [
       "Victor Armendarez quote — overdue since July 10; blocked on Ronald's raw ingredient costs",
-      "Elior dry shampoo quote — blocked on Ronald's BOM and product/packaging inputs"
+      "Elior dry shampoo quote — blocked on Ronald's BOM and product/packaging inputs",
+      "Kenna Pure Good and Terra Lotus pricing — overdue; status needed before 11 AM meeting"
     ],
     "activeDeals": 9,
     "pipelineValue": 1327800,
     "inProduction": 19,
     "depositsCollected": 51773.99,
-    "note": "CRM dashboard observed July 18. Do not infer stage totals or deal values beyond this evidence."
+    "note": "CRM dashboard observed July 20. Do not infer stage totals or deal values beyond this evidence."
   }
 }
