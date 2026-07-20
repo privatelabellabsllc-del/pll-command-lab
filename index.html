@@ -611,7 +611,7 @@ function orbBurst(){ burstT = 1; }
 (function(){
   const c = document.getElementById('brain'), ctx = c.getContext('2d');
   let W,H,CX,CY,R,pts=[];
-  const N = 120;
+  const N = 260;
   function resize(){
     const r = c.parentElement.getBoundingClientRect();
     W = c.width = Math.max(2,r.width) * devicePixelRatio; H = c.height = Math.max(2,r.height) * devicePixelRatio;
@@ -619,7 +619,7 @@ function orbBurst(){ burstT = 1; }
     if (!pts.length){
       for (let i=0;i<N;i++){
         const th = Math.acos(2*Math.random()-1), ph = Math.random()*Math.PI*2;
-        pts.push({th, ph, rr: 0.72 + Math.random()*0.32});
+        pts.push({th, ph, rr: 0.78 + Math.random()*0.34, size: 0.75 + Math.random()*0.7});
       }
     }
   }
@@ -662,24 +662,24 @@ function orbBurst(){ burstT = 1; }
       const rr = R * p.rr * pulse;
       const x3 = rr*Math.sin(p.th)*Math.cos(p.ph+rot), y3 = rr*Math.cos(p.th), z3 = rr*Math.sin(p.th)*Math.sin(p.ph+rot);
       const sc = 1 + z3/(R*2.2);
-      proj.push({x: CX + x3*sc, y: CY + y3, z: z3, sc});
+      proj.push({x: CX + x3*sc, y: CY + y3, z: z3, sc, size:p.size});
     }
-    const LINK = R*0.55;
+    const LINK = R*0.32;
     ctx.lineWidth = devicePixelRatio*0.6;
     for (let i=0;i<proj.length;i++){
       for (let j=i+1;j<proj.length;j++){
         const dx=proj[i].x-proj[j].x, dy=proj[i].y-proj[j].y, d=Math.hypot(dx,dy);
         if (d<LINK){
-          ctx.strokeStyle = 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.11*(1-d/LINK)*alpha)+')';
+          ctx.strokeStyle = 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.075*(1-d/LINK)*alpha)+')';
           ctx.beginPath(); ctx.moveTo(proj[i].x,proj[i].y); ctx.lineTo(proj[j].x,proj[j].y); ctx.stroke();
         }
       }
     }
     for (const q of proj){
       const front = q.z>0;
-      ctx.fillStyle = front ? 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.9*alpha)+')' : 'rgba(60,180,125,'+(0.4*alpha)+')';
+      ctx.fillStyle = front ? 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.94*alpha)+')' : 'rgba(55,158,101,'+(0.48*alpha)+')';
       if (front){ ctx.shadowColor='rgba('+accent[0]+','+accent[1]+','+accent[2]+',0.9)'; ctx.shadowBlur=5*devicePixelRatio; }
-      ctx.beginPath(); ctx.arc(q.x,q.y,(front?1.7:1.1)*devicePixelRatio*q.sc,0,Math.PI*2); ctx.fill();
+      ctx.beginPath(); ctx.arc(q.x,q.y,(front?1.72:1.05)*q.size*devicePixelRatio*q.sc,0,Math.PI*2); ctx.fill();
       ctx.shadowBlur=0;
     }
     // bright core
