@@ -951,7 +951,7 @@ let awake = false, working = false;            // legacy mirrors of voiceState
 let pendingDispatch = null;
 let voiceState = 'OFF';                          // OFF ASLEEP ATTENTIVE CAPTURING THINKING SPEAKING FOLLOWUP
 let restartInFlight = false, lastStartTs = 0, micLive = false;
-let latestCmd = '', captureStartTs = 0;
+let latestCmd = '', captureStartTs = 0, captureHasFinal = false, finalWaitCount = 0;
 const ENDPOINT_COMPLETE_MS = 4500;   // tolerate natural thinking pauses
 const ENDPOINT_INCOMPLETE_MS = 6000; // longer grace for unfinished clauses
 const ENDPOINT_EXPLICIT_MS = 1800;   // only after an explicit 'send it/that is all' ending
@@ -1118,7 +1118,7 @@ function updateStateUI(s){
   else if(s==='FOLLOWUP'){ micState('awake'); coreState('awake','awake'); status('Still listening — follow up or stay quiet', true); }
 }
 
-function standDown(){ followupCount = 0; latestCmd=''; pendingDispatch=null; setVoiceState('ASLEEP'); document.body.classList.add('dimmed');
+function standDown(){ followupCount = 0; latestCmd=''; captureHasFinal=false; finalWaitCount=0; pendingDispatch=null; setVoiceState('ASLEEP'); document.body.classList.add('dimmed');
   if (IS_MOBILE) { status('Tap the orb to speak', false); clog('Stood down — tap orb to speak.'); showTapPrompt(); }
   else { status('Powered — say “Command Lab”', false); clog('Stood down — wake word required.'); }
 }
@@ -1158,7 +1158,30 @@ function armEndpoint(cmd){
   status(explicitDone ? 'Got it — finishing…' : 'Listening — keep going', true);
   endpointTimer = setTimeout(endpoint, wait);
 }
-function endpoint(){ let cmd = (latestCmd||'').trim(); latestCmd=''; if(!cmd){ setVoiceState('ATTENTIVE'); armAttentive(); return; } cmd = dedupeStutter(cmd.replace(GO,'').trim()) || cmd; earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd); }
+function transcriptLooksCorrupted(t){
+  const w=normalize(t).split(' ').filter(Boolean);
+  if(w.length<24) return false;
+  const seen={}; let max=0;
+  for(let i=0;i<=w.length-4;i++){
+    const g=w.slice(i,i+4).join(' '); seen[g]=(seen[g]||0)+1; if(seen[g]>max) max=seen[g];
+  }
+  return max>=4;
+}
+function endpoint(){
+  let cmd = (latestCmd||'').trim(); latestCmd='';
+  if(!cmd){ setVoiceState('ATTENTIVE'); armAttentive(); return; }
+  if(!captureHasFinal){
+    if(finalWaitCount<2){ finalWaitCount++; latestCmd=cmd; status('Finishing voice capture…',true); endpointTimer=setTimeout(endpoint,900); return; }
+    captureHasFinal=false; finalWaitCount=0; earcon('error'); showLiveTranscript('Voice did not finalize — command not sent.');
+    respondThenSleep('I did not catch that cleanly. Nothing was sent. Wake me and say the command again.'); return;
+  }
+  finalWaitCount=0; cmd = dedupeStutter(cmd.replace(GO,'').trim()) || cmd;
+  if(transcriptLooksCorrupted(cmd)){
+    captureHasFinal=false; earcon('error'); showLiveTranscript('Voice capture was unclear — command not sent.');
+    respondThenSleep('I did not catch that cleanly. Nothing was sent. Wake me and say the command again.'); return;
+  }
+  captureHasFinal=false; earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd);
+}
 // One wake-up handles one completed exchange. Once Command Lab answers, it
 // immediately returns to wake-word-only standby so nearby conversation cannot
 // become an accidental follow-up command.
@@ -1293,8 +1316,14 @@ function correctCommandTerms(t){
           .replace(/\b(?:unsh|unstr)\b(?=\s+(?:it|that|this)\b)/g,'unshrink');
 }
 function onResult(e){
-  let full = '';
-  for (let i = 0; i < e.results.length; i++) full += e.results[i][0].transcript + ' ';
+  // Process only results changed in this event. Re-reading e.results from zero
+  // re-appends old interim hypotheses and creates the escalating transcript loop.
+  let full = '', anyFinal = false;
+  const start = Number.isInteger(e.resultIndex) ? e.resultIndex : Math.max(0,e.results.length-1);
+  for (let i = start; i < e.results.length; i++) {
+    full += e.results[i][0].transcript + ' ';
+    if(e.results[i].isFinal) anyFinal = true;
+  }
   full = correctCommandTerms(dedupeStutter(normalize(full)));
   if (!full) return;
 
@@ -1304,8 +1333,10 @@ function onResult(e){
     earcon('wake'); followupCount = 0; armSleep();
     clog('Wake word detected.', 'hi');
     const trailing = (m.index >= 0) ? full.slice(m.index + m.len).trim() : '';
-    if (soundsWordy(trailing)) { setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(trailing); armEndpoint(trailing); }
-    else { setVoiceState('ATTENTIVE'); armAttentive(); }
+    if (soundsWordy(trailing)) {
+      latestCmd=''; captureHasFinal=anyFinal; finalWaitCount=0;
+      setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(trailing); armEndpoint(trailing);
+    } else { setVoiceState('ATTENTIVE'); armAttentive(); }
     return;
   }
 
@@ -1313,7 +1344,11 @@ function onResult(e){
     let cmd = full; const m = wakeMatch(full);
     if (m && m.index >= 0) cmd = full.slice(m.index + m.len).trim();
     if (!cmd) return;
-    if (voiceState === 'ATTENTIVE') { setVoiceState('CAPTURING'); captureStartTs = Date.now(); }
+    if (voiceState === 'ATTENTIVE') {
+      latestCmd=''; captureHasFinal=false; finalWaitCount=0;
+      setVoiceState('CAPTURING'); captureStartTs = Date.now();
+    }
+    if(anyFinal) captureHasFinal=true;
     showLiveTranscript(cmd);
     armEndpoint(cmd);
     return;
@@ -1322,6 +1357,7 @@ function onResult(e){
   if (voiceState === 'FOLLOWUP') {
     const cmd = full.trim();
     if (!cmd) return;
+    latestCmd=''; captureHasFinal=anyFinal; finalWaitCount=0;
     setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(cmd);
     armEndpoint(cmd);
     return;
