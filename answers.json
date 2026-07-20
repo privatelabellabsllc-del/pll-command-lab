@@ -1,5 +1,8 @@
 {
-  "id": "voice-20260720T193111Z-unshrink-formula",
-  "ts": "2026-07-20T19:34:30.000Z",
-  "text": "Found it. Sander Reynolds sent the confidential Unshrink It formula on January 22. I recovered and verified the Word document and saved it securely for you."
+  "id": "agent-result-test-email-2bce4dbac922",
+  "request_id": "test_email_2bce4dbac922",
+  "ts": "2026-07-20T19:48:00.000Z",
+  "agent": "Email Agent",
+  "status": "completed",
+  "text": "Connectivity test received by Email Agent. No email was sent and no data was changed. Two-way dispatch and reply are confirmed working."
 }
