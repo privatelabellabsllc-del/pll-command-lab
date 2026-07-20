@@ -1620,26 +1620,36 @@ function isActionCommand(t){
     || /add a task|create a task|task (in )?for|put in a task|tell the|update the crm|crm update|send an email|remind|log this|make a note|dispatch|route this|open a ticket|file a bug|follow up with|kick off|check.*(inbox|mail|outlook)/.test(t);
 }
 var pendingRetry = null;
+function requestId(){ return 'cmd_' + Date.now().toString(36) + '_' + Math.random().toString(36).slice(2,9); }
+function contextRead(){
+  try { var x=JSON.parse(localStorage.getItem('pll_chatContext')||'[]'); return Array.isArray(x)?x.slice(-8):[]; }
+  catch(e){ return []; }
+}
+function contextAdd(role, text, request_id, agent){
+  var x=contextRead(); x.push({role:role,text:String(text||'').slice(0,600),request_id:request_id||null,agent:agent||null,ts:new Date().toISOString()});
+  localStorage.setItem('pll_chatContext',JSON.stringify(x.slice(-8)));
+}
 function dispatch(heard, opts){
   opts = opts || {};
   const url = hookUrl();
   if (!url) { respond("I heard you, but the dispatch line isn't connected yet. Tap the Link button in the top bar and paste in the dispatch URL — then I can route commands to the team."); return; }
   const agent = opts.agent || targetAgent(heard);
   const tgt = targetKey(agent);
+  const rid = requestId();
+  const priorContext = contextRead();
+  contextAdd('sam', heard, rid, agent);
   const logId = dlogAdd(heard, agent);
   setVoiceState('THINKING');
-  orbBurst(); // fire the comet toward the dispatch log
-  const ack = opts.question
-    ? ("Checking with " + agent + ".")
-    : ("Sent to " + agent + ".");
+  orbBurst();
+  const ack = opts.question ? ("Checking with " + agent + ".") : ("Routing to " + agent + ".");
   dlogSet(logId, 'DISPATCHED');
-  status('Dispatching to ' + agent + '…', true); coreState('working','think');
-  clog('→ Dispatch [' + agent + ' · ' + tgt + ']: ' + heard, 'warn');
+  status('Routing to ' + agent + '…', true); coreState('working','think');
+  clog('→ Route [' + agent + ' · ' + tgt + ' · ' + rid + ']: ' + heard, 'warn');
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ source: 'pll-command-lab', command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { dlogSet(logId, 'DELIVERED'); say(ack); status(opts.question ? 'Thinking…' : 'Sent — waiting for completion', true); coreState('working','think'); startAnswerWatcher(heard, logId); }
-               else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('The dispatch line rejected that. Say "retry" and I\'ll send it again.'); } })
-  .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('Could not reach the dispatch line. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
+    body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, context: priorContext, ts: new Date().toISOString() }) })
+  .then(r => { if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); status('Router accepted — waiting for ' + agent, true); coreState('working','think'); startAnswerWatcher(heard, logId, rid); }
+               else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('The router rejected that. Say "retry" and I\'ll send it again.'); } })
+  .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('Could not reach the router. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
 }
 
 // ===== ANSWER READ-BACK (V4.1 — persistent watcher) =====
@@ -1653,8 +1663,10 @@ function markSpoken(a){
   if (a && a.id) localStorage.setItem('pll_lastAnswerId', a.id);
   if (a && a.ts) localStorage.setItem('pll_lastAnswerTs', a.ts);
 }
-function isNewAnswer(a, startedAt){
+function isNewAnswer(a, startedAt, requestId){
   if (!a || !a.text) return false;
+  // V6.1: a reply belongs only to the request that created this watcher.
+  if (requestId && a.request_id !== requestId) return false;
   // V5.3: never attach an older agent reply to the command Sam just spoke.
   // Allow a small clock tolerance, but reject stale answers from prior dispatches.
   if (startedAt && a.ts) {
@@ -1666,7 +1678,8 @@ function isNewAnswer(a, startedAt){
   return false;
 }
 function speakAnswer(a, logId){
-  if (logId) dlogSet(logId, 'ANSWERED');
+  if (logId) dlogSet(logId, String(a.status||'ANSWERED').toUpperCase());
+  contextAdd('agent', a.text, a.request_id, a.agent || null);
   status('Reply received ✓', true);
   clog('← Reply received.', 'hi');
   // Defer if the user is mid-interaction; deliver the moment we're free.
@@ -1685,12 +1698,12 @@ setInterval(function(){
   }
 }, 1000);
 
-function startAnswerWatcher(cmd, logId){
+function startAnswerWatcher(cmd, logId, requestId){
   // persist so a reload / tab-switch can't lose the pending reply
-  localStorage.setItem('pll_pendingDispatch', JSON.stringify({ cmd: cmd, logId: logId || null, t: Date.now() }));
-  runAnswerWatcher(Date.now(), logId);
+  localStorage.setItem('pll_pendingDispatch', JSON.stringify({ cmd: cmd, logId: logId || null, requestId: requestId || null, t: Date.now() }));
+  runAnswerWatcher(Date.now(), logId, requestId);
 }
-function runAnswerWatcher(startedAt, logId){
+function runAnswerWatcher(startedAt, logId, requestId){
   if (answerWatchTimer) { clearTimeout(answerWatchTimer); answerWatchTimer = null; }
   headsUpGiven = false;
   function stop(){ if (answerWatchTimer){ clearTimeout(answerWatchTimer); answerWatchTimer=null; } localStorage.removeItem('pll_pendingDispatch'); }
@@ -1717,7 +1730,7 @@ function runAnswerWatcher(startedAt, logId){
     fetch('answers.json?v=' + Date.now(), { cache: 'no-store' })
       .then(function(r){ return r.json(); })
       .then(function(a){
-        if (isNewAnswer(a, startedAt)) { stop(); markSpoken(a); speakAnswer(a, logId); return; }
+        if (isNewAnswer(a, startedAt, requestId)) { stop(); markSpoken(a); speakAnswer(a, logId); return; }
         answerWatchTimer = setTimeout(tick, delayFor(Date.now() - startedAt));
       })
       .catch(function(){ // Pages may serve 404/HTML mid-rebuild — survive it
@@ -1733,8 +1746,8 @@ function pokeAnswerWatcher(){
   try {
     var p = JSON.parse(raw);
     if (Date.now() - p.t > 1800000) { localStorage.removeItem('pll_pendingDispatch'); return; } // stale >30m
-    if (!answerWatchTimer) runAnswerWatcher(p.t, p.logId);
-    else { if (answerWatchTimer){ clearTimeout(answerWatchTimer); } runAnswerWatcher(p.t, p.logId); }
+    if (!answerWatchTimer) runAnswerWatcher(p.t, p.logId, p.requestId);
+    else { if (answerWatchTimer){ clearTimeout(answerWatchTimer); } runAnswerWatcher(p.t, p.logId, p.requestId); }
   } catch(e){ localStorage.removeItem('pll_pendingDispatch'); }
 }
 // Restore a pending watcher on load (kiosk reloads, nightly refresh, etc.)
@@ -1745,7 +1758,7 @@ function pokeAnswerWatcher(){
     var p = JSON.parse(raw);
     if (Date.now() - p.t > 1800000) { localStorage.removeItem('pll_pendingDispatch'); return; }
     clog('Resuming pending dispatch — still watching for the reply.', 'warn');
-    runAnswerWatcher(p.t, p.logId);
+    runAnswerWatcher(p.t, p.logId, p.requestId);
   } catch(e){ localStorage.removeItem('pll_pendingDispatch'); }
 })();
 
