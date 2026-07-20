@@ -949,6 +949,10 @@ let pendingDispatch = null;
 let voiceState = 'OFF';                          // OFF ASLEEP ATTENTIVE CAPTURING THINKING SPEAKING FOLLOWUP
 let restartInFlight = false, lastStartTs = 0, micLive = false;
 let latestCmd = '', captureStartTs = 0;
+const ENDPOINT_COMPLETE_MS = 4500;   // tolerate natural thinking pauses
+const ENDPOINT_INCOMPLETE_MS = 6000; // longer grace for unfinished clauses
+const ENDPOINT_EXPLICIT_MS = 1800;   // only after an explicit 'send it/that is all' ending
+const MAX_CAPTURE_MS = 90000;
 let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTimer = null;
 let followupCount = 0;
 const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|send it|that'?s all)\s*[.!?]?$/;
@@ -1117,8 +1121,23 @@ function standDown(){ followupCount = 0; latestCmd=''; pendingDispatch=null; set
 }
 function armAttentive(){ clearTimeout(attentiveTimer); attentiveTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 8000); }
 function armFollowup(){ clearTimeout(followupTimer); followupTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 6000); }
-function armEndpoint(cmd){ latestCmd = cmd; armSleep(); clearTimeout(endpointTimer); clearTimeout(attentiveTimer); clearTimeout(followupTimer); if(captureStartTs && Date.now()-captureStartTs > 30000){ endpoint(); return; } const wait = soundsComplete(cmd) ? 1400 : 2200; endpointTimer = setTimeout(endpoint, wait); }
-function endpoint(){ const cmd = (latestCmd||'').trim(); latestCmd=''; if(!cmd){ setVoiceState('ATTENTIVE'); armAttentive(); return; } earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd); }
+function mergeCaptured(previous, incoming){
+  const a = normalize(previous), b = normalize(incoming);
+  if(!a) return b; if(!b) return a;
+  if(b.indexOf(a)===0) return b;       // same recognition session expanded
+  if(a.indexOf(b)===0) return a;       // shorter interim correction; keep fuller text
+  return dedupeStutter((a + ' ' + b).trim()); // browser restarted mid-sentence
+}
+function armEndpoint(cmd){
+  latestCmd = mergeCaptured(latestCmd, cmd);
+  armSleep(); clearTimeout(endpointTimer); clearTimeout(attentiveTimer); clearTimeout(followupTimer);
+  if(captureStartTs && Date.now()-captureStartTs > MAX_CAPTURE_MS){ endpoint(); return; }
+  const explicitDone = GO.test(latestCmd);
+  const wait = explicitDone ? ENDPOINT_EXPLICIT_MS : (soundsComplete(latestCmd) ? ENDPOINT_COMPLETE_MS : ENDPOINT_INCOMPLETE_MS);
+  status(explicitDone ? 'Got it — finishing…' : 'Listening — keep going', true);
+  endpointTimer = setTimeout(endpoint, wait);
+}
+function endpoint(){ let cmd = (latestCmd||'').trim(); latestCmd=''; if(!cmd){ setVoiceState('ATTENTIVE'); armAttentive(); return; } cmd = dedupeStutter(cmd.replace(GO,'').trim()) || cmd; earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd); }
 function respond(text){ setVoiceState('SPEAKING'); say(text, powered ? enterFollowup : function(){ setVoiceState('OFF'); }); }
 function respondThenSleep(text){ setVoiceState('SPEAKING'); say(text, standDown); }
 function enterFollowup(){ followupCount++; if(followupCount > 3){ standDown(); return; } setVoiceState('FOLLOWUP'); earcon('followup'); armFollowup(); }
@@ -1253,7 +1272,7 @@ function onResult(e){
     earcon('wake'); followupCount = 0; armSleep();
     clog('Wake word detected.', 'hi');
     const trailing = (m.index >= 0) ? full.slice(m.index + m.len).trim() : '';
-    if (soundsWordy(trailing)) { setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(trailing); if (GO.test(trailing)) { fireGo(trailing); return; } armEndpoint(trailing); }
+    if (soundsWordy(trailing)) { setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(trailing); armEndpoint(trailing); }
     else { setVoiceState('ATTENTIVE'); armAttentive(); }
     return;
   }
@@ -1264,7 +1283,6 @@ function onResult(e){
     if (!cmd) return;
     if (voiceState === 'ATTENTIVE') { setVoiceState('CAPTURING'); captureStartTs = Date.now(); }
     showLiveTranscript(cmd);
-    if (GO.test(cmd)) { fireGo(cmd); return; }
     armEndpoint(cmd);
     return;
   }
@@ -1273,7 +1291,6 @@ function onResult(e){
     const cmd = full.trim();
     if (!cmd) return;
     setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(cmd);
-    if (GO.test(cmd)) { fireGo(cmd); return; }
     armEndpoint(cmd);
     return;
   }
