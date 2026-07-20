@@ -2,6 +2,14 @@
   "date": "2026-07-20",
   "brief": [
     {
+      "t": "First, complete and send the Unshrink It quote today. Confirm the product, quantity, full cost inputs, margin and delivery terms before it goes out; do not quote from ingredients-only costs.",
+      "hot": true
+    },
+    {
+      "t": "Second, speak with Hawk Media today and give them the complete information package they need. Close the conversation with any missing items, named owners and deadlines documented.",
+      "hot": true
+    },
+    {
       "t": "First, reply to Oussama Salmi\u2019s new afghani oil haircare inquiry from 3:38 A M. Keep it short and human. Qualify the product, formula path, service needed, target quantity and timing. Do not ask budget in the first reply.",
       "hot": true
     },
@@ -20,23 +28,30 @@
     {
       "t": "Launch James Bailey\u2019s paid production handoff: one thousand twelve-ounce Menthol Infused Shampoo units. Assign and confirm the branded marketing sample bottle, including its ship date.",
       "hot": true
-    },
-    {
-      "t": "Clear customer delivery blockers: Laura must give Nadia at Oreka the cream-jar update and review the Canadian label changes; she must also return Drake\u2019s 200 milliliter jar sourcing options for five hundred and one thousand units.",
-      "hot": false
-    },
-    {
-      "t": "Then close the operating risks: run overdue Gusto payroll, decide Coast Southwest P O twenty twenty six dash zero zero zero four payment or send the hold reason, and restore Ronald\u2019s CRM access so Victor\u2019s overdue costs can move. No CRM developer fix is confirmed.",
-      "hot": true
     }
   ],
   "next": [
-    "Reply to Oussama Salmi and Anfal Mohammed before other work",
-    "Get Jonathan\u2019s inventory count and complete the 11 A M Kenna meeting",
-    "Launch James Bailey production and branded sample bottle",
-    "Resolve payroll, Coast Southwest, and Ronald access after customer actions"
+    "Complete and send the Unshrink It quote",
+    "Speak with Hawk Media and deliver their full information package",
+    "Then return to the remaining customer and operating priorities"
   ],
   "kb": [
+    {
+      "keys": [
+        "unshrink",
+        "unshrink it",
+        "quote"
+      ],
+      "a": "Unshrink It is Sam\u2019s first priority for Monday, July twentieth. Complete and send the quote today after confirming scope, quantity, all-in costs, approved margin and delivery terms. Quote value and exact product details are not yet recorded in Command Center."
+    },
+    {
+      "keys": [
+        "hawk",
+        "hawk media",
+        "media"
+      ],
+      "a": "Hawk Media is Sam\u2019s second priority for Monday, July twentieth. Sam must speak with them and provide the complete information they require, then document any missing item, owner and deadline. The exact information package is not yet recorded in Command Center."
+    },
     {
       "keys": [
         "victor",
@@ -328,6 +343,24 @@
   "topTasks": [
     {
       "rank": 1,
+      "title": "Complete and send the Unshrink It quote",
+      "why": "Sam identified this as today\u2019s first priority and it is a direct revenue action.",
+      "owner": "Sam / sales",
+      "due": "Today",
+      "priority": "critical",
+      "revenue": "Quote value not yet stated"
+    },
+    {
+      "rank": 2,
+      "title": "Brief Hawk Media with all required PLL information",
+      "why": "Sam identified this as today\u2019s second priority; incomplete information is blocking progress.",
+      "owner": "Sam",
+      "due": "Today",
+      "priority": "critical",
+      "revenue": "Growth support; value not stated"
+    },
+    {
+      "rank": 3,
       "title": "Qualify and respond to Oussama Salmi",
       "why": "New unread Shopify haircare lead arrived at 3:38 AM.",
       "owner": "Sam / sales",
@@ -336,7 +369,7 @@
       "revenue": "New haircare inquiry; value not stated"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "title": "Answer Anfal Mohammed\u2019s Shopify pricing questions",
       "why": "Repeated unanswered questions show active purchase intent.",
       "owner": "Sales",
@@ -345,7 +378,7 @@
       "revenue": "Serum or cream inquiry; value not stated"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "title": "Resolve Ethnic Gals inventory request",
       "why": "Jonathan requested an inventory spec/count and tried calling.",
       "owner": "Aidan / warehouse",
@@ -354,7 +387,7 @@
       "revenue": "Existing customer; value not stated"
     },
     {
-      "rank": 4,
+      "rank": 6,
       "title": "Prepare for Tuesday\u2019s postponed Kenna meeting",
       "why": "The July 20 meeting moved to Tuesday, July 21; Pure Good and Terra Lotus pricing remains overdue.",
       "owner": "Sam / Aidan",
@@ -363,7 +396,7 @@
       "revenue": "Pricing opportunity; amount not stated"
     },
     {
-      "rank": 5,
+      "rank": 7,
       "title": "Kick off James Bailey production and branded sample",
       "why": "Deposit paid for 1,000 Menthol Infused Shampoo units; sample was requested.",
       "owner": "Sam / operations",
@@ -372,7 +405,7 @@
       "revenue": "$5,681 deposit received; $8,740 total project value"
     },
     {
-      "rank": 6,
+      "rank": 8,
       "title": "Run payroll, decide Coast payment, and restore Ronald access",
       "why": "Payroll is overdue; materials and overdue quotes remain blocked.",
       "owner": "Sam",
@@ -384,8 +417,16 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Respond to new Shopify leads, then attend the 11 AM Kenna meeting",
+      "top_task": "Complete the Unshrink It quote, then brief Hawk Media",
       "tasks": [
+        {
+          "title": "Complete and send the Unshrink It quote",
+          "due": "Today"
+        },
+        {
+          "title": "Speak with Hawk Media and provide all required information",
+          "due": "Today"
+        },
         {
           "title": "Qualify Oussama Salmi / afghani oil haircare lead",
           "due": "This morning"
@@ -395,19 +436,11 @@
           "due": "This morning"
         },
         {
-          "title": "Attend Meeting | Kenna",
-          "due": "July 20, 11 AM ET"
-        },
-        {
           "title": "Launch James Bailey production and branded sample",
-          "due": "Today"
-        },
-        {
-          "title": "Run overdue Gusto payroll; decide Coast Southwest payment; restore Ronald access",
           "due": "Today"
         }
       ],
-      "notes": "CEO. Customer and revenue responses lead the day. No CRM developer fix is confirmed."
+      "notes": "CEO. Single lane: Unshrink It quote first, Hawk Media information handoff second. Kenna meeting is Tuesday, July 21; time remains unconfirmed."
     },
     "aidan": {
       "display_name": "Aidan",
@@ -506,6 +539,24 @@
   },
   "revenueActions": [
     {
+      "title": "Send Unshrink It quote",
+      "why": "Sam set this as today\u2019s first priority and it can directly advance revenue.",
+      "est_value": "Not stated",
+      "next_step": "Confirm scope and all-in cost inputs, apply approved margin, quality-check and send the quote today.",
+      "owner": "Sam / sales",
+      "timing": "First today",
+      "value": "Quote value not stated"
+    },
+    {
+      "title": "Complete Hawk Media information handoff",
+      "why": "Sam set this as today\u2019s second priority and the growth partner needs complete inputs.",
+      "est_value": "Not directly stated",
+      "next_step": "Hold the conversation, provide the full requested information, and document any remaining owner and deadline.",
+      "owner": "Sam",
+      "timing": "Second today",
+      "value": "Growth enablement"
+    },
+    {
       "title": "Qualify Oussama Salmi / afghani oil",
       "why": "A new unread Shopify haircare inquiry arrived overnight.",
       "est_value": "Not stated",
@@ -540,15 +591,6 @@
       "owner": "Sam / operations",
       "timing": "Today",
       "value": "$5,681 deposit received; $8,740 total project value"
-    },
-    {
-      "title": "Unblock Kenna pricing and Victor costs",
-      "why": "Kenna-related pricing is overdue; Victor quote remains blocked on costs.",
-      "est_value": "Amounts not stated",
-      "next_step": "Get Aidan's Kenna status; for Victor, wait for his R&D lab's packaging-compatibility result while Ronald completes raw ingredient costs.",
-      "owner": "Aidan, Victor, Ronald",
-      "timing": "Follow up after Victor's lab response date is confirmed",
-      "value": "Pipeline conversion protection; amounts not stated"
     }
   ],
   "pipelineStat": {
@@ -569,5 +611,5 @@
     "depositsCollected": 51773.99,
     "note": "CRM dashboard observed July 20. Do not infer stage totals or deal values beyond this evidence."
   },
-  "ts": "2026-07-20T15:03:00Z"
+  "ts": "2026-07-20T18:51:08.657110Z"
 }
