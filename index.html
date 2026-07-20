@@ -1217,12 +1217,15 @@ function handleSpeech(heard) {
   }
   if (pendingDispatch) {
     if (/\b(yes|yeah|yep|sure|do it|go ahead|send it|affirmative|please|correct)\b/.test(heard)) {
-      const q = pendingDispatch; pendingDispatch = null;
-      dispatch(q); return;
+      const pd = (typeof pendingDispatch === 'string')
+        ? { cmd: pendingDispatch, agent: targetAgent(pendingDispatch) }
+        : pendingDispatch;
+      pendingDispatch = null;
+      dispatch(pd.cmd, { confirmed: true, agent: pd.agent }); return;
     }
     if (/\b(no|nope|nah|cancel|never mind|nevermind|negative|forget it|don'?t)\b/.test(heard)) {
       pendingDispatch = null;
-      respond("Copy. Dropped it. What else?"); return;
+      respond("Okay, I won't send it. What else?"); return;
     }
     pendingDispatch = null;
   }
@@ -1230,12 +1233,13 @@ function handleSpeech(heard) {
     respondThenSleep("Standing down. I'll be right here when you need me.");
     return;
   }
-  // V5.3: repeat every action/update exactly and require Sam's yes/no before dispatch.
-  // This prevents a narration update from being mistaken for an unrelated command.
+  // V5.4: summarize once, then ask before sending an action or update.
+  // After Sam says yes, do not repeat the command again.
   if (isActionCommand(heard)) {
-    pendingDispatch = heard;
     const confirmAgent = targetAgent(heard);
-    respond("I heard: " + heard + ". Do you want me to send that to " + confirmAgent + "? Yes or no.");
+    const summary = compactSummary(heard);
+    pendingDispatch = { cmd: heard, agent: confirmAgent, summary: summary };
+    respond("I understand: " + summary + ". Send this to " + confirmAgent + "? Yes or no.");
     return;
   }
 
@@ -1447,30 +1451,14 @@ function speakPipeline(){
   pendingDispatch = "what's the pipeline status";
 }
 
-// ===== AI BRAIN — instant onboard answers, no dispatch =====
+// ===== AI BRAIN — business-safe hybrid =====
+// Known business questions answer instantly from the onboard brief/KB above.
+// Open-ended questions go directly to Tasklet's PLL Consultant without an extra yes/no step.
 function askBrain(heard){
-  setVoiceState('THINKING');
-  if (!muted && 'speechSynthesis' in window) {
-    try { const f = new SpeechSynthesisUtterance('Let me check.'); f.voice = sternVoice(); f.pitch = 0.92; f.rate = 1.0; speechSynthesis.speak(f); } catch(e){}
-  }
-  clog('→ AI Brain: ' + heard);
-  var sys = 'You are Command Center, the spoken voice assistant for Sam, CEO of Private Label Labs, a private label skincare and cosmetics manufacturer. Answer the question directly in one to three short spoken sentences. Plain conversational text only. No markdown, no emojis, no lists, no headings.';
-  var ctrl = (typeof AbortController !== 'undefined') ? new AbortController() : null;
-  var timer = setTimeout(function(){ if (ctrl) ctrl.abort(); }, 15000);
-  fetch('https://text.pollinations.ai/' + encodeURIComponent(heard) + '?system=' + encodeURIComponent(sys), ctrl ? { signal: ctrl.signal } : {})
-    .then(function(r){ clearTimeout(timer); if (!r.ok) throw new Error('bad'); return r.text(); })
-    .then(function(txt){
-      txt = (txt || '').replace(/[*#_`>|]/g, ' ').replace(/\s+/g, ' ').trim();
-      if (txt.length < 2) throw new Error('empty');
-      if (txt.length > 700) txt = txt.slice(0, txt.lastIndexOf('.', 700) + 1 || 700);
-      clog('AI Brain: ' + txt, 'hi');
-      respond(txt);
-    })
-    .catch(function(){ clearTimeout(timer); askConsultantFallback(heard); });
+  dispatch(heard, { question: true, agent: targetAgent(heard) });
 }
 function askConsultantFallback(heard){
-  pendingDispatch = heard;
-  respond("I don't have that one onboard. Want me to send it to the consultant? Yes or no.");
+  dispatch(heard, { question: true, agent: 'PLL Consultant' });
 }
 
 // ===== VOICE PICKER =====
@@ -1511,14 +1499,35 @@ function setHook(){
   }
 }
 function targetAgent(t){
+  t = (t || '').toLowerCase();
   if (/crm|developer|bug|fix|broken|feature|pipeline build|ticket/.test(t)) return 'CRM Developer';
-  if (/email|inbox|outlook|send.*mail|draft.*(reply|email|mail)|check.*mail/.test(t)) return 'Email Agent';
+  if (/email|inbox|outlook|convertflow|send.*mail|draft.*(reply|email|mail)|check.*mail/.test(t)) return 'Email Agent';
+  if (/google ads|paid ads|ad campaign|paid search|ppc|cpc|keyword bid|media spend/.test(t)) return 'Ads Agent';
+  if (/\b(seo|geo|aeo)\b|organic search|search console|blog|content page|ai search/.test(t)) return 'Organic Agent';
+  if (/architect|floor plan|blueprint|permit|plumbing overlay|facility layout|fire code/.test(t)) return 'PLL Architect';
   return 'PLL Consultant';
 }
 function targetKey(agent){
   if (agent === 'CRM Developer') return 'crm-developer';
   if (agent === 'Email Agent') return 'email';
+  if (agent === 'Ads Agent') return 'ads';
+  if (agent === 'Organic Agent') return 'organic';
+  if (agent === 'PLL Architect') return 'architect';
   return 'consultant';
+}
+function compactSummary(t){
+  var s = String(t || '').trim().replace(/\s+/g, ' ');
+  // Common multi-task narration: keep the meaning, drop verbal scaffolding.
+  if (/unshrink/i.test(s) && /hawk media/i.test(s)) return 'prioritize the Unshrink It quote first, then give Hawk Media the information they need today';
+  s = s.replace(/^(okay|alright|so|hey|just)[:, ]+/i, '')
+       .replace(/^(i need you to|can you please|please|we need to|i want you to)\s+/i, '')
+       .replace(/\b(you know|basically|kind of|sort of)\b/gi, '')
+       .replace(/\s+/g, ' ').trim();
+  if (s.length > 190) {
+    var cut = s.lastIndexOf(' ', 190);
+    s = s.slice(0, cut > 120 ? cut : 190).trim() + '…';
+  }
+  return s.charAt(0).toLowerCase() + s.slice(1);
 }
 function isChangeCommand(t){
   return /\b(add|create|assign|mark|update|set|log|make|remind|tell|send|delete|remove|schedule|reschedule|book|complete|draft|put|give|get|have|open|file|push|move|enter|start)\b/.test(t);
@@ -1541,25 +1550,24 @@ function isActionCommand(t){
     || /add a task|create a task|task (in )?for|put in a task|tell the|update the crm|crm update|send an email|remind|log this|make a note|dispatch|route this|open a ticket|file a bug|follow up with|kick off|check.*(inbox|mail|outlook)/.test(t);
 }
 var pendingRetry = null;
-function dispatch(heard){
+function dispatch(heard, opts){
+  opts = opts || {};
   const url = hookUrl();
   if (!url) { respond("I heard you, but the dispatch line isn't connected yet. Tap the Link button in the top bar and paste in the dispatch URL — then I can route commands to the team."); return; }
-  const agent = targetAgent(heard);
+  const agent = opts.agent || targetAgent(heard);
   const tgt = targetKey(agent);
   const logId = dlogAdd(heard, agent);
   setVoiceState('THINKING');
   orbBurst(); // fire the comet toward the dispatch log
-  const ack = isOperationalUpdate(heard)
-    ? ("Got it. I'm recording that update with " + agent + " now.")
-    : isChangeCommand(heard)
-      ? ("Got it — " + heard + ". Sending to " + agent + " now.")
-      : ("On it. Routing that to " + agent + " now.");
+  const ack = opts.question
+    ? ("Checking with " + agent + ".")
+    : ("Sent to " + agent + ".");
   dlogSet(logId, 'DISPATCHED');
   status('Dispatching to ' + agent + '…', true); coreState('working','think');
   clog('→ Dispatch [' + agent + ' · ' + tgt + ']: ' + heard, 'warn');
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ source: 'pll-command-lab', command: heard, intent: isOperationalUpdate(heard) ? 'day_update' : 'action', target: tgt, routed_to: agent, ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { dlogSet(logId, 'DELIVERED'); say(ack + " I'll report back when it's done."); status('Working… will report when done', true); coreState('working','think'); startAnswerWatcher(heard, logId); }
+    body: JSON.stringify({ source: 'pll-command-lab', command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, ts: new Date().toISOString() }) })
+  .then(r => { if (r.ok) { dlogSet(logId, 'DELIVERED'); say(ack); status(opts.question ? 'Thinking…' : 'Sent — waiting for completion', true); coreState('working','think'); startAnswerWatcher(heard, logId); }
                else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('The dispatch line rejected that. Say "retry" and I\'ll send it again.'); } })
   .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('Could not reach the dispatch line. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
 }
