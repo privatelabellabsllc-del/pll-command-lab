@@ -1523,8 +1523,10 @@ function isChangeCommand(t){
 function isOperationalUpdate(t){
   return /\b(postponed|rescheduled|cancelled|canceled|delayed|moved to|pushed to)\b/.test(t)
     || /\b(was|is|got|has been|have been)\s+(postponed|rescheduled|cancelled|canceled|delayed|completed|finished|sent|paid|shipped|delivered|booked|confirmed|resolved|approved|rejected|closed)\b/.test(t)
-    || /\bi (just )?(called|spoke|emailed|texted|sent|paid|finished|completed|handled|resolved|confirmed|booked|met|delivered|shipped)\b/.test(t)
-    || /\b(this is|just) an? update\b/.test(t);
+    || /\b(i|we) (just )?(called|spoke|emailed|texted|sent|paid|finished|completed|handled|resolved|confirmed|booked|met|delivered|shipped|decided|agreed|committed|promised)\b/.test(t)
+    || /\b(that'?s|that is|it'?s|it is|we'?re|we are) (done|finished|complete|all set)\b/.test(t)
+    || /\b(meeting|call|task|quote|order|sample|shipment|payment|deadline)\b.{0,45}\b(today|tomorrow|monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b/.test(t)
+    || /\b(this is|just) an? update\b|\b(just )?letting you know\b/.test(t);
 }
 // Single source of truth for action/update-vs-question routing.
 // Questions (interrogative openers, incl. "give me"/"show me" forms) are never actions.
