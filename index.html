@@ -1516,13 +1516,21 @@ function targetKey(agent){
   return 'consultant';
 }
 function isChangeCommand(t){
-  return /\b(add|create|assign|mark|update|set|log|make|remind|tell|send|delete|remove|schedule|book|complete|draft|put|give|get|have|open|file|push|move|enter|start)\b/.test(t);
+  return /\b(add|create|assign|mark|update|set|log|make|remind|tell|send|delete|remove|schedule|reschedule|book|complete|draft|put|give|get|have|open|file|push|move|enter|start)\b/.test(t);
 }
-// V4.2: single source of truth for action-vs-question routing.
+// V5.2: Sam also narrates facts and outcomes. These are day-record updates,
+// not questions, so they must reach the Consultant instead of the generic answer brain.
+function isOperationalUpdate(t){
+  return /\b(postponed|rescheduled|cancelled|canceled|delayed|moved to|pushed to)\b/.test(t)
+    || /\b(was|is|got|has been|have been)\s+(postponed|rescheduled|cancelled|canceled|delayed|completed|finished|sent|paid|shipped|delivered|booked|confirmed|resolved|approved|rejected|closed)\b/.test(t)
+    || /\bi (just )?(called|spoke|emailed|texted|sent|paid|finished|completed|handled|resolved|confirmed|booked|met|delivered|shipped)\b/.test(t)
+    || /\b(this is|just) an? update\b/.test(t);
+}
+// Single source of truth for action/update-vs-question routing.
 // Questions (interrogative openers, incl. "give me"/"show me" forms) are never actions.
 function isActionCommand(t){
   if (/^\s*(what('?s| is| are| was)?|who('?s)?|when|where|why|how|does|do (we|i|you)|is\b|are\b|did\b|was\b|were\b|can you (tell|show|read|give) me|tell me|show me|read me|give me)/.test(t)) return false;
-  return isChangeCommand(t)
+  return isChangeCommand(t) || isOperationalUpdate(t)
     || /add a task|create a task|task (in )?for|put in a task|tell the|update the crm|crm update|send an email|remind|log this|make a note|dispatch|route this|open a ticket|file a bug|follow up with|kick off|check.*(inbox|mail|outlook)/.test(t);
 }
 var pendingRetry = null;
@@ -1534,14 +1542,16 @@ function dispatch(heard){
   const logId = dlogAdd(heard, agent);
   setVoiceState('THINKING');
   orbBurst(); // fire the comet toward the dispatch log
-  const ack = isChangeCommand(heard)
-    ? ("Got it — " + heard + ". Sending to " + agent + " now.")
-    : ("On it. Routing that to " + agent + " now.");
+  const ack = isOperationalUpdate(heard)
+    ? ("Got it. I'm recording that update with " + agent + " now.")
+    : isChangeCommand(heard)
+      ? ("Got it — " + heard + ". Sending to " + agent + " now.")
+      : ("On it. Routing that to " + agent + " now.");
   dlogSet(logId, 'DISPATCHED');
   status('Dispatching to ' + agent + '…', true); coreState('working','think');
   clog('→ Dispatch [' + agent + ' · ' + tgt + ']: ' + heard, 'warn');
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ source: 'pll-command-lab', command: heard, target: tgt, routed_to: agent, ts: new Date().toISOString() }) })
+    body: JSON.stringify({ source: 'pll-command-lab', command: heard, intent: isOperationalUpdate(heard) ? 'day_update' : 'action', target: tgt, routed_to: agent, ts: new Date().toISOString() }) })
   .then(r => { if (r.ok) { dlogSet(logId, 'DELIVERED'); say(ack + " I'll report back when it's done."); status('Working… will report when done', true); coreState('working','think'); startAnswerWatcher(heard, logId); }
                else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('The dispatch line rejected that. Say "retry" and I\'ll send it again.'); } })
   .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('Could not reach the dispatch line. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });

@@ -14,7 +14,7 @@
       "hot": true
     },
     {
-      "t": "Be ready for the Kenna meeting at eleven A M Eastern. Before it starts, get Aidan’s overdue Pure Good and Terra Lotus pricing status and leave the meeting with a named owner and deadline.",
+      "t": "Use the extra day to prepare for the Kenna meeting, postponed to Tuesday, July twenty-first. Get Aidan’s overdue Pure Good and Terra Lotus pricing status before the meeting. The new meeting time is not yet confirmed.",
       "hot": true
     },
     {
@@ -153,7 +153,7 @@
         "lotus",
         "atlas"
       ],
-      "a": "Aidan's Kenna Pure Good and Terra Lotus pricing was due July 8 and remains overdue in the CRM. A Kenna meeting is scheduled for July 20 at 11 AM Eastern; obtain Aidan's status before it and leave with a named owner and deadline."
+      "a": "Aidan's Kenna Pure Good and Terra Lotus pricing was due July eighth and remains overdue in the C R M. The Kenna meeting scheduled for Monday July twentieth at eleven A M was postponed to Tuesday July twenty-first. The new time is not yet confirmed. Get Aidan's status before the meeting and leave with a named owner and deadline."
     },
     {
       "keys": [
@@ -355,10 +355,10 @@
     },
     {
       "rank": 4,
-      "title": "Attend Kenna meeting and unblock pricing",
-      "why": "Kenna meeting is at 11 AM; Pure Good and Terra Lotus pricing remains overdue.",
+      "title": "Prepare for Tuesday’s postponed Kenna meeting",
+      "why": "The July 20 meeting moved to Tuesday, July 21; Pure Good and Terra Lotus pricing remains overdue.",
       "owner": "Sam / Aidan",
-      "due": "11 AM ET",
+      "due": "Tuesday, July 21 — time not confirmed",
       "priority": "critical",
       "revenue": "Pricing opportunity; amount not stated"
     },
@@ -568,5 +568,6 @@
     "inProduction": 19,
     "depositsCollected": 51773.99,
     "note": "CRM dashboard observed July 20. Do not infer stage totals or deal values beyond this evidence."
-  }
+  },
+  "ts": "2026-07-20T15:03:00Z"
 }
