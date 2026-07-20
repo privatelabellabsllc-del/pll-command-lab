@@ -1156,9 +1156,15 @@ function armEndpoint(cmd){
   endpointTimer = setTimeout(endpoint, wait);
 }
 function endpoint(){ let cmd = (latestCmd||'').trim(); latestCmd=''; if(!cmd){ setVoiceState('ATTENTIVE'); armAttentive(); return; } cmd = dedupeStutter(cmd.replace(GO,'').trim()) || cmd; earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd); }
-function respond(text){ setVoiceState('SPEAKING'); say(text, powered ? enterFollowup : function(){ setVoiceState('OFF'); }); }
+// One wake-up handles one completed exchange. Once Command Lab answers, it
+// immediately returns to wake-word-only standby so nearby conversation cannot
+// become an accidental follow-up command.
+function respond(text){ setVoiceState('SPEAKING'); say(text, standDown); }
 function respondThenSleep(text){ setVoiceState('SPEAKING'); say(text, standDown); }
-function enterFollowup(){ followupCount++; if(followupCount > 3){ standDown(); return; } setVoiceState('FOLLOWUP'); earcon('followup'); armFollowup(); }
+// Confirmation is the sole exception: the original task is not dispatched yet,
+// so keep a short yes/no window open. After dispatch/result, respond() stands down.
+function respondForConfirmation(text){ setVoiceState('SPEAKING'); say(text, powered ? enterFollowup : function(){ setVoiceState('OFF'); }); }
+function enterFollowup(){ followupCount++; if(followupCount > 1){ standDown(); return; } setVoiceState('FOLLOWUP'); earcon('followup'); armFollowup(); }
 
 function armSleep() {
   document.body.classList.remove('dimmed');
@@ -1349,7 +1355,7 @@ function handleSpeech(heard) {
     const confirmAgent = targetAgent(heard);
     const summary = compactSummary(heard);
     pendingDispatch = { cmd: heard, agent: confirmAgent, summary: summary };
-    respond("I understand: " + summary + ". Send this to " + confirmAgent + "? Yes or no.");
+    respondForConfirmation("I understand: " + summary + ". Send this to " + confirmAgent + "? Yes or no.");
     return;
   }
 
@@ -1432,7 +1438,7 @@ function getTopTasks(){
 var topTaskActive = false, topTaskIdx = 0, ttTimer = null, ttCountTimer = null;
 function enterTopTask(idx){
   var list = getTopTasks();
-  if (!list.length) { respond("I don't have a top task loaded yet. Want me to ask the agent? Yes or no."); pendingDispatch = "what's my top task"; return; }
+  if (!list.length) { pendingDispatch = "what's my top task"; respondForConfirmation("I don't have a top task loaded yet. Want me to ask the agent? Yes or no."); return; }
   if (idx < 0) idx = 0;
   if (idx >= list.length) { respond("That's the end of the list — that was the last task."); return; }
   topTaskIdx = idx; topTaskActive = true;
@@ -1482,7 +1488,7 @@ function speakRevenue(idx){
     // Fallback: first hot brief item is the money move.
     var hot = (BRIEF || []).filter(function(b){ return b.hot; });
     if (hot.length) { revActive = true; revIdx = 0; respond("Revenue move you can do right now. " + hot[0].t + (hot.length > 1 ? " Say 'next' for another." : "")); return; }
-    respond("I don't have a revenue action loaded yet. Want me to ask the agent? Yes or no."); pendingDispatch = "what revenue task can I do now"; return;
+    pendingDispatch = "what revenue task can I do now"; respondForConfirmation("I don't have a revenue action loaded yet. Want me to ask the agent? Yes or no."); return;
   }
   if (idx < 0) idx = 0;
   if (idx >= list.length) { respond("That's every revenue action I've got queued."); return; }
@@ -1540,7 +1546,7 @@ function speakTeamMember(key){
   // Fallback to the knowledge base entry for that name.
   var kb = kbAnswer(key);
   if (kb) { respond(kb); return; }
-  respond("I don't have " + (key.charAt(0).toUpperCase() + key.slice(1)) + "'s tasks loaded yet. Want me to ask the agent? Yes or no.");
+  respondForConfirmation("I don't have " + (key.charAt(0).toUpperCase() + key.slice(1)) + "'s tasks loaded yet. Want me to ask the agent? Yes or no.");
   pendingDispatch = "what are " + key + "'s tasks today";
 }
 
@@ -1559,8 +1565,8 @@ function speakPipeline(){
   if (X.pipeline) { respond("Company picture. " + X.pipeline); return; }
   var kb = kbAnswer('pipeline');
   if (kb) { respond("Company picture. " + kb); return; }
-  respond("I don't have the pipeline numbers loaded yet. Want me to ask the agent? Yes or no.");
   pendingDispatch = "what's the pipeline status";
+  respondForConfirmation("I don't have the pipeline numbers loaded yet. Want me to ask the agent? Yes or no.");
 }
 
 // ===== INSTANT PUBLIC UTILITIES =====
@@ -1723,8 +1729,8 @@ function dispatch(heard, opts){
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, context: priorContext, ts: new Date().toISOString() }) })
   .then(r => { if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); status('Router accepted — waiting for ' + agent, true); coreState('working','think'); startAnswerWatcher(heard, logId, rid); }
-               else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('The router rejected that. Say "retry" and I\'ll send it again.'); } })
-  .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respond('Could not reach the router. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
+               else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respondForConfirmation('The router rejected that. Say "retry" and I\'ll send it again.'); } })
+  .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respondForConfirmation('Could not reach the router. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
 }
 
 // ===== ANSWER READ-BACK (V4.1 — persistent watcher) =====
