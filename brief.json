@@ -28,12 +28,17 @@
     {
       "t": "Launch James Bailey\u2019s paid production handoff: one thousand twelve-ounce Menthol Infused Shampoo units. Assign and confirm the branded marketing sample bottle, including its ship date.",
       "hot": true
+    },
+    {
+      "t": "Rewrite the BrandHaus agreement, review the final terms, and send the approved version to Alex.",
+      "hot": false
     }
   ],
   "next": [
     "Complete and send the Unshrink It quote",
     "Speak with Hawk Media and deliver their full information package",
-    "Then return to the remaining customer and operating priorities"
+    "Then return to the remaining customer and operating priorities",
+    "Rewrite the BrandHaus agreement and send the approved version to Alex"
   ],
   "kb": [
     {
@@ -338,6 +343,16 @@
         "moq"
       ],
       "a": "For True Revival, client revised to a 200 mL (6.8 oz declared contents) dark-green, light-blocking, shower-safe jar with gold branding. Drake accepts 500 or 1,000 jar MOQ. Laura reported stateside custom jars may require 5,000 MOQ and is sourcing alternatives; return options including stock jars with domestic decoration or lower-MOQ custom sourcing."
+    },
+    {
+      "keys": [
+        "brandhaus",
+        "brand haus",
+        "alex",
+        "agreement",
+        "contract"
+      ],
+      "a": "Open CEO task: rewrite the BrandHaus agreement, review and approve the final terms, then send the approved version to Alex. No due date or confirmed delivery address is recorded yet."
     }
   ],
   "topTasks": [
