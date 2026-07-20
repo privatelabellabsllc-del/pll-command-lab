@@ -26,7 +26,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#04090f">
+<meta name="theme-color" content="#f8f7f4">
 <title>PLL Command Center</title>
 <link rel="manifest" href="manifest.json">
 <style>
@@ -346,13 +346,73 @@
   .cmsend:hover{box-shadow:0 0 14px rgba(52,255,150,.3);}
   .cmsend:active{background:rgba(52,255,150,.24);}
   @media (max-width:680px){ .cmmsg{max-width:88%;} }
+
+  /* ═══════════ V6 — PLL PEARL COMMAND SYSTEM ═══════════ */
+  :root{
+    --bg:#f8f7f4; --bg2:#f1f4ef; --panel:rgba(255,255,255,.82); --panel2:#f5f7f3;
+    --line:rgba(45,122,79,.18); --line2:rgba(45,122,79,.34);
+    --cy:#173329; --cy2:#2d7a4f; --dim:#60796e; --dimmer:#8aa096;
+    --green:#2d7a4f; --amber:#b57922; --red:#c84949;
+    --glow:rgba(45,122,79,.22); --blue:#129ed0; --ink:#14251e;
+  }
+  body{
+    color:var(--ink); background-color:var(--bg);
+    background-image:
+      radial-gradient(ellipse 75% 62% at 50% -8%, rgba(45,122,79,.12), transparent 68%),
+      radial-gradient(ellipse 72% 55% at 50% 112%, rgba(18,158,208,.08), transparent 70%),
+      linear-gradient(135deg, rgba(255,255,255,.9), rgba(245,244,239,.94));
+  }
+  body::before{content:'';position:fixed;inset:0;pointer-events:none;opacity:.24;background-image:linear-gradient(rgba(45,122,79,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(45,122,79,.05) 1px,transparent 1px);background-size:42px 42px;mask-image:radial-gradient(circle at 50% 38%,black,transparent 76%);}
+  .strip{background:rgba(255,255,255,.84);border-bottom-color:var(--line);box-shadow:0 8px 28px rgba(20,52,38,.06);backdrop-filter:blur(18px);}
+  .strip::after{background:linear-gradient(90deg,transparent,var(--green),var(--blue),transparent);opacity:.5;}
+  .brand{height:44px;display:flex;align-items:center;gap:10px;letter-spacing:0;}
+  .brand img{width:126px;height:auto;display:block;filter:drop-shadow(0 4px 8px rgba(20,55,38,.08));}
+  .brand-system{border-left:1px solid var(--line2);padding-left:10px;color:var(--green);font-size:9px;font-weight:800;letter-spacing:2.3px;white-space:nowrap;}
+  #clock,.stat .sv,.hud .hv{color:var(--ink);text-shadow:none;}
+  .chip,.tb{background:rgba(255,255,255,.72);color:var(--ink);border-color:var(--line2);box-shadow:0 4px 12px rgba(23,58,42,.035);}
+  .tb:hover{background:#fff;border-color:var(--green);color:var(--green);box-shadow:0 7px 18px rgba(45,122,79,.12);}
+  .tb.primary{background:linear-gradient(135deg,#2d7a4f,#359260);color:#fff;border-color:#2d7a4f;box-shadow:0 7px 18px rgba(45,122,79,.2);}
+  .tb.primary.hot{background:#fff;color:var(--red);}
+  .panel{background:linear-gradient(150deg,rgba(255,255,255,.90),rgba(248,249,246,.76));border-color:var(--line);box-shadow:0 12px 38px rgba(22,55,40,.075),inset 0 1px 0 #fff;backdrop-filter:blur(16px);}
+  .panel h2{color:var(--ink);background:rgba(245,248,244,.72);border-bottom-color:var(--line);}
+  .row{border-color:rgba(45,122,79,.16)} .row .nm,.dlcmd,.agent .an,.console div.hi{color:#294d3d;}
+  .row .bar{background:rgba(45,122,79,.12)}
+  .hud{background:rgba(255,255,255,.76);border-color:var(--line2);box-shadow:0 8px 20px rgba(26,65,46,.08);backdrop-filter:blur(9px);}
+  .statebox .sv{color:var(--green);}
+  .statusline{color:var(--ink);background:rgba(255,255,255,.84);border-top-color:var(--line);backdrop-filter:blur(14px);}
+  .statusline::before{color:var(--green)} .wave span{background:var(--green)}
+  .dock{background:rgba(255,255,255,.66);border-top-color:var(--line);box-shadow:0 -10px 32px rgba(24,58,42,.04);}
+  .dock::before{background:linear-gradient(90deg,transparent,var(--green),var(--blue),transparent);opacity:.45;}
+  .docklab b,.hero .htxt{color:var(--ink)}
+  .hero{border-color:rgba(45,122,79,.52);background:linear-gradient(135deg,rgba(45,122,79,.10),rgba(255,255,255,.65));box-shadow:0 10px 28px rgba(45,122,79,.10);}
+  .qcard{background:rgba(255,255,255,.64);color:#425f52;border-color:var(--line);}
+  .console div{color:#6b8076}.console div b{color:var(--green)}
+  .dl,.agent{border-color:rgba(45,122,79,.14)}
+  .flag{color:#7d3030;background:rgba(200,73,73,.055)} .flag.none{color:var(--dim)}
+  .logo-core{position:absolute;z-index:2;left:50%;top:calc(50% - 23px);width:clamp(112px,16vw,190px);aspect-ratio:1;transform:translate(-50%,-50%);perspective:700px;pointer-events:none;display:grid;place-items:center;}
+  .logo-halo{position:absolute;inset:-16%;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.96) 0 37%,rgba(45,122,79,.11) 52%,rgba(18,158,208,.07) 64%,transparent 70%);filter:drop-shadow(0 14px 22px rgba(38,89,62,.15));animation:haloBreath 4s ease-in-out infinite;}
+  .logo-disc{position:absolute;inset:9%;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 36% 28%,#fff 0 35%,#f4f8f3 63%,#dfeae2 100%);border:1px solid rgba(45,122,79,.26);box-shadow:inset -12px -14px 24px rgba(45,122,79,.12),inset 8px 9px 18px rgba(255,255,255,.94),0 12px 28px rgba(31,79,52,.18);transform-style:preserve-3d;animation:logoFloat 7s ease-in-out infinite;}
+  .logo-disc::before{content:'';position:absolute;inset:5%;border-radius:50%;border:1px solid rgba(18,158,208,.14);box-shadow:0 0 20px rgba(18,158,208,.08);}
+  .logo-disc img{width:78%;height:78%;object-fit:contain;transform:translateZ(28px);filter:drop-shadow(0 9px 8px rgba(28,76,45,.22)) saturate(1.08);}
+  @keyframes logoFloat{0%,100%{transform:rotateX(4deg) rotateY(-5deg) translateY(0)}50%{transform:rotateX(-3deg) rotateY(6deg) translateY(-5px)}}
+  @keyframes haloBreath{0%,100%{transform:scale(.97);opacity:.74}50%{transform:scale(1.045);opacity:1}}
+  body[data-mood="awake"] .logo-core{filter:drop-shadow(0 0 18px rgba(35,174,77,.28))} body[data-mood="awake"] .logo-halo{animation-duration:1.15s;}
+  body[data-mood="think"] .logo-disc{animation-duration:2.2s} body[data-mood="think"] .logo-halo{background:radial-gradient(circle,rgba(255,255,255,.96) 0 37%,rgba(18,158,208,.14) 52%,rgba(45,122,79,.08) 66%,transparent 71%);animation-duration:1.8s;}
+  body[data-mood="speak"] .logo-halo{animation-duration:.8s;}
+  body[data-mood="off"] .logo-core{filter:grayscale(.25);opacity:.56;}
+  #topTaskOverlay,#commsOverlay{background:radial-gradient(ellipse 80% 65% at 50% 0%,rgba(45,122,79,.13),transparent 70%),#f8f7f4;background-color:#f8f7f4;}
+  .tttitle,.ttwhy,.ttmeta .mchip b,.cmhead .cmtitle{color:var(--ink);text-shadow:none}.ttmeta .mchip{color:#385b4b;background:#fff}.ttclose,.cmhead .cmclose{background:#fff;color:var(--green)}
+  .cmhead,.cmcompose{background:rgba(255,255,255,.9);border-color:var(--line)} .cmbubble{color:#294d3d;background:#fff;border-color:var(--line)} .cmcompose input{background:#fff;color:var(--ink)}
+  @media(max-width:1180px){.brand img{width:105px}.brand-system{display:none}.strip{gap:9px}.tbtns{margin-left:5px}}
+  @media(max-width:680px){.logo-core{width:132px;top:calc(50% - 20px)}.brand img{width:92px}.strip{background:#fff}.hud{left:10px;top:10px}.statebox{right:10px;top:10px}}
+
 </style>
 </head>
 <body class="booting">
 
 <!-- ═══════════ ZONE 1 — STATUS STRIP ═══════════ -->
 <div class="strip">
-  <div class="brand"><b>PLL</b><span>COMMAND</span> <em>CENTER</em></div>
+  <div class="brand"><img src="pll-logo.png" alt="Private Label Labs"><span class="brand-system">COMMAND CENTER</span></div>
   <div class="clockbox">
     <div id="clock">00:00:00</div>
     <div id="dateline">—</div>
@@ -398,6 +458,10 @@
   <div class="panel stage">
     <div class="stagewrap">
       <canvas id="brain"></canvas>
+      <div class="logo-core" aria-hidden="true">
+        <div class="logo-halo"></div>
+        <div class="logo-disc"><img src="pll-mark.png" alt=""></div>
+      </div>
       <div class="hud">
         <div class="hl">Today's Lane</div>
         <div class="hv" id="laneVal">1 / 1</div>
@@ -574,7 +638,7 @@ function orbBurst(){ burstT = 1; }
     else if (brainMode==='speak'||brainMode==='think') pulse = 1 + 0.06*Math.sin(t*6);
     else pulse = 1 + 0.02*Math.sin(breathe);
 
-    const accent = brainMode==='speak' ? [120,255,190] : brainMode==='think' ? [120,255,200] : listening ? [170,255,215] : [80,255,170];
+    const accent = brainMode==='speak' ? [0,145,190] : brainMode==='think' ? [30,135,175] : listening ? [35,174,77] : [45,122,79];
 
     // ---- concentric rotating ring arcs (mission-control feel) ----
     ctx.save(); ctx.translate(CX,CY);
