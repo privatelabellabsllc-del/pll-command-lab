@@ -546,6 +546,9 @@
 </div>
 
 <script>
+// V6.2 routing split: connected agents go straight through the non-AI switchboard.
+// The central line remains only for Consultant and not-yet-connected specialist workflows.
+const DIRECT_SWITCHBOARD = 'https://pll-command-switchboard.privatelabellabsllc.workers.dev/dispatch';
 const DEFAULT_HOOK = 'https://webhooks.tasklet.ai/v1/public/webhook/a_h6n0pc3gdpg7qk8fa3r8?token=c5b45e5290b8055e81eca0a586eba826';
 var voiceCache = [];
 var briefOk = null; // null=pending, true/false after fetch
@@ -1712,10 +1715,13 @@ function contextAdd(role, text, request_id, agent){
 }
 function dispatch(heard, opts){
   opts = opts || {};
-  const url = hookUrl();
-  if (!url) { respond("I heard you, but the dispatch line isn't connected yet. Tap the Link button in the top bar and paste in the dispatch URL — then I can route commands to the team."); return; }
   const agent = opts.agent || targetAgent(heard);
   const tgt = targetKey(agent);
+  // Email and Ads have private receiving lines behind the secure switchboard.
+  // Everything else stays on the existing central lane until that specialist
+  // has a verified private receiving line; never pretend an unconnected route is direct.
+  const url = (tgt === 'email' || tgt === 'ads') ? DIRECT_SWITCHBOARD : hookUrl();
+  if (!url) { respond("I heard you, but that dispatch line isn't connected yet."); return; }
   const rid = requestId();
   const priorContext = contextRead();
   contextAdd('sam', heard, rid, agent);
