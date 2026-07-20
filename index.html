@@ -1230,9 +1230,14 @@ function handleSpeech(heard) {
     respondThenSleep("Standing down. I'll be right here when you need me.");
     return;
   }
-  // V4.2: action intent wins BEFORE any KB/agenda lookup — "put a task in for
-  // Aidan" must dispatch, not read Aidan's tasks back.
-  if (isActionCommand(heard)) { dispatch(heard); return; }
+  // V5.3: repeat every action/update exactly and require Sam's yes/no before dispatch.
+  // This prevents a narration update from being mistaken for an unrelated command.
+  if (isActionCommand(heard)) {
+    pendingDispatch = heard;
+    const confirmAgent = targetAgent(heard);
+    respond("I heard: " + heard + ". Do you want me to send that to " + confirmAgent + "? Yes or no.");
+    return;
+  }
 
   // ===== V5.0 — ONBOARD COMPANY-BRAIN INTENTS (answer instantly, no dispatch) =====
   // If we're already in top-task full-screen, capture navigation words first.
@@ -1570,10 +1575,16 @@ function markSpoken(a){
   if (a && a.id) localStorage.setItem('pll_lastAnswerId', a.id);
   if (a && a.ts) localStorage.setItem('pll_lastAnswerTs', a.ts);
 }
-function isNewAnswer(a){
+function isNewAnswer(a, startedAt){
   if (!a || !a.text) return false;
-  if (a.id) { return a.id !== localStorage.getItem('pll_lastAnswerId'); }   // preferred path
-  if (a.ts) { return a.ts !== localStorage.getItem('pll_lastAnswerTs'); }   // legacy fallback (inequality, skew-proof)
+  // V5.3: never attach an older agent reply to the command Sam just spoke.
+  // Allow a small clock tolerance, but reject stale answers from prior dispatches.
+  if (startedAt && a.ts) {
+    var answerMs = Date.parse(a.ts);
+    if (isFinite(answerMs) && answerMs < startedAt - 5000) return false;
+  }
+  if (a.id) { return a.id !== localStorage.getItem('pll_lastAnswerId'); }
+  if (a.ts) { return a.ts !== localStorage.getItem('pll_lastAnswerTs'); }
   return false;
 }
 function speakAnswer(a, logId){
@@ -1628,7 +1639,7 @@ function runAnswerWatcher(startedAt, logId){
     fetch('answers.json?v=' + Date.now(), { cache: 'no-store' })
       .then(function(r){ return r.json(); })
       .then(function(a){
-        if (isNewAnswer(a)) { stop(); markSpoken(a); speakAnswer(a, logId); return; }
+        if (isNewAnswer(a, startedAt)) { stop(); markSpoken(a); speakAnswer(a, logId); return; }
         answerWatchTimer = setTimeout(tick, delayFor(Date.now() - startedAt));
       })
       .catch(function(){ // Pages may serve 404/HTML mid-rebuild — survive it
