@@ -952,9 +952,11 @@ let pendingDispatch = null;
 let voiceState = 'OFF';                          // OFF ASLEEP ATTENTIVE CAPTURING THINKING SPEAKING FOLLOWUP
 let restartInFlight = false, lastStartTs = 0, micLive = false;
 let latestCmd = '', captureStartTs = 0, captureHasFinal = false, finalWaitCount = 0;
-const ENDPOINT_COMPLETE_MS = 4500;   // tolerate natural thinking pauses
-const ENDPOINT_INCOMPLETE_MS = 6000; // longer grace for unfinished clauses
-const ENDPOINT_EXPLICIT_MS = 1800;   // only after an explicit 'send it/that is all' ending
+let captureCommitted = '', recSlots = [], recSessionHasWake = false, unresolvedAtRestart = false;
+let committedConfidence = [];
+const ENDPOINT_COMPLETE_MS = 8000;    // natural pauses and spoken self-correction
+const ENDPOINT_INCOMPLETE_MS = 12000; // unfinished clauses get a longer window
+const ENDPOINT_EXPLICIT_MS = 1800;    // only after an explicit 'send it/that is all' ending
 const MAX_CAPTURE_MS = 90000;
 let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTimer = null;
 let followupCount = 0;
@@ -1027,9 +1029,11 @@ function freshMic(){
 function buildRec(){
   rec = new SR();
   rec.continuous = !IS_IOS; rec.interimResults = true; rec.lang = 'en-US';
-  rec.onstart = function(){ restartInFlight = false; micLive = true; iosRestartFails = 0; hideTapPrompt(); };
+  rec.onstart = function(){ restartInFlight = false; micLive = true; iosRestartFails = 0; hideTapPrompt(); recSlots = []; recSessionHasWake = false; };
   rec.onresult = onResult;
   rec.onend = function(){
+    if(voiceState === 'CAPTURING') commitCurrentSession();
+    recSlots = []; recSessionHasWake = false;
     restartInFlight = false; micLive = false;
     if(micShouldBeLive() && !speaking){
       if(IS_IOS){
@@ -1118,69 +1122,106 @@ function updateStateUI(s){
   else if(s==='FOLLOWUP'){ micState('awake'); coreState('awake','awake'); status('Still listening — follow up or stay quiet', true); }
 }
 
-function standDown(){ followupCount = 0; latestCmd=''; captureHasFinal=false; finalWaitCount=0; pendingDispatch=null; setVoiceState('ASLEEP'); document.body.classList.add('dimmed');
+function resetCaptureBuffer(clearSession){
+  latestCmd=''; captureCommitted=''; captureHasFinal=false; finalWaitCount=0;
+  unresolvedAtRestart=false; committedConfidence=[];
+  if(clearSession !== false){ recSlots=[]; recSessionHasWake=false; }
+}
+function standDown(){ followupCount = 0; resetCaptureBuffer(true); pendingDispatch=null; setVoiceState('ASLEEP'); document.body.classList.add('dimmed');
   if (IS_MOBILE) { status('Tap the orb to speak', false); clog('Stood down — tap orb to speak.'); showTapPrompt(); }
   else { status('Powered — say “Command Lab”', false); clog('Stood down — wake word required.'); }
 }
 function armAttentive(){ clearTimeout(attentiveTimer); attentiveTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 8000); }
 function armFollowup(){ clearTimeout(followupTimer); followupTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 6000); }
-function mergeCaptured(previous, incoming){
-  const a = normalize(previous), b = normalize(incoming);
-  if(!a) return b; if(!b) return a;
-  if(b === a || b.indexOf(a)===0) return b; // same session expanded
-  if(a.indexOf(b)===0) return a;            // temporary shorter interim
-  if(a.indexOf(b)>=0) return a;
+function mergeRestartFinal(previous, incoming){
+  const a=normalize(previous), b=normalize(incoming);
+  if(!a) return b; if(!b || a===b) return a;
+  if(b.indexOf(a)===0) return b;
+  if(a.indexOf(b)===0 || a.indexOf(b)>=0) return a;
   if(b.indexOf(a)>=0) return b;
-
-  const aw=a.split(' '), bw=b.split(' '), shortest=Math.min(aw.length,bw.length);
-  let prefix=0;
-  while(prefix<shortest && aw[prefix]===bw[prefix]) prefix++;
-  // Web Speech repeatedly revises the tail of one interim transcript. Treat a
-  // substantial shared opening as a revision, never as a second utterance.
-  if((prefix>=3 && prefix/shortest>=0.45) || (prefix>=2 && prefix/shortest>=0.60)){
-    return bw.length >= aw.length*0.7 ? b : a;
+  const aw=a.split(' '), bw=b.split(' '), limit=Math.min(aw.length,bw.length);
+  for(let n=limit;n>=2;n--){
+    const left=aw.slice(-n), right=bw.slice(0,n); let mismatches=0;
+    for(let i=0;i<n;i++) if(left[i]!==right[i]) mismatches++;
+    if(mismatches<=Math.max(0,Math.floor(n*0.2))) return aw.concat(bw.slice(n)).join(' ');
   }
-
-  // A genuine browser restart can begin with the end of the prior session.
-  // Join only the non-overlapping continuation.
-  let overlap=0;
-  for(let n=shortest;n>=1;n--){
-    if(aw.slice(-n).join(' ')===bw.slice(0,n).join(' ')){ overlap=n; break; }
-  }
-  return dedupeStutter(aw.concat(bw.slice(overlap)).join(' '));
+  return a+' '+b;
 }
-function armEndpoint(cmd){
-  latestCmd = mergeCaptured(latestCmd, cmd);
+function slotText(finalMode){
+  return recSlots.filter(function(x){ return x && (finalMode==='all' || (finalMode==='final' ? x.final : !x.final)); })
+    .map(function(x){ return x.text; }).join(' ').trim();
+}
+function stripSessionWake(text){
+  const t=normalize(text); if(!t) return '';
+  const m=wakeMatch(t);
+  if(m && m.index>=0) return t.slice(m.index+m.len).trim();
+  return t;
+}
+function sessionCommand(finalMode){
+  const t=slotText(finalMode);
+  return recSessionHasWake ? stripSessionWake(t) : t;
+}
+function currentFinalCandidate(){ return mergeRestartFinal(captureCommitted, sessionCommand('final')); }
+function currentPreview(){ return mergeRestartFinal(captureCommitted, sessionCommand('all')); }
+function commitCurrentSession(){
+  const fin=sessionCommand('final'), interim=sessionCommand('interim');
+  if(fin){
+    captureCommitted=mergeRestartFinal(captureCommitted,fin); captureHasFinal=true;
+    recSlots.filter(function(x){return x&&x.final&&x.confidence>0;}).forEach(function(x){
+      committedConfidence.push({confidence:x.confidence,words:Math.max(1,x.text.split(/\s+/).length)});
+    });
+  }
+  unresolvedAtRestart=!!interim;
+}
+function commandLooksComplete(t){
+  const s=normalize(t), words=s.split(/\s+/).filter(Boolean);
+  if(words.length<2) return false;
+  if(/\b(and|but|so|or|the|a|an|to|for|with|that|because|then|also|of|from|at|by|as|into|about|if|when|while|than|you're|we're|they're|i'm|i've|we've|don't|doesn't|isn't|wasn't|would|could|should|will|can|um|uh|actually|correction|i mean)$/.test(s)) return false;
+  if(/^(um|uh|hmm|okay|so|well)(\s+(um|uh|hmm|okay|so|well))*$/.test(s)) return false;
+  return true;
+}
+function knownConfidenceIsPoor(){
+  const vals=committedConfidence.slice();
+  recSlots.filter(function(x){return x&&x.final&&x.confidence>0;}).forEach(function(x){ vals.push({confidence:x.confidence,words:Math.max(1,x.text.split(/\s+/).length)}); });
+  if(!vals.length) return false;
+  if(vals.some(function(x){return x.confidence<0.35 && x.words>=2;})) return true;
+  let total=0, words=0; vals.forEach(function(x){total+=x.confidence*x.words; words+=x.words;});
+  return words>0 && total/words<0.55;
+}
+function armEndpoint(){
+  latestCmd=currentPreview();
   armSleep(); clearTimeout(endpointTimer); clearTimeout(attentiveTimer); clearTimeout(followupTimer);
   if(captureStartTs && Date.now()-captureStartTs > MAX_CAPTURE_MS){ endpoint(); return; }
-  const explicitDone = GO.test(latestCmd);
-  const wait = explicitDone ? ENDPOINT_EXPLICIT_MS : (soundsComplete(latestCmd) ? ENDPOINT_COMPLETE_MS : ENDPOINT_INCOMPLETE_MS);
+  const explicitDone=GO.test(latestCmd);
+  const wait=explicitDone ? ENDPOINT_EXPLICIT_MS : (commandLooksComplete(latestCmd) ? ENDPOINT_COMPLETE_MS : ENDPOINT_INCOMPLETE_MS);
   status(explicitDone ? 'Got it — finishing…' : 'Listening — keep going', true);
-  endpointTimer = setTimeout(endpoint, wait);
+  endpointTimer=setTimeout(endpoint,wait);
 }
 function transcriptLooksCorrupted(t){
   const w=normalize(t).split(' ').filter(Boolean);
   if(w.length<24) return false;
   const seen={}; let max=0;
-  for(let i=0;i<=w.length-4;i++){
-    const g=w.slice(i,i+4).join(' '); seen[g]=(seen[g]||0)+1; if(seen[g]>max) max=seen[g];
-  }
+  for(let i=0;i<=w.length-4;i++){ const g=w.slice(i,i+4).join(' '); seen[g]=(seen[g]||0)+1; if(seen[g]>max) max=seen[g]; }
   return max>=4;
 }
+function rejectCapture(){
+  resetCaptureBuffer(true); earcon('error'); showLiveTranscript('Voice capture was unclear — command not sent.');
+  respondThenSleep('I did not catch the complete command clearly. Nothing was sent. Wake me and say it again.');
+}
 function endpoint(){
-  let cmd = (latestCmd||'').trim(); latestCmd='';
-  if(!cmd){ setVoiceState('ATTENTIVE'); armAttentive(); return; }
-  if(!captureHasFinal){
-    if(finalWaitCount<2){ finalWaitCount++; latestCmd=cmd; status('Finishing voice capture…',true); endpointTimer=setTimeout(endpoint,900); return; }
-    captureHasFinal=false; finalWaitCount=0; earcon('error'); showLiveTranscript('Voice did not finalize — command not sent.');
-    respondThenSleep('I did not catch that cleanly. Nothing was sent. Wake me and say the command again.'); return;
+  let cmd=currentFinalCandidate().trim();
+  const unresolved=sessionCommand('interim');
+  if(!cmd){
+    if(unresolved && finalWaitCount<2){ finalWaitCount++; status('Finishing voice capture…',true); endpointTimer=setTimeout(endpoint,900); return; }
+    rejectCapture(); return;
   }
-  finalWaitCount=0; cmd = dedupeStutter(cmd.replace(GO,'').trim()) || cmd;
-  if(transcriptLooksCorrupted(cmd)){
-    captureHasFinal=false; earcon('error'); showLiveTranscript('Voice capture was unclear — command not sent.');
-    respondThenSleep('I did not catch that cleanly. Nothing was sent. Wake me and say the command again.'); return;
+  if(unresolved){
+    if(finalWaitCount<2){ finalWaitCount++; status('Finishing voice capture…',true); endpointTimer=setTimeout(endpoint,900); return; }
+    rejectCapture(); return;
   }
-  captureHasFinal=false; earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd);
+  finalWaitCount=0; cmd=cmd.replace(GO,'').trim() || cmd;
+  if(unresolvedAtRestart || !commandLooksComplete(cmd) || knownConfidenceIsPoor() || transcriptLooksCorrupted(cmd)){ rejectCapture(); return; }
+  resetCaptureBuffer(true); earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd);
 }
 // One wake-up handles one completed exchange. Once Command Lab answers, it
 // immediately returns to wake-word-only standby so nearby conversation cannot
@@ -1300,15 +1341,12 @@ function dedupeStutter(t) {
   return out.join(' ');
 }
 
-function soundsComplete(t) {
-  if (!t) return false;
-  const words = t.split(/\s+/).filter(Boolean);
-  if (words.length < 2) return false;
-  if (/\b(and|but|so|or|the|a|to|for|with|that|because|then|also|um|uh|like|i|we|it'?s|its)$/.test(t)) return false;
-  return true;
-}
+function soundsComplete(t) { return commandLooksComplete(t); }
 
-function fireGo(cmd){ const d = dedupeStutter(cmd.replace(GO,'').trim()); clearTimeout(endpointTimer); if(d){ earcon('endpoint'); showLiveTranscript(d); setVoiceState('THINKING'); handleSpeech(d); } }
+function fireGo(cmd){
+  clearTimeout(endpointTimer);
+  if(cmd){ latestCmd=cmd; endpoint(); }
+}
 
 function correctCommandTerms(t){
   // Small, explicit PLL command vocabulary; do not broadly rewrite ordinary speech.
@@ -1316,51 +1354,41 @@ function correctCommandTerms(t){
           .replace(/\b(?:unsh|unstr)\b(?=\s+(?:it|that|this)\b)/g,'unshrink');
 }
 function onResult(e){
-  // Process only results changed in this event. Re-reading e.results from zero
-  // re-appends old interim hypotheses and creates the escalating transcript loop.
-  let full = '', anyFinal = false;
-  const start = Number.isInteger(e.resultIndex) ? e.resultIndex : Math.max(0,e.results.length-1);
-  for (let i = start; i < e.results.length; i++) {
-    full += e.results[i][0].transcript + ' ';
-    if(e.results[i].isFinal) anyFinal = true;
+  const start=Number.isInteger(e.resultIndex) ? e.resultIndex : 0;
+  for(let i=start;i<e.results.length;i++){
+    const alt=e.results[i][0];
+    recSlots[i]={text:correctCommandTerms(normalize(alt.transcript)),final:!!e.results[i].isFinal,confidence:Number(alt.confidence)||0};
   }
-  full = correctCommandTerms(dedupeStutter(normalize(full)));
-  if (!full) return;
+  recSlots.length=e.results.length;
+  if(voiceState==='CAPTURING' && unresolvedAtRestart && sessionCommand('final')) unresolvedAtRestart=false;
+  const full=slotText('all'); if(!full) return;
 
-  if (voiceState === 'ASLEEP') {
-    const m = wakeMatch(full);
-    if (!m) return;
-    earcon('wake'); followupCount = 0; armSleep();
-    clog('Wake word detected.', 'hi');
-    const trailing = (m.index >= 0) ? full.slice(m.index + m.len).trim() : '';
-    if (soundsWordy(trailing)) {
-      latestCmd=''; captureHasFinal=anyFinal; finalWaitCount=0;
-      setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(trailing); armEndpoint(trailing);
+  if(voiceState==='ASLEEP'){
+    const m=wakeMatch(full); if(!m) return;
+    resetCaptureBuffer(false); recSessionHasWake=true;
+    earcon('wake'); followupCount=0; armSleep(); clog('Wake word detected.','hi');
+    const trailing=stripSessionWake(full);
+    if(soundsWordy(trailing)){
+      setVoiceState('CAPTURING'); captureStartTs=Date.now(); showLiveTranscript(trailing); armEndpoint();
     } else { setVoiceState('ATTENTIVE'); armAttentive(); }
     return;
   }
 
-  if (voiceState === 'ATTENTIVE' || voiceState === 'CAPTURING') {
-    let cmd = full; const m = wakeMatch(full);
-    if (m && m.index >= 0) cmd = full.slice(m.index + m.len).trim();
-    if (!cmd) return;
-    if (voiceState === 'ATTENTIVE') {
-      latestCmd=''; captureHasFinal=false; finalWaitCount=0;
-      setVoiceState('CAPTURING'); captureStartTs = Date.now();
+  if(voiceState==='ATTENTIVE' || voiceState==='CAPTURING'){
+    const cmd=sessionCommand('all'); if(!cmd) return;
+    if(voiceState==='ATTENTIVE'){
+      setVoiceState('CAPTURING'); captureStartTs=Date.now(); finalWaitCount=0;
     }
-    if(anyFinal) captureHasFinal=true;
-    showLiveTranscript(cmd);
-    armEndpoint(cmd);
-    return;
+    if(sessionCommand('final')) captureHasFinal=true;
+    latestCmd=currentPreview(); showLiveTranscript(latestCmd); armEndpoint(); return;
   }
 
-  if (voiceState === 'FOLLOWUP') {
-    const cmd = full.trim();
-    if (!cmd) return;
-    latestCmd=''; captureHasFinal=anyFinal; finalWaitCount=0;
-    setVoiceState('CAPTURING'); captureStartTs = Date.now(); showLiveTranscript(cmd);
-    armEndpoint(cmd);
-    return;
+  if(voiceState==='FOLLOWUP'){
+    resetCaptureBuffer(false);
+    const cmd=sessionCommand('all'); if(!cmd) return;
+    setVoiceState('CAPTURING'); captureStartTs=Date.now();
+    if(sessionCommand('final')) captureHasFinal=true;
+    latestCmd=currentPreview(); showLiveTranscript(latestCmd); armEndpoint(); return;
   }
 }
 function startListening(){ freshMic(); }
