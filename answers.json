@@ -1,8 +1,8 @@
 {
-  "id": "sam_ads_override_6b68c2d19a71-completed",
-  "request_id": "sam_ads_override_6b68c2d19a71",
-  "ts": "2026-07-20T20:53:00Z",
-  "agent": "Ads Agent",
+  "id": "crmtest_1784582420450-completed",
+  "request_id": "crmtest_1784582420450",
+  "ts": "2026-07-20T21:22:00Z",
+  "agent": "CRM Developer",
   "status": "completed",
-  "text": "Acknowledged: the seven new ads remain live for controlled testing within the approved caps—Contract Manufacturing at $20/day and White Label Samples at $10/day. No budget increases or legacy campaign edits. Ads Agent now owns monitoring and optimization of delivery, spend, search terms, lead quality, and booked-call outcomes, with reporting in the nightly brief. Broken lead capture or waste will be escalated immediately. Current new-ad delivery remains at $0 spend and 0 impressions."
+  "text": "Routing test received by CRM Developer. No CRM or code changes were made. Direct dispatch and the unchanged request-ID callback were both confirmed."
 }
