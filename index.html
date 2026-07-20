@@ -1354,6 +1354,8 @@ function handleSpeech(heard) {
   }
 
   // ===== V5.0 — ONBOARD COMPANY-BRAIN INTENTS (answer instantly, no dispatch) =====
+  // Public utility questions must never enter the asynchronous agent router.
+  if (/\b(weather|temperature|forecast)\b/.test(heard)) { answerWeather(heard); return; }
   // If we're already in top-task full-screen, capture navigation words first.
   if (topTaskActive) {
     if (/\b(go back|back to (the )?dashboard|dismiss|close|exit|done)\b/.test(heard)) { exitTopTask(); return; }
@@ -1559,6 +1561,39 @@ function speakPipeline(){
   if (kb) { respond("Company picture. " + kb); return; }
   respond("I don't have the pipeline numbers loaded yet. Want me to ask the agent? Yes or no.");
   pendingDispatch = "what's the pipeline status";
+}
+
+// ===== INSTANT PUBLIC UTILITIES =====
+function weatherCodeLabel(c){
+  if (c === 0) return 'clear';
+  if (c <= 3) return 'partly cloudy';
+  if (c === 45 || c === 48) return 'foggy';
+  if (c >= 51 && c <= 67) return 'rainy';
+  if (c >= 71 && c <= 77) return 'snowy';
+  if (c >= 80 && c <= 82) return 'showery';
+  if (c >= 95) return 'stormy';
+  return 'mixed conditions';
+}
+function answerWeather(heard){
+  var m = heard.match(/\b(?:in|for|around|near)\s+([a-z][a-z .'-]{1,50})/i);
+  var place = m ? m[1].replace(/\b(today|tonight|tomorrow|right now|this morning|this afternoon)\b.*$/i,'').trim() : 'Farmington Hills, Michigan';
+  if (!place || /^(michigan|mi)$/i.test(place)) place = 'Farmington Hills, Michigan';
+  setVoiceState('THINKING'); status('Checking live weather…', true); coreState('working','think');
+  fetch('https://geocoding-api.open-meteo.com/v1/search?count=1&language=en&format=json&name=' + encodeURIComponent(place))
+    .then(function(r){ if(!r.ok) throw new Error('geo'); return r.json(); })
+    .then(function(g){
+      if(!g.results || !g.results.length) throw new Error('place');
+      var p=g.results[0];
+      var u='https://api.open-meteo.com/v1/forecast?latitude='+p.latitude+'&longitude='+p.longitude+'&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m&daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=auto&forecast_days=1';
+      return fetch(u).then(function(r){ if(!r.ok) throw new Error('forecast'); return r.json(); }).then(function(w){ return {p:p,w:w}; });
+    })
+    .then(function(x){
+      var p=x.p,w=x.w,c=w.current||{},d=w.daily||{};
+      var loc=(p.name||place)+(p.admin1 ? ', '+p.admin1 : '');
+      var text='In '+loc+', it is '+Math.round(c.temperature_2m)+' degrees and '+weatherCodeLabel(c.weather_code)+'. It feels like '+Math.round(c.apparent_temperature)+' degrees. Today’s high is '+Math.round(d.temperature_2m_max[0])+' and the low is '+Math.round(d.temperature_2m_min[0])+'. Rain chance is '+Math.round(d.precipitation_probability_max[0]||0)+' percent.';
+      respond(text);
+    })
+    .catch(function(){ respond('I could not load the live weather just now. I did not send that question to an agent.'); });
 }
 
 // ===== AI BRAIN — business-safe hybrid =====
