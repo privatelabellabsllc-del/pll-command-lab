@@ -954,8 +954,8 @@ let restartInFlight = false, lastStartTs = 0, micLive = false;
 let latestCmd = '', captureStartTs = 0, captureHasFinal = false, finalWaitCount = 0;
 let captureCommitted = '', recSlots = [], recSessionHasWake = false, unresolvedAtRestart = false;
 let committedConfidence = [];
-const ENDPOINT_COMPLETE_MS = 8000;    // natural pauses and spoken self-correction
-const ENDPOINT_INCOMPLETE_MS = 12000; // unfinished clauses get a longer window
+const ENDPOINT_COMPLETE_MS = 7000;    // slightly faster response while preserving natural pauses
+const ENDPOINT_INCOMPLETE_MS = 11000; // unfinished clauses retain a longer correction window
 const ENDPOINT_EXPLICIT_MS = 1800;    // only after an explicit 'send it/that is all' ending
 const MAX_CAPTURE_MS = 90000;
 let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTimer = null;
