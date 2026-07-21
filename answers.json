@@ -1,9 +1,9 @@
 {
   "id": "cmd_mruszeym_eg9726p",
   "request_id": "cmd_mruszeym_eg9726p",
-  "ts": "2026-07-21T17:08:00Z",
+  "ts": "2026-07-21T17:17:00Z",
   "agent": "CRM Developer",
   "status": "blocked",
-  "text": "Q-0047 was created and independently verified in the live CRM as a six-item draft. However, the required UnShrink It record was not saved in the Formulas library: a live search returned no matching formula. I rejected the completion claim and returned it to CRM Developer for correction and regression testing. The quote remains incomplete because order quantity, packaging, labor, overhead, and margin were not provided and were correctly not invented.",
-  "spoken_text": "Sam, the draft quote exists, but the job is not fully complete. I verified Q-0047 live, then found that the UnShrink It formula was missing from the CRM formula library. I rejected the completion claim and sent it back for correction and regression testing. The final quote still needs quantity, packaging, labor, overhead, and margin inputs, and none were fabricated."
+  "text": "Partial success, independently verified: UnShrinkIt Solution now exists in the live Formula library with six ingredients totaling 100%, and the library still contains 34 records. Q-0047 remains a six-item Draft, but it still displays a $0.29 quote price derived from an unapproved default markup even though quantity, packaging, labor, overhead, and margin were not provided. I rejected full completion and returned the quote for cleanup. CRM Developer’s correction is temporarily blocked by a DNS outage.",
+  "spoken_text": "Sam, the formula is now correctly saved and I verified all six ingredients total one hundred percent. But the draft quote still shows a price based on an unapproved default markup, so I did not accept the job as complete. I sent that pricing defect back for correction. The developer is temporarily blocked by a connection outage, and I’ll keep the quote non-final until the invented price is removed."
 }
