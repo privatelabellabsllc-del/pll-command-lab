@@ -1834,18 +1834,33 @@ function isNewAnswer(a, startedAt, requestId){
   if (a.ts) { return a.ts !== localStorage.getItem('pll_lastAnswerTs'); }
   return false;
 }
+function voiceReadyText(text){
+  // Fallback for older agent replies that do not yet provide spoken_text.
+  // Keep the on-screen answer intact; only make the read-back conversational.
+  return String(text || '')
+    .replace(/\*\*|__|`/g, '')
+    .replace(/^\s{0,3}#{1,6}\s*/gm, '')
+    .replace(/^\s*[-•*]\s+/gm, '')
+    .replace(/^\s*\d+[.)]\s+/gm, '')
+    .replace(/\n+/g, '. ')
+    .replace(/\s*:\s*/g, ' is ')
+    .replace(/\s+/g, ' ')
+    .replace(/\.\s*\./g, '.')
+    .trim();
+}
 function speakAnswer(a, logId){
   if (logId) dlogSet(logId, String(a.status||'ANSWERED').toUpperCase());
   contextAdd('agent', a.text, a.request_id, a.agent || null);
   status('Reply received ✓', true);
   clog('← Reply received.', 'hi');
+  var spoken = voiceReadyText(a.spoken_text || a.text);
   // Defer if the user is mid-interaction; deliver the moment we're free.
   if (voiceState === 'CAPTURING' || voiceState === 'SPEAKING') {
-    pendingSpokenAnswer = a.text;
+    pendingSpokenAnswer = spoken;
     return;
   }
   earcon('wake'); // attention chime on the TV
-  respond(a.text);
+  respond(spoken);
 }
 // Flush a deferred answer once the mic frees up.
 setInterval(function(){
