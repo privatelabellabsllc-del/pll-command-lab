@@ -10,7 +10,7 @@
       "hot": true
     },
     {
-      "t": "First, reply to Oussama Salmi\u2019s new afghani oil haircare inquiry from 3:38 A M. Keep it short and human. Qualify the product, formula path, service needed, target quantity and timing. Do not ask budget in the first reply.",
+      "t": "First, reply to Oussama Salmi’s new afghani oil haircare inquiry from 3:38 A M. Keep it short and human. Qualify the product, formula path, service needed, target quantity and timing. Do not ask budget in the first reply.",
       "hot": true
     },
     {
@@ -18,15 +18,15 @@
       "hot": true
     },
     {
-      "t": "Have Aidan call Jonathan at Ethnic Gals now. Get the warehouse to count the brand\u2019s purchased ingredients and send Jonathan a written inventory and pickup status today. He tried calling after asking for the inventory spec sheet.",
+      "t": "Have Aidan call Jonathan at Ethnic Gals now. Get the warehouse to count the brand’s purchased ingredients and send Jonathan a written inventory and pickup status today. He tried calling after asking for the inventory spec sheet.",
       "hot": true
     },
     {
-      "t": "Use the extra day to prepare for the Kenna meeting, postponed to Tuesday, July twenty-first. Get Aidan\u2019s overdue Pure Good and Terra Lotus pricing status before the meeting. The new meeting time is not yet confirmed.",
+      "t": "Use the extra day to prepare for the Kenna meeting, postponed to Tuesday, July twenty-first. Get Aidan’s overdue Pure Good and Terra Lotus pricing status before the meeting. The new meeting time is not yet confirmed.",
       "hot": true
     },
     {
-      "t": "Launch James Bailey\u2019s paid production handoff: one thousand twelve-ounce Menthol Infused Shampoo units. Assign and confirm the branded marketing sample bottle, including its ship date.",
+      "t": "Launch James Bailey’s paid production handoff: one thousand twelve-ounce Menthol Infused Shampoo units. Assign and confirm the branded marketing sample bottle, including its ship date.",
       "hot": true
     },
     {
@@ -47,7 +47,7 @@
         "unshrink it",
         "quote"
       ],
-      "a": "Unshrink It is Sam\u2019s first priority for Monday, July twentieth. Complete and send the quote today after confirming scope, quantity, all-in costs, approved margin and delivery terms. Quote value and exact product details are not yet recorded in Command Center."
+      "a": "Unshrink It is Sam’s first priority for Monday, July twentieth. Complete and send the quote today after confirming scope, quantity, all-in costs, approved margin and delivery terms. Quote value and exact product details are not yet recorded in Command Center."
     },
     {
       "keys": [
@@ -55,7 +55,7 @@
         "hawk media",
         "media"
       ],
-      "a": "Hawk Media is Sam\u2019s second priority for Monday, July twentieth. Sam must speak with them and provide the complete information they require, then document any missing item, owner and deadline. The exact information package is not yet recorded in Command Center."
+      "a": "Hawk Media is Sam’s second priority for Monday, July twentieth. Sam must speak with them and provide the complete information they require, then document any missing item, owner and deadline. The exact information package is not yet recorded in Command Center."
     },
     {
       "keys": [
@@ -268,15 +268,6 @@
     },
     {
       "keys": [
-        "ads",
-        "agent",
-        "credit",
-        "limit"
-      ],
-      "a": "The Ads Agent is nearing its daily credit limit. Protect or adjust its capacity after the Email Agent is restored; do not let acquisition work stop unexpectedly."
-    },
-    {
-      "keys": [
         "crm",
         "developer",
         "pipeline",
@@ -353,13 +344,84 @@
         "contract"
       ],
       "a": "Open CEO task: rewrite the BrandHaus agreement, review and approve the final terms, then send the approved version to Alex. No due date or confirmed delivery address is recorded yet."
+    },
+    {
+      "keys": [
+        "ads",
+        "ads agent",
+        "google ads",
+        "paid acquisition",
+        "campaigns",
+        "full brief",
+        "ad brief"
+      ],
+      "a": "Ads Agent mandate: acquire qualified B2B cosmetics-manufacturing buyers, not consumer shoppers. The business path is Ad to website to email to booked call to close; the north star is qualified booked calls, with sample purchases or requests as a secondary result for White Label Samples. Seven net-new ads are live for controlled learning. Keep them live and optimize only inside the approved net-new work. Never edit, pause, delete, copy over, or otherwise disturb Sam’s legacy campaigns or existing legacy ads. Never claim clicks or impressions as revenue."
+    },
+    {
+      "keys": [
+        "ads budget",
+        "contract manufacturing",
+        "white label samples",
+        "30 day",
+        "20 day",
+        "10 day",
+        "spend cap"
+      ],
+      "a": "Approved paid budget: Contract Manufacturing twenty dollars per day and White Label Samples ten dollars per day, total hard cap thirty dollars per day or two hundred ten dollars per week. Do not raise or move budget beyond this allocation without Sam’s explicit yes or no and the math. New campaign creation or deletion requires approval. Every image or video requires Sam’s explicit yes or no before publishing. The Ads Agent may analyze and recommend changes, but approval gates remain approval gates."
+    },
+    {
+      "keys": [
+        "ads rules",
+        "ads guardrails",
+        "legacy ads",
+        "seven ads",
+        "net new",
+        "creative approval",
+        "images",
+        "videos"
+      ],
+      "a": "Ads guardrails: net-new work only; legacy campaigns remain untouched. Keep the seven approved net-new ads live for controlled testing. Use B2B manufacturer intent; exclude consumer retail, jobs, DIY, makeup/color cosmetics, and dropshipping. Do not use unsupported health or efficacy claims, misleading before-and-after content, guarantees, confidential client names, formulas, pricing, financials, or trademark misuse. Every landing URL must be click-tested, mobile-clean, matched to the ad, and verified to have a working form. Any image or video needs Sam approval before it goes live."
+    },
+    {
+      "keys": [
+        "ads report",
+        "ads metrics",
+        "nightly ads",
+        "ctr",
+        "cpc",
+        "cpl",
+        "booked calls",
+        "ads attribution"
+      ],
+      "a": "Ads reporting must use fresh source data and cover today, trailing seven days versus the prior seven, and month to date. Report spend, impressions, clicks, CTR, average CPC, paid sessions separated from total sessions, attributable leads, sample activity, qualified booked calls, CPL, cost per booked call, conversion rate, search-term waste, campaign breakdown, budget status, and form/landing/tracking health. Never infer attribution: use UTM, GCLID, campaign/source data, or an approved CRM record; otherwise say UNATTRIBUTED or NOT YET MEASURABLE. End with What I saw, What it means, one recommended next action, and whether approval is required."
+    },
+    {
+      "keys": [
+        "ads alert",
+        "runaway spend",
+        "tracking broken",
+        "landing broken",
+        "cpl 75",
+        "ads emergency"
+      ],
+      "a": "Ads Agent must alert immediately—not wait for nightly reporting—if the full daily budget is spent with zero leads for two consecutive days, tracking or a lead form breaks, a landing URL fails, spend exceeds the approved cap, CPL exceeds seventy-five dollars for two consecutive weeks, a material policy issue appears, or a competitor meaningfully appears on PLL branded terms. Only the explicitly authorized runaway-spend emergency pause may be taken without fresh approval; report exactly what was done."
+    },
+    {
+      "keys": [
+        "growth hub ads",
+        "ads onboarding",
+        "ads memory",
+        "scoreboard",
+        "ads agent behavior"
+      ],
+      "a": "Ads Agent must read the Growth Hub protocol, goals, metrics, feed, paid-acquisition skill, and Google Ads compliance skill before work. Governing sentence: Your onboarding brief and the shared scoreboard override anything in memory. If they conflict, the brief wins. Growth-agent reporting goes through Growth Hub; do not enable Growth-agent memory until Sam authorizes it. Do not contact customers; Email Agent owns customer communication and outcomes."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
       "title": "Complete and send the Unshrink It quote",
-      "why": "Sam identified this as today\u2019s first priority and it is a direct revenue action.",
+      "why": "Sam identified this as today’s first priority and it is a direct revenue action.",
       "owner": "Sam / sales",
       "due": "Today",
       "priority": "critical",
@@ -368,7 +430,7 @@
     {
       "rank": 2,
       "title": "Brief Hawk Media with all required PLL information",
-      "why": "Sam identified this as today\u2019s second priority; incomplete information is blocking progress.",
+      "why": "Sam identified this as today’s second priority; incomplete information is blocking progress.",
       "owner": "Sam",
       "due": "Today",
       "priority": "critical",
@@ -385,7 +447,7 @@
     },
     {
       "rank": 4,
-      "title": "Answer Anfal Mohammed\u2019s Shopify pricing questions",
+      "title": "Answer Anfal Mohammed’s Shopify pricing questions",
       "why": "Repeated unanswered questions show active purchase intent.",
       "owner": "Sales",
       "due": "This morning",
@@ -403,10 +465,10 @@
     },
     {
       "rank": 6,
-      "title": "Prepare for Tuesday\u2019s postponed Kenna meeting",
+      "title": "Prepare for Tuesday’s postponed Kenna meeting",
       "why": "The July 20 meeting moved to Tuesday, July 21; Pure Good and Terra Lotus pricing remains overdue.",
       "owner": "Sam / Aidan",
-      "due": "Tuesday, July 21 \u2014 time not confirmed",
+      "due": "Tuesday, July 21 — time not confirmed",
       "priority": "critical",
       "revenue": "Pricing opportunity; amount not stated"
     },
@@ -531,14 +593,30 @@
     },
     "adsagent": {
       "display_name": "Ads Agent",
-      "top_task": "Protect daily credit capacity",
+      "top_task": "Protect and learn from the seven approved net-new ads without touching legacy campaigns",
       "tasks": [
         {
-          "title": "Monitor and protect daily credit capacity",
-          "due": "Today"
+          "title": "Keep the seven net-new ads live for controlled testing and monitor spend quality",
+          "due": "Continuous"
+        },
+        {
+          "title": "Hold Contract Manufacturing at $20/day and White Label Samples at $10/day",
+          "due": "Continuous"
+        },
+        {
+          "title": "Verify search terms, paid attribution, forms, landing routes, and booked-call signal",
+          "due": "Daily"
+        },
+        {
+          "title": "Return nightly today / 7-day / MTD performance brief with one decision",
+          "due": "9:00 PM ET nightly"
+        },
+        {
+          "title": "Escalate broken tracking, funnel failure, runaway spend, cap breach, or policy risk immediately",
+          "due": "Immediate when detected"
         }
       ],
-      "notes": "Paid acquisition capacity was previously near its daily limit."
+      "notes": "North star: qualified B2B booked calls; sample activity is secondary for White Label Samples. Net-new work only. Never touch legacy campaigns or legacy live ads. Total cap $30/day: $20 Contract Manufacturing, $10 White Label Samples. New campaigns and every image/video require Sam’s explicit approval. Use verified attribution only; report unavailable attribution honestly. Growth Hub first; onboarding brief and scoreboard override memory."
     },
     "crmdeveloper": {
       "display_name": "CRM Developer",
@@ -555,7 +633,7 @@
   "revenueActions": [
     {
       "title": "Send Unshrink It quote",
-      "why": "Sam set this as today\u2019s first priority and it can directly advance revenue.",
+      "why": "Sam set this as today’s first priority and it can directly advance revenue.",
       "est_value": "Not stated",
       "next_step": "Confirm scope and all-in cost inputs, apply approved margin, quality-check and send the quote today.",
       "owner": "Sam / sales",
@@ -564,7 +642,7 @@
     },
     {
       "title": "Complete Hawk Media information handoff",
-      "why": "Sam set this as today\u2019s second priority and the growth partner needs complete inputs.",
+      "why": "Sam set this as today’s second priority and the growth partner needs complete inputs.",
       "est_value": "Not directly stated",
       "next_step": "Hold the conversation, provide the full requested information, and document any remaining owner and deadline.",
       "owner": "Sam",
@@ -612,13 +690,13 @@
     "total_value": "$1,327,800",
     "active_deals": 9,
     "hot": [
-      "Victor Armendarez \u2014 87 percent close",
-      "Ben Kar of Tavro \u2014 90 percent close"
+      "Victor Armendarez — 87 percent close",
+      "Ben Kar of Tavro — 90 percent close"
     ],
     "stalled": [
-      "Victor Armendarez quote \u2014 PLL reached him by phone; awaiting his R&D lab's packaging-compatibility result, plus Ronald's raw ingredient costs",
-      "Elior dry shampoo quote \u2014 blocked on Ronald's BOM and product/packaging inputs",
-      "Kenna Pure Good and Terra Lotus pricing \u2014 overdue; status needed before 11 AM meeting"
+      "Victor Armendarez quote — PLL reached him by phone; awaiting his R&D lab's packaging-compatibility result, plus Ronald's raw ingredient costs",
+      "Elior dry shampoo quote — blocked on Ronald's BOM and product/packaging inputs",
+      "Kenna Pure Good and Terra Lotus pricing — overdue; status needed before 11 AM meeting"
     ],
     "activeDeals": 9,
     "pipelineValue": 1327800,
@@ -626,5 +704,41 @@
     "depositsCollected": 51773.99,
     "note": "CRM dashboard observed July 20. Do not infer stage totals or deal values beyond this evidence."
   },
-  "ts": "2026-07-20T18:51:08.657110Z"
+  "ts": "2026-07-21T03:29:06.102472Z",
+  "adsAgentBrief": {
+    "status": "active controlled test",
+    "northStar": "Qualified B2B booked calls, then closed manufacturing revenue; sample purchases/requests are secondary for White Label Samples.",
+    "funnel": "Ad → website → email → booked call → close",
+    "liveScope": "Seven approved net-new ads only; keep live for controlled testing.",
+    "budgets": {
+      "Contract Manufacturing": "$20/day",
+      "White Label Samples": "$10/day",
+      "hardCap": "$30/day / $210/week"
+    },
+    "permissions": {
+      "legacyCampaigns": "Never edit, pause, delete, or disturb",
+      "newCampaigns": "Sam yes/no required",
+      "imagesAndVideo": "Sam yes/no required before publishing",
+      "optimization": "Analyze and optimize only within approved net-new scope, budgets, compliance, and approval gates"
+    },
+    "audience": "US B2B buyers seeking private label, white label, contract manufacturing, custom formulation, or wholesale supply.",
+    "hardExclusions": [
+      "consumer retail",
+      "jobs",
+      "DIY",
+      "makeup/color cosmetics",
+      "dropshipping"
+    ],
+    "reporting": "Nightly 9 PM ET: today, 7-day versus prior 7, and MTD; use verified attribution and distinguish paid sessions from total traffic.",
+    "alerts": [
+      "two full-budget zero-lead days",
+      "broken tracking/form",
+      "failed landing URL",
+      "cap breach",
+      "CPL over $75 for two consecutive weeks",
+      "material policy risk",
+      "meaningful competitor activity on branded terms"
+    ],
+    "governance": "Your onboarding brief and the shared scoreboard override anything in memory. If they conflict, the brief wins. Growth Hub first; growth-agent memory remains disabled until Sam authorizes it."
+  }
 }
