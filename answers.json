@@ -1,7 +1,9 @@
 {
-  "id": "cmd_morning_2026-07-21_0700",
-  "ts": "2026-07-21T11:05:00Z",
-  "agent": "PLL Consultant",
-  "status": "completed",
-  "text": "Morning brief loaded for 2026-07-21. Top three priorities: first, the Kenna meeting is today — get Aidan's Pure Good, Terra Lotus, and Atlas pricing before it starts; second, the UnShrink It formula is now confirmed in hand and forwarded to Aidan, who must build the full all-in quote today; third, send the Tavro proposal to Ben Kar, ninety percent close and thirty thousand units with no proposal sent since June thirtieth. New this morning: a six thousand three hundred fourteen dollar eighty-eight cent Shopify ACH deposited to Huntington account CK4274, balance now forty-one thousand two hundred seventy-five dollars, CRM deposits collected updated to fifty-seven thousand four hundred fifty-four dollars. BEEF BUM sent a shipping label on WhatsApp at one fifteen AM needing fulfillment today. Eleven total unread WhatsApp threads. Lainey Henican's branding pivoted from magnolia to lantern with flowers; scent is settled on Honeysuckle. STRUCK preservative challenge test passed. Michigan Office Movers coverage selected at fifty thousand dollars for four hundred dollars. Lynn Corporate Park monthly rent statement arrived and needs payment."
+  "id": "cmd_mruszeym_eg9726p",
+  "request_id": "cmd_mruszeym_eg9726p",
+  "ts": "2026-07-21T17:08:00Z",
+  "agent": "CRM Developer",
+  "status": "blocked",
+  "text": "Q-0047 was created and independently verified in the live CRM as a six-item draft. However, the required UnShrink It record was not saved in the Formulas library: a live search returned no matching formula. I rejected the completion claim and returned it to CRM Developer for correction and regression testing. The quote remains incomplete because order quantity, packaging, labor, overhead, and margin were not provided and were correctly not invented.",
+  "spoken_text": "Sam, the draft quote exists, but the job is not fully complete. I verified Q-0047 live, then found that the UnShrink It formula was missing from the CRM formula library. I rejected the completion claim and sent it back for correction and regression testing. The final quote still needs quantity, packaging, labor, overhead, and margin inputs, and none were fabricated."
 }
