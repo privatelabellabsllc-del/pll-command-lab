@@ -1,8 +1,8 @@
 {
-  "id": "cmd_mrtrgsyn_serfg72-blocked",
-  "request_id": "cmd_mrtrgsyn_serfg72",
-  "ts": "2026-07-20T21:53:05.968Z",
-  "agent": "PLL Consultant",
-  "status": "blocked",
-  "text": "I only heard an incomplete phrase: ‘don’t be tired, you’re a…’ Nothing was acted on or sent to another agent. Please wake Command Lab and repeat the full command."
+  "id": "ads-nightly-2026-07-20-completed",
+  "request_id": "ads-nightly-2026-07-20",
+  "ts": "2026-07-20T21:03:00-04:00",
+  "agent": "Ads Agent",
+  "status": "completed",
+  "text": "Ads nightly report: Contract Manufacturing delivered 87 impressions, 9 clicks, $18.39 spend, $2.04 CPC, and 10.3% CTR today. White Label Samples had zero delivery and needs diagnosis. Total spend stayed within the $30 cap. Two form leads arrived, but neither can be attributed because UTM/GCLID tracking is missing. Ads Agent will diagnose the delivery gap without changing budgets or legacy campaigns."
 }
