@@ -1720,7 +1720,7 @@ function targetAgent(t){
   t = (t || '').toLowerCase();
   if (/crm|developer|bug|fix|broken|feature|pipeline build|ticket/.test(t)) return 'CRM Developer';
   if (/email|inbox|outlook|convertflow|send.*mail|draft.*(reply|email|mail)|check.*mail/.test(t)) return 'Email Agent';
-  if (/google ads|paid ads|ad campaign|paid search|ppc|cpc|keyword bid|media spend/.test(t)) return 'Ads Agent';
+  if (/google ads|paid ads|new ads|seven new ads|ads agent|how (?:are|is).*ads|brief.*ads|ads.*brief|ad performance|ad campaign|paid search|ppc|cpc|ctr|keyword bid|media spend/.test(t)) return 'Ads Agent';
   if (/\b(seo|geo|aeo)\b|organic search|search console|blog|content page|ai search/.test(t)) return 'Organic Agent';
   if (/architect|floor plan|blueprint|permit|plumbing overlay|facility layout|fire code/.test(t)) return 'PLL Architect';
   return 'PLL Consultant';
