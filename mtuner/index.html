@@ -450,11 +450,11 @@ function buildPiano(){
 let holdTimer = null, held = false;
 function attachKey(el, n){
   const down = (e)=>{ e.preventDefault(); held = false;
-    holdTimer = setTimeout(()=>{ held = true; setNote(n, 0); vibrate(30); }, 550); };
+    holdTimer = setTimeout(()=>{ held = true; openPad(n); vibrate(30); }, 550); };
   const up = (e)=>{ e.preventDefault(); clearTimeout(holdTimer);
     if(held) return;
     if(cents[n] === 0){ setNote(n, -50); vibrate(15); }
-    else { openPad(n); } };
+    else { setNote(n, 0); vibrate(10); } };
   el.addEventListener("touchstart", down, {passive:false});
   el.addEventListener("touchend", up, {passive:false});
   el.addEventListener("mousedown", down);
@@ -641,8 +641,8 @@ function vibrate(ms){ if(navigator.vibrate) navigator.vibrate(ms); }
 function esc(s){ return String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
 /* ============ UPDATE CHECKER ============ */
-var APP_VERSION_CODE = 9;
-var APP_VERSION_NAME = "1.9";
+var APP_VERSION_CODE = 10;
+var APP_VERSION_NAME = "2.0";
 var UPDATE_VERSION_URL = "https://raw.githubusercontent.com/privatelabellabsllc-del/pll-command-lab/main/mtuner/version.json";
 function checkForUpdate(){
   try{
