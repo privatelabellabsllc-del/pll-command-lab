@@ -1,6 +1,9 @@
 {
-  "id": "morning-20260722-0700",
-  "ts": "2026-07-22T11:00:00Z",
-  "status": "ready",
-  "text": "Morning brief loaded for 2026-07-22."
+  "id": "answer_cmd_mrwdk7d4_c6f167q",
+  "request_id": "cmd_mrwdk7d4_c6f167q",
+  "ts": "2026-07-22T13:47:00-04:00",
+  "agent": "Email Agent",
+  "status": "blocked",
+  "text": "Email Agent could not act because the voice transcript only listed connections and did not contain a clear email assignment. Nothing was sent. Please repeat the command with what you want found or sent and who should receive it.",
+  "spoken_text": "I couldn't act on that because the transcription only listed your connections and didn't include a clear email task. Nothing was sent. Please tell me what you want found or sent, and who should receive it."
 }
