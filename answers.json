@@ -1,9 +1,9 @@
 {
-  "id": "cmd_mruszeym_eg9726p",
-  "request_id": "cmd_mruszeym_eg9726p",
-  "ts": "2026-07-21T17:41:32Z",
-  "agent": "CRM Developer",
-  "status": "completed",
-  "text": "Completed and independently live-verified. CRM Developer fixed the recurring Edit Quote pricing defect at its source. Q-0047 now shows no approved margin, no sell price, no revenue/profit/margin/markup, and Generate Proposal is disabled; its six ingredients, 100% formula total, $204.98 ingredient total, $204.99 displayed batch cost, and incomplete status remain intact. Regression testing passed: priced quote Q-0045 still shows $0.12 sell price, $0.04 profit, 29.5% margin, 41.8% markup, $6,000 revenue, and proposal generation remains enabled. Q-0046 and QT-20260721-001 list prices remain $5.01 and $5.73; quote count remains 34.",
-  "spoken_text": "Sam, the recurring CRM pricing defect is now fixed and I verified it myself. Q-0047 no longer invents a margin, price, revenue, or profit, and it cannot generate a proposal until approved pricing is entered. The formula and real material cost stayed intact. I also tested a priced quote, and its legitimate pricing and proposal workflow still work normally. This one is complete."
+  "id": "ads-nightly-2026-07-21",
+  "request_id": "ads-nightly-2026-07-21",
+  "ts": "2026-07-22T01:04:00Z",
+  "agent": "Ads Agent",
+  "status": "completed_with_attribution_gap",
+  "text": "Ads Agent nightly update — seven net-new ads only. Bottom line: the new campaigns are operational and today’s preliminary $26.62 spend remains under the approved $30/day hard cap, but lead attribution is not reliable yet. Trailing 7 days: approximately $4.53/day average spend, 122 impressions, 16 clicks, and 2 total leads; both leads occurred before the new ads were enabled and are UNATTRIBUTED, so verified Ads-attributed leads are 0 from the evidence provided. Today: 1 total lead and $26.62 preliminary spend; the lead is not yet verified as Ads-attributed. Booked calls, prior-7-day comparison, CPC, CTR, and campaign/search-term breakdown were not supplied in this callback. Required next action: audit the website form’s UTM/GCLID capture and CRM/email handoff before treating inquiries as paid-ad conversions.",
+  "spoken_text": "Sam, here’s the bottom line. The seven new ads are operating under the thirty-dollar daily cap, with twenty-six dollars and sixty-two cents in preliminary spend today. Over the trailing seven days they generated one hundred twenty-two impressions and sixteen clicks, but the two recorded leads happened before the ads were enabled and cannot be credited to them. Today’s lead is also not yet verified as ad-driven, so the funnel is still missing trustworthy attribution. I recommend auditing the website form’s UTM and click-ID capture before we judge lead performance or make optimization decisions."
 }
