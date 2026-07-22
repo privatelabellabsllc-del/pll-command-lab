@@ -641,8 +641,8 @@ function vibrate(ms){ if(navigator.vibrate) navigator.vibrate(ms); }
 function esc(s){ return String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
 /* ============ UPDATE CHECKER ============ */
-var APP_VERSION_CODE = 8;
-var APP_VERSION_NAME = "1.7";
+var APP_VERSION_CODE = 9;
+var APP_VERSION_NAME = "1.9";
 var UPDATE_VERSION_URL = "https://raw.githubusercontent.com/privatelabellabsllc-del/pll-command-lab/main/mtuner/version.json";
 function checkForUpdate(){
   try{
