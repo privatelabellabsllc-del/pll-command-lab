@@ -1,9 +1,9 @@
 {
-  "id": "answer_cmd_mrwdk7d4_c6f167q",
-  "request_id": "cmd_mrwdk7d4_c6f167q",
-  "ts": "2026-07-22T13:47:00-04:00",
-  "agent": "Email Agent",
-  "status": "blocked",
-  "text": "Email Agent could not act because the voice transcript only listed connections and did not contain a clear email assignment. Nothing was sent. Please repeat the command with what you want found or sent and who should receive it.",
-  "spoken_text": "I couldn't act on that because the transcription only listed your connections and didn't include a clear email task. Nothing was sent. Please tell me what you want found or sent, and who should receive it."
+  "id": "answer_ads-nightly-2026-07-22",
+  "request_id": "ads-nightly-2026-07-22",
+  "ts": "2026-07-22T21:02:00-04:00",
+  "agent": "Ads Agent",
+  "status": "completed",
+  "text": "# Ads Agent Nightly Brief \u2014 July 22 (preliminary)\n\n**Bottom line:** The two Ads Agent-managed campaigns spent **$23.62 of the $30 daily cap**, produced **78 impressions and 10 clicks**, and remain enabled. No paid-attributed lead or booked call is yet provable, so CPL and cost per booked call are not measurable.\n\n| Campaign | Spend | Impressions | Clicks | CTR | Avg. CPC |\n|---|---:|---:|---:|---:|---:|\n| Contract Manufacturing | $22.12 | 64 | 9 | 14.06% | $2.46 |\n| White Label Samples | $1.50 | 14 | 1 | 7.14% | $1.50 |\n| **Total** | **$23.62** | **78** | **10** | **12.82%** | **$2.36** |\n\n- **Budget:** Under the combined $30 cap. Contract Manufacturing over-delivered its $20 line by 11%, within Google's normal daily range.\n- **Leads:** One new inquiry arrived today, but it is **unattributed**.\n- **Closed won:** Kora James closed today, but it cannot be credited to paid ads.\n- **Tracking:** GCLID/UTM attribution tagging is now live and verified. The next genuine paid lead should carry source data.\n- **Search terms:** Volume remains too low for responsible negative-keyword decisions.\n- **Recommendation:** Hold bids, keywords, and budgets unchanged for 5\u20137 days while attribution data accumulates. No approval is needed.",
+  "spoken_text": "Sam, here\u2019s the bottom line. The Ads Agent\u2019s campaigns spent $23.62 today, stayed under the $30 cap, and brought in 10 clicks. One inquiry came in and one deal closed, but neither can be credited to paid ads yet because attribution only went live today. That means paid cost per lead and cost per booked call are still not measurable. My read is the campaigns need more clean tracking data, so I recommend holding all settings steady for five to seven days."
 }
