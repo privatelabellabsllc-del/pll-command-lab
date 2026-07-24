@@ -1,41 +1,41 @@
 {
-  "date": "2026-07-23",
-  "ts": "2026-07-23T11:00:00Z",
+  "date": "2026-07-24",
+  "ts": "2026-07-24T11:02:58Z",
   "brief": [
     {
-      "t": "Raanan Rosenbaum call is at 9:30 AM Eastern today. Prepare and attend; it is the only hard-time commitment in Sam’s first lane.",
+      "t": "Victor Armendarez’s two-SKU cost breakdown and quote are due today in the CRM. Finish verified pricing for Curl Defining Cream and Edge Gel before anything else; do not quote from partial cost inputs.",
       "hot": true
     },
     {
-      "t": "Ashley at Earth and Ash sent Miron Glass bottle and closure codes for all three products and is ready to pay when invoiced. Send the accurate invoice now; Brian Morgan is away until next week.",
+      "t": "ALOETALLOW is ready to move: Kyle said “Ready when u are” yesterday. Put a specific reorder meeting on the calendar and confirm quantity and timing today.",
       "hot": true
     },
     {
-      "t": "Victor Armendarez is an 88-percent-close, two-SKU opportunity at 2,000 units each. Finish verified pricing for the Curl Defining Cream and Edge Gel and send it today.",
+      "t": "Ashley at Earth and Ash replied “Great, thank you” in WhatsApp. Confirm the invoice was received and drive it to payment; do not assume payment has landed.",
       "hot": true
     },
     {
-      "t": "Diana at ELOIRE was promised her 500- and 1,000-unit dry-shampoo reorder pricing and packaging notes by end of day today. Deliver the quote as committed.",
+      "t": "Diana / ELOIRE was promised dry-shampoo reorder pricing and packaging notes by yesterday’s end of day. There is still no fresh evidence that the delivery went out. Close the loop today.",
       "hot": true
     },
     {
-      "t": "Ben Kar’s Tavro deal is 90 percent close and roughly 30,000 units, but the proposal or post-call recap remains overdue. Send it today after the immediate invoices and quotes.",
+      "t": "Ben Kar / Tavro remains a 90-percent, roughly 30,000-unit opportunity with no confirmed proposal or recap delivery. This has sat since June 30. Send the proposal or a concrete recap today.",
       "hot": true
     },
     {
-      "t": "UnShrink It Q-0047 is still Incomplete—Needs Inputs. The $204.98-per-1,000 raw-material reference is not a customer-ready quote; quantity, packaging, labor, overhead, and approved margin remain required.",
+      "t": "Jabari’s product call is booked for Saturday at 10:00 AM. Prepare the packaging and customization answers today; he is asking specifically about tubes and containers.",
       "hot": false
     },
     {
-      "t": "Ashley invoice and ALOETALLOW’s reorder meeting are the first WhatsApp revenue triage. Ads spent $23.62 yesterday under cap; tracking is live, but paid attribution is not established.",
+      "t": "The CRM still shows 11 tasks with 8 overdue. Laura repeated yesterday that customer-page task creation has no usable Assign To list. It remains open and blocks accountable task routing.",
       "hot": false
     }
   ],
   "next": [
-    "Prepare for and attend Raanan’s 9:30 AM ET call",
-    "Send Ashley / Earth and Ash the verified invoice",
-    "Finish and send Victor pricing for both 2,000-unit SKUs",
-    "Send Diana’s ELOIRE reorder quote and packaging notes, then Tavro proposal/recap"
+    "Finish verified Victor pricing and send both SKU quote materials",
+    "Book ALOETALLOW’s reorder meeting and confirm Ashley’s invoice-to-payment status",
+    "Send Diana’s overdue ELOIRE pricing, then Tavro’s proposal or decision-driving recap",
+    "Prepare Jabari’s Saturday call and hand off the new qualified leads"
   ],
   "kb": [
     {
@@ -44,9 +44,41 @@
         "armendarez",
         "curl",
         "edge",
-        "gel"
+        "gel",
+        "quote"
       ],
-      "a": "Victor Armendarez / HT Products is 88% close, NDA signed, for 2,000 units each of Curl Defining Cream and Edge Gel in six-ounce jars. He checked back in July 21; PLL owes verified pricing on both turnkey SKUs today. Do not state a price or production date until full costing is verified."
+      "a": "Victor Armendarez has a CRM task due Friday to receive the cost breakdown and quote for both Curl Defining Cream and Edge Gel SKUs. The prior narrated update remains authoritative: he must confirm packaging compatibility with his R&D lab, and full cost inputs are still required. Do not present a customer price or production date until that costing is verified."
+    },
+    {
+      "keys": [
+        "aloetallow",
+        "kyle",
+        "reorder",
+        "ready"
+      ],
+      "a": "Kyle at ALOETALLOW wrote “Ready when u are” in WhatsApp on July 23. Treat this as an immediate current-customer reorder opportunity: book a specific meeting and establish quantity, timing, and any changes before quoting or promising production."
+    },
+    {
+      "keys": [
+        "ashley",
+        "earth",
+        "ash",
+        "miron",
+        "invoice",
+        "payment"
+      ],
+      "a": "Ashley at Earth and Ash replied “Great, thank you” in WhatsApp on July 23 after the invoice workflow. This supports that she received a response, not that payment was made. Confirm invoice receipt and payment status before marking the order collected."
+    },
+    {
+      "keys": [
+        "diana",
+        "eloire",
+        "elior",
+        "dry",
+        "shampoo",
+        "reorder"
+      ],
+      "a": "Diana at ELOIRE was promised 500- and 1,000-unit dry-shampoo reorder pricing plus packaging notes by end of day July 23. No fresh email or WhatsApp evidence confirms it was delivered. Send the final verified tiers and notes today, then ask for the reorder decision."
     },
     {
       "keys": [
@@ -57,732 +89,360 @@
         "tallow",
         "argan"
       ],
-      "a": "Ben Kar of Tavro is 90% close for about 30,000 units of custom tallow and argan-oil skincare. No confirmed proposal or post-call recap has been delivered since the June 30 call. Sam should send it today after the immediate Ashley, Victor, and Diana revenue tasks."
+      "a": "Ben Kar / Tavro remains recorded as 90% close for about 30,000 units of custom tallow and argan-oil skincare. No current source confirms that PLL has sent the proposal or a post-call recap since June 30. Send one today and ask for the deposit or production-timeline decision."
     },
     {
       "keys": [
-        "huntington",
-        "deposit",
-        "shopify",
-        "bank",
-        "ck4274"
-      ],
-      "a": "A six thousand three hundred fourteen dollar eighty-eight cent ACH deposit from Shopify landed in Huntington account CK4274 at three thirty-eight this morning, July twenty-first. Account balance is now forty-one thousand two hundred seventy-five dollars and thirty-three cents. CRM deposits collected updated to fifty-seven thousand four hundred fifty-four dollars and ninety-nine cents."
-    },
-    {
-      "keys": [
-        "lainey",
-        "tallow cream",
-        "branding",
-        "lantern",
-        "magnolia",
-        "honeysuckle"
-      ],
-      "a": "Lainey Henican's Tallow Cream scent is settled on Honeysuckle fragrance — Ronald recommended it and Lainey approved on July twentieth. However, Lainey has now pivoted her branding from the magnolia flower to a lantern as the primary emblem, with delicate flowers surrounding it. The most recent exchange on July twentieth confirmed this direction. Laura must acknowledge the brand revision and move forward. The R&D cost question is also overdue in the CRM."
-    },
-    {
-      "keys": [
-        "michigan office movers",
-        "move",
-        "deposit",
-        "lori",
-        "coverage"
-      ],
-      "a": "Sam selected fifty thousand dollar actual cash value coverage at four hundred dollars for the Michigan Office Movers move. Lori from Michigan Office Movers confirmed on July twentieth. The two thousand seven hundred fifty dollar deposit paperwork is still pending Sam's signature and submission. The move date remains around the twenty-eighth."
-    },
-    {
-      "keys": [
-        "lynn corporate park",
-        "rent",
-        "lease",
-        "catalyst",
-        "statement"
-      ],
-      "a": "Lynn Corporate Park's monthly tenant statement arrived July twentieth from Catalyst Management. Operating expenses changed effective January first twenty twenty-six; Sam must review the new total and remit payment. No amount was specified in the email body — the amount is in the attached statement."
-    },
-    {
-      "keys": [
-        "struck",
-        "pet",
-        "preservative",
-        "challenge",
-        "test"
-      ],
-      "a": "STRUCK product preservative challenge test came back PASS. Sam forwarded the PET results from Mark to Ronald and Evelyn on July twentieth for their records. No further action needed from Sam on this item."
-    },
-    {
-      "keys": [
-        "elior",
-        "dry shampoo",
-        "quote",
-        "aerosol"
-      ],
-      "a": "Elior dry shampoo quote for five hundred and a thousand units is overdue in the CRM since July fourteenth. Still needs Ronald's BOM, product and packaging clarification, and margin at sixty-five or seventy-five percent. Aerosol matters because it triggers H occupancy and mandatory sprinklers at the new facility."
-    },
-    {
-      "keys": [
-        "james",
-        "bailey",
-        "morning glory",
-        "menthol",
-        "shampoo",
-        "sample"
-      ],
-      "a": "James Bailey's twelve-ounce Menthol Infused Shampoo production is active in the CRM with deposit received status, total project value eight thousand seven hundred forty dollars. A logo-branded bottle for marketing was requested. Sam must assign the sample production and confirm a ship date."
-    },
-    {
-      "keys": [
-        "convertflow",
-        "webhook",
-        "lead",
-        "capture",
-        "hariett",
-        "hbi",
-        "salon"
-      ],
-      "a": "The ConvertFlow lead capture webhook is fixed and live as of July sixteenth. Leads now flow to the agent and route into Sam's Outlook. First real lead is Hariett at HBI Salon, a custom hair loss shampoo, masque and serum, five hundred to a thousand units. About one hundred five contacts in ConvertFlow await Sam's go-ahead to sort real buyers from junk."
-    },
-    {
-      "keys": [
-        "iso",
-        "22716",
-        "certification",
-        "gmp"
-      ],
-      "a": "ISO 22716 GMP certification project was signed July sixteenth at fourteen thousand seven hundred dollars. Aidan negotiated and closed it. GMP certification path is officially in motion for the new facility."
-    },
-    {
-      "keys": [
-        "coast",
-        "southwest",
-        "invoice",
-        "proforma",
-        "po",
-        "2026-0004"
-      ],
-      "a": "Coast Southwest proforma invoice PO 2026-0004 remains unpaid as of July twenty-first. No new email movement found. Jessica Gutierrez says raw materials ship on receipt of funds. Sam needs to release payment or provide a hold reason."
-    },
-    {
-      "keys": [
-        "gusto",
-        "payroll",
-        "overdue"
-      ],
-      "a": "Gusto payroll is no longer an overdue action. ACH withdrawals posted July 23 morning: $2,027.31 GUSTO NET and $697.22 GUSTO TAX. Treat payroll as posted, absent contrary evidence."
-    },
-    {
-      "keys": [
-        "nadia",
-        "oreka",
-        "canada",
-        "label",
-        "cream"
-      ],
-      "a": "Nadia Dupuis at Oreka Skincare sent a PDF of proposed Canadian label changes on July sixteenth and asked for review. Laura replied she is working on the cream jar. Nadia thanked her. Laura must return the cream jar update and review the label changes today."
-    },
-    {
-      "keys": [
-        "raanan",
-        "rosenbaum",
-        "media",
+        "jabari",
+        "work",
+        "wealth",
+        "saturday",
         "call",
-        "thursday"
+        "packaging"
       ],
-      "a": "Raanan Rosenbaum of Raanan Media has a 30-minute call with Sam at 9:30 AM Eastern on Thursday, July 23. This is Sam’s hard-time first priority for the day; prepare and attend before revenue follow-up work."
-    },
-    {
-      "keys": [
-        "ephix",
-        "desiree",
-        "hawke",
-        "media",
-        "kickoff"
-      ],
-      "a": "Hawke Media sent an onboarding survey email on July twentieth asking about Sam's onboarding team experience. Desiree Moore has checked in twice for Ephix kickoff status. Provide a one-line status update so a reply can go out before the account cools further."
-    },
-    {
-      "keys": [
-        "oussama",
-        "salmi",
-        "afghani",
-        "shopify",
-        "haircare"
-      ],
-      "a": "New Shopify lead from July twentieth: Oussama Salmi, afghani oil haircare brand selling in Saudi Arabia and Europe, launching in the US. Wants to match formula, five hundred to a thousand units, packaging help, starting now. Email osalmi890@gmail.com, phone plus one seven zero seven seven three one six three seven nine."
-    },
-    {
-      "keys": [
-        "anfal",
-        "mohammed",
-        "shopify",
-        "serum",
-        "cream"
-      ],
-      "a": "Anfal Mohammed sent repeated Shopify Inbox messages July nineteenth seeking per-unit serum or cream pricing above and below one hundred units. Reply with verified pricing only, after confirming exact product, size and quantity."
-    },
-    {
-      "keys": [
-        "ethnic",
-        "gals",
-        "jonathan",
-        "caesar",
-        "inventory"
-      ],
-      "a": "Jonathan Caesar at Ethnic Gals asked July thirteenth for an inventory spec sheet and pickup count. Aidan should call Jonathan directly and the warehouse should send a written count and pickup status today."
-    },
-    {
-      "keys": [
-        "crm",
-        "developer",
-        "pipeline",
-        "api",
-        "tickets"
-      ],
-      "a": "CRM Development / Issues remains unresolved. Laura’s latest July 22 10:47 AM report: customer-page task creation lacks an Assign To team-member dropdown. CRM Developer owns a fix and ready-for-verification update; do not claim it is resolved or assign it to Sam."
-    },
-    {
-      "keys": [
-        "drake",
-        "jar",
-        "200",
-        "milliliter",
-        "packaging",
-        "moq"
-      ],
-      "a": "True Revival: client revised to a 200 mL dark-green, light-blocking, shower-safe jar with gold branding. Drake accepts 500 or 1,000 jar MOQ. Laura is sourcing lower-MOQ custom or stock options with domestic decoration."
-    },
-    {
-      "keys": [
-        "kendall",
-        "pheromone",
-        "order-today",
-        "body butter",
-        "2026-07-22"
-      ],
-      "a": "Kendall sent an order-today request on July 21 for pheromone-infused body butter. Six explicit deliverables required before close of business: one, pheromone addition to base formula must be confirmed; two, match five custom scent profiles from breakdowns Kendall will send; three, provide a truthful written statement of PLL’s current FDA-registration status; four, verify whether six dollars per unit at two hundred fifty units still stands; five, provide jar dimensions for label artwork; six, send final invoice to pay today. Volume: two hundred fifty units, four-ounce jars, customer-supplied labels, one-week turnaround that must be re-verified before commitment. This is the highest-priority revenue action for July 22; no term is confirmed until verified."
-    },
-    {
-      "keys": [
-        "unshrink it",
-        "quote",
-        "Q-0047",
-        "incomplete",
-        "zero inputs"
-      ],
-      "a": "UnShrink It Q-0047 remains Incomplete - Needs Inputs with a $0 quote price. CRM notes only a $204.98 raw-material reference per 1,000-unit batch, about $0.2050 per unit. Order quantity, packaging, fill labor, overhead, and approved margin are missing; it is not customer-ready and must not be sent."
-    },
-    {
-      "keys": [
-        "kenna",
-        "meeting",
-        "viscosity",
-        "body wash",
-        "shampoo",
-        "conditioner",
-        "photos"
-      ],
-      "a": "Kenna meeting executed July twenty-first. Outcome: body wash, shampoo, and conditioner require viscosity and performance revisions. Aaron owns Terra Lotus epic shampoo revision. PLL must prepare small-batch viscosity and appearance photos for all three products and send to Kenna via WhatsApp. Seven total action items from the meeting report; only two are currently visible to the command center as of July twenty-second morning. Photos are the immediate blocker to progression."
-    },
-    {
-      "keys": [
-        "ads",
-        "Jul-21",
-        "performance",
-        "spend",
-        "impressions",
-        "clicks",
-        "ctr",
-        "cpc"
-      ],
-      "a": "Ads performance July twenty-first: total spend twenty-six dollars sixty-two cents, ninety-four impressions, twelve clicks, twelve point eight percent CTR, two dollars twenty-two CPC. Spend is under the thirty dollar daily hard cap. Trailing seven days (July fourteen to twenty): thirty-one dollars seventy-two cents, one hundred twenty-two impressions, sixteen clicks. Leads remain unattributed because lead tracking approval is pending. Do not claim booked-call attribution until tracking is approved and verified."
-    },
-    {
-      "keys": [
-        "whatsapp",
-        "unread",
-        "19",
-        "july-22"
-      ],
-      "a": "WhatsApp showed twenty-two unread client threads on July twenty-second morning. Priority threads include HALENE asking for a timeline, MEN STUFF, one Time Bargain, BEEF BUM, Kora James, PHYLARA, ASSEA, and other current customers. Triage by customer risk and revenue; do not assume the displayed unread count equals unanswered messages from the client."
-    },
-    {
-      "keys": [
-        "tavro",
-        "ben kar",
-        "proposal",
-        "never sent",
-        "june 30"
-      ],
-      "a": "Tavro proposal has not been sent to Ben Kar since the June thirtieth call. Deal status: ninety percent close, approximately thirty thousand units custom tallow and argan oil skincare. This is the single largest deal by volume on the board. One proposal document stands between current status and signed order. Sam sends today."
-    },
-    {
-      "keys": [
-        "gusto",
-        "payroll",
-        "overdue",
-        "july-17"
-      ],
-      "a": "Gusto payroll for the June twenty-ninth through July twelfth pay period was due July seventeenth. Payroll remains overdue as of July twenty-second morning. CEO immediate action required. No completion confirmation found in email or CRM as of July twenty-second."
-    },
-    {
-      "keys": [
-        "coast southwest",
-        "PO-2026-0004",
-        "unpaid",
-        "raw materials"
-      ],
-      "a": "Coast Southwest proforma invoice PO two zero two six zero zero zero four remains unpaid as of July twenty-second. Jessica Gutierrez has stated that raw materials will ship on receipt of funds. Sam must either release payment today or provide a documented hold reason."
-    },
-    {
-      "keys": [
-        "halene",
-        "bakuchiol",
-        "timeline",
-        "connor sousa"
-      ],
-      "a": "HALENE’s latest visible WhatsApp message is “Anytime,” and the prior timeline concern appears answered sufficiently. Keep the project monitored, but prioritize active purchase and reorder requests such as Ashley and ALOETALLOW unless HALENE sends a new blocker."
-    },
-    {
-      "keys": [
-        "emanay",
-        "emenay",
-        "agreement",
-        "contract",
-        "20 percent"
-      ],
-      "a": "The Emanay Personal Care Ventures mutual agreement has been redrafted at twenty percent and professionally branded with the authentic PLL logo. It remains a review draft only; it has not been sent or signed. Do not confuse it with the older BrandHaus/Alex task."
-    },
-    {
-      "keys": [
-        "ashley",
-        "brand development",
-        "nikkie"
-      ],
-      "a": "Nikkie sent Ashley a brand-development inquiry response on July twenty-first at ten twenty-eight PM Eastern and copied Sam. Monitor for Ashley’s reply and qualify product, quantity, timeline, budget, and manufacturing fit before committing pricing."
-    },
-    {
-      "keys": [
-        "ads",
-        "new ads",
-        "july 21",
-        "ctr",
-        "cpc",
-        "attribution"
-      ],
-      "a": "Exactly seven approved net-new ad groups remain live. July 22 spend was $23.62 for 78 impressions and 10 clicks, under the $30/day cap. GCLID, UTM, and hidden-source tracking are live and verified, but neither the inquiry nor the Kora James close should be claimed as paid-attributable."
-    },
-    {
-      "keys": [
-        "ashley",
-        "earth",
-        "ash",
-        "miron",
-        "invoice"
-      ],
-      "a": "Ashley at Earth and Ash supplied Miron Glass bottle and closure item codes for three products and says she is ready to pay once she receives an invoice. Brian Morgan is away until next week. Validate the line items and send the invoice today; this is the first active revenue action after Sam’s 9:30 AM Raanan call."
-    },
-    {
-      "keys": [
-        "diana",
-        "elior",
-        "eloire",
-        "dry shampoo",
-        "reorder"
-      ],
-      "a": "Diana Aviles of ELOIRE is a returning dry-shampoo customer seeking a reorder in 500- and 1,000-unit quantities using the prior formula and packaging. PLL committed to send final pricing and first-run packaging notes by end of day July 23. Deliver both price tiers and notes today."
-    },
-    {
-      "keys": [
-        "aloetallow",
-        "kyle",
-        "reorder",
-        "meeting"
-      ],
-      "a": "Kyle at ALOETALLOW says they need to reorder soon and requested a meeting. This is an active current-customer revenue request; offer times and establish reorder quantity and timing before broad WhatsApp cleanup."
-    },
-    {
-      "keys": [
-        "anfaline",
-        "ahmed",
-        "closed lost",
-        "price"
-      ],
-      "a": "ANFALINE formally declined on price as of July 22 and is closed lost. Do not continue active sales follow-up; retain only for future re-engagement if the customer initiates it."
+      "a": "Jabari Bailey has a 10:00 AM Saturday product call with Sam. He has asked how much customization PLL offers for private-label branding, tubes, and containers. Prepare truthful packaging paths and clarify scope, volume, budget, and timing on the call."
     },
     {
       "keys": [
         "yanay",
         "luxivelle",
-        "haircare",
-        "new lead"
+        "hair",
+        "mask",
+        "bonding",
+        "oil"
       ],
-      "a": "Yanay at Luxivelle submitted a new haircare website lead July 22 night, with form preview suggesting 500–1,000 units. Email Agent owns qualification of product scope, quantity, packaging, timeline, budget, and manufacturing fit."
+      "a": "Yanay Cabrera / Luxivelle replied July 24 with a qualified custom-haircare request: a hydrating hair mask and bonding hair oil, about 500 units each, targeting next year. She needs custom formulation, samples, packaging, logo printing, labels, and final production. Respond with the development path and next discovery step; do not invent costs or lead times."
     },
     {
       "keys": [
-        "jabari",
-        "work 4 wealth",
-        "discovery call"
-      ],
-      "a": "Jabari / Work 4 Wealth has a discovery call booked Friday, July 24 at 10:00 AM ET. The initial scope is about 300 total units across three products: barrier cream, rich body butter, and botanical serum or massage oil. Prepare to confirm volume, product path, packaging, and fit."
-    },
-    {
-      "keys": [
-        "luke",
-        "mothered",
+        "ephix",
+        "sample",
         "bottles",
-        "200"
+        "stephen",
+        "gould"
       ],
-      "a": "Luke / Mothered requests an exact remaining-bottle count from a 200-bottle batch and clarification on the 60 bottles received. Operations must verify inventory and shipment records before responding."
+      "a": "Stephen Gould quoted Ephix 25 each of two blank sample-bottle types for $155 including shipping, with a 7–10 day lead time. Aidan must provide a W-9 and sales-tax exemption form to remove tax from the final invoice, then confirm release."
+    },
+    {
+      "keys": [
+        "kenna",
+        "terra",
+        "lotus",
+        "samples",
+        "tracking"
+      ],
+      "a": "CRM still lists Terra Lotus raw-material sample confirmation and Kenna’s remaining prices/quotes among overdue work. WhatsApp also shows James requesting Terra Lotus tracking early July 24. Verify sample and shipment status before sending any client update."
+    },
+    {
+      "keys": [
+        "crm",
+        "assign",
+        "task",
+        "dropdown",
+        "issue"
+      ],
+      "a": "CRM Development / Issues contains Laura’s latest July 23 request to add a usable assignee dropdown when creating a customer-page task. The dashboard still shows 11 tasks and 8 overdue. No developer resolution or live verification is posted; treat the defect as open."
+    },
+    {
+      "keys": [
+        "smooth",
+        "crack",
+        "rachel",
+        "demo",
+        "scents"
+      ],
+      "a": "Rachel at Smooth Crack asked July 23 for the available products for demo purposes and to ensure all scents are accounted for. Sales/operations should send a verified available-product and scent list; do not send an unverified inventory promise."
+    },
+    {
+      "keys": [
+        "grace",
+        "arit",
+        "danielle",
+        "lead",
+        "brand",
+        "development"
+      ],
+      "a": "New brand-development replies need a fast qualification handoff: Grace asked for a call, Arit remains interested and needs MOQ guidance, and Danielle wants a pre-formulated serum and moisturizer but only about 20 units each. Qualify fit and MOQ without offering unsupported small-run commitments."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Prepare for and attend Raanan Rosenbaum call",
-      "why": "A 9:30 AM ET call is booked for today; it is the hard-time commitment.",
-      "owner": "Sam",
-      "due": "9:30 AM ET today",
+      "title": "Finish and send Victor Armendarez’s verified two-SKU quote",
+      "why": "CRM explicitly lists both-SKU cost breakdown/quote due Friday; this is the highest-value time-sensitive close.",
+      "owner": "Sam / Aidan / Ronald",
+      "due": "Friday, July 24",
       "priority": "critical",
-      "revenue": "Business-development call; value not stated"
+      "revenue": "2,000 units each of Curl Defining Cream and Edge Gel; exact value unverified"
     },
     {
       "rank": 2,
-      "title": "Send Ashley / Earth and Ash invoice",
-      "why": "Ashley supplied the Miron Glass bottle and closure item codes for three products and is ready to pay once invoiced.",
-      "owner": "Sam / operations",
+      "title": "Book ALOETALLOW reorder meeting",
+      "why": "Kyle is ready now in WhatsApp; current-customer revenue should be converted while momentum is live.",
+      "owner": "Sam / Laura",
       "due": "Today",
       "priority": "critical",
-      "revenue": "Active ready-to-pay order; amount not stated"
+      "revenue": "Existing-client reorder; amount unverified"
     },
     {
       "rank": 3,
-      "title": "Finish and send Victor pricing",
-      "why": "Victor is 88% close for two turnkey 2,000-unit SKUs; pricing is the immediate controlled close.",
-      "owner": "Sam / Aidan / Ronald",
+      "title": "Confirm Ashley / Earth and Ash invoice-to-payment status",
+      "why": "Ashley acknowledged the invoice workflow but there is no payment confirmation.",
+      "owner": "Sam / operations",
       "due": "Today",
       "priority": "critical",
-      "revenue": "4,000 units across Curl Defining Cream and Edge Gel"
+      "revenue": "Ready-to-pay active order; amount unverified"
     },
     {
       "rank": 4,
-      "title": "Deliver Diana / ELOIRE reorder quote",
-      "why": "PLL promised 500- and 1,000-unit dry-shampoo pricing plus packaging notes by end of day today.",
+      "title": "Deliver Diana / ELOIRE dry-shampoo reorder price tiers and packaging notes",
+      "why": "The promised July 23 end-of-day deliverable has no fresh completion evidence.",
       "owner": "Sam / Aidan",
-      "due": "End of day today",
+      "due": "Overdue — complete today",
       "priority": "critical",
-      "revenue": "Returning-customer reorder; 500–1,000 units"
+      "revenue": "Returning-customer 500- or 1,000-unit reorder"
     },
     {
       "rank": 5,
-      "title": "Send Tavro proposal or post-call recap to Ben Kar",
-      "why": "90% close, about 30,000 units, and no confirmed post-call delivery since June 30.",
+      "title": "Send Tavro proposal or a decision-driving recap to Ben Kar",
+      "why": "The 90%-close, ~30,000-unit deal has lacked confirmed delivery since June 30.",
       "owner": "Sam",
       "due": "Today",
       "priority": "critical",
-      "revenue": "Largest deal by volume; approximately 30,000 units"
+      "revenue": "Approximately 30,000 units; exact value unverified"
     },
     {
       "rank": 6,
-      "title": "Book ALOETALLOW reorder meeting and triage ready-to-pay WhatsApp",
-      "why": "Kyle says ALOETALLOW needs to reorder soon; current-customer purchase requests come before broad inbox cleanup.",
-      "owner": "Laura / Sam",
+      "title": "Prepare Jabari’s Saturday 10:00 AM discovery call",
+      "why": "Jabari is asking about branding customization and packaging; arrive with verified paths and discovery questions.",
+      "owner": "Sam / Nikkie",
       "due": "Today",
       "priority": "high",
-      "revenue": "Existing-client retention and reorder"
+      "revenue": "Initial scope previously stated around 300 total units; must reconfirm"
     },
     {
       "rank": 7,
-      "title": "Complete UnShrink It Q-0047 all-in cost model",
-      "why": "Quote remains incomplete and $0. Raw material reference alone cannot support a quote.",
-      "owner": "Aidan / Ronald; Sam reviews only when complete",
+      "title": "Release Ephix sample-bottle order after documentation",
+      "why": "Vendor quote is $155 including shipping with 7–10 day lead time; W-9 and exemption form are required to remove tax.",
+      "owner": "Aidan",
       "due": "Today",
       "priority": "high",
-      "revenue": "Not measurable until cost and quantity are complete"
+      "revenue": "Operational support for Ephix launch"
     },
     {
       "rank": 8,
-      "title": "Resolve CRM customer-page task assignment defect",
-      "why": "Latest CRM issue report says the customer-page task creation flow lacks the Assign To team-member dropdown. No developer resolution is posted.",
+      "title": "Fix CRM customer-page task assignment defect",
+      "why": "Laura re-reported the missing usable Assign To dropdown July 23; it prevents accountable routing.",
       "owner": "CRM Developer",
-      "due": "Open — ready for verification after fix",
+      "due": "Open — verify immediately after claimed fix",
       "priority": "high",
-      "revenue": "Operational; prevents reliable task assignment"
+      "revenue": "Operational; avoids unowned and overdue work"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Attend Raanan at 9:30 AM ET, then Ashley invoice, Victor pricing, Diana quote, and Tavro proposal.",
+      "top_task": "Complete Victor’s verified two-SKU quote before the remaining revenue lane.",
       "tasks": [
         {
-          "title": "Attend Raanan Rosenbaum call",
-          "due": "9:30 AM ET today"
-        },
-        {
-          "title": "Send Ashley / Earth and Ash verified invoice",
+          "title": "Review/send Victor quote",
           "due": "Today"
         },
         {
-          "title": "Review and send Victor pricing for both SKUs",
+          "title": "Book ALOETALLOW reorder meeting",
           "due": "Today"
         },
         {
-          "title": "Send Diana / ELOIRE reorder quote and packaging notes",
-          "due": "End of day today"
+          "title": "Drive Ashley invoice to payment confirmation",
+          "due": "Today"
         },
         {
-          "title": "Send Tavro proposal or post-call recap",
+          "title": "Send ELOIRE and Tavro close-the-loop deliverables",
+          "due": "Today"
+        },
+        {
+          "title": "Prepare Jabari Saturday call",
           "due": "Today"
         }
       ],
-      "notes": "Keep the revenue lane ahead of broad inbox cleanup. UnShrink is review-only for Sam after Aidan completes all inputs."
+      "notes": "Stay in this order. Do not switch into general inbox cleanup until the revenue lane is complete."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Complete controlled quote inputs for Victor, Diana, and UnShrink It.",
+      "top_task": "Supply verified costing for Victor and release Ephix sample bottles after paperwork.",
       "tasks": [
         {
-          "title": "Provide final costing inputs for Victor’s Curl Defining Cream and Edge Gel",
+          "title": "Complete Victor full cost inputs",
           "due": "Today"
         },
         {
-          "title": "Complete Diana / ELOIRE 500- and 1,000-unit reorder costing and packaging notes",
+          "title": "Support ELOIRE pricing and packaging notes",
           "due": "Today"
         },
         {
-          "title": "Build UnShrink Q-0047 all-in cost: quantity, ingredients, packaging, labor, overhead, approved margin",
+          "title": "Provide Ephix W-9 and exemption form / release order",
           "due": "Today"
+        },
+        {
+          "title": "Confirm Kenna / Terra Lotus samples and tracking",
+          "due": "Overdue"
         }
       ],
-      "notes": "UnShrink has only a $204.98/1,000-unit raw-material reference ($0.2050/unit); it is not sendable."
-    },
-    "aaron": {
-      "display_name": "Aaron",
-      "top_task": "Continue Terra Lotus shampoo viscosity revision and coordinate Kenna product-photo work.",
-      "tasks": [
-        {
-          "title": "Prepare small-batch viscosity and appearance photos for Terra Lotus epic shampoo",
-          "due": "Open"
-        },
-        {
-          "title": "Coordinate body wash and conditioner viscosity revisions",
-          "due": "Open"
-        }
-      ],
-      "notes": "Kenna meeting actions remain active; do not mark photo delivery complete without confirmation."
+      "notes": "Ephix quote is $155 including shipping, with 7–10 day lead time."
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Triage current-client WhatsApp purchase and reorder requests.",
+      "top_task": "Convert current-client WhatsApp activity into confirmed next steps.",
       "tasks": [
         {
-          "title": "Coordinate Ashley invoice inputs and follow up after invoice",
+          "title": "Coordinate ALOETALLOW meeting with Kyle",
           "due": "Today"
         },
         {
-          "title": "Offer ALOETALLOW / Kyle reorder meeting times",
+          "title": "Confirm Ashley payment handoff/status",
           "due": "Today"
         },
         {
-          "title": "Clear assigned current-customer WhatsApp threads by revenue risk",
+          "title": "Send Smooth Crack verified demo and scent availability",
           "due": "Today"
         },
         {
-          "title": "Coordinate Kenna viscosity/appearance photo delivery when ready",
+          "title": "Track resolution of the CRM assignee defect",
           "due": "Open"
         }
       ],
-      "notes": "HALENE’s latest reply appears sufficiently handled; Ashley and Kyle now rank higher."
+      "notes": "Customer-page task assignment remains broken; do not treat it as fixed without live verification."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Supply formula and manufacturing inputs supporting Victor and UnShrink costing.",
+      "top_task": "Provide formula and manufacturing inputs needed to make Victor’s quote accurate.",
       "tasks": [
         {
-          "title": "Confirm any missing formula, raw-material, and process inputs for Victor pricing",
+          "title": "Confirm Victor formula, material, and process inputs",
           "due": "Today"
         },
         {
-          "title": "Provide missing formula inputs for UnShrink Q-0047 all-in cost",
-          "due": "Today"
-        },
-        {
-          "title": "Support Kenna revisions as formulation input is needed",
-          "due": "Open"
+          "title": "Support Terra Lotus / Kenna formulation or sample status",
+          "due": "Overdue"
         }
       ],
-      "notes": "Do not resurrect unverified Kendall pheromone, price, FDA, packaging, or turnaround commitments."
+      "notes": "Victor’s packaging compatibility is still awaiting his R&D lab; no unsupported production commitment."
     },
-    "emailagent": {
-      "display_name": "Email Agent",
-      "top_task": "Qualify Yanay / Luxivelle and maintain active buyer follow-up.",
+    "nikkie": {
+      "display_name": "Nikkie",
+      "top_task": "Prepare Jabari’s packaging discussion and qualify high-intent brand-development replies.",
       "tasks": [
         {
-          "title": "Qualify Yanay / Luxivelle haircare lead for product, volume, packaging, timing, and fit",
+          "title": "Prepare Jabari packaging customization answers",
           "due": "Today"
         },
         {
-          "title": "Support Jabari discovery-call preparation for July 24 at 10:00 AM ET",
+          "title": "Arrange Grace call request",
           "due": "Today"
         },
         {
-          "title": "Monitor Ashley invoice response and active buyer replies",
+          "title": "Qualify Arit, Danielle, and Yanay for MOQ and scope",
           "due": "Today"
         }
       ],
-      "notes": "ANFALINE declined on price and is closed lost; do not continue sales follow-up."
-    },
-    "adsagent": {
-      "display_name": "Ads Agent",
-      "top_task": "Maintain the seven approved net-new ads and observe verified tracking without attribution claims.",
-      "tasks": [
-        {
-          "title": "Hold the seven approved net-new ads live within the $30/day cap",
-          "due": "Continuous"
-        },
-        {
-          "title": "Monitor GCLID/UTM/hidden source tracking, now live and verified",
-          "due": "Continuous"
-        },
-        {
-          "title": "Hold settings 5–7 days before optimization conclusions",
-          "due": "Through observation window"
-        }
-      ],
-      "notes": "July 22 spend was $23.62, 78 impressions, 10 clicks. An inquiry and Kora James close are not paid-attributable."
+      "notes": "Danielle’s stated 20 units each is below confirmed manufacturing scale; qualify rather than promise."
     },
     "crmdeveloper": {
       "display_name": "CRM Developer",
-      "top_task": "Fix and provide verification-ready resolution for customer-page task assignment.",
+      "top_task": "Restore customer-page task assignee selection and provide a ready-for-verification update.",
       "tasks": [
         {
-          "title": "Restore an Assign To team-member dropdown in customer-page task creation",
+          "title": "Add working Assign To team-member list in customer-page task creation",
           "due": "Open"
         },
         {
-          "title": "Provide a ready-for-verification update; do not assume historic issues are resolved",
+          "title": "Resolve related task/notes routing defects and notify for verification",
           "due": "Open"
         }
       ],
-      "notes": "Laura reported the missing Assign To dropdown July 22 at 10:47 AM. No developer resolution is posted."
+      "notes": "Laura’s latest report was July 23; no resolution is recorded."
     }
   },
   "revenueActions": [
     {
-      "title": "Send Ashley / Earth and Ash invoice",
-      "why": "Customer supplied Miron Glass bottle and closure codes for three products and is ready to pay.",
-      "est_value": "Not stated",
-      "next_step": "Validate invoice against supplied item codes and send today.",
-      "owner": "Sam / operations",
-      "timing": "Immediately after Raanan call",
-      "value": "Ready-to-pay active order"
-    },
-    {
       "title": "Send Victor pricing",
-      "why": "88% close, formulas and NDA in hand; two 2,000-unit turnkey SKUs need final verified pricing.",
-      "est_value": "Not stated",
-      "next_step": "Complete costing and send both SKU prices with realistic production timing.",
+      "why": "Both-SKU quote is due Friday in CRM and remains contingent on verified costing.",
+      "est_value": "Unverified",
+      "next_step": "Complete full cost inputs, pricing, and compatibility status; send only verified terms.",
       "owner": "Sam / Aidan / Ronald",
-      "timing": "Today",
-      "value": "4,000 units total"
-    },
-    {
-      "title": "Deliver Diana / ELOIRE reorder quote",
-      "why": "Returning customer was promised 500- and 1,000-unit pricing and packaging notes by end of day.",
-      "est_value": "Not stated",
-      "next_step": "Send both pricing tiers and packaging notes; offer quick reorder-lock call.",
-      "owner": "Sam / Aidan",
-      "timing": "End of day today",
-      "value": "500–1,000-unit dry-shampoo reorder"
-    },
-    {
-      "title": "Send Tavro proposal or recap",
-      "why": "90% close and about 30,000 units; no confirmed delivery since June 30.",
-      "est_value": "Not stated",
-      "next_step": "Send proposal/post-call recap and ask for production timeline or deposit path.",
-      "owner": "Sam",
-      "timing": "Today",
-      "value": "Largest deal by volume"
+      "timing": "First",
+      "value": "4,000 total units requested"
     },
     {
       "title": "Advance ALOETALLOW reorder",
-      "why": "Kyle said the customer needs to reorder soon and requested a meeting.",
-      "est_value": "Not stated",
-      "next_step": "Offer meeting times and establish reorder quantity/timing.",
-      "owner": "Laura / Sam",
-      "timing": "Today",
-      "value": "Existing-client reorder"
+      "why": "Kyle stated he is ready now.",
+      "est_value": "Unverified",
+      "next_step": "Book a specific meeting and establish reorder volume, requirements, and timing.",
+      "owner": "Sam / Laura",
+      "timing": "Immediately after Victor",
+      "value": "Existing-client retention/reorder"
     },
     {
-      "title": "Complete UnShrink It Q-0047 only after all-in costing",
-      "why": "Quote is incomplete with $0 price; raw-material reference does not establish sell price.",
-      "est_value": "Not measurable",
-      "next_step": "Aidan completes quantity, packaging, labor, overhead and approved margin; Sam reviews before any send.",
-      "owner": "Aidan / Ronald / Sam",
-      "timing": "After inputs are complete",
-      "value": "Blocked; not customer-ready"
+      "title": "Convert Ashley invoice into payment",
+      "why": "Ashley acknowledged the workflow but payment is not confirmed.",
+      "est_value": "Unverified",
+      "next_step": "Confirm invoice receipt, payment method, and expected payment time.",
+      "owner": "Sam / operations",
+      "timing": "Today",
+      "value": "Active three-product order"
+    },
+    {
+      "title": "Close ELOIRE reorder quote",
+      "why": "July 23 commitment is unconfirmed.",
+      "est_value": "Unverified",
+      "next_step": "Send verified 500- and 1,000-unit tiers and packaging notes, then request decision.",
+      "owner": "Sam / Aidan",
+      "timing": "Today",
+      "value": "Returning-customer reorder"
+    },
+    {
+      "title": "Move Tavro to decision",
+      "why": "Largest known-volume opportunity is still missing a confirmed proposal/re-cap.",
+      "est_value": "Unverified",
+      "next_step": "Send proposal or concrete recap and ask for deposit/timeline decision.",
+      "owner": "Sam",
+      "timing": "Today",
+      "value": "Approximately 30,000 units"
+    },
+    {
+      "title": "Qualify Luxivelle custom haircare",
+      "why": "Yanay specified two custom products at 500 units each and requested full development/packaging support.",
+      "est_value": "Unverified",
+      "next_step": "Respond with discovery and development path; confirm requirements before costs or timing.",
+      "owner": "Nikkie / Sam",
+      "timing": "Today",
+      "value": "Potential 1,000-unit launch"
     }
   ],
   "pipelineStat": {
     "total_value": "$1,327,800",
     "active_deals": 9,
     "hot": [
-      "Ben Kar / Tavro — 90% close; proposal/re-cap overdue",
-      "Victor Armendarez / HT Products — 88% close; verified pricing due",
-      "Ashley / Earth and Ash — ready to pay on invoice"
+      "Victor Armendarez — both-SKU quote due Friday",
+      "ALOETALLOW / Kyle — ready to schedule reorder",
+      "Ashley / Earth and Ash — invoice acknowledged; payment unconfirmed",
+      "Ben Kar / Tavro — proposal/re-cap not confirmed"
     ],
     "stalled": [
-      "UnShrink It Q-0047 — incomplete all-in cost and $0 quote price",
-      "Tavro — proposal delivery not confirmed",
-      "CRM task assignment — customer-page Assign To dropdown missing"
+      "ELOIRE — July 23 quote commitment lacks completion evidence",
+      "Tavro — proposal/re-cap outstanding since June 30",
+      "CRM task assignment — customer-page Assign To list still missing"
     ],
     "activeDeals": 9,
     "pipelineValue": 1327800,
     "inProduction": 20,
-    "depositsCollected": 51773.99,
-    "note": "Live CRM observed July 23. Production display varies between 19 and 20 by page; use 20 running projects from Tasks/Quotes. 11 tasks total, 8 overdue. ANFALINE is closed lost after price decline."
+    "depositsCollected": 57454.99,
+    "note": "CRM dashboard/task view inspected July 24 from active session: 11 tasks, 8 overdue, 20 projects running, 9 active deals. Dashboard greeting displayed July 22, so task/metric view may be cached; no newer CRM date was displayed."
   },
   "adsAgentBrief": {
-    "status": "Live controlled test — Jul 22 under cap; GCLID/UTM/hidden-source tracking is live and verified, but attribution is not yet established.",
-    "northStar": "Qualified B2B booked calls → closed manufacturing revenue; sample purchases secondary for White Label Samples.",
-    "funnel": "Ad → website → email → booked call → close",
-    "liveScope": "Seven approved net-new ads only; keep live for controlled testing.",
-    "budgets": {
-      "Contract Manufacturing": "$20/day",
-      "White Label Samples": "$10/day",
-      "hardCap": "$30/day / $210/week",
-      "Jul22_spend": "$23.62",
-      "Jul22_status": "Under cap"
-    },
-    "Jul22_performance": {
-      "spend": "$23.62",
-      "impressions": 78,
-      "clicks": 10,
-      "status": "Under $30 daily cap"
-    },
-    "permissions": {
-      "legacyCampaigns": "Never edit, pause, delete, or disturb",
-      "newCampaigns": "Sam yes/no required",
-      "imagesAndVideo": "Sam yes/no required before publishing",
-      "optimization": "Hold settings 5–7 days; analyze only within approved net-new scope, budgets, compliance, and approval gates"
-    },
-    "audience": "US B2B buyers seeking private label, white label, contract manufacturing, custom formulation, or wholesale supply.",
-    "hardExclusions": [
-      "consumer retail",
-      "jobs",
-      "DIY",
-      "makeup/color cosmetics",
-      "dropshipping"
-    ],
-    "tracking": "GCLID, UTM parameters, and hidden source field are live and verified. Do not claim booked-call, close, or CPL attribution until sufficient verified data exists.",
-    "reporting": "Nightly 9 PM ET: today, 7-day versus prior 7, and MTD; use verified attribution only.",
-    "alerts": [
-      "cap breach",
-      "CPL over $75 for two consecutive weeks",
-      "material policy risk",
-      "meaningful competitor activity on branded terms"
-    ],
-    "governance": "Onboarding brief and shared scoreboard override memory. If conflict, brief wins. Growth Hub first."
+    "status": "Not refreshed in this morning workflow. Do not rely on prior-day ad-performance or attribution claims until the Ads workflow supplies fresh verified data.",
+    "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
+    "tracking": "No fresh verification performed in this refresh.",
+    "governance": "Do not alter campaigns or make attribution claims from this brief."
   }
 }
