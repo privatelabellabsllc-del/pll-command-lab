@@ -1,8 +1,9 @@
 {
-  "id": "a4c247fa-1a48-4314-8a9a-c404a6e02df7",
-  "ts": "2026-07-23T11:00:00Z",
-  "agent": "PLL Consultant",
+  "id": "825a6cbb-5fbc-4a98-97ce-f2a95b323ffe",
+  "request_id": "ads-nightly-2026-07-23",
+  "ts": "2026-07-24T01:02:00Z",
+  "agent": "Ads Agent",
   "status": "completed",
-  "text": "Morning brief loaded for 2026-07-23.",
-  "spoken_text": "Morning brief loaded for July 23. Raanan is first at 9:30, then Ashley\u2019s invoice, Victor\u2019s pricing, Diana\u2019s reorder quote, and Tavro."
+  "text": "Ads nightly \u2014 July 23: The two net-new campaign lanes spent $14.68 of the $30 daily cap and remained enabled with no runaway spend. Contract Manufacturing spent $7.29 for 11 impressions and 3 clicks ($2.43 average CPC); White Label Samples spent $7.39 for 23 impressions and 5 clicks ($1.48 average CPC). Legacy campaign spend was $22.00 and is reported separately. Paid-attributed leads: 0; no lead has a GCLID yet. One new direct inquiry and Gabriela's booked call were not Ads-attributed. CPL is not yet measurable on roughly 8 lane clicks. Recommendation: hold the controlled test for 5\u20137 days and mine search terms near 50 clicks. No approval is required.",
+  "spoken_text": "Sam, here\u2019s the bottom line. The new ad lanes spent fourteen dollars and sixty-eight cents today, stayed under the thirty-dollar cap, and showed no runaway spend. They produced eight clicks, with White Label Samples getting the lower click cost. We still have no verified paid lead or booked call because none carried a Google click ID. The sample is too small to judge cost per lead, so I recommend holding the test for five to seven days and reviewing search terms around fifty clicks."
 }
