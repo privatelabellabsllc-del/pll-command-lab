@@ -1,1 +1,1 @@
-{"versionCode": 13, "versionName": "2.3", "apkUrl": "https://raw.githubusercontent.com/privatelabellabsllc-del/pll-command-lab/main/mtuner/MTuner.apk"}
+{"versionCode":14,"versionName":"2.4","apkUrl":"https://raw.githubusercontent.com/privatelabellabsllc-del/pll-command-lab/main/mtuner/MTuner.apk","notes":"Quarter-tone fixed: correct Korg Pa proprietary scale format with 7-bit packing. Resume auto-update check."}
