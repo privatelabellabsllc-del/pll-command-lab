@@ -1,8 +1,9 @@
 {
-  "id": "79baab1a-de88-46ef-9072-2445a6b4b99b",
-  "ts": "2026-07-24T11:02:58Z",
-  "agent": "PLL Consultant",
+  "id": "ads-nightly-2026-07-24-result",
+  "request_id": "ads-nightly-2026-07-24",
+  "ts": "2026-07-25T01:03:00Z",
+  "agent": "Ads Agent",
   "status": "completed",
-  "text": "Morning brief loaded for 2026-07-24.",
-  "spoken_text": "First: finish Victor’s verified two-SKU quote. Then book ALOETALLOW’s reorder meeting and confirm Ashley’s invoice payment. Next: close ELOIRE and Tavro, then prepare Jabari’s Saturday call."
+  "text": "Nightly Ads brief — July 24 preliminary: both Ads Agent net-new campaigns remain enabled. Today they spent $8.92 for 6 clicks at $1.49 average CPC, safely under the $30 daily cap. Month to date: $116.85 spend and 59 clicks. Verified paid-attributable leads remain 0 because no lead has carried a GCLID, so paid CPL is not yet measurable. White Label Samples accounted for today's $8.92 spend. Recommendation: hold settings until the first verified GCLID lead provides usable optimization evidence. No approval is required.",
+  "spoken_text": "Sam, the new ads stayed safely under budget today, but they still have not produced a verified paid lead. They spent eight dollars and ninety-two cents for six clicks, averaging one dollar and forty-nine cents per click. Month to date, spend is one hundred sixteen dollars and eighty-five cents across fifty-nine clicks. No lead has carried a Google click ID yet, so paid cost per lead is still not measurable. My read is that there is not enough attributed data to optimize responsibly. I recommend holding the current settings until the first verified paid lead arrives."
 }
