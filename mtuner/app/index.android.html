@@ -750,6 +750,9 @@ function showUpdateBanner(vName, apkUrl){
 /* ============ INIT ============ */
 fillRoots(); renderSlots();
 checkForUpdate();
+/* Re-check on every foreground/resume, not just cold start */
+document.addEventListener("visibilitychange", function(){ if(!document.hidden) checkForUpdate(); });
+window.addEventListener("focus", checkForUpdate);
 window.addEventListener("resize", buildPiano);
 window.addEventListener("orientationchange", ()=>setTimeout(buildPiano, 150));
 if(window.screen && screen.orientation && screen.orientation.addEventListener){
