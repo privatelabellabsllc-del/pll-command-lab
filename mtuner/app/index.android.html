@@ -189,6 +189,7 @@
   <div id="stageBar">
     <div class="stDot" id="stageDot" title="MIDI connection"></div>
     <div id="stageSlots"></div>
+    <button class="stReset" onclick="masterReset()" title="Reset scale (keeps transpose)">♮<small>RESET</small></button>
     <div id="stageTrans">
       <button class="stBtn" onclick="bumpTranspose(-1)">−</button>
       <div id="transValSt" onclick="setTranspose(0)" title="Tap to zero">0</div>
@@ -218,7 +219,7 @@
   <div class="card" id="pianoCard">
     <h3>Scale Tuning &nbsp;<span style="color:var(--accent);" id="scaleName">Custom</span></h3>
     <div id="piano"></div>
-    <div class="hint">Tap a note = <b>−50</b> quarter-tone · Tap again = custom value · Hold = reset</div>
+    <div class="hint">Tap a note = toggle <b>−50</b> quarter-tone on/off · Hold = enter custom cents</div>
   </div>
 
   <!-- ROOT + PRESETS -->
@@ -310,6 +311,82 @@
 </div>
 <div id="toast"></div>
 
+<script>
+/* MTuner — Android native MIDI shim.
+   Android WebView has no Web MIDI API, so when running inside the MTuner
+   app (window.AndroidMIDI injected by MainActivity via addJavascriptInterface),
+   we emulate navigator.requestMIDIAccess using the native android.media.midi
+   bridge. In any other browser this file does nothing and the normal Web MIDI
+   fallback in the app code is used unmodified. */
+(function () {
+  "use strict";
+  if (!window.AndroidMIDI) return;
+
+  var access = null;
+
+  function toHex(bytes) {
+    var hex = "";
+    for (var i = 0; i < bytes.length; i++) {
+      var b = bytes[i] & 0xFF;
+      hex += (b < 16 ? "0" : "") + b.toString(16);
+    }
+    return hex;
+  }
+
+  function makeOutput(dev) {
+    return {
+      id: String(dev.id),
+      name: dev.name || "MIDI Device",
+      manufacturer: "",
+      type: "output",
+      version: "",
+      state: "connected",
+      connection: "open",
+      send: function (data) {
+        try { window.AndroidMIDI.sendHex(dev.id, toHex(data)); } catch (e) {}
+      },
+      open: function () { return Promise.resolve(this); },
+      close: function () { return Promise.resolve(this); }
+    };
+  }
+
+  function refreshOutputs() {
+    var devs = [];
+    try { devs = JSON.parse(window.AndroidMIDI.listDevices()); } catch (e) { devs = []; }
+    var map = new Map();
+    devs.forEach(function (d) {
+      map.set(String(d.id), makeOutput(d));
+      try { window.AndroidMIDI.openDevice(d.id); } catch (e) {}
+    });
+    access.outputs = map;
+  }
+
+  function makeAccess() {
+    access = {
+      outputs: new Map(),
+      inputs: new Map(),
+      sysexEnabled: true,
+      onstatechange: null
+    };
+    refreshOutputs();
+    return access;
+  }
+
+  /* Called from native code (evaluateJavascript) on device hot-plug. */
+  window._androidMidiStateChange = function () {
+    if (!access) return;
+    refreshOutputs();
+    if (typeof access.onstatechange === "function") {
+      try { access.onstatechange({ type: "statechange" }); } catch (e) {}
+    }
+  };
+
+  navigator.requestMIDIAccess = function () {
+    return Promise.resolve(access || makeAccess());
+  };
+})();
+
+</script>
 <script>
 "use strict";
 /* ============ STATE ============ */
