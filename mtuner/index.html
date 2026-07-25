@@ -380,31 +380,26 @@ function updateConn(){
   if(sd) sd.classList.toggle("on", n>0);
 }
 
-/* Korg Pa-series Quarter Tone SysEx (broadcast, all Pa family):
-   F0 42 7F 60 01 01 [flags] [scaleId] 00 [12 note bytes C..B] 00 F7
-   note byte: 0=0c, 1..63=+1..+63c, 64..127=-64..-1c  (e.g. -50 -> 78 / 0x4E) */
-function centByte(c){ c = Math.max(-64, Math.min(63, Math.round(c))); return c >= 0 ? c : 128 + c; }
+/* GM2 Scale/Octave Tuning Adjust, 1-Byte Form (Real-Time) — the standard SysEx the
+   Korg Pa-series receives Quarter Tone / Scale settings on (per Korg MIDI conformance).
+   F0 7F 7F 08 08 03 7F 7F [12 note bytes C..B] F7
+   note byte = cents + 64:  00 = -64c, 40 = 0c (equal temperament), 7F = +63c
+   e.g. -50c -> 0x0E,  0c -> 0x40,  +50c -> 0x72   (applied to all 16 channels) */
+function centByte(c){ c = Math.max(-64, Math.min(63, Math.round(c))); return 64 + c; }
 
-function buildScaleMsg(offsets, active){
-  const flags = active ? 0x10 : 0x00;
-  const msg = [0xF0,0x42,0x7F,0x60,0x01,0x01, flags, 0x7D, 0x00];
+function buildScaleMsg(offsets){
+  const msg = [0xF0,0x7F,0x7F,0x08,0x08,0x03,0x7F,0x7F];
   for(let i=0;i<12;i++) msg.push(centByte(offsets[i]));
-  msg.push(0x00, 0xF7);
+  msg.push(0xF7);
   return msg;
 }
 
 function sendScale(){
-  const anyTuned = cents.some(c=>c!==0);
   const ports = enabledPorts();
   if(!ports.length) return false;
-  const reset = buildScaleMsg(new Array(12).fill(0), false);
-  const scale = buildScaleMsg(cents, true);
-  ports.forEach(p=>{
-    try{
-      if(anyTuned){ p.send(reset); p.send(scale); }
-      else { p.send(reset); }
-    }catch(e){}
-  });
+  // All-zero offsets => all 0x40 => equal temperament, so this doubles as the reset.
+  const scale = buildScaleMsg(cents);
+  ports.forEach(p=>{ try{ p.send(scale); }catch(e){} });
   return true;
 }
 
@@ -641,8 +636,8 @@ function vibrate(ms){ if(navigator.vibrate) navigator.vibrate(ms); }
 function esc(s){ return String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
 /* ============ UPDATE CHECKER ============ */
-var APP_VERSION_CODE = 10;
-var APP_VERSION_NAME = "2.0";
+var APP_VERSION_CODE = 11;
+var APP_VERSION_NAME = "2.1";
 var UPDATE_VERSION_URL = "https://raw.githubusercontent.com/privatelabellabsllc-del/pll-command-lab/main/mtuner/version.json";
 function checkForUpdate(){
   try{
