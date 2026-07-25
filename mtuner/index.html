@@ -251,6 +251,16 @@
     </div>
   </div>
 
+  <!-- KORG TRITON EXTREME -->
+  <div class="card" id="tritonCard">
+    <h3>Korg Triton Extreme</h3>
+    <div class="hint" style="margin-bottom:8px;">Selects the Triton's built-in <b>Arabic</b> scale (quarter-tones). One-time on the keyboard: Global P1 → <b>Enable Exclusive = On</b>.</div>
+    <div class="row">
+      <button class="btn primary grow" onclick="tritonArabic()">🎵 Arabic Quarter-Tones</button>
+      <button class="btn grow" onclick="tritonEqual()">♮ Equal Temperament</button>
+    </div>
+  </div>
+
   <!-- SAVED SCALES -->
   <div class="card">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
@@ -261,7 +271,7 @@
   </div>
 
   <div id="footNote" style="text-align:center;color:var(--dim);font-size:11px;margin-top:4px;">
-    Korg Pa5X · Pa3X · Pa4X · Pa-Series — USB MIDI<br>by Melodies Band Labs
+    Korg Pa5X · Pa3X · Pa4X · Pa-Series · Triton Extreme — USB MIDI<br>by Melodies Band Labs
   </div>
 </div>
 
@@ -428,6 +438,31 @@ function resendAll(){
   sendScale(); sendTranspose();
   toast("Scale + transpose sent ✓");
 }
+
+/* ===== Korg Triton Extreme — Scale selection (separate profile) =====
+   The Triton Extreme has NO live per-note tuning message (unlike the Pa-Series),
+   but its Program/Combi Scale Type can be selected via Korg Parameter Change
+   (Function 41h). We use its built-in "Arabic" scale, which contains real
+   quarter-tones. Verified against Korg's official Triton Extreme MIDI Impl.
+     Header:  F0 42 3g 50 41   (g = global MIDI channel 0-15)
+     Program Scale Type:      mode 02, ID/Sub 00 09
+     Combination Scale Type:  mode 00, ID/Sub 00 01
+     Value: 00 = Equal Temperament, 03 = Arabic, 0B..1A = User Octave Scale 00..15
+   Broadcast across all 16 channel bytes and both play modes; mismatches are
+   ignored by the instrument. Does NOT touch the Pa-Series scale path. */
+function sendTritonScale(val){
+  const ports = enabledPorts();
+  if(!ports.length){ toast("No keyboard connected"); return false; }
+  const msgs = [];
+  for(let g=0; g<16; g++){
+    msgs.push([0xF0,0x42,0x30+g,0x50,0x41,0x02,0x00,0x00,0x00,0x09,0x00,val,0xF7]); // Program Play
+    msgs.push([0xF0,0x42,0x30+g,0x50,0x41,0x00,0x00,0x00,0x00,0x01,0x00,val,0xF7]); // Combi Play
+  }
+  ports.forEach(p=>{ msgs.forEach(m=>{ try{ p.send(m); }catch(e){} }); });
+  return true;
+}
+function tritonArabic(){ if(sendTritonScale(0x03)) toast("Triton: Arabic quarter-tones ON ✓"); }
+function tritonEqual(){ if(sendTritonScale(0x00)) toast("Triton: Equal Temperament ✓"); }
 
 /* ============ PIANO UI ============ */
 const WHITE = [0,2,4,5,7,9,11], BLACK = [1,3,6,8,10];
@@ -649,7 +684,7 @@ function esc(s){ return String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;"
 
 /* ============ UPDATE CHECKER ============ */
 var APP_VERSION_CODE = 14;
-var APP_VERSION_NAME = "2.4";
+var APP_VERSION_NAME = "2.5";
 var UPDATE_VERSION_URL = "https://raw.githubusercontent.com/privatelabellabsllc-del/pll-command-lab/main/mtuner/version.json";
 function checkForUpdate(){
   try{
