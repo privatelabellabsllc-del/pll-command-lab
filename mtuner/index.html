@@ -381,18 +381,18 @@ function updateConn(){
 }
 
 /* Korg Pa-Series proprietary Quarter Tone / Scale Tuning SysEx (Korg mfr ID 0x42).
-   Verified against Pa2X/Pa4X/Pa5X hardware captures.
-   F0 42 7F 60 01 01 [selCE] 7D [selFB] [12 note bytes C..B] 00 F7
-   selCE = note-select bitmap for C..E  (C=10,C#=08,D=04,Eb=02,E=01) -> all = 0x1F
-   selFB = note-select bitmap for F..B                               -> all = 0x7F
-   note byte: 0c=0x00, +1..+63 = 0x01..0x3F, -1..-64 = 0x7F..0x40 (i.e. 128+cents)
-   e.g. -50c -> 0x4E. We select ALL notes so every value (incl. 0 = reset) is applied. */
-function centByte(c){ c = Math.max(-64, Math.min(63, Math.round(c))); return c >= 0 ? c : 128 + c; }
+   Standard GM2 "Scale/Octave Tuning Adjust" (1-byte form), Universal Real-Time.
+   Documented MIDI-IN path the Korg Pa-series uses to receive quarter-tone changes.
+   F0 7F 7F 08 08 [ch1] [ch2] [ch3] [12 note bytes C..B] F7
+   ch1 ch2 ch3 = channel bitmap; 7F 7F 7F = all 16 channels.
+   note byte: center 0x40 (64) = 0 cents, 0x00 = -64 cents, 0x7F = +63 cents.
+   e.g. -50c -> 64-50 = 14 (0x0E); 0c -> 64 (0x40, a true reset). */
+function centByte(c){ c = Math.max(-64, Math.min(63, Math.round(c))); return 64 + c; }
 
 function buildScaleMsg(offsets){
-  const msg = [0xF0,0x42,0x7F,0x60,0x01,0x01, 0x1F, 0x7D, 0x7F];
+  const msg = [0xF0,0x7F,0x7F,0x08,0x08, 0x7F,0x7F,0x7F];
   for(let i=0;i<12;i++) msg.push(centByte(offsets[i]));
-  msg.push(0x00, 0xF7);
+  msg.push(0xF7);
   return msg;
 }
 
@@ -638,8 +638,8 @@ function vibrate(ms){ if(navigator.vibrate) navigator.vibrate(ms); }
 function esc(s){ return String(s).replace(/[&<>"]/g, c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
 /* ============ UPDATE CHECKER ============ */
-var APP_VERSION_CODE = 12;
-var APP_VERSION_NAME = "2.2";
+var APP_VERSION_CODE = 13;
+var APP_VERSION_NAME = "2.3";
 var UPDATE_VERSION_URL = "https://raw.githubusercontent.com/privatelabellabsllc-del/pll-command-lab/main/mtuner/version.json";
 function checkForUpdate(){
   try{
