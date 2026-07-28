@@ -1,6 +1,8 @@
 {
-  "id": "morning-2026-07-25-c98cfe8584bf",
-  "ts": "2026-07-25T11:03:40Z",
+  "id": "morning-brief-2026-07-28-110212z",
+  "ts": "2026-07-28T11:02:12Z",
   "status": "completed",
-  "text": "Morning brief loaded for 2026-07-25."
+  "agent": "PLL Consultant",
+  "text": "Morning brief loaded for 2026-07-28. First lane: clear the move deposit and hi-lo confirmation; then send Natugeda a verified production update, close Ashley\u2019s label/payment loop, and qualify Chris\u2019s sporting-balm inquiry. CRM live re-check is blocked by an expired browser session.",
+  "spoken_text": "Sam, the move is the first lane. The mover needs a replacement payment method and a hi-lo decision before anything else. After that, get Natugeda a verified production update, then close Ashley\u2019s label and payment questions. The CRM session is logged out, so I have not treated its old overdue-task count or assignment defect as current proof."
 }

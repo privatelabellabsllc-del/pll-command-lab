@@ -1,137 +1,132 @@
 {
-  "date": "2026-07-25",
-  "ts": "2026-07-25T11:03:40Z",
+  "date": "2026-07-28",
+  "ts": "2026-07-28T11:02:12Z",
   "brief": [
     {
-      "t": "Finish Victor Armendarez’s verified two-SKU costing and quote first. CRM still shows the task as quoted, but there is no fresh evidence the customer received final pricing; packaging compatibility and full cost inputs remain the gate.",
+      "t": "First: protect today\u2019s facility move. Michigan Office Movers says the move deposit card was declined and needs a replacement card; they also need a yes/no on the hi-lo at origin. This is a same-day operational stop, not inbox cleanup.",
       "hot": true
     },
     {
-      "t": "Kenna’s Terra Lotus work is moving: WhatsApp says a Monday conference call is planned and she needs the cleanser and oil cleanser. Confirm the exact Monday time and make sure Ron/Aidan have the sample and raw-material path ready.",
+      "t": "Natugeda requested an immediate production-status and estimated-timeline update in WhatsApp last night. Give a verified status today; no production or ship date without operations confirmation.",
       "hot": true
     },
     {
-      "t": "Ashley / Earth and Ash thanked Laura for the invoice, but payment is still not confirmed. She also changed the label direction to paper and is asking for the sample-to-print timeline; answer both without promising an unsupported date.",
+      "t": "Ashley / Earth and Ash is waiting on the paper-label sample-to-print process for three products. Laura also said the invoice would go out; payment remains unconfirmed. Answer the label workflow and confirm invoice/payment before any purchase promise.",
       "hot": true
     },
     {
-      "t": "ELOIRE’s promised dry-shampoo reorder tiers and packaging notes still have no fresh delivery evidence. Send the verified 500- and 1,000-unit pricing and ask Diana for the reorder decision.",
+      "t": "Chris, an Australian brand, asked overnight whether PLL makes sporting balms and creams and requested a call. Qualify product scope, target volume, U.S. launch timing, and regulatory needs before scheduling.",
       "hot": true
     },
     {
-      "t": "Tavro / Ben Kar remains a large stalled opportunity with no confirmed proposal or recap since June 30. Send the decision-driving proposal or recap today; do not let this roll again.",
+      "t": "The new facility move is now a direct revenue-risk constraint: customer commitments must be checked against actual production capacity and material access today. Do not promise dates while the move and equipment plan are unresolved.",
       "hot": true
     },
     {
-      "t": "Ben Santus / Vellume is booked for Monday, July 27 at 11:00 AM ET. Bring real numbers for the 500–1,000-unit tallow balm with copper peptide; the call is now the next confirmed customer commitment.",
-      "hot": true
+      "t": "Ephix has a current 10,000-jar quote at an average delivered unit price of $0.608 to the new Farmington Hills address. A W-9 and sales-tax exemption are still required to remove tax; decide release only after documents and approval are in hand.",
+      "hot": false
     },
     {
-      "t": "CRM still shows 11 tasks with 8 overdue, and Laura’s July 24 issue thread still reports no usable Assign To list. Treat the assignment defect as open; do not call it fixed without live verification.",
+      "t": "CRM remains an accountability blocker: the most recent captured dashboard showed 11 tasks, 8 overdue, and an open customer-page Assign To defect. Live re-verification is blocked because the browser session is logged out; do not mark either condition resolved.",
       "hot": false
     }
   ],
   "next": [
-    "Finish Victor’s verified costing and quote delivery",
-    "Confirm Kenna’s Monday Terra Lotus call time and prepare cleanser/oil-cleanser requirements",
-    "Close Ashley’s invoice/payment and paper-label questions, then send ELOIRE pricing",
-    "Prepare Vellume’s Monday 11:00 AM ET call with verified numbers"
+    "Resolve the mover deposit and hi-lo confirmation before any other work",
+    "Send Natugeda a verified production-status response",
+    "Close Ashley\u2019s label-process and invoice/payment loop",
+    "Qualify Chris\u2019s sporting-balm inquiry, then release Ephix only with documents"
   ],
   "kb": [
     {
       "keys": [
-        "victor",
-        "armendarez",
-        "curl",
-        "edge",
-        "gel",
-        "quote"
+        "move",
+        "mover",
+        "deposit",
+        "card",
+        "hi-lo",
+        "forklift"
       ],
-      "a": "Victor’s CRM task still appears as quoted, but fresh evidence does not confirm final pricing was delivered. Full cost inputs and packaging compatibility remain unresolved; do not present a customer price or production date until verified."
+      "a": "Michigan Office Movers reported on July 27 that the move-deposit card was declined and asked for a replacement card, plus confirmation whether a hi-lo will load product at origin. Treat both as same-day move blockers; no confirmation of resolution exists."
     },
     {
       "keys": [
-        "aloetallow",
-        "kyle",
-        "reorder",
-        "ready"
+        "natugeda",
+        "daniela",
+        "genesis",
+        "production",
+        "timeline"
       ],
-      "a": "Kyle at ALOETALLOW wrote “Ready when u are” in WhatsApp on July 23. Treat this as an immediate current-customer reorder opportunity: book a specific meeting and establish quantity, timing, and any changes before quoting or promising production."
+      "a": "Natugeda asked in WhatsApp on July 27 for production status and an estimated timeline as soon as possible. No verified current production stage or delivery date is available; operations must confirm before replying."
     },
     {
       "keys": [
         "ashley",
         "earth",
         "ash",
-        "miron",
+        "labels",
+        "paper",
         "invoice",
-        "payment"
+        "miron"
       ],
-      "a": "Ashley thanked Laura for the invoice, but payment is not confirmed. She now wants paper labels and asked for the sample-to-final-print timeline; answer the process and keep all dates conditional on the outside print partner."
+      "a": "Ashley selected paper labels for the three Earth and Ash products and needs the sample-to-print process for an outside partner. Laura said an invoice would be sent for the Miron packaging, but payment is not confirmed; keep label timing conditional on artwork approval and printer lead time."
     },
     {
       "keys": [
-        "diana",
-        "eloire",
-        "elior",
-        "dry",
-        "shampoo",
-        "reorder"
+        "chris",
+        "australia",
+        "sporting",
+        "balm",
+        "cream",
+        "call"
       ],
-      "a": "Diana/ELOIRE’s promised 500- and 1,000-unit dry-shampoo reorder tiers and packaging notes still lack fresh delivery evidence. Send only verified pricing and notes, then ask for the reorder decision."
-    },
-    {
-      "keys": [
-        "ben",
-        "kar",
-        "tavro",
-        "proposal",
-        "tallow",
-        "argan"
-      ],
-      "a": "Ben Santus/Vellume is booked for Monday, July 27 at 11:00 AM ET. The project is a white-label tallow balm with copper peptide, targeting 500–1,000 units; bring verified pricing and packaging direction, not guesses."
-    },
-    {
-      "keys": [
-        "jabari",
-        "work",
-        "wealth",
-        "saturday",
-        "call",
-        "packaging"
-      ],
-      "a": "Jabari’s Friday July 24 10:00 AM ET call link was sent by email; the prior Saturday booking is stale and should not be presented as a current commitment. No call outcome is confirmed in the fresh evidence."
-    },
-    {
-      "keys": [
-        "yanay",
-        "luxivelle",
-        "hair",
-        "mask",
-        "bonding",
-        "oil"
-      ],
-      "a": "Yanay/Luxivelle received a July 24 response confirming PLL can develop the hydrating hair mask and bonding hair oil from scratch. Her requested scope remains about 500 units each with custom formulation, samples, packaging, logo printing, labels, and next-year timing; costs and lead time are unverified."
+      "a": "Chris submitted a Shopify contact form overnight asking whether PLL makes sporting balms and creams for an Australian brand expanding into the U.S. Qualify products, units, launch timing, and regulatory requirements before scheduling a call or promising capability."
     },
     {
       "keys": [
         "ephix",
-        "sample",
-        "bottles",
+        "jars",
+        "giveaway",
         "stephen",
-        "gould"
+        "gould",
+        "w9"
       ],
-      "a": "Stephen Gould quoted Ephix 25 each of two blank sample-bottle types for $155 including shipping, with a 7–10 day lead time. Aidan must provide a W-9 and sales-tax exemption form to remove tax from the final invoice, then confirm release."
+      "a": "Stephen Gould quoted 10,000 Ephix giveaway jars delivered to the new address at an average $0.608 per unit. A W-9 and sales-tax exemption form are required to remove tax from the final invoice; release is not confirmed."
+    },
+    {
+      "keys": [
+        "obelis",
+        "pif",
+        "cpsr",
+        "eu",
+        "lip",
+        "oil",
+        "dry",
+        "shampoo"
+      ],
+      "a": "Obelis quoted EU PIF review at \u20ac310 per product and CPSR creation at \u20ac360 per product, with a standard six-week timeline, for the Lip Oil and Dry Shampoo request. They need PLL\u2019s company name, address, and VAT/tax ID for an official quote; no purchase approval is recorded."
+    },
+    {
+      "keys": [
+        "victor",
+        "armendarez",
+        "curl",
+        "edge",
+        "quote",
+        "packaging"
+      ],
+      "a": "Victor\u2019s existing task is due July 31. The latest authoritative update remains that PLL contacted him and he will verify compatibility of his packaging components with the Edge Control formula; final quote inputs are still not verified."
     },
     {
       "keys": [
         "kenna",
         "terra",
         "lotus",
-        "samples",
-        "tracking"
+        "cleanser",
+        "oil",
+        "cleanser"
       ],
-      "a": "WhatsApp shows Kenna’s Terra Lotus work moving toward a conference call Monday, with Kenna asking for cleanser and oil cleanser support. The exact time is not confirmed, and Ron/Aidan still need to confirm samples, raw materials, and pricing before any commitment."
+      "a": "The last confirmed Terra Lotus direction is that Kenna needs cleanser and oil-cleanser support. The previously proposed Monday call time never became confirmed evidence; do not present it as scheduled."
     },
     {
       "keys": [
@@ -139,55 +134,43 @@
         "assign",
         "task",
         "dropdown",
-        "issue"
+        "overdue"
       ],
-      "a": "CRM live task view still shows 11 tasks and 8 overdue. Team chat’s latest issue is Laura’s July 24 report that customer-page task creation still has no usable Assign To team-member list; no fix or verification is recorded."
+      "a": "The last captured CRM dashboard showed 11 tasks and 8 overdue. CRM Development / Issues most recently repeated that customer-page task creation lacks a usable Assign To list. The live CRM browser session is currently logged out, so those conditions require fresh authenticated verification."
     },
     {
       "keys": [
-        "smooth",
-        "crack",
-        "rachel",
-        "demo",
-        "scents"
+        "pipeline",
+        "revenue",
+        "tasks",
+        "priority"
       ],
-      "a": "Rachel at Smooth Crack asked July 23 for the available products for demo purposes and to ensure all scents are accounted for. Sales/operations should send a verified available-product and scent list; do not send an unverified inventory promise."
-    },
-    {
-      "keys": [
-        "grace",
-        "arit",
-        "danielle",
-        "lead",
-        "brand",
-        "development"
-      ],
-      "a": "New brand-development replies need a fast qualification handoff: Grace asked for a call, Arit remains interested and needs MOQ guidance, and Danielle wants a pre-formulated serum and moisturizer but only about 20 units each. Qualify fit and MOQ without offering unsupported small-run commitments."
+      "a": "Today\u2019s operating lane is move continuity first, then verified customer production communication, then payment/label and new-lead qualification. Protect existing commitments; do not turn unverified emails or chat requests into promised dates or pricing."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Finish and deliver Victor Armendarez’s verified two-SKU quote",
-      "why": "CRM task remains open in effect despite a Quoted label; no fresh delivery evidence, and packaging/cost gates remain.",
-      "owner": "Sam / Aidan / Ronald",
-      "due": "Today",
+      "title": "Clear the move deposit and confirm hi-lo coverage",
+      "why": "Mover reported a declined deposit card and needs a loading-equipment decision for the move.",
+      "owner": "Sam / Aidan",
+      "due": "Immediately \u2014 move day",
       "priority": "critical",
-      "revenue": "2,000 units each of Curl Defining Cream and Edge Gel; exact value unverified"
+      "revenue": "Protects facility continuity; amount unverified"
     },
     {
       "rank": 2,
-      "title": "Confirm Kenna’s Monday Terra Lotus conference call and requirements",
-      "why": "WhatsApp says Monday is planned and Kenna needs cleanser and oil cleanser support; time and readiness are unconfirmed.",
-      "owner": "Sam / Laura / Ronald / Aidan",
-      "due": "Today",
+      "title": "Send Natugeda a verified production-status update",
+      "why": "Customer requested an update and estimated timeline as soon as possible.",
+      "owner": "Operations / Laura",
+      "due": "Today \u2014 first customer response after move blocker",
       "priority": "critical",
-      "revenue": "Returning-customer opportunity; amount unverified"
+      "revenue": "Active production relationship; amount unverified"
     },
     {
       "rank": 3,
-      "title": "Close Ashley / Earth and Ash invoice, payment, and paper-label questions",
-      "why": "Invoice was acknowledged, but payment is not confirmed; label sample and outside-print timing are now blocking clarity.",
+      "title": "Close Ashley\u2019s paper-label process and invoice/payment status",
+      "why": "Customer needs label-process clarity and payment remains unconfirmed.",
       "owner": "Laura / operations",
       "due": "Today",
       "priority": "critical",
@@ -195,273 +178,212 @@
     },
     {
       "rank": 4,
-      "title": "Deliver Diana / ELOIRE dry-shampoo reorder tiers and packaging notes",
-      "why": "The July 23 commitment still has no fresh completion evidence.",
-      "owner": "Sam / Aidan",
-      "due": "Overdue — complete today",
-      "priority": "critical",
-      "revenue": "Returning-customer 500- or 1,000-unit reorder"
+      "title": "Qualify Chris\u2019s Australian sporting-balm/cream inquiry",
+      "why": "Fresh inbound request for a call; scope and scale are unknown.",
+      "owner": "Nikkie",
+      "due": "Today",
+      "priority": "high",
+      "revenue": "New lead; unverified"
     },
     {
       "rank": 5,
-      "title": "Send Tavro proposal or decision-driving recap to Ben Kar",
-      "why": "The large opportunity still lacks confirmed delivery since June 30.",
-      "owner": "Sam",
+      "title": "Verify current production capacity against move-day commitments",
+      "why": "Facility move can disrupt materials, equipment, and production timing.",
+      "owner": "Aidan / Ronald / operations",
       "due": "Today",
-      "priority": "critical",
-      "revenue": "Approximately 30,000 units; exact value unverified"
+      "priority": "high",
+      "revenue": "Protects active orders"
     },
     {
       "rank": 6,
-      "title": "Prepare Ben Santus / Vellume Monday 11:00 AM ET call",
-      "why": "A confirmed customer call is booked; bring verified pricing for the 500–1,000-unit tallow balm with copper peptide.",
-      "owner": "Sam / Laura",
-      "due": "Monday, July 27 at 11:00 AM ET",
-      "priority": "high",
-      "revenue": "500–1,000 units; exact value unverified"
-    },
-    {
-      "rank": 7,
-      "title": "Release Ephix sample-bottle order after documentation",
-      "why": "Vendor quote remains $155 including shipping with W-9 and exemption paperwork required to remove tax.",
+      "title": "Release Ephix jar order only after documents and approval",
+      "why": "10,000-jar quote is current; tax documents remain required.",
       "owner": "Aidan",
       "due": "Today",
       "priority": "high",
       "revenue": "Operational support for Ephix launch"
     },
     {
+      "rank": 7,
+      "title": "Obtain official Obelis quote inputs for EU PIF/CPSR work",
+      "why": "Vendor provided unit fees and standard lead time but needs company details.",
+      "owner": "Ronald / Laura",
+      "due": "Today",
+      "priority": "medium",
+      "revenue": "EU compliance support; customer/project not verified"
+    },
+    {
       "rank": 8,
-      "title": "Fix CRM customer-page task assignment defect",
-      "why": "Laura’s latest issue report still has no usable assignee list; verify adjacent task views after any claimed fix.",
-      "owner": "CRM Developer",
-      "due": "Open — verify immediately after claimed fix",
+      "title": "Re-authenticate and verify CRM overdue tasks and assignment defect",
+      "why": "Last evidence showed 8 overdue tasks and a broken customer-page assignee list; current browser session is logged out.",
+      "owner": "CRM Developer / Sam",
+      "due": "Today",
       "priority": "high",
-      "revenue": "Operational; avoids unowned and overdue work"
+      "revenue": "Operational control"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Complete Victor’s verified quote before moving to Kenna and Ashley.",
+      "top_task": "Clear the move deposit and hi-lo decision. Do not jump to email cleanup before this is closed.",
       "tasks": [
         {
-          "title": "Review/send Victor quote",
-          "due": "Today"
+          "title": "Provide acceptable payment method to mover",
+          "due": "Immediately"
         },
         {
-          "title": "Confirm Kenna Monday call and Terra Lotus requirements",
-          "due": "Today"
-        },
-        {
-          "title": "Close Ashley invoice/payment and label questions",
-          "due": "Today"
-        },
-        {
-          "title": "Send ELOIRE and Tavro close-the-loop deliverables",
-          "due": "Today"
-        },
-        {
-          "title": "Prepare Vellume Monday call",
-          "due": "Open"
+          "title": "Confirm hi-lo coverage at origin",
+          "due": "Immediately"
         }
       ],
-      "notes": "Stay in this order. Do not switch into general inbox cleanup until the revenue lane is complete."
+      "notes": "The move is today\u2019s gating lane."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Supply verified Victor costing and prepare Terra Lotus/Ephix operational inputs.",
+      "top_task": "Confirm move-day equipment/material access and the verified Natugeda production facts.",
       "tasks": [
         {
-          "title": "Complete Victor full cost inputs",
+          "title": "Confirm hi-lo or alternate load plan",
+          "due": "Immediately"
+        },
+        {
+          "title": "Verify Natugeda production status and timeline",
           "due": "Today"
         },
         {
-          "title": "Confirm Terra Lotus cleanser/oil-cleanser sample and raw-material status",
+          "title": "Provide Ephix W-9 and exemption form if release approved",
           "due": "Today"
-        },
-        {
-          "title": "Support ELOIRE pricing and packaging notes",
-          "due": "Today"
-        },
-        {
-          "title": "Provide Ephix W-9 and exemption form / release order",
-          "due": "Today"
-        },
-        {
-          "title": "Confirm Kenna / Terra Lotus tracking",
-          "due": "Open"
         }
       ],
-      "notes": "Victor packaging compatibility is still awaiting confirmation; do not invent a production commitment."
+      "notes": "No production dates without live confirmation."
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Convert Kenna and Ashley WhatsApp activity into confirmed dates and payment.",
+      "top_task": "Give Ashley a controlled paper-label process answer and confirm payment status.",
       "tasks": [
         {
-          "title": "Confirm Kenna Monday meeting time",
+          "title": "Reply to Ashley on sample-to-print workflow",
           "due": "Today"
         },
         {
-          "title": "Confirm Ashley invoice/payment status",
+          "title": "Confirm Ashley invoice sent and payment status",
           "due": "Today"
         },
         {
-          "title": "Answer Ashley paper-label sample-to-print question",
+          "title": "Coordinate Natugeda customer response after ops facts are verified",
           "due": "Today"
-        },
-        {
-          "title": "Send Smooth Crack verified demo/scent availability",
-          "due": "Today"
-        },
-        {
-          "title": "Track CRM assignee defect",
-          "due": "Open"
         }
       ],
-      "notes": "Ashley acknowledged the invoice but payment is unconfirmed; the label timeline depends on an outside partner."
+      "notes": "Outside-printer timing must be conditional."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Provide the formula and raw-material inputs needed for Victor and Terra Lotus.",
+      "top_task": "Support verified production and regulatory inputs.",
       "tasks": [
         {
-          "title": "Confirm Victor formula, material, and process inputs",
+          "title": "Confirm Natugeda production facts",
           "due": "Today"
         },
         {
-          "title": "Confirm Terra Lotus cleanser/oil-cleanser requirements",
-          "due": "Today"
-        },
-        {
-          "title": "Support Kenna sample status",
+          "title": "Provide Obelis requested company/project inputs for official quote",
           "due": "Today"
         }
       ],
-      "notes": "No unsupported production commitment; Monday call time is not confirmed."
+      "notes": "Do not make EU compliance commitments without approval."
     },
     "nikkie": {
       "display_name": "Nikkie",
-      "top_task": "Qualify new leads while keeping the current revenue lane moving.",
+      "top_task": "Qualify the new Australian sporting-balm/cream inquiry.",
       "tasks": [
         {
-          "title": "Support Vellume call preparation",
-          "due": "Today"
-        },
-        {
-          "title": "Follow up Grace and Arit qualification",
-          "due": "Today"
-        },
-        {
-          "title": "Qualify Danielle’s 40-units-each request and MOQ fit",
-          "due": "Today"
-        },
-        {
-          "title": "Maintain Yanay/Luxivelle development follow-up",
+          "title": "Get Chris product, unit, launch, and regulatory requirements",
           "due": "Today"
         }
       ],
-      "notes": "Fresh email evidence shows Danielle stated 40 units each, still below confirmed manufacturing scale; qualify rather than promise."
+      "notes": "Schedule only after basic qualification."
     },
     "crmdeveloper": {
       "display_name": "CRM Developer",
-      "top_task": "Restore customer-page task assignee selection and provide a ready-for-verification update.",
+      "top_task": "Restore and prove customer-page task assignment selection.",
       "tasks": [
         {
-          "title": "Add working Assign To team-member list in customer-page task creation",
-          "due": "Today"
-        },
-        {
-          "title": "Resolve related task/notes routing defects",
-          "due": "Today"
-        },
-        {
-          "title": "Verify pipeline task links and formula/customer context",
-          "due": "Today"
+          "title": "Provide fix/verification for Assign To team-member list",
+          "due": "Open \u2014 verify immediately"
         }
       ],
-      "notes": "Latest team-chat report is July 24; no resolution is recorded."
+      "notes": "Latest captured issue remains unresolved; authenticated live check is pending."
     }
   },
   "revenueActions": [
     {
-      "title": "Deliver Victor pricing",
-      "why": "CRM still lacks confirmed two-SKU quote delivery.",
+      "title": "Protect move-day continuity",
+      "why": "Deposit payment and loading equipment are unresolved.",
       "est_value": "Unverified",
-      "next_step": "Complete full cost inputs and compatibility status; send only verified terms.",
-      "owner": "Sam / Aidan / Ronald",
-      "timing": "First",
-      "value": "4,000 total units requested"
-    },
-    {
-      "title": "Advance Kenna / Terra Lotus",
-      "why": "Monday conference call is planned and cleanser/oil cleanser needs are active.",
-      "est_value": "Unverified",
-      "next_step": "Confirm call time, requirements, sample status, and next decision.",
-      "owner": "Sam / Laura / Ronald / Aidan",
-      "timing": "Immediately after Victor",
-      "value": "Returning-customer opportunity"
-    },
-    {
-      "title": "Convert Ashley invoice into payment",
-      "why": "Invoice was acknowledged, but payment is not confirmed.",
-      "est_value": "Unverified",
-      "next_step": "Confirm payment status and answer paper-label sample-to-print process.",
-      "owner": "Laura / operations",
-      "timing": "Today",
-      "value": "Active three-product order"
-    },
-    {
-      "title": "Close ELOIRE reorder quote",
-      "why": "July 23 commitment remains unconfirmed.",
-      "est_value": "Unverified",
-      "next_step": "Send verified 500- and 1,000-unit tiers and packaging notes, then request decision.",
+      "next_step": "Confirm mover payment and hi-lo plan.",
       "owner": "Sam / Aidan",
-      "timing": "Today",
-      "value": "Returning-customer reorder"
+      "timing": "First",
+      "value": "Protects all active work"
     },
     {
-      "title": "Move Tavro to decision",
-      "why": "Largest known-volume opportunity still lacks confirmed proposal/recap.",
+      "title": "Retain Natugeda confidence",
+      "why": "Customer requested an urgent status and estimate.",
       "est_value": "Unverified",
-      "next_step": "Send proposal or concrete recap and ask for deposit/timeline decision.",
-      "owner": "Sam",
-      "timing": "Today",
-      "value": "Approximately 30,000 units"
+      "next_step": "Confirm operational facts, then send verified status.",
+      "owner": "Operations / Laura",
+      "timing": "After move gate",
+      "value": "Active production customer"
     },
     {
-      "title": "Prepare Vellume Monday call",
-      "why": "Ben Santus is booked for Monday at 11:00 AM ET and expects real numbers.",
+      "title": "Convert Ashley order",
+      "why": "Packaging invoice/payment and paper-label decision require a clear response.",
       "est_value": "Unverified",
-      "next_step": "Bring verified pricing and packaging direction for 500–1,000 units.",
-      "owner": "Sam / Laura",
-      "timing": "Monday, July 27 at 11:00 AM ET",
-      "value": "500–1,000 units"
+      "next_step": "Confirm invoice/payment and issue outside-print process.",
+      "owner": "Laura",
+      "timing": "Today",
+      "value": "Three-product order"
+    },
+    {
+      "title": "Qualify Chris lead",
+      "why": "Fresh inbound U.S.-expansion inquiry for sporting balms/creams.",
+      "est_value": "Unverified",
+      "next_step": "Collect scope, volume, timing, and compliance needs.",
+      "owner": "Nikkie",
+      "timing": "Today",
+      "value": "New lead"
+    },
+    {
+      "title": "Advance Ephix packaging",
+      "why": "Vendor quote received for 10,000 giveaway jars.",
+      "est_value": "$6,080 delivered before tax, based on quoted average unit price",
+      "next_step": "Obtain documents and approval before release.",
+      "owner": "Aidan",
+      "timing": "Today",
+      "value": "10,000 jars"
     }
   ],
   "pipelineStat": {
     "total_value": "$1,327,800",
     "active_deals": 9,
     "hot": [
-      "Victor Armendarez — both-SKU quote due Friday",
-      "ALOETALLOW / Kyle — ready to schedule reorder",
-      "Ashley / Earth and Ash — invoice acknowledged; payment unconfirmed",
-      "Ben Kar / Tavro — proposal/re-cap not confirmed"
+      "Natugeda \u2014 urgent production-status request",
+      "Ashley / Earth and Ash \u2014 paper-label and payment follow-up",
+      "Chris \u2014 new sporting balm/cream inquiry",
+      "Ephix \u2014 10,000 jar quote pending documents"
     ],
     "stalled": [
-      "ELOIRE — July 23 quote commitment lacks completion evidence",
-      "Tavro — proposal/re-cap outstanding since June 30",
-      "CRM task assignment — customer-page Assign To list still missing"
+      "Move deposit and hi-lo confirmation",
+      "CRM customer-page Assign To list",
+      "Victor packaging compatibility / cost inputs"
     ],
     "activeDeals": 9,
     "pipelineValue": 1327800,
     "inProduction": 20,
     "depositsCollected": 57454.99,
-    "note": "Live CRM task/team-chat views checked July 25: 11 tasks, 8 overdue, 20 projects running, 9 active deals; pipeline value and deposits remain $1,327,800 and $57,454.99. Dashboard greeting/date still displayed Wednesday, July 22, so the CRM date display appears stale. Latest team-chat issue remains the missing customer-page Assign To list."
+    "note": "Last authenticated CRM capture was July 25 and showed 11 tasks, 8 overdue, 20 projects, 9 active deals, $1,327,800 pipeline, and $57,454.99 deposits. On July 28, the browser session is logged out, so live CRM figures and the assignment defect were not re-verified. Fresh Outlook and accessible WhatsApp evidence were reviewed July 28."
   },
   "adsAgentBrief": {
     "status": "Not refreshed in this morning workflow. Do not rely on prior-day ad-performance or attribution claims until the Ads workflow supplies fresh verified data.",
-    "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
+    "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
     "tracking": "No fresh verification performed in this refresh.",
     "governance": "Do not alter campaigns or make attribution claims from this brief."
   }
