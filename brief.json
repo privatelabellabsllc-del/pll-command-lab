@@ -394,7 +394,7 @@
     "status": "Fresh source-backed cache \u2014 read only; no Google Ads behavior or settings were changed. Exact seven-ad identity remains unproven, so legacy and unrelated ads are excluded and results are campaign-scope only.",
     "updatedAt": "2026-07-30T13:50:00Z",
     "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
-    "snapshot": "Jul 24\u201330 campaign-scope: $133.64 spend, 425 impressions, 68 clicks, 16.00% CTR, $1.97 average CPC; 0 verified Ads-attributed leads / 0 booked calls.",
+    "snapshot": "Jul 24\u201330 campaign-scope: $123.95 spend, 422 impressions, 68 clicks, 16.11% CTR, $1.82 average CPC; 0 verified Ads-attributed leads / 0 booked calls.",
     "recommendation": "Have Ads Agent run a read-only search-term and landing/form health review for Contract Manufacturing, especially July 28; return one negative-keyword or route recommendation. Do not change bids, budget, ads, or campaigns without Sam approval.",
     "governance": "No consequential change without Sam approval."
   },
@@ -526,7 +526,7 @@
       "funnel": "NOT VERIFIED in this refresh; landing/form route not click-tested in this read-only data pull.",
       "status": "Both dedicated campaigns ENABLED and ELIGIBLE."
     },
-    "best": "Campaign-scope: Samples has lower current-period average CPC ($1.49) and $57.66 spend / 32 clicks; this is not a lead-quality conclusion.",
+    "best": "Campaign-scope: Samples has lower current-period average CPC ($1.49) and $47.66 spend / 32 clicks; this is not a lead-quality conclusion.",
     "worst": "Campaign-scope: Contract Manufacturing used $76.30 for 36 clicks at $2.12 average CPC; July 28 alone was $36.91 for 13 clicks ($2.84 CPC). No lead data supports changing it.",
     "waste": "Search-term report was not available from the supplied read-only tools; no search-term waste finding is asserted. Watch the Contract Manufacturing July 28 CPC spike; it is a review signal, not proven waste.",
     "recommendation": {
@@ -537,7 +537,7 @@
     },
     "spoken": {
       "today": "Sam, today is preliminary. The two new dedicated campaigns have spent $4.46 for 3 clicks and 30 impressions, all from Samples. Contract Manufacturing has not generated a click today. There are no verified Ads-attributed leads or booked calls yet. My read is that it is too early to judge today, so I recommend a read-only search-term and funnel review before any change.",
-      "performance": "Sam, the dedicated new-campaign scope is live, but I cannot yet prove the exact seven-ad roster, so I am keeping legacy ads out and labeling this campaign-scope data. From July 24 through 30, the two new campaigns spent $123.95 for 68 clicks from 422 impressions, a 16.11 percent CTR and $1.82 average CPC. The prior seven-day window spent $107.88 for 53 clicks from 343 impressions, a 15.5 percent CTR and $2.04 CPC. There are no verified Ads-attributed leads or booked calls in the available evidence. I recommend a read-only Contract Manufacturing search-term and funnel review before approving any optimization."
+      "performance": "Sam, the dedicated new-campaign scope is live, but I cannot yet prove the exact seven-ad roster, so I am keeping legacy ads out and labeling this campaign-scope data. From July 24 through 30, the two new campaigns spent $123.95 for 68 clicks from 422 impressions, a 16.11 percent CTR and $1.82 average CPC. The prior seven-day window spent $107.92 for 53 clicks from 343 impressions, a 15.5 percent CTR and $2.04 CPC. There are no verified Ads-attributed leads or booked calls in the available evidence. I recommend a read-only Contract Manufacturing search-term and funnel review before approving any optimization."
     }
   }
 }
