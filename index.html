@@ -980,10 +980,18 @@ function say(text, cb){
     try { speechSynthesis.speak(u); } catch(e){ step(); }
   }
   next();
-  // safety net: never leave the state machine stuck in SPEAKING
+  // Safety net: never leave the state machine stuck in SPEAKING. Some platforms
+  // (no audio route, backgrounded tab, engine glitch) never fire onend/onerror.
   setTimeout(function(){
     if (!finished && seq === speakSeq && !(speechSynthesis.speaking || speechSynthesis.pending)) finish();
   }, 1500 + spoken.length * 95);
+  setTimeout(function(){
+    if (!finished && seq === speakSeq){
+      clog('Speech engine never reported completion — releasing voice state.', 'warn');
+      try { speechSynthesis.cancel(); } catch(e){}
+      finish();
+    }
+  }, 3000 + spoken.length * 130);
 }
 function wave(on) { document.getElementById('wave').classList.toggle('on', on); }
 function toggleMute() {
@@ -1063,7 +1071,7 @@ let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTime
 let followupCount = 0;
 let confirmMode = false;
 let lastDispatchSig = '', lastDispatchTs = 0;
-const CC_VOICE_BUILD = 'voice-v7.0';
+const CC_VOICE_BUILD = 'voice-v7.0.1';
 const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|send it|that'?s all)\s*[.!?]?$/;
 
 // ---- confirmation understanding -------------------------------------------------
@@ -1486,7 +1494,8 @@ function togglePower() {
     if (SR) { setVoiceState('ASLEEP'); } else { micState('unsupported'); }
     bootSeq();
   } else {
-    powered = false; clearTimeout(sleepTimer);
+    powered = false; clearTimeout(sleepTimer); clearTimeout(confirmTimer);
+    speakSeq++; speaking = false; confirmMode = false; wave(false); lastSpeechEndTs = 0;
     document.getElementById('powerBtn').textContent = '⚡ Power';
     document.getElementById('powerBtn').classList.remove('hot');
     setVoiceState('OFF');
