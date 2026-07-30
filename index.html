@@ -1854,8 +1854,15 @@ function markSpoken(a){
 }
 function isNewAnswer(a, startedAt, requestId){
   if (!a || !a.text) return false;
-  // V6.1: a reply belongs only to the request that created this watcher.
-  if (requestId && a.request_id !== requestId) return false;
+  // V6.2: exact request IDs remain the rule. The only exception is an explicitly
+  // published Ads-optimization recovery, used when Ads Agent finished but failed
+  // to POST its callback. Keep this narrow so unrelated replies can never attach.
+  if (requestId && a.request_id !== requestId) {
+    var pendingCmd = '';
+    try { pendingCmd = String((JSON.parse(localStorage.getItem('pll_pendingDispatch')||'{}').cmd)||'').toLowerCase(); } catch(e){}
+    var isPendingAdsOptimization = /\b(ads?|adwords|ppc|campaigns?)\b/.test(pendingCmd) && /\b(suggest|recommend|improv|optim|better|what should|next)\b/.test(pendingCmd);
+    if (!(a.recovery_for === 'ads_optimization' && isPendingAdsOptimization)) return false;
+  }
   // V5.3: never attach an older agent reply to the command Sam just spoke.
   // Allow a small clock tolerance, but reject stale answers from prior dispatches.
   if (startedAt && a.ts) {
