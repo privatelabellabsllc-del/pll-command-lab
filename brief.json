@@ -11,7 +11,7 @@
       "hot": true
     },
     {
-      "t": "Third: protect open customer production commitments. Natugeda still needs a verified Hair Oil production stage and date; do not let stale \u201cProduction Scheduled\u201d language substitute for an operations fact. Separately, PHYLARA has paused after sample satisfaction and requests its final formula/specifications plus confirmation of any balance.",
+      "t": "Third: protect open customer production commitments. Natugeda still needs a verified Hair Oil production stage and date; do not let stale “Production Scheduled” language substitute for an operations fact. Separately, PHYLARA has paused after sample satisfaction and requests its final formula/specifications plus confirmation of any balance.",
       "hot": true
     },
     {
@@ -33,7 +33,7 @@
   ],
   "next": [
     "Verify BuffMan machine hot-fill, batch-coding, quote scope, and $8,850 DDP before any commitment",
-    "Get Ashley\u2019s Miron invoice/order status and the white natural-paper-label quote",
+    "Get Ashley’s Miron invoice/order status and the white natural-paper-label quote",
     "Obtain Natugeda production facts; then handle PHYLARA formula/specs and balance confirmation",
     "Validate bitop, CH Robinson, and equipment-freight exposure against internal records"
   ],
@@ -48,7 +48,7 @@
         "batch coding",
         "yuhang"
       ],
-      "a": "On July 30, Aiden asked whether both proposed BuffMan filling machines support hot fill. Yuhang\u2019s forwarded freight quote is USD 8,850 DDP door-to-door; he asked what batch coding is required and indicated coding can print on bottles or labels. The quotation scope, machine configuration, coding method, and final landed cost need verification before payment, order, or shipment."
+      "a": "On July 30, Aiden asked whether both proposed BuffMan filling machines support hot fill. Yuhang’s forwarded freight quote is USD 8,850 DDP door-to-door; he asked what batch coding is required and indicated coding can print on bottles or labels. The quotation scope, machine configuration, coding method, and final landed cost need verification before payment, order, or shipment."
     },
     {
       "keys": [
@@ -61,7 +61,7 @@
         "paper",
         "invoice"
       ],
-      "a": "Ashley, rebranding Earth & Ash as Nymphaea, confirmed white natural paper labels and asked again July 29 for the Miron glass invoice so she can pay. Laura said a subcontracted label price takes 2\u20133 days and final approved rolls take about two weeks after payment; the Miron invoice/order status and label quote are not verified as complete."
+      "a": "Ashley, rebranding Earth & Ash as Nymphaea, confirmed white natural paper labels and asked again July 29 for the Miron glass invoice so she can pay. Laura said a subcontracted label price takes 2–3 days and final approved rolls take about two weeks after payment; the Miron invoice/order status and label quote are not verified as complete."
     },
     {
       "keys": [
@@ -83,7 +83,7 @@
         "specifications",
         "balance"
       ],
-      "a": "PHYLARA\u2019s Shannon says she is happy with the sample but is pausing the project for personal-timeline reasons. She requested the final formula/specifications and confirmation of any remaining balance. Treat this as a controlled pause: confirm release permissions, documents, and ledger status before replying."
+      "a": "PHYLARA’s Shannon says she is happy with the sample but is pausing the project for personal-timeline reasons. She requested the final formula/specifications and confirmation of any remaining balance. Treat this as a controlled pause: confirm release permissions, documents, and ledger status before replying."
     },
     {
       "keys": [
@@ -92,7 +92,7 @@
         "payable",
         "overdue"
       ],
-      "a": "bitop AG\u2019s July 29 dunning notice requested payment to avoid further fees. The amount, original invoice, and any material or production hold remain unverified; finance must match it to the ledger before payment."
+      "a": "bitop AG’s July 29 dunning notice requested payment to avoid further fees. The amount, original invoice, and any material or production hold remain unverified; finance must match it to the ledger before payment."
     },
     {
       "keys": [
@@ -113,7 +113,7 @@
         "quote",
         "packaging"
       ],
-      "a": "Victor\u2019s task is due July 31. The authoritative day update says PLL reached him; he will confirm packaging compatibility with the Edge Control formula. Full cost inputs and a final quote remain unverified."
+      "a": "Victor’s task is due July 31. The authoritative day update says PLL reached him; he will confirm packaging compatibility with the Edge Control formula. Full cost inputs and a final quote remain unverified."
     },
     {
       "keys": [
@@ -124,7 +124,7 @@
         "oil",
         "meeting"
       ],
-      "a": "The authoritative day update remains that Kenna\u2019s meeting was postponed to Tuesday, July 21 with no time confirmed. The confirmed product direction is cleanser and oil-cleanser support; no current meeting time, quote, or price is verified."
+      "a": "The authoritative day update remains that Kenna’s meeting was postponed to Tuesday, July 21 with no time confirmed. The confirmed product direction is cleanser and oil-cleanser support; no current meeting time, quote, or price is verified."
     },
     {
       "keys": [
@@ -134,7 +134,7 @@
         "4c",
         "hair"
       ],
-      "a": "Constance said Aleta\u2019s first hero product is a type-4C detangler intended to provide extra slip for thick and thin hair. Formula requirements, units, packaging, launch timing, and budget remain unqualified; no MOQ or price has been promised."
+      "a": "Constance said Aleta’s first hero product is a type-4C detangler intended to provide extra slip for thick and thin hair. Formula requirements, units, packaging, launch timing, and budget remain unqualified; no MOQ or price has been promised."
     },
     {
       "keys": [
@@ -271,7 +271,7 @@
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Convert Ashley\u2019s payment-ready packaging lane and protect customer communication.",
+      "top_task": "Convert Ashley’s payment-ready packaging lane and protect customer communication.",
       "tasks": [
         {
           "title": "Send/confirm Ashley invoice and order status; obtain white-paper-label quote",
@@ -375,9 +375,9 @@
     "active_deals": 9,
     "hot": [
       "BuffMan filling-line scope / $8,850 DDP decision",
-      "Ashley / Nymphaea \u2014 Miron invoice, glass order, and labels",
-      "Natugeda \u2014 verified Hair Oil production status",
-      "PHYLARA \u2014 controlled pause, formula/specifications, and balance"
+      "Ashley / Nymphaea — Miron invoice, glass order, and labels",
+      "Natugeda — verified Hair Oil production status",
+      "PHYLARA — controlled pause, formula/specifications, and balance"
     ],
     "stalled": [
       "bitop and CH Robinson validation",
@@ -391,154 +391,206 @@
     "note": "CRM was at the sign-in page July 30, so counts and values are carried forward from the last authenticated capture, not re-verified. Fresh WhatsApp evidence was reviewed July 30; Outlook search returned no messages since July 29. CRM Developer Gmail threads show no verified closure for the Assign To issue."
   },
   "adsAgentBrief": {
-    "status": "Fresh source-backed cache \u2014 read only; no Google Ads behavior or settings were changed. Exact seven-ad identity remains unproven, so legacy and unrelated ads are excluded and results are campaign-scope only.",
-    "updatedAt": "2026-07-30T13:50:00Z",
-    "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
-    "snapshot": "Jul 24\u201330 campaign-scope: $123.95 spend, 422 impressions, 68 clicks, 16.11% CTR, $1.82 average CPC; 0 verified Ads-attributed leads / 0 booked calls.",
-    "recommendation": "Have Ads Agent run a read-only search-term and landing/form health review for Contract Manufacturing, especially July 28; return one negative-keyword or route recommendation. Do not change bids, budget, ads, or campaigns without Sam approval.",
+    "status": "Fresh source-backed cache — read only; no Google Ads behavior or settings were changed. Ad-level pull was quota-blocked this cycle; stale ad-group values are explicitly labeled.",
+    "updatedAt": "2026-07-30T16:59:48.629Z",
+    "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
+    "snapshot": "Jul 24–30 campaign-scope: $127.90 spend, 445 impressions, 70 clicks, 15.73% CTR, $1.83 average CPC; 1 verified Ads-attributed lead / 0 paid-attributed booked calls.",
+    "recommendation": "Prioritize resolving the search_term_view GAQL tool gap so negative-keyword mining can run against the ~70 accumulated new-lane clicks. Keep budgets unchanged for now.",
     "governance": "No consequential change without Sam approval."
   },
   "adsIntelligence": {
-    "updatedAt": "2026-07-30T14:23:37.051216+00:00",
-    "source": "Ads Agent fresh Google Ads and lead-attribution review completed 2026-07-30 around 10:15am ET; read-only, legacy campaigns excluded.",
-    "scope": {
-      "requested": "Ads Agent-built net-new ads only",
-      "verified": "Two dedicated Search campaigns containing seven Ads-Agent-built ads; legacy campaigns excluded.",
-      "scopeUncertain": false,
-      "legacyExcluded": true
-    },
+    "updatedAt": "2026-07-30T16:59:48.629Z",
+    "source": "ads-agent-live",
+    "scope": "Ads-Agent-built net-new ads only: PLL-Search-ContractMfg-2026 (24049588003, 3 ad groups) + PLL-Search-Samples-2026 (24040031889, 1 ad group), 7 ads total across 7 ad groups. Legacy 3 campaigns (PMax Initial, New-Sales-Ad, Sales Campaign PLL) excluded from all figures.",
     "windows": {
-      "today": "2026-07-30 (preliminary)",
-      "current": "2026-07-24 through 2026-07-30",
-      "prior": "2026-07-17 through 2026-07-23"
+      "today": "2026-07-30 (partial, ~12:55pm ET)",
+      "current": "2026-07-24 to 2026-07-30",
+      "prior": "2026-07-17 to 2026-07-23 (contaminated baseline: ads paused until 7/20, contact form broken until 7/22 fix)"
     },
     "today": {
-      "spend": 4.46,
-      "impressions": 30,
-      "clicks": 3,
-      "ctr": 10.0,
-      "averageCpc": 1.49
+      "cost": 8.4,
+      "impressions": 53,
+      "clicks": 5,
+      "ctr": 9.43,
+      "cpc": 1.68,
+      "note": "partial day, preliminary"
     },
     "current": {
-      "spend": 123.95,
-      "impressions": 423,
-      "clicks": 68,
-      "ctr": 16.1,
-      "averageCpc": 1.82
+      "cost": 127.9,
+      "impressions": 445,
+      "clicks": 70,
+      "ctr": 15.73,
+      "cpc": 1.83
     },
     "prior": {
-      "spend": 107.93,
+      "cost": 107.93,
       "impressions": 343,
       "clicks": 53,
-      "ctr": 15.5,
-      "averageCpc": 2.04
+      "ctr": 15.45,
+      "cpc": 2.04,
+      "note": "contaminated baseline - directional only, not causal"
     },
-    "campaignBreakdown": {
-      "today": [
-        {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "primaryStatus": "ELIGIBLE",
-          "spend": 4.46,
-          "impressions": 27,
-          "clicks": 3,
-          "ctr": 11.11,
-          "averageCpc": 1.49
+    "campaignBreakdown": [
+      {
+        "name": "PLL-Search-ContractMfg-2026",
+        "campaignId": "24049588003",
+        "dailyBudget": 20,
+        "current": {
+          "cost": 78.75,
+          "impressions": 214,
+          "clicks": 37,
+          "ctr": 17.29,
+          "cpc": 2.13
         },
-        {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "primaryStatus": "ELIGIBLE",
-          "spend": 0.0,
-          "impressions": 3,
-          "clicks": 0,
-          "ctr": 0.0,
-          "averageCpc": null
-        }
-      ],
-      "current": [
-        {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "primaryStatus": "ELIGIBLE",
-          "spend": 47.66,
-          "impressions": 226,
-          "clicks": 32,
-          "ctr": 14.16,
-          "averageCpc": 1.49
-        },
-        {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "primaryStatus": "ELIGIBLE",
-          "spend": 76.29,
-          "impressions": 196,
-          "clicks": 36,
-          "ctr": 18.37,
-          "averageCpc": 2.12
-        }
-      ],
-      "prior": [
-        {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "primaryStatus": "ELIGIBLE",
-          "spend": 28.09,
-          "impressions": 68,
-          "clicks": 19,
-          "ctr": 27.94,
-          "averageCpc": 1.48
-        },
-        {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "primaryStatus": "ELIGIBLE",
-          "spend": 79.83,
+        "prior": {
+          "cost": 79.83,
           "impressions": 275,
           "clicks": 34,
           "ctr": 12.36,
-          "averageCpc": 2.35
+          "cpc": 2.35
         }
-      ]
-    },
-    "adBreakdown": {
-      "available": false,
-      "reason": "Exact seven-ad identity is not proven; no unrelated/legacy ads blended."
-    },
+      },
+      {
+        "name": "PLL-Search-Samples-2026",
+        "campaignId": "24040031889",
+        "dailyBudget": 10,
+        "current": {
+          "cost": 49.15,
+          "impressions": 231,
+          "clicks": 33,
+          "ctr": 14.29,
+          "cpc": 1.49
+        },
+        "prior": {
+          "cost": 28.09,
+          "impressions": 68,
+          "clicks": 19,
+          "ctr": 27.94,
+          "cpc": 1.48
+        }
+      }
+    ],
+    "adBreakdown": [
+      {
+        "adGroup": "2A Samples-PrivateLabel-Products",
+        "adGroupId": "200118475084",
+        "cost": 47.66,
+        "impressions": 226,
+        "clicks": 32,
+        "ctr": 14.2,
+        "cpc": 1.49,
+        "stale": true,
+        "staleSourceTime": "2026-07-30T10:15:00-04:00",
+        "note": "Fresh ad-level pull failed 3x on RESOURCE_EXHAUSTED this cycle; these are last-known values from the 10:15am run today, not fresh."
+      },
+      {
+        "adGroup": "1A ContractMfg-Cosmetic-Beauty",
+        "adGroupId": "204146230528",
+        "cost": 43.21,
+        "impressions": 125,
+        "clicks": 18,
+        "ctr": 14.4,
+        "cpc": 2.4,
+        "stale": true,
+        "staleSourceTime": "2026-07-30T10:15:00-04:00",
+        "note": "stale, see above"
+      },
+      {
+        "adGroup": "1C ContractMfg-Haircare",
+        "adGroupId": "197753979079",
+        "cost": 15.36,
+        "impressions": 41,
+        "clicks": 4,
+        "ctr": 9.8,
+        "cpc": 3.84,
+        "stale": true,
+        "staleSourceTime": "2026-07-30T10:15:00-04:00",
+        "note": "stale, see above"
+      },
+      {
+        "adGroup": "1B ContractMfg-Skincare",
+        "adGroupId": "204146231008",
+        "cost": 12.94,
+        "impressions": 29,
+        "clicks": 13,
+        "ctr": 44.8,
+        "cpc": 1.0,
+        "stale": true,
+        "staleSourceTime": "2026-07-30T10:15:00-04:00",
+        "note": "stale, see above; best performer as of 10:15am"
+      },
+      {
+        "adGroup": "3B ProductIntent-HairOil",
+        "adGroupId": "197753978559",
+        "cost": 4.79,
+        "impressions": 1,
+        "clicks": 1,
+        "ctr": 100,
+        "cpc": 4.79,
+        "stale": true,
+        "staleSourceTime": "2026-07-30T10:15:00-04:00",
+        "note": "stale; too little traffic to judge"
+      },
+      {
+        "adGroup": "3A ProductIntent-BeefTallow",
+        "adGroupId": "204146230728",
+        "cost": 0,
+        "impressions": 1,
+        "clicks": 0,
+        "ctr": 0,
+        "cpc": null,
+        "stale": true,
+        "staleSourceTime": "2026-07-30T10:15:00-04:00",
+        "note": "stale; too little traffic to judge"
+      },
+      {
+        "adGroup": "3C ProductIntent-BeardOil",
+        "adGroupId": "200118474604",
+        "cost": null,
+        "impressions": 0,
+        "clicks": 0,
+        "ctr": null,
+        "cpc": null,
+        "stale": true,
+        "staleSourceTime": "2026-07-30T10:15:00-04:00",
+        "note": "stale; dormant, 0 impressions as of 10:15am"
+      }
+    ],
     "leads": {
-      "qualifiedInboxInquiries": "12 unique inbound form leads; 2 currently qualified, 1 not qualified, 9 pending",
-      "verifiedAdsAttributedLeads": 1,
+      "qualifiedInboxInquiries": 12,
+      "verifiedAdsAttributed": 1,
       "bookedCalls": 3,
-      "paidAttributedBookedCalls": 0,
-      "cpl": "$123.95 per verified paid-attributed lead; $10.33 blended across all 12 leads is not true paid CPL",
-      "costPerBookedCall": "NOT MEASURABLE \u2014 none of the 3 booked calls were paid-attributed",
-      "attribution": "One lead was verified to the Samples campaign. One additional lead had mixed paid and ChatGPT signals and was not counted as cleanly Ads-attributed. Ten were unattributed/organic/direct/social."
+      "unattributed": 10,
+      "ambiguousPaidSignal": 1,
+      "cplBlended": 10.66,
+      "cplVerifiedPaid": 127.9,
+      "cplVerifiedPaidSamplesOnly": 49.15,
+      "costPerBookedCall": null,
+      "costPerBookedCallNote": "NOT MEASURABLE from paid spend - 0 of 3 booked calls in window are paid-attributed. Loose blended (not attributed): $127.90/3 = $42.63, not for budget decisions."
     },
     "health": {
-      "dailyCap": 30,
-      "campaignBudgets": "White Label Samples $10/day; Contract Manufacturing $20/day",
-      "capStatus": "Trailing seven-day spend was $123.95, 59% of the $210 weekly cap. July 28 reached $38.40 due to Google daily smoothing; no repeat over-delivery was reported.",
-      "funnel": "Lead delivery is functioning, but paid attribution remains incomplete; only 1 of 12 leads is cleanly tied to a Google Ads campaign.",
-      "status": "Both dedicated campaigns are ENABLED; legacy campaigns are excluded."
+      "contactForm": "working since 2026-07-22 fix",
+      "attributionCapture": "live and verified since 2026-07-27 (first clean gclid+campaign lead = Tiara); coverage thin, 10 of 12 trailing-7 leads unattributed",
+      "landingPages": "all 7 ad groups live, no reported issues this window",
+      "dailyCapStatus": "6 of 7 days under $30/day cap; 2026-07-28 over at $38.40 (128%), Google Ads daily-cap smoothing, already flagged, no repeat since",
+      "weeklyCapStatus": "under - $127.90 of $210 (61%)"
     },
-    "best": "Contract Manufacturing Skincare: 13 clicks from 29 impressions, 44.8% CTR, $1.00 average CPC on meaningful volume.",
-    "worst": "Contract Manufacturing Haircare: 4 clicks from 41 impressions, 9.8% CTR, $3.84 average CPC. Sample is still too small to call definitive waste.",
-    "waste": "Search-term-level waste cannot be verified because search-term reporting is unavailable. No ad group showed a full week of spend with zero clicks; Haircare is the clearest review signal, not confirmed waste.",
-    "recommendation": {
-      "id": "ads-enable-search-term-reporting-review",
-      "text": "Fix the search-term reporting gap, then have Ads Agent review negatives and the Haircare ad group. Keep budgets unchanged for now.",
-      "approvalRequired": false,
-      "changeApprovalRequired": true
+    "best": {
+      "level": "campaign (fresh)",
+      "name": "PLL-Search-ContractMfg-2026",
+      "metric": "CTR improved 12.4% -> 17.3% current-7 vs prior-7",
+      "adLevelBest": "1B ContractMfg-Skincare (44.8% CTR, $1.00 CPC) - STALE, from 10:15am pull, not refreshed this cycle"
     },
-    "spoken": {
-      "today": "Sam, today is preliminary. The two new campaigns have spent $4.46 for 3 clicks and 30 impressions. Both are enabled. The fuller seven-day read is more useful right now.",
-      "performance": "Sam, here\u2019s the bottom line. Over the last seven days, the two new campaigns spent about $124 for 68 clicks, with a 16.1 percent click-through rate and $1.82 average cost per click. We received 12 real form leads, but only one is cleanly verified to Google Ads, and none of the three booked calls are paid-attributed. The ad engagement looks healthy; attribution is the weak link. My recommendation is to keep budgets unchanged and fix search-term reporting before optimizing."
-    }
+    "worst": {
+      "level": "ad (stale)",
+      "name": "1C ContractMfg-Haircare",
+      "metric": "9.8% CTR, $3.84 CPC as of 10:15am - STALE, not refreshed this cycle"
+    },
+    "waste": {
+      "inferred": true,
+      "note": "No search-term-level waste confirmable (search_term_view tool-blocked since 7/21). No campaign/ad group (per last-known data) shows a full week of spend with zero clicks. 1C ContractMfg-Haircare remains highest-CPC active ad group as of last data point, too small a sample to call definitively wasteful."
+    },
+    "recommendation": "Prioritize resolving the search_term_view GAQL tool gap (engineering/tooling fix, not a budget change) so negative-keyword mining can finally run against the ~70 accumulated new-lane clicks, blocked since 2026-07-21. No approval needed - no dollar amounts changed.",
+    "spoken": "Quick update: over the trailing 7 days our two new campaigns spent about $128 of the $210 weekly cap, so we're well under budget, and drove 12 unique leads plus 3 booked calls, but still only 1 lead has clean Google Ads tracking on it — that hasn't changed since this morning, and no new leads have come in since. The one thing worth doing next is fixing our search-term reporting tool so we can start trimming wasted clicks, but that's a tooling fix, not a budget change, so nothing needs your approval right now."
   }
 }
