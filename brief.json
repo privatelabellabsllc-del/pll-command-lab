@@ -1,71 +1,67 @@
 {
-  "date": "2026-07-29",
-  "ts": "2026-07-29T11:03:30Z",
+  "date": "2026-07-30",
+  "ts": "2026-07-30T11:04:41Z",
   "brief": [
     {
-      "t": "First: clear the live freight and shipment lane. WhatsApp shows BuffMan with 15 unread messages and a freight-forwarder message at 6:01 AM; a CH Robinson freight invoice also arrived this morning. Verify the load, owner, and payment/hold status before promising any pickup or delivery.",
+      "t": "First: stop the BuffMan filling-line commitment until the equipment scope and landed cost are verified. The supplier quoted $8,850 DDP and Aiden is asking whether both machines support hot fill and batch coding. Confirm the machine configuration, coding method, quote inclusions, and total approved spend before payment or shipment.",
       "hot": true
     },
     {
-      "t": "Second: contain payable risk. bitop AG sent a dunning notice this morning, and the CH Robinson load invoice is new. Confirm amounts, due dates, and whether either item can stop materials, freight, or production; do not pay from an email alone.",
+      "t": "Second: turn Ashley / Earth and Ash payment-ready. Ashley asked again last night for the Miron glass invoice so she can pay. Laura committed July 23 to send it; confirm the invoice, glass order status, and white natural-paper-label quote today.",
       "hot": true
     },
     {
-      "t": "Third: give Natugeda a verified production update. Hair Oil remains listed as Production Scheduled in the last CRM capture, while the customer requested status and a timeline. Operations must confirm the actual stage and next date before a customer response.",
+      "t": "Third: protect open customer production commitments. Natugeda still needs a verified Hair Oil production stage and date; do not let stale \u201cProduction Scheduled\u201d language substitute for an operations fact. Separately, PHYLARA has paused after sample satisfaction and requests its final formula/specifications plus confirmation of any balance.",
       "hot": true
     },
     {
-      "t": "Fourth: close Ashley / Earth and Ash packaging and labels. Ashley supplied all three Miron bottle/closure codes, says she is ready to pay on invoice, and asked yesterday for the paper-label sample-to-print path. Invoice sent, payment, artwork approval, printer lead time, and specialty-bottle quote status all require confirmation.",
+      "t": "Fourth: deal with the payable and equipment exposure with facts, not email links. The July 29 bitop dunning notice and CH Robinson invoice remain unvalidated; add the $8,850 DDP freight quote to the cash decision only after matching all three items to internal records.",
       "hot": true
     },
     {
-      "t": "Treat Chris\u2019s sporting balm inquiry as a regulatory qualification, not a production promise. Chris confirmed the existing Australian recipes have heating and cooling effects; Sam\u2019s reply correctly flagged potential U.S. OTC-drug implications. No cosmetic-manufacturing commitment without regulatory review.",
+      "t": "Victor is due tomorrow for packaging compatibility and complete quote inputs. The authoritative July 20 update remains: PLL reached him, and he will confirm Edge Control packaging compatibility; no final quote yet.",
       "hot": false
     },
     {
-      "t": "Aleta hair line is a fresh qualified lead: Constance identified a type-4C detangler as her starting hero product. Qualify formula brief, target units, packaging, launch timing, and budget before quoting.",
+      "t": "Aleta remains a qualified type-4C detangler lead. Get formula brief, units, packaging, launch timing, and budget before pricing.",
       "hot": false
     },
     {
-      "t": "CRM live access is logged out, so task count, overdue count, pipeline figures, and the Assign To defect are carried forward only from the last authenticated capture. Do not mark CRM issues resolved.",
+      "t": "CRM is still at the sign-in page. Counts, overdue work, pipeline figures, and the Assign To defect are carried forward only; CRM Developer has not supplied a verified resolution to the customer-page task assignment issue.",
       "hot": false
     }
   ],
   "next": [
-    "Verify BuffMan freight status and the CH Robinson load before any shipping commitment",
-    "Validate bitop and CH Robinson payable due dates, amounts, and operational holds",
-    "Get operations facts for Natugeda, then issue a verified production update",
-    "Close Ashley invoice, payment, packaging, and paper-label workflow; then qualify Aleta"
+    "Verify BuffMan machine hot-fill, batch-coding, quote scope, and $8,850 DDP before any commitment",
+    "Get Ashley\u2019s Miron invoice/order status and the white natural-paper-label quote",
+    "Obtain Natugeda production facts; then handle PHYLARA formula/specs and balance confirmation",
+    "Validate bitop, CH Robinson, and equipment-freight exposure against internal records"
   ],
   "kb": [
     {
       "keys": [
         "buffman",
+        "filling line",
         "freight",
-        "forwarder",
-        "shipment",
+        "ddp",
+        "hot fill",
+        "batch coding",
         "yuhang"
       ],
-      "a": "WhatsApp Web showed BuffMan PLL with 15 unread messages and a 6:01 AM July 29 preview referring to freight. The full conversation was not successfully extracted in this refresh, so the shipment, request, and deadline remain unverified. Treat it as the first operational check, not as a confirmed delivery commitment."
+      "a": "On July 30, Aiden asked whether both proposed BuffMan filling machines support hot fill. Yuhang\u2019s forwarded freight quote is USD 8,850 DDP door-to-door; he asked what batch coding is required and indicated coding can print on bottles or labels. The quotation scope, machine configuration, coding method, and final landed cost need verification before payment, order, or shipment."
     },
     {
       "keys": [
-        "ch robinson",
-        "freight",
-        "invoice",
-        "load",
-        "555812351"
+        "ashley",
+        "earth and ash",
+        "nymphaea",
+        "miron",
+        "glass",
+        "labels",
+        "paper",
+        "invoice"
       ],
-      "a": "CH Robinson issued invoice 6247783636 for load 555812351 on July 29. The message provides an online payment link but no validated due date, amount, or link to a specific customer shipment in the evidence reviewed. Verify against internal records before payment or customer communication."
-    },
-    {
-      "keys": [
-        "bitop",
-        "dunning",
-        "payable",
-        "overdue"
-      ],
-      "a": "bitop AG sent a dunning notice on July 29 requesting payment of an outstanding amount to avoid further fees. The amount, original invoice, and any material/production hold were not verified in this refresh. Finance should match it to the ledger and confirm urgency."
+      "a": "Ashley, rebranding Earth & Ash as Nymphaea, confirmed white natural paper labels and asked again July 29 for the Miron glass invoice so she can pay. Laura said a subcontracted label price takes 2\u20133 days and final approved rolls take about two weeks after payment; the Miron invoice/order status and label quote are not verified as complete."
     },
     {
       "keys": [
@@ -76,20 +72,69 @@
         "production",
         "timeline"
       ],
-      "a": "Natugeda requested production status and an estimated timeline on July 27. The last authenticated CRM capture lists Hair Oil for Natugeda as Production Scheduled. No current production stage or delivery date was verified July 29, so operations must confirm before responding."
+      "a": "Natugeda requested Hair Oil production status and a timeline. The last authenticated CRM capture listed it as Production Scheduled, but CRM is unavailable and no current stage or delivery date is verified. Operations must provide facts before any customer update."
     },
     {
       "keys": [
-        "ashley",
-        "earth",
-        "ash",
-        "miron",
-        "labels",
-        "paper",
-        "invoice",
-        "bottles"
+        "phylara",
+        "shannon",
+        "pause",
+        "formula",
+        "specifications",
+        "balance"
       ],
-      "a": "Ashley provided Miron component codes for Radiance Face Oil, Solar Body Oil, and Natural Lip Gloss, is ready to pay once invoiced, and asked July 28 for paper-label sample-to-print workflow and timing. Laura said July 24 that she would send the invoice; sent/payment status, artwork approval, printer lead time, and specialty-bottle quote status are unverified."
+      "a": "PHYLARA\u2019s Shannon says she is happy with the sample but is pausing the project for personal-timeline reasons. She requested the final formula/specifications and confirmation of any remaining balance. Treat this as a controlled pause: confirm release permissions, documents, and ledger status before replying."
+    },
+    {
+      "keys": [
+        "bitop",
+        "dunning",
+        "payable",
+        "overdue"
+      ],
+      "a": "bitop AG\u2019s July 29 dunning notice requested payment to avoid further fees. The amount, original invoice, and any material or production hold remain unverified; finance must match it to the ledger before payment."
+    },
+    {
+      "keys": [
+        "ch robinson",
+        "freight",
+        "invoice",
+        "load",
+        "555812351"
+      ],
+      "a": "CH Robinson issued invoice 6247783636 for load 555812351 on July 29. The amount, due date, and shipment/customer linkage were not independently verified. Validate internally before payment or a delivery commitment."
+    },
+    {
+      "keys": [
+        "victor",
+        "armendarez",
+        "curl",
+        "edge",
+        "quote",
+        "packaging"
+      ],
+      "a": "Victor\u2019s task is due July 31. The authoritative day update says PLL reached him; he will confirm packaging compatibility with the Edge Control formula. Full cost inputs and a final quote remain unverified."
+    },
+    {
+      "keys": [
+        "kenna",
+        "terra",
+        "lotus",
+        "cleanser",
+        "oil",
+        "meeting"
+      ],
+      "a": "The authoritative day update remains that Kenna\u2019s meeting was postponed to Tuesday, July 21 with no time confirmed. The confirmed product direction is cleanser and oil-cleanser support; no current meeting time, quote, or price is verified."
+    },
+    {
+      "keys": [
+        "aleta",
+        "constance",
+        "detangler",
+        "4c",
+        "hair"
+      ],
+      "a": "Constance said Aleta\u2019s first hero product is a type-4C detangler intended to provide extra slip for thick and thin hair. Formula requirements, units, packaging, launch timing, and budget remain unqualified; no MOQ or price has been promised."
     },
     {
       "keys": [
@@ -101,39 +146,7 @@
         "otc",
         "regulatory"
       ],
-      "a": "Chris confirmed his Australian sporting balm recipes use heating and cooling effects. Sam advised that U.S. heating, cooling, or muscle-recovery claims and active ingredients can trigger OTC-drug requirements. Do not quote or promise cosmetic manufacture without regulatory classification and scope review."
-    },
-    {
-      "keys": [
-        "aleta",
-        "constance",
-        "detangler",
-        "4c",
-        "hair"
-      ],
-      "a": "Constance replied July 29 that aleta wants a type-4C detangler as its first hero product, intended to give extra slip for thick and thin hair. Product requirements, units, packaging, launch timing, and budget have not been qualified; no MOQ or price has been promised."
-    },
-    {
-      "keys": [
-        "victor",
-        "armendarez",
-        "curl",
-        "edge",
-        "quote",
-        "packaging"
-      ],
-      "a": "Victor\u2019s task remains due July 31. The authoritative day update says PLL reached him and he will confirm packaging compatibility with the Edge Control formula; full cost inputs and final quote are still unverified."
-    },
-    {
-      "keys": [
-        "kenna",
-        "terra",
-        "lotus",
-        "cleanser",
-        "oil",
-        "cleanser"
-      ],
-      "a": "The last confirmed Terra Lotus direction is that Kenna needs cleanser and oil-cleanser support. No current meeting time or price/quote status was verified in this refresh; do not present a meeting or quote as confirmed."
+      "a": "Chris confirmed Australian sporting balm recipes use heating and cooling effects. U.S. heating, cooling, muscle-recovery claims, or active ingredients may trigger OTC-drug requirements. Do not quote or promise cosmetic manufacture without formula/claims review and regulatory classification."
     },
     {
       "keys": [
@@ -144,77 +157,77 @@
         "overdue",
         "pipeline"
       ],
-      "a": "Live CRM task pages presented a sign-in screen on July 29. The last authenticated capture showed 11 tasks, 8 overdue, 9 active deals, $1,327,800 pipeline, 20 projects in production, and $57,454.99 deposits; those figures are not live-verified. The customer-page Assign To dropdown issue was still reported in team chat July 28."
+      "a": "Live CRM is at a sign-in screen July 30. The last authenticated capture showed 11 tasks, 8 overdue, 9 active deals, $1,327,800 pipeline, 20 projects in production, and $57,454.99 deposits; these are not live-verified. The customer-page Assign To dropdown was still reported broken July 28, and no verified CRM Developer closure was found."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Verify BuffMan freight and CH Robinson load status",
-      "why": "Live WhatsApp freight activity and a new freight invoice can affect shipment continuity.",
-      "owner": "Sam / Aidan / shipping",
+      "title": "Verify BuffMan filling-line scope and $8,850 DDP decision",
+      "why": "Hot-fill capability, batch coding, quotation inclusions, and landed cost must be proven before a capital-equipment commitment.",
+      "owner": "Sam / Aidan / operations",
       "due": "Immediately",
       "priority": "critical",
-      "revenue": "Protects customer shipment and production flow; amount unverified"
+      "revenue": "Protects production capacity and avoids an unapproved equipment/freight commitment"
     },
     {
       "rank": 2,
-      "title": "Validate bitop dunning and CH Robinson payable exposure",
-      "why": "A dunning notice and freight invoice arrived this morning; late payment or a hold could disrupt operations.",
-      "owner": "Sam / finance",
-      "due": "Today \u2014 immediately after shipment facts",
-      "priority": "critical",
-      "revenue": "Protects materials and logistics continuity; amounts unverified"
-    },
-    {
-      "rank": 3,
-      "title": "Send Natugeda a verified production-status update",
-      "why": "Customer requested production status and timeline; CRM formerly showed Production Scheduled.",
-      "owner": "Operations / Laura",
-      "due": "Today",
-      "priority": "critical",
-      "revenue": "Active production customer; amount unverified"
-    },
-    {
-      "rank": 4,
-      "title": "Close Ashley packaging, invoice/payment, and paper-label workflow",
-      "why": "Customer is ready to pay and needs a controlled sample-to-print path for three products.",
-      "owner": "Laura / operations",
+      "title": "Close Ashley Miron invoice, glass order, and white-paper-label quote",
+      "why": "Ashley is ready to pay and asked again for the invoice; pending packaging can block her three-product order.",
+      "owner": "Laura / Aidan",
       "due": "Today",
       "priority": "critical",
       "revenue": "Active three-product order; amount unverified"
     },
     {
+      "rank": 3,
+      "title": "Get Natugeda production facts, then control PHYLARA pause",
+      "why": "Natugeda needs a truthful timeline; PHYLARA needs documents and balance confirmation during a pause.",
+      "owner": "Operations / Laura",
+      "due": "Today",
+      "priority": "critical",
+      "revenue": "Protects active production confidence and controlled customer retention"
+    },
+    {
+      "rank": 4,
+      "title": "Validate bitop, CH Robinson, and BuffMan payable/freight exposure",
+      "why": "Dunning, load invoice, and DDP quote cannot be paid or committed from messages alone.",
+      "owner": "Sam / finance",
+      "due": "Today",
+      "priority": "critical",
+      "revenue": "Protects materials, freight, and cash continuity"
+    },
+    {
       "rank": 5,
-      "title": "Qualify Aleta detangler opportunity",
-      "why": "New hair-care lead identified a specific hero product and target hair type.",
-      "owner": "Sam / sales",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "New lead; unverified"
-    },
-    {
-      "rank": 6,
-      "title": "Regulatory-qualify Chris sporting balms",
-      "why": "Heating/cooling product scope may be OTC-drug regulated in the U.S.",
-      "owner": "Sam / regulatory",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "New lead; scope not currently manufacturable as a cosmetic commitment"
-    },
-    {
-      "rank": 7,
-      "title": "Obtain Victor packaging compatibility and complete quote inputs",
-      "why": "Task is due July 31 and pricing remains blocked by compatibility and full cost inputs.",
+      "title": "Obtain Victor compatibility result and complete quote inputs",
+      "why": "Due July 31; quote is still blocked by packaging compatibility and cost inputs.",
       "owner": "Victor / Ronald",
       "due": "July 31",
       "priority": "high",
       "revenue": "Quote pending; amount unverified"
     },
     {
+      "rank": 6,
+      "title": "Qualify Aleta detangler opportunity",
+      "why": "Qualified lead has a specific hero product but no commercial brief.",
+      "owner": "Sam / sales",
+      "due": "Today",
+      "priority": "high",
+      "revenue": "New hair-care lead; value unverified"
+    },
+    {
+      "rank": 7,
+      "title": "Regulatory-qualify Chris sporting balms",
+      "why": "Heating/cooling scope may be OTC-drug regulated in the U.S.",
+      "owner": "Sam / regulatory",
+      "due": "Today",
+      "priority": "high",
+      "revenue": "New lead; no cosmetic production commitment permitted yet"
+    },
+    {
       "rank": 8,
-      "title": "Restore authenticated CRM verification and resolve task-assignment defect",
-      "why": "CRM pages are signed out and Assign To remains reported broken.",
+      "title": "Restore CRM verification and resolve Assign To defect",
+      "why": "CRM sign-in blocks live operational metrics and the task-assignment issue remains open.",
       "owner": "CRM Developer / Sam",
       "due": "Today",
       "priority": "high",
@@ -224,159 +237,163 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Verify the BuffMan freight/load situation and the resulting payment or hold risk before other work.",
+      "top_task": "Do not approve the BuffMan machine or $8,850 DDP freight until the technical and cash scope is verified.",
       "tasks": [
         {
-          "title": "Get exact shipment, owner, and deadline from BuffMan thread",
+          "title": "Get written hot-fill, batch-code, quotation, and landed-cost confirmation",
           "due": "Immediately"
         },
         {
-          "title": "Validate CH Robinson and bitop obligations against internal records",
-          "due": "Immediately"
+          "title": "Validate all open payables against internal records",
+          "due": "Today"
         }
       ],
-      "notes": "Do not approve payment from email links or promise a delivery before verification."
+      "notes": "Stay in this lane. Do not jump to pricing or customer promises until the equipment gate is closed."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Confirm freight/load facts and Natugeda\u2019s actual production stage.",
+      "top_task": "Own machine/freight facts and the active production facts blocking customer communication.",
       "tasks": [
         {
-          "title": "Confirm BuffMan shipment / freight-forwarder request",
+          "title": "Confirm BuffMan machine configuration, coding method, scope, and DDP terms",
           "due": "Immediately"
         },
         {
-          "title": "Verify Natugeda stage and next operational date",
+          "title": "Confirm Natugeda Hair Oil stage and next operational date",
           "due": "Today"
         },
         {
-          "title": "Obtain Victor compatibility result and quote cost inputs",
-          "due": "July 31"
+          "title": "Confirm Ashley Miron glass order status",
+          "due": "Today"
         }
       ],
-      "notes": "No production or shipping dates without source confirmation."
+      "notes": "No shipment, production, or equipment promises without source confirmation."
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Close Ashley\u2019s invoice/payment and controlled paper-label workflow.",
+      "top_task": "Convert Ashley\u2019s payment-ready packaging lane and protect customer communication.",
       "tasks": [
         {
-          "title": "Confirm invoice sent, payment received or pending, and packaging quote status",
+          "title": "Send/confirm Ashley invoice and order status; obtain white-paper-label quote",
           "due": "Today"
         },
         {
-          "title": "Provide sample-to-print stages conditional on artwork approval and printer lead time",
+          "title": "Coordinate Natugeda update only after operations facts",
           "due": "Today"
         },
         {
-          "title": "Coordinate Natugeda response after operations confirmation",
+          "title": "Confirm PHYLARA balance and release path for specs",
           "due": "Today"
         }
       ],
-      "notes": "Do not make printer or packaging timing promises without vendor confirmation."
+      "notes": "Do not promise packaging or label timing without vendor confirmation."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Support production and regulatory decisions with verified technical inputs.",
+      "top_task": "Supply verified technical inputs for production, Victor, and regulatory scope.",
       "tasks": [
         {
           "title": "Confirm Natugeda production facts if assigned",
           "due": "Today"
         },
         {
-          "title": "Classify Chris heating/cooling scope before any manufacturing commitment",
-          "due": "Today"
+          "title": "Provide Victor cost inputs after compatibility confirmation",
+          "due": "July 31"
         },
         {
-          "title": "Provide Victor cost inputs after compatibility is confirmed",
-          "due": "July 31"
+          "title": "Classify Chris heating/cooling claims and formula scope",
+          "due": "Today"
         }
       ],
-      "notes": "Heating/cooling or recovery claims require regulatory review."
+      "notes": "No heating/cooling cosmetic manufacturing commitment before regulatory review."
     },
     "crmdeveloper": {
       "display_name": "CRM Developer",
-      "top_task": "Restore and verify customer-page task assignment selection after authentication is available.",
+      "top_task": "Restore reliable CRM access and provide a tested fix for task assignment selection.",
       "tasks": [
         {
-          "title": "Provide tested fix for Assign To team-member list",
+          "title": "Provide verified customer-page Assign To list fix",
+          "due": "Today"
+        },
+        {
+          "title": "Provide authenticated access path for live verification",
           "due": "Today"
         }
       ],
-      "notes": "Latest report was July 28; live CRM verification is blocked by logged-out session."
+      "notes": "No verified closure was found; do not treat historical claimed fixes as accepted."
     }
   },
   "revenueActions": [
     {
-      "title": "Protect active freight and delivery",
-      "why": "Freight-forwarder activity and a new CH Robinson load invoice need immediate linkage and verification.",
+      "title": "Gate BuffMan equipment commitment",
+      "why": "Supplier quote and USD 8,850 DDP freight need technical and commercial verification.",
       "est_value": "Unverified",
-      "next_step": "Identify shipment/customer, deadline, and any hold; validate invoice internally.",
-      "owner": "Sam / Aidan / shipping",
+      "next_step": "Confirm hot fill, batch coding, equipment scope, DDP inclusion, and approved cash total in writing.",
+      "owner": "Sam / Aidan",
       "timing": "First",
-      "value": "Protects active customer fulfillment"
+      "value": "Protects future production capacity and cash"
     },
     {
-      "title": "Retain Natugeda confidence",
-      "why": "Customer requested urgent production status and timeline.",
+      "title": "Convert Ashley payment-ready order",
+      "why": "Customer is waiting for the Miron invoice and has settled on white natural-paper labels.",
       "est_value": "Unverified",
-      "next_step": "Confirm stage and next date with operations, then respond with verified facts.",
-      "owner": "Operations / Laura",
-      "timing": "After freight gate",
-      "value": "Active production customer"
-    },
-    {
-      "title": "Convert Ashley order",
-      "why": "Customer supplied packaging details, is ready to pay, and needs label workflow.",
-      "est_value": "Unverified",
-      "next_step": "Confirm invoice/payment, packaging quote, artwork approval, and printer lead time.",
-      "owner": "Laura",
+      "next_step": "Confirm invoice/order status, issue label price, and validate production timing.",
+      "owner": "Laura / Aidan",
       "timing": "Today",
       "value": "Three-product order"
     },
     {
-      "title": "Qualify Aleta detangler",
-      "why": "Prospect named a focused hero product for type-4C hair.",
+      "title": "Protect Natugeda confidence",
+      "why": "Customer needs an actual Hair Oil status and timeline.",
       "est_value": "Unverified",
-      "next_step": "Gather full product brief, units, packaging, launch timing, and budget.",
-      "owner": "Sam / sales",
+      "next_step": "Get production stage and next date from operations, then respond with verified facts.",
+      "owner": "Operations / Laura",
       "timing": "Today",
-      "value": "New hair-care lead"
+      "value": "Active production customer"
     },
     {
-      "title": "Protect regulatory fit for Chris",
-      "why": "Heating/cooling balm claims may place product under U.S. OTC-drug rules.",
+      "title": "Retain PHYLARA cleanly",
+      "why": "Satisfied customer is pausing, not rejecting, and needs formula/specification and balance clarity.",
       "est_value": "Unverified",
-      "next_step": "Obtain formula/claims and complete regulatory classification before quoting.",
-      "owner": "Sam / regulatory",
+      "next_step": "Check release permission and ledger, then provide controlled pause documentation.",
+      "owner": "Laura / Ronald",
       "timing": "Today",
-      "value": "New international lead"
+      "value": "Future restart opportunity"
+    },
+    {
+      "title": "Qualify Aleta detangler",
+      "why": "Prospect named a focused type-4C hero product.",
+      "est_value": "Unverified",
+      "next_step": "Gather full product, volume, packaging, timing, and budget brief.",
+      "owner": "Sam / sales",
+      "timing": "After urgent gates",
+      "value": "New hair-care lead"
     }
   ],
   "pipelineStat": {
     "total_value": "$1,327,800 (last authenticated capture)",
     "active_deals": 9,
     "hot": [
-      "BuffMan freight/load verification",
-      "Natugeda \u2014 production-status request",
-      "Ashley / Earth and Ash \u2014 invoice, packaging, and labels",
-      "Aleta \u2014 type-4C detangler inquiry"
+      "BuffMan filling-line scope / $8,850 DDP decision",
+      "Ashley / Nymphaea \u2014 Miron invoice, glass order, and labels",
+      "Natugeda \u2014 verified Hair Oil production status",
+      "PHYLARA \u2014 controlled pause, formula/specifications, and balance"
     ],
     "stalled": [
-      "bitop dunning validation",
-      "CRM customer-page Assign To list",
+      "bitop and CH Robinson validation",
+      "CRM customer-page Assign To list and live access",
       "Victor packaging compatibility / cost inputs"
     ],
     "activeDeals": 9,
     "pipelineValue": 1327800,
     "inProduction": 20,
     "depositsCollected": 57454.99,
-    "note": "Live CRM access was logged out July 29. Counts and values are carried forward from the last authenticated capture, not re-verified. Fresh Outlook and WhatsApp list evidence were reviewed July 29; only preview-level WhatsApp evidence was available for the BuffMan freight thread."
+    "note": "CRM was at the sign-in page July 30, so counts and values are carried forward from the last authenticated capture, not re-verified. Fresh WhatsApp evidence was reviewed July 30; Outlook search returned no messages since July 29. CRM Developer Gmail threads show no verified closure for the Assign To issue."
   },
   "adsAgentBrief": {
-    "status": "Not refreshed in this morning workflow. Do not rely on prior-day ad-performance or attribution claims until the Ads workflow supplies fresh verified data.",
+    "status": "Not refreshed in this morning workflow. No Google Ads behavior or settings were changed.",
     "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
-    "tracking": "No fresh verification performed in this refresh.",
+    "tracking": "No fresh Ads verification performed in this refresh.",
     "governance": "Do not alter campaigns or make attribution claims from this brief."
   }
 }

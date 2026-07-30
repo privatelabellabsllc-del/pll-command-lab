@@ -1,9 +1,5 @@
 {
-  "id": "ads-nightly-2026-07-29-result",
-  "request_id": "ads-nightly-2026-07-29",
-  "ts": "2026-07-30T01:03:00Z",
-  "agent": "Ads Agent",
-  "status": "completed",
-  "text": "ADS NIGHTLY — July 29\n\nBoth net-new campaigns remain ENABLED. Today they spent $18.23 of the $30 combined cap: Contract Manufacturing $16.77 and Samples $1.46.\n\nTrailing 7 days (July 23–29): $130.85 of the $210 weekly cap, or 62%. Prior 7 days: $93.25. Spend is under the approved cap and is not runaway.\n\nVerified paid results: 1 paid-attributed lead in the trailing 7 days — Tiara through Samples on July 27. Samples CPL is $50.59, below the $75 threshold. Contract Manufacturing has 0 verified paid leads and the higher CPC. Today's 2 leads were organic/unattributed, not Ads-attributed.\n\nSearch-term mining remains blocked by the reporting-tool gap. No campaign, bid, budget, or legacy-ad changes were made.",
-  "spoken_text": "Sam, here’s the bottom line. Both new campaigns are live, and today’s spend finished under the approved cap. Over the last seven days, the new ads spent about one hundred thirty-one dollars against a two-hundred-ten-dollar weekly limit, up from about ninety-three dollars in the prior period. Samples produced the only verified paid lead at roughly fifty-one dollars, while Contract Manufacturing has produced none; today’s two leads were organic and unattributed. My read is that spend is controlled, but Contract Manufacturing has not yet justified its higher cost. Hold budgets steady and fix the search-term reporting gap so wasted clicks can be cut without touching legacy campaigns."
+  "id": "morning-2026-07-30-110441z",
+  "ts": "2026-07-30T11:04:41Z",
+  "answer": "Morning brief loaded for 2026-07-30."
 }
