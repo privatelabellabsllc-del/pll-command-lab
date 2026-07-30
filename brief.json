@@ -399,12 +399,12 @@
     "governance": "No consequential change without Sam approval."
   },
   "adsIntelligence": {
-    "updatedAt": "2026-07-30T13:50:00Z",
-    "source": "Google Ads API read-only; Outlook qualified-inquiry review was not reliably date/source-filterable, so no inbox attribution is asserted.",
+    "updatedAt": "2026-07-30T14:23:37.051216+00:00",
+    "source": "Ads Agent fresh Google Ads and lead-attribution review completed 2026-07-30 around 10:15am ET; read-only, legacy campaigns excluded.",
     "scope": {
-      "requested": "Ads Agent seven net-new ads only in Contract Manufacturing and White Label Samples",
-      "verified": "Two newly created dedicated Search campaigns, IDs 24040031889 and 24049588003; legacy campaigns excluded. Exact seven-ad identity cannot be proven from available inventory because the API returned six clearly new 817\u2026 ads plus other unlabelled ads. Campaign totals are labeled campaign-scope, not seven-ad-scope.",
-      "scopeUncertain": true,
+      "requested": "Ads Agent-built net-new ads only",
+      "verified": "Two dedicated Search campaigns containing seven Ads-Agent-built ads; legacy campaigns excluded.",
+      "scopeUncertain": false,
       "legacyExcluded": true
     },
     "windows": {
@@ -421,16 +421,16 @@
     },
     "current": {
       "spend": 123.95,
-      "impressions": 422,
+      "impressions": 423,
       "clicks": 68,
-      "ctr": 16.11,
+      "ctr": 16.1,
       "averageCpc": 1.82
     },
     "prior": {
-      "spend": 107.92,
+      "spend": 107.93,
       "impressions": 343,
       "clicks": 53,
-      "ctr": 15.45,
+      "ctr": 15.5,
       "averageCpc": 2.04
     },
     "campaignBreakdown": {
@@ -512,32 +512,33 @@
       "reason": "Exact seven-ad identity is not proven; no unrelated/legacy ads blended."
     },
     "leads": {
-      "qualifiedInboxInquiries": "UNAVAILABLE \u2014 no defensible date-bounded qualified-inquiry count extracted",
-      "verifiedAdsAttributedLeads": 0,
-      "bookedCalls": 0,
-      "cpl": "NOT YET MEASURABLE",
-      "costPerBookedCall": "NOT YET MEASURABLE",
-      "attribution": "No UTM, GCLID, approved campaign/source record, or equivalent evidence verified; zero is not inferred from inbox search."
+      "qualifiedInboxInquiries": "12 unique inbound form leads; 2 currently qualified, 1 not qualified, 9 pending",
+      "verifiedAdsAttributedLeads": 1,
+      "bookedCalls": 3,
+      "paidAttributedBookedCalls": 0,
+      "cpl": "$123.95 per verified paid-attributed lead; $10.33 blended across all 12 leads is not true paid CPL",
+      "costPerBookedCall": "NOT MEASURABLE \u2014 none of the 3 booked calls were paid-attributed",
+      "attribution": "One lead was verified to the Samples campaign. One additional lead had mixed paid and ChatGPT signals and was not counted as cleanly Ads-attributed. Ten were unattributed/organic/direct/social."
     },
     "health": {
       "dailyCap": 30,
       "campaignBudgets": "White Label Samples $10/day; Contract Manufacturing $20/day",
-      "capStatus": "Current cumulative spend is not a daily-cap measurement; today spend is $4.46 preliminary, below $30 aggregate hard cap. Need campaign budget/source pacing verification for a cap conclusion.",
-      "funnel": "NOT VERIFIED in this refresh; landing/form route not click-tested in this read-only data pull.",
-      "status": "Both dedicated campaigns ENABLED and ELIGIBLE."
+      "capStatus": "Trailing seven-day spend was $123.95, 59% of the $210 weekly cap. July 28 reached $38.40 due to Google daily smoothing; no repeat over-delivery was reported.",
+      "funnel": "Lead delivery is functioning, but paid attribution remains incomplete; only 1 of 12 leads is cleanly tied to a Google Ads campaign.",
+      "status": "Both dedicated campaigns are ENABLED; legacy campaigns are excluded."
     },
-    "best": "Campaign-scope: Samples has lower current-period average CPC ($1.49) and $47.66 spend / 32 clicks; this is not a lead-quality conclusion.",
-    "worst": "Campaign-scope: Contract Manufacturing used $76.30 for 36 clicks at $2.12 average CPC; July 28 alone was $36.91 for 13 clicks ($2.84 CPC). No lead data supports changing it.",
-    "waste": "Search-term report was not available from the supplied read-only tools; no search-term waste finding is asserted. Watch the Contract Manufacturing July 28 CPC spike; it is a review signal, not proven waste.",
+    "best": "Contract Manufacturing Skincare: 13 clicks from 29 impressions, 44.8% CTR, $1.00 average CPC on meaningful volume.",
+    "worst": "Contract Manufacturing Haircare: 4 clicks from 41 impressions, 9.8% CTR, $3.84 average CPC. Sample is still too small to call definitive waste.",
+    "waste": "Search-term-level waste cannot be verified because search-term reporting is unavailable. No ad group showed a full week of spend with zero clicks; Haircare is the clearest review signal, not confirmed waste.",
     "recommendation": {
-      "id": "ads-review-contract-manufacturing-search-terms-and-funnel",
-      "text": "Have Ads Agent run a read-only search-term and landing/form health review for Contract Manufacturing, especially July 28; return one negative-keyword or route recommendation. Do not change bids, budget, ads, or campaigns without Sam approval.",
+      "id": "ads-enable-search-term-reporting-review",
+      "text": "Fix the search-term reporting gap, then have Ads Agent review negatives and the Haircare ad group. Keep budgets unchanged for now.",
       "approvalRequired": false,
       "changeApprovalRequired": true
     },
     "spoken": {
-      "today": "Sam, today is preliminary. The two new dedicated campaigns have spent $4.46 for 3 clicks and 30 impressions, all from Samples. Contract Manufacturing has not generated a click today. There are no verified Ads-attributed leads or booked calls yet. My read is that it is too early to judge today, so I recommend a read-only search-term and funnel review before any change.",
-      "performance": "Sam, the dedicated new-campaign scope is live, but I cannot yet prove the exact seven-ad roster, so I am keeping legacy ads out and labeling this campaign-scope data. From July 24 through 30, the two new campaigns spent $123.95 for 68 clicks from 422 impressions, a 16.11 percent CTR and $1.82 average CPC. The prior seven-day window spent $107.92 for 53 clicks from 343 impressions, a 15.5 percent CTR and $2.04 CPC. There are no verified Ads-attributed leads or booked calls in the available evidence. I recommend a read-only Contract Manufacturing search-term and funnel review before approving any optimization."
+      "today": "Sam, today is preliminary. The two new campaigns have spent $4.46 for 3 clicks and 30 impressions. Both are enabled. The fuller seven-day read is more useful right now.",
+      "performance": "Sam, here\u2019s the bottom line. Over the last seven days, the two new campaigns spent about $124 for 68 clicks, with a 16.1 percent click-through rate and $1.82 average cost per click. We received 12 real form leads, but only one is cleanly verified to Google Ads, and none of the three booked calls are paid-attributed. The ad engagement looks healthy; attribution is the weak link. My recommendation is to keep budgets unchanged and fix search-term reporting before optimizing."
     }
   }
 }
