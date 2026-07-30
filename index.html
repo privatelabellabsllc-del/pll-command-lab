@@ -2015,7 +2015,8 @@ document.addEventListener('visibilitychange', function(){
     clog('Tab active — mic re-armed.');
   }
 });
-setInterval(function(){ if (!document.hidden) loadBrief(); }, 3*3600000);
+// Keep the cached business and Ads intelligence current while Command Center stays open.
+setInterval(function(){ if (!document.hidden) loadBrief(); }, 60*1000);
 
 // hourly pulse ping so an idle deck shows it's alive
 setInterval(function(){ if (!speaking && !working) clog('Hourly pulse — systems nominal.'); }, 3600000);
