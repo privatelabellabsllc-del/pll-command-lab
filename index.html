@@ -856,42 +856,140 @@ function loadBrief(){
 loadBrief();
 if (localStorage.getItem('pll_hook')) { const ca=document.getElementById('chipAgent'); if(ca){ca.textContent='LIVE'; ca.className='ok';} }
 
-// ================= VOICE OUT (stern, deep, male) =================
+// ================= VOICE OUT — V7 NATURAL SPEECH =================
+// Spoken normalization is applied ONLY to voice output. Screen text, logs and
+// source data are never modified by this layer.
 let muted = false;
-function sternVoice() {
-  const vs = voiceCache.length ? voiceCache : speechSynthesis.getVoices();
-  const savedName = localStorage.getItem('clVoice');
-  if (savedName) { const sv = vs.find(v => v.name === savedName); if (sv) return sv; }
-  const prefs = [
-    /aaron.*enhanced|enhanced.*aaron/i, /daniel.*enhanced|enhanced.*daniel/i, /arthur/i, /aaron/i, /daniel/i,
-    /google uk english male/i, /microsoft (guy|davis|eric|christopher|andrew)/i,
-    /alex(?!a)/i, /fred/i, /rishi/i, /gordon/i, /reed/i, /david/i, /george/i, /james/i,
-    /\bmale\b/i
+const SPOKEN_ACRONYMS = [
+  ['GCLID','G C L I D'],['ROAS','__ROAS__'],['CTR','C T R'],['CPC','C P C'],['CPL','C P L'],
+  ['CPA','C P A'],['CPM','C P M'],['ROI','R O I'],['SEO','S E O'],['AEO','A E O'],['GEO','G E O'],
+  ['CRM','C R M'],['GMP','G M P'],['PLL','P L L'],['API','A P I'],['UTM','U T M'],['UTMs','U T Ms'],
+  ['SKU','S K U'],['MOQ','M O Q'],['B2B','B to B'],['PPC','P P C'],['KPI','K P I'],['QC','Q C'],
+  ['DDP','D D P'],['USPS','U S P S'],['UPS','U P S'],['FAQ','F A Q'],['URL','U R L'],
+  ['PMax','P Max'],['OTC','O T C'],['BOM','B O M'],['ID','I D']
+];
+const SPOKEN_MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+function spokenMoney(_m, dollars, cents){
+  var d = Number(String(dollars).replace(/,/g,''));
+  if (!isFinite(d)) return _m;
+  var out = (d === 1 ? 'one dollar' : d.toLocaleString('en-US') + ' dollars');
+  if (cents){ var c = Number((cents + '0').slice(0,2)); if (c) out += ' and ' + c + (c === 1 ? ' cent' : ' cents'); }
+  return out;
+}
+function spokenNormalize(text){
+  var s = String(text == null ? '' : text);
+  try {
+    // 1. structural noise that must never be read aloud
+    s = s.replace(/```[\s\S]*?```/g, ' ')
+         .replace(/^\s{0,3}#{1,6}\s*/gm, '')
+         .replace(/(\*\*|__|`|~~)/g, '')
+         .replace(/^\s*[-*\u2022]\s+/gm, '')
+         .replace(/^\s*\d+[.)]\s+/gm, '')
+         .replace(/\|/g, ' ')
+         .replace(/[\u2b50\u26a0\ufe0f\ud83d\udd34\ud83d\udfe2\u2713\u2192\u2190\u25c8]/g, ' ')
+         .replace(/\n+/g, '. ');
+    // 2. ranges, slash shorthand and short dates
+    s = s.replace(/(\d)\s*[\u2013\u2014]\s*(\d)/g, '$1 to $2')
+         .replace(/\b(\d{1,2})\/(\d{1,2})(?:\/\d{2,4})?\b/g, function(m, mo, da){
+            var mi = Number(mo) - 1; return (SPOKEN_MONTHS[mi] ? SPOKEN_MONTHS[mi] + ' ' + Number(da) : m); })
+         .replace(/\s*\/\s*(day|week|month|year|wk|click|lead|call|unit)\b/gi, ' a $1')
+         .replace(/\s+\/\s+/g, ' or ');
+    // 3. money then percentages then decimals
+    s = s.replace(/\$\s?([\d,]+)(?:\.(\d{1,2}))?/g, spokenMoney)
+         .replace(/([\d.,]+)\s?%/g, '$1 percent')
+         .replace(/(\d)\.(\d)/g, '$1 point $2');
+    // 4. business acronyms — exact case, whole word only
+    for (var i = 0; i < SPOKEN_ACRONYMS.length; i++){
+      s = s.replace(new RegExp('\\b' + SPOKEN_ACRONYMS[i][0] + '\\b', 'g'), SPOKEN_ACRONYMS[i][1]);
+    }
+    s = s.replace(/__ROAS__/g, 'row ass');
+    // 5. never read IDs, hashes or raw JSON punctuation aloud
+    s = s.replace(/\b[a-z0-9]{6,}-[a-z0-9]{4,}(?:-[a-z0-9]+)*\b/gi, 'that request')
+         .replace(/\b(request[_ ]?id|campaign[_ ]?id|ad[_ ]?group[_ ]?id|recommendation[_ ]?id)\b[^\d]{0,4}\d+/gi, '')
+         .replace(/[{}\[\]"<>]/g, ' ')
+         .replace(/\s*:\s*/g, ' \u2014 ')
+         .replace(/\s*;\s*/g, '. ')
+         .replace(/\s{2,}/g, ' ')
+         .replace(/\s+([.,!?])/g, '$1')
+         .replace(/\.\s*\./g, '.')
+         .trim();
+  } catch(e){ return String(text == null ? '' : text); }
+  return s;
+}
+// Break long answers into natural sentence groups so delivery is not one flat block
+// and long utterances are not truncated by the browser speech engine.
+function spokenChunks(text){
+  var raw = String(text || '');
+  var sentences = raw.match(/[^.!?]+[.!?]*/g) || [raw];
+  var out = [], buf = '';
+  for (var i = 0; i < sentences.length; i++){
+    var p = sentences[i].trim(); if (!p) continue;
+    if (buf && (buf + ' ' + p).length > 200){ out.push(buf); buf = p; }
+    else buf = buf ? (buf + ' ' + p) : p;
+  }
+  if (buf) out.push(buf);
+  return out.length ? out : [raw];
+}
+// Best available high-quality English voice, natural pitch, no artificial "stern" depth.
+function preferredVoice(){
+  var vs = (voiceCache && voiceCache.length) ? voiceCache : speechSynthesis.getVoices();
+  if (!vs || !vs.length) return null;
+  var saved = localStorage.getItem('clVoice');
+  if (saved){ var sv = vs.filter(function(v){ return v.name === saved; })[0]; if (sv) return sv; }
+  var en = vs.filter(function(v){ return /^en([-_]|$)/i.test(v.lang); });
+  var pool = en.length ? en : vs;
+  var prefs = [
+    /(enhanced|premium)/i, /neural|natural/i, /siri/i,
+    /google (us|uk) english/i,
+    /microsoft (aria|guy|andrew|christopher|jenny|ryan|steffan|emma|brian)/i,
+    /samantha|alex(?!a)|daniel|arthur|aaron|serena/i
   ];
-  for (const rx of prefs) {
-    const v = vs.find(v => /en/i.test(v.lang) && rx.test(v.name));
+  for (var i = 0; i < prefs.length; i++){
+    var v = pool.filter(function(x){ return prefs[i].test(x.name); })[0];
     if (v) return v;
   }
-  return vs.find(v => /en[-_](US|GB)/i.test(v.lang)) || vs[0];
+  return pool.filter(function(v){ return /en[-_](US|GB)/i.test(v.lang); })[0] || pool[0];
 }
-var speaking = false;
-function say(text, cb) {
-  clog('◈ ' + text);
-  if (muted || !('speechSynthesis' in window)) { cb && cb(); return; }
-  speechSynthesis.cancel();
-  const u = new SpeechSynthesisUtterance(text);
-  u.voice = sternVoice(); u.pitch = 0.92; u.rate = 0.98; u.volume = 1;
-  u.onstart = () => { speaking = true; wave(true); toMicOff(); };
-  let fired = false;
-  const done = () => { if (fired) return; fired = true; speaking = false; wave(false); if (cb) cb(); if (micShouldBeLive()) pumpMic(); };
-  u.onend = done; u.onerror = done;
-  speechSynthesis.speak(u);
+function sternVoice(){ return preferredVoice(); } // legacy name retained for the voice picker
+var speaking = false, lastSpeechEndTs = 0, speakSeq = 0;
+function say(text, cb){
+  var raw = String(text == null ? '' : text);
+  clog('\u25c8 ' + raw);
+  if (muted || !('speechSynthesis' in window)) { lastSpeechEndTs = Date.now(); if (cb) cb(); return; }
+  var spoken = spokenNormalize(raw);
+  if (!spoken) { lastSpeechEndTs = Date.now(); if (cb) cb(); return; }
+  var seq = ++speakSeq;
+  try { speechSynthesis.cancel(); } catch(e){}
+  var chunks = spokenChunks(spoken), v = preferredVoice(), idx = 0, finished = false;
+  speaking = true; wave(true); toMicOff();
+  function finish(){
+    if (finished || seq !== speakSeq) return;
+    finished = true; speaking = false; wave(false); lastSpeechEndTs = Date.now();
+    if (cb) cb();
+    if (micShouldBeLive() && !speaking) setTimeout(pumpMic, 250);
+  }
+  function next(){
+    if (seq !== speakSeq) return;                     // superseded by a newer say()
+    if (idx >= chunks.length) { finish(); return; }
+    var u = new SpeechSynthesisUtterance(chunks[idx++]);
+    if (v) u.voice = v;
+    u.pitch = 1.0; u.rate = 0.97; u.volume = 1;
+    var advanced = false;
+    var step = function(){ if (advanced) return; advanced = true; setTimeout(next, 130); };
+    u.onend = step; u.onerror = step;
+    try { speechSynthesis.speak(u); } catch(e){ step(); }
+  }
+  next();
+  // safety net: never leave the state machine stuck in SPEAKING
+  setTimeout(function(){
+    if (!finished && seq === speakSeq && !(speechSynthesis.speaking || speechSynthesis.pending)) finish();
+  }, 1500 + spoken.length * 95);
 }
 function wave(on) { document.getElementById('wave').classList.toggle('on', on); }
 function toggleMute() {
   muted = !muted;
-  document.getElementById('muteBtn').textContent = muted ? '🔇' : '🔊';
-  if (muted) speechSynthesis.cancel();
+  document.getElementById('muteBtn').textContent = muted ? '\ud83d\udd07' : '\ud83d\udd0a';
+  if (muted) { speakSeq++; speaking = false; wave(false); lastSpeechEndTs = Date.now(); try { speechSynthesis.cancel(); } catch(e){} }
 }
 
 // ================= BRIEF / NEXT =================
@@ -954,13 +1052,95 @@ let restartInFlight = false, lastStartTs = 0, micLive = false;
 let latestCmd = '', captureStartTs = 0, captureHasFinal = false, finalWaitCount = 0;
 let captureCommitted = '', recSlots = [], recSessionHasWake = false, unresolvedAtRestart = false;
 let committedConfidence = [];
-const ENDPOINT_COMPLETE_MS = 7000;    // slightly faster response while preserving natural pauses
-const ENDPOINT_INCOMPLETE_MS = 11000; // unfinished clauses retain a longer correction window
-const ENDPOINT_EXPLICIT_MS = 1800;    // only after an explicit 'send it/that is all' ending
+const ENDPOINT_COMPLETE_MS = 5200;    // complete command: finish promptly
+const ENDPOINT_INCOMPLETE_MS = 9000;  // unfinished clause: keep the correction window open
+const ENDPOINT_EXPLICIT_MS = 1500;    // only after an explicit 'send it/that is all' ending
+const ENDPOINT_CONFIRM_MS = 1100;     // short yes/no replies must not wait on a command timer
+const CONFIRM_WINDOW_MS = 15000;      // how long a yes/no window stays open
+const PENDING_TTL_MS = 180000;        // a captured pending command survives a stand-down this long
 const MAX_CAPTURE_MS = 90000;
-let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTimer = null;
+let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTimer = null, confirmTimer = null;
 let followupCount = 0;
+let confirmMode = false;
+let lastDispatchSig = '', lastDispatchTs = 0;
+const CC_VOICE_BUILD = 'voice-v7.0';
 const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|send it|that'?s all)\s*[.!?]?$/;
+
+// ---- confirmation understanding -------------------------------------------------
+// A valid confirmation is never treated as a new incomplete command.
+function confirmIntent(t){
+  var s = normalize(t).replace(/\b(please|sam|command lab|just|then|now|and|uh|um)\b/g, ' ').replace(/\s+/g, ' ').trim();
+  if (!s) return null;
+  if (/\b(no|nope|nah|negative|cancel|stop|forget it|never ?mind|hold off|scratch that|do not|don'?t|dont)\b/.test(s)) return 'no';
+  if (/^(?:(?:yes|yeah|yep|yup|ya|sure|correct|affirmative|absolutely|right|ok|okay|okey|roger|confirmed|approved|approve|proceed|go|go ahead|go for it|do it|do that|send|send it|send that|make it happen|that'?s right|that is right|run it|ship it|fire it)\s*)+$/.test(s)) return 'yes';
+  return null;
+}
+// Inside an open confirmation window, short replies are read generously.
+function confirmIntentLoose(t){
+  var direct = confirmIntent(t); if (direct) return direct;
+  var s = normalize(t), w = s.split(/\s+/).filter(Boolean);
+  if (!w.length || w.length > 6) return null;
+  if (/\b(no|nope|nah|cancel|stop|don'?t|dont|negative|forget)\b/.test(s)) return 'no';
+  if (/\b(yes|yeah|yep|yup|sure|correct|ok|okay|go|send|proceed|approve|approved|right|affirmative)\b/.test(s)) return 'yes';
+  return null;
+}
+// ---- named-agent recognition (routing targets are unchanged) ---------------------
+const AGENT_NAME_RX = /\b(?:ads?\s+agent|crm\s+(?:developer|dev|engineer)|email\s+agent(?:\s+p\s?l\s?l)?|organic\s+agent|seo\s+agent|(?:pll\s+)?architect|(?:pll\s+)?consultant)\b/;
+const AGENT_NAMES = [
+  ['Ads Agent',      /\bads?\s+agent\b/],
+  ['CRM Developer',  /\bcrm\s+(?:developer|dev|engineer)\b/],
+  ['Email Agent',    /\bemail\s+agent(?:\s+p\s?l\s?l)?\b/],
+  ['Organic Agent',  /\b(?:organic|seo)\s+agent\b/],
+  ['PLL Architect',  /\b(?:pll\s+)?architect\b/],
+  ['PLL Consultant', /\b(?:pll\s+)?consultant\b/]
+];
+function namedAgent(t){
+  var s = normalize(t);
+  for (var i = 0; i < AGENT_NAMES.length; i++){ if (AGENT_NAMES[i][1].test(s)) return AGENT_NAMES[i][0]; }
+  return null;
+}
+const DIRECTIVE_RX = /\b(ask|tell|have|get|direct|send|assign|instruct|remind|forward|route|notify|let)\b/;
+// Approval-sensitive = an actual mutation/spend verb, not a mere mention of budget
+// or price. Negated constraints such as "without increasing the approved budget"
+// are explicitly NOT approval-sensitive.
+const SENSITIVE_RX = /\b(increase|increases|increasing|raise|raises|raising|decrease|decreasing|lower|lowers|lowering|double|pause|pauses|pausing|unpause|delete|deletes|deleting|remove|removes|removing|approve|approval|authorize|pay|pays|paying|spend|spends|spending|launch|launches|launching|publish|publishes|publishing|refund|charge|discount|wire|transfer|fire|terminate|shut down|turn off|turn on)\b|\bcancel (?:the|that|this|my|our)\b|\b(?:change|set|update|adjust|edit) (?:the )?(?:budget|budgets|bid|bids|price|pricing|cap|caps)\b/;
+const SENSITIVE_NEG_RX = /\b(?:without|not|never|avoid|don'?t|dont|do not|no)\s+(?:\w+\s+){0,3}?(?:increas\w*|rais\w*|lower\w*|decreas\w*|chang\w*|spend\w*|paus\w*|delet\w*|remov\w*|approv\w*|pay\w*|publish\w*|launch\w*)/g;
+function sensitiveOrder(t){ return SENSITIVE_RX.test(String(t||'').replace(SENSITIVE_NEG_RX, ' ')); }
+// A direct, high-confidence named-agent order dispatches without an extra confirmation.
+function directNamedOrder(t){
+  var s = normalize(t);
+  if (/^\s*(what|who|when|where|why|how|does|do|is|are|did|was|were|can|could|should)\b/.test(s)) return null;
+  var agent = namedAgent(s); if (!agent) return null;
+  if (!DIRECTIVE_RX.test(s)) return null;
+  var m = AGENT_NAME_RX.exec(s); if (!m) return null;
+  var tail = s.slice(m.index + m[0].length).trim();
+  if (tail.split(/\s+/).filter(Boolean).length < 3) return null;
+  if (knownConfidenceIsPoor()) return null;
+  return { agent: agent, cmd: t };
+}
+// Spoken-only read-back: collapse an obvious self-correction. The dispatched
+// command always keeps Sam's full original instruction.
+function spokenSummary(t){
+  var s = String(t || '');
+  var parts = s.split(/\b(?:sorry|i mean|scratch that|correction|no wait|make that)\b/i);
+  if (parts.length > 1){
+    var tail = parts[parts.length - 1].replace(/^[\s,;.\-\u2013\u2014]+/, '');
+    if (tail.split(/\s+/).filter(Boolean).length >= 4){
+      s = parts[0].split(/\s+/).slice(0, 4).join(' ') + ' ' + tail;
+    }
+  }
+  return compactSummary(s);
+}
+function setPending(obj){
+  if (!obj) { pendingDispatch = null; return; }
+  obj.ts = Date.now();
+  pendingDispatch = obj;
+}
+function pendingIsFresh(){
+  if (!pendingDispatch) return false;
+  if (typeof pendingDispatch === 'string') return true;
+  return !pendingDispatch.ts || (Date.now() - pendingDispatch.ts) < PENDING_TTL_MS;
+}
 
 // ---- earcons (Web Audio, no files) ----
 let _actx = null;
@@ -993,7 +1173,7 @@ function micShouldBeLive(){
   if (!powered) return false;
   // On mobile: never auto-listen in ASLEEP — wake word loop can't survive without user gesture
   if (IS_MOBILE && voiceState === 'ASLEEP') return false;
-  return voiceState==='ASLEEP'||voiceState==='ATTENTIVE'||voiceState==='CAPTURING'||voiceState==='FOLLOWUP';
+  return voiceState==='ASLEEP'||voiceState==='ATTENTIVE'||voiceState==='CAPTURING'||voiceState==='FOLLOWUP'||voiceState==='CONFIRM';
 }
 var iosRestartFails = 0;  // track consecutive restart failures on iOS
 function pumpMic(){
@@ -1103,11 +1283,12 @@ function hideTapPrompt(){
 const MIC_OFF = ['OFF','THINKING','SPEAKING'];
 function setVoiceState(next){
   const prev = voiceState; voiceState = next;
-  awake = (next==='ATTENTIVE'||next==='CAPTURING'||next==='FOLLOWUP');
+  awake = (next==='ATTENTIVE'||next==='CAPTURING'||next==='FOLLOWUP'||next==='CONFIRM');
   working = (next==='THINKING');
   if(next!=='ATTENTIVE') clearTimeout(attentiveTimer);
   if(next!=='CAPTURING') clearTimeout(endpointTimer);
   if(next!=='FOLLOWUP') clearTimeout(followupTimer);
+  if(next!=='CONFIRM' && next!=='CAPTURING') clearTimeout(confirmTimer);
   updateStateUI(next);
   if(MIC_OFF.indexOf(next)>=0){ toMicOff(); }
   else if(MIC_OFF.indexOf(prev)>=0){ toMicOn(); }
@@ -1120,6 +1301,7 @@ function updateStateUI(s){
   else if(s==='THINKING'){ coreState('thinking','think'); status('Thinking…', true); }
   else if(s==='SPEAKING'){ coreState('speaking','speak'); }
   else if(s==='FOLLOWUP'){ micState('awake'); coreState('awake','awake'); status('Still listening — follow up or stay quiet', true); }
+  else if(s==='CONFIRM'){ micState('awake'); coreState('awake','awake'); status('Waiting on your yes or no', true); }
 }
 
 function resetCaptureBuffer(clearSession){
@@ -1127,11 +1309,15 @@ function resetCaptureBuffer(clearSession){
   unresolvedAtRestart=false; committedConfidence=[];
   if(clearSession !== false){ recSlots=[]; recSessionHasWake=false; }
 }
-function standDown(){ followupCount = 0; resetCaptureBuffer(true); pendingDispatch=null; setVoiceState('ASLEEP'); document.body.classList.add('dimmed');
+function standDown(){ followupCount = 0; confirmMode = false; clearTimeout(confirmTimer); resetCaptureBuffer(true);
+  // A pending, un-dispatched command is intentionally retained (TTL-limited) so a
+  // dropped confirmation window never loses what Sam already said.
+  if (!pendingIsFresh()) pendingDispatch = null;
+  setVoiceState('ASLEEP'); document.body.classList.add('dimmed');
   if (IS_MOBILE) { status('Tap the orb to speak', false); clog('Stood down — tap orb to speak.'); showTapPrompt(); }
   else { status('Powered — say “Command Lab”', false); clog('Stood down — wake word required.'); }
 }
-function armAttentive(){ clearTimeout(attentiveTimer); attentiveTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 8000); }
+function armAttentive(){ clearTimeout(attentiveTimer); attentiveTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 9000); }
 function armFollowup(){ clearTimeout(followupTimer); followupTimer = setTimeout(function(){ earcon('standdown'); standDown(); }, 6000); }
 function mergeRestartFinal(previous, incoming){
   const a=normalize(previous), b=normalize(incoming);
@@ -1193,8 +1379,13 @@ function armEndpoint(){
   armSleep(); clearTimeout(endpointTimer); clearTimeout(attentiveTimer); clearTimeout(followupTimer);
   if(captureStartTs && Date.now()-captureStartTs > MAX_CAPTURE_MS){ endpoint(); return; }
   const explicitDone=GO.test(latestCmd);
-  const wait=explicitDone ? ENDPOINT_EXPLICIT_MS : (commandLooksComplete(latestCmd) ? ENDPOINT_COMPLETE_MS : ENDPOINT_INCOMPLETE_MS);
-  status(explicitDone ? 'Got it — finishing…' : 'Listening — keep going', true);
+  const shortConfirm=pendingIsFresh() && !!confirmIntentLoose(latestCmd);
+  let wait;
+  if(shortConfirm) wait=ENDPOINT_CONFIRM_MS;
+  else if(explicitDone) wait=ENDPOINT_EXPLICIT_MS;
+  else if(commandLooksComplete(latestCmd)) wait=ENDPOINT_COMPLETE_MS;
+  else wait=ENDPOINT_INCOMPLETE_MS;
+  status(shortConfirm ? 'Got it…' : (explicitDone ? 'Got it — finishing…' : 'Listening — keep going'), true);
   endpointTimer=setTimeout(endpoint,wait);
 }
 function transcriptLooksCorrupted(t){
@@ -1204,23 +1395,51 @@ function transcriptLooksCorrupted(t){
   for(let i=0;i<=w.length-4;i++){ const g=w.slice(i,i+4).join(' '); seen[g]=(seen[g]||0)+1; if(seen[g]>max) max=seen[g]; }
   return max>=4;
 }
-function rejectCapture(){
-  resetCaptureBuffer(true); earcon('error'); showLiveTranscript('Voice capture was unclear — command not sent.');
-  respondThenSleep('I did not catch the complete command clearly. Nothing was sent. Wake me and say it again.');
+// Never answer with a bare "I didn't catch that" twice. Show exactly what was
+// captured and ask one precise clarification that keeps the command recoverable.
+function rejectCapture(captured){
+  const t=String(captured||'').replace(/\s+/g,' ').trim();
+  resetCaptureBuffer(true); earcon('error');
+  const words=t.split(/\s+/).filter(Boolean).length;
+  if(words>=3){
+    const agent=targetAgent(t);
+    setPending({ cmd:t, agent:agent, summary:compactSummary(t), unclear:true });
+    showLiveTranscript('Heard: '+t);
+    clog('Low-confidence capture retained: '+t,'warn');
+    askConfirm('I heard: '+spokenSummary(t)+'. Is that right? Yes or no.');
+    return;
+  }
+  showLiveTranscript(t ? ('Heard only: '+t) : 'No usable speech captured — nothing was sent.');
+  respondThenSleep(t ? ('All I caught was “'+t+'”. Wake me and give me the whole instruction — nothing was sent.')
+                     : 'I did not capture any speech, so nothing was sent. Wake me and say it again.');
 }
 function endpoint(){
   let cmd=currentFinalCandidate().trim();
-  const unresolved=sessionCommand('interim');
-  if(!cmd){
-    if(unresolved && finalWaitCount<2){ finalWaitCount++; status('Finishing voice capture…',true); endpointTimer=setTimeout(endpoint,900); return; }
-    rejectCapture(); return;
+  let unresolved=sessionCommand('interim');
+  const confirming = pendingIsFresh();
+  // Do not commit while meaningful interim words are still unresolved — but never
+  // throw the captured words away either.
+  if(unresolved && finalWaitCount<3 && !confirming){
+    finalWaitCount++; status('Finishing voice capture…',true); endpointTimer=setTimeout(endpoint,700); return;
   }
-  if(unresolved){
-    if(finalWaitCount<2){ finalWaitCount++; status('Finishing voice capture…',true); endpointTimer=setTimeout(endpoint,900); return; }
-    rejectCapture(); return;
+  if(!cmd && unresolved && finalWaitCount<3){
+    finalWaitCount++; status('Finishing voice capture…',true); endpointTimer=setTimeout(endpoint,700); return;
   }
-  finalWaitCount=0; cmd=cmd.replace(GO,'').trim() || cmd;
-  if(unresolvedAtRestart || !commandLooksComplete(cmd) || knownConfidenceIsPoor() || transcriptLooksCorrupted(cmd)){ rejectCapture(); return; }
+  if(unresolved) cmd=mergeRestartFinal(cmd,unresolved).trim();
+  finalWaitCount=0;
+  if(!cmd){ rejectCapture(''); return; }
+  cmd=cmd.replace(GO,'').trim() || cmd;
+  if(confirming){
+    // A valid yes/no bypasses command-completeness gates entirely.
+    if(confirmIntentLoose(cmd)){
+      confirmMode=false; clearTimeout(confirmTimer);
+      resetCaptureBuffer(true); earcon('endpoint'); showLiveTranscript(cmd);
+      setVoiceState('THINKING'); handleSpeech(cmd); return;
+    }
+  }
+  confirmMode=false; clearTimeout(confirmTimer);
+  if(transcriptLooksCorrupted(cmd)){ rejectCapture(cmd); return; }
+  if(!commandLooksComplete(cmd) || knownConfidenceIsPoor()){ rejectCapture(cmd); return; }
   resetCaptureBuffer(true); earcon('endpoint'); showLiveTranscript(cmd); setVoiceState('THINKING'); handleSpeech(cmd);
 }
 // One wake-up handles one completed exchange. Once Command Lab answers, it
@@ -1228,9 +1447,26 @@ function endpoint(){
 // become an accidental follow-up command.
 function respond(text){ setVoiceState('SPEAKING'); say(text, standDown); }
 function respondThenSleep(text){ setVoiceState('SPEAKING'); say(text, standDown); }
-// Confirmation is the sole exception: the original task is not dispatched yet,
-// so keep a short yes/no window open. After dispatch/result, respond() stands down.
-function respondForConfirmation(text){ setVoiceState('SPEAKING'); say(text, powered ? enterFollowup : function(){ setVoiceState('OFF'); }); }
+// Confirmation is the sole exception: the task is not dispatched yet, so a short
+// yes/no window opens only AFTER the spoken confirmation has actually finished.
+function askConfirm(text){
+  setVoiceState('SPEAKING');
+  say(text, function(){ if(!powered){ setVoiceState('OFF'); return; } enterConfirm(); });
+}
+function respondForConfirmation(text){ askConfirm(text); }
+function enterConfirm(){
+  confirmMode = true;
+  setVoiceState('CONFIRM'); earcon('followup');
+  freshMic();                                  // clean session so a one-word reply is heard
+  clearTimeout(confirmTimer);
+  confirmTimer = setTimeout(function(){
+    if(voiceState!=='CONFIRM') return;
+    earcon('standdown'); confirmMode = false;
+    status('No yes or no — nothing was sent', false);
+    clog('Confirmation window closed. Pending command retained; say the wake word then “yes” to send it.','warn');
+    standDown();
+  }, CONFIRM_WINDOW_MS);
+}
 function enterFollowup(){ followupCount++; if(followupCount > 1){ standDown(); return; } setVoiceState('FOLLOWUP'); earcon('followup'); armFollowup(); }
 
 function armSleep() {
@@ -1354,6 +1590,9 @@ function correctCommandTerms(t){
           .replace(/\b(?:unsh|unstr)\b(?=\s+(?:it|that|this)\b)/g,'unshrink');
 }
 function onResult(e){
+  // Echo guard: never transcribe our own speech synthesis back into a command.
+  if (speaking) return;
+  if (lastSpeechEndTs && (Date.now() - lastSpeechEndTs) < 350) return;
   const start=Number.isInteger(e.resultIndex) ? e.resultIndex : 0;
   for(let i=start;i<e.results.length;i++){
     const alt=e.results[i][0];
@@ -1383,10 +1622,12 @@ function onResult(e){
     latestCmd=currentPreview(); showLiveTranscript(latestCmd); armEndpoint(); return;
   }
 
-  if(voiceState==='FOLLOWUP'){
+  if(voiceState==='FOLLOWUP' || voiceState==='CONFIRM'){
+    const wasConfirm = (voiceState==='CONFIRM');
     resetCaptureBuffer(false);
     const cmd=sessionCommand('all'); if(!cmd) return;
-    setVoiceState('CAPTURING'); captureStartTs=Date.now();
+    if(wasConfirm) confirmMode = true;          // keep the confirmation context alive
+    setVoiceState('CAPTURING'); captureStartTs=Date.now(); finalWaitCount=0;
     if(sessionCommand('final')) captureHasFinal=true;
     latestCmd=currentPreview(); showLiveTranscript(latestCmd); armEndpoint(); return;
   }
@@ -1398,62 +1639,112 @@ function startListening(){ freshMic(); }
 var adsRecommendationPending = null;
 function adsData(){ return (BRIEF_EXTRA && BRIEF_EXTRA.adsIntelligence) || null; }
 function money(n){ return n == null ? 'not available' : '$' + Number(n).toFixed(2); }
+function num(n){ return (n === null || n === undefined) ? 'not available' : n; }
+// Cache shape has evolved; read tolerantly and never invent a number.
+function pick(o){ for (var i=1;i<arguments.length;i++){ var v = o ? o[arguments[i]] : undefined; if (v !== undefined && v !== null) return v; } return null; }
+function adsFlat(v){
+  if (v === null || v === undefined) return '';
+  if (typeof v === 'string' || typeof v === 'number') return String(v);
+  if (Array.isArray(v)) return v.map(adsFlat).filter(Boolean).join('. ');
+  return Object.keys(v).filter(function(k){ return v[k] !== null && v[k] !== undefined && typeof v[k] !== 'object'; })
+                       .map(function(k){ return String(v[k]); }).join(' — ');
+}
+function adsRecText(a){ var r = a && a.recommendation; return typeof r === 'string' ? r : adsFlat(r); }
+function adsSpoken(a, key){ var s = a && a.spoken; if (!s) return ''; return typeof s === 'string' ? s : (s[key] || ''); }
 function adsQuestionIntent(t){ return (/\b(ads?|adwords|ppc|paid search|campaigns?)\b/.test(t) && /\b(how|what|which|brief|performance|doing|today|ctr|cpc|lead|leads|email|emails|booked|call|calls|budget|cap|working|wasting|waste|optim|suggest|recommend|experiment|next)\b/.test(t)) || /^(?:do you have any )?suggestions?[?!]*$|^what is wasting money[?!]*$|^how can we optimize (?:these|the) ads[?!]*$/.test(t.trim()); }
 function explicitAdsAction(t){ return /\b(tell|ask|have|direct|send)\s+(?:the\s+)?ads?\s+agent\b|\b(?:talk|speak)\s+(?:to|with)\s+(?:the\s+)?ads?\s+agent\b|\bads?\s+agent\s+(?:should|needs? to|to)\b/.test(t); }
 function adsAnswer(t){
  var a=adsData(); if(!a){ respond('Ads intelligence has not been refreshed yet. I will not infer performance or route this question.'); return; }
  var x=String(t).toLowerCase(), c=a.current||{},p=a.prior||{},d=a.today||{}, l=a.leads||{},h=a.health||{};
+ var attribution = adsFlat(pick(l,'attribution') || pick(h,'attributionCapture') || '');
+ var verified = num(pick(l,'verifiedAdsAttributedLeads','verifiedAdsAttributed'));
  var text, spoken;
- if(/\btoday\b/.test(x)){ text='Today, July 30, preliminary campaign-scope data: '+money(d.spend)+' spend, '+d.impressions+' impressions, '+d.clicks+' clicks, '+d.ctr+'% CTR, and '+money(d.averageCpc)+' average CPC. '+(h.status||'')+' '+(l.attribution||''); spoken=(a.spoken&&a.spoken.today)||text; }
- else if(/\b(wast|working|best|worst|suggest|optim|experiment|next)\b/.test(x)){ text=(a.best?'What is working: '+a.best+' ':'')+(a.worst?'Watch: '+a.worst+' ':'')+(a.waste?'Waste evidence: '+a.waste+' ':'')+'Recommendation: '+(a.recommendation&&a.recommendation.text||'No recommendation cached.'); spoken='Sam, '+(a.recommendation&&a.recommendation.text||'there is no approved recommendation cached.'); }
- else if(/\b(lead|email|booked|call|cpl)\b/.test(x)){ text='Lead and booking evidence: qualified inbox inquiries '+l.qualifiedInboxInquiries+'; verified Ads-attributed leads '+l.verifiedAdsAttributedLeads+'; booked calls '+l.bookedCalls+'; CPL '+l.cpl+'; cost per booked call '+l.costPerBookedCall+'. '+l.attribution; spoken='Sam, there are no verified Ads-attributed leads or booked calls in this cache. Inbox attribution is unavailable, so I will not infer it from timing alone.'; }
- else if(/\b(budget|cap|spend)\b/.test(x)){ text='Budget and cap: '+h.campaignBudgets+'. '+h.capStatus; spoken='Sam, the approved cap is thirty dollars a day across the two campaigns. Today is preliminary at '+money(d.spend)+', but the cache does not replace a pacing verification.'; }
- else { text='New dedicated campaign scope only — legacy ads excluded. Exact seven-ad identity is '+(a.scope&&a.scope.scopeUncertain?'not proven, so these are campaign-scope results, not a blended seven-ad claim. ':'verified. ')+'Jul 24–30: '+money(c.spend)+' spend, '+c.impressions+' impressions, '+c.clicks+' clicks, '+c.ctr+'% CTR, '+money(c.averageCpc)+' average CPC. Prior Jul 17–23: '+money(p.spend)+' spend, '+p.impressions+' impressions, '+p.clicks+' clicks, '+p.ctr+'% CTR, '+money(p.averageCpc)+' average CPC. Verified Ads leads '+l.verifiedAdsAttributedLeads+'; booked calls '+l.bookedCalls+'. '+l.attribution; spoken=(a.spoken&&a.spoken.performance)||text; }
- // The UI has one response channel; use the executive spoken version to keep voice conversational.
+ if(/\btoday\b/.test(x)){
+   text='Today, preliminary campaign-scope data: '+money(pick(d,'spend','cost'))+' spend, '+num(d.impressions)+' impressions, '+num(d.clicks)+' clicks, '+num(d.ctr)+'% CTR, and '+money(pick(d,'averageCpc','cpc'))+' average CPC. '+adsFlat(pick(h,'status'))+' '+attribution;
+   spoken=adsSpoken(a,'today')||text;
+ } else if(/\b(wast|working|best|worst|suggest|optim|experiment|next)\b/.test(x)){
+   text=(a.best?'What is working: '+adsFlat(a.best)+' ':'')+(a.worst?'Watch: '+adsFlat(a.worst)+' ':'')+(a.waste?'Waste evidence: '+adsFlat(a.waste)+' ':'')+'Recommendation: '+(adsRecText(a)||'No recommendation cached.');
+   spoken=adsSpoken(a,'optimization')||(a.latestOptimization&&a.latestOptimization.spoken_text)||adsSpoken(a,'performance')||('Sam, '+(adsRecText(a)||'there is no approved recommendation cached.'));
+ } else if(/\b(lead|email|booked|call|cpl)\b/.test(x)){
+   text='Lead and booking evidence: qualified inbox inquiries '+num(l.qualifiedInboxInquiries)+'; verified Ads-attributed leads '+verified+'; booked calls '+num(l.bookedCalls)+'; CPL '+money(pick(l,'cpl','cplBlended'))+'; cost per booked call '+(pick(l,'costPerBookedCall')===null?'not measurable from paid spend':money(pick(l,'costPerBookedCall')))+'. '+attribution;
+   spoken=adsSpoken(a,'leads')||('Sam, we logged '+num(l.qualifiedInboxInquiries)+' qualified inbox inquiries, but only '+verified+' is verified as Ads-attributed. Booked calls in the window: '+num(l.bookedCalls)+', none of them paid-attributed, so cost per booked call is not measurable yet. I will not infer attribution from timing alone.');
+   spoken=spoken;
+ } else if(/\b(budget|cap|spend)\b/.test(x)){
+   text='Budget and cap: '+adsFlat(pick(h,'campaignBudgets'))+' '+adsFlat(pick(h,'capStatus','dailyCapStatus'))+' '+adsFlat(pick(h,'weeklyCapStatus'));
+   spoken=adsSpoken(a,'budget')||('Sam, on caps: '+adsFlat(pick(h,'dailyCapStatus','capStatus'))+' '+adsFlat(pick(h,'weeklyCapStatus'))+' The cache does not replace a live pacing check.');
+ } else {
+   var scopeUncertain = !!(a.scope && typeof a.scope === 'object' && a.scope.scopeUncertain);
+   text='New dedicated campaign scope only — legacy ads excluded. '+(scopeUncertain?'Exact seven-ad identity is not proven, so these are campaign-scope results. ':'')+'Current window: '+money(pick(c,'spend','cost'))+' spend, '+num(c.impressions)+' impressions, '+num(c.clicks)+' clicks, '+num(c.ctr)+'% CTR, '+money(pick(c,'averageCpc','cpc'))+' average CPC. Prior window: '+money(pick(p,'spend','cost'))+' spend, '+num(p.impressions)+' impressions, '+num(p.clicks)+' clicks, '+num(p.ctr)+'% CTR, '+money(pick(p,'averageCpc','cpc'))+' average CPC. Verified Ads leads '+verified+'; booked calls '+num(l.bookedCalls)+'. '+attribution;
+   spoken=adsSpoken(a,'performance')||text;
+ }
+ // The UI has one response channel; use the executive spoken version for voice.
  respond(spoken); clog('ADS CACHE: '+text,'hi');
 }
-function queueAdsRecommendation(){ var a=adsData(); if(!a||!a.recommendation){ respond('There is no cached Ads recommendation to approve.'); return; } adsRecommendationPending={cmd:a.recommendation.text,agent:'Ads Agent',recommendationId:a.recommendation.id}; respondForConfirmation('I recommend: '+a.recommendation.text+' Send this read-only assignment to Ads Agent? Yes or no.'); }
+function queueAdsRecommendation(){
+  var a=adsData(); var rec=adsRecText(a);
+  if(!a||!rec){ respond('There is no cached Ads recommendation to approve.'); return; }
+  var rid=(a.recommendation&&a.recommendation.id)||(a.latestOptimization&&a.latestOptimization.request_id)||null;
+  adsRecommendationPending={cmd:rec,agent:'Ads Agent',recommendationId:rid};
+  setPending({cmd:rec,agent:'Ads Agent',recommendationId:rid});
+  askConfirm('I recommend: '+rec+' Send this read-only assignment to Ads Agent? Yes or no.');
+}
 
 function handleSpeech(heard) {
   clog('› ' + heard, 'hi');
+  if (pendingDispatch && !pendingIsFresh()) pendingDispatch = null;
   if (pendingRetry && /\b(retry|try again|resend|send it again)\b/.test(heard)) {
     const q = pendingRetry; pendingRetry = null; dispatch(q); return;
   }
   if (pendingDispatch) {
-    if (/\b(yes|yeah|yep|sure|do it|go ahead|send it|affirmative|please|correct)\b/.test(heard)) {
+    const inConfirmWindow = (voiceState === 'CONFIRM' || voiceState === 'FOLLOWUP' || voiceState === 'THINKING');
+    const ci = inConfirmWindow ? confirmIntentLoose(heard) : confirmIntent(heard);
+    if (ci === 'yes') {
       const pd = (typeof pendingDispatch === 'string')
         ? { cmd: pendingDispatch, agent: targetAgent(pendingDispatch) }
         : pendingDispatch;
-      pendingDispatch = null;
-      dispatch(pd.cmd, { confirmed: true, approved: true, agent: pd.agent, recommendationId: pd.recommendationId || null }); return;
+      pendingDispatch = null; confirmMode = false; clearTimeout(confirmTimer);
+      // The stored original command and target are dispatched — never the summary.
+      dispatch(pd.cmd, { confirmed: true, approved: true, agent: pd.agent || targetAgent(pd.cmd), recommendationId: pd.recommendationId || null }); return;
     }
-    if (/\b(no|nope|nah|cancel|never mind|nevermind|negative|forget it|don'?t)\b/.test(heard)) {
-      pendingDispatch = null;
-      respond("Okay, I won't send it. What else?"); return;
+    if (ci === 'no') {
+      pendingDispatch = null; confirmMode = false; clearTimeout(confirmTimer);
+      respond("Okay — I won't send it."); return;
     }
-    pendingDispatch = null;
+    // Not a confirmation: this is a new instruction, so drop the stale pending item.
+    pendingDispatch = null; confirmMode = false; clearTimeout(confirmTimer);
   }
   if (/stand\s*down|go to sleep|power down|sleep now|stop listening|be quiet|shut up|that'?s all|that is all/.test(heard)) {
     respondThenSleep("Standing down. I'll be right here when you need me.");
     return;
   }
+  // Direct, high-confidence named-agent order → dispatch once, no confirmation loop.
+  // Approval-sensitive wording still gets exactly one yes/no.
+  const dno = directNamedOrder(heard);
+  if (dno) {
+    if (sensitiveOrder(normalize(heard))) {
+      setPending({ cmd: heard, agent: dno.agent, summary: spokenSummary(heard) });
+      askConfirm('I understand — ' + spokenSummary(heard) + '. Send this to ' + dno.agent + '? Yes or no.');
+      return;
+    }
+    dispatch(heard, { confirmed: true, agent: dno.agent }); return;
+  }
   // ADS questions are onboard/cache-only. Explicit Ads actions always target Ads Agent.
   if (explicitAdsAction(heard)) {
-    const summary = compactSummary(heard); pendingDispatch = { cmd: heard, agent: 'Ads Agent', summary: summary };
-    respondForConfirmation('I understand: '+summary+'. Send this to Ads Agent? Yes or no.'); return;
+    setPending({ cmd: heard, agent: 'Ads Agent', summary: spokenSummary(heard) });
+    askConfirm('I understand — ' + spokenSummary(heard) + '. Send this to Ads Agent? Yes or no.'); return;
   }
   if (adsQuestionIntent(heard)) {
     if (/\b(go for it|go ahead|do it|make it happen)\b/.test(heard)) { queueAdsRecommendation(); return; }
     adsAnswer(heard); return;
   }
-  if (/\b(go for it|go ahead|do it|make it happen)\b/.test(heard) && adsData() && adsData().recommendation) { queueAdsRecommendation(); return; }
+  if (/\b(go for it|go ahead|do it|make it happen)\b/.test(heard) && adsData() && adsRecText(adsData())) { queueAdsRecommendation(); return; }
   // V5.4: summarize once, then ask before sending an action or update.
   // After Sam says yes, do not repeat the command again.
   if (isActionCommand(heard)) {
     const confirmAgent = targetAgent(heard);
-    const summary = compactSummary(heard);
-    pendingDispatch = { cmd: heard, agent: confirmAgent, summary: summary };
-    respondForConfirmation("I understand: " + summary + ". Send this to " + confirmAgent + "? Yes or no.");
+    const summary = spokenSummary(heard);
+    setPending({ cmd: heard, agent: confirmAgent, summary: summary });
+    askConfirm("I understand — " + summary + ". Send this to " + confirmAgent + "? Yes or no.");
     return;
   }
 
@@ -1818,6 +2109,14 @@ function dispatch(heard, opts){
   opts = opts || {};
   const agent = opts.agent || targetAgent(heard);
   const tgt = targetKey(agent);
+  // Duplicate protection: the same instruction to the same agent cannot be routed twice.
+  const dsig = agent + '|' + normalize(heard);
+  if (dsig === lastDispatchSig && (Date.now() - lastDispatchTs) < 10000) {
+    clog('Duplicate dispatch suppressed for ' + agent + '.', 'warn');
+    status('Already routed to ' + agent, true);
+    return;
+  }
+  lastDispatchSig = dsig; lastDispatchTs = Date.now();
   // Email and Ads have private receiving lines behind the secure switchboard.
   // Everything else stays on the existing central lane until that specialist
   // has a verified private receiving line; never pretend an unconnected route is direct.
