@@ -1399,7 +1399,7 @@ var adsRecommendationPending = null;
 function adsData(){ return (BRIEF_EXTRA && BRIEF_EXTRA.adsIntelligence) || null; }
 function money(n){ return n == null ? 'not available' : '$' + Number(n).toFixed(2); }
 function adsQuestionIntent(t){ return (/\b(ads?|adwords|ppc|paid search|campaigns?)\b/.test(t) && /\b(how|what|which|brief|performance|doing|today|ctr|cpc|lead|leads|email|emails|booked|call|calls|budget|cap|working|wasting|waste|optim|suggest|recommend|experiment|next)\b/.test(t)) || /^(?:do you have any )?suggestions?[?!]*$|^what is wasting money[?!]*$|^how can we optimize (?:these|the) ads[?!]*$/.test(t.trim()); }
-function explicitAdsAction(t){ return /\b(tell|ask|have|direct|send)\s+(?:the\s+)?ads?\s+agent\s+to\b|\bads?\s+agent\s+(?:should|needs? to|to)\b/.test(t); }
+function explicitAdsAction(t){ return /\b(tell|ask|have|direct|send)\s+(?:the\s+)?ads?\s+agent\b|\b(?:talk|speak)\s+(?:to|with)\s+(?:the\s+)?ads?\s+agent\b|\bads?\s+agent\s+(?:should|needs? to|to)\b/.test(t); }
 function adsAnswer(t){
  var a=adsData(); if(!a){ respond('Ads intelligence has not been refreshed yet. I will not infer performance or route this question.'); return; }
  var x=String(t).toLowerCase(), c=a.current||{},p=a.prior||{},d=a.today||{}, l=a.leads||{},h=a.health||{};
