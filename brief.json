@@ -444,7 +444,7 @@
           "impressions": 27,
           "clicks": 3,
           "ctr": 11.11,
-          "averageCpc": 1486666.67
+          "averageCpc": 1.49
         },
         {
           "id": "24049588003",
@@ -468,7 +468,7 @@
           "impressions": 226,
           "clicks": 32,
           "ctr": 14.16,
-          "averageCpc": 1489375.0
+          "averageCpc": 1.49
         },
         {
           "id": "24049588003",
@@ -479,7 +479,7 @@
           "impressions": 196,
           "clicks": 36,
           "ctr": 18.37,
-          "averageCpc": 2119295.33
+          "averageCpc": 2.12
         }
       ],
       "prior": [
@@ -492,7 +492,7 @@
           "impressions": 68,
           "clicks": 19,
           "ctr": 27.94,
-          "averageCpc": 1478545.21
+          "averageCpc": 1.48
         },
         {
           "id": "24049588003",
@@ -503,7 +503,7 @@
           "impressions": 275,
           "clicks": 34,
           "ctr": 12.36,
-          "averageCpc": 2348035.62
+          "averageCpc": 2.35
         }
       ]
     },
