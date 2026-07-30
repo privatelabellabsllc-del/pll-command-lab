@@ -1393,6 +1393,27 @@ function onResult(e){
 }
 function startListening(){ freshMic(); }
 
+// ===== ADS INTELLIGENCE — CACHE-ONLY INTENT / ACTION SUBSYSTEM =====
+// Questions are answered from brief.json's adsIntelligence cache; never dispatch or alter Ads.
+var adsRecommendationPending = null;
+function adsData(){ return (BRIEF_EXTRA && BRIEF_EXTRA.adsIntelligence) || null; }
+function money(n){ return n == null ? 'not available' : '$' + Number(n).toFixed(2); }
+function adsQuestionIntent(t){ return (/\b(ads?|adwords|ppc|paid search|campaigns?)\b/.test(t) && /\b(how|what|which|brief|performance|doing|today|ctr|cpc|lead|leads|email|emails|booked|call|calls|budget|cap|working|wasting|waste|optim|suggest|recommend|experiment|next)\b/.test(t)) || /^(?:do you have any )?suggestions?[?!]*$|^what is wasting money[?!]*$|^how can we optimize (?:these|the) ads[?!]*$/.test(t.trim()); }
+function explicitAdsAction(t){ return /\b(tell|ask|have|direct|send)\s+(?:the\s+)?ads?\s+agent\s+to\b|\bads?\s+agent\s+(?:should|needs? to|to)\b/.test(t); }
+function adsAnswer(t){
+ var a=adsData(); if(!a){ respond('Ads intelligence has not been refreshed yet. I will not infer performance or route this question.'); return; }
+ var x=String(t).toLowerCase(), c=a.current||{},p=a.prior||{},d=a.today||{}, l=a.leads||{},h=a.health||{};
+ var text, spoken;
+ if(/\btoday\b/.test(x)){ text='Today, July 30, preliminary campaign-scope data: '+money(d.spend)+' spend, '+d.impressions+' impressions, '+d.clicks+' clicks, '+d.ctr+'% CTR, and '+money(d.averageCpc)+' average CPC. '+(h.status||'')+' '+(l.attribution||''); spoken=(a.spoken&&a.spoken.today)||text; }
+ else if(/\b(wast|working|best|worst|suggest|optim|experiment|next)\b/.test(x)){ text=(a.best?'What is working: '+a.best+' ':'')+(a.worst?'Watch: '+a.worst+' ':'')+(a.waste?'Waste evidence: '+a.waste+' ':'')+'Recommendation: '+(a.recommendation&&a.recommendation.text||'No recommendation cached.'); spoken='Sam, '+(a.recommendation&&a.recommendation.text||'there is no approved recommendation cached.'); }
+ else if(/\b(lead|email|booked|call|cpl)\b/.test(x)){ text='Lead and booking evidence: qualified inbox inquiries '+l.qualifiedInboxInquiries+'; verified Ads-attributed leads '+l.verifiedAdsAttributedLeads+'; booked calls '+l.bookedCalls+'; CPL '+l.cpl+'; cost per booked call '+l.costPerBookedCall+'. '+l.attribution; spoken='Sam, there are no verified Ads-attributed leads or booked calls in this cache. Inbox attribution is unavailable, so I will not infer it from timing alone.'; }
+ else if(/\b(budget|cap|spend)\b/.test(x)){ text='Budget and cap: '+h.campaignBudgets+'. '+h.capStatus; spoken='Sam, the approved cap is thirty dollars a day across the two campaigns. Today is preliminary at '+money(d.spend)+', but the cache does not replace a pacing verification.'; }
+ else { text='New dedicated campaign scope only — legacy ads excluded. Exact seven-ad identity is '+(a.scope&&a.scope.scopeUncertain?'not proven, so these are campaign-scope results, not a blended seven-ad claim. ':'verified. ')+'Jul 24–30: '+money(c.spend)+' spend, '+c.impressions+' impressions, '+c.clicks+' clicks, '+c.ctr+'% CTR, '+money(c.averageCpc)+' average CPC. Prior Jul 17–23: '+money(p.spend)+' spend, '+p.impressions+' impressions, '+p.clicks+' clicks, '+p.ctr+'% CTR, '+money(p.averageCpc)+' average CPC. Verified Ads leads '+l.verifiedAdsAttributedLeads+'; booked calls '+l.bookedCalls+'. '+l.attribution; spoken=(a.spoken&&a.spoken.performance)||text; }
+ // The UI has one response channel; use the executive spoken version to keep voice conversational.
+ respond(spoken); clog('ADS CACHE: '+text,'hi');
+}
+function queueAdsRecommendation(){ var a=adsData(); if(!a||!a.recommendation){ respond('There is no cached Ads recommendation to approve.'); return; } adsRecommendationPending={cmd:a.recommendation.text,agent:'Ads Agent',recommendationId:a.recommendation.id}; respondForConfirmation('I recommend: '+a.recommendation.text+' Send this read-only assignment to Ads Agent? Yes or no.'); }
+
 function handleSpeech(heard) {
   clog('› ' + heard, 'hi');
   if (pendingRetry && /\b(retry|try again|resend|send it again)\b/.test(heard)) {
@@ -1404,7 +1425,7 @@ function handleSpeech(heard) {
         ? { cmd: pendingDispatch, agent: targetAgent(pendingDispatch) }
         : pendingDispatch;
       pendingDispatch = null;
-      dispatch(pd.cmd, { confirmed: true, agent: pd.agent }); return;
+      dispatch(pd.cmd, { confirmed: true, approved: true, agent: pd.agent, recommendationId: pd.recommendationId || null }); return;
     }
     if (/\b(no|nope|nah|cancel|never mind|nevermind|negative|forget it|don'?t)\b/.test(heard)) {
       pendingDispatch = null;
@@ -1416,6 +1437,16 @@ function handleSpeech(heard) {
     respondThenSleep("Standing down. I'll be right here when you need me.");
     return;
   }
+  // ADS questions are onboard/cache-only. Explicit Ads actions always target Ads Agent.
+  if (explicitAdsAction(heard)) {
+    const summary = compactSummary(heard); pendingDispatch = { cmd: heard, agent: 'Ads Agent', summary: summary };
+    respondForConfirmation('I understand: '+summary+'. Send this to Ads Agent? Yes or no.'); return;
+  }
+  if (adsQuestionIntent(heard)) {
+    if (/\b(go for it|go ahead|do it|make it happen)\b/.test(heard)) { queueAdsRecommendation(); return; }
+    adsAnswer(heard); return;
+  }
+  if (/\b(go for it|go ahead|do it|make it happen)\b/.test(heard) && adsData() && adsData().recommendation) { queueAdsRecommendation(); return; }
   // V5.4: summarize once, then ask before sending an action or update.
   // After Sam says yes, do not repeat the command again.
   if (isActionCommand(heard)) {
@@ -1718,6 +1749,7 @@ function setHook(){
 }
 function targetAgent(t){
   t = (t || '').toLowerCase();
+  if (/\b(tell|ask|have|direct|send)\s+(?:the\s+)?ads?\s+agent\b|\bads?\s+agent\s+(?:should|needs? to|to)\b/.test(t)) return 'Ads Agent';
   if (/crm|developer|bug|fix|broken|feature|pipeline build|ticket/.test(t)) return 'CRM Developer';
   if (/email|inbox|outlook|convertflow|send.*mail|draft.*(reply|email|mail)|check.*mail/.test(t)) return 'Email Agent';
   if (/google ads|paid ads|new ads|seven new ads|ads agent|how (?:are|is).*ads|brief.*ads|ads.*brief|ad performance|ad campaign|paid search|ppc|cpc|ctr|keyword bid|media spend/.test(t)) return 'Ads Agent';
@@ -1803,7 +1835,7 @@ function dispatch(heard, opts){
   status('Routing to ' + agent + (overseer ? ' + PLL Consultant oversight' : '') + '…', true); coreState('working','think');
   clog('→ Route [' + agent + ' · ' + tgt + (overseer ? ' · overseen' : '') + ' · ' + rid + ']: ' + heard, 'warn');
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
-    body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, overseer: overseer, context: priorContext, ts: new Date().toISOString() }) })
+    body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, overseer: overseer, sam_approved: !!opts.approved, recommendation_id: opts.recommendationId || null, context: priorContext, ts: new Date().toISOString() }) })
   .then(r => { if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); status('Router accepted — waiting for ' + agent, true); coreState('working','think'); startAnswerWatcher(heard, logId, rid); }
                else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respondForConfirmation('The router rejected that. Say "retry" and I\'ll send it again.'); } })
   .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respondForConfirmation('Could not reach the router. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });

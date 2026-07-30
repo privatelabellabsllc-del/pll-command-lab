@@ -391,9 +391,153 @@
     "note": "CRM was at the sign-in page July 30, so counts and values are carried forward from the last authenticated capture, not re-verified. Fresh WhatsApp evidence was reviewed July 30; Outlook search returned no messages since July 29. CRM Developer Gmail threads show no verified closure for the Assign To issue."
   },
   "adsAgentBrief": {
-    "status": "Not refreshed in this morning workflow. No Google Ads behavior or settings were changed.",
+    "status": "Fresh source-backed cache \u2014 read only; no Google Ads behavior or settings were changed. Exact seven-ad identity remains unproven, so legacy and unrelated ads are excluded and results are campaign-scope only.",
+    "updatedAt": "2026-07-30T13:50:00Z",
     "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
-    "tracking": "No fresh Ads verification performed in this refresh.",
-    "governance": "Do not alter campaigns or make attribution claims from this brief."
+    "snapshot": "Jul 24\u201330 campaign-scope: $133.64 spend, 425 impressions, 68 clicks, 16.00% CTR, $1.97 average CPC; 0 verified Ads-attributed leads / 0 booked calls.",
+    "recommendation": "Have Ads Agent run a read-only search-term and landing/form health review for Contract Manufacturing, especially July 28; return one negative-keyword or route recommendation. Do not change bids, budget, ads, or campaigns without Sam approval.",
+    "governance": "No consequential change without Sam approval."
+  },
+  "adsIntelligence": {
+    "updatedAt": "2026-07-30T13:50:00Z",
+    "source": "Google Ads API read-only; Outlook qualified-inquiry review was not reliably date/source-filterable, so no inbox attribution is asserted.",
+    "scope": {
+      "requested": "Ads Agent seven net-new ads only in Contract Manufacturing and White Label Samples",
+      "verified": "Two newly created dedicated Search campaigns, IDs 24040031889 and 24049588003; legacy campaigns excluded. Exact seven-ad identity cannot be proven from available inventory because the API returned six clearly new 817\u2026 ads plus other unlabelled ads. Campaign totals are labeled campaign-scope, not seven-ad-scope.",
+      "scopeUncertain": true,
+      "legacyExcluded": true
+    },
+    "windows": {
+      "today": "2026-07-30 (preliminary)",
+      "current": "2026-07-24 through 2026-07-30",
+      "prior": "2026-07-17 through 2026-07-23"
+    },
+    "today": {
+      "spend": 4.46,
+      "impressions": 30,
+      "clicks": 3,
+      "ctr": 10.0,
+      "averageCpc": 1.49
+    },
+    "current": {
+      "spend": 123.95,
+      "impressions": 422,
+      "clicks": 68,
+      "ctr": 16.11,
+      "averageCpc": 1.82
+    },
+    "prior": {
+      "spend": 107.92,
+      "impressions": 343,
+      "clicks": 53,
+      "ctr": 15.45,
+      "averageCpc": 2.04
+    },
+    "campaignBreakdown": {
+      "today": [
+        {
+          "id": "24040031889",
+          "name": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "primaryStatus": "ELIGIBLE",
+          "spend": 4.46,
+          "impressions": 27,
+          "clicks": 3,
+          "ctr": 11.11,
+          "averageCpc": 1486666.67
+        },
+        {
+          "id": "24049588003",
+          "name": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "primaryStatus": "ELIGIBLE",
+          "spend": 0.0,
+          "impressions": 3,
+          "clicks": 0,
+          "ctr": 0.0,
+          "averageCpc": null
+        }
+      ],
+      "current": [
+        {
+          "id": "24040031889",
+          "name": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "primaryStatus": "ELIGIBLE",
+          "spend": 47.66,
+          "impressions": 226,
+          "clicks": 32,
+          "ctr": 14.16,
+          "averageCpc": 1489375.0
+        },
+        {
+          "id": "24049588003",
+          "name": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "primaryStatus": "ELIGIBLE",
+          "spend": 76.29,
+          "impressions": 196,
+          "clicks": 36,
+          "ctr": 18.37,
+          "averageCpc": 2119295.33
+        }
+      ],
+      "prior": [
+        {
+          "id": "24040031889",
+          "name": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "primaryStatus": "ELIGIBLE",
+          "spend": 28.09,
+          "impressions": 68,
+          "clicks": 19,
+          "ctr": 27.94,
+          "averageCpc": 1478545.21
+        },
+        {
+          "id": "24049588003",
+          "name": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "primaryStatus": "ELIGIBLE",
+          "spend": 79.83,
+          "impressions": 275,
+          "clicks": 34,
+          "ctr": 12.36,
+          "averageCpc": 2348035.62
+        }
+      ]
+    },
+    "adBreakdown": {
+      "available": false,
+      "reason": "Exact seven-ad identity is not proven; no unrelated/legacy ads blended."
+    },
+    "leads": {
+      "qualifiedInboxInquiries": "UNAVAILABLE \u2014 no defensible date-bounded qualified-inquiry count extracted",
+      "verifiedAdsAttributedLeads": 0,
+      "bookedCalls": 0,
+      "cpl": "NOT YET MEASURABLE",
+      "costPerBookedCall": "NOT YET MEASURABLE",
+      "attribution": "No UTM, GCLID, approved campaign/source record, or equivalent evidence verified; zero is not inferred from inbox search."
+    },
+    "health": {
+      "dailyCap": 30,
+      "campaignBudgets": "White Label Samples $10/day; Contract Manufacturing $20/day",
+      "capStatus": "Current cumulative spend is not a daily-cap measurement; today spend is $4.46 preliminary, below $30 aggregate hard cap. Need campaign budget/source pacing verification for a cap conclusion.",
+      "funnel": "NOT VERIFIED in this refresh; landing/form route not click-tested in this read-only data pull.",
+      "status": "Both dedicated campaigns ENABLED and ELIGIBLE."
+    },
+    "best": "Campaign-scope: Samples has lower current-period average CPC ($1.49) and $57.66 spend / 32 clicks; this is not a lead-quality conclusion.",
+    "worst": "Campaign-scope: Contract Manufacturing used $76.30 for 36 clicks at $2.12 average CPC; July 28 alone was $36.91 for 13 clicks ($2.84 CPC). No lead data supports changing it.",
+    "waste": "Search-term report was not available from the supplied read-only tools; no search-term waste finding is asserted. Watch the Contract Manufacturing July 28 CPC spike; it is a review signal, not proven waste.",
+    "recommendation": {
+      "id": "ads-review-contract-manufacturing-search-terms-and-funnel",
+      "text": "Have Ads Agent run a read-only search-term and landing/form health review for Contract Manufacturing, especially July 28; return one negative-keyword or route recommendation. Do not change bids, budget, ads, or campaigns without Sam approval.",
+      "approvalRequired": false,
+      "changeApprovalRequired": true
+    },
+    "spoken": {
+      "today": "Sam, today is preliminary. The two new dedicated campaigns have spent $4.46 for 3 clicks and 30 impressions, all from Samples. Contract Manufacturing has not generated a click today. There are no verified Ads-attributed leads or booked calls yet. My read is that it is too early to judge today, so I recommend a read-only search-term and funnel review before any change.",
+      "performance": "Sam, the dedicated new-campaign scope is live, but I cannot yet prove the exact seven-ad roster, so I am keeping legacy ads out and labeling this campaign-scope data. From July 24 through 30, the two new campaigns spent $123.95 for 68 clicks from 422 impressions, a 16.11 percent CTR and $1.82 average CPC. The prior seven-day window spent $107.88 for 53 clicks from 343 impressions, a 15.5 percent CTR and $2.04 CPC. There are no verified Ads-attributed leads or booked calls in the available evidence. I recommend a read-only Contract Manufacturing search-term and funnel review before approving any optimization."
+    }
   }
 }
