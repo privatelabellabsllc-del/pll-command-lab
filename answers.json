@@ -1,9 +1,9 @@
 {
-  "id": "cmd_ms9hwrpf_6t7ykad",
-  "request_id": "cmd_ms9hwrpf_6t7ykad",
-  "ts": "2026-07-31T22:11:22.620Z",
+  "id": "cmd_ms9i04uk_e154z06",
+  "request_id": "cmd_ms9i04uk_e154z06",
+  "ts": "2026-07-31T22:13:00Z",
   "agent": "Email Agent",
   "status": "blocked",
-  "text": "Blocked pending clarification: Which James should the Email Agent contact? Most likely James Bailey (1ofusholdings@gmail.com), the active client awaiting a branded sample bottle. Other records are James Pitenis / Pop Daddy Snacks, James Pitenis / 100,000-unit haircare-skincare prospect, and Kora James & Co. Confirm the name/email and the note will be sent.",
-  "spoken_text": "I need one clarification before the email goes out. Do you mean James Bailey, the active client waiting on the branded sample bottle? If not, tell me which James and I’ll route it correctly."
+  "text": "Blocked: The Email Agent could not identify James Spatinas in PLL's customer records or Sam's Outlook. Please provide his email address so the note can be sent.",
+  "spoken_text": "Sam, I couldn't identify James Spatinas in our records. Send me his email address, and the Email Agent will send your note right away."
 }
