@@ -1,9 +1,9 @@
 {
-  "id": "cmd_ms9i04uk_e154z06",
-  "request_id": "cmd_ms9i04uk_e154z06",
-  "ts": "2026-07-31T22:13:00Z",
-  "agent": "Email Agent",
-  "status": "blocked",
-  "text": "Blocked: The Email Agent could not identify James Spatinas in PLL's customer records or Sam's Outlook. Please provide his email address so the note can be sent.",
-  "spoken_text": "Sam, I couldn't identify James Spatinas in our records. Send me his email address, and the Email Agent will send your note right away."
+  "id": "cmd_ms9izwp9_gciuqbu",
+  "request_id": "cmd_ms9izwp9_gciuqbu",
+  "ts": "2026-07-31T22:41:00.039246Z",
+  "agent": "Command Router",
+  "status": "routed",
+  "text": "Accepted by the secure CRM switchboard and routed to the CRM Developer: create one task assigned to Steve, due Saturday, August 1, 2026, to ship the Mothered order, with duplicate avoidance. This confirms routing only; task creation is pending callback evidence.",
+  "spoken_text": "Sam, the request was accepted by the secure CRM switchboard and routed to the CRM Developer. It asks for one task for Steve, due tomorrow, to ship the Mothered order, with duplicate avoidance. The task is not confirmed created yet; I’m waiting for the CRM callback."
 }
