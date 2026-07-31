@@ -1,43 +1,52 @@
 {
-  "date": "2026-07-30",
-  "ts": "2026-07-30T17:10:17.748828Z",
+  "date": "2026-07-31",
+  "ts": "2026-07-31T11:03:50.425Z",
   "brief": [
     {
-      "t": "FIRST \u2014 Terra Lotus quote and contract are today\u2019s dominant revenue priority. Live WhatsApp requests 5,000 shampoo, 5,000 conditioner, 9,000 body wash across three scents, and 3,000 face wash: 22,000 units total, not 21,000. Confirm the quantity discrepancy, complete all packaging/fill/labor/overhead/margin inputs, and deliver the quote and contract today without inventing costs.",
+      "t": "FIRST — collect Ashley / Nymphaea’s next payment this morning. She has signed the updated agreement and asked for an invoice with payment link for 50% of the Miron glass-container amount; the $5,644.50 manufacturing deposit is already paid. Send only a verified glass amount and payment link, then confirm the order can be placed.",
       "hot": true
     },
     {
-      "t": "PLL is now operating from the new building at 24600 N. Industrial Dr., Farmington Hills, MI 48335. Customer notification is complete. Update UPS, USPS, and Shopify business/origin/return addresses, then verify each with a saved-address check and one test label/order path.",
+      "t": "SECOND — Terra Lotus quote and contract were due yesterday and cannot quietly slide. Confirm the 22,000-unit total against the 21,000 reference, lock every verified cost and lead-time input, obtain approval, and deliver. Do not invent pricing.",
       "hot": true
     },
     {
-      "t": "First: stop the BuffMan filling-line commitment until the equipment scope and landed cost are verified. The supplier quoted $8,850 DDP and Aiden is asking whether both machines support hot fill and batch coding. Confirm the machine configuration, coding method, quote inclusions, and total approved spend before payment or shipment.",
+      "t": "THIRD — stop any BuffMan filling-line commitment until the $8,850 DDP quote, machine scope, hot-fill capability, batch-coding method, and total landed cost are verified in writing.",
       "hot": true
     },
     {
-      "t": "Second: turn Ashley / Earth and Ash payment-ready. Ashley asked again last night for the Miron glass invoice so she can pay. Laura committed July 23 to send it; confirm the invoice, glass order status, and white natural-paper-label quote today.",
+      "t": "FOURTH — protect customer delivery truth: obtain Natugeda Hair Oil’s real production stage and next date before any update. PHYLARA is paused after sample satisfaction and needs release-permission, formula/specification, and balance confirmation.",
       "hot": true
     },
     {
-      "t": "Third: protect open customer production commitments. Natugeda still needs a verified Hair Oil production stage and date; do not let stale \u201cProduction Scheduled\u201d language substitute for an operations fact. Separately, PHYLARA has paused after sample satisfaction and requests its final formula/specifications plus confirmation of any balance.",
-      "hot": true
-    },
-    {
-      "t": "Fourth: deal with the payable and equipment exposure with facts, not email links. The July 29 bitop dunning notice and CH Robinson invoice remain unvalidated; add the $8,850 DDP freight quote to the cash decision only after matching all three items to internal records.",
-      "hot": true
-    },
-    {
-      "t": "Victor is due tomorrow for packaging compatibility and complete quote inputs. The authoritative July 20 update remains: PLL reached him, and he will confirm Edge Control packaging compatibility; no final quote yet.",
+      "t": "FIFTH — respond to new revenue with qualification, not promises. Salty Pup has a formula and packaging and is seeking manufacturing; Shay Brands is booked for August 3 at noon ET and needs tiered 500/1,000/1,500-unit pricing preparation. The new chelating-shampoo inquiry needs formula/claims and MOQ qualification.",
       "hot": false
+    },
+    {
+      "t": "SIXTH — resolve cash and continuity gates: validate bitop, CH Robinson, and BuffMan exposure against internal records; complete DTE start-service instructions; then update UPS, USPS, and Shopify to the live Farmington Hills address and test each workflow.",
+      "hot": true
     }
   ],
   "next": [
-    "Confirm Terra Lotus volume as 22,000 units versus Sam\u2019s 21,000 reference; obtain every cost input and deliver quote plus contract today",
-    "Change PLL address in UPS, USPS, and Shopify to 24600 N. Industrial Dr., Farmington Hills, MI 48335 and test each workflow",
-    "Close Ashley\u2019s Miron invoice/order status and white natural-paper-label quote",
-    "Obtain verified Natugeda production facts before customer communication"
+    "Send Ashley the verified 50% Miron glass-container invoice/payment link; confirm order placement after payment",
+    "Close Terra Lotus: confirm 22,000 units, verify every cost/lead-time input, approve, and send quote plus contract",
+    "Gate BuffMan: written hot-fill, coding, scope, DDP inclusion, and final landed-cost confirmation before any commitment",
+    "Get Natugeda production facts before customer communication"
   ],
   "kb": [
+    {
+      "keys": [
+        "ashley",
+        "earth and ash",
+        "nymphaea",
+        "miron",
+        "glass",
+        "invoice",
+        "payment",
+        "labels"
+      ],
+      "a": "Ashley / Nymphaea signed the updated agreement and requested an invoice with payment link for 50% of the Miron glass-container amount. She states the $5,644.50 50% manufacturing deposit is already paid. Verify the glass amount and supplier order path before invoicing; white natural-paper labels remain the selected direction."
+    },
     {
       "keys": [
         "terra lotus",
@@ -47,29 +56,10 @@
         "22000",
         "21,000",
         "21000",
-        "shampoo",
-        "conditioner",
-        "body wash",
-        "face wash",
         "quote",
         "contract"
       ],
-      "a": "Terra Lotus is the highest-priority live revenue deal. In the July 30 WhatsApp group, the customer requested 5,000 shampoo, 5,000 conditioner, 3,000 body wash for each of three scents (9,000 total), and 3,000 face wash. Those line items total 22,000 units, although Sam referenced 21,000; confirm the intended total before finalizing. Kenna asked Sam to send the contract and quote in the group, and Sam committed to deliver today. Pricing must include verified formula/ingredients, packaging, fill/labor, overhead, freight if applicable, and approved margin\u2014never invent missing inputs."
-    },
-    {
-      "keys": [
-        "new building",
-        "new address",
-        "address",
-        "ups",
-        "usps",
-        "shopify",
-        "move",
-        "moved",
-        "24600",
-        "industrial"
-      ],
-      "a": "PLL has moved into the new building. The active address is Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335. Customers have already been informed. UPS, USPS, and Shopify must be updated immediately, including business/origin/return locations where applicable, and each change must be validated with a saved-address check plus a test label or order workflow."
+      "a": "Terra Lotus remains the major quote and contract priority, now overdue from July 30. The customer’s WhatsApp line items total 22,000 units, while a 21,000-unit reference must be reconciled. Do not issue pricing until formula, packaging, labor, overhead, freight, lead time, and approved margin are verified."
     },
     {
       "keys": [
@@ -81,20 +71,7 @@
         "batch coding",
         "yuhang"
       ],
-      "a": "On July 30, Aiden asked whether both proposed BuffMan filling machines support hot fill. Yuhang\u2019s forwarded freight quote is USD 8,850 DDP door-to-door; he asked what batch coding is required and indicated coding can print on bottles or labels. The quotation scope, machine configuration, coding method, and final landed cost need verification before payment, order, or shipment."
-    },
-    {
-      "keys": [
-        "ashley",
-        "earth and ash",
-        "nymphaea",
-        "miron",
-        "glass",
-        "labels",
-        "paper",
-        "invoice"
-      ],
-      "a": "Ashley, rebranding Earth & Ash as Nymphaea, confirmed white natural paper labels and asked again July 29 for the Miron glass invoice so she can pay. Laura said a subcontracted label price takes 2\u20133 days and final approved rolls take about two weeks after payment; the Miron invoice/order status and label quote are not verified as complete."
+      "a": "BuffMan equipment remains gated. The forwarded freight quote is USD 8,850 DDP, and hot-fill capability, batch-coding method, equipment configuration, quote inclusions, and final landed cost are not verified. No payment, order, or shipment commitment is authorized from current evidence."
     },
     {
       "keys": [
@@ -105,7 +82,7 @@
         "production",
         "timeline"
       ],
-      "a": "Natugeda requested Hair Oil production status and a timeline. The last authenticated CRM capture listed it as Production Scheduled, but CRM is unavailable and no current stage or delivery date is verified. Operations must provide facts before any customer update."
+      "a": "Natugeda needs a factual Hair Oil production stage and next date. CRM is not authenticated and the historical Production Scheduled label is not a current operations fact. Get operations confirmation before customer communication."
     },
     {
       "keys": [
@@ -116,7 +93,50 @@
         "specifications",
         "balance"
       ],
-      "a": "PHYLARA\u2019s Shannon says she is happy with the sample but is pausing the project for personal-timeline reasons. She requested the final formula/specifications and confirmation of any remaining balance. Treat this as a controlled pause: confirm release permissions, documents, and ledger status before replying."
+      "a": "PHYLARA is satisfied with the sample but pausing for personal-timeline reasons. The customer requested final formula/specifications and any remaining balance. Confirm release permission, document control, and ledger status before responding."
+    },
+    {
+      "keys": [
+        "salty pup",
+        "susan",
+        "newport",
+        "dog",
+        "coastal rinse"
+      ],
+      "a": "Salty Pup Newport Beach is a new manufacturing inquiry introduced by Ronald. Susan says the formula is complete and she has bottles, labels, and a label applicator; she seeks the right manufacturing partner. Confirm formula transfer, claims, batch size, compatibility, testing, and production requirements before promising price or timing."
+    },
+    {
+      "keys": [
+        "shay brands",
+        "jarrod",
+        "booked call",
+        "tallow",
+        "august 3"
+      ],
+      "a": "Jarrod Adams of Shay Brands is booked for Monday, August 3 at 12:00 PM ET. He wants a custom whipped tallow body moisturizer plus white-label scrub and night cream, with later shampoo, conditioner, and body wash; he requested 500, 1,000, and 1,500-unit tiers. Prepare qualification and validated commercial inputs, not a speculative quote."
+    },
+    {
+      "keys": [
+        "vladimir",
+        "chelating shampoo",
+        "treatment strength",
+        "lead"
+      ],
+      "a": "A new web inquiry asks about treatment-strength chelating shampoo. Determine intended claims, active ingredients, target user, quantity, packaging, and budget before making a manufacturing or regulatory representation. Treatment-strength positioning may require classification review."
+    },
+    {
+      "keys": [
+        "new building",
+        "new address",
+        "address",
+        "ups",
+        "usps",
+        "shopify",
+        "move",
+        "24600",
+        "industrial"
+      ],
+      "a": "PLL operates at 24600 N. Industrial Dr., Farmington Hills, MI 48335. Customer notification is complete, but UPS, USPS, and Shopify address changes and a test workflow remain pending. DTE also sent a start-service reminder that needs completion."
     },
     {
       "keys": [
@@ -125,7 +145,7 @@
         "payable",
         "overdue"
       ],
-      "a": "bitop AG\u2019s July 29 dunning notice requested payment to avoid further fees. The amount, original invoice, and any material or production hold remain unverified; finance must match it to the ledger before payment."
+      "a": "bitop AG’s dunning notice requires ledger matching before payment. Amount, original invoice, and any material or production hold are not verified in this refresh. Do not pay from an email link."
     },
     {
       "keys": [
@@ -135,7 +155,7 @@
         "load",
         "555812351"
       ],
-      "a": "CH Robinson issued invoice 6247783636 for load 555812351 on July 29. The amount, due date, and shipment/customer linkage were not independently verified. Validate internally before payment or a delivery commitment."
+      "a": "CH Robinson invoice 6247783636 for load 555812351 remains unvalidated. Confirm amount, due date, shipment linkage, and delivery status internally before payment or a customer commitment."
     },
     {
       "keys": [
@@ -146,29 +166,7 @@
         "quote",
         "packaging"
       ],
-      "a": "Victor\u2019s task is due July 31. The authoritative day update says PLL reached him; he will confirm packaging compatibility with the Edge Control formula. Full cost inputs and a final quote remain unverified."
-    },
-    {
-      "keys": [
-        "aleta",
-        "constance",
-        "detangler",
-        "4c",
-        "hair"
-      ],
-      "a": "Constance said Aleta\u2019s first hero product is a type-4C detangler intended to provide extra slip for thick and thin hair. Formula requirements, units, packaging, launch timing, and budget remain unqualified; no MOQ or price has been promised."
-    },
-    {
-      "keys": [
-        "chris",
-        "australia",
-        "sporting",
-        "balm",
-        "cream",
-        "otc",
-        "regulatory"
-      ],
-      "a": "Chris confirmed Australian sporting balm recipes use heating and cooling effects. U.S. heating, cooling, muscle-recovery claims, or active ingredients may trigger OTC-drug requirements. Do not quote or promise cosmetic manufacture without formula/claims review and regulatory classification."
+      "a": "Victor was reached by phone and is expected to obtain R&D confirmation of Edge Control packaging compatibility. Compatibility timing and final cost inputs are still unverified. The quote cannot close without both."
     },
     {
       "keys": [
@@ -179,248 +177,230 @@
         "overdue",
         "pipeline"
       ],
-      "a": "Live CRM is at a sign-in screen July 30. The last authenticated capture showed 11 tasks, 8 overdue, 9 active deals, $1,327,800 pipeline, 20 projects in production, and $57,454.99 deposits; these are not live-verified. The customer-page Assign To dropdown was still reported broken July 28, and no verified CRM Developer closure was found."
+      "a": "CRM was at the sign-in screen during the July 31 refresh. The last authenticated capture showed 11 tasks, 8 overdue, 9 active deals, $1,327,800 pipeline, 20 projects in production, and $57,454.99 deposits; these are not live verified. The customer-page Assign To issue also lacks verified closure."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Deliver Terra Lotus 22,000-unit quote and contract",
-      "why": "Customer is waiting today on a major-company order. WhatsApp line items total 22,000, creating a 1,000-unit discrepancy against the 21,000 verbal reference that must be confirmed before final issue.",
-      "owner": "Sam / Aidan / Ronald / Laura",
-      "due": "Today",
+      "title": "Collect Ashley / Nymphaea glass-container payment",
+      "why": "Ashley signed the updated agreement and specifically requested a 50% Miron glass-container invoice with payment link. Manufacturing deposit of $5,644.50 is already paid; glass amount must be verified before invoicing.",
+      "owner": "Laura / Aidan",
+      "due": "This morning",
       "priority": "critical",
-      "revenue": "22,000-unit deal; price and total value not yet verified"
+      "revenue": "Active three-product order; glass amount unverified"
     },
     {
       "rank": 2,
-      "title": "Switch UPS, USPS, and Shopify to the new PLL address",
-      "why": "PLL is operating from the new building; shipping labels, return addresses, tax/origin settings, and storefront notices must not point to the former facility.",
-      "owner": "Sam / operations",
-      "due": "Today",
+      "title": "Deliver Terra Lotus 22,000-unit quote and contract",
+      "why": "Customer delivery was due July 30. WhatsApp line items total 22,000 units, not the 21,000 verbal reference; full verified costs and approval remain required.",
+      "owner": "Sam / Aidan / Ronald / Laura",
+      "due": "Today — overdue from July 30",
       "priority": "critical",
-      "revenue": "Prevents shipment errors, returns, and customer confusion"
+      "revenue": "22,000-unit deal; price and total value unverified"
     },
     {
       "rank": 3,
       "title": "Verify BuffMan filling-line scope and $8,850 DDP decision",
-      "why": "Hot-fill capability, batch coding, quotation inclusions, and landed cost must be proven before a capital-equipment commitment.",
+      "why": "Hot-fill capability, batch coding, quotation inclusions, and total landed cost are still unverified.",
       "owner": "Sam / Aidan / operations",
       "due": "Immediately",
       "priority": "critical",
-      "revenue": "Protects production capacity and avoids an unapproved equipment/freight commitment"
+      "revenue": "Protects capacity and avoids unapproved capital/equipment spend"
     },
     {
       "rank": 4,
-      "title": "Close Ashley Miron invoice, glass order, and white-paper-label quote",
-      "why": "Ashley is ready to pay and asked again for the invoice; pending packaging can block her three-product order.",
-      "owner": "Laura / Aidan",
+      "title": "Get Natugeda production facts; control PHYLARA pause",
+      "why": "Natugeda needs a truthful Hair Oil timeline. PHYLARA needs authorized documents and balance clarity during its pause.",
+      "owner": "Operations / Laura / Ronald",
       "due": "Today",
       "priority": "critical",
-      "revenue": "Active three-product order; amount unverified"
+      "revenue": "Protects active production confidence and future restart"
     },
     {
       "rank": 5,
-      "title": "Get Natugeda production facts, then control PHYLARA pause",
-      "why": "Natugeda needs a truthful timeline; PHYLARA needs documents and balance confirmation during a pause.",
-      "owner": "Operations / Laura",
+      "title": "Qualify and prepare new revenue opportunities",
+      "why": "Salty Pup is manufacturing-ready on formula and packaging; Shay Brands is booked August 3; new web leads require commercial and regulatory qualification.",
+      "owner": "Sam / Laura / Ronald",
       "due": "Today",
-      "priority": "critical",
-      "revenue": "Protects active production confidence and controlled customer retention"
+      "priority": "high",
+      "revenue": "New opportunities; value unverified"
     },
     {
       "rank": 6,
-      "title": "Validate bitop, CH Robinson, and BuffMan payable/freight exposure",
-      "why": "Dunning, load invoice, and DDP quote cannot be paid or committed from messages alone.",
-      "owner": "Sam / finance",
-      "due": "Today",
-      "priority": "critical",
-      "revenue": "Protects materials, freight, and cash continuity"
-    },
-    {
-      "rank": 7,
-      "title": "Obtain Victor compatibility result and complete quote inputs",
-      "why": "Due July 31; quote is still blocked by packaging compatibility and cost inputs.",
-      "owner": "Victor / Ronald",
-      "due": "July 31",
-      "priority": "high",
-      "revenue": "Quote pending; amount unverified"
-    },
-    {
-      "rank": 8,
-      "title": "Qualify Aleta detangler opportunity",
-      "why": "Qualified lead has a specific hero product but no commercial brief.",
-      "owner": "Sam / sales",
+      "title": "Validate payables and complete move-system controls",
+      "why": "bitop, CH Robinson, and BuffMan cannot be paid or committed from messages alone. DTE service and UPS/USPS/Shopify address testing remain business-continuity gates.",
+      "owner": "Sam / finance / operations",
       "due": "Today",
       "priority": "high",
-      "revenue": "New hair-care lead; value unverified"
+      "revenue": "Protects cash, utilities, shipment accuracy, and returns"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Stay in one lane: finalize and deliver the Terra Lotus quote and contract today after confirming 22,000 versus 21,000 units.",
+      "top_task": "Stay in one lane: collect Ashley’s verified 50% Miron glass payment this morning, then return to Terra Lotus.",
       "tasks": [
         {
-          "title": "Confirm Terra Lotus total volume and approve final quote/contract",
-          "due": "Immediately"
+          "title": "Approve/send only the verified Ashley glass payment request",
+          "due": "This morning"
         },
         {
-          "title": "Authorize or complete UPS, USPS, and Shopify address changes",
+          "title": "Confirm Terra Lotus 22,000-unit total and approve final quote/contract",
           "due": "Today"
         }
       ],
-      "notes": "Terra Lotus outranks routine work. Do not send a quote with missing or invented packaging, labor, overhead, freight, or margin inputs."
+      "notes": "Do not jump to equipment, new leads, or routine work until Ashley payment collection is complete."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Supply complete Terra Lotus packaging and operational cost inputs immediately.",
+      "top_task": "Verify Ashley’s Miron glass amount/order path and the Terra Lotus operational cost inputs.",
       "tasks": [
         {
+          "title": "Provide Ashley glass invoice/order amount and placement status",
+          "due": "Immediately"
+        },
+        {
           "title": "Provide Terra Lotus packaging, fill, labor, overhead, freight, and lead-time inputs",
-          "due": "Immediately"
-        },
-        {
-          "title": "Confirm BuffMan machine configuration, coding method, scope, and DDP terms",
-          "due": "Immediately"
-        },
-        {
-          "title": "Confirm Natugeda Hair Oil stage and next operational date",
           "due": "Today"
+        },
+        {
+          "title": "Confirm BuffMan configuration, coding, scope, DDP terms, and landed cost",
+          "due": "Immediately"
         }
       ],
-      "notes": "No shipment, production, or equipment promises without source confirmation."
+      "notes": "No equipment or shipment commitment without written source confirmation."
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Prepare Terra Lotus quote/contract delivery package once costs and Sam approval are complete.",
+      "top_task": "Send Ashley’s verified 50% glass invoice/payment link and confirm receipt/order placement.",
       "tasks": [
         {
-          "title": "Coordinate final Terra Lotus quote and contract delivery in the customer WhatsApp group",
+          "title": "Issue Ashley payment request only after Aidan verifies the 50% glass amount",
+          "due": "This morning"
+        },
+        {
+          "title": "Coordinate Terra Lotus quote/contract delivery after costs and approval",
           "due": "Today"
         },
         {
-          "title": "Send/confirm Ashley invoice and order status; obtain white-paper-label quote",
-          "due": "Today"
-        },
-        {
-          "title": "Coordinate Natugeda update only after operations facts",
+          "title": "Communicate Natugeda only after operations provides factual stage/date",
           "due": "Today"
         }
       ],
-      "notes": "Do not promise packaging or label timing without vendor confirmation."
+      "notes": "Ashley’s last message was a direct payment request; do not substitute an agreement for the invoice."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Lock Terra Lotus formula/BOM inputs for all requested products and scents.",
+      "top_task": "Lock Terra Lotus formula/BOM inputs and support qualified new-product review.",
       "tasks": [
         {
-          "title": "Provide verified Terra Lotus formula/BOM inputs for shampoo, conditioner, three body-wash scents, and face wash",
-          "due": "Immediately"
+          "title": "Provide verified Terra Lotus formula/BOM inputs for all requested products and scents",
+          "due": "Today"
         },
         {
           "title": "Confirm Natugeda production facts if assigned",
           "due": "Today"
         },
         {
-          "title": "Provide Victor cost inputs after compatibility confirmation",
-          "due": "July 31"
+          "title": "Assess Salty Pup manufacturing readiness and any formula transfer needs",
+          "due": "Today"
         }
       ],
-      "notes": "No heating/cooling cosmetic manufacturing commitment before regulatory review."
+      "notes": "No therapeutic or OTC claim manufacturing commitment without classification review."
     },
     "crmdeveloper": {
       "display_name": "CRM Developer",
-      "top_task": "Restore reliable CRM access and provide a tested fix for task assignment selection.",
+      "top_task": "Restore authenticated CRM access and verify the customer-page Assign To fix.",
       "tasks": [
         {
-          "title": "Provide verified customer-page Assign To list fix",
+          "title": "Provide live, tested Assign To list fix",
           "due": "Today"
         },
         {
-          "title": "Provide authenticated access path for live verification",
+          "title": "Provide authenticated access path for current CRM verification",
           "due": "Today"
         }
       ],
-      "notes": "No verified closure was found; do not treat historical claimed fixes as accepted."
+      "notes": "CRM was at sign-in during this refresh; no claimed fix has been live-verified."
     }
   },
   "revenueActions": [
     {
+      "title": "Collect Ashley / Nymphaea glass payment",
+      "why": "Ashley signed the updated agreement and asked for a 50% Miron glass-container invoice/payment link; $5,644.50 manufacturing deposit is already paid.",
+      "est_value": "Glass amount unverified",
+      "next_step": "Verify container amount and order path, send the 50% payment link, then confirm payment and supplier order placement.",
+      "owner": "Laura / Aidan",
+      "timing": "First — this morning",
+      "value": "Active three-product order"
+    },
+    {
       "title": "Close Terra Lotus quote and contract",
-      "why": "The customer is waiting today and the requested line items total 22,000 units.",
-      "est_value": "Unverified \u2014 do not estimate without complete costs and approved margin",
-      "next_step": "Confirm 22,000 versus 21,000 units; assemble product, scent, packaging, fill/labor, overhead, freight, lead-time, and margin inputs; secure Sam approval; send quote and contract in the WhatsApp group today.",
+      "why": "A major 22,000-unit opportunity remains unresolved after the promised July 30 delivery.",
+      "est_value": "Unverified — no estimate without complete costs and approved margin",
+      "next_step": "Confirm 22,000 versus 21,000 units, complete all cost/lead-time inputs, approve, and send quote plus contract.",
       "owner": "Sam / Aidan / Ronald / Laura",
-      "timing": "First \u2014 today",
+      "timing": "Second — today",
       "value": "22,000-unit enterprise opportunity"
     },
     {
+      "title": "Qualify Salty Pup manufacturing opportunity",
+      "why": "Customer says formula, bottles, labels, and label machine are ready and asks PLL to manufacture.",
+      "est_value": "Unverified",
+      "next_step": "Confirm formula transfer/specification, batch size, claims, packaging compatibility, testing, and production timeline before quoting.",
+      "owner": "Sam / Ronald / Laura",
+      "timing": "Today",
+      "value": "New manufacturing opportunity"
+    },
+    {
+      "title": "Prepare Shay Brands booked call",
+      "why": "Jarrod Adams is booked August 3 at 12:00 PM ET for a tallow moisturizer, scrub, night cream and phased hair/body line.",
+      "est_value": "Unverified",
+      "next_step": "Prepare verified tiered 500/1,000/1,500-unit commercial ranges and qualification questions; do not pre-quote without cost validation.",
+      "owner": "Sam / Laura / Ronald",
+      "timing": "Prepare today",
+      "value": "Private-label launch opportunity"
+    },
+    {
       "title": "Gate BuffMan equipment commitment",
-      "why": "Supplier quote and USD 8,850 DDP freight need technical and commercial verification.",
+      "why": "$8,850 DDP freight and technical/commercial scope remain unverified.",
       "est_value": "Unverified",
-      "next_step": "Confirm hot fill, batch coding, equipment scope, DDP inclusion, and approved cash total in writing.",
+      "next_step": "Get written confirmation of hot fill, batch coding, configuration, inclusions, and final approved cash total.",
       "owner": "Sam / Aidan",
-      "timing": "First",
-      "value": "Protects future production capacity and cash"
-    },
-    {
-      "title": "Convert Ashley payment-ready order",
-      "why": "Customer is waiting for the Miron invoice and has settled on white natural-paper labels.",
-      "est_value": "Unverified",
-      "next_step": "Confirm invoice/order status, issue label price, and validate production timing.",
-      "owner": "Laura / Aidan",
-      "timing": "Today",
-      "value": "Three-product order"
-    },
-    {
-      "title": "Protect Natugeda confidence",
-      "why": "Customer needs an actual Hair Oil status and timeline.",
-      "est_value": "Unverified",
-      "next_step": "Get production stage and next date from operations, then respond with verified facts.",
-      "owner": "Operations / Laura",
-      "timing": "Today",
-      "value": "Active production customer"
-    },
-    {
-      "title": "Retain PHYLARA cleanly",
-      "why": "Satisfied customer is pausing, not rejecting, and needs formula/specification and balance clarity.",
-      "est_value": "Unverified",
-      "next_step": "Check release permission and ledger, then provide controlled pause documentation.",
-      "owner": "Laura / Ronald",
-      "timing": "Today",
-      "value": "Future restart opportunity"
+      "timing": "Before any commitment",
+      "value": "Protects capacity and cash"
     }
   ],
   "pipelineStat": {
-    "total_value": "$1,327,800 (last authenticated capture)",
+    "total_value": "$1,327,800 (last authenticated CRM capture)",
     "active_deals": 9,
     "hot": [
-      "Terra Lotus \u2014 22,000-unit quote and contract due today",
-      "BuffMan filling-line scope / $8,850 DDP decision",
-      "Ashley / Nymphaea \u2014 Miron invoice, glass order, and labels",
-      "Natugeda \u2014 verified Hair Oil production status",
-      "PHYLARA \u2014 controlled pause, formula/specifications, and balance"
+      "Ashley / Nymphaea — verified 50% Miron glass payment link due this morning",
+      "Terra Lotus — 22,000-unit quote and contract overdue from July 30",
+      "BuffMan — scope / $8,850 DDP gate",
+      "Natugeda — verified Hair Oil production facts",
+      "Salty Pup — manufacturing-ready new inquiry"
     ],
     "stalled": [
-      "bitop and CH Robinson validation",
-      "CRM customer-page Assign To list and live access",
-      "Victor packaging compatibility / cost inputs"
+      "CRM live access and customer-page Assign To list",
+      "Victor packaging compatibility / cost inputs",
+      "bitop and CH Robinson validation"
     ],
     "activeDeals": 9,
     "pipelineValue": 1327800,
     "inProduction": 20,
     "depositsCollected": 57454.99,
-    "note": "Priority refresh July 30: Terra Lotus WhatsApp line items total 22,000 units (not 21,000); price/value remain unverified. PLL has moved to 24600 N. Industrial Dr., Farmington Hills, MI 48335; customers informed; UPS/USPS/Shopify updates pending. CRM was at the sign-in page July 30, so counts and values are carried forward from the last authenticated capture, not re-verified. Fresh WhatsApp evidence was reviewed July 30; Outlook search returned no messages since July 29. CRM Developer Gmail threads show no verified closure for the Assign To issue."
+    "note": "July 31 refresh: Ashley requested an invoice/payment link for 50% of the Miron glass-container amount after signing the updated agreement; $5,644.50 manufacturing deposit is already paid. Terra Lotus remains overdue from July 30 with 22,000-unit line-item total versus a 21,000 verbal reference. Salty Pup and web leads are new opportunities; Shay Brands is booked August 3, noon ET. CRM is at sign-in, so counts/values are carried from last authenticated capture, not live-verified."
   },
   "adsAgentBrief": {
-    "status": "Fresh source-backed morning safety cache \u2014 read only; no Google Ads behavior or settings were changed. Campaign scope verified; exact seven-ad roster unverified; cap/configuration emergency requires Sam notification.",
+    "status": "Fresh source-backed morning safety cache — read only; no Google Ads behavior or settings were changed. Campaign scope verified; exact seven-ad roster unverified; cap/configuration emergency requires Sam notification.",
     "updatedAt": "2026-07-31T06:30:00-04:00",
-    "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
-    "snapshot": "Jul 24\u201330 verified campaign scope: $154.37 spend, 499 impressions, 76 clicks, 15.23% CTR, $2.03 average CPC; 2 verified Ads-attributed inquiries / 0 paid-attributed booked calls. Jul 30 completed day: $34.87 spend vs $30 approved cap.",
+    "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
+    "snapshot": "Jul 24–30 verified campaign scope: $154.37 spend, 499 impressions, 76 clicks, 15.23% CTR, $2.03 average CPC; 2 verified Ads-attributed inquiries / 0 paid-attributed booked calls. Jul 30 completed day: $34.87 spend vs $30 approved cap.",
     "recommendation": "READ-ONLY ALERT: notify Sam of the $30.66 source-reported daily-budget total versus the approved $30 cap and investigate the $38.40 (Jul 28) and $34.87 (Jul 30) spend with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
     "governance": "No consequential change without Sam approval.",
-    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
     "windows": {
       "today": "2026-07-30 (prior completed calendar day; morning safety source pull at 6:30 AM ET)",
       "current": "2026-07-24 to 2026-07-30",
@@ -443,7 +423,7 @@
   "adsIntelligence": {
     "updatedAt": "2026-07-31T06:30:00-04:00",
     "source": "google-ads-and-outlook-live-morning-safety-refresh",
-    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns excluded. CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED: the reporting tool rejected joined ad_group/ad fields, so no fresh ad-level IDs or performance are claimed.",
+    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns excluded. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED: the reporting tool rejected joined ad_group/ad fields, so no fresh ad-level IDs or performance are claimed.",
     "windows": {
       "today": "2026-07-30 (prior completed calendar day; morning safety source pull at 6:30 AM ET)",
       "current": "2026-07-24 to 2026-07-30",
@@ -470,7 +450,7 @@
       "clicks": 53,
       "ctr": 15.45,
       "cpc": 2.04,
-      "note": "contaminated baseline \u2014 directional only, not causal"
+      "note": "contaminated baseline — directional only, not causal"
     },
     "campaignBreakdown": [
       {
@@ -531,7 +511,7 @@
       }
     ],
     "adBreakdown": [],
-    "adBreakdownStatus": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
+    "adBreakdownStatus": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
     "leads": {
       "qualifiedInboxInquiries": 13,
       "verifiedAdsAttributed": 2,
@@ -586,7 +566,7 @@
       "nextExperiment": "None: cap governance and reporting scope must be resolved before responsibly selecting an experiment.",
       "whatAdsAgentShouldDo": "Verify configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
     },
-    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
     "approvalRequirement": "Sam approval required for any consequential Ads change; this recommendation is read-only.",
     "latestOptimization": {
       "status": "superseded-by-morning-safety-refresh",
@@ -594,7 +574,7 @@
     }
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [

@@ -1,9 +1,6 @@
 {
-  "id": "ads-nightly-2026-07-30",
-  "request_id": "ads-nightly-2026-07-30",
-  "ts": "2026-07-31T01:03:00Z",
-  "agent": "Ads Agent",
-  "status": "completed",
-  "text": "Ads Agent completed the nightly read-only review and made no changes. Today’s net-new campaigns spent $34.87, which is $4.87 above the $30 daily cap. The callback reported $134.17 for its trailing-seven-day calculation and one verified paid lead, but it omitted the required structured ads_intelligence payload; therefore this callback’s cache refresh is BLOCKED and did not overwrite the independently verified 9:00 PM cache. Ads Agent’s recommendation is to obtain search-term data before changing optimization strategy; no approval is required for that read-only investigation.",
-  "spoken_text": "Sam, the bottom line is today’s new-ad spend exceeded the daily cap by four dollars and eighty-seven cents. The Ads Agent made no changes. Its callback did not include the required structured data, so it did not overwrite the verified cache. The next move is to obtain the search-term data before changing the strategy."
+  "id": "morning-brief-2026-07-31-6f7648d1-c3c5-465e-b24b-cdb5ce0ace27",
+  "ts": "2026-07-31T11:03:50.425Z",
+  "text": "Morning brief loaded for 2026-07-31.",
+  "spoken_text": "Morning brief loaded for 2026-07-31."
 }
