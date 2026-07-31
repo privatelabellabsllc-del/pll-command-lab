@@ -85,6 +85,7 @@
   .tb:active{background:rgba(20,60,42,.9);}
   .tb.primary{border-color:var(--green); color:var(--green); box-shadow:0 0 14px rgba(52,255,150,.18);}
   .tb.primary.hot{border-color:var(--red); color:var(--red); box-shadow:0 0 14px rgba(255,93,93,.22);}
+  .tb.voicepreset{min-width:126px; text-align:left;}
 
   /* ═══════════ ZONE 2/3/4 — MAIN GRID ═══════════ */
   .main{flex:1; display:grid; grid-template-columns:310px 1fr 340px; gap:12px; padding:12px 14px; min-height:0; overflow:hidden;}
@@ -434,7 +435,7 @@
     <button class="tb primary" id="powerBtn" onclick="togglePower()">⚡ Power</button>
     <button class="tb" onclick="speakBrief()">Brief</button>
     <button class="tb" onclick="speakNext()">Next</button>
-    <button class="tb" onclick="cycleVoice()">Voice</button>
+    <button class="tb voicepreset" id="voicePresetBtn" onclick="cycleVoicePreset()" title="Change speech style">Voice: Jarvis-style</button>
     <button class="tb" id="muteBtn" onclick="toggleMute()">🔊</button>
     <button class="tb" id="commsBtn" onclick="openComms()">💬 Comms<span class="badge hide" id="commsBadge">0</span></button>
     <button class="tb" onclick="setHook()">Link</button>
@@ -930,30 +931,58 @@ function spokenChunks(text){
   if (buf) out.push(buf);
   return out.length ? out : [raw];
 }
-// Best available high-quality English voice, natural pitch, no artificial "stern" depth.
-function preferredVoice(){
-  // Always resolve against a FRESH getVoices() list. Chromium invalidates
-  // previously handed-out SpeechSynthesisVoice objects when the voice list is
-  // rebuilt; assigning a stale one to utterance.voice throws a TypeError.
+// Compact, style-only presets. “Jarvis-style” is a product label, not an actor
+// impersonation: it selects a locally available English system voice and natural tuning.
+const VOICE_PRESETS = [
+  { id:'jarvis', label:'Jarvis-style', rate:0.96, pitch:0.94,
+    prefer:[/neural|natural|enhanced|premium/i,/microsoft (guy|andrew|christopher|ryan|steffan|brian)/i,/daniel|arthur|aaron|alex(?!a)/i] },
+  { id:'executive', label:'Executive', rate:0.98, pitch:0.99,
+    prefer:[/enhanced|premium|neural|natural/i,/microsoft (guy|andrew|christopher|jenny|aria|ryan|steffan|emma|brian)/i,/samantha|daniel|arthur|serena/i] },
+  { id:'warm', label:'Warm', rate:0.96, pitch:1.04,
+    prefer:[/enhanced|premium|neural|natural/i,/microsoft (aria|jenny|emma|sara|zoe)/i,/samantha|serena|victoria|karen/i] },
+  { id:'clear', label:'Clear', rate:1.00, pitch:1.01,
+    prefer:[/neural|natural|enhanced|premium/i,/google (us|uk) english/i,/microsoft (aria|guy|andrew|christopher|jenny|ryan|steffan|emma|brian)/i] }
+];
+function selectedVoicePreset(){
+  var id = null; try { id = localStorage.getItem('clVoicePreset'); } catch(e){}
+  return VOICE_PRESETS.filter(function(p){ return p.id === id; })[0] || VOICE_PRESETS[0];
+}
+function freshVoices(){
   var vs = null;
-  try { vs = speechSynthesis.getVoices(); } catch(e){ vs = null; }
-  if (!vs || !vs.length) vs = (voiceCache && voiceCache.length) ? voiceCache : [];
-  if (!vs || !vs.length) return null;
-  var saved = localStorage.getItem('clVoice');
-  if (saved){ var sv = vs.filter(function(v){ return v.name === saved; })[0]; if (sv) return sv; }
-  var en = vs.filter(function(v){ return /^en([-_]|$)/i.test(v.lang); });
-  var pool = en.length ? en : vs;
-  var prefs = [
-    /(enhanced|premium)/i, /neural|natural/i, /siri/i,
-    /google (us|uk) english/i,
-    /microsoft (aria|guy|andrew|christopher|jenny|ryan|steffan|emma|brian)/i,
-    /samantha|alex(?!a)|daniel|arthur|aaron|serena/i
-  ];
-  for (var i = 0; i < prefs.length; i++){
-    var v = pool.filter(function(x){ return prefs[i].test(x.name); })[0];
-    if (v) return v;
+  try { vs = speechSynthesis.getVoices(); } catch(e) { vs = null; }
+  // Cache is only a best-effort fallback; all assignments remain guarded because
+  // Chromium can invalidate cached SpeechSynthesisVoice instances.
+  return (vs && vs.length) ? vs : ((voiceCache && voiceCache.length) ? voiceCache : []);
+}
+function englishVoicePool(){
+  var vs = freshVoices();
+  var en = vs.filter(function(v){ return /^en([-_]|$)/i.test(v.lang || ''); });
+  return en.length ? en : vs;
+}
+function preferredVoice(){
+  var preset = selectedVoicePreset(), pool = englishVoicePool();
+  if (!pool.length) return null;
+  for (var i=0; i<preset.prefer.length; i++){
+    var match = pool.filter(function(v){ return preset.prefer[i].test(v.name || ''); })[0];
+    if (match) return match;
   }
-  return pool.filter(function(v){ return /en[-_](US|GB)/i.test(v.lang); })[0] || pool[0];
+  // Graceful fallback: any English voice, then any installed system voice.
+  return pool.filter(function(v){ return /en[-_](US|GB)/i.test(v.lang || ''); })[0] || pool[0] || null;
+}
+function voicePresetSettings(){
+  var p = selectedVoicePreset(); return {rate:p.rate, pitch:p.pitch, label:p.label};
+}
+function updateVoicePresetControl(){
+  var el = document.getElementById('voicePresetBtn');
+  if (el) { var p=selectedVoicePreset(); el.textContent='Voice: '+p.label; el.title='Speech style: '+p.label+'. Click for next preset.'; }
+}
+function cycleVoicePreset(){
+  var current=selectedVoicePreset(), idx=VOICE_PRESETS.indexOf(current);
+  var next=VOICE_PRESETS[(idx+1)%VOICE_PRESETS.length];
+  try { localStorage.setItem('clVoicePreset', next.id); } catch(e){}
+  updateVoicePresetControl();
+  status('Voice style: '+next.label, false);
+  say('Voice style set to '+next.label+'.');
 }
 function sternVoice(){ return preferredVoice(); } // legacy name retained for the voice picker
 var speaking = false, lastSpeechEndTs = 0, speakSeq = 0;
@@ -982,7 +1011,8 @@ function say(text, cb){
       var u = new SpeechSynthesisUtterance(chunks[idx++]);
       // Voice objects can go stale; never let a bad voice abort the whole turn.
       try { var v = preferredVoice(); if (v) u.voice = v; } catch(e){ voiceCache = null; }
-      u.pitch = 1.0; u.rate = 0.97; u.volume = 1;
+      var voiceSettings = voicePresetSettings();
+      u.pitch = voiceSettings.pitch; u.rate = voiceSettings.rate; u.volume = 1;
       u.onend = step; u.onerror = step;
       speechSynthesis.speak(u);
     } catch(e){ clog('Speech error: ' + (e && e.message ? e.message : e), 'warn'); step(); }
@@ -1081,7 +1111,7 @@ let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTime
 let followupCount = 0;
 let confirmMode = false;
 let lastDispatchSig = '', lastDispatchTs = 0;
-const CC_VOICE_BUILD = 'voice-v7.1';
+const CC_VOICE_BUILD = 'voice-v7.2-presets';
 const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|send it|that'?s all)\s*[.!?]?$/;
 
 // ---- confirmation understanding -------------------------------------------------
@@ -2020,31 +2050,14 @@ function askConsultantFallback(heard){
   dispatch(heard, { question: true, agent: 'PLL Consultant' });
 }
 
-// ===== VOICE PICKER =====
-var vpList = null, vpIdx = -1;
-function cycleVoice(){
-  const vs = (voiceCache.length ? voiceCache : speechSynthesis.getVoices()).filter(v => /en/i.test(v.lang));
-  if (!vs.length) { status('No voices loaded yet — power on first, then try again', false); return; }
-  if (!vpList || vpList.length !== vs.length) {
-    vpList = vs;
-    const saved = localStorage.getItem('clVoice');
-    vpIdx = saved ? vpList.findIndex(v => v.name === saved) : -1;
-  }
-  vpIdx = (vpIdx + 1) % vpList.length;
-  const v = vpList[vpIdx];
-  localStorage.setItem('clVoice', v.name);
-  status('Voice ' + (vpIdx+1) + '/' + vpList.length + ': ' + v.name, false);
-  speechSynthesis.cancel();
-  if (rec) { try { rec.abort(); } catch(e){} }
-  const u = new SpeechSynthesisUtterance('Command Center voice check. This is ' + v.name + '.');
-  try { if (v) u.voice = v; } catch(e){ voiceCache = null; }
-  u.pitch = 1.0; u.rate = 0.97;
-  u.onstart = () => { if (rec) { try { rec.abort(); } catch(e){} } };
-  u.onend = () => { setTimeout(() => { if (powered && rec) { try { rec.start(); } catch(e){} } }, 350); };
-  speechSynthesis.speak(u);
+// ===== VOICE PRESET CONTROL =====
+// Kept as a compatibility alias for older inline references; it now cycles the
+// four small, persisted speech-style presets rather than raw system voices.
+function cycleVoice(){ cycleVoicePreset(); }
+function loadVoices(){
+  try { var v = speechSynthesis.getVoices(); if (v.length) voiceCache = v; } catch(e){}
+  updateVoicePresetControl();
 }
-
-function loadVoices(){ const v = speechSynthesis.getVoices(); if (v.length) voiceCache = v; }
 if ('speechSynthesis' in window) { speechSynthesis.onvoiceschanged = loadVoices; loadVoices(); setTimeout(loadVoices, 500); setTimeout(loadVoices, 1500); }
 
 // ================= LIVE DISPATCH =================
