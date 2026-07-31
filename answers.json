@@ -1,9 +1,9 @@
 {
-  "id": "crm-terra-move-20260730T171201Z-fd7cffe9",
-  "request_id": "crm-terra-move-20260730T171201Z-fd7cffe9",
-  "ts": "2026-07-30T17:51:00Z",
-  "agent": "CRM Developer",
+  "id": "ads-nightly-2026-07-30",
+  "request_id": "ads-nightly-2026-07-30",
+  "ts": "2026-07-31T01:03:00Z",
+  "agent": "Ads Agent",
   "status": "completed",
-  "text": "CRM Developer completed the Terra Lotus and address-migration assignment: created five CRM tasks (#298–#302), all due 2026-07-30; no duplicates or updates, and no customer-notification task. Existing #227/#228 remained unchanged as different scope.",
-  "spoken_text": "CRM completed the Terra Lotus and address-migration work. Five tasks were created, all due today, with no duplicates and no unrelated tasks changed. The existing related tasks were left as-is because they cover different work, and no customer-notification task was created."
+  "text": "Ads Agent completed the nightly read-only review and made no changes. Today’s net-new campaigns spent $34.87, which is $4.87 above the $30 daily cap. The callback reported $134.17 for its trailing-seven-day calculation and one verified paid lead, but it omitted the required structured ads_intelligence payload; therefore this callback’s cache refresh is BLOCKED and did not overwrite the independently verified 9:00 PM cache. Ads Agent’s recommendation is to obtain search-term data before changing optimization strategy; no approval is required for that read-only investigation.",
+  "spoken_text": "Sam, the bottom line is today’s new-ad spend exceeded the daily cap by four dollars and eighty-seven cents. The Ads Agent made no changes. Its callback did not include the required structured data, so it did not overwrite the verified cache. The next move is to obtain the search-term data before changing the strategy."
 }
