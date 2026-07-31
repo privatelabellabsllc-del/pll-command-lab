@@ -932,7 +932,12 @@ function spokenChunks(text){
 }
 // Best available high-quality English voice, natural pitch, no artificial "stern" depth.
 function preferredVoice(){
-  var vs = (voiceCache && voiceCache.length) ? voiceCache : speechSynthesis.getVoices();
+  // Always resolve against a FRESH getVoices() list. Chromium invalidates
+  // previously handed-out SpeechSynthesisVoice objects when the voice list is
+  // rebuilt; assigning a stale one to utterance.voice throws a TypeError.
+  var vs = null;
+  try { vs = speechSynthesis.getVoices(); } catch(e){ vs = null; }
+  if (!vs || !vs.length) vs = (voiceCache && voiceCache.length) ? voiceCache : [];
   if (!vs || !vs.length) return null;
   var saved = localStorage.getItem('clVoice');
   if (saved){ var sv = vs.filter(function(v){ return v.name === saved; })[0]; if (sv) return sv; }
@@ -960,7 +965,7 @@ function say(text, cb){
   if (!spoken) { lastSpeechEndTs = Date.now(); if (cb) cb(); return; }
   var seq = ++speakSeq;
   try { speechSynthesis.cancel(); } catch(e){}
-  var chunks = spokenChunks(spoken), v = preferredVoice(), idx = 0, finished = false;
+  var chunks = spokenChunks(spoken), idx = 0, finished = false;
   speaking = true; wave(true); toMicOff();
   function finish(){
     if (finished || seq !== speakSeq) return;
@@ -971,15 +976,17 @@ function say(text, cb){
   function next(){
     if (seq !== speakSeq) return;                     // superseded by a newer say()
     if (idx >= chunks.length) { finish(); return; }
-    var u = new SpeechSynthesisUtterance(chunks[idx++]);
-    if (v) u.voice = v;
-    u.pitch = 1.0; u.rate = 0.97; u.volume = 1;
     var advanced = false;
     var step = function(){ if (advanced) return; advanced = true; setTimeout(next, 130); };
-    u.onend = step; u.onerror = step;
-    try { speechSynthesis.speak(u); } catch(e){ step(); }
+    try {
+      var u = new SpeechSynthesisUtterance(chunks[idx++]);
+      // Voice objects can go stale; never let a bad voice abort the whole turn.
+      try { var v = preferredVoice(); if (v) u.voice = v; } catch(e){ voiceCache = null; }
+      u.pitch = 1.0; u.rate = 0.97; u.volume = 1;
+      u.onend = step; u.onerror = step;
+      speechSynthesis.speak(u);
+    } catch(e){ clog('Speech error: ' + (e && e.message ? e.message : e), 'warn'); step(); }
   }
-  next();
   // Safety net: never leave the state machine stuck in SPEAKING. Some platforms
   // (no audio route, backgrounded tab, engine glitch) never fire onend/onerror.
   setTimeout(function(){
@@ -992,6 +999,9 @@ function say(text, cb){
       finish();
     }
   }, 3000 + spoken.length * 130);
+  // next() runs last so a synchronous speech-engine failure can never leave the
+  // speaking latch set without the safety timers already armed.
+  try { next(); } catch(e){ clog('Speech start failed: ' + (e && e.message ? e.message : e), 'warn'); finish(); }
 }
 function wave(on) { document.getElementById('wave').classList.toggle('on', on); }
 function toggleMute() {
@@ -1071,7 +1081,7 @@ let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTime
 let followupCount = 0;
 let confirmMode = false;
 let lastDispatchSig = '', lastDispatchTs = 0;
-const CC_VOICE_BUILD = 'voice-v7.0.1';
+const CC_VOICE_BUILD = 'voice-v7.1';
 const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|send it|that'?s all)\s*[.!?]?$/;
 
 // ---- confirmation understanding -------------------------------------------------
@@ -2027,7 +2037,8 @@ function cycleVoice(){
   speechSynthesis.cancel();
   if (rec) { try { rec.abort(); } catch(e){} }
   const u = new SpeechSynthesisUtterance('Command Center voice check. This is ' + v.name + '.');
-  u.voice = v; u.pitch = 0.92; u.rate = 0.98;
+  try { if (v) u.voice = v; } catch(e){ voiceCache = null; }
+  u.pitch = 1.0; u.rate = 0.97;
   u.onstart = () => { if (rec) { try { rec.abort(); } catch(e){} } };
   u.onend = () => { setTimeout(() => { if (powered && rec) { try { rec.start(); } catch(e){} } }, 350); };
   speechSynthesis.speak(u);
