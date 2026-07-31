@@ -414,55 +414,55 @@
     "note": "Priority refresh July 30: Terra Lotus WhatsApp line items total 22,000 units (not 21,000); price/value remain unverified. PLL has moved to 24600 N. Industrial Dr., Farmington Hills, MI 48335; customers informed; UPS/USPS/Shopify updates pending. CRM was at the sign-in page July 30, so counts and values are carried forward from the last authenticated capture, not re-verified. Fresh WhatsApp evidence was reviewed July 30; Outlook search returned no messages since July 29. CRM Developer Gmail threads show no verified closure for the Assign To issue."
   },
   "adsAgentBrief": {
-    "status": "Fresh source-backed cache \u2014 read only; no Google Ads behavior or settings were changed. Campaign scope verified; exact seven-ad roster unverified this cycle; daily cap breached today.",
-    "updatedAt": "2026-07-30T21:00:00-04:00",
+    "status": "Fresh source-backed morning safety cache \u2014 read only; no Google Ads behavior or settings were changed. Campaign scope verified; exact seven-ad roster unverified; cap/configuration emergency requires Sam notification.",
+    "updatedAt": "2026-07-31T06:30:00-04:00",
     "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
-    "snapshot": "Jul 24\u201330 verified campaign scope: $127.90 spend, 445 impressions, 70 clicks, 15.73% CTR, $1.83 average CPC; 1 verified Ads-attributed inquiry / 0 paid-attributed booked calls. Jul 30 full-day: $34.87 spend vs $30 cap.",
-    "recommendation": "READ-ONLY ALERT: investigate the $34.87 full-day spend against the $30/day hard cap and the prior $38.40 day with Google Ads support/logs; hold all budgets and settings unchanged pending Sam review. Exact seven-ad optimization cannot be responsibly refreshed until a valid ad-level field schema is available.",
+    "snapshot": "Jul 24\u201330 verified campaign scope: $154.37 spend, 499 impressions, 76 clicks, 15.23% CTR, $2.03 average CPC; 2 verified Ads-attributed inquiries / 0 paid-attributed booked calls. Jul 30 completed day: $34.87 spend vs $30 approved cap.",
+    "recommendation": "READ-ONLY ALERT: notify Sam of the $30.66 source-reported daily-budget total versus the approved $30 cap and investigate the $38.40 (Jul 28) and $34.87 (Jul 30) spend with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
     "governance": "No consequential change without Sam approval.",
-    "scopeWarning": "CAMPAIGN-SCOPE VERIFIED \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED this cycle; no ad-level claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
     "windows": {
-      "today": "2026-07-30 (full calendar day; source pull at 9:00 PM ET)",
+      "today": "2026-07-30 (prior completed calendar day; morning safety source pull at 6:30 AM ET)",
       "current": "2026-07-24 to 2026-07-30",
       "prior": "2026-07-17 to 2026-07-23 (contaminated baseline: ads paused until 7/20; contact form broken until 7/22 fix)"
     },
     "spoken": {
-      "today": "Today (July 30) in the verified two-campaign scope: $34.87, 97 impressions, 11 clicks, 11.34% CTR, $3.17 CPC. This is over the $30 daily cap, so it is an Ads emergency to flag; no settings were changed.",
-      "sevenAds": "The two new campaigns are verified, but the exact seven-ad roster and fresh ad-level totals could not be proven because the ad-level report schema was rejected. I am not making ad winner/loser claims tonight.",
-      "ctrCpc": "Current seven-day CTR is 15.73% and average CPC is $1.83, versus 15.45% and $2.04 prior; the prior window is contaminated and directional only.",
-      "leadsEmailsCalls": "The current window has 13 genuine inbox inquiries and 4 booked calls. Only 1 inquiry is verified Ads-attributed via clean GCLID/campaign evidence; 12 are unattributed. Paid-attributed booked calls: 0, so paid cost per booked call is not measurable.",
-      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day and $210/week. July 30 is $34.87 and July 28 was $38.40; no budget change made.",
-      "winners": "At campaign level, Contract Manufacturing led current CTR (17.29%) and clicks (37); exact ad winner is unverified.",
-      "waste": "Search-term waste is not confirmable because search_term_view remains tool-blocked. No ad-level waste claim is made.",
-      "optimization": "Do not optimize ads from this refresh. First investigate cap overdelivery and restore a valid ad-level reporting schema; hold settings unchanged.",
-      "suggestions": "Read-only suggestion: escalate the two over-cap days to Sam/Google Ads support, preserve the $30/day cap, and fix ad-level/search-term reporting before any bid or keyword decision.",
-      "nextExperiment": "None tonight: one experiment cannot be responsibly selected while exact ad scope and cap delivery need investigation.",
-      "whatAdsAgentShouldDo": "Verify daily cap delivery and reporting access, reconcile the two over-cap days, then return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
+      "today": "Completed day July 30 in the verified two-campaign scope: $34.87, 107 impressions, 11 clicks, 10.28% CTR, $3.17 CPC. That is over the approved $30/day cap; no settings were changed.",
+      "sevenAds": "The two campaigns are verified, but the exact seven-ad roster and fresh ad-level totals are unverified because the reporting tool rejected the joined ad/ad-group schema. I am not making ad winner/loser claims.",
+      "ctrCpc": "Current seven-day CTR is 15.23% and average CPC is $2.03, versus 15.45% and $2.04 prior. The prior window is contaminated and directional only.",
+      "leadsEmailsCalls": "The current window has 13 genuine form inquiries after deduplicating one duplicate submission and 6 distinct booked calls. Two inquiries have verified Google-click evidence; 11 are unattributed. No booked call is paid-attributed, so paid cost per booked call is not measurable.",
+      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210 week. Source configuration reports $20.33 + $10.33 = $30.66, which does not match the approved cap. July 30 spent $34.87 and July 28 $38.40. No budget change was made.",
+      "winners": "At campaign level only, Contract Manufacturing led current clicks (43) and CTR (17.48%), but its CPC was $2.45; no ad-level winner is verified.",
+      "waste": "Search-term waste is not available from the permitted reporting tool. No waste claim is made.",
+      "optimization": "Do not optimize from this refresh. Reconcile the cap configuration/overdelivery and restore usable ad-level/search-term reporting; hold settings unchanged.",
+      "suggestions": "Read-only recommendation: alert Sam to the $30.66 configured budget mismatch and the July 28/30 over-cap spend, then obtain Google Ads support/log evidence. Preserve settings until approval.",
+      "nextExperiment": "None: cap governance and reporting scope must be resolved before responsibly selecting an experiment.",
+      "whatAdsAgentShouldDo": "Verify configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
     }
   },
   "adsIntelligence": {
-    "updatedAt": "2026-07-30T21:00:00-04:00",
-    "source": "ads-agent-live",
-    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Exact seven-ad roster is not freshly provable this cycle because ad_group_ad report fields were rejected; campaign scope is verified and legacy campaigns excluded.",
+    "updatedAt": "2026-07-31T06:30:00-04:00",
+    "source": "google-ads-and-outlook-live-morning-safety-refresh",
+    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns excluded. CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED: the reporting tool rejected joined ad_group/ad fields, so no fresh ad-level IDs or performance are claimed.",
     "windows": {
-      "today": "2026-07-30 (full calendar day; source pull at 9:00 PM ET)",
+      "today": "2026-07-30 (prior completed calendar day; morning safety source pull at 6:30 AM ET)",
       "current": "2026-07-24 to 2026-07-30",
       "prior": "2026-07-17 to 2026-07-23 (contaminated baseline: ads paused until 7/20; contact form broken until 7/22 fix)"
     },
     "today": {
       "cost": 34.87,
-      "impressions": 97,
+      "impressions": 107,
       "clicks": 11,
-      "ctr": 11.34,
+      "ctr": 10.28,
       "cpc": 3.17,
-      "note": "full-day campaign-scope total; preliminary source pull"
+      "note": "completed-day campaign-scope total; fresh source pull"
     },
     "current": {
-      "cost": 127.9,
-      "impressions": 445,
-      "clicks": 70,
-      "ctr": 15.73,
-      "cpc": 1.83
+      "cost": 154.37,
+      "impressions": 499,
+      "clicks": 76,
+      "ctr": 15.23,
+      "cpc": 2.03
     },
     "prior": {
       "cost": 107.93,
@@ -470,19 +470,28 @@
       "clicks": 53,
       "ctr": 15.45,
       "cpc": 2.04,
-      "note": "contaminated baseline - directional only, not causal"
+      "note": "contaminated baseline \u2014 directional only, not causal"
     },
     "campaignBreakdown": [
       {
         "name": "PLL-Search-ContractMfg-2026",
         "campaignId": "24049588003",
+        "status": "ENABLED",
         "dailyBudget": 20,
+        "sourceReportedDailyBudget": 20.33,
+        "today": {
+          "cost": 28.92,
+          "impressions": 53,
+          "clicks": 7,
+          "ctr": 13.21,
+          "cpc": 4.13
+        },
         "current": {
-          "cost": 78.75,
-          "impressions": 214,
-          "clicks": 37,
-          "ctr": 17.29,
-          "cpc": 2.13
+          "cost": 105.22,
+          "impressions": 246,
+          "clicks": 43,
+          "ctr": 17.48,
+          "cpc": 2.45
         },
         "prior": {
           "cost": 79.83,
@@ -495,12 +504,21 @@
       {
         "name": "PLL-Search-Samples-2026",
         "campaignId": "24040031889",
+        "status": "ENABLED",
         "dailyBudget": 10,
+        "sourceReportedDailyBudget": 10.33,
+        "today": {
+          "cost": 5.95,
+          "impressions": 54,
+          "clicks": 4,
+          "ctr": 7.41,
+          "cpc": 1.49
+        },
         "current": {
           "cost": 49.15,
-          "impressions": 231,
+          "impressions": 253,
           "clicks": 33,
-          "ctr": 14.29,
+          "ctr": 13.04,
           "cpc": 1.49
         },
         "prior": {
@@ -512,152 +530,68 @@
         }
       }
     ],
-    "adBreakdown": [
-      {
-        "adGroup": "2A Samples-PrivateLabel-Products",
-        "adGroupId": "200118475084",
-        "cost": 47.66,
-        "impressions": 226,
-        "clicks": 32,
-        "ctr": 14.2,
-        "cpc": 1.49,
-        "stale": true,
-        "staleSourceTime": "2026-07-30T10:15:00-04:00",
-        "note": "Fresh ad-level pull failed 3x on RESOURCE_EXHAUSTED this cycle; these are last-known values from the 10:15am run today, not fresh."
-      },
-      {
-        "adGroup": "1A ContractMfg-Cosmetic-Beauty",
-        "adGroupId": "204146230528",
-        "cost": 43.21,
-        "impressions": 125,
-        "clicks": 18,
-        "ctr": 14.4,
-        "cpc": 2.4,
-        "stale": true,
-        "staleSourceTime": "2026-07-30T10:15:00-04:00",
-        "note": "stale, see above"
-      },
-      {
-        "adGroup": "1C ContractMfg-Haircare",
-        "adGroupId": "197753979079",
-        "cost": 15.36,
-        "impressions": 41,
-        "clicks": 4,
-        "ctr": 9.8,
-        "cpc": 3.84,
-        "stale": true,
-        "staleSourceTime": "2026-07-30T10:15:00-04:00",
-        "note": "stale, see above"
-      },
-      {
-        "adGroup": "1B ContractMfg-Skincare",
-        "adGroupId": "204146231008",
-        "cost": 12.94,
-        "impressions": 29,
-        "clicks": 13,
-        "ctr": 44.8,
-        "cpc": 1,
-        "stale": true,
-        "staleSourceTime": "2026-07-30T10:15:00-04:00",
-        "note": "stale, see above; best performer as of 10:15am"
-      },
-      {
-        "adGroup": "3B ProductIntent-HairOil",
-        "adGroupId": "197753978559",
-        "cost": 4.79,
-        "impressions": 1,
-        "clicks": 1,
-        "ctr": 100,
-        "cpc": 4.79,
-        "stale": true,
-        "staleSourceTime": "2026-07-30T10:15:00-04:00",
-        "note": "stale; too little traffic to judge"
-      },
-      {
-        "adGroup": "3A ProductIntent-BeefTallow",
-        "adGroupId": "204146230728",
-        "cost": 0,
-        "impressions": 1,
-        "clicks": 0,
-        "ctr": 0,
-        "cpc": null,
-        "stale": true,
-        "staleSourceTime": "2026-07-30T10:15:00-04:00",
-        "note": "stale; too little traffic to judge"
-      },
-      {
-        "adGroup": "3C ProductIntent-BeardOil",
-        "adGroupId": "200118474604",
-        "cost": null,
-        "impressions": 0,
-        "clicks": 0,
-        "ctr": null,
-        "cpc": null,
-        "stale": true,
-        "staleSourceTime": "2026-07-30T10:15:00-04:00",
-        "note": "stale; dormant, 0 impressions as of 10:15am"
-      }
-    ],
+    "adBreakdown": [],
+    "adBreakdownStatus": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
     "leads": {
       "qualifiedInboxInquiries": 13,
-      "verifiedAdsAttributed": 1,
-      "bookedCalls": 4,
-      "unattributed": 12,
+      "verifiedAdsAttributed": 2,
+      "bookedCalls": 6,
+      "unattributed": 11,
       "ambiguousPaidSignal": 0,
-      "cplBlended": 9.84,
-      "cplVerifiedPaid": 127.9,
+      "cplBlended": 11.87,
+      "cplVerifiedPaid": 77.19,
       "cplVerifiedPaidSamplesOnly": 49.15,
       "costPerBookedCall": null,
-      "costPerBookedCallNote": "NOT MEASURABLE from paid spend - 0 of 4 current-window booked calls are paid-attributed. Blended spend/bookings ($31.98) is not attribution-safe for budget decisions. Prior window: 9 genuine inquiries, 3 booked calls, 0 verified paid-attributed."
+      "costPerBookedCallNote": "NOT MEASURABLE from paid spend: 0 of 6 distinct current-window booked calls has a verified Ads attribution. Raw blended spend per booked call ($25.73) is not attribution-safe."
     },
     "health": {
-      "contactForm": "working since 2026-07-22 fix",
-      "attributionCapture": "live and verified since 2026-07-27 (Tiara is the only clean gclid+campaign lead); coverage thin, 12 of 13 current-window inquiries lack verified Ads attribution",
-      "landingPages": "all 7 ad groups reported live; no reported landing issue",
-      "dailyCapStatus": "BREACHED today: $34.87 vs $30/day cap (116.2%); 2026-07-28 also over at $38.40 (128%), Google Ads daily-cap smoothing; alert Sam, do not change settings",
-      "weeklyCapStatus": "under current window: $127.90 of $210 (61%)"
+      "contactForm": "Form submissions are arriving in Outlook; no break identified in this source pull.",
+      "attributionCapture": "Current-window form review found 2 distinct Google-click (GCLID) inquiries; one duplicate form was deduplicated. Coverage remains thin: 11 of 13 genuine inquiries are not verified Ads-attributed.",
+      "landingPages": "No landing-page failure reported by available source data; this refresh did not perform live URL testing.",
+      "dailyCapStatus": "BREACHED: completed day 2026-07-30 spent $34.87 vs approved $30/day (116.2%); 2026-07-28 spent $38.40 (128.0%). Source-reported campaign budget amounts are $20.33 + $10.33 = $30.66, above the approved $30/day cap. Alert Sam; do not change settings.",
+      "weeklyCapStatus": "Current 7-day spend $154.37 of approved $210/week (73.5%); however daily cap breach/configuration mismatch requires escalation."
     },
     "best": {
       "level": "campaign (fresh)",
       "name": "PLL-Search-ContractMfg-2026",
-      "metric": "Current 7-day CTR 17.29% and CPC $2.13 versus Samples CTR 14.29% and CPC $1.49; Contract Mfg had more clicks (37 vs 33).",
-      "note": "Campaign comparison only; exact ad roster/performance unverified this cycle."
+      "metric": "Current 7-day CTR 17.48% and 43 clicks versus Samples 13.04% and 33 clicks. CPC is higher ($2.45 versus $1.49).",
+      "note": "Campaign comparison only; no conversion or ad-level winner claim."
     },
     "worst": {
-      "level": "campaign (fresh)",
+      "level": "campaign (fresh, directional)",
       "name": "PLL-Search-Samples-2026",
-      "metric": "CTR declined from 27.94% prior 7 days to 14.29% current 7 days; directional only and not an ad-level call."
+      "metric": "CTR fell from 27.94% prior to 13.04% current, though CPC held near $1.49.",
+      "note": "Prior baseline is contaminated; no causal conclusion."
+    },
+    "watchItem": {
+      "name": "Cap governance",
+      "metric": "Source-reported daily budgets total $30.66 versus the approved $30 cap; July 28 and July 30 were over cap.",
+      "action": "Escalate to Sam; investigate only, no changes."
     },
     "waste": {
-      "inferred": true,
-      "note": "No search-term-level waste confirmable (search_term_view tool-blocked since 7/21). Ad-level fresh pull was not provable because requested ad_group_ad fields were rejected; do not overclaim exact seven-ad performance. Campaign-level current/prior totals are verified."
+      "inferred": false,
+      "note": "Search-term data is unavailable from the permitted report resource; exact ad roster also unverified. No waste claim is made."
     },
-    "recommendation": "READ-ONLY ALERT: investigate the $34.87 full-day spend against the $30/day hard cap and the prior $38.40 day with Google Ads support/logs; hold all budgets and settings unchanged pending Sam review. Exact seven-ad optimization cannot be responsibly refreshed until a valid ad-level field schema is available.",
+    "recommendation": "READ-ONLY ALERT: notify Sam of the $30.66 source-reported daily-budget total versus the approved $30 cap and investigate the $38.40 (Jul 28) and $34.87 (Jul 30) spend with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
     "spoken": {
-      "today": "Today (July 30) in the verified two-campaign scope: $34.87, 97 impressions, 11 clicks, 11.34% CTR, $3.17 CPC. This is over the $30 daily cap, so it is an Ads emergency to flag; no settings were changed.",
-      "sevenAds": "The two new campaigns are verified, but the exact seven-ad roster and fresh ad-level totals could not be proven because the ad-level report schema was rejected. I am not making ad winner/loser claims tonight.",
-      "ctrCpc": "Current seven-day CTR is 15.73% and average CPC is $1.83, versus 15.45% and $2.04 prior; the prior window is contaminated and directional only.",
-      "leadsEmailsCalls": "The current window has 13 genuine inbox inquiries and 4 booked calls. Only 1 inquiry is verified Ads-attributed via clean GCLID/campaign evidence; 12 are unattributed. Paid-attributed booked calls: 0, so paid cost per booked call is not measurable.",
-      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day and $210/week. July 30 is $34.87 and July 28 was $38.40; no budget change made.",
-      "winners": "At campaign level, Contract Manufacturing led current CTR (17.29%) and clicks (37); exact ad winner is unverified.",
-      "waste": "Search-term waste is not confirmable because search_term_view remains tool-blocked. No ad-level waste claim is made.",
-      "optimization": "Do not optimize ads from this refresh. First investigate cap overdelivery and restore a valid ad-level reporting schema; hold settings unchanged.",
-      "suggestions": "Read-only suggestion: escalate the two over-cap days to Sam/Google Ads support, preserve the $30/day cap, and fix ad-level/search-term reporting before any bid or keyword decision.",
-      "nextExperiment": "None tonight: one experiment cannot be responsibly selected while exact ad scope and cap delivery need investigation.",
-      "whatAdsAgentShouldDo": "Verify daily cap delivery and reporting access, reconcile the two over-cap days, then return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
+      "today": "Completed day July 30 in the verified two-campaign scope: $34.87, 107 impressions, 11 clicks, 10.28% CTR, $3.17 CPC. That is over the approved $30/day cap; no settings were changed.",
+      "sevenAds": "The two campaigns are verified, but the exact seven-ad roster and fresh ad-level totals are unverified because the reporting tool rejected the joined ad/ad-group schema. I am not making ad winner/loser claims.",
+      "ctrCpc": "Current seven-day CTR is 15.23% and average CPC is $2.03, versus 15.45% and $2.04 prior. The prior window is contaminated and directional only.",
+      "leadsEmailsCalls": "The current window has 13 genuine form inquiries after deduplicating one duplicate submission and 6 distinct booked calls. Two inquiries have verified Google-click evidence; 11 are unattributed. No booked call is paid-attributed, so paid cost per booked call is not measurable.",
+      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210 week. Source configuration reports $20.33 + $10.33 = $30.66, which does not match the approved cap. July 30 spent $34.87 and July 28 $38.40. No budget change was made.",
+      "winners": "At campaign level only, Contract Manufacturing led current clicks (43) and CTR (17.48%), but its CPC was $2.45; no ad-level winner is verified.",
+      "waste": "Search-term waste is not available from the permitted reporting tool. No waste claim is made.",
+      "optimization": "Do not optimize from this refresh. Reconcile the cap configuration/overdelivery and restore usable ad-level/search-term reporting; hold settings unchanged.",
+      "suggestions": "Read-only recommendation: alert Sam to the $30.66 configured budget mismatch and the July 28/30 over-cap spend, then obtain Google Ads support/log evidence. Preserve settings until approval.",
+      "nextExperiment": "None: cap governance and reporting scope must be resolved before responsibly selecting an experiment.",
+      "whatAdsAgentShouldDo": "Verify configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
     },
+    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
+    "approvalRequirement": "Sam approval required for any consequential Ads change; this recommendation is read-only.",
     "latestOptimization": {
-      "request_id": "ads-recovery-20260730T172747Z-0aabe597",
-      "status": "completed",
-      "summary": "Improvement recs for the 7 net-new ads (read-only, no changes). Winner: 1B Skincare 44.8% CTR/$1.00 CPC \u2014 scale. Cost sink: 1C Haircare 9.8% CTR/$3.84 CPC \u2014 rein in. 3C BeardOil dormant (0 impr) \u2014 fix bid/keywords or pause. 2A Samples solid ($1.49) but CTR slipped, audit keyword mix. Highest-leverage: within-cap reallocation toward Skincare + fix search_term_view gap for negative mining. No budget change ($30/day, $210/wk held). Approval required: YES for bid/keyword edits to 1B/1C/3C.",
-      "screen_text": "# PLL Ads \u2014 Improvement Recommendations for the 7 Net-New Ads\n**Scope:** 7 Ads-Agent-built ads only (Contract Mfg 24049588003 + White Label Samples 24040031889). Legacy excluded. Read-only analysis; **no changes made.** Basis: trailing-7 ad-level data (7/24\u20137/30).\n\n## Per-ad calls (data-backed)\n| Ad group | CTR | CPC | Read | Proposed improvement |\n|---|---|---|---|---|\n| **1B ContractMfg-Skincare** \u2b50 | 44.8% | $1.00 | Clear winner, real volume | **Scale it** \u2014 raise bid modestly / lift impression share to capture more of this cheap high-intent traffic |\n| **2A Samples-PrivateLabel** | 14.2% | $1.49 | Volume workhorse; CTR slipped 27.9%\u219214.2% | Audit keyword mix \u2014 trim broad terms pulling CTR down; hold budget |\n| **1A ContractMfg-Cosmetic-Beauty** | 14.4% | $2.40 | Mid-tier, decent volume | Tighten match types; test a benefit-led headline variant (approval needed) |\n| **1C ContractMfg-Haircare** \u26a0\ufe0f | 9.8% | $3.84 | Worst active \u2014 highest CPC, lowest CTR | Add negatives, tighten keywords, lower bid; re-evaluate if CPC stays >$3.50 |\n| **3C ProductIntent-BeardOil** \ud83d\udd34 | \u2014 | \u2014 | **Dormant \u2014 0 impressions** all week; not serving | Bid/keywords too low to enter auction \u2014 raise bid or fix keywords, else pause |\n| **3A BeefTallow / 3B HairOil** | n/a | n/a | 0\u20131 clicks; no signal | Small bid bump to gather data OR consolidate into a broader product-intent group |\n\n## Cross-cutting (highest leverage)\n1. **Reallocate toward Skincare (1B)** \u2014 it's converting attention at $1.00 CPC while Haircare burns $3.84. Shift emphasis within existing caps; **no budget increase requested.**\n2. **Fix the `search_term_view` tool gap** (blocked since 7/21) \u2014 ~68 accumulated new-lane clicks are now well past the negative-mining threshold. Tooling fix, not a budget change.\n3. **Attribution coverage** \u2014 11 of 12 leads carry no clean ad click ID; keep watching the newly-installed hidden GCLID/UTM field so paid CPL becomes real.\n\n## Bottom line\n- **What I saw:** 1B Skincare is a standout (44.8% CTR / $1.00 CPC); 1C Haircare is the cost sink ($3.84 CPC); 3C BeardOil isn't serving at all.\n- **What it means:** Sample sizes are small, but the spread is wide enough to act on the extremes \u2014 scale the winner, rein in the cost sink, wake or retire the dormant ad.\n- **Recommended next action:** Approve a within-cap reallocation \u2014 nudge 1B Skincare bid up and 1C Haircare bid down; fix 3C BeardOil's non-serving bid/keywords. No net budget change ($30/day, $210/wk held).\n- **Approval required: YES** \u2014 bid/keyword edits to 1B, 1C, 3C. Exact bid deltas provided on approval; zero change to daily/weekly caps or to legacy campaigns.\n",
-      "spoken_text": "Here are my suggestions for the seven new ads. The Skincare ad is our star \u2014 forty-five percent click-through at a dollar a click \u2014 so I'd scale it. The Haircare ad is the opposite, our most expensive at nearly four dollars a click, so I'd rein it in. And the Beard Oil ad isn't even serving \u2014 zero impressions all week \u2014 so it needs a bid fix or we pause it. Net-net: shift weight toward the winner, no budget increase. I just need your OK on the bid tweaks and I'll send exact numbers.",
-      "approvalRequired": true,
-      "changesMade": false,
-      "scope": "Seven Ads-Agent-built net-new ads only; legacy excluded"
-    },
-    "scopeWarning": "CAMPAIGN-SCOPE VERIFIED \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED this cycle; no ad-level claims made.",
-    "approvalRequirement": "Sam approval required for any consequential Ads change; tonight recommendation is read-only."
+      "status": "superseded-by-morning-safety-refresh",
+      "note": "Prior ad-level recommendation is not refreshed or actionable this cycle because fresh exact seven-ad roster/performance is unverified; no change authorized."
+    }
   },
   "facilityStatus": {
     "status": "Moved in \u2014 active operations at new building",
