@@ -1,6 +1,9 @@
 {
-  "id": "morning-brief-2026-07-31-6f7648d1-c3c5-465e-b24b-cdb5ce0ace27",
-  "ts": "2026-07-31T11:03:50.425Z",
-  "text": "Morning brief loaded for 2026-07-31.",
-  "spoken_text": "Morning brief loaded for 2026-07-31."
+  "id": "result-crm-terra-payment-20260731T145823Z-1075f736",
+  "request_id": "crm-terra-payment-20260731T145823Z-1075f736",
+  "ts": "2026-07-31T15:03:00Z",
+  "agent": "CRM Developer",
+  "status": "completed",
+  "text": "Terra Lotus 50/50 terms recorded. CRM had no editable contract or quote, so the approved terms were appended to task #298 and the pro forma invoice draft was regenerated. Units and totals are unchanged, and nothing was sent to the customer.",
+  "spoken_text": "Terra Lotus payment terms are updated to fifty percent upfront and fifty percent upon completion. The terms were added to task two ninety-eight and the pro forma invoice was regenerated. Nothing was sent to the customer."
 }
