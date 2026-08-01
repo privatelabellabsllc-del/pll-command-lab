@@ -1,9 +1,9 @@
 {
-  "id": "cmd_ms9izwp9_gciuqbu",
-  "request_id": "cmd_ms9izwp9_gciuqbu",
-  "ts": "2026-07-31T22:45:10.365891Z",
-  "agent": "CRM Developer",
+  "id": "ads-nightly-2026-07-31",
+  "request_id": "ads-nightly-2026-07-31",
+  "ts": "2026-07-31T21:08:00-04:00",
+  "agent": "Ads Agent",
   "status": "completed",
-  "text": "CRM Developer completed the request: created task #311, \u2018Ship the Mothered order,\u2019 assigned to Steve (user ID 5), due August 1, 2026. No prior duplicate existed, and exactly one matching task was verified after creation.",
-  "spoken_text": "Sam, the CRM Developer completed the request. Task 311, to ship the Mothered order, is assigned to Steve and due August first. No duplicate existed, and the CRM verified exactly one matching task after creation."
+  "text": "Ads Agent completed the nightly review: both net-new campaigns are enabled. Preliminary spend today is $19.76 of the $30 daily cap. Across the trailing seven complete days, spend was $154.37 of the $210 weekly cap, with 76 clicks at a $2.03 average CPC. The first clean Contract Manufacturing paid lead arrived today; combined with Tiara from White Label Samples, that is only one verified lead per campaign—too little evidence to optimize safely. Search-term mining remains tool-blocked, so no changes were made. Cache refresh blocked: this callback did not include the required structured ads_intelligence payload; the existing validated Ads cache was preserved.",
+  "spoken_text": "Sam, the new campaigns are under the weekly cap, and no changes were made. Today’s preliminary spend is nineteen dollars and seventy-six cents. Over the last seven complete days, spend was one hundred fifty-four dollars and thirty-seven cents, with seventy-six clicks. We now have one verified paid lead from each campaign, but that is still too little evidence to optimize safely. Search-term analysis remains blocked, so I recommend holding steady until we have more lead data."
 }
