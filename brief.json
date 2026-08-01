@@ -3,27 +3,27 @@
   "ts": "2026-07-31T11:03:50.425Z",
   "brief": [
     {
-      "t": "FIRST — collect Ashley / Nymphaea’s next payment this morning. She has signed the updated agreement and asked for an invoice with payment link for 50% of the Miron glass-container amount; the $5,644.50 manufacturing deposit is already paid. Send only a verified glass amount and payment link, then confirm the order can be placed.",
+      "t": "FIRST \u2014 collect Ashley / Nymphaea\u2019s next payment this morning. She has signed the updated agreement and asked for an invoice with payment link for 50% of the Miron glass-container amount; the $5,644.50 manufacturing deposit is already paid. Send only a verified glass amount and payment link, then confirm the order can be placed.",
       "hot": true
     },
     {
-      "t": "SECOND — Terra Lotus quote and contract were due yesterday and cannot quietly slide. Confirm the 22,000-unit total against the 21,000 reference, lock every verified cost and lead-time input, obtain approval, and deliver. Do not invent pricing.",
+      "t": "SECOND \u2014 Terra Lotus quote and contract were due yesterday and cannot quietly slide. Confirm the 22,000-unit total against the 21,000 reference, lock every verified cost and lead-time input, obtain approval, and deliver. Do not invent pricing.",
       "hot": true
     },
     {
-      "t": "THIRD — stop any BuffMan filling-line commitment until the $8,850 DDP quote, machine scope, hot-fill capability, batch-coding method, and total landed cost are verified in writing.",
+      "t": "THIRD \u2014 stop any BuffMan filling-line commitment until the $8,850 DDP quote, machine scope, hot-fill capability, batch-coding method, and total landed cost are verified in writing.",
       "hot": true
     },
     {
-      "t": "FOURTH — protect customer delivery truth: obtain Natugeda Hair Oil’s real production stage and next date before any update. PHYLARA is paused after sample satisfaction and needs release-permission, formula/specification, and balance confirmation.",
+      "t": "FOURTH \u2014 protect customer delivery truth: obtain Natugeda Hair Oil\u2019s real production stage and next date before any update. PHYLARA is paused after sample satisfaction and needs release-permission, formula/specification, and balance confirmation.",
       "hot": true
     },
     {
-      "t": "FIFTH — respond to new revenue with qualification, not promises. Salty Pup has a formula and packaging and is seeking manufacturing; Shay Brands is booked for August 3 at noon ET and needs tiered 500/1,000/1,500-unit pricing preparation. The new chelating-shampoo inquiry needs formula/claims and MOQ qualification.",
+      "t": "FIFTH \u2014 respond to new revenue with qualification, not promises. Salty Pup has a formula and packaging and is seeking manufacturing; Shay Brands is booked for August 3 at noon ET and needs tiered 500/1,000/1,500-unit pricing preparation. The new chelating-shampoo inquiry needs formula/claims and MOQ qualification.",
       "hot": false
     },
     {
-      "t": "SIXTH — resolve cash and continuity gates: validate bitop, CH Robinson, and BuffMan exposure against internal records; complete DTE start-service instructions; then update UPS, USPS, and Shopify to the live Farmington Hills address and test each workflow.",
+      "t": "SIXTH \u2014 resolve cash and continuity gates: validate bitop, CH Robinson, and BuffMan exposure against internal records; complete DTE start-service instructions; then update UPS, USPS, and Shopify to the live Farmington Hills address and test each workflow.",
       "hot": true
     }
   ],
@@ -59,7 +59,7 @@
         "quote",
         "contract"
       ],
-      "a": "Terra Lotus remains the major quote and contract priority, now overdue from July 30. The customer’s WhatsApp line items total 22,000 units, while a 21,000-unit reference must be reconciled. Do not issue pricing until formula, packaging, labor, overhead, freight, lead time, and approved margin are verified."
+      "a": "Terra Lotus remains the major quote and contract priority, now overdue from July 30. The customer\u2019s WhatsApp line items total 22,000 units, while a 21,000-unit reference must be reconciled. Do not issue pricing until formula, packaging, labor, overhead, freight, lead time, and approved margin are verified."
     },
     {
       "keys": [
@@ -145,7 +145,7 @@
         "payable",
         "overdue"
       ],
-      "a": "bitop AG’s dunning notice requires ledger matching before payment. Amount, original invoice, and any material or production hold are not verified in this refresh. Do not pay from an email link."
+      "a": "bitop AG\u2019s dunning notice requires ledger matching before payment. Amount, original invoice, and any material or production hold are not verified in this refresh. Do not pay from an email link."
     },
     {
       "keys": [
@@ -195,7 +195,7 @@
       "title": "Deliver Terra Lotus 22,000-unit quote and contract",
       "why": "Customer delivery was due July 30. WhatsApp line items total 22,000 units, not the 21,000 verbal reference; full verified costs and approval remain required.",
       "owner": "Sam / Aidan / Ronald / Laura",
-      "due": "Today — overdue from July 30",
+      "due": "Today \u2014 overdue from July 30",
       "priority": "critical",
       "revenue": "22,000-unit deal; price and total value unverified"
     },
@@ -239,7 +239,7 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Stay in one lane: collect Ashley’s verified 50% Miron glass payment this morning, then return to Terra Lotus.",
+      "top_task": "Stay in one lane: collect Ashley\u2019s verified 50% Miron glass payment this morning, then return to Terra Lotus.",
       "tasks": [
         {
           "title": "Approve/send only the verified Ashley glass payment request",
@@ -254,7 +254,7 @@
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Verify Ashley’s Miron glass amount/order path and the Terra Lotus operational cost inputs.",
+      "top_task": "Verify Ashley\u2019s Miron glass amount/order path and the Terra Lotus operational cost inputs.",
       "tasks": [
         {
           "title": "Provide Ashley glass invoice/order amount and placement status",
@@ -273,7 +273,7 @@
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Send Ashley’s verified 50% glass invoice/payment link and confirm receipt/order placement.",
+      "top_task": "Send Ashley\u2019s verified 50% glass invoice/payment link and confirm receipt/order placement.",
       "tasks": [
         {
           "title": "Issue Ashley payment request only after Aidan verifies the 50% glass amount",
@@ -288,7 +288,7 @@
           "due": "Today"
         }
       ],
-      "notes": "Ashley’s last message was a direct payment request; do not substitute an agreement for the invoice."
+      "notes": "Ashley\u2019s last message was a direct payment request; do not substitute an agreement for the invoice."
     },
     "ronald": {
       "display_name": "Ronald",
@@ -332,16 +332,16 @@
       "est_value": "Glass amount unverified",
       "next_step": "Verify container amount and order path, send the 50% payment link, then confirm payment and supplier order placement.",
       "owner": "Laura / Aidan",
-      "timing": "First — this morning",
+      "timing": "First \u2014 this morning",
       "value": "Active three-product order"
     },
     {
       "title": "Close Terra Lotus quote and contract",
       "why": "A major 22,000-unit opportunity remains unresolved after the promised July 30 delivery.",
-      "est_value": "Unverified — no estimate without complete costs and approved margin",
+      "est_value": "Unverified \u2014 no estimate without complete costs and approved margin",
       "next_step": "Confirm 22,000 versus 21,000 units, complete all cost/lead-time inputs, approve, and send quote plus contract.",
       "owner": "Sam / Aidan / Ronald / Laura",
-      "timing": "Second — today",
+      "timing": "Second \u2014 today",
       "value": "22,000-unit enterprise opportunity"
     },
     {
@@ -376,11 +376,11 @@
     "total_value": "$1,327,800 (last authenticated CRM capture)",
     "active_deals": 9,
     "hot": [
-      "Ashley / Nymphaea — verified 50% Miron glass payment link due this morning",
-      "Terra Lotus — 22,000-unit quote and contract overdue from July 30",
-      "BuffMan — scope / $8,850 DDP gate",
-      "Natugeda — verified Hair Oil production facts",
-      "Salty Pup — manufacturing-ready new inquiry"
+      "Ashley / Nymphaea \u2014 verified 50% Miron glass payment link due this morning",
+      "Terra Lotus \u2014 22,000-unit quote and contract overdue from July 30",
+      "BuffMan \u2014 scope / $8,850 DDP gate",
+      "Natugeda \u2014 verified Hair Oil production facts",
+      "Salty Pup \u2014 manufacturing-ready new inquiry"
     ],
     "stalled": [
       "CRM live access and customer-page Assign To list",
@@ -394,63 +394,63 @@
     "note": "July 31 refresh: Ashley requested an invoice/payment link for 50% of the Miron glass-container amount after signing the updated agreement; $5,644.50 manufacturing deposit is already paid. Terra Lotus remains overdue from July 30 with 22,000-unit line-item total versus a 21,000 verbal reference. Salty Pup and web leads are new opportunities; Shay Brands is booked August 3, noon ET. CRM is at sign-in, so counts/values are carried from last authenticated capture, not live-verified."
   },
   "adsAgentBrief": {
-    "status": "Fresh source-backed morning safety cache — read only; no Google Ads behavior or settings were changed. Campaign scope verified; exact seven-ad roster unverified; cap/configuration emergency requires Sam notification.",
-    "updatedAt": "2026-07-31T06:30:00-04:00",
-    "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
-    "snapshot": "Jul 24–30 verified campaign scope: $154.37 spend, 499 impressions, 76 clicks, 15.23% CTR, $2.03 average CPC; 2 verified Ads-attributed inquiries / 0 paid-attributed booked calls. Jul 30 completed day: $34.87 spend vs $30 approved cap.",
-    "recommendation": "READ-ONLY ALERT: notify Sam of the $30.66 source-reported daily-budget total versus the approved $30 cap and investigate the $38.40 (Jul 28) and $34.87 (Jul 30) spend with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
+    "status": "Fresh source-backed nightly cache \u2014 read only; no Google Ads behavior or settings were changed. Campaign scope verified; exact seven-ad roster unverified; cap/configuration emergency requires Sam notification.",
+    "updatedAt": "2026-07-31T21:01:00-04:00",
+    "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
+    "snapshot": "Jul 25\u201331 verified campaign scope: $165.21 spend, 561 impressions, 79 clicks, 14.08% CTR, $2.09 average CPC; 3 verified Ads-attributed inquiries / 0 paid-attributed booked calls. Jul 31 through the 9:00 PM ET pull: $19.76 spend vs $30 approved cap.",
+    "recommendation": "READ-ONLY ALERT: notify Sam that source-reported daily budgets total $30.66 versus the approved $30 cap, and investigate the Jul 28 $38.40 and Jul 30 $34.87 over-cap spend with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
     "governance": "No consequential change without Sam approval.",
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because scoped campaign/ad joins were not available. No ad winner/loser or search-term claims made.",
     "windows": {
-      "today": "2026-07-30 (prior completed calendar day; morning safety source pull at 6:30 AM ET)",
-      "current": "2026-07-24 to 2026-07-30",
-      "prior": "2026-07-17 to 2026-07-23 (contaminated baseline: ads paused until 7/20; contact form broken until 7/22 fix)"
+      "today": "2026-07-31",
+      "current": "2026-07-25 to 2026-07-31",
+      "prior": "2026-07-18 to 2026-07-24 (contaminated baseline: ads did not serve on Jul 18\u201319; form restoration occurred Jul 22)"
     },
     "spoken": {
-      "today": "Completed day July 30 in the verified two-campaign scope: $34.87, 107 impressions, 11 clicks, 10.28% CTR, $3.17 CPC. That is over the approved $30/day cap; no settings were changed.",
-      "sevenAds": "The two campaigns are verified, but the exact seven-ad roster and fresh ad-level totals are unverified because the reporting tool rejected the joined ad/ad-group schema. I am not making ad winner/loser claims.",
-      "ctrCpc": "Current seven-day CTR is 15.23% and average CPC is $2.03, versus 15.45% and $2.04 prior. The prior window is contaminated and directional only.",
-      "leadsEmailsCalls": "The current window has 13 genuine form inquiries after deduplicating one duplicate submission and 6 distinct booked calls. Two inquiries have verified Google-click evidence; 11 are unattributed. No booked call is paid-attributed, so paid cost per booked call is not measurable.",
-      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210 week. Source configuration reports $20.33 + $10.33 = $30.66, which does not match the approved cap. July 30 spent $34.87 and July 28 $38.40. No budget change was made.",
-      "winners": "At campaign level only, Contract Manufacturing led current clicks (43) and CTR (17.48%), but its CPC was $2.45; no ad-level winner is verified.",
-      "waste": "Search-term waste is not available from the permitted reporting tool. No waste claim is made.",
-      "optimization": "Do not optimize from this refresh. Reconcile the cap configuration/overdelivery and restore usable ad-level/search-term reporting; hold settings unchanged.",
-      "suggestions": "Read-only recommendation: alert Sam to the $30.66 configured budget mismatch and the July 28/30 over-cap spend, then obtain Google Ads support/log evidence. Preserve settings until approval.",
+      "today": "July 31 in the verified two-campaign scope: $19.76, 93 impressions, 9 clicks, 9.68% CTR, $2.20 CPC. Spend is below the approved $30 daily cap today; no settings were changed.",
+      "sevenAds": "The two campaigns are verified, but the exact seven-ad roster and fresh ad-level totals are unverified. I am not making ad winner/loser claims.",
+      "ctrCpc": "Current seven-day CTR is 14.08% and average CPC is $2.09, versus 15.78% and $1.98 prior. The prior window is contaminated and directional only.",
+      "leadsEmailsCalls": "The current window has 14 genuine form inquiries after deduplicating one duplicate submission and 5 distinct booked calls. Three inquiries have verified Google-click evidence; 11 are unattributed. No booked call is paid-attributed, so paid cost per booked call is not measurable.",
+      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210 week. Source configuration reports $20.33 + $10.33 = $30.66, which does not match the approved cap. July 28 spent $38.40 and July 30 $34.87. No budget change was made.",
+      "winners": "At campaign level only, Contract Manufacturing led current clicks (46) and CTR (14.84%), but its CPC was $2.52; no ad-level winner is verified.",
+      "waste": "Search-term data is not available in the permitted scoped report. No waste claim is made.",
+      "optimization": "Do not optimize from this refresh. Reconcile the cap configuration/overdelivery and restore usable scoped ad-level/search-term reporting; hold settings unchanged.",
+      "suggestions": "Read-only recommendation: alert Sam to the $30.66 configured-budget mismatch and July 28/30 over-cap spend, then obtain Google Ads support/log evidence. Preserve settings until approval.",
       "nextExperiment": "None: cap governance and reporting scope must be resolved before responsibly selecting an experiment.",
-      "whatAdsAgentShouldDo": "Verify configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
+      "whatAdsAgentShouldDo": "Verify the configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
     }
   },
   "adsIntelligence": {
-    "updatedAt": "2026-07-31T06:30:00-04:00",
-    "source": "google-ads-and-outlook-live-morning-safety-refresh",
-    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns excluded. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED: the reporting tool rejected joined ad_group/ad fields, so no fresh ad-level IDs or performance are claimed.",
+    "updatedAt": "2026-07-31T21:01:00-04:00",
+    "source": "google-ads-and-outlook-live-nightly-refresh",
+    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns excluded. CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED: exact ad IDs and fresh ad-level performance are not provable from the available scoped reporting.",
     "windows": {
-      "today": "2026-07-30 (prior completed calendar day; morning safety source pull at 6:30 AM ET)",
-      "current": "2026-07-24 to 2026-07-30",
-      "prior": "2026-07-17 to 2026-07-23 (contaminated baseline: ads paused until 7/20; contact form broken until 7/22 fix)"
+      "today": "2026-07-31",
+      "current": "2026-07-25 to 2026-07-31",
+      "prior": "2026-07-18 to 2026-07-24 (contaminated baseline: ads did not serve on Jul 18\u201319; form restoration occurred Jul 22)"
     },
     "today": {
-      "cost": 34.87,
-      "impressions": 107,
-      "clicks": 11,
-      "ctr": 10.28,
-      "cpc": 3.17,
-      "note": "completed-day campaign-scope total; fresh source pull"
+      "cost": 19.76,
+      "impressions": 93,
+      "clicks": 9,
+      "ctr": 9.68,
+      "cpc": 2.2,
+      "note": "partial-day campaign-scope total from 9:00 PM ET nightly source pull"
     },
     "current": {
-      "cost": 154.37,
-      "impressions": 499,
-      "clicks": 76,
-      "ctr": 15.23,
-      "cpc": 2.03
+      "cost": 165.21,
+      "impressions": 561,
+      "clicks": 79,
+      "ctr": 14.08,
+      "cpc": 2.09
     },
     "prior": {
-      "cost": 107.93,
-      "impressions": 343,
-      "clicks": 53,
-      "ctr": 15.45,
-      "cpc": 2.04,
-      "note": "contaminated baseline — directional only, not causal"
+      "cost": 116.85,
+      "impressions": 374,
+      "clicks": 59,
+      "ctr": 15.78,
+      "cpc": 1.98,
+      "note": "contaminated baseline \u2014 directional only, not causal"
     },
     "campaignBreakdown": [
       {
@@ -460,24 +460,24 @@
         "dailyBudget": 20,
         "sourceReportedDailyBudget": 20.33,
         "today": {
-          "cost": 28.92,
-          "impressions": 53,
-          "clicks": 7,
-          "ctr": 13.21,
-          "cpc": 4.13
+          "cost": 10.86,
+          "impressions": 66,
+          "clicks": 3,
+          "ctr": 4.55,
+          "cpc": 3.62
         },
         "current": {
-          "cost": 105.22,
-          "impressions": 246,
-          "clicks": 43,
-          "ctr": 17.48,
-          "cpc": 2.45
+          "cost": 116.08,
+          "impressions": 310,
+          "clicks": 46,
+          "ctr": 14.84,
+          "cpc": 2.52
         },
         "prior": {
           "cost": 79.83,
-          "impressions": 275,
+          "impressions": 277,
           "clicks": 34,
-          "ctr": 12.36,
+          "ctr": 12.27,
           "cpc": 2.35
         }
       },
@@ -488,93 +488,93 @@
         "dailyBudget": 10,
         "sourceReportedDailyBudget": 10.33,
         "today": {
-          "cost": 5.95,
-          "impressions": 54,
-          "clicks": 4,
-          "ctr": 7.41,
-          "cpc": 1.49
+          "cost": 8.9,
+          "impressions": 27,
+          "clicks": 6,
+          "ctr": 22.22,
+          "cpc": 1.48
         },
         "current": {
-          "cost": 49.15,
-          "impressions": 253,
+          "cost": 49.13,
+          "impressions": 251,
           "clicks": 33,
-          "ctr": 13.04,
+          "ctr": 13.15,
           "cpc": 1.49
         },
         "prior": {
-          "cost": 28.09,
-          "impressions": 68,
-          "clicks": 19,
-          "ctr": 27.94,
+          "cost": 37.01,
+          "impressions": 97,
+          "clicks": 25,
+          "ctr": 25.77,
           "cpc": 1.48
         }
       }
     ],
     "adBreakdown": [],
-    "adBreakdownStatus": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
+    "adBreakdownStatus": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because scoped campaign/ad joins were not available. No ad winner/loser or search-term claims made.",
     "leads": {
-      "qualifiedInboxInquiries": 13,
-      "verifiedAdsAttributed": 2,
-      "bookedCalls": 6,
+      "qualifiedInboxInquiries": 14,
+      "verifiedAdsAttributed": 3,
+      "bookedCalls": 5,
       "unattributed": 11,
       "ambiguousPaidSignal": 0,
-      "cplBlended": 11.87,
-      "cplVerifiedPaid": 77.19,
-      "cplVerifiedPaidSamplesOnly": 49.15,
+      "cplBlended": 11.8,
+      "cplVerifiedPaid": 55.07,
+      "cplVerifiedPaidSamplesOnly": 49.13,
       "costPerBookedCall": null,
-      "costPerBookedCallNote": "NOT MEASURABLE from paid spend: 0 of 6 distinct current-window booked calls has a verified Ads attribution. Raw blended spend per booked call ($25.73) is not attribution-safe."
+      "costPerBookedCallNote": "NOT MEASURABLE from paid spend: 0 of 5 distinct current-window booked calls has a verified Ads attribution. Raw blended spend per booked call ($33.04) is not attribution-safe."
     },
     "health": {
       "contactForm": "Form submissions are arriving in Outlook; no break identified in this source pull.",
-      "attributionCapture": "Current-window form review found 2 distinct Google-click (GCLID) inquiries; one duplicate form was deduplicated. Coverage remains thin: 11 of 13 genuine inquiries are not verified Ads-attributed.",
+      "attributionCapture": "Current-window form review found 3 distinct GCLID-backed inquiries (one explicitly names Contract Manufacturing campaign 24049588003 and one explicitly names Samples campaign 24040031889); one duplicate form was deduplicated. Coverage remains thin: 11 of 14 genuine inquiries are unattributed.",
       "landingPages": "No landing-page failure reported by available source data; this refresh did not perform live URL testing.",
-      "dailyCapStatus": "BREACHED: completed day 2026-07-30 spent $34.87 vs approved $30/day (116.2%); 2026-07-28 spent $38.40 (128.0%). Source-reported campaign budget amounts are $20.33 + $10.33 = $30.66, above the approved $30/day cap. Alert Sam; do not change settings.",
-      "weeklyCapStatus": "Current 7-day spend $154.37 of approved $210/week (73.5%); however daily cap breach/configuration mismatch requires escalation."
+      "dailyCapStatus": "CONFIGURATION / HISTORICAL SPEND EMERGENCY: July 31 spend is $19.76 vs approved $30/day (65.9%), but Jul 28 spent $38.40 (128.0%) and Jul 30 spent $34.87 (116.2%). Source-reported campaign budgets are $20.33 + $10.33 = $30.66, above approved cap. Alert Sam; do not change settings.",
+      "weeklyCapStatus": "Current 7-day spend $165.21 of approved $210/week (78.7%); daily cap breaches/configuration mismatch require escalation."
     },
     "best": {
       "level": "campaign (fresh)",
       "name": "PLL-Search-ContractMfg-2026",
-      "metric": "Current 7-day CTR 17.48% and 43 clicks versus Samples 13.04% and 33 clicks. CPC is higher ($2.45 versus $1.49).",
+      "metric": "Current 7-day CTR 14.84% and 46 clicks versus Samples 13.15% and 33 clicks. CPC is higher ($2.52 versus $1.49).",
       "note": "Campaign comparison only; no conversion or ad-level winner claim."
     },
     "worst": {
       "level": "campaign (fresh, directional)",
       "name": "PLL-Search-Samples-2026",
-      "metric": "CTR fell from 27.94% prior to 13.04% current, though CPC held near $1.49.",
+      "metric": "CTR fell from 25.77% prior to 13.15% current, though CPC held near $1.49.",
       "note": "Prior baseline is contaminated; no causal conclusion."
     },
     "watchItem": {
       "name": "Cap governance",
-      "metric": "Source-reported daily budgets total $30.66 versus the approved $30 cap; July 28 and July 30 were over cap.",
+      "metric": "Source-reported daily budgets total $30.66 versus approved $30; Jul 28 and Jul 30 were over cap.",
       "action": "Escalate to Sam; investigate only, no changes."
     },
     "waste": {
       "inferred": false,
-      "note": "Search-term data is unavailable from the permitted report resource; exact ad roster also unverified. No waste claim is made."
+      "note": "Search-term data is unavailable from the permitted scoped report; no waste claim is made."
     },
-    "recommendation": "READ-ONLY ALERT: notify Sam of the $30.66 source-reported daily-budget total versus the approved $30 cap and investigate the $38.40 (Jul 28) and $34.87 (Jul 30) spend with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
+    "recommendation": "READ-ONLY ALERT: notify Sam that source-reported daily budgets total $30.66 versus the approved $30 cap, and investigate the Jul 28 $38.40 and Jul 30 $34.87 over-cap spend with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
     "spoken": {
-      "today": "Completed day July 30 in the verified two-campaign scope: $34.87, 107 impressions, 11 clicks, 10.28% CTR, $3.17 CPC. That is over the approved $30/day cap; no settings were changed.",
-      "sevenAds": "The two campaigns are verified, but the exact seven-ad roster and fresh ad-level totals are unverified because the reporting tool rejected the joined ad/ad-group schema. I am not making ad winner/loser claims.",
-      "ctrCpc": "Current seven-day CTR is 15.23% and average CPC is $2.03, versus 15.45% and $2.04 prior. The prior window is contaminated and directional only.",
-      "leadsEmailsCalls": "The current window has 13 genuine form inquiries after deduplicating one duplicate submission and 6 distinct booked calls. Two inquiries have verified Google-click evidence; 11 are unattributed. No booked call is paid-attributed, so paid cost per booked call is not measurable.",
-      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210 week. Source configuration reports $20.33 + $10.33 = $30.66, which does not match the approved cap. July 30 spent $34.87 and July 28 $38.40. No budget change was made.",
-      "winners": "At campaign level only, Contract Manufacturing led current clicks (43) and CTR (17.48%), but its CPC was $2.45; no ad-level winner is verified.",
-      "waste": "Search-term waste is not available from the permitted reporting tool. No waste claim is made.",
-      "optimization": "Do not optimize from this refresh. Reconcile the cap configuration/overdelivery and restore usable ad-level/search-term reporting; hold settings unchanged.",
-      "suggestions": "Read-only recommendation: alert Sam to the $30.66 configured budget mismatch and the July 28/30 over-cap spend, then obtain Google Ads support/log evidence. Preserve settings until approval.",
+      "today": "July 31 in the verified two-campaign scope: $19.76, 93 impressions, 9 clicks, 9.68% CTR, $2.20 CPC. Spend is below the approved $30 daily cap today; no settings were changed.",
+      "sevenAds": "The two campaigns are verified, but the exact seven-ad roster and fresh ad-level totals are unverified. I am not making ad winner/loser claims.",
+      "ctrCpc": "Current seven-day CTR is 14.08% and average CPC is $2.09, versus 15.78% and $1.98 prior. The prior window is contaminated and directional only.",
+      "leadsEmailsCalls": "The current window has 14 genuine form inquiries after deduplicating one duplicate submission and 5 distinct booked calls. Three inquiries have verified Google-click evidence; 11 are unattributed. No booked call is paid-attributed, so paid cost per booked call is not measurable.",
+      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210 week. Source configuration reports $20.33 + $10.33 = $30.66, which does not match the approved cap. July 28 spent $38.40 and July 30 $34.87. No budget change was made.",
+      "winners": "At campaign level only, Contract Manufacturing led current clicks (46) and CTR (14.84%), but its CPC was $2.52; no ad-level winner is verified.",
+      "waste": "Search-term data is not available in the permitted scoped report. No waste claim is made.",
+      "optimization": "Do not optimize from this refresh. Reconcile the cap configuration/overdelivery and restore usable scoped ad-level/search-term reporting; hold settings unchanged.",
+      "suggestions": "Read-only recommendation: alert Sam to the $30.66 configured-budget mismatch and July 28/30 over-cap spend, then obtain Google Ads support/log evidence. Preserve settings until approval.",
       "nextExperiment": "None: cap governance and reporting scope must be resolved before responsibly selecting an experiment.",
-      "whatAdsAgentShouldDo": "Verify configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
+      "whatAdsAgentShouldDo": "Verify the configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
     },
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because the tool rejected joined campaign/ad-group fields. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign scope verified; ad-level reporting unavailable because scoped campaign/ad joins were not available. No ad winner/loser or search-term claims made.",
     "approvalRequirement": "Sam approval required for any consequential Ads change; this recommendation is read-only.",
     "latestOptimization": {
-      "status": "superseded-by-morning-safety-refresh",
-      "note": "Prior ad-level recommendation is not refreshed or actionable this cycle because fresh exact seven-ad roster/performance is unverified; no change authorized."
+      "status": "no-fresh-optimization-authorized",
+      "note": "Exact seven-ad roster/performance and search terms are unverified/unavailable; no change authorized."
     }
   },
   "facilityStatus": {
-    "status": "Moved in — active operations at new building",
+    "status": "Moved in \u2014 active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
