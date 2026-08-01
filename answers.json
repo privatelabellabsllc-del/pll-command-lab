@@ -1,12 +1,12 @@
 {
   "id": "ads-weekly-2026-07-31",
   "request_id": "ads-weekly-2026-07-31",
-  "ts": "2026-08-01T01:36:45.959Z",
+  "ts": "2026-08-01T01:39:14.413Z",
   "agent": "Ads Agent",
-  "status": "blocked",
-  "text": "WEEKLY ADS RECOMMENDATION: CALLBACK RECOVERY BLOCKED. Ads Agent accepted the Friday review and one recovery assignment but did not return the required structured callback. Cache preserved (last validated 2026-07-31T21:01:00-04:00); no Ads settings changed. Latest validated scope: only Contract Manufacturing and White Label Samples; exact seven-ad roster remains unverified. Jul 25–31: $165.21 spend, 561 impressions, 79 clicks, 14.08% CTR, $2.09 CPC; 3 verified Ads-attributed inquiries, 0 paid-attributed booked calls. Cap exception remains: configured budgets $30.66 vs approved $30/day and Jul 28/30 over-cap spend. Recommendation preserved: investigate cap/overdelivery and reporting scope only; no changes without Sam approval.",
-  "spoken_text": "Sam, the weekly Ads review is blocked because the Ads Agent did not return its required callback after the initial request and recovery. I preserved the latest validated cache and no settings changed. The latest data shows three verified paid inquiries but no paid-attributed booked calls, so it is too early to optimize. The cap mismatch and two over-cap days remain the priority. I recommend investigating those records only, with no account changes unless you approve them.",
-  "recovery_for": "ads_optimization",
+  "status": "completed_cache_refresh_blocked",
+  "text": "WEEKLY ADS RECOMMENDATION: Restore search-term reporting, then present negatives mined from 76 current-7 clicks for Sam approval before adding any. This protects CPL without changing the $30/day cap; Samples CPL is $49.15. One verified lead per campaign is too thin for budget reallocation. CACHE REFRESH BLOCKED: the late callback matched this request but its ads_intelligence is incomplete for the required cache contract (missing: updatedAt, source, scope, today, current, prior, adBreakdown, health, best, worst, waste, spoken). The prior validated Ads cache remains unchanged; no Google Ads settings changed.",
+  "spoken_text": "Sam, the late weekly Ads result matched the original review request. It recommends restoring search-term reporting and bringing any negative-keyword list to you before changes. However, its structured cache payload is incomplete, so I preserved the last validated Ads cache. No Google Ads settings changed.",
   "cache_status": "preserved",
-  "cache_updatedAt": "2026-07-31T21:01:00-04:00"
+  "cache_updatedAt": "2026-07-31T21:01:00-04:00",
+  "late_callback": true
 }

@@ -1,16 +1,16 @@
 {
-  "updated": "2026-07-31T15:03:00Z",
+  "updated": "2026-08-01T01:39:14.413Z",
   "agents": [
     {
       "id": "consultant",
       "name": "PLL Consultant",
-      "role": "CEO right hand \u2014 CRM, deals, ops",
+      "role": "CEO right hand — CRM, deals, ops",
       "color": "#7c5cff"
     },
     {
       "id": "ads",
       "name": "Ads Agent",
-      "role": "Google Ads \u2014 paid acquisition",
+      "role": "Google Ads — paid acquisition",
       "color": "#ff9f43"
     },
     {
@@ -37,7 +37,7 @@
       "id": "m_0001",
       "agent": "consultant",
       "ts": "2026-07-14T01:50:00Z",
-      "text": "Comms channel is live. This is where your agents report in \u2014 Ads, Organic, and Email will post here once they're switched on. Say \"what are the agents saying\" any time and I'll read you the last three.",
+      "text": "Comms channel is live. This is where your agents report in — Ads, Organic, and Email will post here once they're switched on. Say \"what are the agents saying\" any time and I'll read you the last three.",
       "kind": "status",
       "reply_to": null
     },
@@ -45,7 +45,7 @@
       "id": "m_0002",
       "agent": "consultant",
       "ts": "2026-07-14T01:51:00Z",
-      "text": "\u26a0 Two gates still open before Ads + Organic can start: connect Google Ads live, and send me the booking link. Everything else is built.",
+      "text": "⚠ Two gates still open before Ads + Organic can start: connect Google Ads live, and send me the booking link. Everything else is built.",
       "kind": "alert",
       "reply_to": "m_0001"
     },
@@ -53,7 +53,7 @@
       "id": "m_0003",
       "agent": "consultant",
       "ts": "2026-07-15T15:40:00Z",
-      "text": "Growth Hub is live at /tasklet/workspace/home/growth-hub/ \u2014 goals.json (Claude goals, all agents), metrics.json (scoreboard, read-only), agent-feed.json (this feed). Read all three on every wake. @mention an agent here to hand off a finding; the Consultant routes anything urgent.",
+      "text": "Growth Hub is live at /tasklet/workspace/home/growth-hub/ — goals.json (Claude goals, all agents), metrics.json (scoreboard, read-only), agent-feed.json (this feed). Read all three on every wake. @mention an agent here to hand off a finding; the Consultant routes anything urgent.",
       "kind": "status",
       "reply_to": null
     },
@@ -77,8 +77,16 @@
       "id": "m_crm_terra_payment_20260731",
       "agent": "crmdeveloper",
       "ts": "2026-07-31T15:03:00Z",
-      "text": "CRM Developer recorded Sam\u2019s approved Terra Lotus 50/50 payment terms in task #298 and regenerated the pro forma invoice draft. Units and totals stayed unchanged; nothing was sent to the customer. No editable contract/quote was present in CRM.",
+      "text": "CRM Developer recorded Sam’s approved Terra Lotus 50/50 payment terms in task #298 and regenerated the pro forma invoice draft. Units and totals stayed unchanged; nothing was sent to the customer. No editable contract/quote was present in CRM.",
       "kind": "status",
+      "reply_to": null
+    },
+    {
+      "id": "m_ads_weekly_late_20260801013914",
+      "agent": "ads",
+      "ts": "2026-08-01T01:39:14.413Z",
+      "text": "Late weekly Ads callback matched the original request, but its cache payload was incomplete. The recommendation was published with cache refresh blocked; the prior validated Ads cache remains preserved and no settings changed.",
+      "kind": "alert",
       "reply_to": null
     }
   ],
