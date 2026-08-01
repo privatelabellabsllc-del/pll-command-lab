@@ -1,0 +1,9 @@
+{
+  "id": "lifecycle-test-20260801180629",
+  "request_id": "lifecycle-test-20260801180629",
+  "ts": "2026-08-01T18:06:29.301Z",
+  "agent": "PLL Consultant",
+  "status": "completed",
+  "text": "Synthetic reply-lifecycle round-trip test. No business action taken.",
+  "spoken_text": "Reply lifecycle test answer received."
+}
