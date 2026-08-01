@@ -1,9 +1,12 @@
 {
-  "id": "ads-nightly-2026-07-31",
-  "request_id": "ads-nightly-2026-07-31",
-  "ts": "2026-07-31T21:08:00-04:00",
+  "id": "ads-weekly-2026-07-31",
+  "request_id": "ads-weekly-2026-07-31",
+  "ts": "2026-08-01T01:36:45.959Z",
   "agent": "Ads Agent",
-  "status": "completed",
-  "text": "Ads Agent completed the nightly review: both net-new campaigns are enabled. Preliminary spend today is $19.76 of the $30 daily cap. Across the trailing seven complete days, spend was $154.37 of the $210 weekly cap, with 76 clicks at a $2.03 average CPC. The first clean Contract Manufacturing paid lead arrived today; combined with Tiara from White Label Samples, that is only one verified lead per campaign—too little evidence to optimize safely. Search-term mining remains tool-blocked, so no changes were made. Cache refresh blocked: this callback did not include the required structured ads_intelligence payload; the existing validated Ads cache was preserved.",
-  "spoken_text": "Sam, the new campaigns are under the weekly cap, and no changes were made. Today’s preliminary spend is nineteen dollars and seventy-six cents. Over the last seven complete days, spend was one hundred fifty-four dollars and thirty-seven cents, with seventy-six clicks. We now have one verified paid lead from each campaign, but that is still too little evidence to optimize safely. Search-term analysis remains blocked, so I recommend holding steady until we have more lead data."
+  "status": "blocked",
+  "text": "WEEKLY ADS RECOMMENDATION: CALLBACK RECOVERY BLOCKED. Ads Agent accepted the Friday review and one recovery assignment but did not return the required structured callback. Cache preserved (last validated 2026-07-31T21:01:00-04:00); no Ads settings changed. Latest validated scope: only Contract Manufacturing and White Label Samples; exact seven-ad roster remains unverified. Jul 25–31: $165.21 spend, 561 impressions, 79 clicks, 14.08% CTR, $2.09 CPC; 3 verified Ads-attributed inquiries, 0 paid-attributed booked calls. Cap exception remains: configured budgets $30.66 vs approved $30/day and Jul 28/30 over-cap spend. Recommendation preserved: investigate cap/overdelivery and reporting scope only; no changes without Sam approval.",
+  "spoken_text": "Sam, the weekly Ads review is blocked because the Ads Agent did not return its required callback after the initial request and recovery. I preserved the latest validated cache and no settings changed. The latest data shows three verified paid inquiries but no paid-attributed booked calls, so it is too early to optimize. The cap mismatch and two over-cap days remain the priority. I recommend investigating those records only, with no account changes unless you approve them.",
+  "recovery_for": "ads_optimization",
+  "cache_status": "preserved",
+  "cache_updatedAt": "2026-07-31T21:01:00-04:00"
 }
