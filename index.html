@@ -2166,40 +2166,112 @@ function dispatch(heard, opts){
   dlogSet(logId, 'DISPATCHED');
   status('Routing to ' + agent + (overseer ? ' + PLL Consultant oversight' : '') + '…', true); coreState('working','think');
   clog('→ Route [' + agent + ' · ' + tgt + (overseer ? ' · overseen' : '') + ' · ' + rid + ']: ' + heard, 'warn');
+  // Watchdog input: track this dispatch as in-flight until the HTTP call settles.
+  var dispatchSettled = false;
+  function dispatchDone(){ if (!dispatchSettled) { dispatchSettled = true; inflightDispatches = Math.max(0, inflightDispatches - 1); } }
+  inflightDispatches++;
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, overseer: overseer, sam_approved: !!opts.approved, recommendation_id: opts.recommendationId || null, context: priorContext, ts: new Date().toISOString() }) })
-  .then(r => { if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); status('Router accepted — waiting for ' + agent, true); coreState('working','think'); startAnswerWatcher(heard, logId, rid); }
-               else { dlogSet(logId, 'FAILED'); pendingRetry = heard; respondForConfirmation('The router rejected that. Say "retry" and I\'ll send it again.'); } })
-  .catch(() => { dlogSet(logId, 'FAILED'); pendingRetry = heard; respondForConfirmation('Could not reach the router. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
+  .then(r => { dispatchDone();
+               if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); coreState('working','think'); startAnswerWatcher(heard, logId, rid, agent); }
+               else { dlogSet(logId, 'FAILED'); pendingRetry = heard; releaseSession('dispatch-rejected'); respondForConfirmation('The router rejected that. Say "retry" and I\'ll send it again.'); } })
+  .catch(() => { dispatchDone(); dlogSet(logId, 'FAILED'); pendingRetry = heard; releaseSession('dispatch-failed'); respondForConfirmation('Could not reach the router. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
 }
 
-// ===== ANSWER READ-BACK (V4.1 — persistent watcher) =====
-// Survives the full round-trip: agent work time + GitHub Pages rebuild + CDN propagation.
-// Poll for 15 min with backoff; persist across reloads; ID-based dedupe (no clock compare).
-var answerWatchTimer = null;      // self-rescheduling setTimeout handle
-var pendingSpokenAnswer = null;   // answer text queued because voice was busy
-var headsUpGiven = false;         // 3-min "still working" fired once
+// ===== ANSWER READ-BACK (V7 — per-request answers, multi-watch, guaranteed release) =====
+// Live channel is raw.githubusercontent (no Pages build, no CDN wait); Pages answers.json
+// remains the durable archive. Every dispatch gets its own watch entry so a second command
+// can never destroy the first. Every terminal path funnels through releaseSession().
+var ANSWER_RAW_BASE = 'https://raw.githubusercontent.com/privatelabellabsllc-del/pll-command-lab/main/';
+var WATCH_KEY = 'pll_watchList';
+var WATCH_MAX = 8;
+var WATCH_GIVEUP_MS = 1800000;    // 30 min — no callback
+var WATCH_HEADSUP_MS = 180000;    // 3 min — background handoff
+var watchTimers = {};             // requestId -> setTimeout handle (in-memory)
+var pendingSpokenQueue = [];       // FIFO of answers queued because voice was busy
+var inflightDispatches = 0;        // dispatch fetches currently in flight (watchdog input)
 
+// ---------- session release (the "bricked after timeout" fix) ----------
+function releaseSession(reason){
+  try {
+    working = false;
+    var ci = document.getElementById('cmdInput') || document.getElementById('chatInput');
+    if (ci && ci.disabled) ci.disabled = false;
+    if (voiceState === 'THINKING') {
+      // standDown() -> setVoiceState('ASLEEP'); leaving MIC_OFF re-arms the mic via toMicOn().
+      standDown();
+    } else if (voiceState === 'ASLEEP') {
+      if (powered && !speaking) toMicOn();
+    }
+    // Never cancels background watchers — they live in watchTimers/localStorage.
+    if (reason) clog('Session released (' + reason + ').');
+  } catch(e){ /* release must never throw */ }
+}
+
+// ---------- watch list persistence ----------
+function watchListRead(){
+  try { var x = JSON.parse(localStorage.getItem(WATCH_KEY) || '[]'); return Array.isArray(x) ? x : []; }
+  catch(e){ return []; }
+}
+function watchListWrite(list){
+  try { localStorage.setItem(WATCH_KEY, JSON.stringify(list.slice(-WATCH_MAX))); } catch(e){}
+}
+function watchGet(rid){
+  var l = watchListRead();
+  for (var i=0;i<l.length;i++) if (l[i].requestId === rid) return l[i];
+  return null;
+}
+function watchUpsert(entry){
+  var l = watchListRead(), found = false;
+  for (var i=0;i<l.length;i++){ if (l[i].requestId === entry.requestId){ l[i] = entry; found = true; } }
+  if (!found) l.push(entry);
+  while (l.length > WATCH_MAX) l.shift();   // drop oldest
+  watchListWrite(l);
+}
+function watchRemove(rid){
+  var l = watchListRead(), out = [];
+  for (var i=0;i<l.length;i++) if (l[i].requestId !== rid) out.push(l[i]);
+  watchListWrite(out);
+  if (watchTimers[rid]) { clearTimeout(watchTimers[rid]); delete watchTimers[rid]; }
+}
+function fmtElapsed(ms){
+  var s = Math.max(0, Math.floor(ms/1000));
+  return String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).padStart(2,'0');
+}
+
+// ---------- answer identity ----------
 function markSpoken(a){
   if (a && a.id) localStorage.setItem('pll_lastAnswerId', a.id);
   if (a && a.ts) localStorage.setItem('pll_lastAnswerTs', a.ts);
 }
-function isNewAnswer(a, startedAt, requestId){
+// Per-request file: by definition this file IS the answer for that request_id.
+// Accept on .text, but keep the staleness guard and the spoken-once dedupe.
+function isDirectAnswer(a, startedAt, requestId){
+  if (!a || !a.text) return false;
+  if (startedAt && a.ts) {
+    var answerMs = Date.parse(a.ts);
+    if (isFinite(answerMs) && answerMs < startedAt - 5000) return false;
+  }
+  if (a.id && a.id === localStorage.getItem('pll_lastAnswerId')) return false;
+  return true;
+}
+function isNewAnswer(a, startedAt, requestId, pendingCmdIn){
   if (!a || !a.text) return false;
   // V6.2: exact request IDs remain the rule. The only exception is an explicitly
   // published Ads-optimization recovery, used when Ads Agent finished but failed
   // to POST its callback. Keep this narrow so unrelated replies can never attach.
   if (requestId && a.request_id !== requestId) {
     var pendingCmd = '';
-    try { pendingCmd = String((JSON.parse(localStorage.getItem('pll_pendingDispatch')||'{}').cmd)||'').toLowerCase(); } catch(e){}
+    try {
+      pendingCmd = String(pendingCmdIn || (watchGet(requestId) || {}).cmd || '').toLowerCase();
+    } catch(e){}
     var isPendingAdsOptimization = /\b(ads?|adwords|ppc|campaigns?)\b/.test(pendingCmd) && /\b(suggest|recommend|improv|optim|better|what should|next)\b/.test(pendingCmd);
     if (!(a.recovery_for === 'ads_optimization' && isPendingAdsOptimization)) return false;
   }
   // V5.3: never attach an older agent reply to the command Sam just spoke.
-  // Allow a small clock tolerance, but reject stale answers from prior dispatches.
   if (startedAt && a.ts) {
-    var answerMs = Date.parse(a.ts);
-    if (isFinite(answerMs) && answerMs < startedAt - 5000) return false;
+    var ms = Date.parse(a.ts);
+    if (isFinite(ms) && ms < startedAt - 5000) return false;
   }
   if (a.id) { return a.id !== localStorage.getItem('pll_lastAnswerId'); }
   if (a.ts) { return a.ts !== localStorage.getItem('pll_lastAnswerTs'); }
@@ -2207,7 +2279,6 @@ function isNewAnswer(a, startedAt, requestId){
 }
 function voiceReadyText(text){
   // Fallback for older agent replies that do not yet provide spoken_text.
-  // Keep the on-screen answer intact; only make the read-back conversational.
   return String(text || '')
     .replace(/\*\*|__|`/g, '')
     .replace(/^\s{0,3}#{1,6}\s*/gm, '')
@@ -2219,91 +2290,176 @@ function voiceReadyText(text){
     .replace(/\.\s*\./g, '.')
     .trim();
 }
-function speakAnswer(a, logId){
-  if (logId) dlogSet(logId, String(a.status||'ANSWERED').toUpperCase());
-  contextAdd('agent', a.text, a.request_id, a.agent || null);
-  status('Reply received ✓', true);
-  clog('← Reply received.', 'hi');
-  var spoken = voiceReadyText(a.spoken_text || a.text);
-  // Defer if the user is mid-interaction; deliver the moment we're free.
-  if (voiceState === 'CAPTURING' || voiceState === 'SPEAKING') {
-    pendingSpokenAnswer = spoken;
-    return;
-  }
-  earcon('wake'); // attention chime on the TV
+
+// ---------- read-back ----------
+function shortRef(cmd){
+  var c = String(cmd || '').replace(/\s+/g,' ').trim();
+  if (!c) return '';
+  var w = c.split(' ');
+  return w.length > 8 ? w.slice(0,8).join(' ') : c;
+}
+function speakAnswer(a, entry){
+  var logId = entry && entry.logId;
+  if (logId) dlogSet(logId, String(a.status || 'ANSWERED').toUpperCase());
+  contextAdd('agent', a.text, a.request_id, a.agent || (entry && entry.agent) || null);
+  var who = a.agent || (entry && entry.agent) || 'the agent';
+  status('Reply received from ' + who + ' ✓', true);
+  clog('← Reply received from ' + who + '.', 'hi');
+  var ref = shortRef(entry && entry.cmd);
+  var prefix = 'Answer from ' + who + (ref ? (' on your request: ' + ref + '. ') : '. ');
+  var spoken = prefix + voiceReadyText(a.spoken_text || a.text);
+  // Defer if the user is mid-interaction; deliver the moment we're free. FIFO so two
+  // late answers cannot clobber each other.
+  if (voiceState === 'CAPTURING' || voiceState === 'SPEAKING') { pendingSpokenQueue.push(spoken); return; }
+  earcon('wake');
   respond(spoken);
 }
-// Flush a deferred answer once the mic frees up.
+// Flush deferred answers once the mic frees up.
 setInterval(function(){
-  if (pendingSpokenAnswer && voiceState !== 'CAPTURING' && voiceState !== 'SPEAKING') {
-    var t = pendingSpokenAnswer; pendingSpokenAnswer = null;
+  if (pendingSpokenQueue.length && voiceState !== 'CAPTURING' && voiceState !== 'SPEAKING') {
+    var t = pendingSpokenQueue.shift();
     earcon('wake'); respond(t);
   }
 }, 1000);
 
-function startAnswerWatcher(cmd, logId, requestId){
-  // persist so a reload / tab-switch can't lose the pending reply
-  localStorage.setItem('pll_pendingDispatch', JSON.stringify({ cmd: cmd, logId: logId || null, requestId: requestId || null, t: Date.now() }));
-  runAnswerWatcher(Date.now(), logId, requestId);
+// ---------- polling ----------
+function watchDelayFor(elapsed){
+  if (elapsed < 120000) return 5000;    // 0–2 min
+  if (elapsed < 480000) return 10000;   // 2–8 min
+  return 20000;                          // 8–30 min
 }
-function runAnswerWatcher(startedAt, logId, requestId){
-  if (answerWatchTimer) { clearTimeout(answerWatchTimer); answerWatchTimer = null; }
-  headsUpGiven = false;
-  function stop(){ if (answerWatchTimer){ clearTimeout(answerWatchTimer); answerWatchTimer=null; } localStorage.removeItem('pll_pendingDispatch'); }
-  function delayFor(elapsed){
-    if (elapsed < 120000) return 5000;    // 0–2 min
-    if (elapsed < 480000) return 10000;   // 2–8 min
-    return 20000;                          // 8–15 min
+// Try sources in order; first valid matching answer wins. Any failure falls through
+// silently to the next source, and total failure just reschedules the next tick.
+function fetchAnswerSources(entry, cb){
+  var rid = entry.requestId, sources = [];
+  if (rid) sources.push({ url: ANSWER_RAW_BASE + 'answers/' + encodeURIComponent(rid) + '.json?t=' + Date.now(), direct: true });
+  sources.push({ url: ANSWER_RAW_BASE + 'answers.json?t=' + Date.now(), direct: false });
+  sources.push({ url: 'answers.json?v=' + Date.now(), direct: false });
+  var i = 0;
+  function next(){
+    if (i >= sources.length) { try { cb(null); } catch(e){} return; }
+    var s = sources[i++];
+    try {
+      fetch(s.url, { cache: 'no-store' })
+        .then(function(r){ if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+        .then(function(a){
+          var ok = s.direct ? isDirectAnswer(a, entry.startedAt, rid)
+                            : isNewAnswer(a, entry.startedAt, rid, entry.cmd);
+          if (ok) { try { cb(a); } catch(e){} } else next();
+        })
+        .catch(function(){ next(); });
+    } catch(e){ next(); }
   }
-  function tick(){
-    var elapsed = Date.now() - startedAt;
-    if (elapsed > 900000) { // 15 min hard stop
-      stop();
-      if (logId) dlogSet(logId, 'TIMEOUT');
-      status('Reply is taking long — full answer will be in Tasklet', false);
-      clog('Answer watcher timed out (15m).', 'warn');
-      if (voiceState === 'ASLEEP' || voiceState === 'FOLLOWUP') respond("That one's taking longer than it should. The full answer will be in Tasklet — and I'll flag it.");
+  next();
+}
+function scheduleWatch(entry, delay){
+  if (watchTimers[entry.requestId]) { clearTimeout(watchTimers[entry.requestId]); }
+  watchTimers[entry.requestId] = setTimeout(function(){ watchTick(entry.requestId); }, delay);
+}
+function watchTick(rid){
+  if (watchTimers[rid]) { clearTimeout(watchTimers[rid]); delete watchTimers[rid]; }
+  var entry = watchGet(rid);
+  if (!entry) return;
+  try {
+    var elapsed = Date.now() - entry.startedAt;
+    if (elapsed > WATCH_GIVEUP_MS) {                      // 30 min — no callback ever arrived
+      watchRemove(rid);
+      if (entry.logId) dlogSet(entry.logId, 'NO CALLBACK');
+      status(entry.agent + ' — NO CALLBACK RECEIVED', false);
+      clog('NO CALLBACK RECEIVED from ' + entry.agent + ' after 30 minutes (' + rid + ').', 'warn');
+      releaseSession('no-callback');
+      if (voiceState === 'ASLEEP' || voiceState === 'FOLLOWUP') respond('No answer came back from ' + entry.agent + ". I've flagged it.");
       return;
     }
-    if (!headsUpGiven && elapsed >= 180000) { // 3-min gentle heads-up, once
-      headsUpGiven = true;
-      status('Working… still waiting on the reply', true);
-      if (voiceState === 'ASLEEP' || voiceState === 'FOLLOWUP') respond("Still working on it. I'll speak up the moment it lands.");
+    if (!entry.headsUp && elapsed >= WATCH_HEADSUP_MS) {   // 3 min — hand off to background watch, once
+      entry.headsUp = true; entry.background = true; watchUpsert(entry);
+      status(entry.agent + ' still working — ' + fmtElapsed(elapsed), true);
+      clog(entry.agent + ' still working — moved to background watch.', 'warn');
+      releaseSession('background-handoff');
+      if (voiceState === 'ASLEEP' || voiceState === 'FOLLOWUP') respond(entry.agent + " is still working. I'll announce the answer the moment it lands. You can keep using the Command Center.");
     }
-    fetch('answers.json?v=' + Date.now(), { cache: 'no-store' })
-      .then(function(r){ return r.json(); })
-      .then(function(a){
-        if (isNewAnswer(a, startedAt, requestId)) { stop(); markSpoken(a); speakAnswer(a, logId); return; }
-        answerWatchTimer = setTimeout(tick, delayFor(Date.now() - startedAt));
-      })
-      .catch(function(){ // Pages may serve 404/HTML mid-rebuild — survive it
-        answerWatchTimer = setTimeout(tick, delayFor(Date.now() - startedAt));
-      });
+    fetchAnswerSources(entry, function(a){
+      if (a) {
+        watchRemove(rid); markSpoken(a);
+        releaseSession('answer-received');
+        speakAnswer(a, entry);
+        return;
+      }
+      scheduleWatch(entry, watchDelayFor(Date.now() - entry.startedAt));
+    });
+  } catch(e){
+    clog('Answer watcher error: ' + (e && e.message ? e.message : e), 'warn');
+    releaseSession('watcher-error');
+    try { scheduleWatch(entry, watchDelayFor(Date.now() - entry.startedAt)); } catch(e2){}
   }
-  tick();
 }
-// Immediate check when the TV tab comes back to the foreground.
+function startAnswerWatcher(cmd, logId, requestId, agent){
+  var entry = {
+    requestId: requestId || ('local_' + Date.now().toString(36)),
+    cmd: cmd || '', agent: agent || 'the agent', logId: logId || null,
+    startedAt: Date.now(), headsUp: false, background: false
+  };
+  watchUpsert(entry);
+  status('Sent to ' + entry.agent + ' — waiting for confirmation…', true);
+  scheduleWatch(entry, 5000);
+}
+// On-screen working indicator (elapsed mm:ss for the oldest pending entry), 15s+.
+setInterval(function(){
+  var l = watchListRead();
+  if (!l.length) return;
+  if (voiceState === 'CAPTURING' || voiceState === 'SPEAKING' || voiceState === 'ATTENTIVE' || voiceState === 'CONFIRM' || voiceState === 'FOLLOWUP') return;
+  var oldest = l[0];
+  for (var i=1;i<l.length;i++) if (l[i].startedAt < oldest.startedAt) oldest = l[i];
+  var el = Date.now() - oldest.startedAt;
+  if (el < 15000) return;   // 0–15s stays silent
+  status(oldest.agent + (oldest.background ? ' still working — ' : ' working — ') + fmtElapsed(el), true);
+}, 1000);
+
+// Immediate refresh of every watcher when the TV tab comes back to the foreground.
 function pokeAnswerWatcher(){
-  var raw = localStorage.getItem('pll_pendingDispatch');
-  if (!raw) return;
-  try {
-    var p = JSON.parse(raw);
-    if (Date.now() - p.t > 1800000) { localStorage.removeItem('pll_pendingDispatch'); return; } // stale >30m
-    if (!answerWatchTimer) runAnswerWatcher(p.t, p.logId, p.requestId);
-    else { if (answerWatchTimer){ clearTimeout(answerWatchTimer); } runAnswerWatcher(p.t, p.logId, p.requestId); }
-  } catch(e){ localStorage.removeItem('pll_pendingDispatch'); }
+  var l = watchListRead();
+  for (var i=0;i<l.length;i++){
+    var e = l[i];
+    if (Date.now() - e.startedAt > WATCH_GIVEUP_MS) { watchRemove(e.requestId); continue; }
+    scheduleWatch(e, 200);
+  }
 }
-// Restore a pending watcher on load (kiosk reloads, nightly refresh, etc.)
-(function resumePendingDispatch(){
+function resumeAllWatchers(){
+  var l = watchListRead();
+  for (var i=0;i<l.length;i++){
+    var e = l[i];
+    if (Date.now() - e.startedAt > WATCH_GIVEUP_MS) { watchRemove(e.requestId); continue; }
+    if (!watchTimers[e.requestId]) {
+      clog('Resuming watch for ' + e.agent + ' — still listening for the reply.', 'warn');
+      scheduleWatch(e, 1500);
+    }
+  }
+}
+// Migrate the legacy single-slot key, then restore watchers on load.
+(function migrateAndResumeWatchers(){
   var raw = localStorage.getItem('pll_pendingDispatch');
-  if (!raw) return;
-  try {
-    var p = JSON.parse(raw);
-    if (Date.now() - p.t > 1800000) { localStorage.removeItem('pll_pendingDispatch'); return; }
-    clog('Resuming pending dispatch — still watching for the reply.', 'warn');
-    runAnswerWatcher(p.t, p.logId, p.requestId);
-  } catch(e){ localStorage.removeItem('pll_pendingDispatch'); }
+  if (raw) {
+    try {
+      var p = JSON.parse(raw);
+      if (p && p.requestId && (Date.now() - p.t) < WATCH_GIVEUP_MS) {
+        watchUpsert({ requestId: p.requestId, cmd: p.cmd || '', agent: 'the agent',
+                      logId: null, startedAt: p.t, headsUp: false, background: true });
+      }
+    } catch(e){}
+    localStorage.removeItem('pll_pendingDispatch');
+  }
+  resumeAllWatchers();
 })();
+// WATCHDOG: the Command Center must never need a page reload to recover.
+var wdLastState = null, wdLastStateTs = Date.now();
+setInterval(function(){
+  if (voiceState !== wdLastState) { wdLastState = voiceState; wdLastStateTs = Date.now(); return; }
+  if (voiceState === 'THINKING' && !speaking && inflightDispatches === 0 && (Date.now() - wdLastStateTs) > 60000) {
+    clog('Watchdog: stuck in THINKING with no in-flight dispatch — forcing session release.', 'warn');
+    releaseSession('watchdog');
+    wdLastState = voiceState; wdLastStateTs = Date.now();
+  }
+}, 15000);
 
 // ================= DISPATCH LOG (status chips) =================
 var dlogItems = [];
@@ -2348,6 +2504,7 @@ setInterval(function(){
   if (n.getHours() === 4 && n.getMinutes() < 2) { clog('Nightly refresh.', 'hi'); setTimeout(function(){ location.reload(); }, 1500); }
 }, 60000);
 document.addEventListener('visibilitychange', function(){
+  if (!document.hidden) { try { pokeAnswerWatcher(); } catch(e){} }
   if (!document.hidden && powered && !speaking && !working && SR) {
     try { if (rec) rec.abort(); } catch(e){}
     setTimeout(function(){ try { startListening(); } catch(e){} }, 200);
