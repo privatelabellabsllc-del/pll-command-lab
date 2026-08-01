@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-01T01:39:14.413Z",
+  "updated": "2026-08-01T11:05:22Z",
   "agents": [
     {
       "id": "consultant",
@@ -87,6 +87,14 @@
       "ts": "2026-08-01T01:39:14.413Z",
       "text": "Late weekly Ads callback matched the original request, but its cache payload was incomplete. The recommendation was published with cache refresh blocked; the prior validated Ads cache remains preserved and no settings changed.",
       "kind": "alert",
+      "reply_to": null
+    },
+    {
+      "id": "m_consultant_morning_20260801",
+      "agent": "consultant",
+      "ts": "2026-08-01T11:05:22Z",
+      "text": "Saturday command brief refreshed from live CRM, Outlook, Gmail, Calendar, and the blocked Ads safety result. Sam’s lane is Terra Lotus → ELOIRE → Victor; Monday Rehman/Shay and Tuesday Atlas packets are prepared as gates. No CRM or Ads settings changed.",
+      "kind": "status",
       "reply_to": null
     }
   ],

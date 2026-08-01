@@ -1,12 +1,11 @@
 {
-  "id": "ads-weekly-2026-07-31",
-  "request_id": "ads-weekly-2026-07-31",
-  "ts": "2026-08-01T01:39:14.413Z",
-  "agent": "Ads Agent",
-  "status": "completed_cache_refresh_blocked",
-  "text": "WEEKLY ADS RECOMMENDATION: Restore search-term reporting, then present negatives mined from 76 current-7 clicks for Sam approval before adding any. This protects CPL without changing the $30/day cap; Samples CPL is $49.15. One verified lead per campaign is too thin for budget reallocation. CACHE REFRESH BLOCKED: the late callback matched this request but its ads_intelligence is incomplete for the required cache contract (missing: updatedAt, source, scope, today, current, prior, adBreakdown, health, best, worst, waste, spoken). The prior validated Ads cache remains unchanged; no Google Ads settings changed.",
-  "spoken_text": "Sam, the late weekly Ads result matched the original review request. It recommends restoring search-term reporting and bringing any negative-keyword list to you before changes. However, its structured cache payload is incomplete, so I preserved the last validated Ads cache. No Google Ads settings changed.",
-  "cache_status": "preserved",
-  "cache_updatedAt": "2026-07-31T21:01:00-04:00",
-  "late_callback": true
+  "id": "morning-brief-2026-08-01-0700",
+  "request_id": "morning-brief-2026-08-01-0700",
+  "ts": "2026-08-01T11:05:22Z",
+  "agent": "PLL Consultant",
+  "status": "completed",
+  "text": "Morning brief loaded for 2026-08-01.",
+  "spoken_text": "Morning brief loaded for August 1. Your lane is Terra Lotus, then ELOIRE, then Victor. Monday’s Rehman and Shay calls need validated preparation; no CRM or Ads settings were changed.",
+  "cache_status": "ads_preserved",
+  "cache_updatedAt": "2026-07-31T21:01:00-04:00"
 }
