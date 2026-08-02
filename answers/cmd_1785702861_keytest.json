@@ -1,0 +1,9 @@
+{
+ "id": "ans_1785703607",
+ "request_id": "cmd_1785702861_keytest",
+ "ts": "2026-08-02T20:46:47Z",
+ "agent": "Ads Agent",
+ "status": "completed",
+ "text": "Ads Agent reports the assignment was received and acknowledged. This was a connectivity test only - no campaign, budget, bid, or ad changes were made. First confirmed round trip on the ads lane.",
+ "spoken_text": "Ads Agent is online. It received the command and confirmed it back. Nothing was changed - this was a connectivity test. The ads lane is working end to end."
+}
