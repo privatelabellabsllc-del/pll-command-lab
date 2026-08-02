@@ -2297,6 +2297,8 @@ function dispatch(heard, opts){
   const tgt = targetKey(agent);
   // Duplicate protection: the same instruction to the same agent cannot be routed twice.
   const dsig = agent + '|' + normalize(heard);
+  // V10: the signature includes the command text, so back-to-back DIFFERENT commands
+  // (even to the same agent) always pass. Only a true repeat inside 10s is suppressed.
   if (dsig === lastDispatchSig && (Date.now() - lastDispatchTs) < 10000) {
     clog('Duplicate dispatch suppressed for ' + agent + '.', 'warn');
     status('Already routed to ' + agent, true);
@@ -2315,7 +2317,10 @@ function dispatch(heard, opts){
   const logId = dlogAdd(heard, agent);
   setVoiceState('THINKING');
   orbBurst();
-  const ack = overseer ? ("Routing to " + agent + " with PLL Consultant oversight.") : (opts.question ? ("Checking with " + agent + ".") : ("Routing to " + agent + "."));
+  // V10: the ack confirms ACCEPTANCE only, and is deliberately short so the mic is
+  // free again fast. Never promise a wait time here.
+  const ack = overseer ? ("Sent to " + agent + " with Consultant oversight.")
+                       : ("Sent to " + agent + ".");
   dlogSet(logId, 'DISPATCHED');
   status('Routing to ' + agent + (overseer ? ' + PLL Consultant oversight' : '') + '…', true); coreState('working','think');
   clog('→ Route [' + agent + ' · ' + tgt + (overseer ? ' · overseen' : '') + ' · ' + rid + ']: ' + heard, 'warn');
@@ -2326,7 +2331,17 @@ function dispatch(heard, opts){
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, overseer: overseer, sam_approved: !!opts.approved, recommendation_id: opts.recommendationId || null, context: priorContext, ts: new Date().toISOString() }) })
   .then(r => { dispatchDone();
-               if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); coreState('working','think'); startAnswerWatcher(heard, logId, rid, agent); return; }
+               if (r.ok) {
+                 // V10: SEND AND WAIT ARE SEPARATE. Acceptance by the switchboard ends the
+                 // interactive turn. The mic comes straight back so Sam can issue the next
+                 // command to a different agent while this one is still working.
+                 dlogSet(logId, 'ROUTED');
+                 startAnswerWatcher(heard, logId, rid, agent);   // background from birth
+                 inflightNote();
+                 say(ack);
+                 releaseSession('sent-nonblocking');
+                 return;
+               }
                // V9: say what actually went wrong. "Rejected" is not the same as
                // "that agent's line was never connected", and Sam can only act on the truth.
                dlogSet(logId, 'FAILED'); pendingRetry = heard; releaseSession('dispatch-rejected');
@@ -2481,9 +2496,12 @@ setInterval(function(){
 
 // ---------- polling ----------
 function watchDelayFor(elapsed){
-  if (elapsed < 120000) return 5000;    // 0–2 min
-  if (elapsed < 480000) return 10000;   // 2–8 min
-  return 20000;                          // 8–30 min
+  // V10: most answers land in the first two minutes, so poll hard there and back off
+  // afterwards. 1.5s against raw.githubusercontent means an answer is spoken within
+  // roughly two seconds of being published.
+  if (elapsed < 120000) return 1500;    // 0–2 min  — fast lane
+  if (elapsed < 600000) return 5000;    // 2–10 min
+  return 15000;                          // 10–30 min
 }
 // Try sources in order; first valid matching answer wins. Any failure falls through
 // silently to the next source, and total failure just reschedules the next tick.
@@ -2529,17 +2547,23 @@ function watchTick(rid){
       return;
     }
     if (!entry.headsUp && elapsed >= WATCH_HEADSUP_MS) {   // 3 min — hand off to background watch, once
-      entry.headsUp = true; entry.background = true; watchUpsert(entry);
+      // V10: the session was already released at send time. This is a single courtesy
+      // notice, spoken once, and only if it will not interrupt anything.
+      entry.headsUp = true; watchUpsert(entry);
       status(entry.agent + ' still working — ' + fmtElapsed(elapsed), true);
-      clog(entry.agent + ' still working — moved to background watch.', 'warn');
-      releaseSession('background-handoff');
-      if (voiceState === 'ASLEEP' || voiceState === 'FOLLOWUP') respond(entry.agent + " is still working. I'll announce the answer the moment it lands. You can keep using the Command Center.");
+      clog(entry.agent + ' still working (' + fmtElapsed(elapsed) + ').', 'warn');
+      if (voiceState !== 'CAPTURING' && voiceState !== 'SPEAKING' && !speaking) {
+        respond(entry.agent + " is still working. I'll tell you the moment it's back.");
+      }
     }
     fetchAnswerSources(entry, function(a){
       if (a) {
         watchRemove(rid); markSpoken(a);
-        releaseSession('answer-received');
+        // V10: only recover the session if it is genuinely stuck. If Sam is speaking or
+        // the mic is capturing a new command, touching the session would eat that command.
+        if (voiceState === 'THINKING') releaseSession('answer-received');
         speakAnswer(a, entry);
+        inflightNote();
         return;
       }
       scheduleWatch(entry, watchDelayFor(Date.now() - entry.startedAt));
@@ -2550,15 +2574,33 @@ function watchTick(rid){
     try { scheduleWatch(entry, watchDelayFor(Date.now() - entry.startedAt)); } catch(e2){}
   }
 }
+// V10: on-screen count of everything currently in flight. The voice stays short;
+// the screen carries the detail.
+function inflightNote(){
+  try {
+    var list = watchListRead();
+    var n = list.length;
+    var el = document.getElementById('chipAgent');
+    if (el) { el.textContent = n ? ('LIVE · ' + n + ' IN FLIGHT') : 'LIVE'; el.className = n ? 'warn' : 'ok'; }
+    if (n > 1) {
+      clog('In flight (' + n + '): ' + list.map(function(e){
+        return e.agent + ' · ' + fmtElapsed(Date.now() - e.startedAt);
+      }).join(' | '));
+    }
+  } catch(e){}
+}
+setInterval(inflightNote, 5000);
+
 function startAnswerWatcher(cmd, logId, requestId, agent){
   var entry = {
     requestId: requestId || ('local_' + Date.now().toString(36)),
     cmd: cmd || '', agent: agent || 'the agent', logId: logId || null,
-    startedAt: Date.now(), headsUp: false, background: false
+    startedAt: Date.now(), headsUp: false,
+    background: true            // V10: never blocks the interactive session
   };
   watchUpsert(entry);
-  status('Sent to ' + entry.agent + ' — waiting for confirmation…', true);
-  scheduleWatch(entry, 5000);
+  status('Sent to ' + entry.agent + ' — tracking in background', true);
+  scheduleWatch(entry, 1200);   // V10: first look almost immediately; fast agents answer fast
 }
 // On-screen working indicator (elapsed mm:ss for the oldest pending entry), 15s+.
 setInterval(function(){
