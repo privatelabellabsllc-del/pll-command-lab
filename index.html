@@ -2312,15 +2312,21 @@ function dispatch(heard, opts){
   if (!url) { respond("I heard you, but that dispatch line isn't connected yet."); return; }
   const rid = requestId();
   const priorContext = contextRead();
-  const overseer = ((tgt === 'email' || tgt === 'ads' || tgt === 'crm') && wantsConsultantOversight(heard)) ? 'consultant' : null;
+  // V11 GUARANTEED ANSWER: every dispatched lane is copied to PLL Consultant under the same
+  // request_id. The Consultant does not take the work away from the named agent - it only
+  // guarantees Sam gets an answer if that agent never reports. Silence is no longer possible.
+  const overseer = (tgt === 'email' || tgt === 'ads' || tgt === 'crm') ? 'consultant' : null;
   contextAdd('sam', heard, rid, agent);
   const logId = dlogAdd(heard, agent);
   setVoiceState('THINKING');
   orbBurst();
   // V10: the ack confirms ACCEPTANCE only, and is deliberately short so the mic is
   // free again fast. Never promise a wait time here.
-  const ack = overseer ? ("Sent to " + agent + " with Consultant oversight.")
-                       : ("Sent to " + agent + ".");
+  // V11: oversight is now always on, so it is no longer worth saying out loud every time.
+  // Only mention it when Sam explicitly asked for it.
+  const ack = (overseer && wantsConsultantOversight(heard))
+                ? ("Sent to " + agent + " with Consultant oversight.")
+                : ("Sent to " + agent + ".");
   dlogSet(logId, 'DISPATCHED');
   status('Routing to ' + agent + (overseer ? ' + PLL Consultant oversight' : '') + '…', true); coreState('working','think');
   clog('→ Route [' + agent + ' · ' + tgt + (overseer ? ' · overseen' : '') + ' · ' + rid + ']: ' + heard, 'warn');
