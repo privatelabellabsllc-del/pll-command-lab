@@ -1248,7 +1248,10 @@ function namedAgent(t){
   for (var i = 0; i < AGENT_NAMES.length; i++){ if (AGENT_NAMES[i][1].test(s)) return AGENT_NAMES[i][0]; }
   return null;
 }
-const DIRECTIVE_RX = /\b(ask|tell|have|get|direct|send|assign|instruct|remind|forward|route|notify|let)\b/;
+const DIRECTIVE_RX = /\b(ask|tell|have|get|direct|send|assign|instruct|remind|forward|route|notify|let|pass|push|hand|handoff|loop|give|kick|relay|dispatch|escalate|delegate|shoot|ping)\b/;
+// V9: trailing hand-off shape — the payload comes first and the agent is named last.
+// Matches "...to the Ads Agent", "...over to CRM Developer", "...for the Consultant".
+const HANDOFF_TAIL_RX = /\b(?:to|over to|for|with|through|via)\s+(?:the\s+)?$|\b(route|forward|pass|push|hand|handoff|loop|send|give|relay|dispatch|escalate|delegate|shoot|ping|assign)\b/;
 // Approval-sensitive = an actual mutation/spend verb, not a mere mention of budget
 // or price. Negated constraints such as "without increasing the approved budget"
 // are explicitly NOT approval-sensitive.
@@ -1256,16 +1259,31 @@ const SENSITIVE_RX = /\b(increase|increases|increasing|raise|raises|raising|decr
 const SENSITIVE_NEG_RX = /\b(?:without|not|never|avoid|don'?t|dont|do not|no)\s+(?:\w+\s+){0,3}?(?:increas\w*|rais\w*|lower\w*|decreas\w*|chang\w*|spend\w*|paus\w*|delet\w*|remov\w*|approv\w*|pay\w*|publish\w*|launch\w*)/g;
 function sensitiveOrder(t){ return SENSITIVE_RX.test(String(t||'').replace(SENSITIVE_NEG_RX, ' ')); }
 // A direct, high-confidence named-agent order dispatches without an extra confirmation.
+// V9: a named-agent order is recognised in ALL THREE natural word orders.
+//   leading  — "ask the Ads Agent to pull search terms"
+//   trailing — "route the search-term pull to the Ads Agent"
+//   vocative — "Ads Agent, pull the search terms"
+// Before v9 only the leading form routed; trailing and vocative orders were
+// silently dropped, which is how a real command to Ads Agent went nowhere.
+function wordCount(s){ return String(s || '').split(/\s+/).filter(Boolean).length; }
 function directNamedOrder(t){
   var s = normalize(t);
   if (/^\s*(what|who|when|where|why|how|does|do|is|are|did|was|were|can|could|should)\b/.test(s)) return null;
   var agent = namedAgent(s); if (!agent) return null;
-  if (!DIRECTIVE_RX.test(s)) return null;
   var m = AGENT_NAME_RX.exec(s); if (!m) return null;
+  var head = s.slice(0, m.index).trim();
   var tail = s.slice(m.index + m[0].length).trim();
-  if (tail.split(/\s+/).filter(Boolean).length < 3) return null;
+  var form = null;
+  // vocative: agent name opens the utterance and a payload follows
+  if (m.index === 0 && wordCount(tail.replace(/^[,\s:-]+/, '')) >= 3) form = 'vocative';
+  // leading: directive verb before the name, payload after it
+  else if (DIRECTIVE_RX.test(head) && wordCount(tail) >= 3) form = 'leading';
+  // trailing: payload first, then "... to/for/with (the) <Agent>"
+  else if (wordCount(head) >= 3 && HANDOFF_TAIL_RX.test(head) && wordCount(tail) <= 2) form = 'trailing';
+  // leading directive with the payload only implied is still not enough
+  if (!form) return null;
   if (knownConfidenceIsPoor()) return null;
-  return { agent: agent, cmd: t };
+  return { agent: agent, cmd: t, form: form };
 }
 // Spoken-only read-back: collapse an obvious self-correction. The dispatched
 // command always keeps Sam's full original instruction.
@@ -1802,7 +1820,15 @@ function adsFlat(v){
 function adsRecText(a){ var r = a && a.recommendation; return typeof r === 'string' ? r : adsFlat(r); }
 function adsSpoken(a, key){ var s = a && a.spoken; if (!s) return ''; return typeof s === 'string' ? s : (s[key] || ''); }
 function adsQuestionIntent(t){ return (/\b(ads?|adwords|ppc|paid search|campaigns?)\b/.test(t) && /\b(how|what|which|brief|performance|doing|today|ctr|cpc|lead|leads|email|emails|booked|call|calls|budget|cap|working|wasting|waste|optim|suggest|recommend|experiment|next)\b/.test(t)) || /^(?:do you have any )?suggestions?[?!]*$|^what is wasting money[?!]*$|^how can we optimize (?:these|the) ads[?!]*$/.test(t.trim()); }
-function explicitAdsAction(t){ return /\b(tell|ask|have|direct|send)\s+(?:the\s+)?ads?\s+agent\b|\b(?:talk|speak)\s+(?:to|with)\s+(?:the\s+)?ads?\s+agent\b|\bads?\s+agent\s+(?:should|needs? to|to)\b/.test(t); }
+var ADS_VERBS = '(?:tell|ask|have|direct|send|route|forward|pass|push|hand|handoff|loop|assign|give|kick|relay|dispatch|escalate|delegate|shoot|ping)';
+function explicitAdsAction(t){
+  t = String(t || '').toLowerCase();
+  // leading verb, trailing hand-off, and "Ads Agent should/needs to" all count.
+  return new RegExp('\\b' + ADS_VERBS + '\\s+(?:the\\s+)?ads?\\s+agent\\b').test(t)
+    || new RegExp('\\b' + ADS_VERBS + '\\b[^.?!]{0,120}?\\b(?:to|over to|for|with)\\s+(?:the\\s+)?ads?\\s+agent\\b').test(t)
+    || /\b(?:talk|speak)\s+(?:to|with)\s+(?:the\s+)?ads?\s+agent\b/.test(t)
+    || /\bads?\s+agent\s*[,:]?\s+(?:should|needs? to|to|please|pull|check|build|review|report|analy)/.test(t);
+}
 function adsAnswer(t){
  var a=adsData(); if(!a){ respond('Ads intelligence has not been refreshed yet. I will not infer performance or route this question.'); return; }
  var x=String(t).toLowerCase(), c=a.current||{},p=a.prior||{},d=a.today||{}, l=a.leads||{},h=a.health||{};
@@ -1895,6 +1921,16 @@ function handleSpeech(heard) {
     const summary = spokenSummary(heard);
     setPending({ cmd: heard, agent: confirmAgent, summary: summary });
     askConfirm("I understand — " + summary + ". Send this to " + confirmAgent + "? Yes or no.");
+    return;
+  }
+  // V9 SAFETY NET: an utterance that names an agent must never die in silence.
+  // If we reach here, nothing routed and nothing was answered from cache. Say so,
+  // and hold it so a bare "send it" routes immediately.
+  if (namedAgent(heard) && wordCount(heard) >= 4) {
+    var nAgent = namedAgent(heard);
+    setPending({ cmd: heard, agent: nAgent, summary: spokenSummary(heard) });
+    clog('Unrouted named-agent utterance held for confirmation: ' + nAgent, 'warn');
+    askConfirm("I did not send that to " + nAgent + ". Say send it and I'll route it now.");
     return;
   }
 
@@ -2174,7 +2210,7 @@ function setHook(){
 }
 function targetAgent(t){
   t = (t || '').toLowerCase();
-  if (/\b(tell|ask|have|direct|send)\s+(?:the\s+)?ads?\s+agent\b|\bads?\s+agent\s+(?:should|needs? to|to)\b/.test(t)) return 'Ads Agent';
+  if (explicitAdsAction(t)) return 'Ads Agent';
   if (/crm|developer|bug|fix|broken|feature|pipeline build|ticket/.test(t)) return 'CRM Developer';
   if (/email|inbox|outlook|convertflow|send.*mail|draft.*(reply|email|mail)|check.*mail/.test(t)) return 'Email Agent';
   if (/google ads|paid ads|new ads|seven new ads|ads agent|how (?:are|is).*ads|brief.*ads|ads.*brief|ad performance|ad campaign|paid search|ppc|cpc|ctr|keyword bid|media spend/.test(t)) return 'Ads Agent';
@@ -2239,6 +2275,22 @@ function contextAdd(role, text, request_id, agent){
   var x=contextRead(); x.push({role:role,text:String(text||'').slice(0,600),request_id:request_id||null,agent:agent||null,ts:new Date().toISOString()});
   localStorage.setItem('pll_chatContext',JSON.stringify(x.slice(-8)));
 }
+// V9: map switchboard error codes to plain, accurate spoken English.
+function switchboardFailureText(body, agent, status){
+  var code = (body && (body.error || body.code)) ? String(body.error || body.code) : '';
+  if (code === 'target_not_connected')
+    return agent + "'s line isn't connected on the switchboard yet, so nothing was sent. That's a setup fix, not a retry.";
+  if (code === 'overseer_not_connected' || code === 'overseer_rejected' || code === 'overseer_unreachable')
+    return "PLL Consultant oversight couldn't be registered, so nothing was sent to " + agent + ".";
+  if (code === 'agent_unreachable')
+    return "I couldn't reach " + agent + ". Nothing was sent. Say retry and I'll try again.";
+  if (code === 'agent_rejected')
+    return agent + " didn't accept that. Nothing was sent. Say retry and I'll try again.";
+  if (code === 'origin_denied' || code === 'json_required' || code === 'invalid_json' ||
+      code === 'invalid_request_id' || code === 'invalid_command' || code === 'not_found')
+    return "The switchboard refused that request. Nothing was sent to " + agent + ".";
+  return "That didn't go through to " + agent + " — error " + (status || 'unknown') + ". Nothing was sent. Say retry and I'll send it again.";
+}
 function dispatch(heard, opts){
   opts = opts || {};
   const agent = opts.agent || targetAgent(heard);
@@ -2274,8 +2326,12 @@ function dispatch(heard, opts){
   fetch(url, { method: 'POST', headers: {'Content-Type':'application/json'},
     body: JSON.stringify({ source: 'pll-command-lab', request_id: rid, command: heard, intent: opts.question ? 'question' : (isOperationalUpdate(heard) ? 'day_update' : 'action'), target: tgt, routed_to: agent, overseer: overseer, sam_approved: !!opts.approved, recommendation_id: opts.recommendationId || null, context: priorContext, ts: new Date().toISOString() }) })
   .then(r => { dispatchDone();
-               if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); coreState('working','think'); startAnswerWatcher(heard, logId, rid, agent); }
-               else { dlogSet(logId, 'FAILED'); pendingRetry = heard; releaseSession('dispatch-rejected'); respondForConfirmation('The router rejected that. Say "retry" and I\'ll send it again.'); } })
+               if (r.ok) { dlogSet(logId, 'ROUTED'); say(ack); coreState('working','think'); startAnswerWatcher(heard, logId, rid, agent); return; }
+               // V9: say what actually went wrong. "Rejected" is not the same as
+               // "that agent's line was never connected", and Sam can only act on the truth.
+               dlogSet(logId, 'FAILED'); pendingRetry = heard; releaseSession('dispatch-rejected');
+               r.json().then(function(b){ respondForConfirmation(switchboardFailureText(b, agent, r.status)); })
+                .catch(function(){ respondForConfirmation(switchboardFailureText(null, agent, r.status)); }); })
   .catch(() => { dispatchDone(); dlogSet(logId, 'FAILED'); pendingRetry = heard; releaseSession('dispatch-failed'); respondForConfirmation('Could not reach the router. Say "retry" and I\'ll send it again — I\'ll keep it queued.'); });
 }
 
