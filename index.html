@@ -86,6 +86,24 @@
   .tb.primary{border-color:var(--green); color:var(--green); box-shadow:0 0 14px rgba(52,255,150,.18);}
   .tb.primary.hot{border-color:var(--red); color:var(--red); box-shadow:0 0 14px rgba(255,93,93,.22);}
   .tb.voicepreset{min-width:126px; text-align:left;}
+  .vpwrap{position:relative; display:inline-block;}
+  .vmenu{display:none; position:absolute; top:calc(100% + 6px); left:0; z-index:60; width:246px;
+    background:rgba(5,16,11,.97); border:1px solid var(--line2); border-radius:8px; padding:6px;
+    box-shadow:0 12px 34px rgba(0,0,0,.55);}
+  .vmenu.show{display:block;}
+  .vm-h{font-family:var(--mono); font-size:9px; letter-spacing:1.4px; text-transform:uppercase;
+    color:var(--cy); opacity:.75; padding:4px 6px 6px;}
+  .vm-i{display:flex; flex-direction:column; align-items:flex-start; gap:2px; width:100%;
+    background:transparent; border:1px solid transparent; border-radius:6px; padding:6px 8px;
+    cursor:pointer; text-align:left;}
+  .vm-i:hover{border-color:var(--cy2); background:rgba(20,60,42,.5);}
+  .vm-i.on{border-color:var(--green); background:rgba(20,70,46,.55);}
+  .vm-i.off{opacity:.38; cursor:not-allowed;}
+  .vm-n{font-family:var(--mono); font-size:11px; letter-spacing:.6px; color:var(--cy2); text-transform:uppercase;}
+  .vm-i.on .vm-n{color:var(--green);}
+  .vm-v{font-family:var(--mono); font-size:9px; letter-spacing:.3px; color:var(--cy); opacity:.65;}
+  .vm-f{font-family:var(--mono); font-size:8.5px; line-height:1.5; letter-spacing:.3px;
+    color:var(--cy); opacity:.5; padding:6px 6px 2px; border-top:1px solid var(--line); margin-top:4px;}
 
   /* ═══════════ ZONE 2/3/4 — MAIN GRID ═══════════ */
   .main{flex:1; display:grid; grid-template-columns:310px 1fr 340px; gap:12px; padding:12px 14px; min-height:0; overflow:hidden;}
@@ -435,7 +453,7 @@
     <button class="tb primary" id="powerBtn" onclick="togglePower()">⚡ Power</button>
     <button class="tb" onclick="speakBrief()">Brief</button>
     <button class="tb" onclick="speakNext()">Next</button>
-    <button class="tb voicepreset" id="voicePresetBtn" onclick="cycleVoicePreset()" title="Change speech style">Voice: Jarvis-style</button>
+    <span class="vpwrap"><button class="tb voicepreset" id="voicePresetBtn" onclick="openVoiceMenu()" title="Change speech style">Voice: Jarvis-style</button><div class="vmenu" id="voiceMenu"></div></span>
     <button class="tb" id="muteBtn" onclick="toggleMute()">🔊</button>
     <button class="tb" id="commsBtn" onclick="openComms()">💬 Comms<span class="badge hide" id="commsBadge">0</span></button>
     <button class="tb" onclick="setHook()">Link</button>
@@ -934,15 +952,37 @@ function spokenChunks(text){
 // Compact, style-only presets. “Jarvis-style” is a product label, not an actor
 // impersonation: it selects a locally available English system voice and natural tuning.
 const VOICE_PRESETS = [
-  { id:'jarvis', label:'Jarvis-style', rate:0.96, pitch:0.94,
-    prefer:[/neural|natural|enhanced|premium/i,/microsoft (guy|andrew|christopher|ryan|steffan|brian)/i,/daniel|arthur|aaron|alex(?!a)/i] },
-  { id:'executive', label:'Executive', rate:0.98, pitch:0.99,
-    prefer:[/enhanced|premium|neural|natural/i,/microsoft (guy|andrew|christopher|jenny|aria|ryan|steffan|emma|brian)/i,/samantha|daniel|arthur|serena/i] },
-  { id:'warm', label:'Warm', rate:0.96, pitch:1.04,
-    prefer:[/enhanced|premium|neural|natural/i,/microsoft (aria|jenny|emma|sara|zoe)/i,/samantha|serena|victoria|karen/i] },
-  { id:'clear', label:'Clear', rate:1.00, pitch:1.01,
-    prefer:[/neural|natural|enhanced|premium/i,/google (us|uk) english/i,/microsoft (aria|guy|andrew|christopher|jenny|ryan|steffan|emma|brian)/i] }
+  { id:'jarvis', label:'Jarvis-style', sample:'Systems online. Standing by for your command.', rate:0.96, pitch:0.94,
+    prefer:[/microsoft (ryan|thomas|oliver|alfie|elliot|noah)[^,]*online/i,/daniel[^a-z]*\(?enhanced|daniel[^a-z]*\(?premium/i,
+            /\b(arthur|oliver|jamie)\b/i,/microsoft (ryan|thomas|oliver)/i,/\bdaniel\b/i,
+            /google uk english male/i,/(neural|natural|online).*en[- ]?gb/i] },
+  { id:'executive', label:'Executive', sample:'Bottom line. Here is where we stand.', rate:0.98, pitch:0.99,
+    prefer:[/microsoft (andrew|guy|christopher|steffan)[^,]*online/i,/\balex\b(?!a)/i,
+            /(evan|tom|nathan)[^a-z]*\(?(enhanced|premium)/i,/microsoft (andrew|guy|christopher|steffan)/i,
+            /\b(evan|tom|nathan)\b/i,/(neural|natural|online|enhanced|premium)/i] },
+  { id:'narrator', label:'Narrator', sample:'Let me walk you through the numbers.', rate:0.92, pitch:0.90,
+    prefer:[/microsoft (brian|roger|davis|jason)[^,]*online/i,/microsoft (brian|roger|davis|jason)/i,
+            /(reed|rocko)[^a-z]*\(?(enhanced|premium)/i,/\balex\b(?!a)/i,/(neural|natural|online|enhanced|premium)/i] },
+  { id:'warm', label:'Warm', sample:'Good to hear from you. What can I take off your plate?', rate:0.96, pitch:1.04,
+    prefer:[/microsoft (aria|jenny|ava|emma|michelle)[^,]*online/i,/(ava|allison|samantha|zoe)[^a-z]*\(?(enhanced|premium)/i,
+            /microsoft (aria|jenny|ava|emma|michelle)/i,/\b(samantha|allison|susan|nicky)\b/i,/(neural|natural|online|enhanced|premium)/i] },
+  { id:'clear', label:'Clear', sample:'Reporting clearly and precisely.', rate:1.00, pitch:1.01,
+    prefer:[/microsoft (emma|michelle|ana)[^,]*online/i,/google (us|uk) english/i,
+            /(samantha|allison)[^a-z]*\(?(enhanced|premium)/i,/microsoft (emma|michelle)/i,
+            /\b(samantha|allison)\b/i,/(neural|natural|online|enhanced|premium)/i] },
+  { id:'britannia', label:'Britannia', sample:'Very good. Here is the position as it stands.', rate:0.95, pitch:1.00,
+    prefer:[/microsoft (sonia|libby|maisie|abbi|olivia|hollie)[^,]*online/i,/(serena|kate|stephanie)[^a-z]*\(?(enhanced|premium)/i,
+            /microsoft (sonia|libby|olivia)/i,/\b(serena|kate|stephanie)\b/i,/google uk english female/i,/(neural|natural|online).*en[- ]?gb/i] },
+  { id:'sydney', label:'Sydney', sample:'All good. Here is your update.', rate:0.97, pitch:1.00,
+    prefer:[/microsoft (natasha|william|annette|ken|freya)[^,]*online/i,/(karen|matilda|catherine)[^a-z]*\(?(enhanced|premium)/i,
+            /microsoft (natasha|william)/i,/\b(karen|matilda|catherine|lee)\b/i,/(neural|natural|online).*en[- ]?au/i] },
+  { id:'dublin', label:'Dublin', sample:'Right so. Here is where things landed.', rate:0.96, pitch:1.00,
+    prefer:[/microsoft (emily|connor)[^,]*online/i,/(moira|fiona)[^a-z]*\(?(enhanced|premium)/i,
+            /microsoft (emily|connor)/i,/\b(moira|fiona)\b/i,/(neural|natural|online).*en[- ]?ie/i] }
 ];
+// Hard quality gate. These engines/voices are the robotic, buzzy or novelty ones —
+// they are never selected unless the device has literally nothing else installed.
+const VOICE_BLOCKLIST = /espeak|festival|pico|flite|robot|compact|\beloquence\b|microsoft (david|zira|mark|hazel|susan|george|sam)\b|^(fred|albert|ralph|kathy|junior|princess|bahh|bells|boing|bubbles|cellos|deranged|good news|bad news|jester|organ|pipe organ|trinoids|whisper|wobble|zarvox|superstar|grandma|grandpa|rocko|shelley|sandy|flo|eddy|reed|bruce|victoria|agnes|vicki|kanya|junior)\b/i;
 function selectedVoicePreset(){
   var id = null; try { id = localStorage.getItem('clVoicePreset'); } catch(e){}
   return VOICE_PRESETS.filter(function(p){ return p.id === id; })[0] || VOICE_PRESETS[0];
@@ -957,17 +997,36 @@ function freshVoices(){
 function englishVoicePool(){
   var vs = freshVoices();
   var en = vs.filter(function(v){ return /^en([-_]|$)/i.test(v.lang || ''); });
-  return en.length ? en : vs;
+  var base = en.length ? en : vs;
+  // Strip robotic/novelty engines. If that empties the pool, keep the raw pool so
+  // the assistant never goes mute on a limited device.
+  var good = base.filter(function(v){ return !VOICE_BLOCKLIST.test(v.name || ''); });
+  return good.length ? good : base;
 }
-function preferredVoice(){
-  var preset = selectedVoicePreset(), pool = englishVoicePool();
+function matchPresetVoice(preset){
+  var pool = englishVoicePool();
   if (!pool.length) return null;
   for (var i=0; i<preset.prefer.length; i++){
     var match = pool.filter(function(v){ return preset.prefer[i].test(v.name || ''); })[0];
     if (match) return match;
   }
-  // Graceful fallback: any English voice, then any installed system voice.
-  return pool.filter(function(v){ return /en[-_](US|GB)/i.test(v.lang || ''); })[0] || pool[0] || null;
+  return null;
+}
+// A preset is 'available' when this device actually has a voice matching its character.
+function presetAvailability(){
+  return VOICE_PRESETS.map(function(p){
+    var v = matchPresetVoice(p);
+    return { id:p.id, label:p.label, voice: v ? (v.name||'') : '', available: !!v };
+  });
+}
+function preferredVoice(){
+  var pool = englishVoicePool();
+  if (!pool.length) return null;
+  var match = matchPresetVoice(selectedVoicePreset());
+  if (match) return match;
+  // Graceful fallback: best remaining natural voice, then any en-US/en-GB, then anything.
+  return pool.filter(function(v){ return /(neural|natural|online|enhanced|premium)/i.test(v.name || ''); })[0]
+      || pool.filter(function(v){ return /en[-_](US|GB)/i.test(v.lang || ''); })[0] || pool[0] || null;
 }
 function voicePresetSettings(){
   var p = selectedVoicePreset(); return {rate:p.rate, pitch:p.pitch, label:p.label};
@@ -979,10 +1038,52 @@ function updateVoicePresetControl(){
 function cycleVoicePreset(){
   var current=selectedVoicePreset(), idx=VOICE_PRESETS.indexOf(current);
   var next=VOICE_PRESETS[(idx+1)%VOICE_PRESETS.length];
-  try { localStorage.setItem('clVoicePreset', next.id); } catch(e){}
+  applyVoicePreset(next.id, true);
+}
+function applyVoicePreset(id, speakSample){
+  var p = VOICE_PRESETS.filter(function(x){ return x.id===id; })[0];
+  if (!p) return;
+  try { localStorage.setItem('clVoicePreset', p.id); } catch(e){}
   updateVoicePresetControl();
-  status('Voice style: '+next.label, false);
-  say('Voice style set to '+next.label+'.');
+  renderVoiceMenu();
+  status('Voice style: '+p.label, false);
+  if (speakSample !== false) say(p.sample || ('Voice style set to '+p.label+'.'));
+}
+function renderVoiceMenu(){
+  var box = document.getElementById('voiceMenu');
+  if (!box) return;
+  var sel = selectedVoicePreset().id, rows = presetAvailability();
+  var html = '<div class="vm-h">Speech style</div>';
+  for (var i=0;i<rows.length;i++){
+    var r = rows[i];
+    html += '<button class="vm-i'+(r.id===sel?' on':'')+(r.available?'':' off')+'" data-vp="'+r.id+'">'
+          + '<span class="vm-n">'+r.label+'</span>'
+          + '<span class="vm-v">'+(r.available ? r.voice.replace(/\s*\(.*$/,'').slice(0,26) : 'not on this device')+'</span>'
+          + '</button>';
+  }
+  html += '<div class="vm-f">Only natural-sounding system voices are offered. Greyed styles have no matching voice installed here.</div>';
+  box.innerHTML = html;
+  var btns = box.querySelectorAll('button[data-vp]');
+  for (var j=0;j<btns.length;j++){
+    btns[j].onclick = function(){ applyVoicePreset(this.getAttribute('data-vp'), true); closeVoiceMenu(); };
+  }
+}
+function openVoiceMenu(){
+  var box = document.getElementById('voiceMenu'); if (!box) return;
+  if (box.classList.contains('show')) { closeVoiceMenu(); return; }
+  renderVoiceMenu(); box.classList.add('show');
+  setTimeout(function(){ document.addEventListener('click', voiceMenuOutside, true); }, 0);
+}
+function closeVoiceMenu(){
+  var box = document.getElementById('voiceMenu'); if (!box) return;
+  box.classList.remove('show');
+  document.removeEventListener('click', voiceMenuOutside, true);
+}
+function voiceMenuOutside(e){
+  var box = document.getElementById('voiceMenu'), btn = document.getElementById('voicePresetBtn');
+  if (!box) return;
+  if (box.contains(e.target) || (btn && btn.contains(e.target))) return;
+  closeVoiceMenu();
 }
 function sternVoice(){ return preferredVoice(); } // legacy name retained for the voice picker
 var speaking = false, lastSpeechEndTs = 0, speakSeq = 0;
@@ -1111,7 +1212,7 @@ let attentiveTimer = null, endpointTimer = null, followupTimer = null, sleepTime
 let followupCount = 0;
 let confirmMode = false;
 let lastDispatchSig = '', lastDispatchTs = 0;
-const CC_VOICE_BUILD = 'voice-v7.2-presets';
+const CC_VOICE_BUILD = 'voice-v8-natural-library';
 const GO = /\b(go for it|go ahead|do it|make it happen|that'?s it|get on it|handle it|run with it|send it|that'?s all)\s*[.!?]?$/;
 
 // ---- confirmation understanding -------------------------------------------------
