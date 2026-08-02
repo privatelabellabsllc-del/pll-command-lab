@@ -1,7 +1,7 @@
 {
   "id": "cmd_v9probe_1785697072",
   "request_id": "cmd_v9probe_1785697072",
-  "ts": "2026-08-02T19:31:17.387Z",
+  "ts": "2026-08-02T19:31:37.131Z",
   "agent": "Ads Agent",
   "status": "completed",
   "text": "Ads Agent connectivity handshake CONFIRMED. The Ads lane delivers assignments and the Ads Agent returned a valid callback on the recovery send. No other action taken.",
