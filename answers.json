@@ -1,10 +1,9 @@
 {
-  "id": "ans-1785632753484",
-  "request_id": "ads-nightly-2026-08-01",
-  "ts": "2026-08-02T01:05:53.484Z",
+  "id": "cmd_v9probe_1785697072",
+  "request_id": "cmd_v9probe_1785697072",
+  "ts": "2026-08-02T19:31:37.131Z",
   "agent": "Ads Agent",
   "status": "completed",
-  "cache_refresh": "blocked_missing_ads_intelligence",
-  "text": "NIGHTLY ADS BRIEF — Sat Aug 1, 2026 (Ads Agent, fresh pull; seven net-new ads only)\n\nSTATUS: Both net-new campaigns ENABLED.\nTODAY (preliminary, our lane): $39.36 spend vs $30 daily target — OVER by $9.36.\n  • Contract Manufacturing: $30.56 = 153% of $20 target (within Google 2x smoothing).\nTRAILING 7 (Jul 25–31): $172.74 of $210 weekly cap = 82% — UNDER cap.\nPRIOR 7: $116.85.\n\nLEADS TODAY: 2, both verified paid-attributed.\n  • Gloria → Contract Manufacturing (our lane)\n  • Jason → legacy campaign (reported separately, not our lane)\n  • Unattributed: 0\n\nCPL: White Label Samples 7d $49.13 (under $75 target).\n     Contract Manufacturing today $30.56 / 7d $123.61 (n=1 — thin, not yet reliable).\n\nHEALTH: Weekly spend under cap, no runaway, form and attribution both healthy.\nRECOMMENDATION: Restore search-term reporting to build the negatives list. Hold budgets.\nAPPROVAL REQUESTED: No.\n\n⚠ CACHE REFRESH BLOCKED — this callback did not include the structured ads_intelligence object, so the Command Center Ads cache was NOT updated with these figures. Cached instant answers still reflect Jul 31 data.",
-  "spoken_text": "Sam, here's the bottom line. The new ads are healthy and running under budget. Over the last seven days we spent about a hundred seventy three dollars against a two hundred ten dollar cap, up from about a hundred seventeen the week before. Today ran hot at thirty nine dollars against a thirty dollar target, but that's Google's normal daily smoothing, not a runaway. We got two leads today and both are verified paid, one of them in our own lane. My read is the spend is disciplined and attribution is finally working. I recommend we restore search term reporting so we can build a proper negatives list, and hold budgets where they are. One caveat: this report came in without the structured data file, so the instant answer cache is still showing yesterday's numbers."
+  "text": "Ads Agent connectivity handshake CONFIRMED. The Ads lane delivers assignments and the Ads Agent returned a valid callback on the recovery send. No other action taken.",
+  "spoken_text": "Ads Agent is back: the connectivity test came through. The ads lane is confirmed working end to end."
 }
