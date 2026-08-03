@@ -249,7 +249,7 @@
      is divided by the zoom factor, otherwise 100vh overflows the visible frame. */
   body.tv{zoom:var(--tvz,1.35); height:calc(100vh / var(--tvz,1.35)); overflow:hidden;}
   /* Logo grows modestly — the sphere is the hero, the mark stays centred in it. */
-  body.tv .logo-core{width:min(20vh,15vw); top:calc(50% - 26px);}
+  body.tv .logo-core{width:min(26vh,19vw); top:50%;}
   body.tv .strip{height:64px;}
   /* Chrome that earns no space on a wall: hide the link pill's label noise. */
   body.tv .linkpill{opacity:.75;}
@@ -660,6 +660,30 @@ function coreState(txt, mode){ // mode: off|idle|awake|think|speak
   document.body.dataset.mood = brainMode;
 }
 
+// ---- V14: cached radial-glow dot sprites (replaces canvas shadowBlur) ----
+// Keyed by colour + alpha + glow, so a steady state rebuilds nothing. Alpha is
+// rounded to 2dp because it only changes with mood, not per frame.
+var __orbSprites = {};
+function orbSprite(accent, a, glow, front){
+  a = Math.max(0, Math.min(1, a));
+  var key = accent.join('_')+'|'+a.toFixed(2)+'|'+glow+'|'+(front?1:0);
+  var hit = __orbSprites[key];
+  if (hit) return hit;
+  var S = 24, cv = document.createElement('canvas');
+  cv.width = cv.height = S;
+  var g = cv.getContext('2d'), c = S/2, rgb = accent[0]+','+accent[1]+','+accent[2];
+  var grad = g.createRadialGradient(c,c,0,c,c,c);
+  grad.addColorStop(0,      'rgba('+rgb+','+a+')');
+  grad.addColorStop(0.5,    'rgba('+rgb+','+a+')');            // solid core to S/4
+  grad.addColorStop(0.5001, 'rgba('+rgb+','+(a*glow)+')');     // glow shoulder
+  grad.addColorStop(1,      'rgba('+rgb+',0)');
+  g.fillStyle = grad;
+  g.beginPath(); g.arc(c,c,c,0,Math.PI*2); g.fill();
+  if (Object.keys(__orbSprites).length > 24) __orbSprites = {};  // bounded cache
+  __orbSprites[key] = cv;
+  return cv;
+}
+
 // ================= THE ORB — sphere network + rotating rings + comet + mic-reactive =================
 var brainMode = 'off';
 var micLevel = 0;      // 0..1 live mic amplitude (best-effort; falls back to state animation)
@@ -672,8 +696,14 @@ function orbBurst(){ burstT = 1; }
   let TVR = 0.30;   // sphere radius as a share of the stage's short edge
   function resize(){
     const r = c.parentElement.getBoundingClientRect();
-    W = c.width = cf.width = Math.max(2,r.width) * devicePixelRatio; H = c.height = cf.height = Math.max(2,r.height) * devicePixelRatio;
-    CX = W/2; CY = H/2 - 6*devicePixelRatio; R = Math.min(W,H)*TVR;
+    const Q = window.__orbQ || 1;   // v14d: backing-store scale; CSS size is untouched
+    W = c.width = cf.width = Math.max(2, Math.round(r.width * devicePixelRatio * Q));
+    H = c.height = cf.height = Math.max(2, Math.round(r.height * devicePixelRatio * Q));
+    CX = W/2;
+    // v14: no vertical bias in TV mode — the canvas centre and the white disc
+    // must coincide exactly or the mark reads off-centre on a 75" panel.
+    CY = H/2 - (window.__noDim ? 0 : 6*devicePixelRatio);
+    R = Math.min(W,H)*TVR;
     if (!pts.length){
       for (let i=0;i<N;i++){
         const th = Math.acos(2*Math.random()-1), ph = Math.random()*Math.PI*2;
@@ -683,20 +713,78 @@ function orbBurst(){ burstT = 1; }
   }
   // TV MODE V13 — grow the sphere and thicken the particle field on a wall display.
   window.__brainScale = function(tv){
-    TVR = tv ? 0.42 : 0.30;
+    TVR = tv ? 0.455 : 0.30;
     N = tv ? 560 : 320;
     pts = [];        // resize() repopulates when the field is empty
+    actN = N; emaMs = 16; preTrimMs = 0; saturated = false; cdUntil = 0;
+    slowSeen = 0; tuneDone = false; sinceChange = 0; bootAt = 0;   // re-judge the new mode cleanly   // re-open the budget, let the governor re-settle
     resize();
   };
   resize(); addEventListener('resize', resize);
   let rot = 0, t = 0, ringRot = 0, breathe = 0;
-  function frame(){
+  // ---- V14b adaptive quality governor ----
+  // Wall displays vary wildly in GPU headroom. Instead of a fixed particle count,
+  // measure real frame time and trim the active prefix of the point pool until
+  // frames land under ~20ms, easing back up when there is room to spare.
+  let actN = N, lastT = 0, emaMs = 16, tuneCd = 0, step = 60;
+  let preTrimMs = 0, saturated = false, cdUntil = 0;   // cdUntil is wall-clock ms
+  let frames = 0, sinceChange = 0, slowSeen = 0, tuneDone = false, bootAt = 0;
+  const WARMUP = 2500;      // ms of boot churn to ignore before judging anything
+  const MINF = 12;          // frames the average must span before any decision
+  const FLOOR = 400;                       // below this the sphere stops reading as dense
+  function governor(now){
+    if (lastT){
+      const dt = now - lastT;
+      if (dt > 0 && dt < 500) emaMs = emaMs*0.75 + dt*0.25;   // settles in ~8 frames, not ~20
+    }
+    lastT = now;
+    frames++; sinceChange++;
+    if (!bootAt) bootAt = now;
+    // Never judge boot churn: layout, fonts and the boot animation all land first.
+    if (now - bootAt < WARMUP) return;
+    if (tuneDone) return;                  // terminal: stop oscillating in front of Sam
+    // Wall-clock gating: a struggling display must converge in ~2s, not ~30s.
+    if (now < cdUntil) return;
+    if (sinceChange < MINF) return;        // the average must actually reflect the change
+    if (saturated){
+      // ---- stage 2: fill-rate relief ----
+      // Particles are proven not to be the bottleneck, so shed pixels instead.
+      var q = window.__orbQ || 1;
+      if (emaMs > 30 && q > 0.8){
+        window.__orbQ = Math.max(0.8, Math.round((q - 0.1)*100)/100);
+        resize(); cdUntil = now + 900; sinceChange = 0;
+      } else if (emaMs > 30 && q <= 0.8){
+        tuneDone = true;   // both levers spent; leave it alone
+      } else if (emaMs < 15 && q < 1){
+        window.__orbQ = Math.min(1, Math.round((q + 0.14)*100)/100);
+        resize(); cdUntil = now + 1500; sinceChange = 0;
+      }
+      return;
+    }
+    if (preTrimMs){
+      // Judge the trim we just made: keep it only if it bought real time.
+      if (emaMs > preTrimMs*0.92){ actN = Math.min(N, actN + step); saturated = true; }
+      preTrimMs = 0; cdUntil = now + 700; sinceChange = 0; return;
+    }
+    if (emaMs > 24){ slowSeen++; } else { slowSeen = 0; }
+    if (emaMs > 24 && slowSeen < 2){ cdUntil = now + 400; return; }
+    if (emaMs > 24 && actN > FLOOR){
+      // Step proportionally: a badly struggling panel should not creep.
+      step = emaMs > 45 ? 160 : emaMs > 32 ? 100 : 60;
+      preTrimMs = emaMs; actN = Math.max(FLOOR, actN - step); cdUntil = now + 700; sinceChange = 0;
+    } else if (emaMs < 13 && actN < N){
+      step = 40; actN = Math.min(N, actN + step); cdUntil = now + 1200; sinceChange = 0;
+    }
+  }
+  function frame(now){
+    governor(now || performance.now());
+    if (actN > N) actN = N;
     ctx.clearRect(0,0,W,H); fctx.clearRect(0,0,W,H);
     t += 0.016;
     const listening = brainMode==='awake';
     const speed = brainMode==='off' ? 0.0012 : brainMode==='idle' ? 0.003 : brainMode==='think' ? 0.014 : brainMode==='speak' ? 0.009 : 0.006;
     rot += speed; ringRot += speed*1.6; breathe += 0.02;
-    const alpha = ((brainMode==='off' && !window.__noDim) ? 0.32 : 1) * (window.__noDim ? 1.32 : 1);
+    const alpha = ((brainMode==='off' && !window.__noDim) ? 0.32 : 1) * (window.__noDim ? 1.26 : 1);
     // pulse: mic amplitude when listening, sine undulation when speaking/thinking, gentle breathe when idle
     let pulse = 1;
     if (listening) pulse = 1 + 0.14*micLevel + 0.02*Math.sin(breathe);
@@ -723,33 +811,67 @@ function orbBurst(){ burstT = 1; }
 
     // ---- sphere network ----
     const proj = [];
-    for (const p of pts){
+    const lim = Math.min(actN, pts.length);
+    for (let pi=0; pi<lim; pi++){
+      const p = pts[pi];
       const rr = R * p.rr * pulse;
       const x3 = rr*Math.sin(p.th)*Math.cos(p.ph+rot), y3 = rr*Math.cos(p.th), z3 = rr*Math.sin(p.th)*Math.sin(p.ph+rot);
       const sc = 1 + z3/(R*2.2);
       proj.push({x: CX + x3*sc, y: CY + y3, z: z3, sc, size:p.size});
     }
+    // ---- V14 PERF: spatial hash instead of O(N^2) ----
+    // At N=560 the old pairwise scan ran 156,660 hypot() calls and one stroke()
+    // per link every frame, which held the 4K panel to ~10fps. Points are binned
+    // into LINK-sized cells and only the 3x3 neighbourhood is searched.
     const LINK = R*0.29;
-    ctx.lineWidth = fctx.lineWidth = devicePixelRatio*0.8*(window.__noDim ? 1.5 : 1);
+    ctx.lineWidth = fctx.lineWidth = devicePixelRatio*0.8*(window.__noDim ? 1.38 : 1);
+    const cell = LINK, grid = new Map();
     for (let i=0;i<proj.length;i++){
-      for (let j=i+1;j<proj.length;j++){
-        const dx=proj[i].x-proj[j].x, dy=proj[i].y-proj[j].y, d=Math.hypot(dx,dy);
-        if (d<LINK){
-          const frontLink=(proj[i].z+proj[j].z)>0, target=frontLink?fctx:ctx;
-          const linkAlpha=(frontLink?0.19:0.11)*(1-d/LINK)*alpha;
-          target.strokeStyle='rgba('+accent[0]+','+accent[1]+','+accent[2]+','+linkAlpha+')';
-          target.beginPath(); target.moveTo(proj[i].x,proj[i].y); target.lineTo(proj[j].x,proj[j].y); target.stroke();
+      const gx=Math.floor(proj[i].x/cell), gy=Math.floor(proj[i].y/cell), k=gx+','+gy;
+      let b=grid.get(k); if(!b){ b=[]; grid.set(k,b); } b.push(i);
+    }
+    // Link alphas are quantised into 5 buckets so each bucket is one batched
+    // path + one stroke() — a few dozen GPU calls instead of several thousand.
+    const BK = 5, bF = [], bB = [];
+    for (let k=0;k<BK;k++){ bF.push([]); bB.push([]); }
+    const L2 = LINK*LINK;
+    for (let i=0;i<proj.length;i++){
+      const a=proj[i], gx=Math.floor(a.x/cell), gy=Math.floor(a.y/cell);
+      for (let ox=-1;ox<=1;ox++) for (let oy=-1;oy<=1;oy++){
+        const b=grid.get((gx+ox)+','+(gy+oy)); if(!b) continue;
+        for (let n=0;n<b.length;n++){
+          const j=b[n]; if (j<=i) continue;      // each pair exactly once
+          const o=proj[j], dx=a.x-o.x, dy=a.y-o.y, d2=dx*dx+dy*dy;
+          if (d2>=L2) continue;
+          const d=Math.sqrt(d2), near=1-d/LINK;
+          const bucket=Math.min(BK-1, (near*BK)|0);
+          ((a.z+o.z)>0 ? bF : bB)[bucket].push(a.x,a.y,o.x,o.y);
         }
       }
     }
+    function flush(target, buckets, peak){
+      for (let k=0;k<BK;k++){
+        const seg=buckets[k]; if(!seg.length) continue;
+        const near=(k+0.5)/BK;
+        target.strokeStyle='rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(peak*near*alpha)+')';
+        target.beginPath();
+        for (let s=0;s<seg.length;s+=4){ target.moveTo(seg[s],seg[s+1]); target.lineTo(seg[s+2],seg[s+3]); }
+        target.stroke();
+      }
+    }
+    flush(fctx, bF, 0.185); flush(ctx, bB, 0.105);
+
+    // ---- V14 PERF: pre-rendered glow sprites replace per-dot shadowBlur ----
+    // shadowBlur forces a per-dot software blur; 560 of them per frame dominated
+    // the profile. One cached sprite per (colour, depth, alpha) is drawn instead.
+    var DOTK = window.__noDim ? 1.34 : 1;
+    const sprF = orbSprite(accent, 0.94*alpha, 0.42, true);
+    const sprB = orbSprite([45,142,84], 0.65*alpha, 0.20, false);
     for (const q of proj){
-      const front=q.z>0, target=front?fctx:ctx;
-      target.fillStyle=front ? 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.98*alpha)+')' : 'rgba(45,142,84,'+(0.68*alpha)+')';
-      target.shadowColor='rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(front?0.95:0.38)+')';
-      target.shadowBlur=(front?7:3)*devicePixelRatio;
-      var DOTK = window.__noDim ? 1.5 : 1;
-      target.beginPath(); target.arc(q.x,q.y,(front?2.05:1.35)*DOTK*q.size*devicePixelRatio*q.sc,0,Math.PI*2); target.fill();
-      target.shadowBlur=0;
+      const front=q.z>0, target=front?fctx:ctx, spr=front?sprF:sprB;
+      const rad=(front?2.05:1.35)*DOTK*q.size*devicePixelRatio*q.sc;
+      // sprite core radius is S/4, so 4*rad maps the core onto rad exactly
+      target.drawImage(spr, q.x-2*rad, q.y-2*rad, 4*rad, 4*rad);
     }
     // bright core
     const cg = ctx.createRadialGradient(CX,CY,0,CX,CY,R*0.6);
@@ -774,6 +896,8 @@ function orbBurst(){ burstT = 1; }
     }
     requestAnimationFrame(frame);
   }
+  window.__orbPin = function(n){ actN = n; saturated = true; tuneCd = 1e9; };
+  window.__orbStats = function(){ return {N:N, active:actN, q:(window.__orbQ||1), tuned:tuneDone, sat:saturated, ms:Math.round(emaMs*10)/10, TVR:TVR, R:R, CX:CX, CY:CY, H:H}; };
   frame();
 })();
 
