@@ -1,51 +1,43 @@
 {
-  "date": "2026-08-01",
-  "ts": "2026-08-01T11:05:22Z",
+  "date": "2026-08-03",
+  "ts": "2026-08-03T11:06:40.246Z",
   "brief": [
     {
-      "t": "FIRST — close Terra Lotus today: take the verified 22,000-unit scope, complete operating and formula/BOM cost inputs, approve the commercial terms, then send the quote and contract. The July 30 delivery is overdue; no guessed price.",
+      "t": "FIRST — send ELOIRE's written commercial answer today: Diana confirmed Aug 1 she expects the 500- and 1,000-unit quote, lead time, and scratch/spotting correction plan today as agreed. No further soft promise.",
       "hot": true
     },
     {
-      "t": "SECOND — recover ELOIRE today with a written 500- and 1,000-unit quote, lead time, and packaging-correction plan, or tell Diana directly PLL cannot take the reorder. Her final follow-up leaves no room for another soft promise.",
+      "t": "SECOND — walk Rehman Ghani Arain's booked 10:00 AM ET call with verified 500-unit-per-SKU pricing for his 3-SKU UAE tallow balm line; no guessed numbers on the call.",
       "hot": true
     },
     {
-      "t": "THIRD — unblock Victor’s 4,000-unit two-SKU opportunity: get the actual R&D packaging-compatibility answer and complete cost inputs before issuing the overdue quote. Do not convert a pending compatibility check into a production promise.",
+      "t": "THIRD — walk Jarrod Adams / Shay Brands' booked 2:00 PM ET call with verified 500/1,000/1,500-unit tiered pricing for the whipped tallow moisturizer line.",
       "hot": true
     },
     {
-      "t": "FOURTH — protect Monday’s revenue calls: approve evidence-backed pricing preparation for Rehman’s three-SKU tallow launch and Shay Brands’ 500/1,000/1,500-unit tiers. Rehman is 10:00 AM ET and Shay is 2:00 PM ET Monday.",
+      "t": "FOURTH — unblock Victor Armendarez's 4,000-unit two-SKU quote: pricing was owed \"this week\" per Friday's briefing; get R&D's written packaging-compatibility confirmation and complete costs before sending either price.",
       "hot": true
     },
     {
-      "t": "FIFTH — make Atlas real before Tuesday’s production/pro-forma meeting: verify scope, price basis, and ownership of the pro forma; Kenna is included. The meeting is confirmed for Tuesday at 2:00 PM ET.",
+      "t": "FIFTH — Terra Lotus's 22,000-unit quote and contract remains the carried-forward overdue item from the prior baseline; no new email or CRM evidence surfaced this run, so verify current status directly with Aidan and Ronald before promising a date.",
+      "hot": true
+    },
+    {
+      "t": "SIXTH — get Atlas's pro forma ready before Tuesday Aug 4, 2:00 PM ET production meeting (Ryne Bell has accepted): still needs fill size/packaging, billing address, and lead time/Incoterms.",
       "hot": false
     },
     {
-      "t": "SIXTH — reconcile cash and commitments: payroll was confirmed at $14,385.90 after a cancellation/re-run sequence, while a $1,260 Zelle payment and the HP Forklifts invoice need ledger and authorization review. Do not pay from email links.",
-      "hot": true
+      "t": "SEVENTH — reconcile today's Gusto payroll ACH debits ($10,233.75 and $3,952.15 per Huntington alerts) against the payroll ledger; do not act on any payment from an email link.",
+      "hot": false
     }
   ],
   "next": [
-    "Close Terra Lotus: approve only after 22,000-unit scope, BOM, operating costs, terms, and lead time are verified; then send quote and contract",
-    "Resolve ELOIRE today: written 500/1,000-unit quote plus correction plan, or a direct no-fit response",
-    "Obtain Victor’s packaging compatibility and full cost inputs before sending either SKU price",
-    "Approve Monday-call pricing preparation for Rehman and Shay; no speculative commercial numbers"
+    "Send ELOIRE's written 500/1,000-unit quote and correction plan today, or tell Diana directly PLL cannot support the reorder",
+    "Walk Rehman's 10:00 AM ET call with verified 500-unit tier pricing and sample path",
+    "Walk Jarrod/Shay's 2:00 PM ET call with verified 500/1,000/1,500-unit tiers",
+    "Get Victor's R&D packaging-compatibility confirmation and full costs before sending his overdue quote"
   ],
   "kb": [
-    {
-      "keys": [
-        "terra lotus",
-        "terra",
-        "lotus",
-        "22,000",
-        "22000",
-        "quote",
-        "contract"
-      ],
-      "a": "Live CRM shows three urgent Terra Lotus tasks overdue from July 30: Sam approval/delivery, Aidan’s verified operational cost inputs, and Ronald’s formula/BOM inputs. The scope is 22,000 units, not 21,000. Assemble those facts and approved terms before issuing a quote or contract."
-    },
     {
       "keys": [
         "eloire",
@@ -56,7 +48,29 @@
         "500",
         "1000"
       ],
-      "a": "Diana’s July 31 final follow-up says PLL still owes written 500- and 1,000-unit pricing, lead time, and a scratch/spotting correction plan promised July 29. Send a verified commercial answer today, or state directly that PLL cannot support the reorder. Do not make another “shortly” promise."
+      "a": "Diana confirmed Aug 1 she is waiting for the written 500- and 1,000-unit quote, lead time, and scratch/spotting correction plan \"as agreed\" for Monday, August 3. This is now due today. Send a verified commercial answer, or tell her directly PLL cannot support the reorder — no further \"shortly\" promise."
+    },
+    {
+      "keys": [
+        "rehman",
+        "ghani",
+        "uae",
+        "tallow",
+        "monday",
+        "august 3",
+        "10 am"
+      ],
+      "a": "Rehman Ghani Arain's call is confirmed for today, Monday August 3 at 10:00 AM ET (6:00 PM UAE), Google Meet invite sent. He wants a 3-SKU private-label tallow balm line (existing base, honey infused, citrus infused) starting at 500 units per SKU, budget-conscious. Walk the call with validated 500-unit pricing and a sample path; no unsupported numbers."
+    },
+    {
+      "keys": [
+        "shay brands",
+        "jarrod",
+        "tallow",
+        "august 3",
+        "2 pm"
+      ],
+      "a": "Jarrod Adams of Shay Brands rescheduled his call to today, Monday August 3 at 2:00 PM ET (11:00 AM PT), same Google Meet link. He wants a custom whipped tallow moisturizer hero plus scrub and night cream (phase 2: shampoo/conditioner/body wash), ~1,000 units soft launch, comparing 500/1,000/1,500-unit tiers. He was reminded to send logo/concept files to Laura."
     },
     {
       "keys": [
@@ -67,28 +81,19 @@
         "quote",
         "packaging"
       ],
-      "a": "Victor’s 2,000-units-per-SKU Curl Defining Cream and Edge Gel quote was due Friday. The Edge Gel is a hot pour with an indicated target near $2.90/unit, but packaging compatibility and full cost inputs remain unverified. Get written R&D confirmation before pricing or committing."
+      "a": "Victor Armendarez's 2,000-units-per-SKU Curl Defining Cream and Edge Gel quote remains outstanding; Friday's briefing (Jul 31) shows pricing still owed \"this week\" and last contact was Jul 21. Edge Gel is a confirmed hot pour with a ~$2.90/unit target, but full costing and R&D's written packaging-compatibility confirmation are not yet verified in current evidence. Do not price or commit until both are in hand."
     },
     {
       "keys": [
-        "rehman",
-        "ghani",
-        "uae",
-        "tallow",
-        "monday",
-        "august 3"
+        "terra lotus",
+        "terra",
+        "lotus",
+        "22,000",
+        "22000",
+        "quote",
+        "contract"
       ],
-      "a": "Rehman Ghani Arain is booked Monday, August 3 at 10:00 AM ET (6:00 PM UAE) for a three-SKU private-label tallow balm line: existing base, honey infused, and citrus infused. He is considering 500 units per SKU with potential add-ons and is budget-conscious. Prepare validated 500-unit and higher-tier direction, samples, and US/GCC qualification; no unsupported price."
-    },
-    {
-      "keys": [
-        "shay brands",
-        "jarrod",
-        "tallow",
-        "august 3",
-        "2 pm"
-      ],
-      "a": "Jarrod Adams of Shay Brands is booked Monday, August 3 at 2:00 PM ET (11:00 AM PT). He wants a custom whipped tallow moisturizer plus white-label scrub and night cream, with phased hair/body products, and requested 500/1,000/1,500-unit tiers. Prepare validated commercial inputs and qualification questions; the calendar time was rescheduled from an earlier slot."
+      "a": "Terra Lotus's verified 22,000-unit scope, BOM/formula inputs, and operating-cost inputs were the carried-forward top overdue item from the prior baseline (originally due Jul 30). No new Terra Lotus email or CRM evidence surfaced in this morning's Outlook/Gmail/calendar pull — status could not be independently re-verified this run. Confirm current state directly with Aidan and Ronald before any quote or contract action."
     },
     {
       "keys": [
@@ -96,9 +101,21 @@
         "kenna",
         "pro forma",
         "production meeting",
-        "august 4"
+        "august 4",
+        "ryne bell"
       ],
-      "a": "Atlas accepted the production/pro-forma meeting for Tuesday, August 4 at 2:00 PM ET; Sam, Ryne Bell, and Kenna Whitnell are included. CRM has an Aidan task to send Kenna the Atlas quote. Verify scope, pricing basis, and delivery status before the meeting; do not assume a pro forma has been sent."
+      "a": "Atlas's Tuesday, August 4, 2:00 PM ET production/pro-forma meeting is confirmed — Ryne Bell (atlasskin31@gmail.com) accepted the calendar invite. Per the prior baseline, the pro forma still needs fill size/packaging, billing address, and lead time/Incoterms filled in before the meeting; Sam, Ryne Bell, and Kenna Whitnell are included."
+    },
+    {
+      "keys": [
+        "payroll",
+        "gusto",
+        "zelle",
+        "hp forklifts",
+        "cash",
+        "huntington"
+      ],
+      "a": "Huntington bank alerts today (Aug 3) show two ACH withdrawals at Gusto: $10,233.75 (Gusto NE) and $3,952.15 (Gusto Tax), totaling roughly $14,185.90. Match this against the payroll ledger for the current pay period; the prior $1,260 Zelle payment and HP Forklifts invoice still need authorization and ledger linkage from the prior baseline. Do not pay from an emailed link."
     },
     {
       "keys": [
@@ -109,98 +126,18 @@
         "chelating",
         "shampoo"
       ],
-      "a": "Vladimir requested side-by-side EDDS versus EDTA cost direction for treatment shampoo, daily shampoo, and conditioner, at roughly 250–400 units per SKU, plus 3 oz treatment-shampoo feasibility, lead time, CoA/stability, and MoCRA-label support. EDDS is his preferred sustainability direction. Technical feasibility, minimums, documentation scope, and cost inputs are not yet verified; avoid treatment/regulatory claims."
+      "a": "Vladimir Elgort followed up Aug 3 proposing call times: tomorrow (Tue Aug 4) 9:30–11:30 AM, 1–1:45 PM, or 4–5 PM, or alternate Tuesday slots, all ET, to discuss his EDDS-vs-EDTA chelating shampoo line. No call is booked yet — confirm a time. Technical feasibility, minimums, and documentation scope remain unverified from the prior baseline."
     },
     {
       "keys": [
-        "payroll",
-        "gusto",
-        "zelle",
-        "hp forklifts",
-        "cash"
+        "seal team slicks",
+        "philip",
+        "digristina",
+        "250k",
+        "beard",
+        "pomade"
       ],
-      "a": "Gusto emails show payroll canceled at $15,297.90, then confirmed at $14,385.90 for July 16–August 1 with a planned July 31 debit; reconcile the final ledger and employee-pay status. A $1,260 Zelle payment to Steven Ayyar and a corrected HP Forklifts invoice also need authorization and ledger linkage. Do not pay from emailed links."
-    },
-    {
-      "keys": [
-        "ads",
-        "google ads",
-        "cap",
-        "budget"
-      ],
-      "a": "The latest morning Ads safety refresh was blocked from publication because reporting quota and required budget/ad-level permissions were unavailable. It confirmed completed July 31 campaign-scope spend of $27.29 and seven-day spend of $172.74, while prior known over-cap days remain July 28 ($38.40) and July 30 ($34.87). Preserve the validated nightly Ads cache, make no settings changes, and obtain cap/reporting evidence before optimization."
-    },
-    {
-      "keys": [
-        "crm",
-        "tasks",
-        "pipeline",
-        "production"
-      ],
-      "a": "Live CRM is authenticated: the dashboard shows $1,327,800 pipeline, 20 active deals, 20 production projects, and $57,454.99 deposits. The Tasks page shows 11 active tasks and nine overdue; it includes overdue Terra Lotus, Victor, and Atlas items. No CRM records were changed in this refresh."
-    },
-    {
-      "keys": [
-        "ashley",
-        "nymphaea",
-        "miron",
-        "glass",
-        "payment"
-      ],
-      "a": "No new authoritative Ashley/Nymphaea payment or supplier-order evidence appeared in the current CRM, calendar, or inbox pulls. The prior request for a 50% Miron glass-container payment remains contingent on a verified supplier amount and order path. Keep it off Sam’s first lane until that evidence arrives, then send only the verified payment link."
-    },
-    {
-      "keys": [
-        "buffman",
-        "filling line",
-        "freight",
-        "ddp",
-        "hot fill",
-        "batch coding",
-        "yuhang"
-      ],
-      "a": "BuffMan equipment remains gated. The forwarded freight quote is USD 8,850 DDP, and hot-fill capability, batch-coding method, equipment configuration, quote inclusions, and final landed cost are not verified. No payment, order, or shipment commitment is authorized from current evidence."
-    },
-    {
-      "keys": [
-        "natugeda",
-        "daniela",
-        "genesis",
-        "hair oil",
-        "production",
-        "timeline"
-      ],
-      "a": "Natugeda needs a factual Hair Oil production stage and next date. CRM is not authenticated and the historical Production Scheduled label is not a current operations fact. Get operations confirmation before customer communication."
-    },
-    {
-      "keys": [
-        "phylara",
-        "shannon",
-        "pause",
-        "formula",
-        "specifications",
-        "balance"
-      ],
-      "a": "PHYLARA is satisfied with the sample but pausing for personal-timeline reasons. The customer requested final formula/specifications and any remaining balance. Confirm release permission, document control, and ledger status before responding."
-    },
-    {
-      "keys": [
-        "salty pup",
-        "susan",
-        "newport",
-        "dog",
-        "coastal rinse"
-      ],
-      "a": "Salty Pup Newport Beach is a new manufacturing inquiry introduced by Ronald. Susan says the formula is complete and she has bottles, labels, and a label applicator; she seeks the right manufacturing partner. Confirm formula transfer, claims, batch size, compatibility, testing, and production requirements before promising price or timing."
-    },
-    {
-      "keys": [
-        "vladimir",
-        "chelating shampoo",
-        "treatment strength",
-        "lead"
-      ],
-      "a": "A new web inquiry asks about treatment-strength chelating shampoo. Determine intended claims, active ingredients, target user, quantity, packaging, and budget before making a manufacturing or regulatory representation. Treatment-strength positioning may require classification review."
+      "a": "New/growing lead: Philip DiGristina of SEAL Team Slicks says he has roughly $250k to spend across multiple grooming SKUs (pomade, sea salt spray, aftershave, beard oil/balm, body wash) and wants a call plus NDA. Nikkie is handling intake and has already quoted $2,000–$6,000 R&D per custom SKU; beard oil/balm/body wash can go private-label without R&D. Worth Sam's attention given the stated budget size, though still an early-stage inbound qualification, not yet a booked call."
     },
     {
       "keys": [
@@ -212,120 +149,130 @@
         "shopify",
         "move",
         "24600",
-        "industrial"
+        "industrial",
+        "dte"
       ],
-      "a": "PLL operates at 24600 N. Industrial Dr., Farmington Hills, MI 48335. Customer notification is complete, but UPS, USPS, and Shopify address changes and a test workflow remain pending. DTE also sent a start-service reminder that needs completion."
+      "a": "PLL operates at 24600 N. Industrial Dr., Farmington Hills, MI 48335. DTE's start-service order completed Aug 1 (confirmed by DTE email) and the old address's stop-service order was in progress. UPS, USPS, and Shopify address changes and a test workflow remain pending per the prior baseline — no new evidence this run that those were completed."
     },
     {
       "keys": [
-        "bitop",
-        "dunning",
-        "payable",
-        "overdue"
+        "ads",
+        "google ads",
+        "cap",
+        "budget"
       ],
-      "a": "bitop AG’s dunning notice requires ledger matching before payment. Amount, original invoice, and any material or production hold are not verified in this refresh. Do not pay from an email link."
+      "a": "Ads intelligence and Ads agent brief are preserved unchanged from the last verified nightly Ads refresh (2026-08-02T21:04:32-04:00): three of the last seven days breached the $30/day approved cap (Jul 28 $38.40, Jul 30 $34.87, Aug 1 $40.82), and the morning safety check this cycle was blocked by a Google Ads API quota exhaustion. No Ads settings were changed; only an Ads intelligence job may update these figures."
     },
     {
       "keys": [
-        "ch robinson",
-        "freight",
-        "invoice",
-        "load",
-        "555812351"
+        "crm",
+        "tasks",
+        "pipeline",
+        "production"
       ],
-      "a": "CH Robinson invoice 6247783636 for load 555812351 remains unvalidated. Confirm amount, due date, shipment linkage, and delivery status internally before payment or a customer commitment."
+      "a": "Live CRM was not re-verified in this morning's refresh — this run did not attempt a CRM login per instructions (no credentials provided). The last verified CRM snapshot (Aug 1) showed $1,327,800 pipeline, 20 active deals, 20 production projects, and $57,454.99 deposits; treat those figures as dated Aug 1, not confirmed current today."
+    },
+    {
+      "keys": [
+        "ashley",
+        "nymphaea",
+        "miron",
+        "glass",
+        "payment"
+      ],
+      "a": "No new authoritative Ashley/Nymphaea payment or supplier-order evidence appeared in this run's Outlook or calendar pulls. The prior request for a 50% Miron glass-container payment remains contingent on a verified supplier amount and order path; keep it off Sam's first lane until that evidence arrives."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Deliver the verified Terra Lotus 22,000-unit quote and contract",
-      "why": "Three urgent tasks are overdue from July 30 for scope approval, operational costs, and formula/BOM inputs. The commercial quote and contract must follow verified figures only.",
-      "owner": "Sam / Aidan / Ronald / Laura",
-      "due": "Today — overdue",
-      "priority": "critical",
-      "revenue": "22,000-unit opportunity; value unverified"
-    },
-    {
-      "rank": 2,
-      "title": "Give ELOIRE a final written commercial answer",
-      "why": "Diana’s final follow-up says the promised 500- and 1,000-unit quote, lead time, and scratch/spotting correction plan were not received.",
+      "title": "Send ELOIRE's written commercial answer today",
+      "why": "Diana confirmed Aug 1 she expects the 500/1,000-unit quote, lead time, and correction plan today \"as agreed.\" This is now due.",
       "owner": "Sam / Laura / operations",
       "due": "Today",
       "priority": "critical",
-      "revenue": "Reorder value unverified"
+      "revenue": "Existing-customer reorder; value unverified"
+    },
+    {
+      "rank": 2,
+      "title": "Close Rehman Ghani Arain's 10:00 AM ET discovery call",
+      "why": "Booked, confirmed call for a 3-SKU UAE tallow balm line starting at 500 units/SKU; needs validated tier pricing ready to walk live.",
+      "owner": "Sam / Laura / Ronald",
+      "due": "Today 10:00 AM ET",
+      "priority": "critical",
+      "revenue": "New private-label opportunity; value unverified"
     },
     {
       "rank": 3,
-      "title": "Unblock Victor’s two-SKU quote",
-      "why": "The Friday-due quote for 2,000 units each of Curl Defining Cream and Edge Gel remains gated by packaging compatibility and complete costs.",
+      "title": "Close Jarrod Adams / Shay Brands' 2:00 PM ET discovery call",
+      "why": "Rescheduled and confirmed call; wants validated 500/1,000/1,500-unit tallow moisturizer tier pricing.",
+      "owner": "Sam / Laura / Ronald",
+      "due": "Today 2:00 PM ET",
+      "priority": "critical",
+      "revenue": "New private-label opportunity; value unverified"
+    },
+    {
+      "rank": 4,
+      "title": "Unblock Victor's two-SKU quote",
+      "why": "Pricing owed \"this week\" per Jul 31 briefing; still gated on R&D packaging-compatibility confirmation and full costs.",
       "owner": "Sam / Victor / R&D",
-      "due": "Today",
+      "due": "This week — overdue",
       "priority": "critical",
       "revenue": "4,000-unit opportunity; pricing unverified"
     },
     {
-      "rank": 4,
-      "title": "Prepare Rehman and Shay for Monday conversion calls",
-      "why": "Rehman is booked Monday 10:00 AM ET and Shay is booked Monday 2:00 PM ET. Both require validated tier and scope preparation, not a speculative promise.",
-      "owner": "Sam / Laura / Ronald",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "New private-label opportunities; value unverified"
-    },
-    {
       "rank": 5,
-      "title": "Validate Atlas pro forma for Tuesday’s production meeting",
-      "why": "Atlas confirmed a Tuesday 2:00 PM ET production and pro-forma discussion; an existing task assigns Aidan to send Kenna the quote.",
-      "owner": "Aidan / Sam / Laura",
-      "due": "Before Tuesday meeting",
-      "priority": "high",
-      "revenue": "Atlas scope and price unverified"
+      "title": "Verify Terra Lotus status directly with Aidan/Ronald",
+      "why": "Carried-forward top overdue item from the prior baseline (22,000-unit scope, cost/BOM inputs); no fresh evidence surfaced this run to confirm current state.",
+      "owner": "Sam / Aidan / Ronald / Laura",
+      "due": "Today — status unverified this run",
+      "priority": "critical",
+      "revenue": "22,000-unit opportunity; value unverified"
     },
     {
       "rank": 6,
-      "title": "Reconcile payroll, Zelle, and HP Forklifts exposure",
-      "why": "Gusto emails show a cancellation/re-run sequence followed by a $14,385.90 confirmed payroll debit; a $1,260 Zelle and corrected HP Forklifts invoice require ledger linkage and authorization.",
-      "owner": "Sam / finance",
-      "due": "Today",
+      "title": "Complete Atlas's pro forma before Tuesday's meeting",
+      "why": "Ryne Bell accepted the Tue Aug 4, 2:00 PM ET production meeting; pro forma still needs fill size/packaging, billing address, lead time/Incoterms.",
+      "owner": "Aidan / Sam / Laura",
+      "due": "Before Tuesday, Aug 4, 2:00 PM ET",
       "priority": "high",
-      "revenue": "Cash-control and continuity protection"
+      "revenue": "Atlas scope and price unverified"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Stay in one lane: close Terra Lotus on verified facts, then give ELOIRE a definitive written answer.",
+      "top_task": "Stay in one lane: send ELOIRE's written answer first, then walk today's two booked calls (Rehman 10am ET, Shay 2pm ET) with verified pricing.",
       "tasks": [
         {
-          "title": "Approve Terra Lotus only after the verified 22,000-unit commercial pack is complete",
+          "title": "Send ELOIRE's written 500/1,000-unit quote and correction plan, or a direct no-fit response",
           "due": "Today"
         },
         {
-          "title": "Authorize ELOIRE quote/correction plan or direct no-fit response",
-          "due": "Today"
+          "title": "Walk Rehman's 10:00 AM ET call with verified 500-unit tier pricing",
+          "due": "Today 10:00 AM ET"
         },
         {
-          "title": "Approve evidence-backed Monday pricing preparation for Rehman and Shay",
-          "due": "Today"
+          "title": "Walk Jarrod/Shay's 2:00 PM ET call with verified 500/1,000/1,500-unit tiers",
+          "due": "Today 2:00 PM ET"
         }
       ],
-      "notes": "Do not spend the morning on cold leads, equipment, or non-verified payment requests."
+      "notes": "Do not spend the morning on cold leads or non-verified payment requests; verify Terra Lotus status with Aidan/Ronald before any quote promise."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Deliver Terra Lotus operational cost/lead-time inputs and validate Atlas pro-forma scope for Tuesday.",
+      "top_task": "Confirm Terra Lotus status and validate Atlas's pro-forma inputs before Tuesday's meeting.",
       "tasks": [
         {
-          "title": "Provide verified Terra Lotus packaging, fill, labor, overhead, freight, and lead-time inputs",
-          "due": "Immediately"
-        },
-        {
-          "title": "Confirm Atlas quote/pro-forma basis and Kenna delivery status",
+          "title": "Confirm current Terra Lotus scope/cost-input status (no fresh evidence this run)",
           "due": "Today"
         },
         {
-          "title": "Supply only documented cost inputs for Victor or ELOIRE",
+          "title": "Fill Atlas pro-forma gaps: fill size/packaging, billing address, lead time/Incoterms",
+          "due": "Before Tue Aug 4, 2pm ET"
+        },
+        {
+          "title": "Supply only documented cost inputs for Victor",
           "due": "Today"
         }
       ],
@@ -333,56 +280,52 @@
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Turn approved facts into the ELOIRE response and prepare the Monday-call commercial packets.",
+      "top_task": "Turn approved facts into ELOIRE's response and prep the two Monday-call commercial packets.",
       "tasks": [
         {
-          "title": "Issue ELOIRE’s written quote and correction plan after cost approval, or direct no-fit response",
+          "title": "Issue ELOIRE's written quote and correction plan after cost approval, or a direct no-fit response",
           "due": "Today"
         },
         {
-          "title": "Prepare Rehman and Shay call packets with validated tiers",
+          "title": "Prep Rehman (10am ET) and Shay (2pm ET) call packets with validated tiers",
           "due": "Today"
         },
         {
-          "title": "Confirm Atlas meeting materials are customer-ready",
-          "due": "Before Tuesday"
+          "title": "Receive Jarrod's logo/concept files for packaging",
+          "due": "Today"
         }
       ],
-      "notes": "Do not send an additional “shortly” message without the commercial document."
+      "notes": "Do not send another \"shortly\" message without the commercial document."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Complete Terra Lotus BOM/formula inputs and technical qualification for new business.",
+      "top_task": "Support technical prep for today's two booked calls and Victor's costing.",
       "tasks": [
-        {
-          "title": "Provide verified Terra Lotus formula/BOM inputs for the confirmed 22,000-unit scope",
-          "due": "Immediately"
-        },
         {
           "title": "Support Rehman and Shay scope/technical preparation",
           "due": "Today"
         },
         {
-          "title": "Provide Stellaqua EDDS/EDTA feasibility and documentation inputs; no treatment or regulatory promise",
+          "title": "Provide Victor's Edge Gel/Curl Cream formula and packaging-compatibility follow-up with R&D",
           "due": "Today"
+        },
+        {
+          "title": "Confirm a call time with Vladimir (Stellaqua) for EDDS/EDTA direction — no time booked yet",
+          "due": "This week"
         }
       ],
-      "notes": "Stellaqua’s requested side-by-side pricing must wait for documented formula and manufacturing inputs."
+      "notes": "Stellaqua's side-by-side pricing must wait for documented formula and manufacturing inputs."
     },
     "finance": {
       "display_name": "Finance",
-      "top_task": "Reconcile the confirmed payroll debit, Zelle transfer, and HP Forklifts invoice against the ledger.",
+      "top_task": "Reconcile today's Gusto ACH debits against the payroll ledger.",
       "tasks": [
         {
-          "title": "Confirm final Gusto debit and payroll status",
+          "title": "Match today's Gusto NE ($10,233.75) and Gusto Tax ($3,952.15) debits to the current pay period",
           "due": "Today"
         },
         {
-          "title": "Match Zelle $1,260 payment to authorization and ledger",
-          "due": "Today"
-        },
-        {
-          "title": "Validate HP Forklifts invoice, asset/service receipt, and payment authorization",
+          "title": "Confirm prior $1,260 Zelle payment and HP Forklifts invoice authorization/ledger status",
           "due": "Today"
         }
       ],
@@ -391,46 +334,55 @@
   },
   "revenueActions": [
     {
-      "title": "Close Terra Lotus quote and contract",
-      "why": "Verified CRM tasks show the 22,000-unit scope and three overdue dependencies: approval, operating costs, and formula/BOM inputs.",
-      "est_value": "Unverified — no estimate without approved costs and margin",
-      "next_step": "Assemble verified scope, BOM, cost, terms, and lead time; obtain Sam approval; send quote and contract.",
-      "owner": "Sam / Aidan / Ronald / Laura",
-      "timing": "First — today",
-      "value": "22,000-unit enterprise opportunity"
-    },
-    {
       "title": "Recover ELOIRE reorder",
-      "why": "Customer’s final follow-up requests the overdue 500/1,000-unit quote, lead time, and scratch/spotting correction details.",
+      "why": "Diana confirmed Aug 1 she expects the written 500/1,000-unit quote and correction plan today.",
       "est_value": "Unverified",
-      "next_step": "Send a verified quote and corrective packaging plan, or state directly that PLL cannot meet the request.",
+      "next_step": "Send a verified quote and corrective packaging plan today, or state directly PLL cannot meet the request.",
       "owner": "Sam / Laura / operations",
-      "timing": "Second — today",
+      "timing": "First — today",
       "value": "Existing-customer reorder"
     },
     {
+      "title": "Close Rehman's 3-SKU UAE tallow line",
+      "why": "Confirmed call today at 10:00 AM ET; starting at 500 units/SKU.",
+      "est_value": "Unverified",
+      "next_step": "Walk the call with validated 500-unit pricing and sample path.",
+      "owner": "Sam / Laura / Ronald",
+      "timing": "Today 10:00 AM ET",
+      "value": "New private-label opportunity"
+    },
+    {
+      "title": "Close Shay Brands' tallow moisturizer line",
+      "why": "Confirmed rescheduled call today at 2:00 PM ET; wants 500/1,000/1,500-unit tiers.",
+      "est_value": "Unverified",
+      "next_step": "Walk the call with validated tiered pricing; receive logo/concept files.",
+      "owner": "Sam / Laura / Ronald",
+      "timing": "Today 2:00 PM ET",
+      "value": "New private-label opportunity"
+    },
+    {
       "title": "Unblock Victor two-SKU opportunity",
-      "why": "2,000 units each of Curl Defining Cream and Edge Gel are pending packaging compatibility and complete costs.",
+      "why": "Pricing owed \"this week\" per Jul 31 briefing; still gated by packaging compatibility and complete costs.",
       "est_value": "Unverified",
       "next_step": "Get written R&D compatibility and cost inputs, then issue the quote.",
       "owner": "Sam / Victor / R&D",
-      "timing": "Today",
+      "timing": "This week — overdue",
       "value": "4,000-unit turnkey opportunity"
     },
     {
-      "title": "Prepare Monday call conversion packets",
-      "why": "Rehman and Shay both have scheduled Monday discovery calls with defined volume-tier needs.",
-      "est_value": "Unverified",
-      "next_step": "Prepare approved scope, MOQ, tier direction, sample path, and qualification questions; do not pre-quote unsupported figures.",
-      "owner": "Sam / Laura / Ronald",
-      "timing": "Today",
-      "value": "Two active private-label opportunities"
+      "title": "Verify and close Terra Lotus",
+      "why": "Carried-forward overdue 22,000-unit item from the prior baseline; no fresh evidence this run.",
+      "est_value": "Unverified — no estimate without approved costs and margin",
+      "next_step": "Confirm current status directly with Aidan/Ronald; assemble verified scope, BOM, cost, terms, and lead time before any quote.",
+      "owner": "Sam / Aidan / Ronald / Laura",
+      "timing": "Today — status unverified this run",
+      "value": "22,000-unit enterprise opportunity"
     },
     {
       "title": "Validate Atlas pro forma",
-      "why": "Tuesday’s confirmed production/pro-forma meeting creates a concrete deadline; current price and scope are not verified.",
+      "why": "Ryne Bell accepted Tuesday's production/pro-forma meeting; scope/price still not fully verified.",
       "est_value": "Unverified",
-      "next_step": "Verify scope and quote/pro-forma inputs, assign send owner, and have the factual packet ready before the meeting.",
+      "next_step": "Fill remaining pro-forma gaps (fill size/packaging, billing address, lead time/Incoterms); assign send owner.",
       "owner": "Aidan / Sam / Laura",
       "timing": "Before Tuesday, Aug 4, 2:00 PM ET",
       "value": "Active manufacturing opportunity"
@@ -440,11 +392,11 @@
     "total_value": "$1,327,800 (live CRM dashboard; 20 active deals)",
     "active_deals": 20,
     "hot": [
-      "Terra Lotus — 22,000-unit quote/contract dependencies overdue",
-      "ELOIRE — final written commercial answer required today",
-      "Victor — 4,000-unit two-SKU quote gated by compatibility/cost",
-      "Rehman — Monday 10:00 AM ET tallow call",
-      "Shay Brands — Monday 2:00 PM ET tiered-pricing call"
+      "ELOIRE — Diana confirmed she expects the written quote today",
+      "Rehman — today's 10:00 AM ET tallow call",
+      "Shay Brands — today's 2:00 PM ET tiered-pricing call",
+      "Victor — 4,000-unit two-SKU quote, pricing owed this week",
+      "Terra Lotus — carried-forward overdue 22,000-unit item, unverified this run"
     ],
     "stalled": [
       "Terra Lotus verified cost/BOM/approval pack",
@@ -456,7 +408,7 @@
     "pipelineValue": 1327800,
     "inProduction": 20,
     "depositsCollected": 57454.99,
-    "note": "Aug 1 live CRM dashboard: 20 active deals, 20 production projects, $1,327,800 pipeline, and $57,454.99 deposits. Eleven active CRM tasks remain, with nine overdue. Current email evidence adds ELOIRE’s final quote request, Victor’s overdue Friday quote, confirmed Monday Rehman/Shay calls, and Atlas’s Tuesday production/pro-forma meeting."
+    "note": "CRM was not re-verified in this morning's refresh (no login attempted per instructions — read-only, no credentials). Figures below are the last verified snapshot from Aug 1 live CRM dashboard: 20 active deals, 20 production projects, $1,327,800 pipeline, and $57,454.99 deposits. Current email/calendar evidence (Aug 3) confirms Rehman's 10:00 AM ET and Jarrod/Shay's 2:00 PM ET calls are booked today, Atlas's Tue Aug 4 2:00 PM ET meeting is accepted by Ryne Bell, and Diana/ELOIRE expects her quote today."
   },
   "adsAgentBrief": {
     "status": "Nightly-equivalent refresh partial success — fresh Google Ads campaign-level data pulled for both verified campaigns; ad-level/search-term reporting and Outlook lead search were out of this run's approved tool scope. New cap breach identified on Aug 1 ($40.82). No settings changed.",
@@ -652,6 +604,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "Confirm saved business/origin/return address and run one test label/order path in each applicable system."
+    "verificationRequired": "DTE start-service order completed Aug 1 (confirmed by DTE email). UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
   }
 }
