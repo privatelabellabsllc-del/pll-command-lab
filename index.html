@@ -244,6 +244,37 @@
   body.booting .panel, body.booting .dock{animation:bootIn .8s ease both;}
   @keyframes bootIn{from{opacity:0; transform:translateY(8px);}to{opacity:1; transform:none;}}
 
+  /* ═══════════ TV MODE V13 — 75" wall display ═══════════ */
+  /* Everything scales from one variable so proportions never drift. Body height
+     is divided by the zoom factor, otherwise 100vh overflows the visible frame. */
+  body.tv{zoom:var(--tvz,1.35); height:calc(100vh / var(--tvz,1.35)); overflow:hidden;}
+  /* Logo grows modestly — the sphere is the hero, the mark stays centred in it. */
+  body.tv .logo-core{width:min(20vh,15vw); top:calc(50% - 26px);}
+  body.tv .strip{height:64px;}
+  /* Chrome that earns no space on a wall: hide the link pill's label noise. */
+  body.tv .linkpill{opacity:.75;}
+  #tvBtn.on{border-color:var(--green); color:var(--green); background:rgba(20,70,46,.55);}
+  /* One-tap resume: browsers only grant fullscreen on a real gesture, so a
+     remembered TV preference has to be re-armed by a single deliberate tap. */
+  .tvresume{position:fixed; inset:0; z-index:10000; display:none; flex-direction:column;
+    align-items:center; justify-content:center; gap:22px; background:rgba(3,17,10,.96);
+    text-align:center; padding:30px;}
+  .tvresume.show{display:flex;}
+  .tvresume h3{font-size:34px; letter-spacing:6px; color:#dfffef; text-transform:uppercase; font-weight:800;}
+  .tvresume p{font-size:15px; letter-spacing:2px; color:var(--dim); text-transform:uppercase;}
+  .tvresume button{font-family:var(--mono); font-size:22px; font-weight:800; letter-spacing:4px;
+    color:#03110a; background:var(--green); border:2px solid #fff; border-radius:60px;
+    padding:24px 54px; cursor:pointer; box-shadow:0 0 40px rgba(52,255,150,.5);}
+  .tvresume small{font-size:12px; letter-spacing:2px; color:var(--dimmer); text-transform:uppercase;}
+
+  /* NO-DIM — a 75" wall display must never fade. These override every dimming
+     rule in the base sheet; dormancy stays legible via colour + rotation speed. */
+  body.nodim.dimmed .main, body.nodim.dimmed .dock{filter:none !important;}
+  body.nodim.night{filter:none !important;}
+  body.nodim[data-mood="off"] #brain,
+  body.nodim[data-mood="off"] #brain-front{filter:saturate(1.05) brightness(1.02) !important;}
+  body.nodim[data-mood="off"] .logo-core{filter:none !important; opacity:1 !important;}
+
   /* ═══════════ RESPONSIVE (TV-first, degrades to scroll) ═══════════ */
   @media (max-width:1080px){
     body{height:auto; overflow:auto;}
@@ -456,6 +487,7 @@
     <span class="vpwrap"><button class="tb voicepreset" id="voicePresetBtn" onclick="openVoiceMenu()" title="Change speech style">Voice: Jarvis-style</button><div class="vmenu" id="voiceMenu"></div></span>
     <button class="tb" id="muteBtn" onclick="toggleMute()">🔊</button>
     <button class="tb" id="commsBtn" onclick="openComms()">💬 Comms<span class="badge hide" id="commsBadge">0</span></button>
+    <button class="tb" id="tvBtn" onclick="toggleTv()" title="75″ TV mode — fullscreen, bigger everything (F)">📺 TV</button>
     <button class="tb" onclick="setHook()">Link</button>
   </div>
   <div class="linkpill"><span class="ldot" id="linkDot"></span><span id="linkTxt">Link</span></div>
@@ -636,11 +668,12 @@ function orbBurst(){ burstT = 1; }
 (function(){
   const c = document.getElementById('brain'), ctx = c.getContext('2d'), cf = document.getElementById('brain-front'), fctx = cf.getContext('2d');
   let W,H,CX,CY,R,pts=[];
-  const N = 320;
+  let N = 320;
+  let TVR = 0.30;   // sphere radius as a share of the stage's short edge
   function resize(){
     const r = c.parentElement.getBoundingClientRect();
     W = c.width = cf.width = Math.max(2,r.width) * devicePixelRatio; H = c.height = cf.height = Math.max(2,r.height) * devicePixelRatio;
-    CX = W/2; CY = H/2 - 6*devicePixelRatio; R = Math.min(W,H)*0.30;
+    CX = W/2; CY = H/2 - 6*devicePixelRatio; R = Math.min(W,H)*TVR;
     if (!pts.length){
       for (let i=0;i<N;i++){
         const th = Math.acos(2*Math.random()-1), ph = Math.random()*Math.PI*2;
@@ -648,6 +681,13 @@ function orbBurst(){ burstT = 1; }
       }
     }
   }
+  // TV MODE V13 — grow the sphere and thicken the particle field on a wall display.
+  window.__brainScale = function(tv){
+    TVR = tv ? 0.42 : 0.30;
+    N = tv ? 560 : 320;
+    pts = [];        // resize() repopulates when the field is empty
+    resize();
+  };
   resize(); addEventListener('resize', resize);
   let rot = 0, t = 0, ringRot = 0, breathe = 0;
   function frame(){
@@ -656,7 +696,7 @@ function orbBurst(){ burstT = 1; }
     const listening = brainMode==='awake';
     const speed = brainMode==='off' ? 0.0012 : brainMode==='idle' ? 0.003 : brainMode==='think' ? 0.014 : brainMode==='speak' ? 0.009 : 0.006;
     rot += speed; ringRot += speed*1.6; breathe += 0.02;
-    const alpha = brainMode==='off' ? 0.32 : 1;
+    const alpha = ((brainMode==='off' && !window.__noDim) ? 0.32 : 1) * (window.__noDim ? 1.32 : 1);
     // pulse: mic amplitude when listening, sine undulation when speaking/thinking, gentle breathe when idle
     let pulse = 1;
     if (listening) pulse = 1 + 0.14*micLevel + 0.02*Math.sin(breathe);
@@ -690,7 +730,7 @@ function orbBurst(){ burstT = 1; }
       proj.push({x: CX + x3*sc, y: CY + y3, z: z3, sc, size:p.size});
     }
     const LINK = R*0.29;
-    ctx.lineWidth = fctx.lineWidth = devicePixelRatio*0.8;
+    ctx.lineWidth = fctx.lineWidth = devicePixelRatio*0.8*(window.__noDim ? 1.5 : 1);
     for (let i=0;i<proj.length;i++){
       for (let j=i+1;j<proj.length;j++){
         const dx=proj[i].x-proj[j].x, dy=proj[i].y-proj[j].y, d=Math.hypot(dx,dy);
@@ -707,7 +747,8 @@ function orbBurst(){ burstT = 1; }
       target.fillStyle=front ? 'rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(0.98*alpha)+')' : 'rgba(45,142,84,'+(0.68*alpha)+')';
       target.shadowColor='rgba('+accent[0]+','+accent[1]+','+accent[2]+','+(front?0.95:0.38)+')';
       target.shadowBlur=(front?7:3)*devicePixelRatio;
-      target.beginPath(); target.arc(q.x,q.y,(front?2.05:1.35)*q.size*devicePixelRatio*q.sc,0,Math.PI*2); target.fill();
+      var DOTK = window.__noDim ? 1.5 : 1;
+      target.beginPath(); target.arc(q.x,q.y,(front?2.05:1.35)*DOTK*q.size*devicePixelRatio*q.sc,0,Math.PI*2); target.fill();
       target.shadowBlur=0;
     }
     // bright core
@@ -2981,6 +3022,111 @@ loadFeed();
 
 // drop the boot-in animation class after first paint
 setTimeout(function(){ document.body.classList.remove('booting'); }, 1200);
+
+// ═══════════ TV MODE V13 ENGINE ═══════════
+// A 75" wall display needs three things a laptop does not: no OS taskbar,
+// text sized for ten feet, and a screen that refuses to sleep.
+var TV_KEY = 'pll_tv_mode';
+var tvOn = false, tvWakeLock = null;
+
+function tvZoomFor(w, h){
+  h = h || window.innerHeight;
+  // Height is the binding constraint: measured on a 3840x2160 panel, 2.0x clipped
+  // the bottom On Deck cards by 64px while 1.8x fit cleanly. So scale by whichever
+  // axis runs out first (1440x1180 design baseline) and hard-cap at 1.85.
+  return Math.max(1.0, Math.min(1.85, Math.min(w / 1440, h / 1180)));
+}
+
+async function tvWakeLockOn(){
+  try{
+    if ('wakeLock' in navigator && !tvWakeLock){
+      tvWakeLock = await navigator.wakeLock.request('screen');
+      tvWakeLock.addEventListener('release', function(){ tvWakeLock = null; });
+    }
+  }catch(e){ /* denied or unsupported — display may sleep, everything else works */ }
+}
+function tvWakeLockOff(){ try{ if (tvWakeLock) tvWakeLock.release(); }catch(e){} tvWakeLock = null; }
+
+function tvApply(on, opts){
+  opts = opts || {};
+  tvOn = !!on;
+  var b = document.body;
+  b.style.setProperty('--tvz', String(tvZoomFor(window.innerWidth, window.innerHeight)));
+  b.classList.toggle('tv', tvOn);
+  // Sam's rule: a TV never dims. Stand-down, dormant and night all stay bright.
+  b.classList.toggle('nodim', tvOn);
+  window.__noDim = tvOn;
+  var btn = document.getElementById('tvBtn');
+  if (btn){ btn.classList.toggle('on', tvOn); btn.textContent = tvOn ? '\uD83D\uDCFA TV ON' : '\uD83D\uDCFA TV'; }
+  if (window.__brainScale) window.__brainScale(tvOn);
+  setTimeout(function(){ window.dispatchEvent(new Event('resize')); }, 60);
+  if (tvOn) tvWakeLockOn(); else tvWakeLockOff();
+  if (!opts.skipStore){ try{ localStorage.setItem(TV_KEY, tvOn ? '1' : '0'); }catch(e){} }
+}
+
+function tvFullscreen(want){
+  try{
+    var el = document.documentElement;
+    if (want && !document.fullscreenElement){
+      (el.requestFullscreen || el.webkitRequestFullscreen || function(){}).call(el);
+    } else if (!want && document.fullscreenElement){
+      (document.exitFullscreen || document.webkitExitFullscreen || function(){}).call(document);
+    }
+  }catch(e){}
+}
+
+function toggleTv(){
+  var next = !tvOn;
+  tvApply(next);
+  tvFullscreen(next);          // must ride the same click to satisfy the browser
+  if (typeof log === 'function') log(next ? 'TV mode on \u2014 fullscreen, large scale' : 'TV mode off', 'hi');
+}
+
+function tvResumeGo(){
+  var o = document.getElementById('tvResume');
+  if (o) o.classList.remove('show');
+  tvApply(true);
+  tvFullscreen(true);
+}
+
+// Re-scale the zoom when the display or window geometry changes.
+addEventListener('resize', function(){
+  if (tvOn) document.body.style.setProperty('--tvz', String(tvZoomFor(window.innerWidth, window.innerHeight)));
+});
+
+// Esc drops fullscreen without silently lying about the button state.
+document.addEventListener('fullscreenchange', function(){
+  var btn = document.getElementById('tvBtn');
+  if (!document.fullscreenElement && tvOn && btn) btn.textContent = '\uD83D\uDCFA TV \u2014 tap';
+  else if (document.fullscreenElement && btn && tvOn) btn.textContent = '\uD83D\uDCFA TV ON';
+});
+
+// F toggles, but never while typing into Comms.
+addEventListener('keydown', function(e){
+  if (e.key !== 'f' && e.key !== 'F') return;
+  var a = document.activeElement;
+  if (a && (a.tagName === 'INPUT' || a.tagName === 'TEXTAREA' || a.isContentEditable)) return;
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  toggleTv();
+});
+
+// Restore a remembered preference. Layout and sphere scale apply immediately;
+// only the fullscreen call has to wait for a tap.
+(function tvBoot(){
+  var want = false;
+  try{ want = localStorage.getItem(TV_KEY) === '1'; }catch(e){}
+  if (!want) return;
+  tvApply(true, {skipStore:true});
+  var o = document.getElementById('tvResume');
+  if (o) o.classList.add('show');
+})();
+
 </script>
+<div class="tvresume" id="tvResume">
+  <h3>TV Mode</h3>
+  <p>Fullscreen needs one tap to arm</p>
+  <button onclick="tvResumeGo()">▶ GO FULLSCREEN</button>
+  <small>F toggles — Esc exits</small>
+</div>
 </body>
 </html>
