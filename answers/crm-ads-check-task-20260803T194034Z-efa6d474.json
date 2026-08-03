@@ -1,0 +1,9 @@
+{
+  "id": "crm-ads-check-task-20260803T194034Z-efa6d474",
+  "request_id": "crm-ads-check-task-20260803T194034Z-efa6d474",
+  "ts": "2026-08-03T19:41:59.131Z",
+  "agent": "CRM Developer",
+  "status": "completed",
+  "text": "CRM Developer created task #317 \"Sam: review Google Ads performance (new ads)\" — assignee Sam, due 2026-08-03, Medium, To Do. No duplicate existed. No other CRM changes. Consultant independent live verification still pending: CRM browser session signed out.",
+  "spoken_text": "The ads review task is created and assigned to you, due today. I have not been able to eyeball it myself yet because my CRM session is signed out."
+}
