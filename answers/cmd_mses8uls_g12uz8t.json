@@ -1,0 +1,10 @@
+{
+  "id": "cmd_mses8uls_g12uz8t",
+  "request_id": "cmd_mses8uls_g12uz8t",
+  "ts": "2026-08-04T15:13:33.761Z",
+  "agent": "PLL Consultant",
+  "status": "routed",
+  "interim": true,
+  "text": "ROUTED to CRM Developer: create task \"Sam: build Private Label Labs capabilities deck\" — owner Sam, due 2026-08-11, Medium, duplicate check first. Lane accepted (HTTP 200 success). CRM Developer has not reported back yet; a recovery request goes out automatically at the 30-minute mark. I cannot independently confirm the saved task yet because the CRM browser session is signed out — Sam needs to sign in once to restore it. Not closing this as done until the task is verified on the board.",
+  "spoken_text": "Your capabilities deck task is with the CRM Developer now, assigned to you and due next Tuesday. It has not confirmed back yet, so I am not calling it done. Also, my CRM session is signed out, so sign in once when you get a minute and I will verify the task myself."
+}
