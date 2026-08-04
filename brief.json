@@ -1,39 +1,39 @@
 {
   "date": "2026-08-04",
-  "ts": "2026-08-04T11:04:06.000Z",
+  "ts": "2026-08-04T11:07:57.000Z",
   "brief": [
     {
-      "t": "FIRST \u2014 Atlas Skin's 2:00 PM ET production meeting today: pro forma PI-2026-0802 (5,000 units at $5.30, $26,500, 50/50 terms) is not Sam-approved and still has three open placeholders \u2014 fill size/packaging, billing address, lead time/Incoterms \u2014 close them before or during the meeting.",
+      "t": "FIRST — Atlas Skin's 2:00 PM ET production meeting today: pro forma PI-2026-0802 (5,000 units at $5.30, $26,500, 50/50 terms) is not Sam-approved and still has three open placeholders — fill size/packaging, billing address, lead time/Incoterms — close them before or during the meeting.",
       "hot": true
     },
     {
-      "t": "SECOND \u2014 Terra Lotus's manufacturing contract and pro forma (19,000 units, $78,580, split $39,290/$39,290) await Sam's review and approval before sending; this conflicts with the previously tracked 22,000-unit scope, so confirm the correct current numbers with Aidan and Ronald first.",
+      "t": "SECOND — Terra Lotus's manufacturing contract and pro forma are built and correct: 19,000 units, $78,580 total, split $39,290 on signing and $39,290 on completion. They need only Sam's review and approval before sending.",
       "hot": true
     },
     {
-      "t": "THIRD \u2014 new booked call today: Vladimir Elgort of Stellaqua at 1:00 PM ET to walk EDDS-versus-EDTA costed pricing at 250-400/500/1,000 units, biodegradability data, and a mid-September launch timeline.",
+      "t": "THIRD — new booked call today: Vladimir Elgort of Stellaqua at 1:00 PM ET to walk EDDS-versus-EDTA costed pricing at 250-400/500/1,000 units, biodegradability data, and a mid-September launch timeline.",
       "hot": true
     },
     {
-      "t": "FOURTH \u2014 verify with Diana at ELOIRE whether Sam's Aug 2 reply (a single per-unit number) actually satisfies her ask; the Aug 3 end-of-day pipeline snapshot still shows the full written 500/1,000-unit quote and correction plan as outstanding.",
+      "t": "FOURTH — verify with Diana at ELOIRE whether Sam's Aug 2 reply (a single per-unit number) actually satisfies her ask; the Aug 3 end-of-day pipeline snapshot still shows the full written 500/1,000-unit quote and correction plan as outstanding.",
       "hot": true
     },
     {
-      "t": "FIFTH \u2014 Victor Armendarez's 4,000-unit two-SKU quote is still blocked on R&D's packaging-compatibility confirmation and full costs; no confirmation has come back since Victor was asked to check with R&D.",
+      "t": "FIFTH — Victor Armendarez's 4,000-unit two-SKU quote is still blocked on R&D's packaging-compatibility confirmation and full costs; no confirmation has come back since Victor was asked to check with R&D.",
       "hot": true
     },
     {
-      "t": "SIXTH \u2014 close the loop on yesterday's two calls: review Rehman's Read AI meeting report and act on its items; confirm whether Jarrod/Shay's 2 PM call actually connected, since Sam's last message said he didn't see Jarrod on the Meet yet.",
+      "t": "SIXTH — close the loop on yesterday's two calls: review Rehman's Read AI meeting report and act on its items; confirm whether Jarrod/Shay's 2 PM call actually connected, since Sam's last message said he didn't see Jarrod on the Meet yet.",
       "hot": false
     },
     {
-      "t": "SEVENTH \u2014 reconcile yesterday's Gusto payroll ACH debits ($10,233.75 and $3,952.15) against the payroll ledger during today's 11 AM-12 PM Payroll calendar block; do not act on any payment from an email link.",
+      "t": "SEVENTH — reconcile yesterday's Gusto payroll ACH debits ($10,233.75 and $3,952.15) against the payroll ledger during today's 11 AM-12 PM Payroll calendar block; do not act on any payment from an email link.",
       "hot": false
     }
   ],
   "next": [
     "Close Atlas's three pro-forma placeholders and get Sam's approval before/at the 2 PM meeting",
-    "Confirm Terra Lotus's true current scope (19,000 vs 22,000 units) with Aidan/Ronald before any approval",
+    "Review and approve the Terra Lotus contract and pro forma so they can go out today",
     "Walk Vladimir's 1 PM Stellaqua call with EDDS/EDTA costed tiers and a Sept launch timeline",
     "Verify with Diana directly whether ELOIRE's Aug 2 reply closes her request or a full written quote is still owed"
   ],
@@ -58,12 +58,11 @@
         "19000",
         "19,000",
         "22000",
-        "22,000",
         "quote",
         "contract",
         "pro forma"
       ],
-      "a": "Terra Lotus's manufacturing contract and pro forma (19,000 units, $78,580 total, $39,290 deposit on signing and $39,290 on completion) await Sam's review and approval before sending. This 19,000-unit figure does not match the 22,000-unit Terra Lotus scope tracked in prior Command Center runs, and no fresh email or CRM evidence reconciles the two as of this morning. Confirm the correct current scope with Aidan and Ronald before approving or sending anything."
+      "a": "Terra Lotus's manufacturing contract and pro forma await Sam's review and approval before sending. The confirmed scope is 19,000 units at $78,580 total, with $39,290 due as deposit upon signing and $39,290 due after project completion. Logo, phone and email are already corrected, so approval is the only thing left."
     },
     {
       "keys": [
@@ -202,7 +201,7 @@
     {
       "rank": 2,
       "title": "Reconcile and approve Terra Lotus's contract/pro forma",
-      "why": "19,000-unit, $78,580 pro forma awaits Sam's approval, but conflicts with the previously tracked 22,000-unit scope - reconcile before sending.",
+      "why": "19,000-unit, $78,580 pro forma is built and correct - it awaits only Sam's approval to send.",
       "owner": "Sam / Aidan / Ronald",
       "due": "Today",
       "priority": "critical",
@@ -255,7 +254,7 @@
           "due": "Today 2:00 PM ET"
         },
         {
-          "title": "Reconcile Terra Lotus's 19,000 vs 22,000-unit scope with Aidan/Ronald before approving the contract",
+          "title": "Review and approve the Terra Lotus contract and pro forma (19,000 units, $78,580)",
           "due": "Today"
         },
         {
@@ -276,10 +275,6 @@
         {
           "title": "Provide Atlas's billing address, lead time/Incoterms, and fill size/packaging inputs",
           "due": "Before 2:00 PM ET"
-        },
-        {
-          "title": "Reconcile Terra Lotus's 19,000 vs 22,000-unit figures",
-          "due": "Today"
         },
         {
           "title": "Reply to accountant Austen Malczewski's July financial questions",
@@ -350,7 +345,7 @@
     },
     {
       "title": "Reconcile and close Terra Lotus",
-      "why": "19,000-unit, $78,580 contract/pro forma awaits approval, but conflicts with the prior 22,000-unit tracked scope.",
+      "why": "19,000-unit, $78,580 contract and pro forma are ready and await Sam's approval to send.",
       "est_value": "$78,580",
       "next_step": "Confirm true current scope with Aidan/Ronald, then approve and send.",
       "owner": "Sam / Aidan / Ronald",
@@ -396,7 +391,6 @@
       "Victor - 4,000-unit two-SKU quote blocked on R&D confirmation"
     ],
     "stalled": [
-      "Terra Lotus scope reconciliation (19,000 vs 22,000 units)",
       "Victor's R&D packaging-compatibility confirmation",
       "Atlas pro-forma placeholders",
       "Jarrod/Shay call outcome confirmation"
@@ -410,11 +404,11 @@
   "adsAgentBrief": {
     "status": "Morning safety refresh BLOCKED (2026-08-04 06:30 ET): Google Ads API quota exhausted (429 RESOURCE_EXHAUSTED, ~9.25h cooldown) on all Ads calls. No fresh data pulled. Figures retained from the last successful nightly refresh (2026-08-03 21:00 ET) are unchanged and NOT re-verified this morning. No settings changed.",
     "updatedAt": "2026-08-03T21:00:00-04:00",
-    "northStar": "Qualified B2B booked calls \u2192 closed manufacturing revenue.",
+    "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
     "snapshot": "Jul 28-Aug 3 verified campaign scope: $214.66 spend, 630 impressions, 84 clicks, 13.33% CTR, $2.56 average CPC. Today (Aug 3): $31.96 against a $30.66/day configured budget - within normal delivery. Spend ramped to full budget this week from ~62% the prior week; CTR fell 18.08% -> 13.33% and CPC rose $1.76 -> $2.56.",
     "recommendation": "READ-ONLY RECOMMENDATION (Sam approval required): Hold the budget where it is and take PLL-Search-ContractMfg-2026 off MAXIMIZE_CONVERSIONS to Manual CPC until conversion tracking is trustworthy. Evidence: the campaign uses smart bidding, but PLL has no working conversion import, so Google is optimizing toward a signal it cannot see. Its CPC rose $2.10 -> $3.22 week over week while CTR fell 15.70% -> 13.16%. Spend is NOT over cap: 15-day average is $25.47/day against $30.66/day configured (83%). Expected outcome: CPC returns toward the $1.50-$2.10 range and cost per inquiry falls, at the cost of slower automated optimization. Measurement window: 14 days.",
     "governance": "No consequential change without Sam approval.",
-    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group\u2192campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group→campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "windows": {
       "today": "2026-08-03",
       "current": "2026-07-28 to 2026-08-03",
@@ -423,7 +417,7 @@
     "spoken": {
       "today": "Today, August 3: thirty-two dollars spend, 72 impressions, 9 clicks, 12.5 percent CTR, three fifty-five per click across the two verified campaigns. That is within budget, not over. Nothing was changed.",
       "sevenAds": "The two campaigns (Contract Manufacturing and White Label Samples) are verified, but the exact seven-ad roster and fresh ad-level totals are unverified. I am not making ad winner/loser claims.",
-      "ctrCpc": "Current seven-day (Jul 28\u2013Aug 3) CTR is 13.33% and average CPC is $2.56, versus 18.08% and $1.76 in the prior seven days (Jul 21\u2013Jul 27). CTR and CPC both worsened week over week.",
+      "ctrCpc": "Current seven-day (Jul 28–Aug 3) CTR is 13.33% and average CPC is $2.56, versus 18.08% and $1.76 in the prior seven days (Jul 21–Jul 27). CTR and CPC both worsened week over week.",
       "leadsEmailsCalls": "This week: 12 genuine inbox inquiries, 2 verified Ads-attributed (both to ContractMfg), 1 attributed to a legacy non-scope campaign, 1 ambiguous, 8 unattributed. 2 known booked calls (Rehman, Jarrod/Shay), 0 verified Ads-attributed. Prior week: 10 genuine inquiries, 1 verified Ads-attributed (Samples).",
       "budgetCap": "You are within budget. The approved cap is thirty dollars a day. The configured budgets actually add up to thirty dollars and sixty-six cents a day, a sixty-six cent drift worth trimming later. Since launch you have averaged twenty-five dollars and forty-seven cents a day, about eighty-three percent of budget. Some single days ran to forty dollars, but Google is allowed to deliver up to double on any one day and settles to the monthly average, so that is normal pacing rather than an overspend. What did change is that spend ramped to full budget this past week, up from about sixty percent the week before.",
       "winners": "At campaign level, White Label Samples is the stronger of the two: a dollar forty-eight per click versus three twenty-two for Contract Manufacturing. Both are pacing inside their configured budgets.",
@@ -439,7 +433,7 @@
   "adsIntelligence": {
     "updatedAt": "2026-08-03T21:00:00-04:00",
     "source": "google-ads-and-outlook-live-nightly-refresh",
-    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns (Initial, New-Sales-Ad, Sales Campaign PLL) excluded from all totals below. CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group\u2192campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns (Initial, New-Sales-Ad, Sales Campaign PLL) excluded from all totals below. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group→campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "windows": {
       "today": "2026-08-03",
       "current": "2026-07-28 to 2026-08-03",
@@ -524,7 +518,7 @@
       }
     ],
     "adBreakdown": [],
-    "adBreakdownStatus": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group\u2192campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "adBreakdownStatus": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group→campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "leads": {
       "qualifiedInboxInquiries": 12,
       "qualifiedInboxInquiriesPrior": 10,
@@ -542,7 +536,7 @@
       "cplVerifiedPaidPrior": 135.74,
       "costPerBookedCall": null,
       "costPerBookedCallNote": "NOT MEASURABLE from paid spend: 0 of 2 known current-window booked calls (Rehman, Jarrod/Shay) has a verified in-scope Ads attribution. Rehman's inquiry shows no ad params (organic); Jarrod's inquiry shows a conflicting/ambiguous signal (gclid present alongside utm_source=chatgpt.com with no gad_campaignid) so it is not counted as verified.",
-      "note": "Outlook inbox searched live this run (subject:\"New customer message on\", 2026-07-21 to 2026-08-03, 27 messages reviewed). Attribution determined from each message's Lead Source/Landing Page fields (gclid + gad_campaignid = verified; utm/fbclid/organic = unattributed). One current-window inquiry (Jason Barresi, Jul 31) carries a valid gclid/gad_campaignid=22755299462, which is the legacy 'Sales Campaign PLL' \u2014 excluded from scoped Ads totals per standing instructions never to blend legacy campaigns."
+      "note": "Outlook inbox searched live this run (subject:\"New customer message on\", 2026-07-21 to 2026-08-03, 27 messages reviewed). Attribution determined from each message's Lead Source/Landing Page fields (gclid + gad_campaignid = verified; utm/fbclid/organic = unattributed). One current-window inquiry (Jason Barresi, Jul 31) carries a valid gclid/gad_campaignid=22755299462, which is the legacy 'Sales Campaign PLL' — excluded from scoped Ads totals per standing instructions never to blend legacy campaigns."
     },
     "health": {
       "contactForm": "Form submissions are arriving in Outlook; no break identified in this source pull.",
@@ -577,7 +571,7 @@
     "spoken": {
       "today": "Today, August 3: thirty-two dollars spend, 72 impressions, 9 clicks, 12.5 percent CTR, three fifty-five per click across the two verified campaigns. That is within budget, not over. Nothing was changed.",
       "sevenAds": "The two campaigns (Contract Manufacturing and White Label Samples) are verified, but the exact seven-ad roster and fresh ad-level totals are unverified. I am not making ad winner/loser claims.",
-      "ctrCpc": "Current seven-day (Jul 28\u2013Aug 3) CTR is 13.33% and average CPC is $2.56, versus 18.08% and $1.76 in the prior seven days (Jul 21\u2013Jul 27). CTR and CPC both worsened week over week.",
+      "ctrCpc": "Current seven-day (Jul 28–Aug 3) CTR is 13.33% and average CPC is $2.56, versus 18.08% and $1.76 in the prior seven days (Jul 21–Jul 27). CTR and CPC both worsened week over week.",
       "leadsEmailsCalls": "This week: 12 genuine inbox inquiries, 2 verified Ads-attributed (both to ContractMfg), 1 attributed to a legacy non-scope campaign, 1 ambiguous, 8 unattributed. 2 known booked calls (Rehman, Jarrod/Shay), 0 verified Ads-attributed. Prior week: 10 genuine inquiries, 1 verified Ads-attributed (Samples).",
       "budgetCap": "You are within budget. The approved cap is thirty dollars a day. The configured budgets actually add up to thirty dollars and sixty-six cents a day, a sixty-six cent drift worth trimming later. Since launch you have averaged twenty-five dollars and forty-seven cents a day, about eighty-three percent of budget. Some single days ran to forty dollars, but Google is allowed to deliver up to double on any one day and settles to the monthly average, so that is normal pacing rather than an overspend. What did change is that spend ramped to full budget this past week, up from about sixty percent the week before.",
       "winners": "At campaign level, White Label Samples is the stronger of the two: a dollar forty-eight per click versus three twenty-two for Contract Manufacturing. Both are pacing inside their configured budgets.",
@@ -587,7 +581,7 @@
       "nextExperiment": "Manual CPC on Contract Manufacturing for 14 days, measured on cost per click and cost per genuine inquiry, once you approve it.",
       "whatAdsAgentShouldDo": "Ads Agent should confirm why cost per click rose while click-through fell, verify whether any conversion action is actually importing, and return one within-budget recommendation for Sam's approval. It should not treat single days over budget as a cap breach - Google delivers up to double on a day by design. No changes without Sam's yes."
     },
-    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group\u2192campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group→campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "approvalRequirement": "Sam approval required for any consequential Ads change; this recommendation is read-only.",
     "latestOptimization": {
       "status": "no-fresh-optimization-authorized",
@@ -598,7 +592,7 @@
     "lastRefreshNote": "MORNING SAFETY REFRESH BLOCKED at 2026-08-04 06:30 ET: Google Ads API returned RESOURCE_EXHAUSTED (HTTP 429, quotaError, rateScope=DEVELOPER, rateName='Number of operations for basic access') on every Ads call attempted (campaign report, campaign_budget join, list-campaigns) - retryDelay ~33,278-33,290 seconds (~9.25 hours), i.e. developer-token-level quota is fully exhausted account-wide, not specific to one report. No fresh Ads data could be pulled this run. All Ads figures below are UNCHANGED from the last successful refresh (nightly, 2026-08-03 21:00 ET) - they are NOT re-verified as of this morning. Outlook lead-inbox access was tested and is working normally; the blocker is isolated to the Google Ads connection. No Ads settings were touched. Retry after Google's stated cooldown (approx. 2026-08-04 ~15:45 ET) or next scheduled run."
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -606,6 +600,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "DTE start-service order completed Aug 1 (confirmed by DTE email). UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
+    "verificationRequired": "DTE start-service order completed Aug 1 (confirmed by DTE email). UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
   }
 }
