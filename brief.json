@@ -411,65 +411,64 @@
     "note": "CRM was not re-verified in this morning's refresh (no login attempted per instructions — read-only, no credentials). Figures below are the last verified snapshot from Aug 1 live CRM dashboard: 20 active deals, 20 production projects, $1,327,800 pipeline, and $57,454.99 deposits. Current email/calendar evidence (Aug 3) confirms Rehman's 10:00 AM ET and Jarrod/Shay's 2:00 PM ET calls are booked today, Atlas's Tue Aug 4 2:00 PM ET meeting is accepted by Ryne Bell, and Diana/ELOIRE expects her quote today."
   },
   "adsAgentBrief": {
-    "status": "Nightly-equivalent refresh partial success — fresh Google Ads campaign-level data pulled for both verified campaigns; ad-level/search-term reporting and Outlook lead search were out of this run's approved tool scope. New cap breach identified on Aug 1 ($40.82). No settings changed.",
-    "updatedAt": "2026-08-02T21:04:32-04:00",
+    "status": "Nightly refresh success — fresh Google Ads campaign-level data pulled for both verified campaigns; Outlook lead inbox searched and re-attributed live. NEW cap breach identified today (Aug 3, $31.96) plus a new weekly-cap breach ($214.66 vs $210). No settings changed.",
+    "updatedAt": "2026-08-03T21:00:00-04:00",
     "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
-    "snapshot": "Jul 27–Aug 2 verified campaign scope: $199.76 spend, 613 impressions, 88 clicks, 14.36% CTR, $2.27 average CPC. Aug 2 (partial) through this pull: $13.75 spend vs $30 approved cap.",
-    "recommendation": "READ-ONLY ALERT: three of the last seven days breached the approved $30/day cap (Jul 28 $38.40, Jul 30 $34.87, Aug 1 $40.82 — the last is a new breach not previously known). Escalate to Sam and investigate with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
+    "snapshot": "Jul 28–Aug 3 verified campaign scope: $214.66 spend, 630 impressions, 84 clicks, 13.33% CTR, $2.56 average CPC. Today (Aug 3): $31.96 vs $30 approved cap — breached.",
+    "recommendation": "READ-ONLY ALERT: cap and CPL are both broken. 4 of the last 7 days breached the $30/day cap (Jul 28 $38.40, Jul 30 $34.87, Aug 1 $40.82, and TODAY Aug 3 $31.96 — a new breach), and current 7-day spend ($214.66) exceeds the $210/week cap. Verified Ads-attributed CPL is $107.33 this week and $135.74 last week — both exceed the $75 escalation threshold two consecutive weeks running. PLL-Search-ContractMfg-2026 is driving most of the overage ($167.28 of $214.66, vs its $20/day=$140/week sub-budget). Recommend Sam review why ContractMfg is consistently serving over its daily sub-cap and reconcile configured vs approved budgets before any other change. Hold all budgets, bids, ads, keywords, targeting, and landing pages unchanged pending Sam approval.",
     "governance": "No consequential change without Sam approval.",
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting is only approved without a campaign/ad-group join in this run, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group→campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "windows": {
-      "today": "2026-08-02",
-      "current": "2026-07-27 to 2026-08-02",
-      "prior": "2026-07-20 to 2026-07-26"
+      "today": "2026-08-03",
+      "current": "2026-07-28 to 2026-08-03",
+      "prior": "2026-07-21 to 2026-07-27"
     },
     "spoken": {
-      "today": "August 2 (partial day) in the verified two-campaign scope: $13.75, 54 impressions, 10 clicks, 18.52% CTR, $1.38 CPC. Spend is below the approved $30 daily cap today so far; no settings were changed.",
-      "sevenAds": "The two campaigns are verified, but the exact seven-ad roster and fresh ad-level totals are unverified. I am not making ad winner/loser claims.",
-      "ctrCpc": "Current seven-day (Jul 27–Aug 2) CTR is 14.36% and average CPC is $2.27, versus 16.04% and $1.88 in the prior seven days (Jul 20–Jul 26).",
-      "leadsEmailsCalls": "UNCHANGED THIS RUN — Outlook lead-inbox search was not in scope for this refresh; last verified lead/booking figures preserved from prior cache. The current window has 14 genuine form inquiries after deduplicating one duplicate submission and 5 distinct booked calls. Three inquiries have verified Google-click evidence; 11 are unattributed. No booked call is paid-attributed, so paid cost per booked call is not measurable.",
-      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210 week. Three of the last seven days breached that cap: Jul 28 ($38.40), Jul 30 ($34.87), and a newly identified Aug 1 breach ($40.82). No budget change was made.",
-      "winners": "At campaign level only, PLL-Search-Samples-2026 led current 7-day CTR (14.67%, 33 clicks) versus PLL-Search-ContractMfg-2026 (14.18%, 55 clicks); no ad-level winner is verified.",
+      "today": "Today, Aug 3: $31.96 spend, 72 impressions, 9 clicks, 12.5% CTR, $3.55 CPC across the two verified campaigns. Today breached the $30 daily cap by $1.96. No settings were changed.",
+      "sevenAds": "The two campaigns (Contract Manufacturing and White Label Samples) are verified, but the exact seven-ad roster and fresh ad-level totals are unverified. I am not making ad winner/loser claims.",
+      "ctrCpc": "Current seven-day (Jul 28–Aug 3) CTR is 13.33% and average CPC is $2.56, versus 18.08% and $1.76 in the prior seven days (Jul 21–Jul 27). CTR and CPC both worsened week over week.",
+      "leadsEmailsCalls": "This week: 12 genuine inbox inquiries, 2 verified Ads-attributed (both to ContractMfg), 1 attributed to a legacy non-scope campaign, 1 ambiguous, 8 unattributed. 2 known booked calls (Rehman, Jarrod/Shay), 0 verified Ads-attributed. Prior week: 10 genuine inquiries, 1 verified Ads-attributed (Samples).",
+      "budgetCap": "Approved cap is $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210/week. 4 of the last 7 days breached the daily cap, including today, and the current week breached the $210 weekly cap ($214.66). No budget change was made.",
+      "winners": "At campaign level only, PLL-Search-Samples-2026 is pacing within its sub-budget with a lower CPC ($1.48); PLL-Search-ContractMfg-2026 is running over its $20/day sub-cap and driving the combined-cap breaches. No ad-level winner is verified.",
       "waste": "Search-term data was not pulled in this refresh; no waste claim is made.",
-      "optimization": "Do not optimize from this refresh. Escalate the new Aug 1 cap breach plus the existing Jul 28/30 breaches to Sam and reconcile with Google Ads support/logs; hold settings unchanged.",
-      "suggestions": "Read-only recommendation: alert Sam to three cap breaches in the last seven days, including a new one on Aug 1, then obtain Google Ads support/log evidence. Preserve settings until approval.",
-      "nextExperiment": "None: cap governance and reporting scope must be resolved before responsibly selecting an experiment.",
-      "whatAdsAgentShouldDo": "Verify the configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
+      "optimization": "Do not optimize from this refresh. Escalate the cap breaches (daily and weekly) and the two-consecutive-week CPL breach ($107.33 this week, $135.74 prior) to Sam; hold settings unchanged.",
+      "suggestions": "Read-only recommendation: alert Sam to 4 cap-breach days including today, a weekly cap breach, and CPL over $75 for two straight weeks, driven mainly by ContractMfg. Reconcile configured vs approved budgets before any other action.",
+      "nextExperiment": "None: cap governance must be resolved before responsibly selecting an experiment.",
+      "whatAdsAgentShouldDo": "Verify ContractMfg's configured daily budget against its approved $20/day sub-cap, reconcile the 4 over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
     },
-    "lastRefreshAttemptAt": "2026-08-03T06:32:33-04:00",
-    "lastRefreshStatus": "blocked",
-    "lastRefreshFailure": "MORNING SAFETY CHECK (2026-08-03 06:30 ET): Google Ads reporting API returned RESOURCE_EXHAUSTED (developer-token quota) on repeated attempts (retry-after ~9.25h from ~10:32 UTC). No fresh Google Ads campaign/ad data could be pulled for today (2026-08-02, prior completed day), current 7-day (2026-07-27 to 2026-08-02), or prior 7-day (2026-07-20 to 2026-07-26) windows this run. Outlook lead-inbox search succeeded (30 messages reviewed, 2026-07-23 to 2026-08-01) but was not correlated against fresh Ads data this run, so lead/CPL/booked-call figures below remain the last-verified nightly cache (2026-08-02T21:04:32-04:00) and were NOT re-verified this run. No Ads settings, budgets, bids, keywords, targeting, or creative were changed. Live brief.json from the prior nightly run (2026-08-02T21:04:32-04:00) was confirmed already published and current, so no missed-nightly-publication condition existed; this run only logs the blocked safety-check attempt."
+    "lastRefreshAttemptAt": "2026-08-03T21:00:00-04:00",
+    "lastRefreshStatus": "success"
   },
   "adsIntelligence": {
-    "updatedAt": "2026-08-02T21:04:32-04:00",
+    "updatedAt": "2026-08-03T21:00:00-04:00",
     "source": "google-ads-and-outlook-live-nightly-refresh",
-    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns excluded. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED: exact ad IDs and fresh ad-level performance are not provable from the available scoped reporting.",
+    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns (Initial, New-Sales-Ad, Sales Campaign PLL) excluded from all totals below. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group→campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "windows": {
-      "today": "2026-08-02",
-      "current": "2026-07-27 to 2026-08-02",
-      "prior": "2026-07-20 to 2026-07-26"
+      "today": "2026-08-03",
+      "current": "2026-07-28 to 2026-08-03",
+      "prior": "2026-07-21 to 2026-07-27"
     },
     "today": {
-      "cost": 13.75,
-      "impressions": 54,
-      "clicks": 10,
-      "ctr": 18.52,
-      "cpc": 1.38,
-      "note": "partial-day campaign-scope total from nightly-equivalent pull"
+      "cost": 31.96,
+      "impressions": 72,
+      "clicks": 9,
+      "ctr": 12.5,
+      "cpc": 3.55,
+      "note": "CAP BREACH: today's spend $31.96 exceeds the $30/day approved combined cap."
     },
     "current": {
-      "cost": 199.76,
-      "impressions": 613,
-      "clicks": 88,
-      "ctr": 14.36,
-      "cpc": 2.27
+      "cost": 214.66,
+      "impressions": 630,
+      "clicks": 84,
+      "ctr": 13.33,
+      "cpc": 2.56
     },
     "prior": {
-      "cost": 144.39,
-      "impressions": 480,
+      "cost": 135.74,
+      "impressions": 426,
       "clicks": 77,
-      "ctr": 16.04,
-      "cpc": 1.88
+      "ctr": 18.08,
+      "cpc": 1.76
     },
     "campaignBreakdown": [
       {
@@ -478,25 +477,25 @@
         "status": "ENABLED",
         "dailyBudget": 20,
         "today": {
-          "cost": 3.33,
-          "impressions": 23,
-          "clicks": 3,
-          "ctr": 13.04,
-          "cpc": 1.11
+          "cost": 26.05,
+          "impressions": 44,
+          "clicks": 5,
+          "ctr": 11.36,
+          "cpc": 5.21
         },
         "current": {
-          "cost": 150.83,
-          "impressions": 388,
-          "clicks": 55,
-          "ctr": 14.18,
-          "cpc": 2.74
+          "cost": 167.28,
+          "impressions": 395,
+          "clicks": 52,
+          "ctr": 13.16,
+          "cpc": 3.22
         },
         "prior": {
-          "cost": 86.5,
-          "impressions": 299,
-          "clicks": 38,
-          "ctr": 12.71,
-          "cpc": 2.28
+          "cost": 73.35,
+          "impressions": 223,
+          "clicks": 35,
+          "ctr": 15.7,
+          "cpc": 2.1
         }
       },
       {
@@ -505,95 +504,100 @@
         "status": "ENABLED",
         "dailyBudget": 10,
         "today": {
-          "cost": 10.42,
-          "impressions": 31,
-          "clicks": 7,
-          "ctr": 22.58,
-          "cpc": 1.49
+          "cost": 5.91,
+          "impressions": 28,
+          "clicks": 4,
+          "ctr": 14.29,
+          "cpc": 1.48
         },
         "current": {
-          "cost": 48.93,
-          "impressions": 225,
-          "clicks": 33,
-          "ctr": 14.67,
+          "cost": 47.38,
+          "impressions": 235,
+          "clicks": 32,
+          "ctr": 13.62,
           "cpc": 1.48
         },
         "prior": {
-          "cost": 57.89,
-          "impressions": 181,
-          "clicks": 39,
-          "ctr": 21.55,
-          "cpc": 1.48
+          "cost": 62.39,
+          "impressions": 203,
+          "clicks": 42,
+          "ctr": 20.69,
+          "cpc": 1.49
         }
       }
     ],
     "adBreakdown": [],
-    "adBreakdownStatus": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting is only approved without a campaign/ad-group join in this run, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "adBreakdownStatus": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group→campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "leads": {
-      "qualifiedInboxInquiries": 14,
-      "verifiedAdsAttributed": 3,
-      "bookedCalls": 5,
-      "unattributed": 11,
-      "ambiguousPaidSignal": 0,
-      "cplBlended": 11.8,
-      "cplVerifiedPaid": 55.07,
-      "cplVerifiedPaidSamplesOnly": 49.13,
+      "qualifiedInboxInquiries": 12,
+      "qualifiedInboxInquiriesPrior": 10,
+      "verifiedAdsAttributed": 2,
+      "verifiedAdsAttributedPrior": 1,
+      "adsAttributedOutOfScopeLegacy": 1,
+      "ambiguousPaidSignal": 1,
+      "unattributed": 8,
+      "unattributedPrior": 9,
+      "bookedCalls": 2,
+      "bookedCallsVerifiedAdsAttributed": 0,
+      "cplBlended": 17.89,
+      "cplBlendedPrior": 13.57,
+      "cplVerifiedPaid": 107.33,
+      "cplVerifiedPaidPrior": 135.74,
       "costPerBookedCall": null,
-      "costPerBookedCallNote": "NOT MEASURABLE from paid spend: 0 of 5 distinct current-window booked calls has a verified Ads attribution. Raw blended spend per booked call ($33.04) is not attribution-safe.",
-      "note": "UNCHANGED THIS RUN — Outlook lead-inbox search was not in scope for this refresh; last verified lead/booking figures preserved from prior cache."
+      "costPerBookedCallNote": "NOT MEASURABLE from paid spend: 0 of 2 known current-window booked calls (Rehman, Jarrod/Shay) has a verified in-scope Ads attribution. Rehman's inquiry shows no ad params (organic); Jarrod's inquiry shows a conflicting/ambiguous signal (gclid present alongside utm_source=chatgpt.com with no gad_campaignid) so it is not counted as verified.",
+      "note": "Outlook inbox searched live this run (subject:\"New customer message on\", 2026-07-21 to 2026-08-03, 27 messages reviewed). Attribution determined from each message's Lead Source/Landing Page fields (gclid + gad_campaignid = verified; utm/fbclid/organic = unattributed). One current-window inquiry (Jason Barresi, Jul 31) carries a valid gclid/gad_campaignid=22755299462, which is the legacy 'Sales Campaign PLL' — excluded from scoped Ads totals per standing instructions never to blend legacy campaigns."
     },
     "health": {
       "contactForm": "Form submissions are arriving in Outlook; no break identified in this source pull.",
-      "attributionCapture": "Current-window form review found 3 distinct GCLID-backed inquiries (one explicitly names Contract Manufacturing campaign 24049588003 and one explicitly names Samples campaign 24040031889); one duplicate form was deduplicated. Coverage remains thin: 11 of 14 genuine inquiries are unattributed.",
+      "attributionCapture": "Current-window review found 2 distinct GCLID-backed inquiries verified to the two in-scope campaigns (Gloria Abanga and Vladimir Elgort, both gad_campaignid=24049588003/ContractMfg), 1 GCLID-backed inquiry attributed to the legacy Sales Campaign PLL (out of scope), and 1 ambiguous GCLID+chatgpt-utm signal. Coverage remains thin: 8 of 12 genuine inquiries this week are unattributed. Prior week: 1 of 10 genuine inquiries verified (Tiara, gad_campaignid=24040031889/Samples).",
       "landingPages": "No landing-page failure reported by available source data; this refresh did not perform live URL testing.",
-      "dailyCapStatus": "CAP BREACH: 3 of the last 7 days exceeded the approved $30/day cap — 2026-07-28 ($38.40), 2026-07-30 ($34.87), 2026-08-01 ($40.82). Today (2026-08-02, partial) is at $13.75 of $30, within cap so far. No settings were changed.",
-      "weeklyCapStatus": "Current 7-day spend $199.76 of approved $210/week (95.1%)."
+      "dailyCapStatus": "CAP BREACH: 4 of the last 7 days exceeded the approved $30/day cap — 2026-07-28 ($38.40), 2026-07-30 ($34.87), 2026-08-01 ($40.82), and TODAY 2026-08-03 ($31.96, a new breach). No settings were changed.",
+      "weeklyCapStatus": "CAP BREACH: current 7-day spend $214.66 exceeds the approved $210/week cap (102.2%)."
     },
     "best": {
       "level": "campaign (fresh)",
       "name": "PLL-Search-Samples-2026",
-      "metric": "Current 7-day CTR 14.67% and 33 clicks at CPC $1.48.",
+      "metric": "Current 7-day CTR 13.62% at CPC $1.48, within its $10/day sub-budget pace ($47.38 of $70/week).",
       "note": "Campaign comparison only; no conversion or ad-level winner claim."
     },
     "worst": {
       "level": "campaign (fresh)",
       "name": "PLL-Search-ContractMfg-2026",
-      "metric": "Current 7-day CTR 14.18% and 55 clicks at CPC $2.74.",
+      "metric": "Current 7-day CPC $3.22 (highest of the two) and $167.28 spend vs its $20/day=$140/week sub-budget (119.5% of its own sub-cap) — the primary driver of the combined-cap breaches.",
       "note": "Campaign comparison only; no conversion or ad-level winner claim."
     },
     "watchItem": {
-      "name": "Daily cap breaches",
-      "metric": "3 of the last 7 days exceeded the $30/day approved cap: 2026-07-28 ($38.40), 2026-07-30 ($34.87), 2026-08-01 ($40.82).",
-      "action": "Escalate to Sam; investigate configured budgets/serving with Google Ads support; make no changes."
+      "name": "Daily and weekly cap breaches, driven by ContractMfg overspend",
+      "metric": "4 of the last 7 days exceeded the $30/day approved cap (Jul 28 $38.40, Jul 30 $34.87, Aug 1 $40.82, Aug 3 $31.96); current 7-day total $214.66 exceeds the $210/week cap.",
+      "action": "Escalate to Sam; reconcile ContractMfg's configured budget/bids against its $20/day approved sub-cap; make no changes."
     },
     "waste": {
       "inferred": false,
       "note": "Search-term data was not pulled in this refresh (out of approved tool scope this run); no waste claim is made."
     },
-    "recommendation": "READ-ONLY ALERT: three of the last seven days breached the approved $30/day cap (Jul 28 $38.40, Jul 30 $34.87, Aug 1 $40.82 — the last is a new breach not previously known). Escalate to Sam and investigate with Google Ads support/logs. Hold all budgets, bids, ads, keywords, targeting, landing pages, and settings unchanged pending Sam approval.",
+    "recommendation": "READ-ONLY ALERT: cap and CPL are both broken. 4 of the last 7 days breached the $30/day cap (Jul 28 $38.40, Jul 30 $34.87, Aug 1 $40.82, and TODAY Aug 3 $31.96 — a new breach), and current 7-day spend ($214.66) exceeds the $210/week cap. Verified Ads-attributed CPL is $107.33 this week and $135.74 last week — both exceed the $75 escalation threshold two consecutive weeks running. PLL-Search-ContractMfg-2026 is driving most of the overage ($167.28 of $214.66, vs its $20/day=$140/week sub-budget). Recommend Sam review why ContractMfg is consistently serving over its daily sub-cap and reconcile configured vs approved budgets before any other change. Hold all budgets, bids, ads, keywords, targeting, and landing pages unchanged pending Sam approval.",
     "spoken": {
-      "today": "August 2 (partial day) in the verified two-campaign scope: $13.75, 54 impressions, 10 clicks, 18.52% CTR, $1.38 CPC. Spend is below the approved $30 daily cap today so far; no settings were changed.",
-      "sevenAds": "The two campaigns are verified, but the exact seven-ad roster and fresh ad-level totals are unverified. I am not making ad winner/loser claims.",
-      "ctrCpc": "Current seven-day (Jul 27–Aug 2) CTR is 14.36% and average CPC is $2.27, versus 16.04% and $1.88 in the prior seven days (Jul 20–Jul 26).",
-      "leadsEmailsCalls": "UNCHANGED THIS RUN — Outlook lead-inbox search was not in scope for this refresh; last verified lead/booking figures preserved from prior cache. The current window has 14 genuine form inquiries after deduplicating one duplicate submission and 5 distinct booked calls. Three inquiries have verified Google-click evidence; 11 are unattributed. No booked call is paid-attributed, so paid cost per booked call is not measurable.",
-      "budgetCap": "Approved cap remains $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210 week. Three of the last seven days breached that cap: Jul 28 ($38.40), Jul 30 ($34.87), and a newly identified Aug 1 breach ($40.82). No budget change was made.",
-      "winners": "At campaign level only, PLL-Search-Samples-2026 led current 7-day CTR (14.67%, 33 clicks) versus PLL-Search-ContractMfg-2026 (14.18%, 55 clicks); no ad-level winner is verified.",
+      "today": "Today, Aug 3: $31.96 spend, 72 impressions, 9 clicks, 12.5% CTR, $3.55 CPC across the two verified campaigns. Today breached the $30 daily cap by $1.96. No settings were changed.",
+      "sevenAds": "The two campaigns (Contract Manufacturing and White Label Samples) are verified, but the exact seven-ad roster and fresh ad-level totals are unverified. I am not making ad winner/loser claims.",
+      "ctrCpc": "Current seven-day (Jul 28–Aug 3) CTR is 13.33% and average CPC is $2.56, versus 18.08% and $1.76 in the prior seven days (Jul 21–Jul 27). CTR and CPC both worsened week over week.",
+      "leadsEmailsCalls": "This week: 12 genuine inbox inquiries, 2 verified Ads-attributed (both to ContractMfg), 1 attributed to a legacy non-scope campaign, 1 ambiguous, 8 unattributed. 2 known booked calls (Rehman, Jarrod/Shay), 0 verified Ads-attributed. Prior week: 10 genuine inquiries, 1 verified Ads-attributed (Samples).",
+      "budgetCap": "Approved cap is $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210/week. 4 of the last 7 days breached the daily cap, including today, and the current week breached the $210 weekly cap ($214.66). No budget change was made.",
+      "winners": "At campaign level only, PLL-Search-Samples-2026 is pacing within its sub-budget with a lower CPC ($1.48); PLL-Search-ContractMfg-2026 is running over its $20/day sub-cap and driving the combined-cap breaches. No ad-level winner is verified.",
       "waste": "Search-term data was not pulled in this refresh; no waste claim is made.",
-      "optimization": "Do not optimize from this refresh. Escalate the new Aug 1 cap breach plus the existing Jul 28/30 breaches to Sam and reconcile with Google Ads support/logs; hold settings unchanged.",
-      "suggestions": "Read-only recommendation: alert Sam to three cap breaches in the last seven days, including a new one on Aug 1, then obtain Google Ads support/log evidence. Preserve settings until approval.",
-      "nextExperiment": "None: cap governance and reporting scope must be resolved before responsibly selecting an experiment.",
-      "whatAdsAgentShouldDo": "Verify the configured cap versus approved cap, reconcile the two over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
+      "optimization": "Do not optimize from this refresh. Escalate the cap breaches (daily and weekly) and the two-consecutive-week CPL breach ($107.33 this week, $135.74 prior) to Sam; hold settings unchanged.",
+      "suggestions": "Read-only recommendation: alert Sam to 4 cap-breach days including today, a weekly cap breach, and CPL over $75 for two straight weeks, driven mainly by ContractMfg. Reconcile configured vs approved budgets before any other action.",
+      "nextExperiment": "None: cap governance must be resolved before responsibly selecting an experiment.",
+      "whatAdsAgentShouldDo": "Verify ContractMfg's configured daily budget against its approved $20/day sub-cap, reconcile the 4 over-cap days, and return one evidence-backed within-cap recommendation for Sam approval. Make no changes."
     },
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting is only approved without a campaign/ad-group join in this run, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull; ad-level (ad_group_ad) reporting requires an ad-group→campaign join not available with this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "approvalRequirement": "Sam approval required for any consequential Ads change; this recommendation is read-only.",
     "latestOptimization": {
       "status": "no-fresh-optimization-authorized",
       "note": "Exact seven-ad roster/performance and search terms remain unverified/unavailable; no change authorized."
     },
-    "lastRefreshAttemptAt": "2026-08-03T06:32:33-04:00",
-    "lastRefreshStatus": "blocked",
-    "lastRefreshFailure": "MORNING SAFETY CHECK (2026-08-03 06:30 ET): Google Ads reporting API returned RESOURCE_EXHAUSTED (developer-token quota) on repeated attempts (retry-after ~9.25h from ~10:32 UTC). No fresh Google Ads campaign/ad data could be pulled for today (2026-08-02, prior completed day), current 7-day (2026-07-27 to 2026-08-02), or prior 7-day (2026-07-20 to 2026-07-26) windows this run. Outlook lead-inbox search succeeded (30 messages reviewed, 2026-07-23 to 2026-08-01) but was not correlated against fresh Ads data this run, so lead/CPL/booked-call figures below remain the last-verified nightly cache (2026-08-02T21:04:32-04:00) and were NOT re-verified this run. No Ads settings, budgets, bids, keywords, targeting, or creative were changed. Live brief.json from the prior nightly run (2026-08-02T21:04:32-04:00) was confirmed already published and current, so no missed-nightly-publication condition existed; this run only logs the blocked safety-check attempt.",
-    "lastRefreshNote": "Morning safety-check run blocked by Google Ads API quota exhaustion (RESOURCE_EXHAUSTED, DEVELOPER rate scope). All substantive Ads figures below are unchanged from the 2026-08-02T21:04:32-04:00 nightly refresh, which was independently verified as already live on GitHub before this run started."
+    "lastRefreshAttemptAt": "2026-08-03T21:00:00-04:00",
+    "lastRefreshStatus": "success",
+    "lastRefreshNote": "Nightly refresh (2026-08-03 21:00 ET) completed: fresh Google Ads campaign-level data pulled for both verified in-scope campaigns (today, current 7-day, prior 7-day); Outlook lead inbox searched live and re-attributed via Lead Source/Landing Page fields. Cap breach (daily and weekly) and 2-week CPL breach identified — no Ads settings changed."
   },
   "facilityStatus": {
     "status": "Moved in — active operations at new building",
