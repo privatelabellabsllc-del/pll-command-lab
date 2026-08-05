@@ -35,7 +35,12 @@
    "hot": false
   }
  ],
- "next": "Both contracts are out. Next money task: chase countersignatures and the two 50% deposits ($39,290 Terra Lotus + $13,250 Atlas Eternal).",
+ "next": [
+  "Confirm Terra Lotus received the contract; chase countersignature + $39,290 deposit",
+  "Confirm which Atlas Eternal pro forma version Ryne received; if placeholders went out, reissue clean",
+  "Chase Atlas countersignature + $13,250 deposit",
+  "$52,540 in deposits is the only thing standing between sent contracts and booked revenue"
+ ],
  "kb": [
   {
    "keys": [
