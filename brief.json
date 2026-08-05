@@ -1,55 +1,43 @@
 {
-  "date": "2026-08-04",
-  "ts": "2026-08-04T11:07:57.000Z",
+  "date": "2026-08-05",
+  "ts": "2026-08-05T11:15:00.000Z",
   "brief": [
     {
-      "t": "FIRST — Atlas Skin's 2:00 PM ET production meeting today: pro forma PI-2026-0802 (5,000 units at $5.30, $26,500, 50/50 terms) is not Sam-approved and still has three open placeholders — fill size/packaging, billing address, lead time/Incoterms — close them before or during the meeting.",
+      "t": "FIRST — Terra Lotus's $78,580 manufacturing contract and pro forma (19,000 units, $39,290 deposit / $39,290 on completion, now with Articles 8-12 covering insurance, indemnification, regulatory responsibility, liability limitation, and survival) has sat unsent since August 2 waiting only on Sam's review. Approve and send it today — it alone is over half the monthly $150K target.",
       "hot": true
     },
     {
-      "t": "SECOND — Terra Lotus's manufacturing contract and pro forma are built and correct: 19,000 units, $78,580 total, split $39,290 on signing and $39,290 on completion. They need only Sam's review and approval before sending.",
+      "t": "SECOND — Atlas Eternal (renamed by Ryne Bell): pro forma PI-2026-0802 (5,000 units at $5.30, $26,500, 50/50 split) is still blocked on three placeholders — fill size/packaging, billing address, lead time/Incoterms — plus whether Aiden Kraim's Adobe document names a specific additional insured or coverage limit to word verbatim. No inbox evidence confirms what happened at yesterday's 2 PM production meeting; confirm the outcome before finalizing.",
       "hot": true
     },
     {
-      "t": "THIRD — new booked call today: Vladimir Elgort of Stellaqua at 1:00 PM ET to walk EDDS-versus-EDTA costed pricing at 250-400/500/1,000 units, biodegradability data, and a mid-September launch timeline.",
+      "t": "THIRD — Vladimir Elgort's Stellaqua call was rescheduled overnight to today, Wednesday August 5, 12:00 PM ET, after yesterday's slot fell through on phone tag. Call his cell at 201-956-2443 if the Meet doesn't connect, and walk EDDS-versus-EDTA costed pricing, biodegradability data, and a mid-September launch timeline. Note: OpenSend's setup reminder also fires at noon today — take the Stellaqua call first.",
       "hot": true
     },
     {
-      "t": "FOURTH — verify with Diana at ELOIRE whether Sam's Aug 2 reply (a single per-unit number) actually satisfies her ask; the Aug 3 end-of-day pipeline snapshot still shows the full written 500/1,000-unit quote and correction plan as outstanding.",
+      "t": "FOURTH — Victor Armendarez's 4,000-unit two-SKU quote remains blocked on R&D's packaging-compatibility confirmation and full costs, with no update since Victor was asked to check on July 20 — now over two weeks overdue. Chase R&D directly today.",
       "hot": true
     },
     {
-      "t": "FIFTH — Victor Armendarez's 4,000-unit two-SKU quote is still blocked on R&D's packaging-compatibility confirmation and full costs; no confirmation has come back since Victor was asked to check with R&D.",
+      "t": "FIFTH — OpenSend's outbound-engine reminder fires today at 12:00 PM ET: Sam must greenlight 3 lookalike domains, a sending platform, create the PLL Outbound Agent, supply a booking calendar URL, and sign off the ICP Tier A definition before the 2-3 week warmup clock can start.",
       "hot": true
     },
     {
-      "t": "SIXTH — close the loop on yesterday's two calls: review Rehman's Read AI meeting report and act on its items; confirm whether Jarrod/Shay's 2 PM call actually connected, since Sam's last message said he didn't see Jarrod on the Meet yet.",
+      "t": "SIXTH — ELOIRE's Diana appears satisfied: Sam sent the full $8.20 per-unit breakdown August 4 and Diana confirmed she's waiting 30 days to see market results before reordering. No action needed today unless she reaches back out.",
       "hot": false
     },
     {
-      "t": "SEVENTH — reconcile yesterday's Gusto payroll ACH debits ($10,233.75 and $3,952.15) against the payroll ledger during today's 11 AM-12 PM Payroll calendar block; do not act on any payment from an email link.",
+      "t": "SEVENTH — Reply this week to accountant Austen Malczewski's still-unanswered July financial questions: a $49,745.95 Huntington withdrawal, two smaller withdrawals ($4,000 and $1,000), and a $3,788.92 ISO Group charge.",
       "hot": false
     }
   ],
   "next": [
-    "Close Atlas's three pro-forma placeholders and get Sam's approval before/at the 2 PM meeting",
-    "Review and approve the Terra Lotus contract and pro forma so they can go out today",
-    "Walk Vladimir's 1 PM Stellaqua call with EDDS/EDTA costed tiers and a Sept launch timeline",
-    "Verify with Diana directly whether ELOIRE's Aug 2 reply closes her request or a full written quote is still owed"
+    "Approve and send Terra Lotus's $78,580 contract and pro forma today",
+    "Confirm yesterday's Atlas Eternal meeting outcome and close the three pro-forma placeholders before sending PI-2026-0802",
+    "Take Vladimir's rescheduled Stellaqua call at 12:00 PM ET today with EDDS/EDTA costed tiers",
+    "Chase R&D directly today to unblock Victor Armendarez's 4,000-unit quote, then greenlight OpenSend before end of day"
   ],
   "kb": [
-    {
-      "keys": [
-        "atlas",
-        "kenna",
-        "pro forma",
-        "production meeting",
-        "august 4",
-        "ryne bell",
-        "PI-2026-0802"
-      ],
-      "a": "Atlas's production/pro-forma meeting is confirmed today, Tuesday Aug 4, 2:00-2:30 PM ET on Google Meet; Ryne Bell and Sam have accepted. Pro forma PI-2026-0802 (5,000 units x $5.30 = $26,500, 50/50 deposit/completion terms) is not yet Sam-approved and still needs fill size/packaging, billing address, and lead time/Incoterms filled in before or during the meeting."
-    },
     {
       "keys": [
         "terra lotus",
@@ -57,12 +45,26 @@
         "lotus",
         "19000",
         "19,000",
-        "22000",
-        "quote",
+        "78580",
         "contract",
-        "pro forma"
+        "pro forma",
+        "articles"
       ],
-      "a": "Terra Lotus's manufacturing contract and pro forma await Sam's review and approval before sending. The confirmed scope is 19,000 units at $78,580 total, with $39,290 due as deposit upon signing and $39,290 due after project completion. Logo, phone and email are already corrected, so approval is the only thing left."
+      "a": "Terra Lotus's $78,580 manufacturing contract and pro forma (19,000 units, $39,290 deposit on signing, $39,290 on completion) is complete and now includes new Articles 8-12 on insurance, indemnification and hold harmless, regulatory responsibility, limitation of liability, and survival. It has been unsent since August 2 waiting only on Sam's review and approval to send today."
+    },
+    {
+      "keys": [
+        "atlas",
+        "atlas eternal",
+        "atlas skin",
+        "kenna",
+        "pro forma",
+        "production meeting",
+        "ryne bell",
+        "PI-2026-0802",
+        "aiden kraim"
+      ],
+      "a": "Atlas Eternal (renamed by Ryne Bell) has a pro forma PI-2026-0802 for 5,000 units at $5.30, totaling $26,500, 50/50 deposit and completion terms. It's still blocked on three placeholders (fill size/packaging, billing address, lead time/Incoterms) and on whether Aiden Kraim's Adobe document names a specific additional insured or coverage limit. Yesterday's 2 PM production meeting with Ryne Bell has no confirmed outcome in the inbox yet — verify before finalizing."
     },
     {
       "keys": [
@@ -73,23 +75,22 @@
         "edta",
         "chelating",
         "shampoo",
-        "1 pm",
-        "1:00"
+        "12 pm",
+        "noon",
+        "rescheduled"
       ],
-      "a": "Vladimir Elgort's Stellaqua discovery call is confirmed on the calendar today, Tuesday Aug 4, 1:00-1:30 PM ET on Google Meet. He wants a 3-SKU haircare line (treatment-strength chelating clarifying shampoo, EDDS preferred vs EDTA cost comparison, plus daily shampoo and conditioner) in 3oz/8.5oz fills for a mid-September launch. He wants per-SKU pricing at 250-400/500/1,000 units, EDDS-vs-EDTA costing side by side, OECD 301 biodegradability data on EDDS, a timeline mapped back from launch, and PLL's GMP/FDA-registration background."
+      "a": "Vladimir Elgort's Stellaqua call was rescheduled overnight to today, Wednesday August 5, 12:00 PM ET, after yesterday's original slot fell through on repeated phone tag. Call his cell at 201-956-2443 if the Google Meet doesn't connect. He wants per-SKU pricing at 250-400/500/1,000 units for a 3-SKU haircare line, EDDS-vs-EDTA costed comparison, OECD 301 biodegradability data, and a timeline mapped back from a mid-September launch."
     },
     {
       "keys": [
         "eloire",
         "diana",
         "reorder",
-        "scratch",
-        "spotting",
-        "500",
-        "1000",
-        "8.20"
+        "8.20",
+        "satisfied",
+        "30 days"
       ],
-      "a": "Sam emailed Diana the evening of Aug 2 with a single number (\"$8.20 per unit... please call me\"), but the Aug 3 end-of-day pipeline snapshot still lists the full written 500- and 1,000-unit quote plus packaging correction notes as outstanding on PLL's side. Verify directly with Diana whether her request is satisfied or whether the complete written quote and scratch/spotting correction plan still needs to go out."
+      "a": "ELOIRE's Diana appears satisfied. Sam sent the full $8.20 per-unit breakdown (bottle, formula, filling, printing, labels, shrink band) on August 4. Diana confirmed it was helpful and said she's waiting 30 days to see market results before deciding on the reorder; Sam agreed to hold pricing. No action needed today unless she reaches back out."
     },
     {
       "keys": [
@@ -99,9 +100,21 @@
         "edge",
         "quote",
         "packaging",
-        "ht products"
+        "r&d",
+        "overdue"
       ],
-      "a": "Victor Armendarez's 2,000-units-per-SKU Curl Defining Cream and Edge Gel quote (4,000 units total) remains blocked. Edge Gel is a confirmed hot pour with a ~$2.90/unit target, but full costing and R&D's written packaging-compatibility confirmation are still not in hand; Victor was asked to check with his R&D lab as of July 20 with no confirmation seen since. Do not price or commit until both are verified."
+      "a": "Victor Armendarez's 4,000-unit two-SKU quote (2,000 Curl Defining Cream, 2,000 Edge Gel) remains blocked. Edge Gel is a confirmed hot pour at roughly $2.90/unit target, but full costing and R&D's written packaging-compatibility confirmation are still outstanding. No confirmation has come back since Victor was asked to check with R&D on July 20 — now over two weeks overdue; chase R&D directly."
+    },
+    {
+      "keys": [
+        "opensend",
+        "outbound",
+        "lookalike domains",
+        "warmup",
+        "icp tier a",
+        "booking calendar"
+      ],
+      "a": "OpenSend's outbound-engine setup reminder fires today at 12:00 PM ET. Sam needs to greenlight 3 lookalike domains (about $45/year) plus a sending platform (about $40/month), create the PLL Outbound Agent, supply a booking calendar URL, and sign off the ICP Tier A definition. The 2-3 week domain/inbox warmup clock cannot start until these are approved. Opensend delivered its first CSV of 11 collected emails overnight."
     },
     {
       "keys": [
@@ -109,21 +122,29 @@
         "ghani",
         "uae",
         "tallow",
-        "read ai",
-        "meeting report"
+        "moar global",
+        "whatsapp"
       ],
-      "a": "Rehman Ghani Arain's 10:00 AM ET call happened yesterday, Aug 3, for his 3-SKU UAE tallow balm line. A Read AI meeting report arrived with action items covering formulation options and GCC/documentation follow-up. Review the report and execute its items before the relationship goes cold."
+      "a": "Rehman Ghani's UAE tallow balm opportunity (via MOAR Global) is progressing after last week's discovery call. MOAR's team asked Sam to add three contacts (Rehman Ghani, Haifa Khawar, Ahlam Kashif) to a WhatsApp coordination group for next steps. Low effort — handle when convenient."
     },
     {
       "keys": [
-        "shay brands",
         "jarrod",
-        "tallow",
-        "august 3",
-        "2 pm",
-        "no show"
+        "shay brands",
+        "2 pm call",
+        "outcome unconfirmed"
       ],
-      "a": "Jarrod Adams/Shay Brands' 2:00 PM ET call yesterday has an unconfirmed outcome. Sam's last message at 2:03 PM said he had joined the Google Meet and didn't see Jarrod yet, with no further message in the thread since. Confirm whether the call actually connected and what tier pricing (500/1,000/1,500 units) was discussed; Jarrod already sent logo/concept files to Laura on Aug 1."
+      "a": "Jarrod Adams/Shay Brands' Tuesday August 3 2 PM ET call still has no confirmed outcome in the inbox — Sam's last message said he'd joined the Meet and didn't see Jarrod yet, with no further thread activity since. Confirm whether it connected and what tier pricing was discussed."
+    },
+    {
+      "keys": [
+        "alex",
+        "shopokami",
+        "body butter",
+        "thursday",
+        "booked call"
+      ],
+      "a": "Alex of Shopokami has a newly confirmed discovery call for Thursday, August 6, 2:00 PM ET, to discuss his body butter private-label project. Not on today's schedule."
     },
     {
       "keys": [
@@ -132,7 +153,7 @@
         "huntington",
         "reconcile"
       ],
-      "a": "Yesterday's (Aug 3) Huntington alerts show two Gusto ACH debits: $10,233.75 (Gusto NE) and $3,952.15 (Gusto Tax), about $14,185.90 total. Today's calendar has an 11:00 AM-12:00 PM Payroll block; use it to reconcile these against the current pay period ledger. Do not act on any payment from an email link."
+      "a": "Private Label Labs' July 2026 Gusto invoice shows as paid automatically (confirmed August 3, 8:39 PM). No inbox evidence this run confirms the specific August 3 Huntington ACH debits ($10,233.75 and $3,952.15) were reconciled line-by-line against the pay period ledger — verify with Finance."
     },
     {
       "keys": [
@@ -143,7 +164,7 @@
         "withdrawal",
         "iso group"
       ],
-      "a": "PLL's accountant (Austen Malczewski) sent unanswered July financial questions on Aug 3 covering a $49,745.95 Huntington withdrawal (Jul 2), two smaller withdrawals ($4,000 and $1,000, Jul 24), and a $3,788.92 Business Gold Card charge to ISO Group. Aidan and Sam should reply this week with explanations."
+      "a": "PLL's accountant Austen Malczewski's July financial questions from August 3 remain unanswered as of this morning: a $49,745.95 Huntington withdrawal (July 2), two smaller withdrawals ($4,000 and $1,000, July 24), and a $3,788.92 Business Gold Card charge to ISO Group. Aidan and Sam should reply this week."
     },
     {
       "keys": [
@@ -152,7 +173,7 @@
         "pipeline",
         "production"
       ],
-      "a": "Live CRM login was not attempted again this run - the dedicated PLL Consultant CRM account is still pending manager approval with no password on file. Today's pipeline read comes from Sam's own Aug 3 end-of-day pipeline email: 80 active leads (after de-duplication), 7 at 70%+ close probability. Treat CRM dashboard figures (pipeline value, deposits, deal counts) as dated to the last verified login, not confirmed today."
+      "a": "Live CRM login was attempted again this morning and blocked at the credential screen — the dedicated PLL Consultant CRM account is still pending manager approval with no password on file. Today's pipeline figures are carried forward from the last verified sources: the August 1 live CRM dashboard and Sam's own end-of-day pipeline emails. Treat CRM dashboard figures as dated, not confirmed today."
     },
     {
       "keys": [
@@ -161,7 +182,7 @@
         "cap",
         "budget"
       ],
-      "a": "Google Ads API quota was exhausted again this morning (developer-token level, ~9.25 hour cooldown, retry after roughly 3:45 PM ET). No fresh Ads data could be pulled. All Ads figures and recommendations are carried forward unchanged from the last successful nightly refresh (Aug 3, 9:00 PM ET) - they are not re-verified as of today. No Ads settings were touched."
+      "a": "Ads intelligence and Ads Agent brief are carried forward unchanged from this morning's 6:30 AM verified nightly refresh. Combined configured budget usage is at 86.6% of the approved $30/day cap — no breach. Two items await Sam's yes/no: switching ContractMfg off Maximize Conversions to Manual CPC, and confirming or reversing the unexplained Samples daily-budget cut from $10.33 to $5.00. No Ads settings were touched during this business refresh."
     },
     {
       "keys": [
@@ -176,7 +197,7 @@
         "industrial",
         "dte"
       ],
-      "a": "PLL operates at 24600 N. Industrial Dr., Farmington Hills, MI 48335. DTE service is active. UPS, USPS, and Shopify address changes and a test workflow remain pending - no new evidence this run that those were completed."
+      "a": "PLL operates at 24600 N. Industrial Dr., Farmington Hills, MI 48335. DTE service is active. UPS, USPS, and Shopify address changes and a test workflow remain pending — no new evidence this run that those were completed."
     },
     {
       "keys": [
@@ -186,95 +207,104 @@
         "v14"
       ],
       "a": "Command Center v14 is deployed and live. Sam still owes a laptop/TV validation pass of the voice picker and at least one live dispatch to confirm it behaves as expected in real use."
+    },
+    {
+      "keys": [
+        "kenna",
+        "silverson",
+        "mixer",
+        "equipment quote"
+      ],
+      "a": "Separately from the Atlas Eternal deal, a Kenna Whitnell Consulting thread with Silverson (mixer equipment) is awaiting PLL's billing address for their accounting team; Kenna's office is out until August 7. The Atlas/Kenna referral-agreement countersignature remains open with no new evidence this run."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Close Atlas's pro-forma gaps before the 2:00 PM ET meeting",
-      "why": "Pro forma PI-2026-0802 is not Sam-approved and has three open placeholders; the production meeting is happening today.",
-      "owner": "Aidan / Sam / Laura",
-      "due": "Today 2:00 PM ET",
-      "priority": "critical",
-      "revenue": "$26,500 (5,000 units x $5.30)"
-    },
-    {
-      "rank": 2,
-      "title": "Reconcile and approve Terra Lotus's contract/pro forma",
-      "why": "19,000-unit, $78,580 pro forma is built and correct - it awaits only Sam's approval to send.",
+      "title": "Approve and send Terra Lotus's contract and pro forma",
+      "why": "Complete, corrected, and unsent since Aug 2 — awaits only Sam's review.",
       "owner": "Sam / Aidan / Ronald",
       "due": "Today",
       "priority": "critical",
       "revenue": "$78,580 (19,000 units)"
     },
     {
+      "rank": 2,
+      "title": "Confirm Atlas Eternal's meeting outcome and close pro-forma placeholders",
+      "why": "PI-2026-0802 still has three open placeholders and an unresolved insurance-wording question; no evidence yesterday's meeting resolved them.",
+      "owner": "Aidan / Sam / Laura",
+      "due": "Today",
+      "priority": "critical",
+      "revenue": "$26,500 (5,000 units x $5.30)"
+    },
+    {
       "rank": 3,
-      "title": "Walk Vladimir Elgort's 1:00 PM ET Stellaqua call",
-      "why": "Newly booked call; wants EDDS-vs-EDTA costed tiers, biodegradability data, and a Sept-launch timeline.",
+      "title": "Take Vladimir Elgort's rescheduled Stellaqua call",
+      "why": "Call moved to 12:00 PM ET today after two missed connections yesterday; high-intent 3-SKU haircare opportunity.",
       "owner": "Sam / Ronald",
-      "due": "Today 1:00 PM ET",
+      "due": "Today 12:00 PM ET",
       "priority": "critical",
       "revenue": "New 3-SKU haircare opportunity; value unverified"
     },
     {
       "rank": 4,
-      "title": "Verify ELOIRE/Diana's request is actually satisfied",
-      "why": "Sam sent a partial reply Aug 2; CRM snapshot from Aug 3 still shows the full written quote and correction plan as outstanding.",
-      "owner": "Sam / Laura",
-      "due": "Today",
-      "priority": "critical",
-      "revenue": "Existing-customer reorder; value unverified"
-    },
-    {
-      "rank": 5,
-      "title": "Unblock Victor's two-SKU quote",
-      "why": "Still gated on R&D packaging-compatibility confirmation and full costs; no update since Jul 20.",
+      "title": "Unblock Victor Armendarez's two-SKU quote via R&D",
+      "why": "Blocked on R&D packaging-compatibility confirmation and full costs since July 20 — now overdue.",
       "owner": "Sam / Victor / R&D",
-      "due": "This week - overdue",
+      "due": "Today — overdue",
       "priority": "critical",
       "revenue": "4,000-unit opportunity; pricing unverified"
     },
     {
-      "rank": 6,
-      "title": "Confirm outcomes of yesterday's Rehman and Jarrod calls",
-      "why": "Rehman's Read AI report needs action; Jarrod's 2 PM call outcome is unconfirmed after a possible no-show moment.",
-      "owner": "Sam / Ronald / Laura",
-      "due": "Today",
+      "rank": 5,
+      "title": "Greenlight OpenSend's outbound-engine setup",
+      "why": "Reminder fires at noon today; warmup clock can't start until Sam approves domains, platform, agent, calendar link, and ICP definition.",
+      "owner": "Sam",
+      "due": "Today 12:00 PM ET",
       "priority": "high",
-      "revenue": "Two new private-label opportunities; value unverified"
+      "revenue": "Enables new outbound lead pipeline"
+    },
+    {
+      "rank": 6,
+      "title": "Reply to accountant Austen Malczewski's financial questions",
+      "why": "July withdrawal and charge questions remain unanswered since Aug 3.",
+      "owner": "Aidan / Sam",
+      "due": "This week",
+      "priority": "medium",
+      "revenue": "Risk mitigation, not direct revenue"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Close Atlas's pro-forma gaps before the 2 PM meeting, reconcile Terra Lotus's numbers, then walk Vladimir's 1 PM call and verify ELOIRE with Diana directly.",
+      "top_task": "Approve and send Terra Lotus, confirm Atlas Eternal's meeting outcome, take Vladimir's noon Stellaqua call, then greenlight OpenSend.",
       "tasks": [
         {
-          "title": "Fill Atlas's three pro-forma placeholders and approve before/at the 2:00 PM meeting",
-          "due": "Today 2:00 PM ET"
-        },
-        {
-          "title": "Review and approve the Terra Lotus contract and pro forma (19,000 units, $78,580)",
+          "title": "Review and approve the Terra Lotus contract and pro forma ($78,580) and send it",
           "due": "Today"
         },
         {
-          "title": "Walk Vladimir's 1:00 PM ET Stellaqua call with EDDS/EDTA tiers",
-          "due": "Today 1:00 PM ET"
+          "title": "Confirm what was resolved at yesterday's Atlas Eternal production meeting; approve PI-2026-0802 once placeholders close",
+          "due": "Today"
         },
         {
-          "title": "Call or message Diana directly to confirm ELOIRE's request is satisfied",
-          "due": "Today"
+          "title": "Take Vladimir Elgort's rescheduled Stellaqua call at 12:00 PM ET",
+          "due": "Today 12:00 PM ET"
+        },
+        {
+          "title": "Greenlight OpenSend's domains, platform, agent, calendar link, and ICP definition",
+          "due": "Today 12:00 PM ET"
         }
       ],
-      "notes": "Two calls plus a production meeting today - protect the 1 PM and 2 PM slots and prep before, not during."
+      "notes": "Noon has two competing items (Stellaqua call and OpenSend reminder) — take the call first, handle OpenSend right after."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Supply the missing Atlas pro-forma inputs and reconcile Terra Lotus's true scope before Sam approves anything.",
+      "top_task": "Supply the missing Atlas Eternal pro-forma inputs and reply to the accountant's financial questions.",
       "tasks": [
         {
-          "title": "Provide Atlas's billing address, lead time/Incoterms, and fill size/packaging inputs",
-          "due": "Before 2:00 PM ET"
+          "title": "Provide Atlas Eternal's billing address, lead time/Incoterms, and fill size/packaging inputs",
+          "due": "Today"
         },
         {
           "title": "Reply to accountant Austen Malczewski's July financial questions",
@@ -285,48 +315,44 @@
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Confirm ELOIRE's status with Diana and prep any follow-up documents from yesterday's two calls.",
+      "top_task": "Support Atlas Eternal's document prep and follow up on Jarrod/Shay Brands' unconfirmed call outcome.",
       "tasks": [
         {
-          "title": "Confirm with Diana whether the Aug 2 reply satisfies her ELOIRE request, or send the full written quote/correction plan",
+          "title": "Confirm outcome of Jarrod Adams/Shay Brands' Aug 3 call and next steps on packaging",
           "due": "Today"
         },
         {
-          "title": "Prep any follow-up packet needed from Rehman's or Jarrod's calls",
+          "title": "Prep any follow-up documents needed from Atlas Eternal's meeting",
           "due": "Today"
         }
       ],
-      "notes": "Jarrod already sent his logo/concept files Aug 1 - confirm packaging is moving."
+      "notes": "Jarrod already sent logo/concept files Aug 1 - confirm packaging is moving."
     },
     "ronald": {
       "display_name": "Ronald",
       "top_task": "Support today's Stellaqua call and push Victor's R&D packaging-compatibility confirmation.",
       "tasks": [
         {
-          "title": "Support Vladimir's 1:00 PM ET call with EDDS/EDTA technical detail",
-          "due": "Today 1:00 PM ET"
+          "title": "Support Vladimir's 12:00 PM ET call with EDDS/EDTA technical detail",
+          "due": "Today 12:00 PM ET"
         },
         {
-          "title": "Follow up on Victor's R&D packaging-compatibility confirmation",
-          "due": "Today"
-        },
-        {
-          "title": "Review Rehman's Read AI meeting report action items",
-          "due": "Today"
+          "title": "Follow up directly with R&D on Victor's packaging-compatibility confirmation",
+          "due": "Today — overdue"
         }
       ],
-      "notes": "Victor's deal has been waiting on R&D since July 20 - chase it directly."
+      "notes": "Victor's deal has been waiting on R&D since July 20 - chase it directly, don't wait on Victor."
     },
     "finance": {
       "display_name": "Finance",
-      "top_task": "Reconcile yesterday's Gusto ACH debits and respond to the accountant's outstanding questions.",
+      "top_task": "Confirm the Aug 3 Gusto ACH debits reconciled and help answer the accountant's outstanding questions.",
       "tasks": [
         {
-          "title": "Match Aug 3 Gusto NE ($10,233.75) and Gusto Tax ($3,952.15) debits to the pay period ledger",
-          "due": "Today, during the 11 AM-12 PM Payroll block"
+          "title": "Verify Aug 3 Gusto NE ($10,233.75) and Gusto Tax ($3,952.15) debits were matched to the pay period ledger",
+          "due": "This week"
         },
         {
-          "title": "Answer Austen Malczewski's July financial questions ($49,745.95, $4,000, $1,000, $3,788.92 ISO Group)",
+          "title": "Help answer Austen Malczewski's July financial questions ($49,745.95, $4,000, $1,000, $3,788.92 ISO Group)",
           "due": "This week"
         }
       ],
@@ -335,117 +361,117 @@
   },
   "revenueActions": [
     {
-      "title": "Close Atlas's pro forma",
-      "why": "Production meeting today at 2 PM ET; pro forma still has three open placeholders and is not Sam-approved.",
+      "title": "Send Terra Lotus's contract and pro forma",
+      "why": "Complete and correct, unsent since Aug 2, awaits only Sam's approval.",
+      "est_value": "$78,580",
+      "next_step": "Sam reviews and approves; send today.",
+      "owner": "Sam / Aidan / Ronald",
+      "timing": "Today",
+      "value": "Largest single manufacturing opportunity this week"
+    },
+    {
+      "title": "Close Atlas Eternal's pro forma",
+      "why": "Three placeholders open plus an insurance-wording question; yesterday's meeting outcome unconfirmed.",
       "est_value": "$26,500",
-      "next_step": "Fill fill-size/packaging, billing address, and lead time/Incoterms, then get Sam's approval.",
+      "next_step": "Confirm meeting outcome, fill placeholders, get Sam's approval.",
       "owner": "Aidan / Sam / Laura",
-      "timing": "Today 2:00 PM ET",
+      "timing": "Today",
       "value": "Active manufacturing opportunity"
     },
     {
-      "title": "Reconcile and close Terra Lotus",
-      "why": "19,000-unit, $78,580 contract and pro forma are ready and await Sam's approval to send.",
-      "est_value": "$78,580",
-      "next_step": "Confirm true current scope with Aidan/Ronald, then approve and send.",
-      "owner": "Sam / Aidan / Ronald",
-      "timing": "Today",
-      "value": "Large manufacturing opportunity"
-    },
-    {
       "title": "Close Stellaqua's 3-SKU haircare line",
-      "why": "Newly booked call today at 1:00 PM ET; high intent, mid-September launch target.",
+      "why": "Call rescheduled to noon today after missed connections; high intent, mid-September launch target.",
       "est_value": "Unverified",
       "next_step": "Walk the call with EDDS/EDTA costed tiers and biodegradability data.",
       "owner": "Sam / Ronald",
-      "timing": "Today 1:00 PM ET",
+      "timing": "Today 12:00 PM ET",
       "value": "New private-label opportunity"
     },
     {
-      "title": "Recover or close out ELOIRE",
-      "why": "Diana's full written quote/correction plan may still be outstanding despite Sam's Aug 2 partial reply.",
-      "est_value": "Unverified",
-      "next_step": "Verify directly with Diana what she still needs and deliver it.",
-      "owner": "Sam / Laura",
-      "timing": "Today",
-      "value": "Existing-customer reorder"
-    },
-    {
-      "title": "Unblock Victor's two-SKU quote",
+      "title": "Unblock Victor Armendarez's two-SKU quote",
       "why": "R&D packaging-compatibility confirmation and full costs still outstanding since Jul 20.",
       "est_value": "Unverified",
       "next_step": "Chase R&D confirmation directly, then issue the quote.",
       "owner": "Sam / Victor / R&D",
-      "timing": "This week - overdue",
+      "timing": "Today — overdue",
       "value": "4,000-unit turnkey opportunity"
+    },
+    {
+      "title": "Greenlight OpenSend's outbound engine",
+      "why": "Approvals due at noon today or the warmup clock slips another day.",
+      "est_value": "Pipeline-enabling, not direct revenue",
+      "next_step": "Approve domains, platform, agent, calendar link, ICP definition.",
+      "owner": "Sam",
+      "timing": "Today 12:00 PM ET",
+      "value": "Unlocks new outbound lead-generation channel"
     }
   ],
   "pipelineStat": {
-    "total_value": "$1,327,800 (last verified live CRM dashboard, Aug 1; not re-verified today)",
+    "total_value": "$1,327,800 (last verified live CRM dashboard, Aug 1; not re-verified today — CRM login blocked at credential screen, dedicated account still pending approval)",
     "active_deals": 20,
     "hot": [
-      "Atlas - pro forma due before today's 2 PM ET production meeting",
-      "Terra Lotus - contract/pro forma awaiting approval, scope needs reconciliation",
-      "Stellaqua - new 1 PM ET call today",
-      "ELOIRE - verify Diana's request is actually satisfied",
-      "Victor - 4,000-unit two-SKU quote blocked on R&D confirmation"
+      "Terra Lotus - contract/pro forma ready, awaiting Sam's approval to send",
+      "Atlas Eternal - pro-forma placeholders open, yesterday's meeting outcome unconfirmed",
+      "Stellaqua - Vladimir's call rescheduled to noon today",
+      "Victor Armendarez - 4,000-unit two-SKU quote overdue on R&D confirmation",
+      "OpenSend - outbound engine approvals due at noon today"
     ],
     "stalled": [
       "Victor's R&D packaging-compatibility confirmation",
-      "Atlas pro-forma placeholders",
+      "Atlas Eternal pro-forma placeholders",
       "Jarrod/Shay call outcome confirmation"
     ],
     "activeDeals": 20,
     "pipelineValue": 1327800,
     "inProduction": 20,
     "depositsCollected": 57454.99,
-    "note": "CRM was not re-logged-in this morning - the dedicated Consultant account is still pending manager approval, no password on file. Figures are the last verified snapshot from the Aug 1 live CRM dashboard (20 active deals, 20 production projects, $1,327,800 pipeline, $57,454.99 deposits), supplemented by Sam's own Aug 3 end-of-day pipeline email (80 active leads after de-duplication, 7 at 70%+ close probability). Calendar confirms Vladimir/Stellaqua (1 PM ET) and Atlas (2 PM ET) are both booked today."
+    "note": "CRM login was attempted again this morning via browser and blocked at the credential screen - the dedicated Consultant account is still pending manager approval, no password on file. Figures are the last verified snapshot from the Aug 1 live CRM dashboard (20 active deals, 20 production projects, $1,327,800 pipeline, $57,454.99 deposits), supplemented by Sam's own recent end-of-day pipeline emails (~80 active leads after de-duplication). Calendar shows only one event today (PLL - AF Brand, 3 PM ET, Sam declined); Vladimir's Stellaqua call was rescheduled to noon today via email, not yet reflected on the calendar."
   },
   "adsAgentBrief": {
-    "status": "Morning safety refresh success — fresh Google Ads campaign-level data re-pulled for both verified campaigns; Outlook lead inbox re-searched and attributed live. No cap breach this run. Same two items remain flagged for Sam: ContractMfg CPC inflation under Maximize Conversions (no working conversion tracking), and the still-unexplained/unconfirmed Samples daily-budget cut ($10.33 -> $5.00, unchanged since 2026-08-04). No settings changed.",
-    "updatedAt": "2026-08-05T06:30:00-04:00",
+    "status": "Nightly refresh success — fresh Google Ads campaign-level data pulled for both verified campaigns; Outlook lead inbox searched and attributed live. No cap breach this run. Two items flagged for Sam: ContractMfg CPC inflation under Maximize Conversions (no working conversion tracking), and an unexplained Samples daily-budget cut ($10.33 -> $5.00). No settings changed.",
+    "updatedAt": "2026-08-04T21:00:00-04:00",
     "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
-    "snapshot": "Jul 29–Aug 4 verified campaign scope (unchanged from last night, both fully elapsed days): $209.93 spend, 579 impressions, 79 clicks, 13.64% CTR, $2.66 average CPC. Today (Aug 5, prelim as of 6:30 AM ET): $2.26 vs $25.33/day currently-configured combined budget — far too early in the day to assess.",
-    "recommendation": "READ-ONLY RECOMMENDATION (Sam approval required): Take PLL-Search-ContractMfg-2026 off MAXIMIZE_CONVERSIONS to Manual CPC until conversion tracking is trustworthy — this remains outstanding from the 2026-08-03 correction. Fresh evidence (re-verified 2026-08-05 06:30 ET, current 7-day window Jul 29–Aug 4 unchanged from last night since both are fully elapsed days): ContractMfg CPC is $3.64 this week vs $2.25 last week (+62%) while CTR fell 12.18% vs 18.01%; PLL has no working conversion import, so Google is optimizing toward a signal it cannot see. Separately (still outstanding, flag only, no action taken): PLL-Search-Samples-2026's configured daily budget remains at $5.00 (dropped from $10.33 on 2026-08-03, unexplained, and unchanged again as of this morning's live re-check) — recommend Sam confirm whether this was an intentional change, since it lowers the combined configured cap from $30.66/day to $25.33/day. Expected outcome of the bidding-strategy fix: ContractMfg CPC returns toward the $2.10–$3.22 range. Measurement window: 14 days. Hold all budgets, bids, ads, keywords, targeting, and landing pages unchanged pending Sam approval.",
+    "snapshot": "Jul 29–Aug 4 verified campaign scope: $209.93 spend, 579 impressions, 79 clicks, 13.64% CTR, $2.66 average CPC. Today (Aug 4): $32.21 vs $25.33 currently-configured combined budget — within normal single-day delivery variance, not a breach.",
+    "recommendation": "READ-ONLY RECOMMENDATION (Sam approval required): Take PLL-Search-ContractMfg-2026 off MAXIMIZE_CONVERSIONS to Manual CPC until conversion tracking is trustworthy — this remains outstanding from the 2026-08-03 correction. Fresh evidence: ContractMfg CPC is $3.64 this week vs $2.25 last week (+62%) while CTR fell 12.18% vs 18.01%; PLL has no working conversion import, so Google is optimizing toward a signal it cannot see. Separately (new this run, flag only, no action taken): PLL-Search-Samples-2026's configured daily budget dropped from $10.33 (verified 2026-08-03) to $5.00 (verified tonight) — a change this job did not make and cannot explain; recommend Sam confirm whether this was an intentional change, since it lowers the combined configured cap from $30.66/day to $25.33/day. Expected outcome of the bidding-strategy fix: ContractMfg CPC returns toward the $2.10–$3.22 range. Measurement window: 14 days. Hold all budgets, bids, ads, keywords, targeting, and landing pages unchanged pending Sam approval.",
     "governance": "No consequential change without Sam approval.",
     "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull (PLL-Search-ContractMfg-2026 + PLL-Search-Samples-2026 only; legacy campaigns excluded). Ad-level (ad_group_ad) reporting has no available field linking an ad back to its parent campaign in this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "windows": {
-      "today": "2026-08-05",
+      "today": "2026-08-04",
       "current": "2026-07-29 to 2026-08-04",
       "prior": "2026-07-22 to 2026-07-28"
     },
     "spoken": {
-      "today": "Today, Aug 5 (prelim, as of 6:30 AM ET — only a few hours old): $2.26 spend, 10 impressions, 2 clicks, 20.00% CTR, $1.13 CPC across the two verified campaigns. Too early in the day to compare against the $25.33/day combined configured budget; not a breach signal.",
+      "today": "Today, Aug 4: $32.21 spend, 53 impressions, 8 clicks, 15.09% CTR, $4.03 CPC across the two verified campaigns. That's 127% of the currently-configured $25.33/day combined budget for one day — within Google's normal delivery variance, not a breach. No settings were changed.",
       "sevenAds": "The two campaigns (Contract Manufacturing and White Label Samples) are verified, but the exact seven-ad roster and fresh ad-level totals are unverified — there's no tool-exposed link from an individual ad back to its campaign. I am not making ad winner/loser claims.",
-      "ctrCpc": "Current seven-day (Jul 29–Aug 4) CTR is 13.64% and average CPC is $2.66, versus 17.35% and $1.87 in the prior seven days (Jul 22–Jul 28). CTR and CPC both worsened week over week, driven mainly by ContractMfg. (Unchanged from last night's refresh — both windows are fully elapsed days.)",
-      "leadsEmailsCalls": "This week (Jul 29–Aug 4): 10 genuine inbox inquiries, 2 verified Ads-attributed (both to ContractMfg — Vladimir Elgort/Stellaqua and Gloria Abanga), 1 attributed to a legacy non-scope campaign (Jason Barresi → Sales Campaign PLL), 7 unattributed. Booked-call and close totals were not independently re-verified this run (no calendar/CRM tool in this refresh's scope); carried forward from the last verified count (7 booked calls this week) pending next full nightly refresh. Prior week (Jul 22–28): 14 genuine inquiries (1 internal test excluded), 2 verified Ads-attributed messages from 1 unique Samples lead (Tiara Shuneir, duplicate submission), 1 ambiguous (gclid + chatgpt.com utm, no gad_campaignid), 11 unattributed.",
-      "budgetCap": "Originally approved cap: $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210/week. Currently configured (re-verified live this morning): ContractMfg $20.33/day (unchanged) + Samples $5.00/day (unchanged since 2026-08-04 — no further change detected today) = $25.33/day combined. The 16-day trailing average (Jul 20–Aug 4) is $25.99/day, 86.6% of the original $30/day cap and 102.6% of the current configured cap. No breach declared; no budget change was made.",
-      "winners": "At campaign level only, PLL-Search-Samples-2026 has the lower CPC ($1.48) on Manual CPC; PLL-Search-ContractMfg-2026's CPC remains up 62% week over week under Maximize Conversions with no working conversion tracking. No ad-level winner is verified.",
+      "ctrCpc": "Current seven-day (Jul 29–Aug 4) CTR is 13.64% and average CPC is $2.66, versus 17.35% and $1.87 in the prior seven days (Jul 22–Jul 28). CTR and CPC both worsened week over week, driven mainly by ContractMfg.",
+      "leadsEmailsCalls": "This week: 10 genuine inbox inquiries, 2 verified Ads-attributed (both to ContractMfg), 1 attributed to a legacy non-scope campaign, 7 unattributed. 7 booked calls logged this week; of the 2 we could match to a specific inquiry (Rehman Ghani, Alex/Shopokami), neither has a verified Ads GCLID. Prior week: 14 genuine inquiries (after excluding 1 internal test), 2 verified Ads-attributed messages from 1 unique Samples lead, 1 ambiguous, 11 unattributed, 4 booked calls.",
+      "budgetCap": "Originally approved cap: $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210/week. Currently configured: ContractMfg $20.33/day (unchanged) + Samples $5.00/day (DOWN from $10.33 verified 2026-08-03 — unexplained, flagged for Sam) = $25.33/day combined. The 16-day trailing average is $25.99/day, 86.6% of the original $30/day cap and 102.6% of the just-lowered current configured cap. No breach declared; no budget change was made.",
+      "winners": "At campaign level only, PLL-Search-Samples-2026 has the lower CPC ($1.48) on Manual CPC; PLL-Search-ContractMfg-2026's CPC rose 62% week over week under Maximize Conversions with no working conversion tracking. No ad-level winner is verified.",
       "waste": "Search-term data was not pulled in this refresh; no waste claim is made.",
-      "optimization": "Do not optimize from this refresh. Escalate two items to Sam, still outstanding: switching ContractMfg off Maximize Conversions to Manual CPC (evidence: CPC +62%, CTR -6.3pts vs prior week), and confirming the still-unexplained Samples budget cut from $10.33 to $5.00/day (verified 2026-08-03 → 2026-08-04, unchanged as of this morning). Hold settings unchanged pending approval.",
+      "optimization": "Do not optimize from this refresh. Escalate two items to Sam: switching ContractMfg off Maximize Conversions to Manual CPC (evidence: CPC +62%, CTR -6.3pts), and confirming the unexplained Samples budget cut from $10.33 to $5.00/day. Hold settings unchanged pending approval.",
       "suggestions": "Read-only recommendation: get Sam's yes/no on the Manual CPC switch for ContractMfg, and get Sam to confirm or reverse the Samples budget cut. No cap breach to report this run.",
       "nextExperiment": "Pending: if Sam approves the Manual CPC switch for ContractMfg, measure CPC and CTR over the following 14 days against this week's baseline ($3.64 CPC / 12.18% CTR).",
-      "whatAdsAgentShouldDo": "Present the Manual CPC recommendation and the still-unresolved Samples budget-cut flag to Sam for yes/no; make no changes until approved."
+      "whatAdsAgentShouldDo": "Present the Manual CPC recommendation and the Samples budget-cut flag to Sam for yes/no; make no changes until approved."
     },
-    "lastRefreshAttemptAt": "2026-08-05T06:30:00-04:00",
+    "lastRefreshAttemptAt": "2026-08-04T21:00:00-04:00",
     "lastRefreshStatus": "success"
   },
   "adsIntelligence": {
-    "updatedAt": "2026-08-05T06:30:00-04:00",
-    "source": "google-ads-and-outlook-live-morning-safety-refresh",
+    "updatedAt": "2026-08-04T21:00:00-04:00",
+    "source": "google-ads-and-outlook-live-nightly-refresh",
     "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). Fresh campaign scope is verified; legacy campaigns (Initial, New-Sales-Ad, Sales Campaign PLL) excluded from all totals below. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull (PLL-Search-ContractMfg-2026 + PLL-Search-Samples-2026 only; legacy campaigns excluded). Ad-level (ad_group_ad) reporting has no available field linking an ad back to its parent campaign in this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "windows": {
-      "today": "2026-08-05",
+      "today": "2026-08-04",
       "current": "2026-07-29 to 2026-08-04",
       "prior": "2026-07-22 to 2026-07-28"
     },
     "today": {
-      "cost": 2.26,
-      "impressions": 10,
-      "clicks": 2,
-      "ctr": 20,
-      "cpc": 1.13,
-      "note": "PRELIMINARY — pulled at 6:30 AM ET, only a few hours into the day. Not comparable to the $25.33/day configured budget; too early to assess pacing or breach."
+      "cost": 32.21,
+      "impressions": 53,
+      "clicks": 8,
+      "ctr": 15.09,
+      "cpc": 4.03,
+      "note": "Today's spend $32.21 vs $25.33/day currently-configured combined budget = 127% of one day. Google allows up to 2x single-day delivery with monthly true-up; a single day above budget is normal pacing, not a cap breach."
     },
     "current": {
       "cost": 209.93,
@@ -469,11 +495,11 @@
         "biddingStrategy": "MAXIMIZE_CONVERSIONS",
         "dailyBudget": 20.33,
         "today": {
-          "cost": 0.76,
-          "impressions": 7,
-          "clicks": 1,
-          "ctr": 14.29,
-          "cpc": 0.76
+          "cost": 26.31,
+          "impressions": 31,
+          "clicks": 4,
+          "ctr": 12.9,
+          "cpc": 6.58
         },
         "current": {
           "cost": 156.68,
@@ -496,13 +522,13 @@
         "status": "ENABLED",
         "biddingStrategy": "MANUAL_CPC",
         "dailyBudget": 5,
-        "dailyBudgetNote": "Unchanged since 2026-08-04 (was $10.33 on 2026-08-03; dropped to $5.00 on 2026-08-04 — this job did not make that change and cannot explain it). Re-verified live 2026-08-05 06:30 ET: still $5.00, no further change detected. Still flagged for Sam to confirm.",
+        "dailyBudgetNote": "CHANGED since last verified refresh: was $10.33 on 2026-08-03, now $5.00 — this job did not make this change and cannot explain it. Flagged for Sam to confirm.",
         "today": {
-          "cost": 1.5,
-          "impressions": 3,
-          "clicks": 1,
-          "ctr": 33.33,
-          "cpc": 1.5
+          "cost": 5.9,
+          "impressions": 22,
+          "clicks": 4,
+          "ctr": 18.18,
+          "cpc": 1.48
         },
         "current": {
           "cost": 53.25,
@@ -543,14 +569,14 @@
       "cplVerifiedPaidPrior": 71.05,
       "costPerBookedCall": null,
       "costPerBookedCallNote": "NOT MEASURABLE from paid spend: of the current-window booked calls whose originating inquiry could be matched by email (Rehman Ghani, Alex/Shopokami), neither inquiry carries a verified in-scope GCLID/gad_campaignid. The remaining booked calls this week (5 of 7) could not be matched to a specific inbound inquiry in this pull, so their attribution is NOT YET MEASURABLE rather than ruled out.",
-      "note": "Outlook inbox re-searched live this morning (subject:\"New customer message\", genuine messages only — Re:/RE: thread replies excluded — bucketed by receivedDateTime converted to ET, 2026-07-22 to 2026-08-04, 24 genuine messages reviewed plus 1 internal test excluded). One additional genuine inquiry (received 2026-08-04 20:19 ET) surfaced in this morning's re-pull that had not appeared in last night's 21:00 ET pull (its send time was shortly before that report, likely a mailbox indexing lag); it is UNATTRIBUTED and included in the current-window count of 10. Attribution: gclid + gad_campaignid matching an in-scope campaign ID = verified; gclid present with no gad_campaignid or a non-Ads utm_source (e.g. chatgpt.com, ig) = ambiguous/unattributed; no params = unattributed. One current-window inquiry (Jason Barresi, Jul 31) carries gclid + gad_campaignid=22755299462, which is the legacy 'Sales Campaign PLL' — excluded from scoped Ads totals per standing instructions never to blend legacy campaigns. Prior-window Tiara Shuneir inquiry (gad_campaignid=24040031889/Samples) was submitted twice ~27 seconds apart (likely a duplicate form submission by the same person); counted as 2 raw messages in qualifiedInboxInquiriesPrior but as 1 unique verified lead for CPL purposes. Booked-call counts, close data, and cost-per-booked-call carried forward from the last verified nightly refresh (2026-08-04 21:00 ET) — this morning's safety refresh did not have calendar/CRM tool access in scope to independently re-verify booked-call counts; flagged as a limitation, not a re-verified figure."
+      "note": "Outlook inbox searched live this run (subject:\"New customer message\", genuine messages only — Re:/RE: thread replies excluded — bucketed by the date embedded in each subject line, 2026-07-22 to 2026-08-04, 25 genuine messages reviewed; one internal test submission from sam@prvtlabellabs.com excluded from prior-week count). Attribution: gclid + gad_campaignid matching an in-scope campaign ID = verified; gclid present with no gad_campaignid or a non-Ads utm_source (e.g. chatgpt.com, ig) = ambiguous/unattributed; no params = unattributed. One current-window inquiry (Jason Barresi, Jul 31) carries gclid + gad_campaignid=22755299462, which is the legacy 'Sales Campaign PLL' — excluded from scoped Ads totals per standing instructions never to blend legacy campaigns. Prior-window Tiara Shuneir inquiry (gad_campaignid=24040031889/Samples) was submitted twice ~27 seconds apart (likely a duplicate form submission by the same person); counted as 2 raw messages in qualifiedInboxInquiriesPrior but as 1 unique verified lead for CPL purposes."
     },
     "health": {
       "contactForm": "Form submissions are arriving in Outlook; no break identified in this source pull.",
       "attributionCapture": "Current-window review found 2 GCLID-backed inquiries verified to in-scope campaigns (Gloria Abanga and a stellaquahair.com contact, both gad_campaignid=24049588003/ContractMfg), and 1 GCLID-backed inquiry attributed to the legacy Sales Campaign PLL (out of scope, excluded). 7 of 10 genuine inquiries this week are unattributed. Prior week: 2 GCLID-backed messages verified to Samples (24040031889, same person/Tiara Shuneir, likely 1 unique lead), 1 ambiguous (gclid + chatgpt.com utm, no gad_campaignid), 11 of 14 unattributed.",
       "landingPages": "No landing-page failure reported by available source data; this refresh did not perform live URL testing.",
-      "dailyCapStatus": "No breach declared. Today's spend so far ($2.26 as of 6:30 AM ET) is a tiny fraction of the $25.33/day configured combined budget — far too early in the day to assess pacing.",
-      "weeklyCapStatus": "No breach declared against the original Sam-approved $30/day ($210/week) nominal cap: the 16-day trailing average (2026-07-20 to 2026-08-04, re-computed fresh this morning) is $25.99/day = 86.6% of $30/day. Against the currently configured combined budget ($25.33/day, unchanged since Samples dropped from $10.33 to $5.00 on 2026-08-04), the same trailing average is 102.6% — essentially at pace, not a meaningful overage, and explained by days when Samples was still configured at $10.33."
+      "dailyCapStatus": "No breach declared. Today's spend ($32.21) is 127% of the currently-configured combined budget ($25.33/day) — within Google's normal up-to-2x single-day delivery variance, not a breach on its own.",
+      "weeklyCapStatus": "No breach declared against the original Sam-approved $30/day ($210/week) nominal cap: the 16-day trailing average (2026-07-20 to 2026-08-04) is $25.99/day = 86.6% of $30/day. Against the just-observed lower combined CONFIGURED budget ($25.33/day, after Samples dropped from $10.33 to $5.00), the same trailing average is 102.6% — essentially at pace, not a meaningful overage, and explained by days when Samples was still configured at $10.33."
     },
     "best": {
       "level": "campaign (fresh)",
@@ -565,27 +591,27 @@
       "note": "Campaign comparison only; no conversion or ad-level winner claim."
     },
     "watchItem": {
-      "name": "ContractMfg CPC inflation under Maximize Conversions without working conversion tracking, plus a still-unconfirmed Samples budget cut",
-      "metric": "ContractMfg CPC $2.25 -> $3.64 week over week (+62%); CTR 18.01% -> 12.18%. Separately, Samples' configured daily budget remains at $5.00 (dropped from $10.33 on 2026-08-03), lowering the combined configured cap from $30.66/day to $25.33/day — still no confirmation from Sam.",
+      "name": "ContractMfg CPC inflation under Maximize Conversions without working conversion tracking, plus an unexplained Samples budget cut",
+      "metric": "ContractMfg CPC $2.25 -> $3.64 week over week (+62%); CTR 18.01% -> 12.18%. Separately, Samples' configured daily budget dropped from $10.33 (2026-08-03) to $5.00 (2026-08-04), lowering the combined configured cap from $30.66/day to $25.33/day.",
       "action": "Escalate both to Sam: (1) approve/decline switching ContractMfg to Manual CPC; (2) confirm whether the Samples budget cut was intentional. Make no changes without approval."
     },
     "waste": {
       "inferred": false,
       "note": "Search-term data was not pulled in this refresh (out of approved tool scope this run); no waste claim is made."
     },
-    "recommendation": "READ-ONLY RECOMMENDATION (Sam approval required): Take PLL-Search-ContractMfg-2026 off MAXIMIZE_CONVERSIONS to Manual CPC until conversion tracking is trustworthy — this remains outstanding from the 2026-08-03 correction. Fresh evidence (re-verified 2026-08-05 06:30 ET, current 7-day window Jul 29–Aug 4 unchanged from last night since both are fully elapsed days): ContractMfg CPC is $3.64 this week vs $2.25 last week (+62%) while CTR fell 12.18% vs 18.01%; PLL has no working conversion import, so Google is optimizing toward a signal it cannot see. Separately (still outstanding, flag only, no action taken): PLL-Search-Samples-2026's configured daily budget remains at $5.00 (dropped from $10.33 on 2026-08-03, unexplained, and unchanged again as of this morning's live re-check) — recommend Sam confirm whether this was an intentional change, since it lowers the combined configured cap from $30.66/day to $25.33/day. Expected outcome of the bidding-strategy fix: ContractMfg CPC returns toward the $2.10–$3.22 range. Measurement window: 14 days. Hold all budgets, bids, ads, keywords, targeting, and landing pages unchanged pending Sam approval.",
+    "recommendation": "READ-ONLY RECOMMENDATION (Sam approval required): Take PLL-Search-ContractMfg-2026 off MAXIMIZE_CONVERSIONS to Manual CPC until conversion tracking is trustworthy — this remains outstanding from the 2026-08-03 correction. Fresh evidence: ContractMfg CPC is $3.64 this week vs $2.25 last week (+62%) while CTR fell 12.18% vs 18.01%; PLL has no working conversion import, so Google is optimizing toward a signal it cannot see. Separately (new this run, flag only, no action taken): PLL-Search-Samples-2026's configured daily budget dropped from $10.33 (verified 2026-08-03) to $5.00 (verified tonight) — a change this job did not make and cannot explain; recommend Sam confirm whether this was an intentional change, since it lowers the combined configured cap from $30.66/day to $25.33/day. Expected outcome of the bidding-strategy fix: ContractMfg CPC returns toward the $2.10–$3.22 range. Measurement window: 14 days. Hold all budgets, bids, ads, keywords, targeting, and landing pages unchanged pending Sam approval.",
     "spoken": {
-      "today": "Today, Aug 5 (prelim, as of 6:30 AM ET — only a few hours old): $2.26 spend, 10 impressions, 2 clicks, 20.00% CTR, $1.13 CPC across the two verified campaigns. Too early in the day to compare against the $25.33/day combined configured budget; not a breach signal.",
+      "today": "Today, Aug 4: $32.21 spend, 53 impressions, 8 clicks, 15.09% CTR, $4.03 CPC across the two verified campaigns. That's 127% of the currently-configured $25.33/day combined budget for one day — within Google's normal delivery variance, not a breach. No settings were changed.",
       "sevenAds": "The two campaigns (Contract Manufacturing and White Label Samples) are verified, but the exact seven-ad roster and fresh ad-level totals are unverified — there's no tool-exposed link from an individual ad back to its campaign. I am not making ad winner/loser claims.",
-      "ctrCpc": "Current seven-day (Jul 29–Aug 4) CTR is 13.64% and average CPC is $2.66, versus 17.35% and $1.87 in the prior seven days (Jul 22–Jul 28). CTR and CPC both worsened week over week, driven mainly by ContractMfg. (Unchanged from last night's refresh — both windows are fully elapsed days.)",
-      "leadsEmailsCalls": "This week (Jul 29–Aug 4): 10 genuine inbox inquiries, 2 verified Ads-attributed (both to ContractMfg — Vladimir Elgort/Stellaqua and Gloria Abanga), 1 attributed to a legacy non-scope campaign (Jason Barresi → Sales Campaign PLL), 7 unattributed. Booked-call and close totals were not independently re-verified this run (no calendar/CRM tool in this refresh's scope); carried forward from the last verified count (7 booked calls this week) pending next full nightly refresh. Prior week (Jul 22–28): 14 genuine inquiries (1 internal test excluded), 2 verified Ads-attributed messages from 1 unique Samples lead (Tiara Shuneir, duplicate submission), 1 ambiguous (gclid + chatgpt.com utm, no gad_campaignid), 11 unattributed.",
-      "budgetCap": "Originally approved cap: $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210/week. Currently configured (re-verified live this morning): ContractMfg $20.33/day (unchanged) + Samples $5.00/day (unchanged since 2026-08-04 — no further change detected today) = $25.33/day combined. The 16-day trailing average (Jul 20–Aug 4) is $25.99/day, 86.6% of the original $30/day cap and 102.6% of the current configured cap. No breach declared; no budget change was made.",
-      "winners": "At campaign level only, PLL-Search-Samples-2026 has the lower CPC ($1.48) on Manual CPC; PLL-Search-ContractMfg-2026's CPC remains up 62% week over week under Maximize Conversions with no working conversion tracking. No ad-level winner is verified.",
+      "ctrCpc": "Current seven-day (Jul 29–Aug 4) CTR is 13.64% and average CPC is $2.66, versus 17.35% and $1.87 in the prior seven days (Jul 22–Jul 28). CTR and CPC both worsened week over week, driven mainly by ContractMfg.",
+      "leadsEmailsCalls": "This week: 10 genuine inbox inquiries, 2 verified Ads-attributed (both to ContractMfg), 1 attributed to a legacy non-scope campaign, 7 unattributed. 7 booked calls logged this week; of the 2 we could match to a specific inquiry (Rehman Ghani, Alex/Shopokami), neither has a verified Ads GCLID. Prior week: 14 genuine inquiries (after excluding 1 internal test), 2 verified Ads-attributed messages from 1 unique Samples lead, 1 ambiguous, 11 unattributed, 4 booked calls.",
+      "budgetCap": "Originally approved cap: $20/day Contract Manufacturing plus $10/day White Label Samples = $30/day / $210/week. Currently configured: ContractMfg $20.33/day (unchanged) + Samples $5.00/day (DOWN from $10.33 verified 2026-08-03 — unexplained, flagged for Sam) = $25.33/day combined. The 16-day trailing average is $25.99/day, 86.6% of the original $30/day cap and 102.6% of the just-lowered current configured cap. No breach declared; no budget change was made.",
+      "winners": "At campaign level only, PLL-Search-Samples-2026 has the lower CPC ($1.48) on Manual CPC; PLL-Search-ContractMfg-2026's CPC rose 62% week over week under Maximize Conversions with no working conversion tracking. No ad-level winner is verified.",
       "waste": "Search-term data was not pulled in this refresh; no waste claim is made.",
-      "optimization": "Do not optimize from this refresh. Escalate two items to Sam, still outstanding: switching ContractMfg off Maximize Conversions to Manual CPC (evidence: CPC +62%, CTR -6.3pts vs prior week), and confirming the still-unexplained Samples budget cut from $10.33 to $5.00/day (verified 2026-08-03 → 2026-08-04, unchanged as of this morning). Hold settings unchanged pending approval.",
+      "optimization": "Do not optimize from this refresh. Escalate two items to Sam: switching ContractMfg off Maximize Conversions to Manual CPC (evidence: CPC +62%, CTR -6.3pts), and confirming the unexplained Samples budget cut from $10.33 to $5.00/day. Hold settings unchanged pending approval.",
       "suggestions": "Read-only recommendation: get Sam's yes/no on the Manual CPC switch for ContractMfg, and get Sam to confirm or reverse the Samples budget cut. No cap breach to report this run.",
       "nextExperiment": "Pending: if Sam approves the Manual CPC switch for ContractMfg, measure CPC and CTR over the following 14 days against this week's baseline ($3.64 CPC / 12.18% CTR).",
-      "whatAdsAgentShouldDo": "Present the Manual CPC recommendation and the still-unresolved Samples budget-cut flag to Sam for yes/no; make no changes until approved."
+      "whatAdsAgentShouldDo": "Present the Manual CPC recommendation and the Samples budget-cut flag to Sam for yes/no; make no changes until approved."
     },
     "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull (PLL-Search-ContractMfg-2026 + PLL-Search-Samples-2026 only; legacy campaigns excluded). Ad-level (ad_group_ad) reporting has no available field linking an ad back to its parent campaign in this run's approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
     "approvalRequirement": "Sam approval required for any consequential Ads change; this recommendation is read-only.",
@@ -593,9 +619,9 @@
       "status": "no-fresh-optimization-authorized",
       "note": "Exact seven-ad roster/performance and search terms remain unverified/unavailable; no change authorized."
     },
-    "lastRefreshAttemptAt": "2026-08-05T06:30:00-04:00",
+    "lastRefreshAttemptAt": "2026-08-04T21:00:00-04:00",
     "lastRefreshStatus": "success",
-    "lastRefreshNote": "Morning safety refresh (2026-08-05 06:30 ET) completed: fresh Google Ads campaign-level data pulled for both verified in-scope campaigns (today prelim, current 7-day Jul29-Aug4, prior 7-day Jul22-28, plus a 16-day daily series for cap-average math) and fresh configured budgets (re-verified live, no further change since 2026-08-04). Outlook lead inbox re-searched live and attributed via GCLID/gad_campaignid/UTM; one additional genuine inquiry surfaced (2026-08-04 20:19 ET) not seen in last night's pull. Booked-call/close totals carried forward, not independently re-verified this run (no calendar/CRM tool in scope). No cap breach this run. No Ads settings changed."
+    "lastRefreshNote": "Nightly refresh (2026-08-04 21:00 ET) completed: fresh Google Ads campaign-level data pulled for both verified in-scope campaigns (today, current 7-day, prior 7-day, plus a 16-day daily series for cap-average math) and fresh configured budgets. Outlook lead inbox searched live and attributed via GCLID/gad_campaignid/UTM. No cap breach this run. Flagged: ContractMfg CPC inflation under Maximize Conversions, and an unexplained Samples budget cut from $10.33 to $5.00/day. No Ads settings changed."
   },
   "facilityStatus": {
     "status": "Moved in — active operations at new building",
