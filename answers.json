@@ -1,9 +1,6 @@
 {
-  "id": "ans_1785975244_cmd_msgpwl0s_5hsx88h",
-  "request_id": "cmd_msgpwl0s_5hsx88h",
-  "ts": "2026-08-06T00:14:04Z",
-  "agent": "CRM Developer",
-  "status": "completed",
-  "text": "CRM TASK STATUS \u2014 15 open tasks: 11 overdue, 0 due today/tomorrow, 4 upcoming. 5 have NO OWNER.\n\nOVERDUE (11):\n\u2022 #28 Bottle inspection \u2014 89d \u2014 UNASSIGNED\n\u2022 #224 Schroeder / #225 Parkcrest / #226 Saylor \u2014 28d each\n\u2022 #162 (20d) / #163 (9d) / #164 (6d) / #165 (2d) Talova production \u2014 ALL UNASSIGNED\n\u2022 #279 Lainey \u2014 16d\n\u2022 #223 Armendarez \u2014 5d \u2014 URGENT\n\u2022 #317 Google Ads \u2014 2d\n\nUPCOMING (4): #321, #322 (Aug 11), #194, #316\n\nRead-only pull \u2014 nothing changed. Priority: #223 Armendarez (URGENT), then assign owners to the 5 unassigned (#28 + Talova #162-165).",
-  "spoken_text": "Sam, here's where the board stands. You've got fifteen open tasks, and eleven of them are already overdue. Nothing's due today or tomorrow, so the fire is the backlog, not the calendar. The one to grab first is the Armendarez task \u2014 it's marked urgent and five days late. Right behind it, five tasks have no owner at all, including a bottle inspection that's been sitting eighty-nine days and the whole Talova production run. My read is the real problem is ownership, not workload \u2014 assign those five and most of this clears. I'd knock out Armendarez today and put names on the unassigned five before end of day."
+  "id": "ans_morning_0dbe9dbf-0697-4a47-a140-158f07458e0a",
+  "ts": "2026-08-06T11:04:39.486Z",
+  "body": "Morning brief loaded for 2026-08-06.",
+  "text": "Morning brief loaded for 2026-08-06."
 }
