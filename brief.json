@@ -1,40 +1,40 @@
 {
-  "date": "2026-08-06",
-  "ts": "2026-08-06T11:04:39.486Z",
+  "date": "2026-08-07",
+  "ts": "2026-08-07T11:05:28.000Z",
   "brief": [
     {
-      "t": "FIRST — Terra Lotus: $78,580, or 52% of the $150K target, has sat unsent since Aug 2. Provide the contact name plus shipping and billing addresses; approve the contract and tiered quote; then send it today. This is the biggest revenue lever — do not start anything else first.",
+      "t": "FIRST — Terra Lotus: $78,580, or 52% of the $150K monthly target, has sat unsent since Aug 2. Provide the contact name plus shipping and billing addresses, approve the contract and tiered quote, then send it today. This is the biggest revenue lever — do not start anything else before it.",
       "hot": true
     },
     {
-      "t": "SECOND — Atlas Eternal: $26,500 agreement and pro forma are ready. Confirm Aiden Kraim's Adobe-document wording, fill the size/packaging, billing-address, and lead-time/Incoterms placeholders, then approve and send. Together with Terra, that is $105,080 — 70% of the monthly target.",
+      "t": "SECOND — Atlas Eternal: the $26,500 agreement and pro forma are ready. Confirm Aiden Kraim's Adobe-document wording, fill the three placeholders — fill size and packaging, billing address, and lead time and Incoterms — then approve and send. Terra plus Atlas is $105,080, about 70% of the monthly target.",
       "hot": true
     },
     {
-      "t": "THIRD — OpenSend needs the noon green light: three lookalike domains, a sending platform, a separate Outbound Agent with its own login, a booking-calendar URL, and ICP Tier A. Every delay pushes the 2–3 week warmup clock.",
+      "t": "THIRD — Website and forms, the agent-owned lane, is in progress. Contact forms are verified delivering to sam@prvtlabellabs.com, the SEO-agency form is disabled, and the address is migrated. The real gaps: Book a Call has no scheduler wired and hCaptcha may be silently dropping leads. Waiting on Sam's booking URL — he has one, but it does not attach a Google Meet link. The agent is building hardened forms on a draft theme; nothing publishes without Sam's approval.",
       "hot": false
     },
     {
-      "t": "FOURTH — Restore the PLL CRM session as pll_tasklet_consultant. It blocks CRM fix verification, Aidan purchasing knowledge-base extraction, and UnShrink It verification; do not treat old dashboard numbers as live until access is back.",
+      "t": "FOURTH — OpenSend still needs the noon green light: three lookalike domains, a sending platform, a separate Outbound Agent with its own login, a booking-calendar URL, and ICP Tier A. Every delay pushes the two-to-three-week warmup clock.",
       "hot": false
     },
     {
-      "t": "FIFTH — Aidan Command Lab is live and self-publishing at 7 AM. Aidan still needs to reconnect his own CRM and WhatsApp so the brief captures CRM tasks and supplier chats instead of Outlook only.",
+      "t": "FIFTH — Restore the PLL CRM session as pll_tasklet_consultant. It blocks CRM fix verification, Aidan's purchasing knowledge-base extraction, and UnShrink It verification; do not treat old dashboard numbers as live until access is back.",
       "hot": false
     },
     {
-      "t": "SIXTH — Nadia/Oreka: secure approval of the $8,555 payment and keep the 1,000-unit Peptide Cream job moving. This is the next cash-and-production follow-up after the two contracts.",
+      "t": "SIXTH — Aidan still needs to reconnect his own CRM and WhatsApp so his 7 AM brief captures CRM tasks and supplier chats instead of being Outlook-only.",
       "hot": false
     },
     {
-      "t": "SEVENTH — Clear the warm follow-ups after revenue sends: get Victor Armendarez the packaging, fill, labor, and overhead costing needed for his quote, and complete Tiffany's call before travel. Overnight, H&B replied on a broad multi-product manufacturing inquiry; Sales has sent qualification questions.",
+      "t": "SEVENTH — Nadia/Oreka: secure approval of the $8,555 payment and keep the 1,000-unit Peptide Cream job moving. This is the next cash-and-production follow-up once the two contracts are sent.",
       "hot": false
     }
   ],
   "next": [
-    "Terra Lotus: provide contact name + shipping/billing; approve contract and tiered quote; send today.",
-    "Atlas Eternal: settle Adobe wording, complete the three pro forma fields, approve, and send.",
-    "OpenSend at noon: approve domains, platform, agent, calendar URL, and ICP Tier A.",
+    "Terra Lotus: provide contact name + shipping/billing; approve contract and tiered quote; send today before anything else.",
+    "Atlas Eternal: settle Adobe wording, fill the three pro forma fields, approve, and send.",
+    "OpenSend at noon: approve domains, sending platform, Outbound Agent, booking URL, and ICP Tier A.",
     "Restore the PLL CRM session; then have Aidan reconnect his CRM and WhatsApp."
   ],
   "kb": [
@@ -47,7 +47,7 @@
         "contract",
         "tiered quote"
       ],
-      "a": "Terra Lotus is a $78,580 manufacturing opportunity, equal to 52% of the $150K monthly target. The contract and tiered quote have been unsent since Aug 2; Sam must provide the contact name plus shipping and billing addresses, approve both documents, and send them today. Nothing should outrank this."
+      "a": "Terra Lotus is a $78,580 manufacturing opportunity, equal to 52% of the $150K monthly target. The contract and tiered quote have been unsent since Aug 2; Sam must provide the contact name plus shipping and billing addresses, approve both documents, and send them today. Nothing should outrank this. No Terra Lotus reply arrived overnight."
     },
     {
       "keys": [
@@ -55,10 +55,23 @@
         "atlas",
         "26500",
         "aiden kraim",
+        "ryne bell",
         "pro forma",
         "adobe"
       ],
-      "a": "Atlas Eternal is a $26,500 opportunity with its agreement and pro forma ready to send. Before release, confirm Aiden Kraim's Adobe-document wording and complete fill size/packaging, billing address, and lead time/Incoterms. Sam then approves and sends."
+      "a": "Atlas Eternal is a $26,500 opportunity with its agreement and pro forma ready to send. Before release, confirm Aiden Kraim's Adobe-document wording and fill the three placeholders: fill size and packaging, billing address, and lead time and Incoterms. Sam then approves and sends. No Atlas reply arrived overnight."
+    },
+    {
+      "keys": [
+        "website",
+        "forms",
+        "book a call",
+        "hcaptcha",
+        "booking url",
+        "scheduler",
+        "convertflow"
+      ],
+      "a": "The website and forms lane is agent-owned and in progress. Contact forms are verified delivering to sam@prvtlabellabs.com, the SEO-agency form is disabled, and the address is migrated. The real gaps are that Book a Call has no scheduler wired and hCaptcha may be silently dropping leads. The agent is waiting on Sam's booking URL — he has one but it does not attach a Google Meet link — and is building hardened forms on a draft theme. Nothing publishes without Sam's approval."
     },
     {
       "keys": [
@@ -69,7 +82,7 @@
         "smartlead",
         "icp tier a"
       ],
-      "a": "OpenSend needs Sam's noon approval for three lookalike domains, a sending platform, a separate PLL Outbound Agent with its own login, a booking calendar URL, and ICP Tier A. The domain and inbox warmup takes about 2–3 weeks, so a delay today delays pipeline creation."
+      "a": "OpenSend needs Sam's noon approval for three lookalike domains, a sending platform, a separate PLL Outbound Agent with its own login, a booking-calendar URL, and ICP Tier A. Domain and inbox warmup takes about two to three weeks, so any delay today delays pipeline creation."
     },
     {
       "keys": [
@@ -79,7 +92,7 @@
         "unshrink it",
         "purchasing"
       ],
-      "a": "The PLL CRM browser session is signed out at the login screen. Restoring pll_tasklet_consultant access is needed for CRM fix verification, Aidan purchasing knowledge-base extraction, and UnShrink It verification. Today's carried CRM dashboard figures are not live verification."
+      "a": "The PLL CRM browser session is signed out at the login screen. Restoring pll_tasklet_consultant access is needed for CRM fix verification, Aidan's purchasing knowledge-base extraction, and UnShrink It verification. Today's carried CRM dashboard figures are not live verification."
     },
     {
       "keys": [
@@ -89,7 +102,7 @@
         "7am",
         "brief feed"
       ],
-      "a": "Aidan Command Lab is live and self-publishing its brief at 7 AM. It still needs Aidan to reconnect his own CRM and WhatsApp so it can incorporate CRM tasks and supplier chats instead of relying on Outlook only."
+      "a": "Aidan's Command Lab is live and self-publishing its brief at 7 AM. It still needs Aidan to reconnect his own CRM and WhatsApp so it can incorporate CRM tasks and supplier chats instead of relying on Outlook only."
     },
     {
       "keys": [
@@ -128,7 +141,7 @@
         "beard",
         "body butter"
       ],
-      "a": "Yorel, founder of Hubs & Babydoll, is a new multi-product manufacturing inquiry covering body oils, beard products, body butter, and body wash. Overnight, Sales requested quantity, inventory budget, formula needs, brand assets, and WhatsApp availability before scheduling a consultation. No value is verified yet."
+      "a": "Yorel, founder of Hubs & Babydoll, is a multi-product manufacturing inquiry covering body oils, beard products, body butter, and body wash. Sales requested quantity, inventory budget, formula needs, brand assets, and WhatsApp availability before scheduling a consultation. No value is verified yet."
     },
     {
       "keys": [
@@ -138,17 +151,40 @@
         "packaging",
         "sample approval"
       ],
-      "a": "Hina at Heirloom is seeking frosted-style packaging and has been connected with Laura for container sourcing. Laura offered a Monday or Tuesday 2 PM ET meeting; confirm a time and bring current container options."
+      "a": "Hina at Heirloom is seeking frosted-style packaging for a 2,500-piece peptide cream run with silk-screened lids and secondary boxes. She is connected with Laura for container sourcing, and the Heirloom container meeting is set for Tuesday, Aug 11 at 10 AM ET. Bring current container options."
     },
     {
       "keys": [
         "shopokami",
         "alex",
-        "2 pm",
-        "meeting",
-        "body butter"
+        "body butter",
+        "wholesale pricing",
+        "call"
       ],
-      "a": "Alex at Shopokami has a Thursday August 6, 2 PM ET discovery call for 200 ml private-label beef-tallow body butter. He wants real pricing at 250, 500, and 1,000 units; this is a live meeting, but its value is not verified."
+      "a": "Alex at Shopokami wants wholesale per-unit pricing for the Whipped Body Butter with Beef Tallow at 50, 100, and 250 units. He asked Sam to call him directly at +1 514-242-7072 rather than meet by Google Meet. Sam explained per-unit pricing is not listed publicly because it moves with quantity, jar size, and label finish; this is a live conversation awaiting Sam's pricing follow-up."
+    },
+    {
+      "keys": [
+        "inbound",
+        "inquiries",
+        "keyshaun",
+        "hass alamer",
+        "natalie hamilton",
+        "tamara danielsen",
+        "forms"
+      ],
+      "a": "Overnight inbound awaiting replies: Keyshaun Butler confirmed he is still interested; Hass Alamer, a Manhattan stylist, detailed two hero hair-care products (a leave-in conditioner and a styling cream) after Sam's reply; and two Shopify contact-form leads came in — Natalie Hamilton and Tamara Danielsen, who wants confirmation all products are USA-made. None are angry; all are warm leads needing follow-up after Terra and Atlas."
+    },
+    {
+      "keys": [
+        "ads",
+        "google ads",
+        "cap breach",
+        "contractmfg",
+        "manual cpc",
+        "spend"
+      ],
+      "a": "As of the 6:30 AM ET Ads refresh, current 7-day spend is $219.68 versus $154.37 the prior 7 days, with today at $1.50 partial. An overnight Ads alert flagged the first weekly cap breach with an approval needed to move ContractMfg to Manual CPC; the Ads agent made no changes and the item awaits Sam's decision."
     },
     {
       "keys": [
@@ -156,34 +192,7 @@
         "ceo",
         "single lane"
       ],
-      "a": "Sam's lane today is Terra Lotus first, Atlas Eternal second, then the noon OpenSend decision. Do not switch to facility or lower-value work until the Terra package is sent."
-    },
-    {
-      "keys": [
-        "aidan",
-        "purchasing",
-        "atlas",
-        "oreka"
-      ],
-      "a": "Aidan owns Atlas inputs, Nadia/Oreka payment progress, and reconnecting his Command Lab sources. His work is constrained by the signed-out CRM session, so restore access early."
-    },
-    {
-      "keys": [
-        "laura",
-        "sales",
-        "h&b",
-        "heirloom"
-      ],
-      "a": "Laura is handling qualified inbound follow-up, including H&B qualification and Heirloom container sourcing. Keep this work moving without allowing it to displace the two major contract sends."
-    },
-    {
-      "keys": [
-        "ronald",
-        "r&d",
-        "victor",
-        "compatibility"
-      ],
-      "a": "Ronald supports the technical and cost confirmation needed for Victor Armendarez. The quote remains blocked until packaging compatibility and full cost inputs are documented."
+      "a": "Sam's lane today is Terra Lotus first, Atlas Eternal second, then the noon OpenSend decision. Do not switch to facility, website, or lower-value work until the Terra package is sent."
     }
   ],
   "topTasks": [
@@ -207,15 +216,24 @@
     },
     {
       "rank": 3,
+      "title": "Advance website/forms hardening and unblock Book a Call",
+      "why": "Forms deliver to Sam, but Book a Call has no scheduler and hCaptcha may drop leads; awaiting Sam's booking URL.",
+      "owner": "Agent / Sam",
+      "due": "Today",
+      "priority": "high",
+      "revenue": "Lead-capture-enabling"
+    },
+    {
+      "rank": 4,
       "title": "Green-light OpenSend outbound setup",
-      "why": "Domains, sending platform, agent, calendar URL, and ICP approval are needed before the 2–3 week warmup can begin.",
+      "why": "Domains, sending platform, agent, booking URL, and ICP approval are needed before the 2–3 week warmup can begin.",
       "owner": "Sam",
       "due": "Today 12:00 PM ET",
       "priority": "high",
       "revenue": "Pipeline-enabling"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "title": "Restore the PLL Consultant CRM session",
       "why": "The signed-out session blocks verification and current CRM intelligence.",
       "owner": "Sam",
@@ -224,31 +242,22 @@
       "revenue": "Unblocks revenue operations"
     },
     {
-      "rank": 5,
-      "title": "Secure Nadia/Oreka payment approval and Peptide Cream production handoff",
+      "rank": 6,
+      "title": "Aidan reconnect CRM and WhatsApp to his Command Lab",
+      "why": "His 7 AM brief is Outlook-only until CRM tasks and supplier chats are wired back in.",
+      "owner": "Aidan",
+      "due": "Today",
+      "priority": "medium",
+      "revenue": "Improves brief coverage"
+    },
+    {
+      "rank": 7,
+      "title": "Secure Nadia/Oreka payment approval and Peptide Cream handoff",
       "why": "$8,555 payment approval and the 1,000-unit job are the next direct cash follow-up.",
       "owner": "Sam / Aidan",
       "due": "Today",
       "priority": "high",
       "revenue": "$8,555 payment; 1,000-unit job"
-    },
-    {
-      "rank": 6,
-      "title": "Finish Victor Armendarez costing",
-      "why": "The quote cannot issue until packaging, fill, labor, and overhead costs are confirmed.",
-      "owner": "Aidan / R&D",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "4,000-unit two-SKU opportunity; value unverified"
-    },
-    {
-      "rank": 7,
-      "title": "Complete Tiffany call before travel",
-      "why": "Timing becomes less recoverable after travel; confirm the immediate commercial next step on the call.",
-      "owner": "Sam",
-      "due": "Before travel",
-      "priority": "medium",
-      "revenue": "Value unverified"
     }
   ],
   "teamMembers": {
@@ -265,7 +274,7 @@
           "due": "Today"
         },
         {
-          "title": "Give OpenSend the noon green light",
+          "title": "Share the booking URL for Book a Call and give OpenSend the noon green light",
           "due": "Today 12:00 PM ET"
         }
       ],
@@ -284,7 +293,7 @@
           "due": "Today"
         },
         {
-          "title": "Reconnect CRM and WhatsApp to Aidan Command Lab",
+          "title": "Reconnect CRM and WhatsApp to his Command Lab brief",
           "due": "Today"
         }
       ],
@@ -299,7 +308,7 @@
           "due": "After response"
         },
         {
-          "title": "Continue Heirloom container sourcing and schedule Hina for Monday or Tuesday at 2 PM ET",
+          "title": "Continue Heirloom container sourcing and confirm Hina for the Aug 11 10 AM ET container meeting",
           "due": "Today"
         }
       ],
@@ -331,14 +340,14 @@
       "title": "Send Atlas Eternal agreement and pro forma",
       "why": "The $26,500 package is ready once Adobe wording and three placeholders are settled.",
       "est_value": "$26,500",
-      "next_step": "Confirm wording and inputs; approve and send.",
+      "next_step": "Confirm wording and the three inputs; approve and send.",
       "owner": "Sam / Aidan",
       "timing": "Today",
       "value": "Second largest immediate close lever"
     },
     {
       "title": "Secure Nadia/Oreka approval",
-      "why": "Payment approval is needed to protect the $8,555 cash step and start the 1,000-unit Peptide Cream job.",
+      "why": "Payment approval protects the $8,555 cash step and starts the 1,000-unit Peptide Cream job.",
       "est_value": "$8,555 payment",
       "next_step": "Obtain payment approval and confirm the production handoff.",
       "owner": "Sam / Aidan",
@@ -358,7 +367,7 @@
       "title": "Start OpenSend warmup",
       "why": "A green light today starts the 2–3 week clock for the outbound channel.",
       "est_value": "Pipeline-enabling",
-      "next_step": "Approve domains, platform, agent, calendar URL, and ICP Tier A.",
+      "next_step": "Approve domains, platform, agent, booking URL, and ICP Tier A.",
       "owner": "Sam",
       "timing": "Today 12:00 PM ET",
       "value": "New B2B lead generation channel"
@@ -378,6 +387,7 @@
       "Terra Lotus approval, contact, and shipping/billing inputs",
       "Atlas Adobe wording and three pro-forma placeholders",
       "CRM session access",
+      "Website Book a Call scheduler and hCaptcha lead-drop risk",
       "Victor packaging, fill, labor, and overhead costing"
     ],
     "activeDeals": 20,
