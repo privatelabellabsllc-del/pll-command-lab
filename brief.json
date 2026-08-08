@@ -397,243 +397,214 @@
     "note": "CRM browser session is at the signed-out login screen. Counts and value are carried from the last verified CRM snapshot and must not be treated as live today. The immediately actionable contract value is $105,080, or 70% of the $150K monthly goal."
   },
   "adsAgentBrief": {
-    "status": "Morning 8/7 06:30 ET safety refresh success — fresh Google Ads pull, both in-scope campaigns ENABLED. NO hard cap breach vs approved $30/day (7-day 104.61% of $210; 15-complete-day avg $25.91/day). Trailing-7 marginally over $30 nominal, flagged. No settings changed.",
-    "updatedAt": "2026-08-07T06:30:00-04:00",
+    "status": "Nightly 8/7 21:02 ET refresh complete — read-only; no Ads settings changed.",
+    "updatedAt": "2026-08-07T21:02:47-04:00",
     "northStar": "Qualified B2B booked calls → closed manufacturing revenue.",
-    "snapshot": "Today (Aug 7, partial): net-new lane $1.50/9i/1c. Current 7-day (07-31→08-06): $219.68/530i/84c/15.85% CTR/$2.62 CPC. Prior 7-day (07-24→07-30): $154.37/499i/76c/15.23% CTR/$2.03 CPC. ContractMfg current $162.07/CPC $3.6; Samples current $57.61/CPC $1.48. Google conversions ignored as phantom (tracking broken).",
-    "leads": "Current window (07-31→08-06): 5 genuine inbox inquiries, 2 verified in-scope Ads-attributed (ContractMfg), 2 legacy out-of-scope (excluded), 1 unattributed. Prior (07-24→07-30): 15 genuine, 2 raw verified Samples (1 unique), 1 ambiguous, 12 unattributed. 1 new inquiry today (unattributed). Booked calls carried forward, NOT re-verified. Runaway-spend guard NOT triggered.",
-    "recommendation": "HOLD all budgets/bids as-is — no report-only changes. Keep pressing two pending Sam approvals: (1) revert PLL-Search-ContractMfg-2026 from Maximize Conversions to Manual CPC (broken conversion signal inflating CPC to $3.60 and driving trailing-7 spend over the $30 cap); (2) confirm or reverse the Samples daily-budget cut from $10.33 to $5.00. No new spend beyond the approved cap.",
+    "snapshot": "Today partial: $16.81/45 impressions/4 clicks. Current 7-day (Aug 1–7): $209.2/468 impressions/77 clicks/16.45% CTR/$2.72 CPC. Prior (Jul 25–31): $172.74/575 impressions/81 clicks/14.09% CTR/$2.13 CPC.",
+    "leads": "Qualified B2B inbox inquiries: 1 current, 15 prior. Ads attribution, CPL and cost/booked-call: NOT YET MEASURABLE (no conversion tracking; product/collection final URLs). Calls 7/4 carried forward, NOT RE-VERIFIED.",
+    "cap": "BREACH: trailing seven-day average is $29.89/day, 117.99% of the live configured $25.33/day total ($177.31 for seven days). This exceeds the configured daily-budget average. Google may serve up to 2× daily on individual days, but this is a trailing-window average; no settings were changed.",
+    "recommendation": "READ-ONLY RECOMMENDATION — Sam approval required: hold all settings now and investigate/fix lead attribution before making any performance optimization. Google Ads has no conversion tracking and these ads route to product/collection pages rather than a lead page, so verified Ads leads, CPL, and cost per booked call are NOT YET MEASURABLE. Expected outcome: a defensible attribution baseline; measurement window: 14 days after tracking is live. Do not change campaigns, bids, budgets, keywords, targeting, creative, pages, forms, or spend without explicit approval.",
     "governance": "No consequential Ads change without Sam approval.",
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull (PLL-Search-ContractMfg-2026 + PLL-Search-Samples-2026 only; legacy campaigns excluded, both ENABLED). Ad-level (ad_group_ad) reporting has no available field linking an ad back to its parent campaign in this run’s approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level data is freshly verified only for PLL-Search-ContractMfg-2026 (24049588003) and PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. The approved ad_group_ad report does not expose a usable campaign-parent link in this run, so the exact seven-ad roster and ad-level totals cannot be proven.",
     "windows": {
-      "today": "2026-08-07 (partial)",
-      "current": "2026-07-31 to 2026-08-06",
-      "prior": "2026-07-24 to 2026-07-30"
+      "today": "2026-08-07 America/New_York (partial through 21:02 ET)",
+      "current": "2026-08-01 through 2026-08-07 America/New_York",
+      "prior": "2026-07-25 through 2026-07-31 America/New_York"
     },
     "approvalRequired": true,
     "changesMade": "None this run."
   },
   "adsIntelligence": {
-    "updatedAt": "2026-08-07T06:30:00-04:00",
-    "source": "google-ads-and-outlook-live-morning-safety-refresh",
-    "scope": "Ads-Agent-built net-new campaigns only: PLL-Search-ContractMfg-2026 (24049588003) + PLL-Search-Samples-2026 (24040031889). CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull (PLL-Search-ContractMfg-2026 + PLL-Search-Samples-2026 only; legacy campaigns excluded, both ENABLED). Ad-level (ad_group_ad) reporting has no available field linking an ad back to its parent campaign in this run’s approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull (PLL-Search-ContractMfg-2026 + PLL-Search-Samples-2026 only; legacy campaigns excluded, both ENABLED). Ad-level (ad_group_ad) reporting has no available field linking an ad back to its parent campaign in this run’s approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "updatedAt": "2026-08-07T21:02:47-04:00",
+    "source": "google-ads-and-outlook-live-nightly-cache-refresh",
+    "lastRefreshStatus": "success",
+    "lastRefreshNote": "Read-only nightly refresh completed; no Ads settings changed.",
+    "scope": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level data is freshly verified only for PLL-Search-ContractMfg-2026 (24049588003) and PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. The approved ad_group_ad report does not expose a usable campaign-parent link in this run, so the exact seven-ad roster and ad-level totals cannot be proven.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level data is freshly verified only for PLL-Search-ContractMfg-2026 (24049588003) and PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. The approved ad_group_ad report does not expose a usable campaign-parent link in this run, so the exact seven-ad roster and ad-level totals cannot be proven.",
     "windows": {
-      "today": "2026-08-07 (partial)",
-      "current": "2026-07-31 to 2026-08-06",
-      "prior": "2026-07-24 to 2026-07-30"
+      "today": "2026-08-07 America/New_York (partial through 21:02 ET)",
+      "current": "2026-08-01 through 2026-08-07 America/New_York",
+      "prior": "2026-07-25 through 2026-07-31 America/New_York"
     },
     "today": {
-      "spend": 1.5,
-      "impressions": 9,
-      "clicks": 1,
-      "ctr": 11.11,
-      "cpc": 1.5,
-      "note": "Today (partial,  spend as of 6:30am ET) is an incomplete day; morning safety refresh reports through the prior completed day (Aug 6) for trends. A partial early-morning figure is not a pacing signal."
+      "spend": 16.81,
+      "impressions": 45,
+      "clicks": 4,
+      "ctr": 8.89,
+      "cpc": 4.2,
+      "note": "Partial day; not a pacing conclusion."
     },
     "current": {
-      "spend": 219.68,
-      "impressions": 530,
-      "clicks": 84,
-      "ctr": 15.85,
-      "cpc": 2.62
+      "spend": 209.2,
+      "impressions": 468,
+      "clicks": 77,
+      "ctr": 16.45,
+      "cpc": 2.72
     },
     "prior": {
-      "spend": 154.37,
-      "impressions": 499,
-      "clicks": 76,
-      "ctr": 15.23,
-      "cpc": 2.03
+      "spend": 172.74,
+      "impressions": 575,
+      "clicks": 81,
+      "ctr": 14.09,
+      "cpc": 2.13
     },
     "campaignBreakdown": [
       {
-        "name": "PLL-Search-ContractMfg-2026",
         "campaignId": "24049588003",
+        "name": "PLL-Search-ContractMfg-2026",
         "status": "ENABLED",
-        "biddingStrategy": "MAXIMIZE_CONVERSIONS",
         "dailyBudget": 20.33,
         "today": {
           "id": "24049588003",
           "name": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "bid": "MAXIMIZE_CONVERSIONS",
-          "budget": 20.33,
-          "spend": 0,
-          "impressions": 3,
-          "clicks": 0,
-          "ctr": 0,
-          "cpc": 0
+          "spend": 12.41,
+          "impressions": 27,
+          "clicks": 1,
+          "ctr": 3.7,
+          "cpc": 12.41
         },
         "current": {
           "id": "24049588003",
           "name": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "bid": "MAXIMIZE_CONVERSIONS",
-          "budget": 20.33,
-          "spend": 162.07,
-          "impressions": 346,
-          "clicks": 45,
-          "ctr": 13.01,
-          "cpc": 3.6
+          "spend": 156.09,
+          "impressions": 298,
+          "clicks": 41,
+          "ctr": 13.76,
+          "cpc": 3.81
         },
         "prior": {
           "id": "24049588003",
           "name": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "bid": "MAXIMIZE_CONVERSIONS",
-          "budget": 20.33,
-          "spend": 105.22,
-          "impressions": 246,
-          "clicks": 43,
-          "ctr": 17.48,
-          "cpc": 2.45
+          "spend": 123.61,
+          "impressions": 319,
+          "clicks": 48,
+          "ctr": 15.05,
+          "cpc": 2.58
         }
       },
       {
-        "name": "PLL-Search-Samples-2026",
         "campaignId": "24040031889",
+        "name": "PLL-Search-Samples-2026",
         "status": "ENABLED",
-        "biddingStrategy": "MANUAL_CPC",
         "dailyBudget": 5,
-        "dailyBudgetNote": "Held at $5.00/day this run (unchanged since the 2026-08-04 unexplained drop from $10.33). This job did not change it. Still flagged for Sam to confirm or reverse.",
         "today": {
           "id": "24040031889",
           "name": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "bid": "MANUAL_CPC",
-          "budget": 5,
-          "spend": 1.5,
-          "impressions": 6,
-          "clicks": 1,
+          "spend": 4.4,
+          "impressions": 18,
+          "clicks": 3,
           "ctr": 16.67,
-          "cpc": 1.5
+          "cpc": 1.47
         },
         "current": {
           "id": "24040031889",
           "name": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "bid": "MANUAL_CPC",
-          "budget": 5,
-          "spend": 57.61,
-          "impressions": 184,
-          "clicks": 39,
-          "ctr": 21.2,
+          "spend": 53.11,
+          "impressions": 170,
+          "clicks": 36,
+          "ctr": 21.18,
           "cpc": 1.48
         },
         "prior": {
           "id": "24040031889",
           "name": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "bid": "MANUAL_CPC",
-          "budget": 5,
-          "spend": 49.15,
-          "impressions": 253,
+          "spend": 49.13,
+          "impressions": 256,
           "clicks": 33,
-          "ctr": 13.04,
+          "ctr": 12.89,
           "cpc": 1.49
         }
       }
     ],
     "adBreakdown": [],
-    "adBreakdownStatus": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level reporting is fully verified via fresh Google Ads pull (PLL-Search-ContractMfg-2026 + PLL-Search-Samples-2026 only; legacy campaigns excluded, both ENABLED). Ad-level (ad_group_ad) reporting has no available field linking an ad back to its parent campaign in this run’s approved tool scope, so fresh ad-level totals and the exact seven-ad roster remain unprovable. No ad winner/loser or search-term claims made.",
+    "adBreakdownStatus": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level data is freshly verified only for PLL-Search-ContractMfg-2026 (24049588003) and PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. The approved ad_group_ad report does not expose a usable campaign-parent link in this run, so the exact seven-ad roster and ad-level totals cannot be proven.",
     "searchTermEvidence": {
       "available": false,
-      "note": "No search-term data pulled this refresh (out of approved tool scope); no waste claim made."
+      "note": "No approved search-term reporting resource was available in this read-only run; no waste claim is made."
     },
     "leads": {
-      "qualifiedInboxInquiries": 5,
-      "qualifiedInboxInquiriesPrior": 15,
-      "qualifiedInboxInquiriesToday": 1,
-      "qualifiedInboxInquiriesTodayNote": "1 new genuine Shopify inquiry today (Aug 7 12:48am) with no Google Ads params = unattributed / not yet measurable.",
-      "verifiedAdsAttributed": 2,
-      "verifiedAdsAttributedPrior": 2,
-      "verifiedAdsAttributedPriorUniqueNote": "2 raw messages ~27s apart from the same person (likely one duplicate form submission) = 1 unique verified Samples lead for CPL purposes.",
-      "adsAttributedOutOfScopeLegacy": 2,
-      "adsAttributedOutOfScopeLegacyPrior": 0,
-      "ambiguousPaidSignal": 0,
-      "ambiguousPaidSignalPrior": 1,
-      "unattributed": 1,
-      "unattributedPrior": 12,
+      "current": {
+        "rawFormInquiries": 4,
+        "qualifiedB2BInquiries": 1,
+        "qualificationNote": "Four Shopify contact-form messages have local subject dates Aug 1–7: one clearly B2B manufacturing inquiry; three are non-buyer/insufficient-information messages. Qualification is inbox-review only, not CRM-verified."
+      },
+      "prior": {
+        "rawFormInquiries": 16,
+        "qualifiedB2BInquiries": 15,
+        "qualificationNote": "Sixteen Shopify contact-form messages have local subject dates Jul 25–31: fifteen are provisionally in-lane B2B inquiries; one is a non-buyer/insufficient-information message. Qualification is inbox-review only, not CRM-verified."
+      },
+      "verifiedAdsAttributed": "NOT YET MEASURABLE",
+      "verifiedAdsAttributedPrior": "NOT YET MEASURABLE",
+      "attributionNote": "Google Ads has no conversion tracking wired and in-scope ad final URLs lead to product/collection pages, not a lead page. No UTM/GCLID/campaign-source record can be relied on as verified Ads attribution for this refresh.",
       "bookedCalls": 7,
       "bookedCallsPrior": 4,
-      "bookedCallsNote": "NOT RE-VERIFIED this run — booked-call counts require calendar/CRM access, out of approved tool scope for this refresh. Carried forward from the last verified refresh; treat as dated.",
-      "bookedCallsVerifiedAdsAttributed": 0,
-      "bookedCallsVerifiedAdsAttributedPrior": 0,
-      "cplBlended": 43.94,
-      "cplBlendedPrior": 10.29,
-      "cplVerifiedPaid": 109.84,
-      "cplVerifiedPaidPrior": 154.37,
+      "bookedCallsNote": "NOT RE-VERIFIED — carried forward from the prior cache because calendar/CRM access was out of scope.",
+      "cplLastVerified": 109.84,
+      "cplLastVerifiedPrior": 154.37,
+      "cplNote": "NOT RE-VERIFIED — cached figures only; current CPL is NOT YET MEASURABLE without reliable Ads attribution.",
       "costPerBookedCall": null,
-      "costPerBookedCallNote": "NOT YET MEASURABLE: booked-call attribution requires calendar/CRM matching, out of scope this run. No in-scope booked call tied to a verified GCLID/gad_campaignid.",
-      "note": "Outlook (sam@prvtlabellabs.com) searched live. 21 genuine Shopify \"New customer message\" form submissions since 2026-07-24, bucketed by embedded subject date: 1 today (08-07), 5 current (07-31→08-06), 15 prior (07-24→07-30). Attribution: gclid+gad_campaignid matching an in-scope campaign = verified; gclid with non-Ads utm_source (e.g. chatgpt.com) or no gad_campaignid = ambiguous; no params = unattributed. CURRENT: 2 verified in-scope (both 24049588003/ContractMfg: Aug 1 10:29am, Jul 31 12:04am), 2 legacy Sales Campaign PLL (22755299462: Aug 6 9:17am, Jul 31 11:43pm — excluded), 1 unattributed (Aug 4 8:19pm Elijah Snider). PRIOR: 2 raw verified in-scope (24040031889/Samples, Jul 27 2:04pm, ~27s apart = 1 unique lead), 1 ambiguous (Jul 28 1:39pm chatgpt.com), 12 unattributed. Runaway-spend guard NOT triggered."
-    },
-    "health": {
-      "contactForm": "Form submissions arriving in Outlook (including a new one today); no break identified in this source pull.",
-      "attributionCapture": "Current: 2 GCLID-backed verified to in-scope ContractMfg (24049588003); 2 GCLID-backed attributed to legacy Sales Campaign PLL (22755299462, excluded); 1 unattributed. Google conversion tracking remains broken (no working import); attribution done manually by inbox param inspection. Prior: 2 raw verified to Samples (24040031889, 1 unique lead), 1 ambiguous (chatgpt.com), 12 unattributed.",
-      "landingPages": "No landing-page failure reported by available source data; this read-only refresh did not live-test URLs.",
-      "dailyCapStatus": "Today (8/7) is a partial day; morning safety refresh reports through the prior completed day. No single-day breach signal.",
-      "weeklyCapStatus": "NO HARD BREACH against the Sam-approved $30/day ($210/week) cap. Current 7-day (07-31→08-06) spend $219.68 = 104.61% of $210 ($31.38/day avg = 104.6% of $30 nominal). 15 complete-day trailing average (07-23→08-06) $25.91/day = 86.4% of $30/day, confirming the account is under cap on a monthly-average basis. Against the flat configured $25.33/day the 7-day average is 123.9%, but Samples was $10.33 for 4 of the 7 days, so the day-weighted configured 7-day budget is $198.63 and actual spend is 110.6% of it. The marginal overage is within Google's up-to-2x daily delivery + monthly true-up variance and is driven by ContractMfg pacing above its $20.33/day sub-budget under Maximize Conversions ($23.15/day). Flagged to Sam; no settings changed."
+      "costPerBookedCallNote": "NOT YET MEASURABLE; calendar/CRM and verified attribution were out of scope."
     },
     "cap": {
       "configuredDailyBudgets": {
-        "Contract Manufacturing": 20.33,
-        "White Label Samples": 5,
+        "ContractMfg": 20.33,
+        "Samples": 5,
         "combined": 25.33
       },
-      "approvedCapDaily": 30,
-      "approvedCapWeekly": 210,
-      "current7DaySpend": 219.68,
-      "current7DayDailyAverage": 31.38,
-      "fifteenDayCompleteTrailingAverage": 25.91,
-      "dayWeightedConfigured7DayBudget": 198.63,
-      "pctOfDayWeightedConfigured": 110.6,
-      "pctOfApprovedWeeklyCap": 104.61,
-      "pctOfFlatConfigured": 123.9,
-      "verdict": "NO HARD BREACH against the Sam-approved $30/day cap (7-day 104.61% of $210; 15 complete-day avg $25.91/day = 86.4% of $30). Trailing 7-day average $31.38/day is marginally over the $30 nominal cap (104.6%) and 110.6% of the day-weighted configured budget — within Google's up-to-2x daily/true-up variance, driven by ContractMfg Maximize-Conversions pacing ($23.15/day vs $20.33 budget) plus the mid-window Samples cut. Flagged to Sam; no settings changed."
+      "configuredSevenDayBudget": 177.31,
+      "currentSevenDaySpend": 209.2,
+      "currentSevenDayDailyAverage": 29.89,
+      "pctOfConfiguredBudget": 117.99,
+      "verdict": "BREACH: trailing seven-day average is $29.89/day, 117.99% of the live configured $25.33/day total ($177.31 for seven days). This exceeds the configured daily-budget average. Google may serve up to 2× daily on individual days, but this is a trailing-window average; no settings were changed."
+    },
+    "health": {
+      "cap": "BREACH: trailing seven-day average is $29.89/day, 117.99% of the live configured $25.33/day total ($177.31 for seven days). This exceeds the configured daily-budget average. Google may serve up to 2× daily on individual days, but this is a trailing-window average; no settings were changed.",
+      "contactForm": "Shopify form messages are arriving in Outlook; no form-route break detected from the source pull.",
+      "attribution": "NOT YET MEASURABLE — no Google Ads conversion tracking and product/collection final URLs.",
+      "funnel": "Top-of-funnel clicks present; qualified-lead efficiency cannot be measured reliably."
     },
     "best": {
-      "level": "campaign (fresh)",
+      "level": "campaign (not conversion-validated)",
       "name": "PLL-Search-Samples-2026",
-      "metric": "Current 7-day CTR 21.2% at CPC $1.48 on Manual CPC, pacing within its $5/day sub-budget.",
-      "note": "Campaign comparison only; no conversion or ad-level winner claim."
+      "metric": "Current seven-day CPC $1.48; CTR 21.18%.",
+      "note": "Campaign comparison only; no ad-level or conversion winner claim."
     },
     "worst": {
-      "level": "campaign (fresh)",
+      "level": "campaign (not conversion-validated)",
       "name": "PLL-Search-ContractMfg-2026",
-      "metric": "Current 7-day CPC $3.60 (up from $2.45 prior week, +47%) while CTR fell to 13.01% (from 17.48%). On MAXIMIZE_CONVERSIONS with no working conversion tracking.",
-      "note": "Campaign comparison only; no conversion or ad-level winner claim."
+      "metric": "Current seven-day CPC $3.81; CTR 13.76%.",
+      "note": "Campaign comparison only; no ad-level or conversion loser claim."
     },
     "watchItem": {
-      "name": "ContractMfg CPC inflation + pacing above sub-budget under Maximize Conversions; unexplained Samples budget cut; trailing-7 spend marginally over the $30 cap",
-      "metric": "ContractMfg CPC $2.45->$3.60 WoW (+47%), CTR 17.48%->13.01%, current 7-day $162.07 = $23.15/day vs $20.33 budget. Trailing 7-day account $31.38/day = 104.6% of $30 nominal. Samples still $5.00/day (down from $10.33 on 2026-08-04, unexplained).",
-      "action": "Escalate to Sam for yes/no: (1) switch ContractMfg off Maximize Conversions to Manual CPC; (2) confirm/reverse the Samples budget cut. Make no changes without approval."
+      "name": "Configured-budget trailing-average breach plus broken attribution",
+      "metric": "$29.89/day vs $25.33/day configured (117.99%).",
+      "action": "Escalate for Sam review; make no setting changes."
     },
     "waste": {
       "inferred": false,
-      "note": "Search-term data not pulled this refresh; no waste claim."
+      "note": "No search-term data available; no waste claim."
     },
-    "recommendation": "READ-ONLY RECOMMENDATION (Sam approval required): take PLL-Search-ContractMfg-2026 off MAXIMIZE_CONVERSIONS to Manual CPC until conversion tracking is trustworthy — outstanding from the 2026-08-03 correction. Evidence: its 7-day CPC is $3.60 vs $2.45 prior while CTR fell to 13.01% from 17.48%; PLL has no working conversion import, so Google optimizes toward a signal it cannot see, and this campaign is the main driver of trailing-7 spend at 104.6% of the $30 nominal cap. Separately flag (no action): Samples daily budget still $5.00 (down from $10.33 on 2026-08-04, unexplained) — confirm/reverse. Expected outcome: ContractMfg CPC returns toward the $2.10–$3.20 range and spend settles under $30. Measurement window: 14 days. Hold all budgets, bids, ads, keywords, targeting, and landing pages unchanged pending Sam approval.",
-    "approvalRequirement": "Sam approval required for any consequential Ads change; this recommendation is read-only.",
+    "recommendation": "READ-ONLY RECOMMENDATION — Sam approval required: hold all settings now and investigate/fix lead attribution before making any performance optimization. Google Ads has no conversion tracking and these ads route to product/collection pages rather than a lead page, so verified Ads leads, CPL, and cost per booked call are NOT YET MEASURABLE. Expected outcome: a defensible attribution baseline; measurement window: 14 days after tracking is live. Do not change campaigns, bids, budgets, keywords, targeting, creative, pages, forms, or spend without explicit approval.",
+    "approvalRequirement": "Sam approval required; recommendation is read-only.",
     "spoken": {
-      "today": "Today, Aug 7, is a partial day (about $1.50 spend, 9 impressions, 1 click so far as of the 6:30am refresh). The morning safety refresh reports trends through the prior completed day, Aug 6. No settings changed.",
-      "sevenAds": "The two campaigns (Contract Manufacturing and White Label Samples) are verified and both ENABLED, but the exact seven-ad roster and fresh ad-level totals are unverified — no tool-exposed link from an ad back to its campaign. No ad winner/loser claims.",
-      "ctrCpc": "Current 7-day (Jul 31–Aug 6): 15.85% CTR, $2.62 CPC. Prior 7-day (Jul 24–Jul 30): 15.23% CTR, $2.03 CPC. CTR roughly flat; CPC rose, driven mainly by ContractMfg.",
-      "leadsEmailsCalls": "This week: 5 genuine inbox inquiries, 2 verified in-scope Ads-attributed (ContractMfg), 2 legacy out-of-scope, 1 unattributed. Prior week: 15 genuine, 2 raw verified Samples (1 unique lead), 1 ambiguous (chatgpt.com), 12 unattributed. One new inquiry arrived today (unattributed). Booked calls (7 this week / 4 prior) carried forward and NOT re-verified this run — calendar/CRM out of scope.",
-      "budgetCap": "Approved cap: $30/day / $210/week. Configured now: ContractMfg $20.33/day + Samples $5.00/day = $25.33/day (Samples still down from $10.33, unexplained). Current 7-day spend $219.68 = 104.61% of $210; 15 complete-day average $25.91/day = 86.4% of $30. NO hard breach vs the approved cap; the trailing-7 average ($31.38/day) is marginally over the $30 nominal, within Google 2x/true-up variance and driven by ContractMfg on Maximize Conversions. Flagged to Sam; no budget change made.",
-      "winners": "Campaign-level only: Samples has the lower CPC ($1.48) and higher CTR (21.2%) on Manual CPC; ContractMfg CPC rose 47% WoW under Maximize Conversions with no working conversion tracking. No ad-level winner verified.",
-      "waste": "Search-term data not pulled this refresh; no waste claim.",
-      "optimization": "Do not optimize from this refresh. Escalate to Sam: switch ContractMfg off Maximize Conversions to Manual CPC (CPC +47%, CTR -4.5pts, driving trailing-7 over $30), and confirm/reverse the Samples budget cut. Hold settings unchanged pending approval.",
-      "suggestions": "Read-only: get Sam yes/no on the Manual CPC switch for ContractMfg and on the Samples budget cut; note the trailing-7 spend is marginally over the $30 cap.",
-      "nextExperiment": "Pending: if Sam approves the Manual CPC switch for ContractMfg, measure CPC/CTR over the following 14 days against this week’s baseline ($3.60 CPC / 13.01% CTR).",
-      "whatAdsAgentShouldDo": "Present the Manual CPC recommendation, the Samples budget-cut flag, and the marginal trailing-7 cap overage to Sam for yes/no; make no changes until approved."
-    },
-    "latestOptimization": {
-      "status": "no-fresh-optimization-authorized",
-      "note": "Exact seven-ad roster/performance and search terms unverified/unavailable; no change authorized."
-    },
-    "lastRefreshAttemptAt": "2026-08-07T06:30:00-04:00",
-    "lastRefreshStatus": "success",
-    "lastRefreshNote": "Morning safety refresh (2026-08-07 06:30 ET) completed: fresh Google Ads campaign-level data (today partial, current 7-day 07-31→08-06, prior 7-day 07-24→07-30, plus a 16-day daily series) and fresh configured budgets (ContractMfg $20.33 + Samples $5.00 = $25.33/day). Outlook lead inbox searched live and attributed via GCLID/gad_campaignid/UTM. NO hard cap breach vs the approved $30/day cap; trailing-7 average $31.38/day marginally over $30 nominal (104.6%), flagged. Samples budget still $5.00 (unexplained cut, flagged). No Ads settings changed."
+      "today": "Today (partial through 21:02 ET): $16.81 spend, 45 impressions, 4 clicks, 8.89% CTR, $4.2 CPC.",
+      "sevenAds": "Current seven days (Aug 1–7): $209.2, 77 clicks, 16.45% CTR, $2.72 CPC; prior (Jul 25–31): $172.74, 81 clicks, 14.09% CTR, $2.13 CPC. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level data is freshly verified only for PLL-Search-ContractMfg-2026 (24049588003) and PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. The approved ad_group_ad report does not expose a usable campaign-parent link in this run, so the exact seven-ad roster and ad-level totals cannot be proven.",
+      "ctrCpc": "CTR 16.45% vs 14.09% prior; CPC $2.72 vs $2.13.",
+      "leadsEmailsCalls": "Qualified inbox inquiries: 1 current vs 15 prior; verified Ads leads are NOT YET MEASURABLE. Booked calls are carried forward, not re-verified: 7 current / 4 prior.",
+      "budgetCap": "Live configured budgets: ContractMfg $20.33/day + Samples $5/day = $25.33/day. BREACH: trailing seven-day average is $29.89/day, 117.99% of the live configured $25.33/day total ($177.31 for seven days). This exceeds the configured daily-budget average. Google may serve up to 2× daily on individual days, but this is a trailing-window average; no settings were changed.",
+      "winners": "Samples has the lower campaign-level current CPC; no ad-level or conversion winner is proven.",
+      "waste": "No search-term data was available; no waste claim.",
+      "optimization": "No optimization was made. The only recommendation is attribution repair, pending Sam approval.",
+      "suggestions": "READ-ONLY RECOMMENDATION — Sam approval required: hold all settings now and investigate/fix lead attribution before making any performance optimization. Google Ads has no conversion tracking and these ads route to product/collection pages rather than a lead page, so verified Ads leads, CPL, and cost per booked call are NOT YET MEASURABLE. Expected outcome: a defensible attribution baseline; measurement window: 14 days after tracking is live. Do not change campaigns, bids, budgets, keywords, targeting, creative, pages, forms, or spend without explicit approval.",
+      "nextExperiment": "After Sam approves tracking work, measure verified lead capture and CPL over 14 days; do not change Ads settings as part of this refresh.",
+      "whatAdsAgentShouldDo": "Present the read-only attribution recommendation and cap verdict to Sam; make no changes until explicit approval."
+    }
   },
   "facilityStatus": {
     "status": "Moved in — active operations at new building",
