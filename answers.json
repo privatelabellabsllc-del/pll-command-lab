@@ -1,9 +1,6 @@
 {
-  "id": "ads-weekly-2026-08-07",
-  "ts": "2026-08-08T01:37:21.309Z",
-  "request_id": "ads-weekly-2026-08-07",
-  "agent": "Ads Agent",
-  "status": "completed",
-  "text": "WEEKLY ADS RECOMMENDATION (pending your approval)\n\nRecommended change: Revert the Contract Manufacturing campaign (PLL-Search-ContractMfg-2026, id 24049588003) from Maximize Conversions back to Manual CPC.\n\nWhy: The campaign is on Maximize Conversions but bidding to a conversion signal that is broken/absent (no conversion tracking is wired). Result: CPC rose $2.45 -> $3.60 week-over-week while CTR fell 17.5% -> 13.0%, pushing combined trailing-7 spend to $219.68 — the 2nd straight week over the $210 cap. White Label Samples (already Manual CPC) is stable at $1.48 CPC.\n\nExpected outcome: CPC back toward ~$2.45 and trailing-7 spend under the $210 cap. No budget or targeting change.\nMeasurement window: 7-14 days.\nScope: Net-new Ads Agent campaigns only; legacy campaigns excluded.\n\nAPPROVAL REQUIRED: Reply yes to authorize the Ads Agent to make this switch. Read-only until then — no changes have been made.",
-  "spoken_text": "Sam, here's the weekly ads read. The Ads Agent recommends one change and it needs your yes. Our Contract Manufacturing campaign is set to Maximize Conversions, but it's chasing a conversion signal we never wired up, so the cost per click jumped from about two forty-five to three sixty this week and click-through dropped. That pushed us over the two-ten weekly cap for the second week in a row. The fix is simple: switch that campaign back to manual cost-per-click, which should pull the cost back down without changing the budget. The samples campaign is already on manual and holding steady. Nothing's been changed yet. Just say the word and the Ads Agent will make the switch."
+  "id": "e4b58f17-4c77-4648-94c3-0f0be330df07",
+  "ts": "2026-08-08T11:02:10.371Z",
+  "text": "Morning brief loaded for 2026-08-08.",
+  "spoken_text": "Morning brief loaded for 2026-08-08."
 }
