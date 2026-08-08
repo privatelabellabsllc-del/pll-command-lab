@@ -590,7 +590,7 @@
       "inferred": false,
       "note": "No search-term data available; no waste claim."
     },
-    "recommendation": "READ-ONLY RECOMMENDATION — Sam approval required: hold all settings now and investigate/fix lead attribution before making any performance optimization. Google Ads has no conversion tracking and these ads route to product/collection pages rather than a lead page, so verified Ads leads, CPL, and cost per booked call are NOT YET MEASURABLE. Expected outcome: a defensible attribution baseline; measurement window: 14 days after tracking is live. Do not change campaigns, bids, budgets, keywords, targeting, creative, pages, forms, or spend without explicit approval.",
+    "recommendation": "WEEKLY ADS RECOMMENDATION (2026-08-07 — PENDING SAM APPROVAL): Revert ContractMfg (24049588003) from Maximize Conversions to Manual CPC. Evidence: campaign is on MAX_CONV, bidding to a conversion signal that is broken/absent (no conversion tracking wired), so CPC rose $2.45->$3.60 week-over-week while CTR fell 17.5%->13.0%, pushing combined trailing-7 spend to $219.68 = 2nd straight week over the $210 cap. Samples (Manual CPC) stable at $1.48 CPC. Expected outcome: CPC back toward ~$2.45 and trailing-7 under cap; no budget or targeting change. Measurement window: 7-14 days. APPROVAL REQUIRED: YES. Read-only — no changes made.",
     "approvalRequirement": "Sam approval required; recommendation is read-only.",
     "spoken": {
       "today": "Today (partial through 21:02 ET): $16.81 spend, 45 impressions, 4 clicks, 8.89% CTR, $4.2 CPC.",
@@ -600,10 +600,21 @@
       "budgetCap": "Live configured budgets: ContractMfg $20.33/day + Samples $5/day = $25.33/day. BREACH: trailing seven-day average is $29.89/day, 117.99% of the live configured $25.33/day total ($177.31 for seven days). This exceeds the configured daily-budget average. Google may serve up to 2× daily on individual days, but this is a trailing-window average; no settings were changed.",
       "winners": "Samples has the lower campaign-level current CPC; no ad-level or conversion winner is proven.",
       "waste": "No search-term data was available; no waste claim.",
-      "optimization": "No optimization was made. The only recommendation is attribution repair, pending Sam approval.",
-      "suggestions": "READ-ONLY RECOMMENDATION — Sam approval required: hold all settings now and investigate/fix lead attribution before making any performance optimization. Google Ads has no conversion tracking and these ads route to product/collection pages rather than a lead page, so verified Ads leads, CPL, and cost per booked call are NOT YET MEASURABLE. Expected outcome: a defensible attribution baseline; measurement window: 14 days after tracking is live. Do not change campaigns, bids, budgets, keywords, targeting, creative, pages, forms, or spend without explicit approval.",
-      "nextExperiment": "After Sam approves tracking work, measure verified lead capture and CPL over 14 days; do not change Ads settings as part of this refresh.",
-      "whatAdsAgentShouldDo": "Present the read-only attribution recommendation and cap verdict to Sam; make no changes until explicit approval."
+      "optimization": "This week's recommendation is to revert the Contract Manufacturing campaign from Maximize Conversions back to Manual cost-per-click. It's bidding to a conversion signal we haven't wired yet, so cost per click jumped from about two forty-five to three sixty while click-through fell, and that pushed us over the two-ten weekly cap for the second week running. Reverting should pull the cost per click back down without touching budget. This one needs your yes before the Ads Agent changes anything.",
+      "suggestions": "This week's recommendation is to revert the Contract Manufacturing campaign from Maximize Conversions back to Manual cost-per-click. It's bidding to a conversion signal we haven't wired yet, so cost per click jumped from about two forty-five to three sixty while click-through fell, and that pushed us over the two-ten weekly cap for the second week running. Reverting should pull the cost per click back down without touching budget. This one needs your yes before the Ads Agent changes anything.",
+      "nextExperiment": "The next move is a bidding fix, not a new test: put Contract Manufacturing back on Manual cost-per-click and watch the cost per click and weekly spend for one to two weeks. It needs your approval first.",
+      "whatAdsAgentShouldDo": "The Ads Agent is holding — it made no changes. It recommends reverting Contract Manufacturing to Manual cost-per-click and is waiting on your approval to do it."
+    },
+    "recommendationMeta": {
+      "requestId": "ads-weekly-2026-08-07",
+      "source": "Ads Agent weekly review",
+      "receivedAt": "2026-08-07T21:35:00-04:00",
+      "status": "pending_approval",
+      "approvalRequired": "yes",
+      "action": "Revert ContractMfg (24049588003) Maximize Conversions -> Manual CPC",
+      "evidence": "MAX_CONV bidding to broken/absent conv signal; CPC $2.45->$3.60 W/W, CTR 17.5%->13.0%; trailing-7 $219.68 vs $210 cap (2nd week over). Samples Manual CPC stable $1.48.",
+      "expectedOutcome": "CPC back toward ~$2.45; trailing-7 under $210 cap; no budget/targeting change",
+      "measurementWindow": "7-14 days"
     }
   },
   "facilityStatus": {
