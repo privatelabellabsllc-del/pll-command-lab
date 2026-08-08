@@ -1,9 +1,9 @@
 {
-  "id": "morning-brief-2026-08-07-af959a8f",
-  "request_id": "morning-brief-2026-08-07-af959a8f",
-  "ts": "2026-08-07T11:05:28.000Z",
-  "agent": "PLL Consultant",
+  "id": "ads-nightly-0807-210604",
+  "request_id": "ads-nightly-2026-08-07",
+  "ts": "2026-08-07T21:06:04.177-04:00",
+  "agent": "Ads Agent",
   "status": "completed",
-  "text": "Morning brief loaded for 2026-08-07.",
-  "spoken_text": "Morning brief loaded for 2026-08-07."
+  "text": "Nightly Ads check (read-only; no campaigns paused or changed): clean pull on the first attempt and quota clear. Today, the Ads Agent's new-ad lane spent $16.81 for 45 impressions and 4 clicks, UNDER the $30/day cap. Trailing 7 days (7/31–8/6) spent $219.68, OVER the $210/week cap by $9.68 (104.6%) for the second consecutive week; MTD spend is $209.20. Contract Manufacturing 7-day CPC is $3.60; the reported root cause remains Smart Bidding on a broken conversion signal. Two leads arrived today, both UNATTRIBUTED and already logged: Natalie (possible spam) and Susan / Salty Pup (PET-scope flag). There are 0 verified paid leads. The runaway-spend guard was not met. Recommendation only: revert Contract Manufacturing to Manual CPC; Sam approval is required before any change.",
+  "spoken_text": "Sam, the nightly ads check is clean and nothing was paused. Today’s spend stayed under the daily cap, but the last seven days are a touch over the weekly cap for the second week in a row. The bigger problem is that tracking is still broken, so we cannot reliably attribute leads to the ads. We received two raw leads today, but zero that we can credit to paid ads. I recommend switching Contract Manufacturing back to manual bidding, but that requires your approval before anything changes."
 }
