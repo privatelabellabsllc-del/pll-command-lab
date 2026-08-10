@@ -1,9 +1,5 @@
 {
- "id": "ans_1d6a9bc88a95",
- "request_id": "ads-nightly-2026-08-09",
- "ts": "2026-08-09T21:07:00-04:00",
- "agent": "PLL Consultant",
- "status": "completed",
- "text": "NIGHTLY ADS \u2014 Sun 8/9 (Consultant-verified, read-only). Both net-new campaigns ENABLED. Trailing-7 (8/3\u20138/9): $157.80 spend, 57 clicks, 15.6% CTR, $2.77 CPC vs prior-7 (7/27\u20138/2) $205.77 / 91 clicks / 14.5% CTR / $2.26 CPC. Spend $22.54/day = 89% of configured $25.33/day cap \u2014 COMPLIANT, no runaway. Leads: 1 qualified inquiry current / 0 verified Ads-attributed; prior-7 had 4 GCLID-attributed at $51.44 CPL. CRITICAL (verified live tonight): BOTH campaigns are on MAXIMIZE_CONVERSIONS \u2014 Contract Mfg $20.33/day, Samples $5.00/day (Samples flipped from Manual CPC). This violates PLL's Manual-CPC mandate and, with 0 tracked conversions, optimizes toward a signal that doesn't exist \u2014 the likely cause of Contract Mfg CPC rising 32% ($2.75\u2192$3.64). No change made. RECOMMEND (needs Sam approval): revert both to Manual CPC. Ad-level 7-ad roster unverified (Google Ads API v21 backend error).",
- "spoken_text": "Sam, here's the bottom line. Both of the new ad campaigns got switched to automatic bidding, which chases a conversion signal we haven't set up yet, so it's spending toward a target that isn't really there. That's the most likely reason our cost per click on the contract-manufacturing side jumped about thirty percent. The good news is spend is still under budget, and I haven't touched anything. My recommendation is simple: put both campaigns back on manual bidding, which is what we agreed to run. Just say the word and I'll have the Ads Agent make that one change."
+  "id": "ans_27cc176f037d",
+  "ts": "2026-08-10T11:03:11.735Z",
+  "text": "Morning brief loaded for 2026-08-10."
 }

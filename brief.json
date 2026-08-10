@@ -1,37 +1,36 @@
 {
-  "date": "2026-08-08",
-  "ts": "2026-08-08T11:02:10.371Z",
+  "date": "2026-08-10",
+  "ts": "2026-08-10T11:03:11.735Z",
   "brief": [
     {
-      "t": "Terra Lotus: the $78,580 contract is ready. Send the contact name and address to release the $39,290 deposit.",
+      "t": "Terra Lotus is our biggest win on the board — seventy-eight thousand five hundred eighty dollars, with a thirty-nine thousand dollar deposit. The contract's been ready since August second. I just need the contact name and shipping address and it goes out today.",
       "hot": true
     },
     {
-      "t": "Atlas Eternal: $26,500 is ready once you provide three pro forma fields and confirm Aiden’s Adobe wording.",
+      "t": "Atlas Eternal is twenty-six thousand five hundred, deposit thirteen thousand. I need three pro forma fields and a yes on Aiden's Adobe wording, then both documents are ready to send.",
       "hot": true
     },
     {
-      "t": "Oreka: approve or decline the $8,555 payment and 1,000-unit Peptide Cream job.",
+      "t": "Oreka is eight thousand five hundred fifty-five and just needs your yes or no on the payment and the thousand-unit Peptide Cream job.",
       "hot": true
     },
     {
-      "t": "Ads: approve returning Contract Manufacturing to Manual CPC to stop the 18% weekly-cap overage.",
+      "t": "Both of our net-new ad campaigns are still on Maximize Conversions with zero tracked conversions — we're paying for a signal that isn't there. Just say revert ads to manual and I flip both back to Manual CPC in one move.",
       "hot": true
     },
     {
-      "t": "CRM: restore the browser session so verification and the Aidan purchasing knowledge base can proceed.",
+      "t": "The CRM browser is logged out. Log it back in as the consultant account and I'll verify every claimed fix and pull the purchasing knowledge base.",
       "hot": false
     },
     {
-      "t": "Pure Good: call Kenna to unlock the roughly $329K opportunity.",
-      "hot": true
+      "t": "Pure Good is roughly three hundred twenty-nine thousand, gated on the chemist. A call to Kenna unblocks it.",
+      "hot": false
     }
   ],
   "next": [
-    "Terra Lotus: send me the contact name and address — I send the contract and quote same day.",
-    "Atlas Eternal: send the three pro forma fields and confirm Aiden’s Adobe wording.",
-    "Oreka: approve or decline the $8,555 payment and 1,000-unit Peptide Cream job.",
-    "Ads: approve the Contract Manufacturing Manual CPC revert."
+    "Reply with the Terra Lotus contact name and address and I send the $78,580 contract today.",
+    "Give me the Atlas Eternal three fields and I send the $26,500 docs.",
+    "Say 'revert ads to manual' for the one-click ad fix."
   ],
   "kb": [
     {
@@ -43,7 +42,7 @@
         "contract",
         "tiered quote"
       ],
-      "a": "Terra Lotus is a $78,580 manufacturing opportunity, equal to 52% of the $150K monthly target. The contract and tiered quote have been unsent since Aug 2; Sam must provide the contact name plus shipping and billing addresses, approve both documents, and send them today. Nothing should outrank this. No Terra Lotus reply arrived overnight."
+      "a": "Terra Lotus is a $78,580 manufacturing opportunity, with a $39,290 deposit. The contract and quote have been ready since Aug 2; Sam needs to provide the contact name and shipping address so the package can go out today. It is the first revenue lane."
     },
     {
       "keys": [
@@ -55,7 +54,7 @@
         "pro forma",
         "adobe"
       ],
-      "a": "Atlas Eternal is a $26,500 opportunity with its agreement and pro forma ready to send. Before release, confirm Aiden Kraim's Adobe-document wording and fill the three placeholders: fill size and packaging, billing address, and lead time and Incoterms. Sam then approves and sends. No Atlas reply arrived overnight."
+      "a": "Atlas Eternal is a $26,500 opportunity with a $13,250 deposit. Before sending the agreement and pro forma, confirm the fill size and packaging, billing address, lead time and Incoterms, plus Aiden's Adobe-document wording. Once those are in, both documents are ready to send."
     },
     {
       "keys": [
@@ -108,7 +107,7 @@
         "peptide cream",
         "1000 units"
       ],
-      "a": "Nadia/Oreka needs $8,555 payment approval and the next handoff for a 1,000-unit Peptide Cream job. Treat this as the next cash-and-production follow-up once Terra and Atlas are sent."
+      "a": "Oreka / Nadia needs a yes or no on the $8,555 payment and the 1,000-unit Peptide Cream job. Approval releases the cash-and-production handoff; the decision is waiting on Sam."
     },
     {
       "keys": [
@@ -180,7 +179,7 @@
         "manual cpc",
         "spend"
       ],
-      "a": "As of the 6:30 AM ET Ads refresh, current 7-day spend is $219.68 versus $154.37 the prior 7 days, with today at $1.50 partial. An overnight Ads alert flagged the first weekly cap breach with an approval needed to move ContractMfg to Manual CPC; the Ads agent made no changes and the item awaits Sam's decision."
+      "a": "The preserved Aug 10 safety refresh shows both verified net-new campaigns still on Maximize Conversions with zero tracked conversions. Trailing-7 spend is $157.80, or 89% of the live configured cap, so there is no cap breach. Sam can approve reverting both campaigns to Manual CPC; no Ads change has been made."
     },
     {
       "keys": [
@@ -189,62 +188,78 @@
         "single lane"
       ],
       "a": "Sam's lane today is Terra Lotus first, Atlas Eternal second, then the noon OpenSend decision. Do not switch to facility, website, or lower-value work until the Terra package is sent."
+    },
+    {
+      "keys": [
+        "pure good",
+        "kenna",
+        "329k",
+        "chemist",
+        "formula gate"
+      ],
+      "a": "Pure Good is a roughly $329K opportunity blocked at the chemist/formula gate. Sam needs to call Kenna to unblock it. Once the gate clears, the next-step quote can be prepared immediately."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Send Terra Lotus contract and quote",
-      "why": "The $78,580 package is ready; only the contact name and address are needed to release a $39,290 deposit.",
+      "title": "Terra Lotus — send contract and quote",
+      "why": "$78,580 package is ready; contact name and shipping address are still needed to release the $39,290 deposit.",
       "owner": "Sam",
       "due": "Today",
       "priority": "critical",
-      "revenue": "$78,580; $39,290 deposit"
+      "revenue": "$78,580; $39,290 deposit",
+      "status": "WAITING ON SAM"
     },
     {
       "rank": 2,
-      "title": "Finalize and send Atlas Eternal documents",
-      "why": "The $26,500 agreement and pro forma need three fields and Aiden’s Adobe wording confirmation.",
+      "title": "Atlas Eternal — finalize and send documents",
+      "why": "$26,500 agreement and pro forma need three fields and Aiden's Adobe wording confirmation.",
       "owner": "Sam / Aiden",
       "due": "Today",
       "priority": "critical",
-      "revenue": "$26,500; $13,250 deposit"
+      "revenue": "$26,500; $13,250 deposit",
+      "status": "WAITING ON SAM"
     },
     {
       "rank": 3,
-      "title": "Decide Oreka / Nadia payment and Peptide Cream job",
+      "title": "Oreka / Nadia — approve payment and Peptide Cream job",
       "why": "A yes/no decision controls the $8,555 payment and 1,000-unit handoff.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "$8,555 payment; 1,000-unit job"
+      "revenue": "$8,555 payment; 1,000-unit job",
+      "status": "WAITING ON SAM"
     },
     {
       "rank": 4,
-      "title": "Approve Contract Manufacturing Manual CPC revert",
-      "why": "Smart Bidding is driving an 18% weekly-cap overage on a broken conversion signal.",
+      "title": "Ads — approve Manual CPC revert",
+      "why": "Both net-new campaigns are on Maximize Conversions with zero tracked conversions.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Protects paid lead generation"
+      "revenue": "Protects paid lead generation",
+      "status": "WAITING ON SAM"
     },
     {
       "rank": 5,
-      "title": "Restore PLL Consultant CRM browser session",
-      "why": "The signed-out session blocks verification and the Aidan purchasing knowledge-base extraction.",
+      "title": "CRM — re-login consultant browser session",
+      "why": "The signed-out session blocks verification and purchasing knowledge-base extraction.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Unblocks revenue operations"
+      "revenue": "Unblocks revenue operations",
+      "status": "WAITING ON SAM"
     },
     {
       "rank": 6,
-      "title": "Call Kenna to unblock Pure Good",
-      "why": "The formula/chemist gate holds a roughly $329K opportunity.",
+      "title": "Pure Good — call Kenna",
+      "why": "The chemist/formula gate holds a roughly $329K opportunity.",
       "owner": "Sam",
       "due": "Today",
       "priority": "critical",
-      "revenue": "~$329K"
+      "revenue": "~$329K",
+      "status": "WAITING ON SAM"
     }
   ],
   "teamMembers": {
@@ -316,43 +331,37 @@
   "revenueActions": [
     {
       "title": "Send Terra Lotus contract and quote",
-      "why": "The $78,580 package is ready once Sam provides the contact name and address.",
+      "why": "The $78,580 package is ready once Sam provides the contact name and shipping address.",
       "est_value": "$78,580",
-      "next_step": "Provide contact name and shipping/billing address; send same day.",
+      "next_step": "Provide contact name and shipping address; send same day.",
       "owner": "Sam",
       "timing": "Today",
-      "value": "$39,290 deposit mobilizable"
+      "value": "$39,290 deposit mobilizable",
+      "status": "WAITING ON SAM"
     },
     {
       "title": "Send Atlas Eternal agreement and pro forma",
-      "why": "The $26,500 package needs three fields and Aiden’s Adobe wording confirmation.",
+      "why": "The $26,500 package needs three fields and Aiden's Adobe wording confirmation.",
       "est_value": "$26,500",
-      "next_step": "Confirm the inputs and wording; finalize and send.",
+      "next_step": "Confirm fill size/packaging, billing address, lead time/Incoterms, and wording; finalize and send.",
       "owner": "Sam / Aiden",
       "timing": "Today",
-      "value": "$13,250 deposit mobilizable"
+      "value": "$13,250 deposit mobilizable",
+      "status": "WAITING ON SAM"
     },
     {
-      "title": "Secure Oreka decision",
+      "title": "Approve Oreka / Nadia payment and Peptide Cream job",
       "why": "Approval controls the $8,555 payment and 1,000-unit Peptide Cream job.",
-      "est_value": "$8,555 payment",
+      "est_value": "$8,555",
       "next_step": "Approve or decline payment and job.",
       "owner": "Sam",
       "timing": "Today",
-      "value": "Cash collection and production start"
-    },
-    {
-      "title": "Unblock Pure Good / Kenna",
-      "why": "A chemist/formula gate holds the opportunity.",
-      "est_value": "~$329K",
-      "next_step": "Call Kenna; prepare next-step quote once unblocked.",
-      "owner": "Sam",
-      "timing": "Today",
-      "value": "Largest named gated opportunity"
+      "value": "Cash collection and production start",
+      "status": "WAITING ON SAM"
     }
   ],
   "pipelineStat": {
-    "total_value": "~$442K named pipeline gated on Sam’s decisions",
+    "total_value": "~$442K named pipeline",
     "active_deals": 4,
     "hot": [
       "Terra Lotus — $78,580 contract ready; $39,290 deposit",
@@ -361,10 +370,10 @@
       "Pure Good / Kenna — ~$329K formula/chemist gate"
     ],
     "stalled": [
-      "Terra Lotus contact name and address",
+      "Terra Lotus contact name and shipping address",
       "Atlas three pro forma fields and Aiden Adobe wording",
       "Oreka yes/no approval",
-      "Contract Manufacturing Manual CPC approval",
+      "Both campaigns Manual CPC revert approval",
       "CRM browser re-login",
       "Kenna call"
     ],
@@ -372,7 +381,9 @@
     "pipelineValue": 442000,
     "inProduction": 0,
     "depositsCollected": 0,
-    "note": "~$442K named pipeline is gated on Sam’s decisions. ~$61K in deposits is mobilizable this month: Terra Lotus $39,290, Atlas Eternal $13,250, plus the Oreka portion."
+    "note": "~$442K named pipeline. Achievable deposits this month are ~ $61K from Terra Lotus and Atlas alone; monthly target is $150K.",
+    "monthlyTarget": "$150K",
+    "achievableDepositsThisMonth": "~$61K from Terra Lotus + Atlas alone"
   },
   "adsAgentBrief": {
     "generatedAt": "2026-08-10T10:36:57.664Z",
