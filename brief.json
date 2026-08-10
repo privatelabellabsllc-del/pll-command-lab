@@ -375,275 +375,196 @@
     "note": "~$442K named pipeline is gated on Sam’s decisions. ~$61K in deposits is mobilizable this month: Terra Lotus $39,290, Atlas Eternal $13,250, plus the Oreka portion."
   },
   "adsAgentBrief": {
-    "updatedAt": "2026-08-09T21:03:00-04:00",
-    "status": "READ-ONLY CACHE REFRESH COMPLETE",
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. This refresh is scoped exclusively to Contract Manufacturing / PLL-Search-ContractMfg-2026 (24049588003) and White Label Samples / PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. Campaign-level data is verified. The exact seven-ad roster and ad-level totals are not claimed because the read-only ad_group_ad report failed twice against the provider’s deprecated v21 backend.",
-    "performance": "Aug 3–9: $157.80 spend, 57 clicks, 15.57% CTR, $2.77 CPC; prior Jul 27–Aug 2: $205.77, 91 clicks, 14.54% CTR, $2.26 CPC.",
-    "leads": "Qualified B2B inbox inquiries: 1 current / 15 prior. Verified Ads-attributed qualified leads: 0 current / 4 prior. Booked calls and cost per booked call: NOT RE-VERIFIED (calendar/CRM out of scope).",
-    "cap": "Configured budgets read live: Contract Manufacturing $20.33/day plus Samples $5.00/day = $25.33/day ($177.31 over seven days). Current spend $157.80 = 89.00%; COMPLIANT, no breach because the $22.54/day trailing average is below $25.33/day.",
-    "recommendation": "PENDING SAM APPROVAL: return Contract Manufacturing (24049588003) to Manual CPC. This is a read-only recommendation; no setting has changed. Evidence: trailing-7 CPC is $3.64 versus $2.75 prior (+32.6%) while clicks fell 56 to 34. Expected outcome: controlled CPC/pacing; measure for 7–14 days after an approved change. APPROVAL REQUIRED: YES.",
-    "approvalRequired": true
+    "generatedAt": "2026-08-10T10:36:57.664Z",
+    "summary": "Ads safety refresh: $157.80 trailing-7 spend (89% of live cap); 0 tracked conversions; both campaigns remain Maximize Conversions. PENDING SAM APPROVAL — READ ONLY.",
+    "recommendation": {
+      "title": "Revert both verified net-new campaigns from Maximize Conversions to Manual CPC",
+      "status": "PENDING SAM APPROVAL — READ ONLY",
+      "approval_required": "yes",
+      "reason": "Both campaigns remain on MAXIMIZE_CONVERSIONS while Google Ads reports 0 tracked conversions in the current and prior seven-day windows; conversion-based bidding is optimizing to a phantom signal.",
+      "expectedOutcome": "Restore controllable click-based bidding while conversion tracking is repaired; measure CPC, qualified inquiries, and verified attributed leads for 7 days after any approved change.",
+      "action": "No change made. Requires Sam’s explicit yes/no."
+    },
+    "approval_required": "yes",
+    "readOnly": true
   },
   "adsIntelligence": {
-    "updatedAt": "2026-08-09T21:03:00-04:00",
-    "source": [
-      "Google Ads customer 2915572948 (google_ads-create-report; read-only)",
-      "Outlook inbox sam@prvtlabellabs.com (read-only; exact date-window and Shopify form queries)",
-      "Live GitHub main brief.json (authoritative source)"
-    ],
-    "scope": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. This refresh is scoped exclusively to Contract Manufacturing / PLL-Search-ContractMfg-2026 (24049588003) and White Label Samples / PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. Campaign-level data is verified. The exact seven-ad roster and ad-level totals are not claimed because the read-only ad_group_ad report failed twice against the provider’s deprecated v21 backend.",
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. This refresh is scoped exclusively to Contract Manufacturing / PLL-Search-ContractMfg-2026 (24049588003) and White Label Samples / PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. Campaign-level data is verified. The exact seven-ad roster and ad-level totals are not claimed because the read-only ad_group_ad report failed twice against the provider’s deprecated v21 backend.",
+    "generatedAt": "2026-08-10T10:36:57.664Z",
+    "refreshType": "morning safety refresh",
+    "timezone": "America/New_York",
+    "dataThrough": "2026-08-09 (prior completed day; today shown separately for 2026-08-10)",
+    "scope": "Only verified net-new campaigns: Contract Manufacturing (24049588003) and White Label Samples (24040031889). Legacy campaigns excluded.",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Campaign-level scope is live-verified; the exact seven-ad roster could not be proved from the available report.",
     "windows": {
       "today": {
-        "start": "2026-08-09",
-        "end": "2026-08-09",
-        "note": "Partial intraday snapshot at 9:03 PM America/New_York."
+        "start": "2026-08-10",
+        "end": "2026-08-10"
       },
-      "trailing7Days": {
+      "trailing7": {
         "start": "2026-08-03",
         "end": "2026-08-09"
       },
-      "preceding7Days": {
+      "prior7": {
         "start": "2026-07-27",
         "end": "2026-08-02"
       }
     },
     "today": {
-      "start": "2026-08-09",
-      "end": "2026-08-09",
-      "campaigns": {
-        "White Label Samples": {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 0,
-          "impressions": 1,
-          "clicks": 0,
-          "ctr": 0,
-          "averageCpc": null
-        },
-        "Contract Manufacturing": {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 1.2,
-          "impressions": 25,
-          "clicks": 3,
-          "ctr": 12,
-          "averageCpc": 0.4
-        }
-      },
-      "total": {
-        "spend": 1.2,
-        "impressions": 26,
-        "clicks": 3,
-        "ctr": 11.54,
-        "averageCpc": 0.4
-      }
+      "spend": 0,
+      "impressions": 9,
+      "clicks": 0,
+      "ctr": 0,
+      "avgCpc": null,
+      "conversions": 0
     },
-    "current7d": {
-      "start": "2026-08-03",
-      "end": "2026-08-09",
-      "campaigns": {
-        "White Label Samples": {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 33.92,
-          "impressions": 123,
-          "clicks": 23,
-          "ctr": 18.7,
-          "averageCpc": 1.47
-        },
-        "Contract Manufacturing": {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 123.88,
-          "impressions": 243,
-          "clicks": 34,
-          "ctr": 13.99,
-          "averageCpc": 3.64
-        }
-      },
-      "total": {
-        "spend": 157.8,
-        "impressions": 366,
-        "clicks": 57,
-        "ctr": 15.57,
-        "averageCpc": 2.77
-      }
+    "trailing7": {
+      "spend": 157.8,
+      "impressions": 367,
+      "clicks": 57,
+      "ctr": 15.53,
+      "avgCpc": 2.77,
+      "conversions": 0
     },
-    "prior7d": {
-      "start": "2026-07-27",
-      "end": "2026-08-02",
-      "campaigns": {
-        "White Label Samples": {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 51.92,
-          "impressions": 236,
-          "clicks": 35,
-          "ctr": 14.83,
-          "averageCpc": 1.48
-        },
-        "Contract Manufacturing": {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 153.85,
-          "impressions": 390,
-          "clicks": 56,
-          "ctr": 14.36,
-          "averageCpc": 2.75
-        }
-      },
-      "total": {
-        "spend": 205.77,
-        "impressions": 626,
-        "clicks": 91,
-        "ctr": 14.54,
-        "averageCpc": 2.26
-      }
+    "prior7": {
+      "spend": 205.77,
+      "impressions": 626,
+      "clicks": 91,
+      "ctr": 14.54,
+      "avgCpc": 2.26,
+      "conversions": 0
     },
-    "campaignBreakdown": {
-      "today": {
-        "White Label Samples": {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 0,
-          "impressions": 1,
-          "clicks": 0,
-          "ctr": 0,
-          "averageCpc": null
-        },
-        "Contract Manufacturing": {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 1.2,
-          "impressions": 25,
-          "clicks": 3,
-          "ctr": 12,
-          "averageCpc": 0.4
+    "campaigns": {
+      "contract": {
+        "campaignId": "24049588003",
+        "name": "PLL-Search-ContractMfg-2026",
+        "status": "ENABLED",
+        "bidStrategy": "MAXIMIZE_CONVERSIONS",
+        "configuredDailyBudget": 20.33,
+        "windows": {
+          "today": {
+            "spend": 0,
+            "impressions": 9,
+            "clicks": 0,
+            "ctr": 0,
+            "avgCpc": 0,
+            "conversions": 0
+          },
+          "trailing7": {
+            "spend": 123.88,
+            "impressions": 244,
+            "clicks": 34,
+            "ctr": 13.93,
+            "avgCpc": 3.64,
+            "conversions": 0
+          },
+          "prior7": {
+            "spend": 153.85,
+            "impressions": 390,
+            "clicks": 56,
+            "ctr": 14.36,
+            "avgCpc": 2.75,
+            "conversions": 0
+          }
         }
       },
-      "current7d": {
-        "White Label Samples": {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 33.92,
-          "impressions": 123,
-          "clicks": 23,
-          "ctr": 18.7,
-          "averageCpc": 1.47
-        },
-        "Contract Manufacturing": {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 123.88,
-          "impressions": 243,
-          "clicks": 34,
-          "ctr": 13.99,
-          "averageCpc": 3.64
-        }
-      },
-      "prior7d": {
-        "White Label Samples": {
-          "id": "24040031889",
-          "name": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 51.92,
-          "impressions": 236,
-          "clicks": 35,
-          "ctr": 14.83,
-          "averageCpc": 1.48
-        },
-        "Contract Manufacturing": {
-          "id": "24049588003",
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 153.85,
-          "impressions": 390,
-          "clicks": 56,
-          "ctr": 14.36,
-          "averageCpc": 2.75
+      "samples": {
+        "campaignId": "24040031889",
+        "name": "PLL-Search-Samples-2026",
+        "status": "ENABLED",
+        "bidStrategy": "MAXIMIZE_CONVERSIONS",
+        "configuredDailyBudget": 5,
+        "windows": {
+          "today": {
+            "spend": 0,
+            "impressions": 0,
+            "clicks": 0,
+            "ctr": 0,
+            "avgCpc": 0,
+            "conversions": 0
+          },
+          "trailing7": {
+            "spend": 33.92,
+            "impressions": 123,
+            "clicks": 23,
+            "ctr": 18.7,
+            "avgCpc": 1.47,
+            "conversions": 0
+          },
+          "prior7": {
+            "spend": 51.92,
+            "impressions": 236,
+            "clicks": 35,
+            "ctr": 14.83,
+            "avgCpc": 1.48,
+            "conversions": 0
+          }
         }
       }
     },
-    "adBreakdown": [],
-    "adBreakdownStatus": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. This refresh is scoped exclusively to Contract Manufacturing / PLL-Search-ContractMfg-2026 (24049588003) and White Label Samples / PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. Campaign-level data is verified. The exact seven-ad roster and ad-level totals are not claimed because the read-only ad_group_ad report failed twice against the provider’s deprecated v21 backend.",
-    "searchTerms": {
-      "status": "NOT AVAILABLE IN THE APPROVED READ-ONLY REPORT SCOPE; no search-term waste claim is made.",
-      "wasteEvidence": "No verified search-term rows retrieved."
+    "budgets": {
+      "contractManufacturingDaily": 20.33,
+      "whiteLabelSamplesDaily": 5,
+      "combinedDaily": 25.33,
+      "trailing7ConfiguredCap": 177.31,
+      "trailing7Spend": 157.8,
+      "trailing7AverageDaily": 22.54,
+      "trailing7BudgetUsedPercent": 89,
+      "capVerdict": "NO BREACH: trailing-7 average $22.54/day is 89.0% of the live configured $25.33/day combined budget. Single-day delivery is not used to declare a breach."
     },
-    "leads": {
-      "qualifiedInquiries": {
-        "current7d": 1,
-        "prior7d": 15,
-        "basis": "Read-only Outlook review of exact windows. Shopify forms were de-duplicated; consumer/product-only and vendor outreach were excluded. Qualification is provisional inbox triage, not CRM qualification."
+    "conversionTracking": {
+      "status": "BROKEN / NO TRACKED CONVERSIONS",
+      "current7Conversions": 0,
+      "prior7Conversions": 0,
+      "bidStrategyStatus": "Both verified campaigns remain MAXIMIZE_CONVERSIONS.",
+      "finding": "No conversion-tracking events are available to the campaigns; conversion bidding therefore has no observed conversion signal."
+    },
+    "leadsAndBookings": {
+      "current7": {
+        "qualifiedInquiries": 1,
+        "qualifiedDefinition": "Inbox-screened genuine new manufacturing/contact-form inquiry; other contact-form messages were organic/direct or non-prospect.",
+        "verifiedAdsAttributedLeads": 0,
+        "attribution": "NOT YET MEASURABLE — no UTM, GCLID, campaign/source record, or approved equivalent observed.",
+        "bookedCalls": 0,
+        "verifiedAdsAttributedBookedCalls": 0,
+        "cpl": "NOT YET MEASURABLE",
+        "costPerBookedCall": "NOT YET MEASURABLE"
       },
-      "verifiedAdsAttributedLeads": {
-        "current7d": 0,
-        "prior7d": 4,
-        "status": "CURRENT WINDOW: NOT YET MEASURABLE",
-        "basis": "Attribution requires a paid-Google GCLID plus a qualified inquiry. ChatGPT/organic/direct entries and a paid-click vendor outreach are not counted as Ads leads."
-      },
-      "bookedCalls": {
-        "current7d": "NOT RE-VERIFIED",
-        "prior7d": "NOT RE-VERIFIED",
-        "note": "Calendar/CRM access was out of scope; no booked-call figure is newly verified or asserted."
-      },
-      "cpl": {
-        "verifiedAdsAttributed": {
-          "current7d": "NOT YET MEASURABLE",
-          "prior7d": 51.44
-        },
-        "note": "CPL uses verified qualified Ads-attributed inbox leads only; current has none."
-      },
-      "costPerBookedCall": {
-        "value": "NOT RE-VERIFIED",
-        "note": "No calendar/CRM verification in this run."
+      "prior7": {
+        "qualifiedInquiries": 16,
+        "qualifiedDefinition": "16 unique genuine inbound Shopify contact-form inquiries after deduplicating one duplicate notification; qualification is inbox-screened only.",
+        "verifiedAdsAttributedLeads": 0,
+        "attribution": "UNATTRIBUTED / NOT YET MEASURABLE — no acceptable Ads attribution evidence observed.",
+        "bookedCalls": 1,
+        "verifiedAdsAttributedBookedCalls": 0,
+        "cpl": "NOT YET MEASURABLE",
+        "costPerBookedCall": "NOT YET MEASURABLE"
       }
     },
-    "health": {
-      "cap": {
-        "configuredDailyBudgets": {
-          "Contract Manufacturing": 20.33,
-          "White Label Samples": 5,
-          "combined": 25.33
-        },
-        "configuredSevenDayAmount": 177.31,
-        "trailingSevenDaySpend": 157.8,
-        "trailingDailyAverage": 22.54,
-        "percentOfConfiguredBudget": 89,
-        "verdict": "COMPLIANT — no breach. Trailing 7-day average is $22.54/day ($157.80 ÷ 7), below the live configured combined $25.33/day; 89.00% of the $177.31 seven-day amount. A single day up to 2× budget under Google pacing is not a breach.",
-        "budgetChangeDetected": "No change detected: Contract Manufacturing $20.33/day and White Label Samples $5.00/day."
-      },
-      "funnel": "Qualified B2B inbox inquiries: 1 current / 15 prior. Verified Ads-attributed qualified leads: 0 current / 4 prior. Booked calls and cost per booked call: NOT RE-VERIFIED (calendar/CRM out of scope). Inbox form route is receiving inquiries; no landing/form-route failure is established."
+    "searchTermsAndWaste": "Search-term report was not available in the approved read-only tool scope. Waste cannot be claimed from query data. Watch: $12.41 CPC on one Contract Manufacturing click on Aug 7, with 0 tracked conversions.",
+    "funnelHealth": "RED — both campaigns are enabled and serving, but 0 tracked conversions means lead attribution, CPL, booked-call attribution, and conversion-based bidding are not measurable.",
+    "best": "White Label Samples: trailing-7 CPC $1.48, 23 clicks, 123 impressions; 0 tracked conversions.",
+    "worst": "Contract Manufacturing: trailing-7 spend $123.88, 34 clicks, 244 impressions, $3.64 CPC; 0 tracked conversions.",
+    "watchItem": "Conversion tracking is absent while both campaigns remain on Maximize Conversions.",
+    "recommendation": {
+      "title": "Revert both verified net-new campaigns from Maximize Conversions to Manual CPC",
+      "status": "PENDING SAM APPROVAL — READ ONLY",
+      "approval_required": "yes",
+      "reason": "Both campaigns remain on MAXIMIZE_CONVERSIONS while Google Ads reports 0 tracked conversions in the current and prior seven-day windows; conversion-based bidding is optimizing to a phantom signal.",
+      "expectedOutcome": "Restore controllable click-based bidding while conversion tracking is repaired; measure CPC, qualified inquiries, and verified attributed leads for 7 days after any approved change.",
+      "action": "No change made. Requires Sam’s explicit yes/no."
     },
-    "best": "White Label Samples: $1.47 CPC (flat/slightly down from $1.48) and 18.70% CTR (up from 14.83%); small sample of 23 clicks.",
-    "worst": "Contract Manufacturing: $3.64 CPC versus $2.75 prior (+32.6%); clicks fell 56 to 34 while CTR was essentially flat (13.99% versus 14.36%).",
-    "watch": "Combined spend is 89.00% of the live configured seven-day amount. Monitor Contract Manufacturing CPC; exact ad roster and search-term waste are unverified.",
-    "recommendation": "PENDING SAM APPROVAL: return Contract Manufacturing (24049588003) to Manual CPC. This is a read-only recommendation; no setting has changed. Evidence: trailing-7 CPC is $3.64 versus $2.75 prior (+32.6%) while clicks fell 56 to 34. Expected outcome: controlled CPC/pacing; measure for 7–14 days after an approved change. APPROVAL REQUIRED: YES.",
-    "approvalRequired": true,
-    "approvalStatus": "PENDING SAM APPROVAL — read-only; no action taken.",
-    "answers": {
-      "today": "Today (Aug 9, partial at 9:03 PM ET): $1.20 spend, 3 clicks, 26 impressions, 11.54% CTR and $0.40 average CPC across the two verified campaigns. Contract Manufacturing delivered $1.20 / 3 clicks; Samples had 1 impression and no clicks or spend.",
-      "sevenNewAds": "Trailing seven days (Aug 3–9): $157.80, 57 clicks, 15.57% CTR and $2.77 CPC. Prior Jul 27–Aug 2: $205.77, 91 clicks, 14.54% CTR and $2.26 CPC. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. This refresh is scoped exclusively to Contract Manufacturing / PLL-Search-ContractMfg-2026 (24049588003) and White Label Samples / PLL-Search-Samples-2026 (24040031889); legacy campaigns are excluded. Campaign-level data is verified. The exact seven-ad roster and ad-level totals are not claimed because the read-only ad_group_ad report failed twice against the provider’s deprecated v21 backend.",
-      "ctrCpc": "Contract Manufacturing: 13.99% CTR / $3.64 CPC current versus 14.36% / $2.75 prior. Samples: 18.70% / $1.47 current versus 14.83% / $1.48 prior.",
-      "leadsEmailsCalls": "Qualified B2B inbox inquiries: 1 current / 15 prior. Verified Ads-attributed qualified leads: 0 current / 4 prior. Booked calls and cost per booked call: NOT RE-VERIFIED (calendar/CRM out of scope).",
-      "budgetCap": "Configured budgets read live: Contract Manufacturing $20.33/day plus Samples $5.00/day = $25.33/day ($177.31 over seven days). Current spend $157.80 = 89.00%; COMPLIANT, no breach because the $22.54/day trailing average is below $25.33/day.",
-      "winners": "Samples is the campaign-level CPC/CTR winner. No ad-level or conversion winner is proven.",
-      "waste": "No verified search-term waste evidence was available in the approved read-only report scope; no waste claim is made.",
-      "optimization": "PENDING SAM APPROVAL: return Contract Manufacturing (24049588003) to Manual CPC. This is a read-only recommendation; no setting has changed. Evidence: trailing-7 CPC is $3.64 versus $2.75 prior (+32.6%) while clicks fell 56 to 34. Expected outcome: controlled CPC/pacing; measure for 7–14 days after an approved change. APPROVAL REQUIRED: YES.",
-      "suggestions": "PENDING SAM APPROVAL: return Contract Manufacturing (24049588003) to Manual CPC. This is a read-only recommendation; no setting has changed. Evidence: trailing-7 CPC is $3.64 versus $2.75 prior (+32.6%) while clicks fell 56 to 34. Expected outcome: controlled CPC/pacing; measure for 7–14 days after an approved change. APPROVAL REQUIRED: YES.",
-      "nextExperiment": "Do not introduce a new experiment while the pending bid-mode recommendation and attribution gap remain unresolved.",
-      "whatAdsAgentShouldDo": "Hold all settings. Await Sam approval on the Manual CPC recommendation, continue read-only monitoring, and preserve GCLID/UTM attribution in lead records before conversion-performance claims."
+    "naturalAnswers": {
+      "today": "Today (Aug 10): Contract Manufacturing has 9 impressions, 0 clicks, $0 spend; Samples has no delivery row yet.",
+      "sevenNewAds": "The two verified campaigns are enabled. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
+      "ctrCpc": "Trailing 7: Contract Manufacturing 13.93% CTR / $3.64 CPC; Samples 18.70% CTR / $1.48 CPC.",
+      "leadsEmailsCalls": "Current 7: 1 qualified inquiry, 0 verified Ads-attributed leads, 0 booked calls. Prior 7: 16 qualified unique inquiries, 0 verified Ads-attributed leads, 1 booked call but 0 verified Ads-attributed booked calls.",
+      "budgetCap": "Live budgets: $20.33/day Contract Manufacturing + $5.00/day Samples = $25.33/day. Trailing 7 spend $157.80 (89.0% of $177.31 cap); no breach.",
+      "winners": "Samples is the relative CPC/CTR winner; it still has 0 tracked conversions.",
+      "waste": "No approved search-term evidence available. Do not label query waste. High-CPC Contract Manufacturing click on Aug 7 is a watch item, not confirmed waste.",
+      "optimization": "Pending Sam approval only: revert both campaigns to Manual CPC because Maximize Conversions has zero conversion signal.",
+      "suggestions": "Repair conversion measurement and establish attribution first; then evaluate the approved bid-strategy recommendation.",
+      "nextExperiment": "After approved tracking/bidding repair, measure 7 days of CPC, qualified inquiries, and verified attributed leads.",
+      "whatAdsAgentShouldDo": "Remain read-only; document and await Sam’s yes/no. Do not change bids, budgets, ads, keywords, targeting, creative, forms, or landing pages."
     }
   },
   "facilityStatus": {
