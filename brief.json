@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "ts": "2026-08-11T11:04:52.020Z",
+  "ts": "2026-08-11T14:20:21.242Z",
   "brief": [
     {
       "t": "11 AM Eastern call with Hass Alamer — new hair care line, 2,000 units, leave-in conditioner and hair oil. This is a booked-call conversion — be on it and push to a quote.",
@@ -15,6 +15,10 @@
       "hot": true
     },
     {
+      "t": "Atlas Eternal, twenty-six thousand five hundred dollars, deposit is PAID. The documents question is closed — the job moves to production now, with the thirteen thousand two hundred fifty dollar balance due on completion.",
+      "hot": true
+    },
+    {
       "t": "Wednesday call with Kenna is confirmed. That's the gate on Pure Good, roughly three hundred twenty-nine thousand dollars.",
       "hot": false
     },
@@ -26,6 +30,7 @@
   "next": [
     "Take the 11 AM Hass Alamer call and push to a quote",
     "Take the 2 PM Olesya Orozco call",
+    "Kick off Atlas Eternal production — deposit is in ($13,250)",
     "Let Aidan close the Terra Lotus volume pricing — Consultant is holding the line",
     "Prepare for Wednesday’s Kenna call on Pure Good"
   ],
@@ -247,13 +252,13 @@
     },
     {
       "rank": 4,
-      "title": "Atlas Eternal — Sam review",
-      "why": "$26,500 package is awaiting Sam review.",
+      "title": "Atlas Eternal — start production ($13,250 deposit PAID)",
+      "why": "Deposit $13,250 received (QuickBooks Inv #1050, Ryne Bell). Balance $13,250 due on completion. Money is in — kick off production.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "$26,500",
-      "status": "AWAITING SAM REVIEW"
+      "revenue": "$26,500 ($13,250 collected)",
+      "status": "DEPOSIT PAID — START PRODUCTION"
     },
     {
       "rank": 5,
@@ -279,33 +284,33 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Send Terra Lotus before touching anything else, then send Atlas Eternal.",
+      "top_task": "Take today’s booked calls (Hass 11 AM, Olesya 2 PM) and kick off Atlas production. Terra Lotus is Aidan’s lane — hold.",
       "tasks": [
         {
-          "title": "Provide Terra Lotus contact and shipping/billing details; approve and send the contract plus tiered quote",
+          "title": "Take the 11 AM Hass Alamer call and push to a quote",
+          "due": "Today 11:00 AM ET"
+        },
+        {
+          "title": "Take the 2 PM Olesya Orozco / Ivory Maison call",
+          "due": "Today 2:00 PM ET"
+        },
+        {
+          "title": "Green-light Atlas Eternal production kickoff — deposit $13,250 already paid",
           "due": "Today"
         },
         {
-          "title": "Approve Atlas after Adobe wording and the three pro-forma fields are confirmed",
+          "title": "Give OpenSend the green light and share the Book a Call booking URL",
           "due": "Today"
-        },
-        {
-          "title": "Share the booking URL for Book a Call and give OpenSend the noon green light",
-          "due": "Today 12:00 PM ET"
         }
       ],
-      "notes": "Single lane: Terra first. Do not jump to facility or growth work until it is sent."
+      "notes": "Terra Lotus is Aidan’s to close — send nothing customer-facing until Aidan reports back."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Close Terra Lotus volume pricing, then continue Atlas and Oreka follow-through.",
+      "top_task": "Close Terra Lotus volume pricing and report the outcome.",
       "tasks": [
         {
-          "title": "Close the Terra Lotus $78,580 volume-pricing conversation and report the outcome",
-          "due": "Today"
-        },
-        {
-          "title": "Confirm Atlas fill size/packaging, billing address, lead time, and Incoterms",
+          "title": "Close the Terra Lotus $78,580 volume-pricing conversation (customer wants lower per-unit at higher qty); report outcome + confirmed contact/address",
           "due": "Today"
         },
         {
@@ -317,7 +322,7 @@
           "due": "Today"
         }
       ],
-      "notes": "Owns the Terra Lotus volume-pricing follow-up; priority-channel nudge is awaiting his reply."
+      "notes": "Owns Terra Lotus volume pricing; priority-channel nudge awaiting his reply."
     },
     "laura": {
       "display_name": "Laura",
@@ -378,14 +383,14 @@
       "status": "BOOKED CALL"
     },
     {
-      "title": "Complete Atlas Eternal review",
-      "why": "The $26,500 package awaits Sam review.",
+      "title": "Start Atlas Eternal production",
+      "why": "$26,500 order; $13,250 deposit already PAID (Inv #1050, Ryne Bell). Balance $13,250 due on completion.",
       "est_value": "$26,500",
-      "next_step": "Sam review and release next document action.",
+      "next_step": "Confirm production is scheduled/started; set completion → balance-collection follow-up.",
       "owner": "Sam",
       "timing": "Today",
-      "value": "$26,500",
-      "status": "AWAITING SAM REVIEW"
+      "value": "$13,250 collected; $13,250 on completion",
+      "status": "DEPOSIT PAID — START PRODUCTION"
     },
     {
       "title": "Approve Oreka payment and Peptide Cream job",
@@ -413,7 +418,7 @@
     "active_deals": 6,
     "hot": [
       "Terra Lotus — $78,580; Aidan owns volume pricing",
-      "Atlas Eternal — $26,500; awaiting Sam review",
+      "Atlas Eternal — $26,500; deposit PAID, start production",
       "Oreka — $8,555; Sam approval",
       "Pure Good / Kenna — ~$329K; Wednesday call confirmed",
       "Hass Alamer — 2,000-unit hair care; 11 AM ET call",
@@ -421,15 +426,14 @@
     ],
     "stalled": [
       "Terra Lotus volume-pricing reply from Aidan",
-      "Atlas Eternal Sam review",
       "Oreka Sam approval",
       "Pure Good gate pending Wednesday Kenna call"
     ],
     "activeDeals": 6,
     "pipelineValue": 442635,
-    "inProduction": 0,
-    "depositsCollected": 0,
-    "note": "~$442.6K named pipeline. Terra Lotus is $78,580 (52% of the $150K monthly target); today’s calls are Hass Alamer at 11 AM ET and Olesya Orozco at 2 PM ET.",
+    "inProduction": 1,
+    "depositsCollected": 13250,
+    "note": "~$442.6K named pipeline. Terra Lotus $78,580 (52% of the $150K monthly target) — Aidan owns volume pricing. Atlas Eternal deposit of $13,250 collected → production kickoff. Today’s calls: Hass Alamer 11 AM ET, Olesya Orozco 2 PM ET.",
     "monthlyTarget": "$150K",
     "achievableDepositsThisMonth": "Not revalidated in this refresh"
   },
