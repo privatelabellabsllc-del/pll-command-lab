@@ -1,61 +1,35 @@
 {
-  "date": "2026-08-10",
-  "ts": "2026-08-10T11:03:11.735Z",
+  "date": "2026-08-11",
+  "ts": "2026-08-11T11:04:52.020Z",
   "brief": [
     {
-      "t": "Terra Lotus is our biggest win on the board — seventy-eight thousand five hundred eighty dollars, with a thirty-nine thousand dollar deposit. The contract's been ready since August second. I just need the contact name and shipping address and it goes out today.",
+      "t": "11 AM Eastern call with Hass Alamer — new hair care line, 2,000 units, leave-in conditioner and hair oil. This is a booked-call conversion — be on it and push to a quote.",
       "hot": true
     },
     {
-      "t": "Atlas Eternal is twenty-six thousand five hundred, deposit thirteen thousand. I need three pro forma fields and a yes on Aiden's Adobe wording, then both documents are ready to send.",
+      "t": "2 PM Eastern call with Olesya Orozco from Ivory Maison. Rebooked with a working Google Meet link, James is on the invite.",
       "hot": true
     },
     {
-      "t": "Oreka is eight thousand five hundred fifty-five and just needs your yes or no on the payment and the thousand-unit Peptide Cream job.",
+      "t": "Terra Lotus, seventy-eight thousand five hundred eighty dollars, is our biggest deal — fifty-two percent of the monthly target. Aidan owns the volume pricing conversation. Nudged in the priority channel, awaiting his reply.",
       "hot": true
     },
     {
-      "t": "Both of our net-new ad campaigns are still on Maximize Conversions with zero tracked conversions — we're paying for a signal that isn't there. Just say revert ads to manual and I flip both back to Manual CPC in one move.",
-      "hot": true
-    },
-    {
-      "t": "The CRM browser is logged out. Log it back in as the consultant account and I'll verify every claimed fix and pull the purchasing knowledge base.",
+      "t": "Wednesday call with Kenna is confirmed. That's the gate on Pure Good, roughly three hundred twenty-nine thousand dollars.",
       "hot": false
     },
     {
-      "t": "Pure Good is roughly three hundred twenty-nine thousand, gated on the chemist. A call to Kenna unblocks it.",
+      "t": "New inbound: Ashley Harmon from ApothikSKIN, a botanical skincare brand, came in through the website contact form.",
       "hot": false
     }
   ],
   "next": [
-    "Reply with the Terra Lotus contact name and address and I send the $78,580 contract today.",
-    "Give me the Atlas Eternal three fields and I send the $26,500 docs.",
-    "Say 'revert ads to manual' for the one-click ad fix."
+    "Take the 11 AM Hass Alamer call and push to a quote",
+    "Take the 2 PM Olesya Orozco call",
+    "Let Aidan close the Terra Lotus volume pricing — Consultant is holding the line",
+    "Prepare for Wednesday’s Kenna call on Pure Good"
   ],
   "kb": [
-    {
-      "keys": [
-        "terra lotus",
-        "terra",
-        "lotus",
-        "78580",
-        "contract",
-        "tiered quote"
-      ],
-      "a": "Terra Lotus is a $78,580 manufacturing opportunity, with a $39,290 deposit. The contract and quote have been ready since Aug 2; Sam needs to provide the contact name and shipping address so the package can go out today. It is the first revenue lane."
-    },
-    {
-      "keys": [
-        "atlas eternal",
-        "atlas",
-        "26500",
-        "aiden kraim",
-        "ryne bell",
-        "pro forma",
-        "adobe"
-      ],
-      "a": "Atlas Eternal is a $26,500 opportunity with a $13,250 deposit. Before sending the agreement and pro forma, confirm the fill size and packaging, billing address, lead time and Incoterms, plus Aiden's Adobe-document wording. Once those are in, both documents are ready to send."
-    },
     {
       "keys": [
         "website",
@@ -160,18 +134,6 @@
     },
     {
       "keys": [
-        "inbound",
-        "inquiries",
-        "keyshaun",
-        "hass alamer",
-        "natalie hamilton",
-        "tamara danielsen",
-        "forms"
-      ],
-      "a": "Overnight inbound awaiting replies: Keyshaun Butler confirmed he is still interested; Hass Alamer, a Manhattan stylist, detailed two hero hair-care products (a leave-in conditioner and a styling cream) after Sam's reply; and two Shopify contact-form leads came in — Natalie Hamilton and Tamara Danielsen, who wants confirmation all products are USA-made. None are angry; all are warm leads needing follow-up after Terra and Atlas."
-    },
-    {
-      "keys": [
         "ads",
         "google ads",
         "cap breach",
@@ -191,75 +153,127 @@
     },
     {
       "keys": [
+        "terra lotus",
+        "terra",
+        "lotus",
+        "78580",
+        "volume pricing"
+      ],
+      "a": "Terra Lotus is a $78,580 opportunity, about 52% of the $150K monthly target. Aidan owns the volume-pricing conversation; the priority channel has been nudged and his reply is pending. Keep this lane with Aidan rather than reopening old contract-detail assumptions."
+    },
+    {
+      "keys": [
+        "hass alamer",
+        "hass",
+        "hair care",
+        "leave-in conditioner",
+        "hair oil",
+        "2000 units"
+      ],
+      "a": "Hass Alamer has an 11 AM Eastern booked call today for a new 2,000-unit hair-care line: a leave-in conditioner and hair oil. Treat it as a conversion call and push qualified scope directly to a quote. No price or final specifications are confirmed yet."
+    },
+    {
+      "keys": [
+        "olesya orozco",
+        "olesya",
+        "ivory maison",
+        "ivory",
+        "2 pm",
+        "google meet"
+      ],
+      "a": "Olesya Orozco from Ivory Maison has a 2 PM Eastern call today. It was rebooked with a working Google Meet link, and James is on the invite. Use the call to qualify needs and set the commercial next step."
+    },
+    {
+      "keys": [
         "pure good",
         "kenna",
         "329k",
         "chemist",
         "formula gate"
       ],
-      "a": "Pure Good is a roughly $329K opportunity blocked at the chemist/formula gate. Sam needs to call Kenna to unblock it. Once the gate clears, the next-step quote can be prepared immediately."
+      "a": "Pure Good is a roughly $329K opportunity. The Wednesday call with Kenna is confirmed and is the gate to advance it. The exact blocker resolution remains to be confirmed on that call."
+    },
+    {
+      "keys": [
+        "ashley harmon",
+        "ashley",
+        "apothikskin",
+        "apothik",
+        "botanical skincare"
+      ],
+      "a": "Ashley Harmon from ApothikSKIN is a new inbound website-contact-form lead. ApothikSKIN is described as a botanical skincare brand. Qualification details, product scope, quantity, and timing are still unknown."
+    },
+    {
+      "keys": [
+        "atlas eternal",
+        "atlas",
+        "26500",
+        "sam review",
+        "pro forma"
+      ],
+      "a": "Atlas Eternal is a $26,500 opportunity awaiting Sam review. Do not state that documents are ready to send until Sam’s review is complete. The next action after review is not verified in this refresh."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Terra Lotus — send contract and quote",
-      "why": "$78,580 package is ready; contact name and shipping address are still needed to release the $39,290 deposit.",
+      "title": "Hass Alamer — 11 AM hair-care conversion call",
+      "why": "Booked call for a 2,000-unit leave-in conditioner and hair-oil line; move it to a quote.",
       "owner": "Sam",
-      "due": "Today",
+      "due": "Today 11:00 AM ET",
       "priority": "critical",
-      "revenue": "$78,580; $39,290 deposit",
-      "status": "WAITING ON SAM"
+      "revenue": "2,000-unit opportunity",
+      "status": "BOOKED CALL"
     },
     {
       "rank": 2,
-      "title": "Atlas Eternal — finalize and send documents",
-      "why": "$26,500 agreement and pro forma need three fields and Aiden's Adobe wording confirmation.",
-      "owner": "Sam / Aiden",
-      "due": "Today",
+      "title": "Olesya Orozco / Ivory Maison — 2 PM call",
+      "why": "Rebooked with a working Google Meet link; James is on the invite.",
+      "owner": "Sam",
+      "due": "Today 2:00 PM ET",
       "priority": "critical",
-      "revenue": "$26,500; $13,250 deposit",
-      "status": "WAITING ON SAM"
+      "revenue": "Value to qualify",
+      "status": "BOOKED CALL"
     },
     {
       "rank": 3,
-      "title": "Oreka / Nadia — approve payment and Peptide Cream job",
-      "why": "A yes/no decision controls the $8,555 payment and 1,000-unit handoff.",
-      "owner": "Sam",
+      "title": "Terra Lotus — close volume pricing",
+      "why": "$78,580 is the largest deal and 52% of the monthly target; Aidan owns the volume-pricing conversation.",
+      "owner": "Aidan",
       "due": "Today",
-      "priority": "high",
-      "revenue": "$8,555 payment; 1,000-unit job",
-      "status": "WAITING ON SAM"
+      "priority": "critical",
+      "revenue": "$78,580",
+      "status": "AWAITING AIDAN REPLY"
     },
     {
       "rank": 4,
-      "title": "Ads — approve Manual CPC revert",
-      "why": "Both net-new campaigns are on Maximize Conversions with zero tracked conversions.",
+      "title": "Atlas Eternal — Sam review",
+      "why": "$26,500 package is awaiting Sam review.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Protects paid lead generation",
-      "status": "WAITING ON SAM"
+      "revenue": "$26,500",
+      "status": "AWAITING SAM REVIEW"
     },
     {
       "rank": 5,
-      "title": "CRM — re-login consultant browser session",
-      "why": "The signed-out session blocks verification and purchasing knowledge-base extraction.",
+      "title": "Oreka — approve payment and Peptide Cream job",
+      "why": "Sam approval is needed for the $8,555 payment and 1,000-unit Peptide Cream job.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Unblocks revenue operations",
-      "status": "WAITING ON SAM"
+      "revenue": "$8,555",
+      "status": "AWAITING SAM APPROVAL"
     },
     {
       "rank": 6,
-      "title": "Pure Good — call Kenna",
-      "why": "The chemist/formula gate holds a roughly $329K opportunity.",
+      "title": "Pure Good — Wednesday Kenna call",
+      "why": "The confirmed Kenna call is the gate on the roughly $329K opportunity.",
       "owner": "Sam",
-      "due": "Today",
-      "priority": "critical",
+      "due": "Wednesday",
+      "priority": "high",
       "revenue": "~$329K",
-      "status": "WAITING ON SAM"
+      "status": "CALL CONFIRMED"
     }
   ],
   "teamMembers": {
@@ -284,8 +298,12 @@
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Provide Atlas inputs, drive Nadia/Oreka payment approval, and reconnect his Command Lab sources.",
+      "top_task": "Close Terra Lotus volume pricing, then continue Atlas and Oreka follow-through.",
       "tasks": [
+        {
+          "title": "Close the Terra Lotus $78,580 volume-pricing conversation and report the outcome",
+          "due": "Today"
+        },
         {
           "title": "Confirm Atlas fill size/packaging, billing address, lead time, and Incoterms",
           "due": "Today"
@@ -299,7 +317,7 @@
           "due": "Today"
         }
       ],
-      "notes": "Purchasing intelligence remains incomplete until the CRM session is restored."
+      "notes": "Owns the Terra Lotus volume-pricing follow-up; priority-channel nudge is awaiting his reply."
     },
     "laura": {
       "display_name": "Laura",
@@ -330,60 +348,90 @@
   },
   "revenueActions": [
     {
-      "title": "Send Terra Lotus contract and quote",
-      "why": "The $78,580 package is ready once Sam provides the contact name and shipping address.",
+      "title": "Close Terra Lotus volume pricing",
+      "why": "Terra Lotus is a $78,580 opportunity and 52% of the monthly target; Aidan owns the conversation.",
       "est_value": "$78,580",
-      "next_step": "Provide contact name and shipping address; send same day.",
-      "owner": "Sam",
+      "next_step": "Aidan to respond to the priority-channel nudge and close the volume-pricing lane.",
+      "owner": "Aidan",
       "timing": "Today",
-      "value": "$39,290 deposit mobilizable",
-      "status": "WAITING ON SAM"
+      "value": "$78,580",
+      "status": "AWAITING AIDAN REPLY"
     },
     {
-      "title": "Send Atlas Eternal agreement and pro forma",
-      "why": "The $26,500 package needs three fields and Aiden's Adobe wording confirmation.",
+      "title": "Convert Hass Alamer call to quote",
+      "why": "Booked 11 AM ET call concerns a 2,000-unit leave-in conditioner and hair-oil line.",
+      "est_value": "2,000-unit opportunity",
+      "next_step": "Run the call and move the qualified scope to a quote.",
+      "owner": "Sam",
+      "timing": "Today 11:00 AM ET",
+      "value": "Quote-ready after qualification",
+      "status": "BOOKED CALL"
+    },
+    {
+      "title": "Take Olesya Orozco / Ivory Maison call",
+      "why": "The 2 PM ET meeting has been rebooked with a working Google Meet link and James on the invite.",
+      "est_value": "To qualify",
+      "next_step": "Run the call and document the commercial next step.",
+      "owner": "Sam",
+      "timing": "Today 2:00 PM ET",
+      "value": "To qualify",
+      "status": "BOOKED CALL"
+    },
+    {
+      "title": "Complete Atlas Eternal review",
+      "why": "The $26,500 package awaits Sam review.",
       "est_value": "$26,500",
-      "next_step": "Confirm fill size/packaging, billing address, lead time/Incoterms, and wording; finalize and send.",
-      "owner": "Sam / Aiden",
-      "timing": "Today",
-      "value": "$13,250 deposit mobilizable",
-      "status": "WAITING ON SAM"
-    },
-    {
-      "title": "Approve Oreka / Nadia payment and Peptide Cream job",
-      "why": "Approval controls the $8,555 payment and 1,000-unit Peptide Cream job.",
-      "est_value": "$8,555",
-      "next_step": "Approve or decline payment and job.",
+      "next_step": "Sam review and release next document action.",
       "owner": "Sam",
       "timing": "Today",
-      "value": "Cash collection and production start",
-      "status": "WAITING ON SAM"
+      "value": "$26,500",
+      "status": "AWAITING SAM REVIEW"
+    },
+    {
+      "title": "Approve Oreka payment and Peptide Cream job",
+      "why": "Sam approval controls the $8,555 payment and 1,000-unit job.",
+      "est_value": "$8,555",
+      "next_step": "Approve or decline.",
+      "owner": "Sam",
+      "timing": "Today",
+      "value": "$8,555",
+      "status": "AWAITING SAM APPROVAL"
+    },
+    {
+      "title": "Prepare for Pure Good / Kenna call",
+      "why": "Wednesday’s confirmed call is the gate on roughly $329K.",
+      "est_value": "~$329K",
+      "next_step": "Use the Kenna call to clear the gate and set the quote path.",
+      "owner": "Sam",
+      "timing": "Wednesday",
+      "value": "~$329K",
+      "status": "CALL CONFIRMED"
     }
   ],
   "pipelineStat": {
-    "total_value": "~$442K named pipeline",
-    "active_deals": 4,
+    "total_value": "~$442.6K named pipeline",
+    "active_deals": 6,
     "hot": [
-      "Terra Lotus — $78,580 contract ready; $39,290 deposit",
-      "Atlas Eternal — $26,500; $13,250 deposit",
-      "Oreka / Nadia — $8,555 payment and 1,000-unit Peptide Cream job",
-      "Pure Good / Kenna — ~$329K formula/chemist gate"
+      "Terra Lotus — $78,580; Aidan owns volume pricing",
+      "Atlas Eternal — $26,500; awaiting Sam review",
+      "Oreka — $8,555; Sam approval",
+      "Pure Good / Kenna — ~$329K; Wednesday call confirmed",
+      "Hass Alamer — 2,000-unit hair care; 11 AM ET call",
+      "Olesya Orozco / Ivory Maison — 2 PM ET call"
     ],
     "stalled": [
-      "Terra Lotus contact name and shipping address",
-      "Atlas three pro forma fields and Aiden Adobe wording",
-      "Oreka yes/no approval",
-      "Both campaigns Manual CPC revert approval",
-      "CRM browser re-login",
-      "Kenna call"
+      "Terra Lotus volume-pricing reply from Aidan",
+      "Atlas Eternal Sam review",
+      "Oreka Sam approval",
+      "Pure Good gate pending Wednesday Kenna call"
     ],
-    "activeDeals": 4,
-    "pipelineValue": 442000,
+    "activeDeals": 6,
+    "pipelineValue": 442635,
     "inProduction": 0,
     "depositsCollected": 0,
-    "note": "~$442K named pipeline. Achievable deposits this month are ~ $61K from Terra Lotus and Atlas alone; monthly target is $150K.",
+    "note": "~$442.6K named pipeline. Terra Lotus is $78,580 (52% of the $150K monthly target); today’s calls are Hass Alamer at 11 AM ET and Olesya Orozco at 2 PM ET.",
     "monthlyTarget": "$150K",
-    "achievableDepositsThisMonth": "~$61K from Terra Lotus + Atlas alone"
+    "achievableDepositsThisMonth": "Not revalidated in this refresh"
   },
   "adsAgentBrief": {
     "timestamp": "2026-08-11T10:30:00.000Z",
