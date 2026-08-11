@@ -1,9 +1,9 @@
 {
- "id": "ans_324489fae643",
- "request_id": "ads-nightly-2026-08-10",
- "ts": "2026-08-10T21:15:00-04:00",
+ "id": "cmd_mso0gmrg_bk6eehj",
+ "request_id": "cmd_mso0gmrg_bk6eehj",
+ "ts": "2026-08-11T02:00:00Z",
  "agent": "PLL Consultant",
  "status": "completed",
- "text": "NIGHTLY ADS — Mon 8/10 (Consultant-verified, read-only). Both net-new campaigns ENABLED. Today (partial): $19.60, 10 clicks, 18.5% CTR, $1.96 CPC. Trailing-7 (8/4–8/10): $143.98 spend, 57 clicks, 16.5% CTR, $2.53 CPC vs prior-7 (7/28–8/3) $216.12 / 85 clicks / 13.4% CTR / $2.54 CPC — spend DOWN ~33%. Cap: $20.57/day avg = 81% of live-configured $25.33/day (Contract Mfg $20.33 + Samples $5.00) — COMPLIANT, no runaway. Leads: 4 qualified inquiries current / 0 verified Ads-attributed current; prior-7 had 13 inquiries / 4 GCLID-attributed at $54.03 CPL. CRITICAL (verified live): BOTH campaigns on MAXIMIZE_CONVERSIONS with a near-zero conversion signal — optimizing toward a target that doesn't exist. No change made. RECOMMEND (needs Sam approval, $0 budget change): revert BOTH campaigns to Manual CPC. Ad-level 7-ad roster UNVERIFIED (Google Ads API v21 backend error). NOTE: Ads Agent callback landed 21:13 but reported a recycled trailing-7 figure ($157.80, identical to 8/9); figures above are Consultant live-verified from the 21:06 cache refresh.",
- "spoken_text": "Sam, here's the bottom line. Over the last seven days the new ads spent about a hundred forty-four dollars, which is down roughly a third from the week before, and we're sitting at about eighty percent of budget, so nothing's running away. The catch is both campaigns are still on automatic bidding, chasing a conversion signal we haven't wired up yet, so they're optimizing toward a target that isn't really there. We had four inquiries this week but none are confirmed as ad-driven. My recommendation hasn't changed: put both campaigns back on manual bidding. It's a zero-dollar change, and I just need your yes to have the Ads Agent do it. One heads-up — the Ads Agent's own report tonight reused last week's number, so I'm going with my own verified figures."
+ "text": "Ha — right back at you, boss. Voice link is live and I'm reading you loud and clear. Say the word and I'll put the next Road2150 move in front of you.",
+ "spoken_text": "Ha, right back at you, boss. Voice link's live and I hear you loud and clear. Whenever you're ready, just say Road twenty-one fifty and I'll line up the next move."
 }
