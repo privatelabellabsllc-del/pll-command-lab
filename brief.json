@@ -3,7 +3,7 @@
   "ts": "2026-08-11T14:20:21.242Z",
   "brief": [
     {
-      "t": "11 AM Eastern call with Hass Alamer — new hair care line, 2,000 units, leave-in conditioner and hair oil. This is a booked-call conversion — be on it and push to a quote.",
+      "t": "11 AM Eastern call with Hass Alamer \u2014 new hair care line, 2,000 units, leave-in conditioner and hair oil. This is a booked-call conversion \u2014 be on it and push to a quote.",
       "hot": true
     },
     {
@@ -11,11 +11,11 @@
       "hot": true
     },
     {
-      "t": "Terra Lotus, seventy-eight thousand five hundred eighty dollars, is our biggest deal — fifty-two percent of the monthly target. Aidan owns the volume pricing conversation. Nudged in the priority channel, awaiting his reply.",
+      "t": "Terra Lotus, seventy-eight thousand five hundred eighty dollars, is our biggest deal \u2014 fifty-two percent of the monthly target. Aidan owns the volume pricing conversation. Nudged in the priority channel, awaiting his reply.",
       "hot": true
     },
     {
-      "t": "Atlas Eternal, twenty-six thousand five hundred dollars, deposit is PAID. The documents question is closed — the job moves to production now, with the thirteen thousand two hundred fifty dollar balance due on completion.",
+      "t": "Atlas Eternal, twenty-six thousand five hundred dollars, deposit is PAID. The documents question is closed \u2014 the job moves to production now, with the thirteen thousand two hundred fifty dollar balance due on completion.",
       "hot": true
     },
     {
@@ -30,9 +30,9 @@
   "next": [
     "Take the 11 AM Hass Alamer call and push to a quote",
     "Take the 2 PM Olesya Orozco call",
-    "Kick off Atlas Eternal production — deposit is in ($13,250)",
-    "Let Aidan close the Terra Lotus volume pricing — Consultant is holding the line",
-    "Prepare for Wednesday’s Kenna call on Pure Good"
+    "Kick off Atlas Eternal production \u2014 deposit is in ($13,250)",
+    "Let Aidan close the Terra Lotus volume pricing \u2014 Consultant is holding the line",
+    "Prepare for Wednesday\u2019s Kenna call on Pure Good"
   ],
   "kb": [
     {
@@ -45,7 +45,7 @@
         "scheduler",
         "convertflow"
       ],
-      "a": "The website and forms lane is agent-owned and in progress. Contact forms are verified delivering to sam@prvtlabellabs.com, the SEO-agency form is disabled, and the address is migrated. The real gaps are that Book a Call has no scheduler wired and hCaptcha may be silently dropping leads. The agent is waiting on Sam's booking URL — he has one but it does not attach a Google Meet link — and is building hardened forms on a draft theme. Nothing publishes without Sam's approval."
+      "a": "The website and forms lane is agent-owned and in progress. Contact forms are verified delivering to sam@prvtlabellabs.com, the SEO-agency form is disabled, and the address is migrated. The real gaps are that Book a Call has no scheduler wired and hCaptcha may be silently dropping leads. The agent is waiting on Sam's booking URL \u2014 he has one but it does not attach a Google Meet link \u2014 and is building hardened forms on a draft theme. Nothing publishes without Sam's approval."
     },
     {
       "keys": [
@@ -216,13 +216,13 @@
         "sam review",
         "pro forma"
       ],
-      "a": "Atlas Eternal is a $26,500 opportunity awaiting Sam review. Do not state that documents are ready to send until Sam’s review is complete. The next action after review is not verified in this refresh."
+      "a": "Atlas Eternal is a $26,500 opportunity awaiting Sam review. Do not state that documents are ready to send until Sam\u2019s review is complete. The next action after review is not verified in this refresh."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Hass Alamer — 11 AM hair-care conversion call",
+      "title": "Hass Alamer \u2014 11 AM hair-care conversion call",
       "why": "Booked call for a 2,000-unit leave-in conditioner and hair-oil line; move it to a quote.",
       "owner": "Sam",
       "due": "Today 11:00 AM ET",
@@ -232,7 +232,7 @@
     },
     {
       "rank": 2,
-      "title": "Olesya Orozco / Ivory Maison — 2 PM call",
+      "title": "Olesya Orozco / Ivory Maison \u2014 2 PM call",
       "why": "Rebooked with a working Google Meet link; James is on the invite.",
       "owner": "Sam",
       "due": "Today 2:00 PM ET",
@@ -242,7 +242,7 @@
     },
     {
       "rank": 3,
-      "title": "Terra Lotus — close volume pricing",
+      "title": "Terra Lotus \u2014 close volume pricing",
       "why": "$78,580 is the largest deal and 52% of the monthly target; Aidan owns the volume-pricing conversation.",
       "owner": "Aidan",
       "due": "Today",
@@ -252,17 +252,17 @@
     },
     {
       "rank": 4,
-      "title": "Atlas Eternal — start production ($13,250 deposit PAID)",
-      "why": "Deposit $13,250 received (QuickBooks Inv #1050, Ryne Bell). Balance $13,250 due on completion. Money is in — kick off production.",
+      "title": "Atlas Eternal \u2014 start production ($13,250 deposit PAID)",
+      "why": "Deposit $13,250 received (QuickBooks Inv #1050, Ryne Bell). Balance $13,250 due on completion. Money is in \u2014 kick off production.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
       "revenue": "$26,500 ($13,250 collected)",
-      "status": "DEPOSIT PAID — START PRODUCTION"
+      "status": "DEPOSIT PAID \u2014 START PRODUCTION"
     },
     {
       "rank": 5,
-      "title": "Oreka — approve payment and Peptide Cream job",
+      "title": "Oreka \u2014 approve payment and Peptide Cream job",
       "why": "Sam approval is needed for the $8,555 payment and 1,000-unit Peptide Cream job.",
       "owner": "Sam",
       "due": "Today",
@@ -272,7 +272,7 @@
     },
     {
       "rank": 6,
-      "title": "Pure Good — Wednesday Kenna call",
+      "title": "Pure Good \u2014 Wednesday Kenna call",
       "why": "The confirmed Kenna call is the gate on the roughly $329K opportunity.",
       "owner": "Sam",
       "due": "Wednesday",
@@ -284,7 +284,7 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Take today’s booked calls (Hass 11 AM, Olesya 2 PM) and kick off Atlas production. Terra Lotus is Aidan’s lane — hold.",
+      "top_task": "Take today\u2019s booked calls (Hass 11 AM, Olesya 2 PM) and kick off Atlas production. Terra Lotus is Aidan\u2019s lane \u2014 hold.",
       "tasks": [
         {
           "title": "Take the 11 AM Hass Alamer call and push to a quote",
@@ -295,7 +295,7 @@
           "due": "Today 2:00 PM ET"
         },
         {
-          "title": "Green-light Atlas Eternal production kickoff — deposit $13,250 already paid",
+          "title": "Green-light Atlas Eternal production kickoff \u2014 deposit $13,250 already paid",
           "due": "Today"
         },
         {
@@ -303,7 +303,7 @@
           "due": "Today"
         }
       ],
-      "notes": "Terra Lotus is Aidan’s to close — send nothing customer-facing until Aidan reports back."
+      "notes": "Terra Lotus is Aidan\u2019s to close \u2014 send nothing customer-facing until Aidan reports back."
     },
     "aidan": {
       "display_name": "Aidan",
@@ -386,11 +386,11 @@
       "title": "Start Atlas Eternal production",
       "why": "$26,500 order; $13,250 deposit already PAID (Inv #1050, Ryne Bell). Balance $13,250 due on completion.",
       "est_value": "$26,500",
-      "next_step": "Confirm production is scheduled/started; set completion → balance-collection follow-up.",
+      "next_step": "Confirm production is scheduled/started; set completion \u2192 balance-collection follow-up.",
       "owner": "Sam",
       "timing": "Today",
       "value": "$13,250 collected; $13,250 on completion",
-      "status": "DEPOSIT PAID — START PRODUCTION"
+      "status": "DEPOSIT PAID \u2014 START PRODUCTION"
     },
     {
       "title": "Approve Oreka payment and Peptide Cream job",
@@ -404,7 +404,7 @@
     },
     {
       "title": "Prepare for Pure Good / Kenna call",
-      "why": "Wednesday’s confirmed call is the gate on roughly $329K.",
+      "why": "Wednesday\u2019s confirmed call is the gate on roughly $329K.",
       "est_value": "~$329K",
       "next_step": "Use the Kenna call to clear the gate and set the quote path.",
       "owner": "Sam",
@@ -417,12 +417,12 @@
     "total_value": "~$442.6K named pipeline",
     "active_deals": 6,
     "hot": [
-      "Terra Lotus — $78,580; Aidan owns volume pricing",
-      "Atlas Eternal — $26,500; deposit PAID, start production",
-      "Oreka — $8,555; Sam approval",
-      "Pure Good / Kenna — ~$329K; Wednesday call confirmed",
-      "Hass Alamer — 2,000-unit hair care; 11 AM ET call",
-      "Olesya Orozco / Ivory Maison — 2 PM ET call"
+      "Terra Lotus \u2014 $78,580; Aidan owns volume pricing",
+      "Atlas Eternal \u2014 $26,500; deposit PAID, start production",
+      "Oreka \u2014 $8,555; Sam approval",
+      "Pure Good / Kenna \u2014 ~$329K; Wednesday call confirmed",
+      "Hass Alamer \u2014 2,000-unit hair care; 11 AM ET call",
+      "Olesya Orozco / Ivory Maison \u2014 2 PM ET call"
     ],
     "stalled": [
       "Terra Lotus volume-pricing reply from Aidan",
@@ -433,23 +433,23 @@
     "pipelineValue": 442635,
     "inProduction": 1,
     "depositsCollected": 13250,
-    "note": "~$442.6K named pipeline. Terra Lotus $78,580 (52% of the $150K monthly target) — Aidan owns volume pricing. Atlas Eternal deposit of $13,250 collected → production kickoff. Today’s calls: Hass Alamer 11 AM ET, Olesya Orozco 2 PM ET.",
+    "note": "~$442.6K named pipeline. Terra Lotus $78,580 (52% of the $150K monthly target) \u2014 Aidan owns volume pricing. Atlas Eternal deposit of $13,250 collected \u2192 production kickoff. Today\u2019s calls: Hass Alamer 11 AM ET, Olesya Orozco 2 PM ET.",
     "monthlyTarget": "$150K",
     "achievableDepositsThisMonth": "Not revalidated in this refresh"
   },
   "adsAgentBrief": {
     "timestamp": "2026-08-12T01:01:00.000Z",
-    "mode": "READ-ONLY NIGHTLY CACHE REFRESH — PARTIAL",
-    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
+    "mode": "READ-ONLY NIGHTLY CACHE REFRESH \u2014 PARTIAL",
+    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED",
     "headline": "Google Ads performance and cap verification are unavailable: google_ads-create-report is blocked by deprecated API v21. Inbox current 7 days: 6 qualified inquiries, 1 verified GCLID-attributed Ads lead.",
     "recommendation": "Pending Sam approval: do not change any Ads settings. First restore the Google Ads reporting integration, then validate the exact seven-ad roster, performance, configured budgets, and attribution before considering the previously pending Manual CPC recommendation.",
-    "approvalRequired": "YES — Sam explicit approval required",
+    "approvalRequired": "YES \u2014 Sam explicit approval required",
     "answers": {
-      "today": "Today (2026-08-11 ET): NOT AVAILABLE — live Google Ads reporting is blocked by deprecated API v21. No delivery total is asserted.",
-      "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. No fresh ad-level report was retrievable; no Ads changes were made.",
+      "today": "Today (2026-08-11 ET): NOT AVAILABLE \u2014 live Google Ads reporting is blocked by deprecated API v21. No delivery total is asserted.",
+      "sevenNewAds": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. No fresh ad-level report was retrievable; no Ads changes were made.",
       "ctrCpc": "Current and prior 7-day CTR/CPC: NOT AVAILABLE from a fresh live pull because google_ads-create-report is blocked by deprecated API v21.",
-      "leadsEmailsCalls": "Inbox review: current 7 days (2026-08-05–11 ET) found 11 Shopify form messages and 6 manually qualified manufacturing inquiries; 1 has a GCLID and is a verified Ads-attributed lead. Prior 7 days (2026-07-29–08-04 ET) found 10 form messages; qualification and Ads attribution are NOT YET MEASURABLE in this blocked run. Booked calls/CPL/cost per booked call are NOT YET MEASURABLE — calendar/CRM out of scope.",
-      "budgetCap": "Cap status is NOT VERIFIED for this refresh because configured campaign budgets and spend could not be read live. Last verified (2026-08-11 10:30Z, not re-verified): Contract Manufacturing $20.33/day + White Label Samples $5.00/day = $25.33/day.",
+      "leadsEmailsCalls": "Inbox review: current 7 days (2026-08-05\u201311 ET) found 11 Shopify form messages and 6 manually qualified manufacturing inquiries; 1 has a GCLID and is a verified Ads-attributed lead. Prior 7 days (2026-07-29\u201308-04 ET) found 10 form messages; qualification and Ads attribution are NOT YET MEASURABLE in this blocked run. Booked calls/CPL/cost per booked call are NOT YET MEASURABLE \u2014 calendar/CRM out of scope.",
+      "budgetCap": "Cap status is NOT VERIFIED for this refresh because configured campaign budgets and spend could not be read live. Last documented verification (2026-08-04 9 PM ET, not re-verified): Contract Manufacturing $20.33/day + White Label Samples $5.00/day = $25.33/day.",
       "winners": "No current winner can be determined: live Google Ads performance was unavailable and the exact seven-ad roster is unverified.",
       "waste": "No fresh search-term/waste evidence was available; make no waste claim.",
       "optimization": "Read-only. No campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
@@ -460,7 +460,7 @@
   },
   "adsIntelligence": {
     "refreshedAt": "2026-08-12T01:01:00.000Z",
-    "refreshType": "Nightly cache refresh — read-only (PARTIAL: Google Ads reporting blocked)",
+    "refreshType": "Nightly cache refresh \u2014 read-only (PARTIAL: Google Ads reporting blocked)",
     "dataThrough": "Inbox: 2026-08-11 ET; Google Ads: no fresh data available",
     "windows": {
       "today": "2026-08-11 America/New_York",
@@ -472,65 +472,63 @@
         "Contract Manufacturing",
         "White Label Samples"
       ],
-      "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
+      "warning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED",
       "legacyCampaignsExcluded": true
     },
-    "status": "PARTIAL — PUBLISHED WITH GOOGLE ADS DATA BLOCKER",
+    "status": "PARTIAL \u2014 PUBLISHED WITH GOOGLE ADS DATA BLOCKER",
     "googleAdsReporting": {
       "status": "BLOCKED",
-      "error": "GOOGLE ADS REPORTING BLOCKED — google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
+      "error": "GOOGLE ADS REPORTING BLOCKED \u2014 google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
       "attemptedTool": "google_ads-create-report",
       "livePerformanceAvailable": false,
       "configuredBudgetReadAtReportTime": false
     },
     "todaySoFar": {
       "totals": {
-        "status": "NOT AVAILABLE — live Google Ads report blocked",
+        "status": "NOT AVAILABLE \u2014 live Google Ads report blocked",
         "spend": null,
         "impressions": null,
         "clicks": null,
         "ctr": null,
         "averageCpc": null,
-        "note": "GOOGLE ADS REPORTING BLOCKED — google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated."
+        "note": "GOOGLE ADS REPORTING BLOCKED \u2014 google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated."
       }
     },
     "performance": {
       "current7Day": {
-        "status": "NOT AVAILABLE — live Google Ads report blocked",
+        "status": "NOT AVAILABLE \u2014 live Google Ads report blocked",
         "spend": null,
         "impressions": null,
         "clicks": null,
         "ctr": null,
         "averageCpc": null,
-        "note": "GOOGLE ADS REPORTING BLOCKED — google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated."
+        "note": "GOOGLE ADS REPORTING BLOCKED \u2014 google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated."
       },
       "prior7Day": {
-        "status": "NOT AVAILABLE — live Google Ads report blocked",
+        "status": "NOT AVAILABLE \u2014 live Google Ads report blocked",
         "spend": null,
         "impressions": null,
         "clicks": null,
         "ctr": null,
         "averageCpc": null,
-        "note": "GOOGLE ADS REPORTING BLOCKED — google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated."
+        "note": "GOOGLE ADS REPORTING BLOCKED \u2014 google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated."
       },
       "campaigns": [
         {
           "name": "Contract Manufacturing",
-          "campaignId": "24049588003",
           "status": "NOT RE-VERIFIED",
           "configuredDailyBudget": "NOT RE-VERIFIED",
           "adBreakdown": {
-            "status": "NOT AVAILABLE — exact seven-ad roster not provable",
+            "status": "NOT AVAILABLE \u2014 exact seven-ad roster not provable",
             "ads": []
           }
         },
         {
           "name": "White Label Samples",
-          "campaignId": "24040031889",
           "status": "NOT RE-VERIFIED",
           "configuredDailyBudget": "NOT RE-VERIFIED",
           "adBreakdown": {
-            "status": "NOT AVAILABLE — exact seven-ad roster not provable",
+            "status": "NOT AVAILABLE \u2014 exact seven-ad roster not provable",
             "ads": []
           }
         }
@@ -543,44 +541,44 @@
         "qualifiedInquiryMethod": "Manual preview review. Excluded obvious consumer/spam/vendor entries and counted the duplicate Nicola Delmotte submission once.",
         "verifiedAdsAttributedLeads": 1,
         "attributionStatus": "One submitted record contains GCLID; remaining qualified inquiries are UNATTRIBUTED / not provable from inbox preview.",
-        "bookedCalls": "NOT YET MEASURABLE — calendar/CRM not in scope",
-        "cpl": "NOT YET MEASURABLE — fresh spend unavailable and calendar/CRM out of scope",
-        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM not in scope"
+        "bookedCalls": "NOT YET MEASURABLE \u2014 calendar/CRM not in scope",
+        "cpl": "NOT YET MEASURABLE \u2014 fresh spend unavailable and calendar/CRM out of scope",
+        "costPerBookedCall": "NOT YET MEASURABLE \u2014 calendar/CRM not in scope"
       },
       "prior7Day": {
         "shopifyFormMessagesFound": 10,
-        "qualifiedInquiries": "NOT RE-VERIFIED — mailbox count only; manual qualification not completed because Google Ads performance pull was blocked",
+        "qualifiedInquiries": "NOT RE-VERIFIED \u2014 mailbox count only; manual qualification not completed because Google Ads performance pull was blocked",
         "verifiedAdsAttributedLeads": "NOT YET MEASURABLE",
         "attributionStatus": "NOT YET MEASURABLE in this blocked run",
-        "bookedCalls": "NOT YET MEASURABLE — calendar/CRM not in scope",
+        "bookedCalls": "NOT YET MEASURABLE \u2014 calendar/CRM not in scope",
         "cpl": "NOT YET MEASURABLE",
         "costPerBookedCall": "NOT YET MEASURABLE"
       }
     },
     "capCompliance": {
-      "status": "NOT VERIFIED — live configured budgets and spend unavailable",
+      "status": "NOT VERIFIED \u2014 live configured budgets and spend unavailable",
       "method": "A breach may only be declared from trailing-window average versus live configured daily budgets; no breach claim is made. A single day up to 2x budget is normal pacing.",
       "lastVerifiedBudgetSnapshot": {
-        "asOf": "2026-08-11T10:30:00.000Z — not re-verified",
+        "asOf": "2026-08-04T21:00:00-04:00 \u2014 documented prior verification, not re-verified",
         "contractManufacturing": 20.33,
         "whiteLabelSamples": 5,
         "total": 25.33
       }
     },
     "funnelHealth": {
-      "status": "WATCH — MEASUREMENT BLOCKED",
+      "status": "WATCH \u2014 MEASUREMENT BLOCKED",
       "notes": [
-        "GOOGLE ADS REPORTING BLOCKED — google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
+        "GOOGLE ADS REPORTING BLOCKED \u2014 google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
         "Inbox identifies one GCLID-attributed inquiry in the current window; non-GCLID inquiries remain un-attributed.",
         "Calendar/CRM unavailable, so bookings and cost-per-booked-call are not measurable."
       ]
     },
     "searchTerms": {
-      "status": "NOT AVAILABLE — Google Ads report blocked",
+      "status": "NOT AVAILABLE \u2014 Google Ads report blocked",
       "wasteEvidence": "No fresh search-term evidence; no waste claim made."
     },
-    "bestItem": "NOT DETERMINABLE — live Ads data unavailable.",
-    "worstItem": "NOT DETERMINABLE — live Ads data unavailable.",
+    "bestItem": "NOT DETERMINABLE \u2014 live Ads data unavailable.",
+    "worstItem": "NOT DETERMINABLE \u2014 live Ads data unavailable.",
     "watchItem": "Restore Google Ads reporting; do not infer delivery, cap compliance, or a winner from stale figures.",
     "recommendation": {
       "text": "Pending Sam approval: do not change any Ads settings. First restore the Google Ads reporting integration, then validate the exact seven-ad roster, performance, configured budgets, and attribution before considering the previously pending Manual CPC recommendation.",
@@ -592,17 +590,17 @@
     "approvalRequired": true,
     "readOnly": true,
     "anomalies": [
-      "GOOGLE ADS REPORTING BLOCKED — google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
-      "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
+      "GOOGLE ADS REPORTING BLOCKED \u2014 google_ads-create-report returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
+      "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED.",
       "Configured budget was not re-read at report time, so cap compliance is NOT VERIFIED.",
-      "Samples last verified budget was $5.00/day (2026-08-11 10:30Z), not $10/day; this has not been re-verified."
+      "Samples was documented at $5.00/day in the 2026-08-04 verification, not $10/day; this has not been re-verified."
     ],
     "preparedAnswers": {
-      "today": "Today (2026-08-11 ET): NOT AVAILABLE — live Google Ads reporting is blocked by deprecated API v21. No delivery total is asserted.",
-      "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. No fresh ad-level report was retrievable; no Ads changes were made.",
+      "today": "Today (2026-08-11 ET): NOT AVAILABLE \u2014 live Google Ads reporting is blocked by deprecated API v21. No delivery total is asserted.",
+      "sevenNewAds": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. No fresh ad-level report was retrievable; no Ads changes were made.",
       "ctrCpc": "Current and prior 7-day CTR/CPC: NOT AVAILABLE from a fresh live pull because google_ads-create-report is blocked by deprecated API v21.",
-      "leadsEmailsCalls": "Inbox review: current 7 days (2026-08-05–11 ET) found 11 Shopify form messages and 6 manually qualified manufacturing inquiries; 1 has a GCLID and is a verified Ads-attributed lead. Prior 7 days (2026-07-29–08-04 ET) found 10 form messages; qualification and Ads attribution are NOT YET MEASURABLE in this blocked run. Booked calls/CPL/cost per booked call are NOT YET MEASURABLE — calendar/CRM out of scope.",
-      "budgetCap": "Cap status is NOT VERIFIED for this refresh because configured campaign budgets and spend could not be read live. Last verified (2026-08-11 10:30Z, not re-verified): Contract Manufacturing $20.33/day + White Label Samples $5.00/day = $25.33/day.",
+      "leadsEmailsCalls": "Inbox review: current 7 days (2026-08-05\u201311 ET) found 11 Shopify form messages and 6 manually qualified manufacturing inquiries; 1 has a GCLID and is a verified Ads-attributed lead. Prior 7 days (2026-07-29\u201308-04 ET) found 10 form messages; qualification and Ads attribution are NOT YET MEASURABLE in this blocked run. Booked calls/CPL/cost per booked call are NOT YET MEASURABLE \u2014 calendar/CRM out of scope.",
+      "budgetCap": "Cap status is NOT VERIFIED for this refresh because configured campaign budgets and spend could not be read live. Last documented verification (2026-08-04 9 PM ET, not re-verified): Contract Manufacturing $20.33/day + White Label Samples $5.00/day = $25.33/day.",
       "winners": "No current winner can be determined: live Google Ads performance was unavailable and the exact seven-ad roster is unverified.",
       "waste": "No fresh search-term/waste evidence was available; make no waste claim.",
       "optimization": "Read-only. No campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
@@ -612,7 +610,7 @@
     }
   },
   "facilityStatus": {
-    "status": "Moved in — active operations at new building",
+    "status": "Moved in \u2014 active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -620,6 +618,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "DTE start-service order completed Aug 1 (confirmed by DTE email). UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
+    "verificationRequired": "DTE start-service order completed Aug 1 (confirmed by DTE email). UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
   }
 }
