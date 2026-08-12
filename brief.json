@@ -1,160 +1,63 @@
 {
-  "date": "2026-08-11",
-  "ts": "2026-08-11T14:20:21.242Z",
+  "date": "2026-08-12",
+  "ts": "2026-08-12T07:05:00-04:00",
   "brief": [
     {
-      "t": "11 AM Eastern call with Hass Alamer — new hair care line, 2,000 units, leave-in conditioner and hair oil. This is a booked-call conversion — be on it and push to a quote.",
+      "t": "Today's single most important lever is the Kenna meeting — but it is not on your calendar. It gates the Atlas Eternal formula, twenty-six thousand five hundred dollars ready to go into production, and Pure Good at roughly three hundred twenty-nine thousand dollars. Confirm the time with Kenna first thing and hold that meeting.",
       "hot": true
     },
     {
-      "t": "2 PM Eastern call with Olesya Orozco from Ivory Maison. Rebooked with a working Google Meet link, James is on the invite.",
+      "t": "Terra Lotus, seventy-eight thousand five hundred eighty dollars, is our biggest deal at fifty-two percent of the monthly target. Aidan has now gone two business days silent. I'm escalating in the priority channel this morning and will text you if he stays dark.",
       "hot": true
     },
     {
-      "t": "Terra Lotus, seventy-eight thousand five hundred eighty dollars, is our biggest deal — fifty-two percent of the monthly target. Aidan owns the volume pricing conversation. Nudged in the priority channel, awaiting his reply.",
+      "t": "Atlas Eternal production is queued the moment you have the formula from Kenna. The thirteen thousand two hundred fifty dollar deposit is already in; the same amount is due on completion.",
       "hot": true
     },
     {
-      "t": "Atlas Eternal, twenty-six thousand five hundred dollars, deposit is PAID. The documents question is closed — the job moves to production now, with the thirteen thousand two hundred fifty dollar balance due on completion.",
-      "hot": true
-    },
-    {
-      "t": "Wednesday call with Kenna is confirmed. That's the gate on Pure Good, roughly three hundred twenty-nine thousand dollars.",
+      "t": "New lead overnight: Nabil Saleh at CN1 Fragrance wants four thousand-plus eight-ounce tubes of scented body lotion, and he supplies the fragrance oil. Worth qualifying today.",
       "hot": false
     },
     {
-      "t": "New inbound: Ashley Harmon from ApothikSKIN, a botanical skincare brand, came in through the website contact form.",
+      "t": "Customer care flag: Charles Thompson at Brighten Path says his beard balm and body wash samples never arrived. A quick fix here keeps it from souring.",
+      "hot": false
+    },
+    {
+      "t": "The ads are still one word from you — say revert ads to manual and I flip both campaigns off Maximize Conversions. Heads up: our Google Ads data connection is fully down on a retired version, so I can't live-verify until it's fixed.",
+      "hot": false
+    },
+    {
+      "t": "On your calendar today: the AF Brand meeting at three PM Eastern with Toney, JJ, James, and Laura.",
       "hot": false
     }
   ],
   "next": [
-    "Take the 11 AM Hass Alamer call and push to a quote",
-    "Take the 2 PM Olesya Orozco call",
-    "Kick off Atlas Eternal production — deposit is in ($13,250)",
-    "Let Aidan close the Terra Lotus volume pricing — Consultant is holding the line",
-    "Prepare for Wednesday’s Kenna call on Pure Good"
+    "Confirm the Kenna meeting time and hold it — get the Atlas formula and raise Pure Good",
+    "Let me escalate Terra Lotus with Aidan — I'll text you if he stays silent",
+    "Say the word on the ads: 'revert ads to manual'",
+    "Point me at Charles Thompson's missing samples so I can chase the shipment"
   ],
   "kb": [
     {
       "keys": [
-        "website",
-        "forms",
-        "book a call",
-        "hcaptcha",
-        "booking url",
-        "scheduler",
-        "convertflow"
+        "kenna",
+        "kenna meeting",
+        "formula",
+        "chemist",
+        "atlas formula",
+        "gate"
       ],
-      "a": "The website and forms lane is agent-owned and in progress. Contact forms are verified delivering to sam@prvtlabellabs.com, the SEO-agency form is disabled, and the address is migrated. The real gaps are that Book a Call has no scheduler wired and hCaptcha may be silently dropping leads. The agent is waiting on Sam's booking URL — he has one but it does not attach a Google Meet link — and is building hardened forms on a draft theme. Nothing publishes without Sam's approval."
-    },
-    {
-      "keys": [
-        "opensend",
-        "outbound",
-        "domains",
-        "instantly",
-        "smartlead",
-        "icp tier a"
-      ],
-      "a": "OpenSend needs Sam's noon approval for three lookalike domains, a sending platform, a separate PLL Outbound Agent with its own login, a booking-calendar URL, and ICP Tier A. Domain and inbox warmup takes about two to three weeks, so any delay today delays pipeline creation."
-    },
-    {
-      "keys": [
-        "crm",
-        "session",
-        "pll_tasklet_consultant",
-        "unshrink it",
-        "purchasing"
-      ],
-      "a": "The PLL CRM browser session is signed out at the login screen. Restoring pll_tasklet_consultant access is needed for CRM fix verification, Aidan's purchasing knowledge-base extraction, and UnShrink It verification. Today's carried CRM dashboard figures are not live verification."
-    },
-    {
-      "keys": [
-        "aidan command lab",
-        "command lab",
-        "whatsapp",
-        "7am",
-        "brief feed"
-      ],
-      "a": "Aidan's Command Lab is live and self-publishing its brief at 7 AM. It still needs Aidan to reconnect his own CRM and WhatsApp so it can incorporate CRM tasks and supplier chats instead of relying on Outlook only."
-    },
-    {
-      "keys": [
-        "nadia",
-        "oreka",
-        "8555",
-        "peptide cream",
-        "1000 units"
-      ],
-      "a": "Oreka / Nadia needs a yes or no on the $8,555 payment and the 1,000-unit Peptide Cream job. Approval releases the cash-and-production handoff; the decision is waiting on Sam."
-    },
-    {
-      "keys": [
-        "victor",
-        "armendarez",
-        "curl defining cream",
-        "edge gel",
-        "costing"
-      ],
-      "a": "Victor Armendarez has a 4,000-unit, two-SKU opportunity: Curl Defining Cream and Edge Gel. The quote still needs confirmed packaging, fill, labor, and overhead costs; do not issue pricing until the cost basis is complete."
-    },
-    {
-      "keys": [
-        "tiffany",
-        "travel",
-        "call"
-      ],
-      "a": "Tiffany requires a call before travel. The immediate commercial objective and exact timing are not verified in current sources, so confirm both on the call rather than inventing a commitment."
-    },
-    {
-      "keys": [
-        "yorel",
-        "h&b",
-        "hubs and babydoll",
-        "body oil",
-        "beard",
-        "body butter"
-      ],
-      "a": "Yorel, founder of Hubs & Babydoll, is a multi-product manufacturing inquiry covering body oils, beard products, body butter, and body wash. Sales requested quantity, inventory budget, formula needs, brand assets, and WhatsApp availability before scheduling a consultation. No value is verified yet."
-    },
-    {
-      "keys": [
-        "heirloom",
-        "hina",
-        "containers",
-        "packaging",
-        "sample approval"
-      ],
-      "a": "Hina at Heirloom is seeking frosted-style packaging for a 2,500-piece peptide cream run with silk-screened lids and secondary boxes. She is connected with Laura for container sourcing, and the Heirloom container meeting is set for Tuesday, Aug 11 at 10 AM ET. Bring current container options."
-    },
-    {
-      "keys": [
-        "shopokami",
-        "alex",
-        "body butter",
-        "wholesale pricing",
-        "call"
-      ],
-      "a": "Alex at Shopokami wants wholesale per-unit pricing for the Whipped Body Butter with Beef Tallow at 50, 100, and 250 units. He asked Sam to call him directly at +1 514-242-7072 rather than meet by Google Meet. Sam explained per-unit pricing is not listed publicly because it moves with quantity, jar size, and label finish; this is a live conversation awaiting Sam's pricing follow-up."
-    },
-    {
-      "keys": [
-        "ads",
-        "google ads",
-        "cap breach",
-        "contractmfg",
-        "manual cpc",
-        "spend"
-      ],
-      "a": "The preserved Aug 10 safety refresh shows both verified net-new campaigns still on Maximize Conversions with zero tracked conversions. Trailing-7 spend is $157.80, or 89% of the live configured cap, so there is no cap breach. Sam can approve reverting both campaigns to Manual CPC; no Ads change has been made."
+      "a": "The Kenna meeting is today's top lever and is NOT on Sam's calendar as of this refresh — confirm the time first thing. It gates two things: the Atlas Eternal formula (unblocks the $26,500 production run) and Pure Good at roughly $329K. Get the Atlas formula in hand and raise Pure Good's next step on the same call."
     },
     {
       "keys": [
         "sam",
         "ceo",
-        "single lane"
+        "single lane",
+        "today",
+        "priority"
       ],
-      "a": "Sam's lane today is Terra Lotus first, Atlas Eternal second, then the noon OpenSend decision. Do not switch to facility, website, or lower-value work until the Terra package is sent."
+      "a": "Sam's single lane today is the Kenna meeting first — confirm it's happening and hold it, because it unlocks both the Atlas formula and Pure Good. After that: let the Consultant escalate Terra Lotus with Aidan, and give the one-word ads go/no. Don't switch to lower-value work until the Kenna gate is cleared."
     },
     {
       "keys": [
@@ -162,41 +65,52 @@
         "terra",
         "lotus",
         "78580",
-        "volume pricing"
+        "volume pricing",
+        "aidan"
       ],
-      "a": "Terra Lotus is a $78,580 opportunity, about 52% of the $150K monthly target. Aidan owns the volume-pricing conversation; the priority channel has been nudged and his reply is pending. Keep this lane with Aidan rather than reopening old contract-detail assumptions."
+      "a": "Terra Lotus is a $78,580 opportunity, about 52% of the $150K monthly target. Aidan owns the volume-pricing conversation and has now been silent two business days on the Aug 10 ask. The Consultant is escalating in the priority channel this morning and will text Sam if Aidan stays dark. PLL sends nothing customer-facing until Aidan reports back."
     },
     {
       "keys": [
-        "hass alamer",
-        "hass",
-        "hair care",
-        "leave-in conditioner",
-        "hair oil",
-        "2000 units"
+        "atlas eternal",
+        "atlas",
+        "26500",
+        "ryne bell",
+        "production",
+        "deposit"
       ],
-      "a": "Hass Alamer has an 11 AM Eastern booked call today for a new 2,000-unit hair-care line: a leave-in conditioner and hair oil. Treat it as a conversion call and push qualified scope directly to a quote. No price or final specifications are confirmed yet."
-    },
-    {
-      "keys": [
-        "olesya orozco",
-        "olesya",
-        "ivory maison",
-        "ivory",
-        "2 pm",
-        "google meet"
-      ],
-      "a": "Olesya Orozco from Ivory Maison has a 2 PM Eastern call today. It was rebooked with a working Google Meet link, and James is on the invite. Use the call to qualify needs and set the commercial next step."
+      "a": "Atlas Eternal is $26,500 with the $13,250 deposit already PAID (QuickBooks Inv #1050, Ryne Bell). The balance of $13,250 is due on completion. Production is ready to start the moment Sam has the formula from Kenna today — that's the only remaining gate."
     },
     {
       "keys": [
         "pure good",
-        "kenna",
         "329k",
-        "chemist",
-        "formula gate"
+        "pure",
+        "good"
       ],
-      "a": "Pure Good is a roughly $329K opportunity. The Wednesday call with Kenna is confirmed and is the gate to advance it. The exact blocker resolution remains to be confirmed on that call."
+      "a": "Pure Good is a roughly $329K opportunity gated behind the chemist formula from Kenna. Today's Kenna meeting is the moment to advance it — confirm the meeting time first, since it is not currently on the calendar."
+    },
+    {
+      "keys": [
+        "nabil saleh",
+        "nabil",
+        "cn1",
+        "cn1 fragrance",
+        "body lotion",
+        "tubes"
+      ],
+      "a": "Nabil Saleh at CN1 Fragrance is a new overnight inbound: he wants 4,000-plus 8-ounce tubes of scented body lotion and will supply the fragrance oil himself. Qualify formula, packaging, and timeline; no price is set yet. Buyer-supplied fragrance simplifies our scope."
+    },
+    {
+      "keys": [
+        "charles thompson",
+        "charles",
+        "brighten path",
+        "missing samples",
+        "beard balm",
+        "body wash"
+      ],
+      "a": "Charles Thompson at Brighten Path Solutions reports his beard balm and body wash samples never arrived. This is a customer-care flag — chase the shipment/tracking and make it right so it doesn't sour a live prospect. He also shared private open-house website access."
     },
     {
       "keys": [
@@ -206,320 +120,387 @@
         "apothik",
         "botanical skincare"
       ],
-      "a": "Ashley Harmon from ApothikSKIN is a new inbound website-contact-form lead. ApothikSKIN is described as a botanical skincare brand. Qualification details, product scope, quantity, and timing are still unknown."
+      "a": "Ashley Harmon at ApothikSKIN (botanical skincare) replied: she's targeting early next year at 1,000-3,000 units per SKU, with custom formulas, testing/refinement, packaging, and MOQ/pricing all in play. Warm, not urgent — keep it moving with a clear next step and documentation."
     },
     {
       "keys": [
-        "atlas eternal",
-        "atlas",
-        "26500",
-        "sam review",
-        "pro forma"
+        "af brand",
+        "af",
+        "3pm",
+        "toney wells",
+        "jjpitenis",
+        "meeting"
       ],
-      "a": "Atlas Eternal is a $26,500 opportunity awaiting Sam review. Do not state that documents are ready to send until Sam’s review is complete. The next action after review is not verified in this refresh."
+      "a": "The AF Brand meeting is on Sam's calendar today at 3:00-4:00 PM ET with a working video link. Attendees include Toney Wells, JJPitenis, James, Laura Hoskins, and Sam."
+    },
+    {
+      "keys": [
+        "ads",
+        "google ads",
+        "manual cpc",
+        "maximize conversions",
+        "revert",
+        "spend",
+        "connection"
+      ],
+      "a": "Both net-new campaigns are still on Maximize Conversions with essentially no conversion tracking, so they optimize toward a signal that isn't there. Sam can say 'revert ads to manual' and the Consultant flips both to Manual CPC — one change, under cap. Important honesty note: the Google Ads data connection is fully down on a retired API version, so live verification is dark until it's fixed; figures shown are the Ads Agent's, not independently confirmed."
+    },
+    {
+      "keys": [
+        "oreka",
+        "nadia",
+        "8555",
+        "peptide cream",
+        "closed"
+      ],
+      "a": "Oreka / Nadia Dupuis is CLOSED and paid ($8,555, 1,000-unit Peptide Cream) and in production. Laura owns customer communication and Nikkie's commission is paid. No action needed — do not resurface as a decision."
+    },
+    {
+      "keys": [
+        "crm",
+        "session",
+        "pll_tasklet_consultant",
+        "purchasing",
+        "verification"
+      ],
+      "a": "The PLL CRM browser session is signed out at the login screen. Restoring pll_tasklet_consultant access is needed for CRM fix verification, Aidan's purchasing knowledge-base extraction, Shopify sync verification, and UnShrink It verification. Carried CRM figures are not live verification."
+    },
+    {
+      "keys": [
+        "opensend",
+        "outbound",
+        "domains",
+        "instantly",
+        "smartlead",
+        "icp"
+      ],
+      "a": "OpenSend outbound needs Sam's approvals: three lookalike domains, a sending platform, a separate PLL Outbound Agent with its own login, a booking-calendar URL, and ICP Tier A sign-off. Domain and inbox warmup takes two to three weeks, so every day of delay pushes pipeline creation out."
+    },
+    {
+      "keys": [
+        "victor",
+        "armendarez",
+        "curl defining cream",
+        "edge gel",
+        "costing",
+        "ronald"
+      ],
+      "a": "Victor Armendarez has a 4,000-unit, two-SKU opportunity (Curl Defining Cream and Edge Gel). The quote still needs confirmed packaging, fill, labor, and overhead from Ronald; do not issue pricing until the cost basis is complete."
+    },
+    {
+      "keys": [
+        "website",
+        "forms",
+        "book a call",
+        "hcaptcha",
+        "booking url",
+        "scheduler"
+      ],
+      "a": "The website/forms lane is agent-owned and in progress. Contact forms verify delivering to sam@prvtlabellabs.com and the address is migrated. The real gaps: Book a Call has no scheduler wired and hCaptcha may be silently dropping leads. Waiting on Sam's booking URL (his current one doesn't attach a Google Meet link). Nothing publishes without Sam's approval."
+    },
+    {
+      "keys": [
+        "aidan command lab",
+        "command lab",
+        "whatsapp",
+        "7am",
+        "brief feed"
+      ],
+      "a": "Aidan's Command Lab is live and self-publishing its 7 AM brief. It still needs Aidan to reconnect his own CRM and WhatsApp so it can incorporate CRM tasks and supplier chats instead of relying on Outlook only."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Hass Alamer — 11 AM hair-care conversion call",
-      "why": "Booked call for a 2,000-unit leave-in conditioner and hair-oil line; move it to a quote.",
+      "title": "Kenna meeting — confirm it's happening and hold it",
+      "why": "Gates the Atlas Eternal formula ($26,500 production) AND Pure Good (~$329K). Not currently on the calendar — confirm the time first.",
       "owner": "Sam",
-      "due": "Today 11:00 AM ET",
+      "due": "Today",
       "priority": "critical",
-      "revenue": "2,000-unit opportunity",
-      "status": "BOOKED CALL"
+      "revenue": "~$355K gated",
+      "status": "CONFIRM TIME — NOT ON CALENDAR"
     },
     {
       "rank": 2,
-      "title": "Olesya Orozco / Ivory Maison — 2 PM call",
-      "why": "Rebooked with a working Google Meet link; James is on the invite.",
-      "owner": "Sam",
-      "due": "Today 2:00 PM ET",
-      "priority": "critical",
-      "revenue": "Value to qualify",
-      "status": "BOOKED CALL"
-    },
-    {
-      "rank": 3,
       "title": "Terra Lotus — close volume pricing",
-      "why": "$78,580 is the largest deal and 52% of the monthly target; Aidan owns the volume-pricing conversation.",
+      "why": "$78,580, 52% of monthly target. Aidan silent two business days; Consultant escalating + will text Sam if still dark.",
       "owner": "Aidan",
       "due": "Today",
       "priority": "critical",
       "revenue": "$78,580",
-      "status": "AWAITING AIDAN REPLY"
+      "status": "DAY 3 — ESCALATION DUE"
+    },
+    {
+      "rank": 3,
+      "title": "Atlas Eternal — start production",
+      "why": "Deposit $13,250 PAID; balance $13,250 on completion. Ready to kick off the moment the Kenna formula is in hand.",
+      "owner": "Sam",
+      "due": "Today (after Kenna)",
+      "priority": "high",
+      "revenue": "$26,500 ($13,250 collected)",
+      "status": "GATED ON FORMULA"
     },
     {
       "rank": 4,
-      "title": "Atlas Eternal — start production ($13,250 deposit PAID)",
-      "why": "Deposit $13,250 received (QuickBooks Inv #1050, Ryne Bell). Balance $13,250 due on completion. Money is in — kick off production.",
+      "title": "Ads — revert both campaigns to Manual CPC",
+      "why": "Both on Maximize Conversions with no conversion tracking. One-word yes from Sam. Google Ads connection down on retired API — verification dark until fixed.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "$26,500 ($13,250 collected)",
-      "status": "DEPOSIT PAID — START PRODUCTION"
+      "revenue": "Stops wasted spend",
+      "status": "AWAITING SAM YES"
     },
     {
       "rank": 5,
-      "title": "Oreka — approve payment and Peptide Cream job",
-      "why": "Sam approval is needed for the $8,555 payment and 1,000-unit Peptide Cream job.",
-      "owner": "Sam",
+      "title": "Charles Thompson — chase missing samples",
+      "why": "Brighten Path samples (beard balm + body wash) never arrived. Customer-care fix before it sours a live prospect.",
+      "owner": "Consultant/Sam",
       "due": "Today",
-      "priority": "high",
-      "revenue": "$8,555",
-      "status": "AWAITING SAM APPROVAL"
+      "priority": "medium",
+      "revenue": "Retain prospect",
+      "status": "NEW — CUSTOMER CARE"
     },
     {
       "rank": 6,
-      "title": "Pure Good — Wednesday Kenna call",
-      "why": "The confirmed Kenna call is the gate on the roughly $329K opportunity.",
-      "owner": "Sam",
-      "due": "Wednesday",
-      "priority": "high",
-      "revenue": "~$329K",
-      "status": "CALL CONFIRMED"
+      "title": "Nabil Saleh / CN1 Fragrance — qualify new lead",
+      "why": "4,000+ 8oz tubes scented body lotion, buyer supplies fragrance oil. New overnight inbound.",
+      "owner": "Sam/Laura",
+      "due": "Today",
+      "priority": "medium",
+      "revenue": "4,000+ units",
+      "status": "NEW LEAD"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Take today’s booked calls (Hass 11 AM, Olesya 2 PM) and kick off Atlas production. Terra Lotus is Aidan’s lane — hold.",
+      "top_task": "Confirm and hold the Kenna meeting (Atlas formula + Pure Good), then give the one-word ads yes. Terra Lotus is Aidan's lane — hold.",
       "tasks": [
         {
-          "title": "Take the 11 AM Hass Alamer call and push to a quote",
-          "due": "Today 11:00 AM ET"
-        },
-        {
-          "title": "Take the 2 PM Olesya Orozco / Ivory Maison call",
-          "due": "Today 2:00 PM ET"
-        },
-        {
-          "title": "Green-light Atlas Eternal production kickoff — deposit $13,250 already paid",
+          "title": "Confirm the Kenna meeting time and hold it — get the Atlas formula and raise Pure Good",
           "due": "Today"
         },
         {
-          "title": "Give OpenSend the green light and share the Book a Call booking URL",
+          "title": "Kick off Atlas Eternal production once the formula is in hand",
+          "due": "Today after Kenna"
+        },
+        {
+          "title": "Give the one-word ads decision: 'revert ads to manual'",
           "due": "Today"
+        },
+        {
+          "title": "3:00 PM ET AF Brand meeting (Toney, JJ, James, Laura)",
+          "due": "Today 3:00 PM ET"
         }
       ],
-      "notes": "Terra Lotus is Aidan’s to close — send nothing customer-facing until Aidan reports back."
+      "notes": "Terra Lotus is Aidan's to close — send nothing customer-facing until Aidan reports back."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Close Terra Lotus volume pricing and report the outcome.",
+      "top_task": "Close Terra Lotus volume pricing and report the outcome — now two business days overdue.",
       "tasks": [
         {
           "title": "Close the Terra Lotus $78,580 volume-pricing conversation (customer wants lower per-unit at higher qty); report outcome + confirmed contact/address",
-          "due": "Today"
-        },
-        {
-          "title": "Advance the $8,555 Nadia/Oreka approval and 1,000-unit Peptide Cream job",
-          "due": "Today"
+          "due": "OVERDUE — respond today"
         },
         {
           "title": "Reconnect CRM and WhatsApp to his Command Lab brief",
           "due": "Today"
         }
       ],
-      "notes": "Owns Terra Lotus volume pricing; priority-channel nudge awaiting his reply."
+      "notes": "Silent two business days on the Aug 10 ask. Consultant escalating in the priority channel; Sam gets a text if still dark."
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Keep qualified inbound prospects moving while the two major contracts are sent.",
+      "top_task": "Qualify new inbound and keep warm prospects moving.",
       "tasks": [
         {
-          "title": "Follow up with H&B once Yorel returns quantity, budget, formula, and brand details",
-          "due": "After response"
+          "title": "Support qualifying Nabil Saleh / CN1 Fragrance (4,000+ tubes, buyer-supplied fragrance)",
+          "due": "Today"
         },
         {
-          "title": "Continue Heirloom container sourcing and confirm Hina for the Aug 11 10 AM ET container meeting",
-          "due": "Today"
+          "title": "Keep Ashley Harmon / ApothikSKIN moving (early next year, 1,000-3,000/SKU)",
+          "due": "This week"
         }
       ],
-      "notes": "Do not let lower-value inbound work displace Terra or Atlas."
+      "notes": "Owns Oreka comms (closed, in production) and white-label bottle printing. Do not let lower-value inbound displace the Kenna gate."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Support technical costing needed to release Victor Armendarez's quote.",
+      "top_task": "Complete Victor Armendarez costing so the quote can release.",
       "tasks": [
         {
           "title": "Confirm packaging compatibility and complete packaging, fill, labor, and overhead inputs for Victor",
           "due": "Today"
         }
       ],
-      "notes": "Victor remains blocked until the cost basis is complete."
+      "notes": "Victor's 4,000-unit quote stays blocked until the cost basis is complete."
     }
   },
   "revenueActions": [
     {
+      "title": "Clear the Kenna gate (Atlas formula + Pure Good)",
+      "why": "One meeting unlocks $26,500 of ready-to-produce Atlas work and advances Pure Good (~$329K).",
+      "est_value": "~$355K gated",
+      "next_step": "Confirm the Kenna meeting time (not on calendar), hold it, get the Atlas formula, raise Pure Good.",
+      "owner": "Sam",
+      "timing": "Today",
+      "value": "~$355K",
+      "status": "CONFIRM TIME"
+    },
+    {
       "title": "Close Terra Lotus volume pricing",
-      "why": "Terra Lotus is a $78,580 opportunity and 52% of the monthly target; Aidan owns the conversation.",
+      "why": "$78,580, 52% of the monthly target; Aidan owns it and is two business days silent.",
       "est_value": "$78,580",
-      "next_step": "Aidan to respond to the priority-channel nudge and close the volume-pricing lane.",
+      "next_step": "Consultant escalates in priority channel; texts Sam if Aidan stays dark.",
       "owner": "Aidan",
       "timing": "Today",
       "value": "$78,580",
-      "status": "AWAITING AIDAN REPLY"
-    },
-    {
-      "title": "Convert Hass Alamer call to quote",
-      "why": "Booked 11 AM ET call concerns a 2,000-unit leave-in conditioner and hair-oil line.",
-      "est_value": "2,000-unit opportunity",
-      "next_step": "Run the call and move the qualified scope to a quote.",
-      "owner": "Sam",
-      "timing": "Today 11:00 AM ET",
-      "value": "Quote-ready after qualification",
-      "status": "BOOKED CALL"
-    },
-    {
-      "title": "Take Olesya Orozco / Ivory Maison call",
-      "why": "The 2 PM ET meeting has been rebooked with a working Google Meet link and James on the invite.",
-      "est_value": "To qualify",
-      "next_step": "Run the call and document the commercial next step.",
-      "owner": "Sam",
-      "timing": "Today 2:00 PM ET",
-      "value": "To qualify",
-      "status": "BOOKED CALL"
+      "status": "DAY 3 — ESCALATION DUE"
     },
     {
       "title": "Start Atlas Eternal production",
-      "why": "$26,500 order; $13,250 deposit already PAID (Inv #1050, Ryne Bell). Balance $13,250 due on completion.",
+      "why": "$26,500 order; $13,250 deposit PAID (Inv #1050, Ryne Bell); balance due on completion.",
       "est_value": "$26,500",
-      "next_step": "Confirm production is scheduled/started; set completion → balance-collection follow-up.",
+      "next_step": "Kick off production once the Kenna formula is in hand; set completion → balance-collection follow-up.",
       "owner": "Sam",
-      "timing": "Today",
+      "timing": "Today after Kenna",
       "value": "$13,250 collected; $13,250 on completion",
-      "status": "DEPOSIT PAID — START PRODUCTION"
+      "status": "GATED ON FORMULA"
     },
     {
-      "title": "Approve Oreka payment and Peptide Cream job",
-      "why": "Sam approval controls the $8,555 payment and 1,000-unit job.",
-      "est_value": "$8,555",
-      "next_step": "Approve or decline.",
+      "title": "Qualify Nabil Saleh / CN1 Fragrance",
+      "why": "New 4,000+ unit inbound (8oz scented body lotion tubes), buyer supplies fragrance oil.",
+      "est_value": "4,000+ units",
+      "next_step": "Qualify formula, packaging, and timeline; move toward a quote.",
+      "owner": "Sam/Laura",
+      "timing": "Today",
+      "value": "To qualify",
+      "status": "NEW LEAD"
+    },
+    {
+      "title": "Revert ads to Manual CPC",
+      "why": "Both campaigns on Maximize Conversions with no tracked conversions — wasted optimization.",
+      "est_value": "Stops wasted spend",
+      "next_step": "Sam says 'revert ads to manual'; Consultant flips both. Note: Ads connection down on retired API, verification dark until fixed.",
       "owner": "Sam",
       "timing": "Today",
-      "value": "$8,555",
-      "status": "AWAITING SAM APPROVAL"
-    },
-    {
-      "title": "Prepare for Pure Good / Kenna call",
-      "why": "Wednesday’s confirmed call is the gate on roughly $329K.",
-      "est_value": "~$329K",
-      "next_step": "Use the Kenna call to clear the gate and set the quote path.",
-      "owner": "Sam",
-      "timing": "Wednesday",
-      "value": "~$329K",
-      "status": "CALL CONFIRMED"
+      "value": "Efficiency",
+      "status": "AWAITING SAM YES"
     }
   ],
   "pipelineStat": {
-    "total_value": "~$442.6K named pipeline",
+    "total_value": "~$434K named pipeline",
     "active_deals": 6,
     "hot": [
-      "Terra Lotus — $78,580; Aidan owns volume pricing",
-      "Atlas Eternal — $26,500; deposit PAID, start production",
-      "Oreka — $8,555; Sam approval",
-      "Pure Good / Kenna — ~$329K; Wednesday call confirmed",
-      "Hass Alamer — 2,000-unit hair care; 11 AM ET call",
-      "Olesya Orozco / Ivory Maison — 2 PM ET call"
+      "Kenna gate — ~$355K unlocked today (Atlas formula + Pure Good)",
+      "Terra Lotus — $78,580; Aidan owns volume pricing, Day 3 silent",
+      "Atlas Eternal — $26,500; deposit PAID, production gated on formula",
+      "Pure Good / Kenna — ~$329K; gated on today's Kenna meeting",
+      "Nabil Saleh / CN1 — 4,000+ units; new inbound"
     ],
     "stalled": [
-      "Terra Lotus volume-pricing reply from Aidan",
-      "Oreka Sam approval",
-      "Pure Good gate pending Wednesday Kenna call"
+      "Terra Lotus volume-pricing reply from Aidan (two business days)",
+      "Kenna meeting not confirmed on calendar",
+      "Atlas production gated on formula"
     ],
     "activeDeals": 6,
-    "pipelineValue": 442635,
-    "inProduction": 1,
+    "pipelineValue": 434135,
+    "inProduction": 2,
     "depositsCollected": 13250,
-    "note": "~$442.6K named pipeline. Terra Lotus $78,580 (52% of the $150K monthly target) — Aidan owns volume pricing. Atlas Eternal deposit of $13,250 collected → production kickoff. Today’s calls: Hass Alamer 11 AM ET, Olesya Orozco 2 PM ET.",
+    "note": "Kenna meeting today is the single biggest lever (~$355K gated: Atlas formula + Pure Good). Terra Lotus $78,580 (52% of target) — Aidan two business days silent. Atlas deposit $13,250 collected → production on formula. Oreka closed/in production.",
     "monthlyTarget": "$150K",
     "achievableDepositsThisMonth": "Not revalidated in this refresh"
   },
   "adsAgentBrief": {
-    "timestamp": "2026-08-12T06:32:41-04:00",
-    "mode": "READ-ONLY MORNING SAFETY REFRESH — PARTIAL",
+    "timestamp": "2026-08-11T10:30:00.000Z",
+    "mode": "READ-ONLY MORNING SAFETY REFRESH",
     "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
-    "headline": "Google Ads reporting and campaign-list endpoints remain blocked by deprecated API v21. No fresh performance/configuration was available. Carried agent-reported trailing-7 spend: $147.70; against last verified $177.31 seven-day budget, this is 83.3% (no breach declared).",
-    "recommendation": "PENDING SAM APPROVAL — READ-ONLY ONLY: revert both verified net-new campaigns to Manual CPC; do not execute. Conversion tracking remains absent. First restore the v21-blocked reporting route and validate the exact seven-ad roster, live configuration, and attribution.",
+    "headline": "Current 7 days: $147.70 spend, 59 clicks, 16.8% CTR, $2.50 CPC; 1 tracked conversion. Cap status: within configured cap at 83.3% of $177.31.",
+    "recommendation": "Pending Sam approval: revert the two scoped campaigns from Maximize Conversions to Manual CPC, because both are using Maximize Conversions while the reporting pull shows only one tracked conversion across the current seven-day window and manual lead attribution remains incomplete. Do not make any change until Sam explicitly approves.",
     "approvalRequired": "YES — Sam explicit approval required",
     "answers": {
-      "today": "Today (2026-08-12 ET): NOT AVAILABLE — the live Google Ads reporting endpoint remains blocked by deprecated API v21. No delivery total is asserted.",
-      "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Neither reporting nor campaign-list access returned live data; legacy campaigns were excluded and no Ads change was made.",
-      "ctrCpc": "Fresh CTR/CPC for current and prior seven-day windows is NOT AVAILABLE: google_ads-create-report remains v21-blocked. The last agent-reported current-window spend was $147.70; impressions, clicks, CTR, and CPC were not re-verified.",
-      "leadsEmailsCalls": "Current 7 days (2026-08-05–11): latest cached inbox review counted 6 qualified manufacturing inquiries and 1 GCLID-verified Ads-attributed lead; remaining qualified inquiries are UNATTRIBUTED. Agent self-report separately cited 1 booked call, but calendar/CRM was out of scope and it is not re-verified or provably Ads-attributed. CPL and cost per booked call are NOT YET MEASURABLE as verified figures.",
-      "budgetCap": "No breach declared. Live budgets/spend could not be re-read due v21. Using the last verified (not re-verified) $25.33/day budget and agent-reported $147.70 trailing-7 spend, average spend was $21.10/day, 83.3% of the $177.31 seven-day budget. A single day up to 2× budget is normal pacing.",
-      "winners": "No fresh winner can be determined; live campaign/ad reporting is unavailable and the exact seven-ad roster is unverified.",
-      "waste": "No fresh search-term or waste evidence was retrievable; no waste claim is made.",
-      "optimization": "Read-only: no campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
-      "suggestions": "Restore the Google Ads reporting integration, validate the roster/configuration and attribution, then seek Sam approval before any change.",
-      "nextExperiment": "No experiment was launched. Restore measurement first; the single pending Manual CPC recommendation remains unexecuted and requires Sam approval.",
-      "whatAdsAgentShouldDo": "Remain read-only. Repair/validate the reporting route, confirm campaign status/budgets and exact seven-ad roster, pull search terms, and refresh attribution. Await Sam’s explicit approval before the pending Manual CPC change."
+      "today": "Today so far: $5.47 spend, 2 clicks, 22.2% CTR, $2.73 CPC (Contract Manufacturing only; Samples has no delivery row).",
+      "sevenNewAds": "No exact seven-ad roster is provable: CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Two scoped campaigns were reviewed; no Ads changes were made.",
+      "ctrCpc": "Current 7 days: Contract Manufacturing 15.8% CTR / $2.95 CPC; White Label Samples 19.8% CTR / $1.47 CPC.",
+      "leadsEmailsCalls": "Current 7 days: 4 qualified inbox inquiries, 1 verified GCLID-attributed Ads lead; calls/bookings and CPL are NOT YET MEASURABLE (calendar/CRM out of scope).",
+      "budgetCap": "Configured budgets: $20.33/day Contract Manufacturing + $5.00/day Samples = $25.33/day. Current 7-day spend $147.70 is 83.3% of $177.31; trailing average $21.10/day is 83.3% of configured daily budget — within cap.",
+      "winners": "No conclusive winner: Contract Manufacturing has the only tracked conversion, but volume is small and exact ad roster is unverified.",
+      "waste": "No verified search-term waste evidence was available from the approved read-only tool; no waste claim is made.",
+      "optimization": "Recommendation is read-only and pending Sam approval; no campaigns, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
+      "suggestions": "Repair/validate attribution and use the one pending recommendation only after Sam approval.",
+      "nextExperiment": "No experiment was launched. First establish reliable lead attribution; then assess a single controlled bidding/measurement test with approval.",
+      "whatAdsAgentShouldDo": "Remain read-only: validate the exact seven-ad roster, review search terms and attribution, and await Sam approval before any optimization."
     }
   },
   "adsIntelligence": {
-    "refreshedAt": "2026-08-12T06:32:41-04:00",
-    "refreshType": "Morning safety refresh — read-only (PARTIAL: Google Ads API v21 blocked)",
-    "dataThrough": "Google Ads: no fresh data; reporting attempted through 2026-08-11 ET. Inbox: latest cached 2026-08-11 ET review.",
+    "refreshedAt": "2026-08-11T10:30:00.000Z",
+    "refreshType": "Morning safety refresh — read-only",
+    "dataThrough": "2026-08-10 (prior completed day); today-so-far is 2026-08-11",
     "windows": {
-      "today": "2026-08-12 America/New_York",
-      "current7Day": "2026-08-05 through 2026-08-11 America/New_York",
-      "prior7Day": "2026-07-29 through 2026-08-04 America/New_York"
+      "today": "2026-08-11 America/New_York (so far at refresh)",
+      "current7Day": "2026-08-04 through 2026-08-10",
+      "prior7Day": "2026-07-28 through 2026-08-03"
     },
     "scope": {
       "campaigns": [
-        "Contract Manufacturing",
-        "White Label Samples"
+        "PLL-Search-ContractMfg-2026 (24049588003)",
+        "PLL-Search-Samples-2026 (24040031889)"
       ],
       "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
       "legacyCampaignsExcluded": true
     },
-    "status": "PARTIAL — PUBLISHED WITH GOOGLE ADS DATA BLOCKER",
-    "googleAdsReporting": {
-      "status": "BLOCKED",
-      "error": "google_ads-create-report: UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
-      "campaignListStatus": "BLOCKED",
-      "campaignListError": "google_ads-list-campaigns: UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
-      "livePerformanceAvailable": false,
-      "configuredBudgetReadAtReportTime": false
-    },
     "todaySoFar": {
       "totals": {
-        "status": "NOT AVAILABLE — live report blocked",
-        "spend": null,
-        "impressions": null,
-        "clicks": null,
-        "ctr": null,
-        "averageCpc": null,
-        "note": "UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked. No carry-forward figure is assigned to a new calendar day."
-      }
+        "spend": 5.47,
+        "impressions": 9,
+        "clicks": 2,
+        "conversions": 0,
+        "ctr": 0.2222222222222222,
+        "averageCpc": 2.735
+      },
+      "note": "Only Contract Manufacturing returned delivery: $5.47 spend, 2 clicks, 9 impressions; Samples returned no delivered row."
     },
     "performance": {
       "current7Day": {
-        "status": "AGENT-REPORTED / NOT RE-VERIFIED",
-        "spend": 147.7,
-        "impressions": null,
-        "clicks": null,
-        "ctr": null,
-        "averageCpc": null,
-        "note": "From Ads Agent self-report dated 2026-08-11; exact current-window performance could not be re-pulled because v21 is blocked."
+        "spend": 147.699996,
+        "impressions": 351,
+        "clicks": 59,
+        "conversions": 1,
+        "ctr": 0.16809116809116809,
+        "averageCpc": 2.503389762711864
       },
       "prior7Day": {
-        "status": "NOT AVAILABLE — no carried figure",
-        "spend": null,
-        "impressions": null,
-        "clicks": null,
-        "ctr": null,
-        "averageCpc": null,
-        "note": "No prior-window total was available in the supplied source; do not fabricate."
+        "spend": 216.116994,
+        "impressions": 634,
+        "clicks": 85,
+        "conversions": 0,
+        "ctr": 0.13406940063091483,
+        "averageCpc": 2.5425528705882354
       },
       "campaigns": [
         {
           "name": "Contract Manufacturing",
-          "status": "NOT RE-VERIFIED — last agent self-report: ENABLED",
-          "configuredDailyBudget": "$20.33/day — last verified 2026-08-04, not re-verified",
-          "biddingStrategy": "Last agent self-report: Maximize Conversions; not re-verified",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "configuredDailyBudget": 20.33,
+          "configuredDailyBudgetFormatted": "$20.33",
+          "current7Day": {
+            "spend": 121.15238599999999,
+            "impressions": 260,
+            "clicks": 41,
+            "conversions": 1,
+            "ctr": 0.1576923076923077,
+            "averageCpc": 2.9549362439024387
+          },
+          "prior7Day": {
+            "spend": 167.276994,
+            "impressions": 395,
+            "clicks": 52,
+            "conversions": 0,
+            "ctr": 0.13164556962025317,
+            "averageCpc": 3.216865269230769
+          },
           "adBreakdown": {
             "status": "NOT AVAILABLE — exact seven-ad roster not provable",
             "ads": []
@@ -527,9 +508,26 @@
         },
         {
           "name": "White Label Samples",
-          "status": "NOT RE-VERIFIED — last agent self-report: ENABLED",
-          "configuredDailyBudget": "$5.00/day — last verified 2026-08-04, not re-verified",
-          "biddingStrategy": "Last agent self-report: Maximize Conversions; not re-verified",
+          "campaignId": "24040031889",
+          "status": "ENABLED",
+          "configuredDailyBudget": 5,
+          "configuredDailyBudgetFormatted": "$5.00",
+          "current7Day": {
+            "spend": 26.54761,
+            "impressions": 91,
+            "clicks": 18,
+            "conversions": 0,
+            "ctr": 0.1978021978021978,
+            "averageCpc": 1.474867222222222
+          },
+          "prior7Day": {
+            "spend": 48.839999999999996,
+            "impressions": 239,
+            "clicks": 33,
+            "conversions": 0,
+            "ctr": 0.13807531380753138,
+            "averageCpc": 1.48
+          },
           "adBreakdown": {
             "status": "NOT AVAILABLE — exact seven-ad roster not provable",
             "ads": []
@@ -539,82 +537,81 @@
     },
     "leadsAndBookings": {
       "current7Day": {
-        "qualifiedInquiries": 6,
+        "shopifyFormMessagesFound": 9,
+        "qualifiedInquiries": 4,
+        "qualifiedInquiryMethod": "Manual review of message previews; duplicate/consumer/irrelevant messages excluded where clear.",
         "verifiedAdsAttributedLeads": 1,
-        "attributionStatus": "One cached inquiry has GCLID; other qualified inquiries are UNATTRIBUTED. Latest cached review; not re-verified in this run.",
-        "bookedCalls": "Agent-reported: 1; NOT RE-VERIFIED and NOT provably Ads-attributed (calendar/CRM out of scope).",
-        "cpl": "NOT YET MEASURABLE as a verified figure; agent-reported spend divided by 1 GCLID lead would be $147.70, not re-verified.",
-        "costPerBookedCall": "NOT YET MEASURABLE — booking attribution and calendar/CRM verification unavailable."
+        "attributionStatus": "One message contained GCLID; remaining qualified inquiries are UNATTRIBUTED or not provable from preview.",
+        "bookedCalls": "NOT YET MEASURABLE — calendar/CRM not in scope",
+        "cpl": "NOT YET MEASURABLE — verified Ads-attributed lead denominator is incomplete",
+        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM not in scope"
       },
       "prior7Day": {
-        "qualifiedInquiries": "NOT YET MEASURABLE",
-        "verifiedAdsAttributedLeads": "NOT YET MEASURABLE",
-        "attributionStatus": "NOT YET MEASURABLE",
-        "bookedCalls": "NOT YET MEASURABLE",
+        "shopifyFormMessagesFound": 13,
+        "qualifiedInquiries": 10,
+        "qualifiedInquiryMethod": "Manual preview review; one apparent duplicate/edge-time record and obvious non-qualifying entries excluded.",
+        "verifiedAdsAttributedLeads": 0,
+        "attributionStatus": "UNATTRIBUTED / not provable from returned email previews",
+        "bookedCalls": "NOT YET MEASURABLE — calendar/CRM not in scope",
         "cpl": "NOT YET MEASURABLE",
         "costPerBookedCall": "NOT YET MEASURABLE"
       }
     },
     "capCompliance": {
-      "status": "NO BREACH DECLARED — NOT LIVE-VERIFIED",
-      "method": "Breach test = trailing-window average versus configured daily budget; never compare a single day to a round cap. Google may deliver up to 2× daily budget on an individual day.",
-      "lastVerifiedBudgetSnapshot": {
-        "asOf": "2026-08-04T21:00:00-04:00 — not re-verified",
+      "configuredDailyBudgets": {
         "contractManufacturing": 20.33,
-        "whiteLabelSamples": 5.0,
-        "total": 25.33,
-        "sevenDayTotal": 177.31
+        "whiteLabelSamples": 5,
+        "total": 25.33
       },
-      "carriedCalculation": {
-        "source": "Agent self-report, 2026-08-11 — not re-verified",
-        "trailing7Spend": 147.7,
-        "averageDailySpend": 21.1,
-        "percentOfLastVerifiedSevenDayBudget": 83.3,
-        "result": "Below last verified configured budget; no breach."
-      }
+      "trailing7DayBudget": 177.31,
+      "trailing7DaySpend": 147.699996,
+      "trailingAverageDailySpend": 21.09999942857143,
+      "percentageOfTrailingBudget": 0.8330043201173086,
+      "trailingAverageVsDailyBudget": 0.8330043201173087,
+      "status": "WITHIN CONFIGURED CAP",
+      "method": "Trailing-window average only; a single day up to 2x budget is normal Google Ads pacing and not a breach."
     },
     "funnelHealth": {
-      "status": "WATCH — MEASUREMENT BLOCKED",
+      "status": "WATCH",
       "notes": [
-        "Both Google Ads endpoints tested are blocked: UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
-        "Conversion tracking remains absent per last agent self-report; no live verification.",
-        "One cached GCLID-attributed lead exists; bookings and close outcomes are not measurable in this run."
+        "Both scoped campaigns are enabled on MAXIMIZE_CONVERSIONS.",
+        "Campaign report shows 1 tracked conversion in current seven-day window (Contract Manufacturing) and 0 in prior window.",
+        "Email attribution is incomplete; do not treat all inbox inquiries as Ads leads."
       ]
     },
     "searchTerms": {
-      "status": "NOT AVAILABLE — reporting blocked",
-      "wasteEvidence": "No fresh search-term evidence; no waste claim made."
+      "status": "NOT AVAILABLE FROM APPROVED READ-ONLY REPORT TOOL IN THIS RUN",
+      "wasteEvidence": "No search-term or exact-ad roster data was provable; no waste claim made."
     },
-    "bestItem": "One cached GCLID-attributed lead in current window — latest cached, not re-verified.",
-    "worstItem": "White Label Samples — last agent self-report showed $0 spend for 2026-08-11; not re-verified and insufficient for a conclusion.",
-    "watchItem": "Restore Google Ads API/reporting access and validate configuration/roster; conversion tracking remains absent.",
+    "bestItem": "Contract Manufacturing generated the only tracked conversion in the current window, but its current $2.96 CPC and small sample do not establish a winner.",
+    "worstItem": "White Label Samples: 0 tracked conversions and $26.55 spend across 18 clicks in the current window; exact ad-level roster is unverified.",
+    "watchItem": "Campaign strategy is MAXIMIZE_CONVERSIONS despite incomplete conversion/lead attribution. Monitor attribution and manual lead quality before any strategy change.",
     "recommendation": {
-      "text": "PENDING SAM APPROVAL — READ-ONLY ONLY: revert both verified net-new campaigns to Manual CPC; do not execute. Conversion tracking remains absent. First restore the v21-blocked reporting route and validate the exact seven-ad roster, live configuration, and attribution.",
+      "text": "Pending Sam approval: revert the two scoped campaigns from Maximize Conversions to Manual CPC, because both are using Maximize Conversions while the reporting pull shows only one tracked conversion across the current seven-day window and manual lead attribution remains incomplete. Do not make any change until Sam explicitly approves.",
       "approvalRequired": true,
       "status": "PENDING SAM APPROVAL",
       "action": "READ-ONLY RECOMMENDATION ONLY",
-      "evidence": "Last agent self-report said both campaigns were Maximize Conversions without conversion tracking; all live reporting/configuration checks remain blocked."
+      "evidence": "Both campaigns are enabled on MAXIMIZE_CONVERSIONS. Current scoped campaign reporting: 1 tracked conversion total (Contract Manufacturing); email review identifies only one GCLID-attributed inquiry in the current window. Exact seven-ad roster remains unverified."
     },
     "approvalRequired": true,
     "readOnly": true,
     "anomalies": [
-      "GOOGLE ADS REPORTING BLOCKED — UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
-      "GOOGLE ADS CAMPAIGN LIST BLOCKED — API v21 deprecated, contrary to the prior expectation it still worked.",
       "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
-      "Configured budgets not re-read; use only last verified $25.33/day snapshot."
+      "Google Ads reporting connection intermittently returned UNSUPPORTED_VERSION (v21); completed campaign/budget reads nonetheless returned data.",
+      "Configured Samples daily budget is $5.00, not the $10/day cap referenced in the runbook headline. Combined configured daily budget is $25.33."
     ],
     "preparedAnswers": {
-      "today": "Today (2026-08-12 ET): NOT AVAILABLE — the live Google Ads reporting endpoint remains blocked by deprecated API v21. No delivery total is asserted.",
-      "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Neither reporting nor campaign-list access returned live data; legacy campaigns were excluded and no Ads change was made.",
-      "ctrCpc": "Fresh CTR/CPC for current and prior seven-day windows is NOT AVAILABLE: google_ads-create-report remains v21-blocked. The last agent-reported current-window spend was $147.70; impressions, clicks, CTR, and CPC were not re-verified.",
-      "leadsEmailsCalls": "Current 7 days (2026-08-05–11): latest cached inbox review counted 6 qualified manufacturing inquiries and 1 GCLID-verified Ads-attributed lead; remaining qualified inquiries are UNATTRIBUTED. Agent self-report separately cited 1 booked call, but calendar/CRM was out of scope and it is not re-verified or provably Ads-attributed. CPL and cost per booked call are NOT YET MEASURABLE as verified figures.",
-      "budgetCap": "No breach declared. Live budgets/spend could not be re-read due v21. Using the last verified (not re-verified) $25.33/day budget and agent-reported $147.70 trailing-7 spend, average spend was $21.10/day, 83.3% of the $177.31 seven-day budget. A single day up to 2× budget is normal pacing.",
-      "winners": "No fresh winner can be determined; live campaign/ad reporting is unavailable and the exact seven-ad roster is unverified.",
-      "waste": "No fresh search-term or waste evidence was retrievable; no waste claim is made.",
-      "optimization": "Read-only: no campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
-      "suggestions": "Restore the Google Ads reporting integration, validate the roster/configuration and attribution, then seek Sam approval before any change.",
-      "nextExperiment": "No experiment was launched. Restore measurement first; the single pending Manual CPC recommendation remains unexecuted and requires Sam approval.",
-      "whatAdsAgentShouldDo": "Remain read-only. Repair/validate the reporting route, confirm campaign status/budgets and exact seven-ad roster, pull search terms, and refresh attribution. Await Sam’s explicit approval before the pending Manual CPC change."
+      "today": "Today so far: $5.47 spend, 2 clicks, 22.2% CTR, $2.73 CPC (Contract Manufacturing only; Samples has no delivery row).",
+      "sevenNewAds": "No exact seven-ad roster is provable: CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Two scoped campaigns were reviewed; no Ads changes were made.",
+      "ctrCpc": "Current 7 days: Contract Manufacturing 15.8% CTR / $2.95 CPC; White Label Samples 19.8% CTR / $1.47 CPC.",
+      "leadsEmailsCalls": "Current 7 days: 4 qualified inbox inquiries, 1 verified GCLID-attributed Ads lead; calls/bookings and CPL are NOT YET MEASURABLE (calendar/CRM out of scope).",
+      "budgetCap": "Configured budgets: $20.33/day Contract Manufacturing + $5.00/day Samples = $25.33/day. Current 7-day spend $147.70 is 83.3% of $177.31; trailing average $21.10/day is 83.3% of configured daily budget — within cap.",
+      "winners": "No conclusive winner: Contract Manufacturing has the only tracked conversion, but volume is small and exact ad roster is unverified.",
+      "waste": "No verified search-term waste evidence was available from the approved read-only tool; no waste claim is made.",
+      "optimization": "Recommendation is read-only and pending Sam approval; no campaigns, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
+      "suggestions": "Repair/validate attribution and use the one pending recommendation only after Sam approval.",
+      "nextExperiment": "No experiment was launched. First establish reliable lead attribution; then assess a single controlled bidding/measurement test with approval.",
+      "whatAdsAgentShouldDo": "Remain read-only: validate the exact seven-ad roster, review search terms and attribution, and await Sam approval before any optimization."
     }
   },
   "facilityStatus": {

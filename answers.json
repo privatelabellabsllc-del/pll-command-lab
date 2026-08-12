@@ -1,9 +1,9 @@
 {
- "id": "ans_7e19be6d875c",
- "request_id": "ads-nightly-2026-08-11",
- "ts": "2026-08-11T21:12:00-04:00",
- "agent": "Ads Agent",
- "status": "completed",
- "text": "NIGHTLY ADS — Tue 8/11 (Ads Agent self-report; Consultant confirmed BOTH campaigns ENABLED live, but spend/bid-strategy NOT independently verified — Google Ads reporting endpoint blocked on deprecated API v21). Scope: 2 net-new only (ContractMfg + Samples); legacy excluded. TODAY: $40.53 spend, $3.68 avg CPC (ContractMfg $40.53; Samples $0). ~$10.53 over the $30/day soft cap — inside Google's 2x daily allowance, not a runaway. TRAILING-7: $147.70 of $210 (70%) — UNDER cap. BIDDING: agent reports both still MAXIMIZE_CONVERSIONS; budgets $20.33 / $5.00 per day unchanged; still 0 conversion tracking installed — optimizing toward a signal that does not exist. LEADS: 1 verified PAID ContractMfg lead — Tesfa/Bahrzaf (qualified); first ContractMfg paid lead since 8/1. Inbox: 14 total / 2 qualified / 1 booked / 9 promo / 2 spam. Agent read: high-intent converts; Samples lane thin ($0 today); recommends HOLD budgets. PENDING SAM APPROVAL (agent-flagged, NOT executed): (1) budget->$25/day, (2) revert BOTH to Manual CPC, (3) add 'extensions' as negative keyword. No campaign changes made tonight. brief.json cache NOT refreshed — callback carried a summary only, no structured ads_intelligence.",
- "spoken_text": "Sam, here's the bottom line on the new ads tonight. They spent about forty dollars today and roughly a hundred forty-eight over the last seven days, so we're comfortably under our weekly cap. The real win is we finally landed a paid Contract Manufacturing lead — the first since the start of the month. The catch hasn't changed: both campaigns are still on automatic bidding with no conversion tracking underneath, so they're chasing a signal that isn't there. Nothing was changed tonight. When you're ready, the one move I'd make is putting both back on manual bidding — just say the word. One honesty note: our own reporting connection is stuck on a retired version, so tonight's figures are the Ads Agent's, not yet confirmed by me."
+  "id": "ans_eae526853e6b",
+  "request_id": "morning-brief-2026-08-12",
+  "ts": "2026-08-12T07:05:00-04:00",
+  "agent": "Consultant",
+  "status": "completed",
+  "text": "Morning brief loaded for 2026-08-12.",
+  "spoken_text": "Morning brief loaded for August twelfth."
 }
