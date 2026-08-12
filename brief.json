@@ -413,94 +413,88 @@
     "achievableDepositsThisMonth": "Not revalidated in this refresh"
   },
   "adsAgentBrief": {
-    "timestamp": "2026-08-11T10:30:00.000Z",
-    "mode": "READ-ONLY MORNING SAFETY REFRESH",
+    "timestamp": "2026-08-12T06:32:41-04:00",
+    "mode": "READ-ONLY MORNING SAFETY REFRESH — PARTIAL",
     "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
-    "headline": "Current 7 days: $147.70 spend, 59 clicks, 16.8% CTR, $2.50 CPC; 1 tracked conversion. Cap status: within configured cap at 83.3% of $177.31.",
-    "recommendation": "Pending Sam approval: revert the two scoped campaigns from Maximize Conversions to Manual CPC, because both are using Maximize Conversions while the reporting pull shows only one tracked conversion across the current seven-day window and manual lead attribution remains incomplete. Do not make any change until Sam explicitly approves.",
+    "headline": "Google Ads reporting and campaign-list endpoints remain blocked by deprecated API v21. No fresh performance/configuration was available. Carried agent-reported trailing-7 spend: $147.70; against last verified $177.31 seven-day budget, this is 83.3% (no breach declared).",
+    "recommendation": "PENDING SAM APPROVAL — READ-ONLY ONLY: revert both verified net-new campaigns to Manual CPC; do not execute. Conversion tracking remains absent. First restore the v21-blocked reporting route and validate the exact seven-ad roster, live configuration, and attribution.",
     "approvalRequired": "YES — Sam explicit approval required",
     "answers": {
-      "today": "Today so far: $5.47 spend, 2 clicks, 22.2% CTR, $2.73 CPC (Contract Manufacturing only; Samples has no delivery row).",
-      "sevenNewAds": "No exact seven-ad roster is provable: CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Two scoped campaigns were reviewed; no Ads changes were made.",
-      "ctrCpc": "Current 7 days: Contract Manufacturing 15.8% CTR / $2.95 CPC; White Label Samples 19.8% CTR / $1.47 CPC.",
-      "leadsEmailsCalls": "Current 7 days: 4 qualified inbox inquiries, 1 verified GCLID-attributed Ads lead; calls/bookings and CPL are NOT YET MEASURABLE (calendar/CRM out of scope).",
-      "budgetCap": "Configured budgets: $20.33/day Contract Manufacturing + $5.00/day Samples = $25.33/day. Current 7-day spend $147.70 is 83.3% of $177.31; trailing average $21.10/day is 83.3% of configured daily budget — within cap.",
-      "winners": "No conclusive winner: Contract Manufacturing has the only tracked conversion, but volume is small and exact ad roster is unverified.",
-      "waste": "No verified search-term waste evidence was available from the approved read-only tool; no waste claim is made.",
-      "optimization": "Recommendation is read-only and pending Sam approval; no campaigns, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
-      "suggestions": "Repair/validate attribution and use the one pending recommendation only after Sam approval.",
-      "nextExperiment": "No experiment was launched. First establish reliable lead attribution; then assess a single controlled bidding/measurement test with approval.",
-      "whatAdsAgentShouldDo": "Remain read-only: validate the exact seven-ad roster, review search terms and attribution, and await Sam approval before any optimization."
+      "today": "Today (2026-08-12 ET): NOT AVAILABLE — the live Google Ads reporting endpoint remains blocked by deprecated API v21. No delivery total is asserted.",
+      "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Neither reporting nor campaign-list access returned live data; legacy campaigns were excluded and no Ads change was made.",
+      "ctrCpc": "Fresh CTR/CPC for current and prior seven-day windows is NOT AVAILABLE: google_ads-create-report remains v21-blocked. The last agent-reported current-window spend was $147.70; impressions, clicks, CTR, and CPC were not re-verified.",
+      "leadsEmailsCalls": "Current 7 days (2026-08-05–11): latest cached inbox review counted 6 qualified manufacturing inquiries and 1 GCLID-verified Ads-attributed lead; remaining qualified inquiries are UNATTRIBUTED. Agent self-report separately cited 1 booked call, but calendar/CRM was out of scope and it is not re-verified or provably Ads-attributed. CPL and cost per booked call are NOT YET MEASURABLE as verified figures.",
+      "budgetCap": "No breach declared. Live budgets/spend could not be re-read due v21. Using the last verified (not re-verified) $25.33/day budget and agent-reported $147.70 trailing-7 spend, average spend was $21.10/day, 83.3% of the $177.31 seven-day budget. A single day up to 2× budget is normal pacing.",
+      "winners": "No fresh winner can be determined; live campaign/ad reporting is unavailable and the exact seven-ad roster is unverified.",
+      "waste": "No fresh search-term or waste evidence was retrievable; no waste claim is made.",
+      "optimization": "Read-only: no campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
+      "suggestions": "Restore the Google Ads reporting integration, validate the roster/configuration and attribution, then seek Sam approval before any change.",
+      "nextExperiment": "No experiment was launched. Restore measurement first; the single pending Manual CPC recommendation remains unexecuted and requires Sam approval.",
+      "whatAdsAgentShouldDo": "Remain read-only. Repair/validate the reporting route, confirm campaign status/budgets and exact seven-ad roster, pull search terms, and refresh attribution. Await Sam’s explicit approval before the pending Manual CPC change."
     }
   },
   "adsIntelligence": {
-    "refreshedAt": "2026-08-11T10:30:00.000Z",
-    "refreshType": "Morning safety refresh — read-only",
-    "dataThrough": "2026-08-10 (prior completed day); today-so-far is 2026-08-11",
+    "refreshedAt": "2026-08-12T06:32:41-04:00",
+    "refreshType": "Morning safety refresh — read-only (PARTIAL: Google Ads API v21 blocked)",
+    "dataThrough": "Google Ads: no fresh data; reporting attempted through 2026-08-11 ET. Inbox: latest cached 2026-08-11 ET review.",
     "windows": {
-      "today": "2026-08-11 America/New_York (so far at refresh)",
-      "current7Day": "2026-08-04 through 2026-08-10",
-      "prior7Day": "2026-07-28 through 2026-08-03"
+      "today": "2026-08-12 America/New_York",
+      "current7Day": "2026-08-05 through 2026-08-11 America/New_York",
+      "prior7Day": "2026-07-29 through 2026-08-04 America/New_York"
     },
     "scope": {
       "campaigns": [
-        "PLL-Search-ContractMfg-2026 (24049588003)",
-        "PLL-Search-Samples-2026 (24040031889)"
+        "Contract Manufacturing",
+        "White Label Samples"
       ],
       "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
       "legacyCampaignsExcluded": true
     },
+    "status": "PARTIAL — PUBLISHED WITH GOOGLE ADS DATA BLOCKER",
+    "googleAdsReporting": {
+      "status": "BLOCKED",
+      "error": "google_ads-create-report: UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
+      "campaignListStatus": "BLOCKED",
+      "campaignListError": "google_ads-list-campaigns: UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
+      "livePerformanceAvailable": false,
+      "configuredBudgetReadAtReportTime": false
+    },
     "todaySoFar": {
       "totals": {
-        "spend": 5.47,
-        "impressions": 9,
-        "clicks": 2,
-        "conversions": 0,
-        "ctr": 0.2222222222222222,
-        "averageCpc": 2.735
-      },
-      "note": "Only Contract Manufacturing returned delivery: $5.47 spend, 2 clicks, 9 impressions; Samples returned no delivered row."
+        "status": "NOT AVAILABLE — live report blocked",
+        "spend": null,
+        "impressions": null,
+        "clicks": null,
+        "ctr": null,
+        "averageCpc": null,
+        "note": "UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked. No carry-forward figure is assigned to a new calendar day."
+      }
     },
     "performance": {
       "current7Day": {
-        "spend": 147.699996,
-        "impressions": 351,
-        "clicks": 59,
-        "conversions": 1,
-        "ctr": 0.16809116809116809,
-        "averageCpc": 2.503389762711864
+        "status": "AGENT-REPORTED / NOT RE-VERIFIED",
+        "spend": 147.7,
+        "impressions": null,
+        "clicks": null,
+        "ctr": null,
+        "averageCpc": null,
+        "note": "From Ads Agent self-report dated 2026-08-11; exact current-window performance could not be re-pulled because v21 is blocked."
       },
       "prior7Day": {
-        "spend": 216.116994,
-        "impressions": 634,
-        "clicks": 85,
-        "conversions": 0,
-        "ctr": 0.13406940063091483,
-        "averageCpc": 2.5425528705882354
+        "status": "NOT AVAILABLE — no carried figure",
+        "spend": null,
+        "impressions": null,
+        "clicks": null,
+        "ctr": null,
+        "averageCpc": null,
+        "note": "No prior-window total was available in the supplied source; do not fabricate."
       },
       "campaigns": [
         {
           "name": "Contract Manufacturing",
-          "campaignId": "24049588003",
-          "status": "ENABLED",
-          "configuredDailyBudget": 20.33,
-          "configuredDailyBudgetFormatted": "$20.33",
-          "current7Day": {
-            "spend": 121.15238599999999,
-            "impressions": 260,
-            "clicks": 41,
-            "conversions": 1,
-            "ctr": 0.1576923076923077,
-            "averageCpc": 2.9549362439024387
-          },
-          "prior7Day": {
-            "spend": 167.276994,
-            "impressions": 395,
-            "clicks": 52,
-            "conversions": 0,
-            "ctr": 0.13164556962025317,
-            "averageCpc": 3.216865269230769
-          },
+          "status": "NOT RE-VERIFIED — last agent self-report: ENABLED",
+          "configuredDailyBudget": "$20.33/day — last verified 2026-08-04, not re-verified",
+          "biddingStrategy": "Last agent self-report: Maximize Conversions; not re-verified",
           "adBreakdown": {
             "status": "NOT AVAILABLE — exact seven-ad roster not provable",
             "ads": []
@@ -508,26 +502,9 @@
         },
         {
           "name": "White Label Samples",
-          "campaignId": "24040031889",
-          "status": "ENABLED",
-          "configuredDailyBudget": 5,
-          "configuredDailyBudgetFormatted": "$5.00",
-          "current7Day": {
-            "spend": 26.54761,
-            "impressions": 91,
-            "clicks": 18,
-            "conversions": 0,
-            "ctr": 0.1978021978021978,
-            "averageCpc": 1.474867222222222
-          },
-          "prior7Day": {
-            "spend": 48.839999999999996,
-            "impressions": 239,
-            "clicks": 33,
-            "conversions": 0,
-            "ctr": 0.13807531380753138,
-            "averageCpc": 1.48
-          },
+          "status": "NOT RE-VERIFIED — last agent self-report: ENABLED",
+          "configuredDailyBudget": "$5.00/day — last verified 2026-08-04, not re-verified",
+          "biddingStrategy": "Last agent self-report: Maximize Conversions; not re-verified",
           "adBreakdown": {
             "status": "NOT AVAILABLE — exact seven-ad roster not provable",
             "ads": []
@@ -537,81 +514,82 @@
     },
     "leadsAndBookings": {
       "current7Day": {
-        "shopifyFormMessagesFound": 9,
-        "qualifiedInquiries": 4,
-        "qualifiedInquiryMethod": "Manual review of message previews; duplicate/consumer/irrelevant messages excluded where clear.",
+        "qualifiedInquiries": 6,
         "verifiedAdsAttributedLeads": 1,
-        "attributionStatus": "One message contained GCLID; remaining qualified inquiries are UNATTRIBUTED or not provable from preview.",
-        "bookedCalls": "NOT YET MEASURABLE — calendar/CRM not in scope",
-        "cpl": "NOT YET MEASURABLE — verified Ads-attributed lead denominator is incomplete",
-        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM not in scope"
+        "attributionStatus": "One cached inquiry has GCLID; other qualified inquiries are UNATTRIBUTED. Latest cached review; not re-verified in this run.",
+        "bookedCalls": "Agent-reported: 1; NOT RE-VERIFIED and NOT provably Ads-attributed (calendar/CRM out of scope).",
+        "cpl": "NOT YET MEASURABLE as a verified figure; agent-reported spend divided by 1 GCLID lead would be $147.70, not re-verified.",
+        "costPerBookedCall": "NOT YET MEASURABLE — booking attribution and calendar/CRM verification unavailable."
       },
       "prior7Day": {
-        "shopifyFormMessagesFound": 13,
-        "qualifiedInquiries": 10,
-        "qualifiedInquiryMethod": "Manual preview review; one apparent duplicate/edge-time record and obvious non-qualifying entries excluded.",
-        "verifiedAdsAttributedLeads": 0,
-        "attributionStatus": "UNATTRIBUTED / not provable from returned email previews",
-        "bookedCalls": "NOT YET MEASURABLE — calendar/CRM not in scope",
+        "qualifiedInquiries": "NOT YET MEASURABLE",
+        "verifiedAdsAttributedLeads": "NOT YET MEASURABLE",
+        "attributionStatus": "NOT YET MEASURABLE",
+        "bookedCalls": "NOT YET MEASURABLE",
         "cpl": "NOT YET MEASURABLE",
         "costPerBookedCall": "NOT YET MEASURABLE"
       }
     },
     "capCompliance": {
-      "configuredDailyBudgets": {
+      "status": "NO BREACH DECLARED — NOT LIVE-VERIFIED",
+      "method": "Breach test = trailing-window average versus configured daily budget; never compare a single day to a round cap. Google may deliver up to 2× daily budget on an individual day.",
+      "lastVerifiedBudgetSnapshot": {
+        "asOf": "2026-08-04T21:00:00-04:00 — not re-verified",
         "contractManufacturing": 20.33,
         "whiteLabelSamples": 5,
-        "total": 25.33
+        "total": 25.33,
+        "sevenDayTotal": 177.31
       },
-      "trailing7DayBudget": 177.31,
-      "trailing7DaySpend": 147.699996,
-      "trailingAverageDailySpend": 21.09999942857143,
-      "percentageOfTrailingBudget": 0.8330043201173086,
-      "trailingAverageVsDailyBudget": 0.8330043201173087,
-      "status": "WITHIN CONFIGURED CAP",
-      "method": "Trailing-window average only; a single day up to 2x budget is normal Google Ads pacing and not a breach."
+      "carriedCalculation": {
+        "source": "Agent self-report, 2026-08-11 — not re-verified",
+        "trailing7Spend": 147.7,
+        "averageDailySpend": 21.1,
+        "percentOfLastVerifiedSevenDayBudget": 83.3,
+        "result": "Below last verified configured budget; no breach."
+      }
     },
     "funnelHealth": {
-      "status": "WATCH",
+      "status": "WATCH — MEASUREMENT BLOCKED",
       "notes": [
-        "Both scoped campaigns are enabled on MAXIMIZE_CONVERSIONS.",
-        "Campaign report shows 1 tracked conversion in current seven-day window (Contract Manufacturing) and 0 in prior window.",
-        "Email attribution is incomplete; do not treat all inbox inquiries as Ads leads."
+        "Both Google Ads endpoints tested are blocked: UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
+        "Conversion tracking remains absent per last agent self-report; no live verification.",
+        "One cached GCLID-attributed lead exists; bookings and close outcomes are not measurable in this run."
       ]
     },
     "searchTerms": {
-      "status": "NOT AVAILABLE FROM APPROVED READ-ONLY REPORT TOOL IN THIS RUN",
-      "wasteEvidence": "No search-term or exact-ad roster data was provable; no waste claim made."
+      "status": "NOT AVAILABLE — reporting blocked",
+      "wasteEvidence": "No fresh search-term evidence; no waste claim made."
     },
-    "bestItem": "Contract Manufacturing generated the only tracked conversion in the current window, but its current $2.96 CPC and small sample do not establish a winner.",
-    "worstItem": "White Label Samples: 0 tracked conversions and $26.55 spend across 18 clicks in the current window; exact ad-level roster is unverified.",
-    "watchItem": "Campaign strategy is MAXIMIZE_CONVERSIONS despite incomplete conversion/lead attribution. Monitor attribution and manual lead quality before any strategy change.",
+    "bestItem": "One cached GCLID-attributed lead in current window — latest cached, not re-verified.",
+    "worstItem": "White Label Samples — last agent self-report showed $0 spend for 2026-08-11; not re-verified and insufficient for a conclusion.",
+    "watchItem": "Restore Google Ads API/reporting access and validate configuration/roster; conversion tracking remains absent.",
     "recommendation": {
-      "text": "Pending Sam approval: revert the two scoped campaigns from Maximize Conversions to Manual CPC, because both are using Maximize Conversions while the reporting pull shows only one tracked conversion across the current seven-day window and manual lead attribution remains incomplete. Do not make any change until Sam explicitly approves.",
+      "text": "PENDING SAM APPROVAL — READ-ONLY ONLY: revert both verified net-new campaigns to Manual CPC; do not execute. Conversion tracking remains absent. First restore the v21-blocked reporting route and validate the exact seven-ad roster, live configuration, and attribution.",
       "approvalRequired": true,
       "status": "PENDING SAM APPROVAL",
       "action": "READ-ONLY RECOMMENDATION ONLY",
-      "evidence": "Both campaigns are enabled on MAXIMIZE_CONVERSIONS. Current scoped campaign reporting: 1 tracked conversion total (Contract Manufacturing); email review identifies only one GCLID-attributed inquiry in the current window. Exact seven-ad roster remains unverified."
+      "evidence": "Last agent self-report said both campaigns were Maximize Conversions without conversion tracking; all live reporting/configuration checks remain blocked."
     },
     "approvalRequired": true,
     "readOnly": true,
     "anomalies": [
+      "GOOGLE ADS REPORTING BLOCKED — UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
+      "GOOGLE ADS CAMPAIGN LIST BLOCKED — API v21 deprecated, contrary to the prior expectation it still worked.",
       "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
-      "Google Ads reporting connection intermittently returned UNSUPPORTED_VERSION (v21); completed campaign/budget reads nonetheless returned data.",
-      "Configured Samples daily budget is $5.00, not the $10/day cap referenced in the runbook headline. Combined configured daily budget is $25.33."
+      "Configured budgets not re-read; use only last verified $25.33/day snapshot."
     ],
     "preparedAnswers": {
-      "today": "Today so far: $5.47 spend, 2 clicks, 22.2% CTR, $2.73 CPC (Contract Manufacturing only; Samples has no delivery row).",
-      "sevenNewAds": "No exact seven-ad roster is provable: CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Two scoped campaigns were reviewed; no Ads changes were made.",
-      "ctrCpc": "Current 7 days: Contract Manufacturing 15.8% CTR / $2.95 CPC; White Label Samples 19.8% CTR / $1.47 CPC.",
-      "leadsEmailsCalls": "Current 7 days: 4 qualified inbox inquiries, 1 verified GCLID-attributed Ads lead; calls/bookings and CPL are NOT YET MEASURABLE (calendar/CRM out of scope).",
-      "budgetCap": "Configured budgets: $20.33/day Contract Manufacturing + $5.00/day Samples = $25.33/day. Current 7-day spend $147.70 is 83.3% of $177.31; trailing average $21.10/day is 83.3% of configured daily budget — within cap.",
-      "winners": "No conclusive winner: Contract Manufacturing has the only tracked conversion, but volume is small and exact ad roster is unverified.",
-      "waste": "No verified search-term waste evidence was available from the approved read-only tool; no waste claim is made.",
-      "optimization": "Recommendation is read-only and pending Sam approval; no campaigns, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
-      "suggestions": "Repair/validate attribution and use the one pending recommendation only after Sam approval.",
-      "nextExperiment": "No experiment was launched. First establish reliable lead attribution; then assess a single controlled bidding/measurement test with approval.",
-      "whatAdsAgentShouldDo": "Remain read-only: validate the exact seven-ad roster, review search terms and attribution, and await Sam approval before any optimization."
+      "today": "Today (2026-08-12 ET): NOT AVAILABLE — the live Google Ads reporting endpoint remains blocked by deprecated API v21. No delivery total is asserted.",
+      "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Neither reporting nor campaign-list access returned live data; legacy campaigns were excluded and no Ads change was made.",
+      "ctrCpc": "Fresh CTR/CPC for current and prior seven-day windows is NOT AVAILABLE: google_ads-create-report remains v21-blocked. The last agent-reported current-window spend was $147.70; impressions, clicks, CTR, and CPC were not re-verified.",
+      "leadsEmailsCalls": "Current 7 days (2026-08-05–11): latest cached inbox review counted 6 qualified manufacturing inquiries and 1 GCLID-verified Ads-attributed lead; remaining qualified inquiries are UNATTRIBUTED. Agent self-report separately cited 1 booked call, but calendar/CRM was out of scope and it is not re-verified or provably Ads-attributed. CPL and cost per booked call are NOT YET MEASURABLE as verified figures.",
+      "budgetCap": "No breach declared. Live budgets/spend could not be re-read due v21. Using the last verified (not re-verified) $25.33/day budget and agent-reported $147.70 trailing-7 spend, average spend was $21.10/day, 83.3% of the $177.31 seven-day budget. A single day up to 2× budget is normal pacing.",
+      "winners": "No fresh winner can be determined; live campaign/ad reporting is unavailable and the exact seven-ad roster is unverified.",
+      "waste": "No fresh search-term or waste evidence was retrievable; no waste claim is made.",
+      "optimization": "Read-only: no campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
+      "suggestions": "Restore the Google Ads reporting integration, validate the roster/configuration and attribution, then seek Sam approval before any change.",
+      "nextExperiment": "No experiment was launched. Restore measurement first; the single pending Manual CPC recommendation remains unexecuted and requires Sam approval.",
+      "whatAdsAgentShouldDo": "Remain read-only. Repair/validate the reporting route, confirm campaign status/budgets and exact seven-ad roster, pull search terms, and refresh attribution. Await Sam’s explicit approval before the pending Manual CPC change."
     }
   },
   "facilityStatus": {
