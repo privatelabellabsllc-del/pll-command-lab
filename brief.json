@@ -413,10 +413,10 @@
     "achievableDepositsThisMonth": "Not revalidated in this refresh"
   },
   "adsAgentBrief": {
-    "timestamp": "2026-08-12T21:05:00-04:00",
-    "mode": "READ-ONLY NIGHTLY REFRESH — PARTIAL",
+    "timestamp": "2026-08-13T06:30:00-04:00",
+    "mode": "MORNING SAFETY CHECK — PARTIAL / CARRY-FORWARD",
     "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
-    "headline": "Google Ads live reporting/configuration is blocked by deprecated API v21. Current 2026-08-06 through 2026-08-12 America/New_York: 6 qualified inbox inquiries / 2 GCLID-verified Ads leads. Current/prior dollar totals and cap percentage are not determinable.",
+    "headline": "Google Ads live reporting still blocked (API v21 deprecated), re-confirmed 06:30 ET 2026-08-13. Figures carried forward from 2026-08-12 21:05 pull: current 7-day (08-06→08-12) 6 qualified inbox inquiries / 2 GCLID-verified Ads leads; dollar totals and cap % not determinable until reporting is restored. No runaway, no breach, no broken landing/form route.",
     "recommendation": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
     "approvalRequired": "YES — Sam explicit approval required",
     "answers": {
@@ -434,8 +434,8 @@
     }
   },
   "adsIntelligence": {
-    "refreshedAt": "2026-08-12T21:05:00-04:00",
-    "refreshType": "Nightly cache refresh — read-only (PARTIAL: Google Ads API v21 blocked)",
+    "refreshedAt": "2026-08-13T06:30:00-04:00",
+    "refreshType": "MORNING SAFETY CHECK (06:30 ET) — SOURCE PULL BLOCKED, carry-forward",
     "dataThrough": "Inbox reviewed through 2026-08-12 through 21:05 ET; Google Ads delivery/configuration unavailable at refresh time.",
     "windows": {
       "today": "2026-08-12 through 21:05 ET America/New_York",
@@ -451,13 +451,13 @@
       "legacyCampaignsExcluded": true,
       "note": "Intended Ads Agent campaign scope only; not live-verifiable while Google Ads endpoints are blocked."
     },
-    "status": "PARTIAL — PUBLISHED WITH GOOGLE ADS DATA BLOCKER",
+    "status": "PARTIAL — CARRY-FORWARD (Google Ads reporting still blocked)",
     "googleAdsReporting": {
-      "status": "BLOCKED",
-      "error": "google_ads-create-report and google_ads-list-campaigns returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
-      "livePerformanceAvailable": false,
-      "configuredBudgetReadAtReportTime": false,
-      "campaignRosterVerified": false
+      "state": "BLOCKED",
+      "error": "UNSUPPORTED_VERSION — Google Ads API v21 deprecated; requests blocked",
+      "liveReprobe": "Re-probed live at 2026-08-13T06:30:00-04:00; blocker persists (INVALID_ARGUMENT / UNSUPPORTED_VERSION v21).",
+      "independentCorroboration": "Confirmed by nightly run + Ads Agent callback ads-nightly-2026-08-12.",
+      "resolution": "Requires Google Ads connection upgrade/reauth off deprecated v21. Pending Sam."
     },
     "todaySoFar": {
       "totals": {
@@ -606,6 +606,10 @@
       "suggestions": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
       "nextExperiment": "No experiment was launched. Restore measurement and verify scope first; any change requires Sam’s explicit approval.",
       "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, and attribution; then refresh this cache. Await Sam’s explicit approval before any change."
+    },
+    "carryForward": {
+      "note": "All dollar figures, campaign scope, budgets, and cap % are CARRIED FORWARD from the last verified pull and are NOT re-verified this morning because live reporting is blocked.",
+      "lastVerifiedPull": "2026-08-12T21:05:00-04:00"
     }
   },
   "facilityStatus": {
