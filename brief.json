@@ -1,36 +1,44 @@
 {
-  "date": "2026-08-13",
-  "ts": "2026-08-13T11:00:00Z",
+  "date": "2026-08-14",
+  "ts": "2026-08-14T11:05:48.202Z",
   "brief": [
     {
-      "t": "Good news on Kenna. Your Wednesday ten a.m. meeting happened, and Kenna has already emailed a formula for the Milk of Venus project with a thousand-unit purchase order \u2014 a live, ready-to-quote deal sitting in your inbox with the formula attached. One thing I need from you: did you also get the Atlas Eternal formula in that meeting? That's the twenty-six thousand five hundred dollar run, deposit already paid, ready to start production.",
+      "t": "Terra Lotus, seventy-eight thousand five hundred eighty dollars, is now Day 3 silent from Aidan — he hasn't responded since my nudge Tuesday. I'm escalating in the priority channel at nine-thirty this morning and will text you the moment he reports, one way or the other.",
       "hot": true
     },
     {
-      "t": "Terra Lotus, seventy-eight thousand five hundred eighty dollars and our single biggest deal, is still stuck on Aidan. He's now past two business days silent \u2014 and Kenna's own lab techs emailed yesterday saying they can't get him to respond either. I'm escalating in the priority channel at nine-thirty and I'll text you if he stays dark.",
+      "t": "Kenna's Milk of Venus order is moving — Aidan and Kenna are already trading fill size and price target directly: a thousand units, one hundred eighteen milliliter fill, six to eight dollars a unit. Still waiting on your go to build the full quote with packaging, labor, and overhead.",
       "hot": true
     },
     {
-      "t": "Three fresh leads landed overnight, all ready to move. Ashley Harmon at Apothik Skin wants a call on a postbiotic moisturizer and balm, one to three thousand units per SKU. Tasnim Broud at AYYUR wants prototypes and pricing on a ritual oil. And Nabil at CN1 still wants four thousand-plus lotion tubes. Ashley asking for a call is the closest thing to a booking today.",
+      "t": "Atlas Eternal, twenty-six thousand five hundred dollars with the deposit already paid, is still waiting on one thing from you: confirm whether that formula came through in Wednesday's Kenna meeting so production can start.",
       "hot": true
     },
     {
-      "t": "A customer's waiting on you: Raul Guardado approved the final Struck Box printing and is asking for a status update. A quick reply keeps that one moving.",
+      "t": "Ashley Harmon at Apothik Skin wrote back this morning — she's booked tomorrow and will send call times for next week, so that one slips a few days but stays warm. Tasnim Broud at AYYUR is still live too, now deciding on a thirty milliliter frosted glass bottle with a gold dropper and open to us sourcing it. Nabil at CN1 is still quiet on the four-thousand-tube lotion ask.",
+      "hot": true
+    },
+    {
+      "t": "One new inbound overnight: Melissa Hilger of Busy Bee Vitality submitted a skincare inquiry through the website. Unqualified so far — worth a quick follow-up today.",
       "hot": false
     },
     {
-      "t": "The production workflow is rebuilt as a real node-and-arrow flow map and is ready for your sign-off. Say it looks right and I'll build the live CRM Production Pipeline.",
+      "t": "Raul Guardado's Struck Box status update already went out yesterday — Laura told him we're waiting on the printer's proof and will send the moment it's in. Nothing more needed from you right now.",
       "hot": false
     },
     {
-      "t": "The ads are still one word from you \u2014 say revert ads to manual and I flip both campaigns off Maximize Conversions. Heads-up: our Google Ads data connection is still down on a retired version, so live reporting stays dark until it's reconnected.",
+      "t": "The production workflow is finalized — you signed off on the node-and-arrow flow map and we added the GMP sign-off page, now a nine-page package. Say go and I'll build the live CRM Production Pipeline.",
+      "hot": false
+    },
+    {
+      "t": "Ads are still one word from you — say revert ads to manual and I flip both campaigns off Maximize Conversions. The Google Ads data connection remains down on a retired API version, so live reporting stays dark until it's reconnected.",
       "hot": false
     }
   ],
   "next": [
-    "Tell me if the Atlas formula came through Wednesday \u2014 I'll log Atlas into production and set the balance follow-up",
-    "Say go and I'll build the quote for Kenna's Milk of Venus thousand-unit order",
-    "Terra Lotus \u2014 I'm escalating Aidan at nine-thirty; I'll text you if he stays silent",
+    "Tell me if the Atlas formula came through Wednesday — I'll log Atlas into production and set the balance follow-up",
+    "Say go and I'll build the full quote for Kenna's Milk of Venus thousand-unit order",
+    "Terra Lotus — escalating Aidan at nine-thirty for Day 3 silence; I'll text you the outcome",
     "One word on the ads: revert ads to manual"
   ],
   "kb": [
@@ -42,9 +50,13 @@
         "chemist",
         "atlas formula",
         "milk of venus",
-        "gate"
+        "gate",
+        "kenna po",
+        "1000 units",
+        "new po",
+        "quote"
       ],
-      "a": "The Kenna meeting happened Wednesday, August twelfth at ten a.m. Afterward Kenna emailed Sam and Aidan a formula for the Milk of Venus project with a thousand-unit purchase order \u2014 the formula is attached and it's ready to quote. Still open: confirm whether the Atlas Eternal formula also came through in that meeting, which unlocks the twenty-six thousand five hundred dollar production run and advances Pure Good."
+      "a": "Milk of Venus is Kenna's thousand-unit order: one hundred eighteen milliliter fill, price target six to eight dollars per unit. Aidan and Kenna are actively working the numbers by email. Next step is the full quote — ingredients plus packaging, labor, and overhead — once Sam gives the go."
     },
     {
       "keys": [
@@ -54,7 +66,7 @@
         "new po",
         "quote"
       ],
-      "a": "Milk of Venus is a new Kenna-referred order: a thousand-unit purchase order with the updated formula attached to Kenna's August twelfth email. Kenna asked us to re-engage them. Next step is a full quote \u2014 ingredients plus packaging, labor, and overhead \u2014 once Sam gives the go."
+      "a": "Milk of Venus is a new Kenna-referred order: a thousand-unit purchase order with the updated formula attached to Kenna's August twelfth email. Kenna asked us to re-engage them. Next step is a full quote — ingredients plus packaging, labor, and overhead — once Sam gives the go."
     },
     {
       "keys": [
@@ -64,7 +76,7 @@
         "today",
         "priority"
       ],
-      "a": "Sam's single lane today: confirm the Atlas formula from Wednesday's Kenna meeting, green-light the Milk of Venus quote, and give the one-word ads decision. Terra Lotus stays Aidan's lane \u2014 send nothing customer-facing until Aidan reports back."
+      "a": "Sam's single lane today: confirm the Atlas formula from Wednesday's Kenna meeting, green-light the full Milk of Venus quote, and give the one-word ads decision. Terra Lotus stays Aidan's lane, now Day 3 silent — escalation is at nine-thirty; send nothing customer-facing until Aidan reports back."
     },
     {
       "keys": [
@@ -75,7 +87,7 @@
         "volume pricing",
         "aidan"
       ],
-      "a": "Terra Lotus is our biggest deal at seventy-eight thousand five hundred eighty dollars, fifty-two percent of the monthly target. Aidan owns the volume-pricing conversation and is past two business days silent. Kenna's own lab techs also emailed saying they can't reach Aidan. The Consultant escalates in the priority channel at nine-thirty and texts Sam if he stays dark."
+      "a": "Terra Lotus is our biggest deal at seventy-eight thousand five hundred eighty dollars, fifty-two percent of the monthly target. Aidan owns the volume-pricing conversation and is now silent into a third business day — the Day-2 nudge was Tuesday, August eleventh. The Consultant escalates in the priority channel at nine-thirty this morning and texts Sam if Aidan stays dark. Send nothing customer-facing until Aidan reports."
     },
     {
       "keys": [
@@ -86,7 +98,7 @@
         "production",
         "deposit"
       ],
-      "a": "Atlas Eternal is twenty-six thousand five hundred dollars for five thousand units. The thirteen thousand two hundred fifty dollar deposit is paid; the balance is due on completion. Production kicks off the moment Sam confirms the formula is in hand from Wednesday's Kenna meeting."
+      "a": "Atlas Eternal is twenty-six thousand five hundred dollars for five thousand units. The thirteen thousand two hundred fifty dollar deposit is paid; the balance is due on completion. Production kicks off the moment Sam confirms the formula is in hand from Wednesday's Kenna meeting — no confirmation has come in yet."
     },
     {
       "keys": [
@@ -107,7 +119,7 @@
         "moisturizer",
         "balm"
       ],
-      "a": "Ashley Harmon at Apothik Skin emailed to schedule a call on a postbiotic moisturizer and balm project, one to three thousand units per SKU. She's asking for a call, which is the closest thing to a booking today \u2014 prioritize getting it on the calendar."
+      "a": "Ashley Harmon at Apothik Skin replied this morning: she's booked tomorrow and will send call times for next week for the postbiotic moisturizer and balm project, one to three thousand units per SKU. Still warm — just a short delay before it's on the calendar."
     },
     {
       "keys": [
@@ -117,7 +129,7 @@
         "ritual oil",
         "prototypes"
       ],
-      "a": "Tasnim Broud sent a new inbound for AYYUR, a ritual oil. She wants three prototypes plus pricing, MOQ, and production details, quoted at two hundred fifty, five hundred, and a thousand units. Qualify and respond today."
+      "a": "Tasnim Broud at AYYUR is deciding on packaging for the ritual oil: a thirty milliliter frosted glass bottle with a gold dropper and cap. She doesn't have a vendor locked in and is open to PLL sourcing it. Keep moving her toward the three prototypes at two hundred fifty, five hundred, and a thousand units."
     },
     {
       "keys": [
@@ -128,7 +140,7 @@
         "body lotion",
         "tubes"
       ],
-      "a": "Nabil Saleh at CN1 Fragrance wants four thousand-plus eight-ounce tubes of scented body lotion and supplies his own fragrance oil. Still open to qualify \u2014 formula, packaging, and timeline toward a quote."
+      "a": "Nabil Saleh at CN1 Fragrance still wants four thousand-plus eight-ounce tubes of scented body lotion with his own fragrance oil supplied. No new reply in the sweep — still open to qualify formula, packaging, and timeline toward a quote."
     },
     {
       "keys": [
@@ -138,7 +150,7 @@
         "printing",
         "status"
       ],
-      "a": "Raul Guardado approved the final Struck Box version-five printing and emailed asking for a status update. He's a customer waiting on a reply \u2014 close the loop today to keep it moving."
+      "a": "Raul Guardado approved the final Struck Box version-five printing and asked for a status update. Laura already replied yesterday: we're waiting on a proof from the printer and will send it the moment it arrives. No action needed from Sam right now."
     },
     {
       "keys": [
@@ -149,7 +161,7 @@
         "beard balm",
         "body wash"
       ],
-      "a": "Charles Thompson at Brighten Path flagged that his beard balm and body wash samples never arrived. Carryover customer-care item \u2014 chase the shipment so it doesn't sour a live prospect."
+      "a": "Charles Thompson at Brighten Path flagged that his beard balm and body wash samples never arrived. Carryover customer-care item — chase the shipment so it doesn't sour a live prospect."
     },
     {
       "keys": [
@@ -161,7 +173,7 @@
         "spend",
         "connection"
       ],
-      "a": "Both net-new campaigns are on Maximize Conversions with no conversion tracking, so they're bidding blind \u2014 Contract Manufacturing CPC ran up thirty-two percent. One word from Sam, revert ads to manual, and the Consultant has the Ads Agent flip both to Manual CPC. Separately, the Google Ads data connection is down on a retired API version, so live reporting is dark until it's reconnected."
+      "a": "Both net-new campaigns are on Maximize Conversions with no conversion tracking. One word from Sam, revert ads to manual, and the Consultant has the Ads Agent flip both to Manual CPC. The Google Ads data connection remains down on a retired API version, so live reporting stays dark until it's reconnected."
     },
     {
       "keys": [
@@ -170,7 +182,7 @@
         "role cards",
         "crm pipeline"
       ],
-      "a": "The twenty-step post-close production workflow is delivered as an eight-page PDF: a true node-and-arrow flow map plus seven role cards. It's rebuilt and waiting on Sam's sign-off; on his OK the Consultant builds the live CRM Production Pipeline."
+      "a": "The production workflow is finalized: Sam approved the node-and-arrow flow map and a GMP sign-off page was added, now a nine-page package. It's done — say go and the Consultant builds the live CRM Production Pipeline."
     },
     {
       "keys": [
@@ -180,7 +192,7 @@
         "peptide cream",
         "closed"
       ],
-      "a": "Oreka, Nadia Dupuis, is closed and in production \u2014 eight thousand five hundred fifty-five dollars paid, thousand-unit peptide cream. Laura owns customer communication. No action needed."
+      "a": "Oreka, Nadia Dupuis, is closed and in production — eight thousand five hundred fifty-five dollars paid, thousand-unit peptide cream. Laura owns customer communication. No action needed."
     },
     {
       "keys": [
@@ -201,7 +213,7 @@
         "costing",
         "ronald"
       ],
-      "a": "Victor Armendarez needs costing on two thousand units each of a curl-defining cream and an edge gel. It's overdue on Ronald's cost inputs \u2014 ingredients plus packaging, labor, and overhead before any quote goes out."
+      "a": "Victor Armendarez needs costing on two thousand units each of a curl-defining cream and an edge gel. It's overdue on Ronald's cost inputs — ingredients plus packaging, labor, and overhead before any quote goes out."
     },
     {
       "keys": [
@@ -223,63 +235,84 @@
         "brief feed"
       ],
       "a": "Aidan's 7am Command Lab brief feed is live but Outlook-only right now because his WhatsApp and CRM are signed out on his machine. He needs to reconnect both to get the full picture."
+    },
+    {
+      "keys": [
+        "melissa hilger",
+        "busy bee",
+        "busy bee vitality",
+        "new lead",
+        "skincare inquiry"
+      ],
+      "a": "Melissa Hilger of Busy Bee Vitality submitted a new skincare inquiry through the website contact form overnight (August thirteenth, 9pm). It's unqualified and not yet tied to any ad campaign — worth a quick follow-up today to see what she needs."
+    },
+    {
+      "keys": [
+        "facility",
+        "farmington hills",
+        "24600",
+        "inspection",
+        "occupancy",
+        "fire"
+      ],
+      "a": "The Farmington Hills facility passed its final re-occupancy building and fire inspections on August thirteenth — both approved. UPS, USPS, and Shopify address changes and test-label/order paths in each system still remain pending; no new evidence yet that those were completed."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Kenna deals \u2014 confirm Atlas formula + quote Milk of Venus",
-      "why": "Wednesday's Kenna meeting happened. Kenna emailed the Milk of Venus formula (attached) + a 1,000-unit PO \u2014 ready to quote. Confirm whether the Atlas Eternal formula ($26,500, deposit paid) also came through, which also advances Pure Good (~$329K).",
-      "owner": "Sam / Consultant",
-      "due": "Today",
-      "priority": "critical",
-      "revenue": "~$355K gated + new 1,000-unit PO",
-      "status": "FORMULA RECEIVED (Milk of Venus) \u2014 ATLAS FORMULA TO CONFIRM"
-    },
-    {
-      "rank": 2,
-      "title": "Terra Lotus \u2014 Aidan escalation",
-      "why": "$78,580, 52% of monthly target. Aidan silent past two business days; Kenna's lab techs also can't reach him. Consultant escalating at 9:30; Sam gets a text if still dark.",
+      "title": "Terra Lotus — Aidan Day 3 escalation",
+      "why": "$78,580, 52% of monthly target. Aidan silent into a third business day (Day-2 nudge was Aug 11). Consultant escalates in the priority channel at 9:30am; texts Sam if he stays dark. Send nothing customer-facing until Aidan reports.",
       "owner": "Aidan",
       "due": "Today",
       "priority": "critical",
       "revenue": "$78,580",
-      "status": "DAY 3 \u2014 ESCALATION DUE"
+      "status": "DAY 3 — ESCALATION AT 9:30AM"
+    },
+    {
+      "rank": 2,
+      "title": "Milk of Venus — build full quote on Sam's go",
+      "why": "Aidan and Kenna are already trading quote details directly: 1,000 units, 118mL fill, $6–$8/unit price target. Sam's go triggers the full quote build (ingredients + packaging + labor + overhead).",
+      "owner": "Sam / Consultant",
+      "due": "Today",
+      "priority": "critical",
+      "revenue": "New 1,000-unit PO",
+      "status": "PRICING IN PROGRESS — AWAITING SAM'S GO"
     },
     {
       "rank": 3,
-      "title": "New leads \u2014 qualify and book calls",
-      "why": "Ashley Harmon/Apothik (postbiotic moisturizer + balm, 1k\u20133k/SKU, wants a call), Tasnim Broud/AYYUR (ritual oil, prototypes + pricing at 250/500/1,000), Nabil/CN1 (4,000+ tubes). Ashley's call request is closest to a booked call.",
-      "owner": "Consultant / Sam / Laura",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "3 live leads",
-      "status": "NEW \u2014 QUALIFY TODAY"
-    },
-    {
-      "rank": 4,
-      "title": "Atlas Eternal \u2014 start production on formula",
-      "why": "Deposit $13,250 PAID; balance $13,250 on completion. Ready to kick off the moment the Kenna formula is confirmed in hand.",
+      "title": "Atlas Eternal — confirm formula, start production",
+      "why": "$26,500, deposit $13,250 PAID. Ready to kick off the moment Sam confirms the Kenna-meeting formula is in hand; also advances Pure Good (~$329K). No confirmation yet.",
       "owner": "Sam",
-      "due": "Today (after formula confirm)",
-      "priority": "high",
+      "due": "Today",
+      "priority": "critical",
       "revenue": "$26,500 ($13,250 collected)",
       "status": "GATED ON FORMULA CONFIRM"
     },
     {
-      "rank": 5,
-      "title": "Raul Guardado \u2014 Struck Box status reply",
-      "why": "Customer approved final printing (v5) and is waiting on a status update. Close-the-loop to keep it moving.",
-      "owner": "Consultant / Sam",
+      "rank": 4,
+      "title": "Fresh leads — qualify and keep warm",
+      "why": "Ashley Harmon/Apothik replied: booked tomorrow, sending call times next week (still warm). Tasnim Broud/AYYUR is deciding packaging (30mL frosted glass, gold dropper) and open to PLL sourcing it. Nabil/CN1 (4,000+ tubes) remains quiet. New overnight inbound: Melissa Hilger/Busy Bee Vitality, unqualified skincare inquiry.",
+      "owner": "Consultant / Sam / Laura",
       "due": "Today",
-      "priority": "medium",
+      "priority": "high",
+      "revenue": "4 live leads",
+      "status": "IN PROGRESS — QUALIFY TODAY"
+    },
+    {
+      "rank": 5,
+      "title": "Raul Guardado — Struck Box status",
+      "why": "Laura already replied yesterday: waiting on the printer's proof, will send once received. No action needed from Sam.",
+      "owner": "Laura",
+      "due": "Done — monitor printer proof",
+      "priority": "low",
       "revenue": "Retain active customer",
-      "status": "CUSTOMER WAITING"
+      "status": "REPLIED — AWAITING PRINTER PROOF"
     },
     {
       "rank": 6,
-      "title": "Ads \u2014 revert both campaigns to Manual CPC",
-      "why": "Both on Maximize Conversions with no conversion tracking. One-word yes from Sam. Google Ads connection down on retired API \u2014 live verification dark until reconnected.",
+      "title": "Ads — revert both campaigns to Manual CPC",
+      "why": "Both on Maximize Conversions with no conversion tracking. One-word yes from Sam. Google Ads connection still down on retired API — live verification dark until reconnected.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
@@ -288,26 +321,26 @@
     },
     {
       "rank": 7,
-      "title": "Production workflow \u2014 sign-off then CRM Pipeline build",
-      "why": "8-page flowchart + role cards rebuilt with a true flow map. On Sam's OK, Consultant builds the live CRM Production Pipeline.",
-      "owner": "Sam \u2192 Consultant",
+      "title": "Production workflow — build the live CRM Pipeline",
+      "why": "Finalized: node-and-arrow flow map signed off, GMP sign-off page added (9-page package). On Sam's OK, Consultant builds the live CRM Production Pipeline.",
+      "owner": "Sam → Consultant",
       "due": "Today",
       "priority": "medium",
       "revenue": "Ops enablement",
-      "status": "AWAITING SAM SIGN-OFF"
+      "status": "FINALIZED — AWAITING SAM'S GO FOR BUILD"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Confirm the Atlas formula from Wednesday's Kenna meeting, green-light the Milk of Venus quote, and give the one-word ads yes. Terra Lotus stays Aidan's lane.",
+      "top_task": "Confirm the Atlas formula from Wednesday's Kenna meeting, green-light the Milk of Venus quote, and give the one-word ads yes. Terra Lotus stays Aidan's lane, now Day 3 silent.",
       "tasks": [
         {
           "title": "Confirm whether the Atlas Eternal formula came through in Wednesday's Kenna meeting",
           "due": "Today"
         },
         {
-          "title": "Green-light the quote for Kenna's Milk of Venus 1,000-unit PO (formula attached in your inbox)",
+          "title": "Green-light the full quote for Kenna's Milk of Venus 1,000-unit PO (Aidan already has fill size + price target from Kenna)",
           "due": "Today"
         },
         {
@@ -319,56 +352,64 @@
           "due": "Today"
         },
         {
-          "title": "Sign off on the rebuilt production workflow flowchart",
+          "title": "Say 'go' to build the live CRM Production Pipeline (workflow is finalized)",
           "due": "Today"
         }
       ],
-      "notes": "Terra Lotus is Aidan's to close \u2014 send nothing customer-facing until Aidan reports back."
+      "notes": "Terra Lotus is Aidan's to close — send nothing customer-facing until Aidan reports back. He's now Day 3 silent; escalation is at 9:30am."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Close Terra Lotus volume pricing and report \u2014 past two business days overdue. Also respond to Kenna's lab techs about the Canada packages.",
+      "top_task": "Close Terra Lotus volume pricing and report — now Day 3 silent, past due. Continue the Milk of Venus pricing conversation with Kenna.",
       "tasks": [
         {
           "title": "Close the Terra Lotus $78,580 volume-pricing conversation and report outcome + confirmed contact/billing/shipping address",
-          "due": "OVERDUE \u2014 respond today"
+          "due": "OVERDUE — Day 3, respond today"
         },
         {
-          "title": "Respond to Kenna's team (Jackson / Ulli / Mel) on status of the packages that couldn't ship to Canada",
-          "due": "OVERDUE \u2014 Kenna cc'd Sam"
+          "title": "Finish the Milk of Venus price-target conversation with Kenna (1,000 units, 118mL fill, $6–$8 target given)",
+          "due": "Today"
         },
         {
           "title": "Reconnect CRM and WhatsApp to his Command Lab brief feed",
           "due": "Today"
         }
       ],
-      "notes": "Silent past two business days on Terra Lotus; Kenna's lab techs also can't reach him. Consultant escalating in the priority channel at 9:30; Sam gets a text if still dark."
+      "notes": "Silent into a third business day on Terra Lotus (Day-2 nudge was Aug 11). Consultant escalating in the priority channel at 9:30am; Sam gets a text if still dark. He is actively responsive on the Milk of Venus thread with Kenna."
     },
     "laura": {
       "display_name": "Laura",
       "top_task": "Qualify the fresh overnight inbound and keep warm prospects moving.",
       "tasks": [
         {
-          "title": "Help qualify Ashley Harmon / Apothik Skin (postbiotic moisturizer + balm, 1k\u20133k units/SKU, wants a call)",
-          "due": "Today"
+          "title": "Follow up on Ashley Harmon / Apothik Skin's reply — she's booked tomorrow, will send call times next week",
+          "due": "Next week"
         },
         {
-          "title": "Help qualify Tasnim Broud / AYYUR (ritual oil \u2014 3 prototypes, pricing at 250/500/1,000 units)",
+          "title": "Help qualify Tasnim Broud / AYYUR on bottle sourcing (30mL frosted glass, gold dropper)",
           "due": "Today"
         },
         {
           "title": "Support Nabil Saleh / CN1 Fragrance qualification (4,000+ tubes, buyer-supplied fragrance)",
           "due": "Today"
+        },
+        {
+          "title": "Follow up on new inbound: Melissa Hilger / Busy Bee Vitality skincare inquiry",
+          "due": "Today"
+        },
+        {
+          "title": "Monitor for the Struck Box printer proof for Raul Guardado",
+          "due": "On receipt"
         }
       ],
-      "notes": "Workspace live; connections pending sit-down. Coordinate through Consultant until then."
+      "notes": "Already replied to Raul Guardado on Struck Box status. Workspace live; connections pending sit-down."
     },
     "ronald": {
       "display_name": "Ronald",
       "top_task": "Prep sample/BOM for the new Kenna formula and close out Victor costing.",
       "tasks": [
         {
-          "title": "Review Kenna's Milk of Venus formula for sample/BOM once the quote is greenlit (ingredients only \u2014 packaging/labor/overhead added by Consultant)",
+          "title": "Review Kenna's Milk of Venus formula for sample/BOM once the quote is greenlit (ingredients only — packaging/labor/overhead added by Consultant)",
           "due": "On greenlight"
         },
         {
@@ -376,45 +417,45 @@
           "due": "OVERDUE"
         }
       ],
-      "notes": "Never quote from BOM alone \u2014 ingredients only; Consultant adds packaging, labor, overhead."
+      "notes": "Never quote from BOM alone — ingredients only; Consultant adds packaging, labor, overhead."
     }
   },
   "revenueActions": [
     {
-      "title": "Move the Kenna deals \u2014 Milk of Venus quote + Atlas formula confirm",
-      "why": "Kenna's meeting happened; Milk of Venus formula + 1,000-unit PO arrived and is ready to quote. Confirming the Atlas formula unlocks $26,500 of ready-to-produce work and advances Pure Good (~$329K).",
-      "est_value": "~$355K gated + new 1,000-unit PO",
-      "next_step": "Confirm Atlas formula in hand; build the Milk of Venus quote on Sam's go.",
-      "owner": "Sam / Consultant",
-      "timing": "Today",
-      "value": "~$355K + new PO",
-      "status": "FORMULA RECEIVED \u2014 QUOTE + CONFIRM"
-    },
-    {
       "title": "Close Terra Lotus volume pricing",
-      "why": "$78,580, 52% of the monthly target; Aidan owns it and is past two business days silent.",
+      "why": "$78,580, 52% of the monthly target; Aidan owns it and is now silent into a third business day.",
       "est_value": "$78,580",
       "next_step": "Consultant escalates in the priority channel at 9:30; texts Sam if Aidan stays dark.",
       "owner": "Aidan",
       "timing": "Today",
       "value": "$78,580",
-      "status": "DAY 3 \u2014 ESCALATION DUE"
+      "status": "DAY 3 — ESCALATION AT 9:30AM"
     },
     {
-      "title": "Qualify 3 fresh leads toward booked calls",
-      "why": "Ashley/Apothik (1k\u20133k/SKU, wants a call), Tasnim/AYYUR (ritual oil), Nabil/CN1 (4,000+ tubes). Booked call is our meaningful conversion.",
-      "est_value": "3 live leads",
-      "next_step": "Prioritize Ashley's call; qualify formula/packaging/timeline for all three.",
+      "title": "Move the Kenna deals — Milk of Venus quote + Atlas formula confirm",
+      "why": "Aidan and Kenna are trading Milk of Venus quote details directly (1,000 units, 118mL fill, $6–$8/unit target). Confirming the Atlas formula unlocks $26,500 of ready-to-produce work and advances Pure Good (~$329K).",
+      "est_value": "~$355K gated + new 1,000-unit PO",
+      "next_step": "Confirm Atlas formula in hand; build the full Milk of Venus quote on Sam's go.",
+      "owner": "Sam / Consultant",
+      "timing": "Today",
+      "value": "~$355K + new PO",
+      "status": "PRICING IN PROGRESS — AWAITING SAM'S GO"
+    },
+    {
+      "title": "Qualify fresh leads toward booked calls",
+      "why": "Ashley/Apothik replied (call slipping to next week, still warm); Tasnim/AYYUR deciding packaging; Nabil/CN1 (4,000+ tubes) quiet; new overnight inbound Melissa Hilger/Busy Bee Vitality.",
+      "est_value": "4 live leads",
+      "next_step": "Qualify Tasnim's bottle sourcing today; follow up with Melissa Hilger; keep Ashley warm for next week.",
       "owner": "Consultant / Sam / Laura",
       "timing": "Today",
       "value": "To qualify",
-      "status": "NEW LEADS"
+      "status": "IN PROGRESS"
     },
     {
       "title": "Start Atlas Eternal production",
       "why": "$26,500 order; $13,250 deposit PAID (Inv #1050, Ryne Bell); balance due on completion.",
       "est_value": "$26,500",
-      "next_step": "Kick off once the formula is confirmed; set completion \u2192 balance-collection follow-up.",
+      "next_step": "Kick off once the formula is confirmed; set completion → balance-collection follow-up.",
       "owner": "Sam",
       "timing": "Today after confirm",
       "value": "$13,250 collected; $13,250 on completion",
@@ -422,7 +463,7 @@
     },
     {
       "title": "Revert ads to Manual CPC",
-      "why": "Both campaigns on Maximize Conversions with no tracked conversions \u2014 wasted optimization. Google Ads reporting currently down on retired API.",
+      "why": "Both campaigns on Maximize Conversions with no tracked conversions — wasted optimization. Google Ads reporting currently down on retired API.",
       "est_value": "Stops waste",
       "next_step": "Sam says 'revert ads to manual'; Consultant dispatches Ads Agent and verifies once reporting is restored.",
       "owner": "Sam",
@@ -435,46 +476,46 @@
     "total_value": "~$434K named pipeline + new Milk of Venus PO",
     "active_deals": 7,
     "hot": [
-      "Kenna \u2014 Milk of Venus formula + 1,000-unit PO received, ready to quote",
-      "Terra Lotus \u2014 $78,580; Aidan owns volume pricing, Day 3 silent",
-      "Atlas Eternal \u2014 $26,500; deposit PAID, production on formula confirm",
-      "Pure Good / Kenna \u2014 ~$329K; advances off the same Kenna relationship",
-      "New leads \u2014 Ashley/Apothik (1k\u20133k/SKU), Tasnim/AYYUR, Nabil/CN1 (4,000+ tubes)"
+      "Terra Lotus — $78,580; Aidan owns volume pricing, now Day 3 silent, escalating 9:30am",
+      "Kenna — Milk of Venus pricing in progress (1,000 units, 118mL fill, $6–$8/unit); full quote awaiting Sam's go",
+      "Atlas Eternal — $26,500; deposit PAID, production still gated on formula confirm",
+      "Pure Good / Kenna — ~$329K; advances off the same Kenna relationship",
+      "Fresh leads — Ashley/Apothik (call slipping to next week), Tasnim/AYYUR (packaging decision), Nabil/CN1 (4,000+ tubes), new: Melissa Hilger/Busy Bee Vitality"
     ],
     "stalled": [
-      "Terra Lotus volume-pricing reply from Aidan (past two business days)",
+      "Terra Lotus volume-pricing reply from Aidan (Day 3 silent)",
       "Atlas production gated on formula confirmation",
-      "Kenna lab-tech packages awaiting Aidan's response"
+      "Nabil/CN1 no reply in this sweep"
     ],
     "activeDeals": 7,
     "pipelineValue": 434135,
     "inProduction": 2,
     "depositsCollected": 13250,
-    "note": "Kenna meeting HAPPENED Wed Aug 12 10am. Kenna emailed Milk of Venus formula + 1,000-unit PO (ready to quote). Confirm whether Atlas formula also came through \u2192 unlocks $26,500 production. Terra Lotus $78,580 (52% of target) \u2014 Aidan past two business days silent, Kenna's lab techs also can't reach him. Oreka closed/in production.",
+    "note": "Terra Lotus $78,580 (52% of target) — Aidan now Day 3 silent, escalation at 9:30am. Milk of Venus pricing actively moving between Aidan and Kenna ($6–$8/unit, 118mL fill); full quote awaits Sam's go. Atlas Eternal ($26,500) still gated on formula confirmation. New overnight lead: Melissa Hilger/Busy Bee Vitality (unqualified). Oreka closed/in production; full formulas received from Desert In Bloom Aug 13.",
     "monthlyTarget": "$150K",
     "achievableDepositsThisMonth": "Not revalidated in this refresh"
   },
   "adsAgentBrief": {
     "timestamp": "2026-08-13T21:04:37-04:00",
-    "mode": "NIGHTLY CACHE REFRESH \u2014 PARTIAL / SOURCE PULL BLOCKED",
-    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED",
+    "mode": "NIGHTLY CACHE REFRESH — PARTIAL / SOURCE PULL BLOCKED",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
     "headline": "Google Ads reporting remains blocked (API v21 deprecated), re-confirmed 21:04 ET 2026-08-13; Outlook inquiry search returned no usable result. Current/prior exact-window spend, CTR, CPC, inquiries, and attribution are not asserted. No breach is declared; cap is not determinable. No Ads setting changed.",
-    "recommendation": "PENDING SAM APPROVAL \u2014 READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
-    "approvalRequired": "YES \u2014 Sam explicit approval required",
+    "recommendation": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
+    "approvalRequired": "YES — Sam explicit approval required",
     "answers": {
-      "today": "Today (2026-08-13, through 21:04 ET): NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION. No spend, impressions, clicks, CTR, or CPC is asserted.",
-      "sevenNewAds": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Live campaign/ad access is blocked; legacy campaigns were not blended and no Ads change was made.",
+      "today": "Today (2026-08-13, through 21:04 ET): NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION. No spend, impressions, clicks, CTR, or CPC is asserted.",
+      "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Live campaign/ad access is blocked; legacy campaigns were not blended and no Ads change was made.",
       "ctrCpc": "Fresh CTR/CPC for 2026-08-07 through 2026-08-13 America/New_York and 2026-07-31 through 2026-08-06 America/New_York is NOT AVAILABLE because Google Ads reporting is blocked.",
-      "leadsEmailsCalls": "Current window (2026-08-07 through 2026-08-13 America/New_York): NOT AVAILABLE \u2014 Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Prior window (2026-07-31 through 2026-08-06 America/New_York): NOT AVAILABLE \u2014 Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Booked calls: last agent-reported figure was 1 for an overlapping historical window, NOT RE-VERIFIED and not assigned to either exact window; CPL and cost per booked call are NOT YET MEASURABLE.",
-      "budgetCap": "Cap compliance is NOT DETERMINABLE \u2014 this is not a no-breach finding \u2014 because configured budgets and exact trailing-window spend could not be re-read. Last verified (NOT RE-VERIFIED) snapshot: Contract Manufacturing $20.33/day; White Label Samples $5.00/day; combined $25.33/day / $177.31 for 7 days. A breach requires trailing-window average over the live configured budget; a single day up to 2\u00d7 is normal pacing.",
+      "leadsEmailsCalls": "Current window (2026-08-07 through 2026-08-13 America/New_York): NOT AVAILABLE — Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Prior window (2026-07-31 through 2026-08-06 America/New_York): NOT AVAILABLE — Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Booked calls: last agent-reported figure was 1 for an overlapping historical window, NOT RE-VERIFIED and not assigned to either exact window; CPL and cost per booked call are NOT YET MEASURABLE.",
+      "budgetCap": "Cap compliance is NOT DETERMINABLE — this is not a no-breach finding — because configured budgets and exact trailing-window spend could not be re-read. Last verified (NOT RE-VERIFIED) snapshot: Contract Manufacturing $20.33/day; White Label Samples $5.00/day; combined $25.33/day / $177.31 for 7 days. A breach requires trailing-window average over the live configured budget; a single day up to 2× is normal pacing.",
       "winners": "No fresh winner can be determined: campaign/ad reporting is unavailable and the exact seven-ad roster is unverified.",
       "waste": "No fresh search-term/waste evidence was retrievable; no waste claim is made.",
       "optimization": "Read-only refresh: no campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
-      "suggestions": "PENDING SAM APPROVAL \u2014 READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
-      "nextExperiment": "No experiment was launched. Restore measurement and verify scope first; any change requires Sam\u2019s explicit approval.",
-      "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, inbox attribution, and tracking; then refresh this cache. Await Sam\u2019s explicit approval before any change."
+      "suggestions": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
+      "nextExperiment": "No experiment was launched. Restore measurement and verify scope first; any change requires Sam’s explicit approval.",
+      "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, inbox attribution, and tracking; then refresh this cache. Await Sam’s explicit approval before any change."
     },
-    "dataStatus": "LIVE REPORTING BLOCKED (API v21 deprecated) \u2014 last-authoritative figures carried forward, not re-verified 2026-08-14.",
+    "dataStatus": "LIVE REPORTING BLOCKED (API v21 deprecated) — last-authoritative figures carried forward, not re-verified 2026-08-14.",
     "refreshedAt": "2026-08-14T06:31:41-04:00"
   },
   "adsIntelligence": {
@@ -491,15 +532,15 @@
         "Contract Manufacturing",
         "White Label Samples"
       ],
-      "warning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED",
+      "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
       "legacyCampaignsExcluded": true,
       "note": "Intended Ads Agent campaign scope only; live verification blocked."
     },
-    "status": "PARTIAL \u2014 SOURCE PULL BLOCKED (Google Ads API v21 deprecated / UNSUPPORTED_VERSION)",
+    "status": "PARTIAL — SOURCE PULL BLOCKED (Google Ads API v21 deprecated / UNSUPPORTED_VERSION)",
     "googleAdsReporting": "BLOCKED: connection on deprecated API v21; re-probed 2026-08-14 06:30 ET and still returns UNSUPPORTED_VERSION. No fresh spend/CTR/CPC/status available. Requires connector upgrade / reauthorization off v21. Figures below are last-authoritative and NOT re-verified today.",
     "todaySoFar": {
       "totals": {
-        "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+        "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
         "spend": null,
         "impressions": null,
         "clicks": null,
@@ -509,7 +550,7 @@
     },
     "performance": {
       "current7Day": {
-        "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+        "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
         "spend": null,
         "impressions": null,
         "clicks": null,
@@ -518,7 +559,7 @@
         "note": "No exact totals for 2026-08-07 through 2026-08-13 America/New_York."
       },
       "prior7Day": {
-        "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+        "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
         "spend": null,
         "impressions": null,
         "clicks": null,
@@ -529,10 +570,10 @@
       "campaigns": [
         {
           "name": "Contract Manufacturing",
-          "status": "NOT RE-VERIFIED \u2014 live campaign report blocked",
-          "configuredDailyBudget": "$20.33/day \u2014 last verified 2026-08-04, NOT RE-VERIFIED",
+          "status": "NOT RE-VERIFIED — live campaign report blocked",
+          "configuredDailyBudget": "$20.33/day — last verified 2026-08-04, NOT RE-VERIFIED",
           "todayTotals": {
-            "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
             "spend": null,
             "impressions": null,
             "clicks": null,
@@ -540,7 +581,7 @@
             "averageCpc": null
           },
           "current7DayTotals": {
-            "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
             "spend": null,
             "impressions": null,
             "clicks": null,
@@ -548,7 +589,7 @@
             "averageCpc": null
           },
           "prior7DayTotals": {
-            "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
             "spend": null,
             "impressions": null,
             "clicks": null,
@@ -556,16 +597,16 @@
             "averageCpc": null
           },
           "adBreakdown": {
-            "status": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED; live ad report unavailable.",
+            "status": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED; live ad report unavailable.",
             "ads": []
           }
         },
         {
           "name": "White Label Samples",
-          "status": "NOT RE-VERIFIED \u2014 live campaign report blocked",
-          "configuredDailyBudget": "$5.00/day \u2014 last verified 2026-08-04, NOT RE-VERIFIED",
+          "status": "NOT RE-VERIFIED — live campaign report blocked",
+          "configuredDailyBudget": "$5.00/day — last verified 2026-08-04, NOT RE-VERIFIED",
           "todayTotals": {
-            "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
             "spend": null,
             "impressions": null,
             "clicks": null,
@@ -573,7 +614,7 @@
             "averageCpc": null
           },
           "current7DayTotals": {
-            "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
             "spend": null,
             "impressions": null,
             "clicks": null,
@@ -581,7 +622,7 @@
             "averageCpc": null
           },
           "prior7DayTotals": {
-            "status": "NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
             "spend": null,
             "impressions": null,
             "clicks": null,
@@ -589,7 +630,7 @@
             "averageCpc": null
           },
           "adBreakdown": {
-            "status": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED; live ad report unavailable.",
+            "status": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED; live ad report unavailable.",
             "ads": []
           }
         }
@@ -597,41 +638,41 @@
     },
     "leadsAndBookings": {
       "current7Day": {
-        "qualifiedInquiries": "NOT AVAILABLE \u2014 inbox search source pull failed",
+        "qualifiedInquiries": "NOT AVAILABLE — inbox search source pull failed",
         "verifiedAdsAttributedLeads": "NOT YET MEASURABLE",
         "unattributedQualifiedInquiries": "NOT YET MEASURABLE",
         "attributionStatus": "No current-window inquiry count or attribution claim is made; Outlook search returned no usable result on two attempts.",
-        "bookedCalls": "Last agent-reported 1 booked call for an overlapping historical window \u2014 NOT RE-VERIFIED and not assigned to this exact window; calendar/CRM unavailable.",
-        "cpl": "NOT YET MEASURABLE \u2014 spend unavailable; inquiry and attribution source pull failed.",
-        "costPerBookedCall": "NOT YET MEASURABLE \u2014 calendar/CRM unavailable and spend unavailable."
+        "bookedCalls": "Last agent-reported 1 booked call for an overlapping historical window — NOT RE-VERIFIED and not assigned to this exact window; calendar/CRM unavailable.",
+        "cpl": "NOT YET MEASURABLE — spend unavailable; inquiry and attribution source pull failed.",
+        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM unavailable and spend unavailable."
       },
       "prior7Day": {
-        "qualifiedInquiries": "NOT AVAILABLE \u2014 inbox search source pull failed",
+        "qualifiedInquiries": "NOT AVAILABLE — inbox search source pull failed",
         "verifiedAdsAttributedLeads": "NOT YET MEASURABLE",
         "unattributedQualifiedInquiries": "NOT YET MEASURABLE",
         "attributionStatus": "No prior-window inquiry count or attribution claim is made; Outlook search returned no usable result on two attempts.",
-        "bookedCalls": "Last agent-reported 1 booked call for an overlapping historical window \u2014 NOT RE-VERIFIED and not assigned to this exact window; calendar/CRM unavailable.",
-        "cpl": "NOT YET MEASURABLE \u2014 spend unavailable; inquiry and attribution source pull failed.",
-        "costPerBookedCall": "NOT YET MEASURABLE \u2014 calendar/CRM unavailable and spend unavailable."
+        "bookedCalls": "Last agent-reported 1 booked call for an overlapping historical window — NOT RE-VERIFIED and not assigned to this exact window; calendar/CRM unavailable.",
+        "cpl": "NOT YET MEASURABLE — spend unavailable; inquiry and attribution source pull failed.",
+        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM unavailable and spend unavailable."
       }
     },
     "capCompliance": {
-      "status": "NOT DETERMINABLE \u2014 configured budgets could not be re-read because the Google Ads report endpoint is blocked.",
+      "status": "NOT DETERMINABLE — configured budgets could not be re-read because the Google Ads report endpoint is blocked.",
       "breachDeclared": false,
       "verdict": "No breach is declared; this is not a verified no-breach finding.",
-      "percentOfBudgetUsed": "NOT AVAILABLE \u2014 exact trailing spend and live configured budgets unavailable.",
-      "method": "Breach test = trailing-window average versus live configured daily budget. A single day up to 2\u00d7 daily budget is normal pacing.",
+      "percentOfBudgetUsed": "NOT AVAILABLE — exact trailing spend and live configured budgets unavailable.",
+      "method": "Breach test = trailing-window average versus live configured daily budget. A single day up to 2× daily budget is normal pacing.",
       "lastVerifiedBudgetSnapshot": {
         "asOf": "2026-08-04T21:00:00-04:00",
         "contractManufacturing": 20.33,
-        "whiteLabelSamples": 5.0,
+        "whiteLabelSamples": 5,
         "total": 25.33,
         "sevenDayTotal": 177.31,
         "note": "NOT RE-VERIFIED in this refresh."
       }
     },
     "funnelHealth": {
-      "status": "WATCH \u2014 MEASUREMENT BLOCKED",
+      "status": "WATCH — MEASUREMENT BLOCKED",
       "notes": [
         "Google Ads API report endpoint is blocked on deprecated v21.",
         "Outlook lead-inbox search returned no usable result on two attempts.",
@@ -639,14 +680,14 @@
       ]
     },
     "searchTerms": {
-      "status": "NOT AVAILABLE \u2014 Google Ads reporting blocked",
+      "status": "NOT AVAILABLE — Google Ads reporting blocked",
       "wasteEvidence": "No fresh search-term evidence; no waste claim made."
     },
     "bestItem": "No fresh winner can be determined because campaign/ad reporting and inquiry-source pull were unavailable.",
     "worstItem": "Google Ads reporting/configuration route is blocked by deprecated API v21; cap and performance conclusions cannot be responsibly drawn.",
     "watchItem": "Restore both reporting and inbox-query access, then validate scope/roster, live budgets, delivery, search terms, inquiry attribution, and tracking before acting.",
     "recommendation": {
-      "text": "PENDING SAM APPROVAL \u2014 READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
+      "text": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
       "approvalRequired": true,
       "status": "PENDING SAM APPROVAL",
       "action": "READ-ONLY RECOMMENDATION ONLY",
@@ -655,27 +696,27 @@
     "approvalRequired": true,
     "readOnly": true,
     "anomalies": [
-      "GOOGLE ADS REPORTING BLOCKED \u2014 UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
-      "OUTLOOK LEAD-INBOX SEARCH \u2014 no usable result returned on two attempts.",
-      "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED.",
+      "GOOGLE ADS REPORTING BLOCKED — UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
+      "OUTLOOK LEAD-INBOX SEARCH — no usable result returned on two attempts.",
+      "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
       "Configured budgets, exact spend, and cap percentage not re-read; cap verdict not determinable."
     ],
     "preparedAnswers": {
-      "today": "Today (2026-08-13, through 21:04 ET): NOT AVAILABLE \u2014 live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION. No spend, impressions, clicks, CTR, or CPC is asserted.",
-      "sevenNewAds": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Live campaign/ad access is blocked; legacy campaigns were not blended and no Ads change was made.",
+      "today": "Today (2026-08-13, through 21:04 ET): NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION. No spend, impressions, clicks, CTR, or CPC is asserted.",
+      "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Live campaign/ad access is blocked; legacy campaigns were not blended and no Ads change was made.",
       "ctrCpc": "Fresh CTR/CPC for 2026-08-07 through 2026-08-13 America/New_York and 2026-07-31 through 2026-08-06 America/New_York is NOT AVAILABLE because Google Ads reporting is blocked.",
-      "leadsEmailsCalls": "Current window (2026-08-07 through 2026-08-13 America/New_York): NOT AVAILABLE \u2014 Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Prior window (2026-07-31 through 2026-08-06 America/New_York): NOT AVAILABLE \u2014 Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Booked calls: last agent-reported figure was 1 for an overlapping historical window, NOT RE-VERIFIED and not assigned to either exact window; CPL and cost per booked call are NOT YET MEASURABLE.",
-      "budgetCap": "Cap compliance is NOT DETERMINABLE \u2014 this is not a no-breach finding \u2014 because configured budgets and exact trailing-window spend could not be re-read. Last verified (NOT RE-VERIFIED) snapshot: Contract Manufacturing $20.33/day; White Label Samples $5.00/day; combined $25.33/day / $177.31 for 7 days. A breach requires trailing-window average over the live configured budget; a single day up to 2\u00d7 is normal pacing.",
+      "leadsEmailsCalls": "Current window (2026-08-07 through 2026-08-13 America/New_York): NOT AVAILABLE — Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Prior window (2026-07-31 through 2026-08-06 America/New_York): NOT AVAILABLE — Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Booked calls: last agent-reported figure was 1 for an overlapping historical window, NOT RE-VERIFIED and not assigned to either exact window; CPL and cost per booked call are NOT YET MEASURABLE.",
+      "budgetCap": "Cap compliance is NOT DETERMINABLE — this is not a no-breach finding — because configured budgets and exact trailing-window spend could not be re-read. Last verified (NOT RE-VERIFIED) snapshot: Contract Manufacturing $20.33/day; White Label Samples $5.00/day; combined $25.33/day / $177.31 for 7 days. A breach requires trailing-window average over the live configured budget; a single day up to 2× is normal pacing.",
       "winners": "No fresh winner can be determined: campaign/ad reporting is unavailable and the exact seven-ad roster is unverified.",
       "waste": "No fresh search-term/waste evidence was retrievable; no waste claim is made.",
       "optimization": "Read-only refresh: no campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
-      "suggestions": "PENDING SAM APPROVAL \u2014 READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
-      "nextExperiment": "No experiment was launched. Restore measurement and verify scope first; any change requires Sam\u2019s explicit approval.",
-      "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, inbox attribution, and tracking; then refresh this cache. Await Sam\u2019s explicit approval before any change."
+      "suggestions": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
+      "nextExperiment": "No experiment was launched. Restore measurement and verify scope first; any change requires Sam’s explicit approval.",
+      "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, inbox attribution, and tracking; then refresh this cache. Await Sam’s explicit approval before any change."
     }
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -683,6 +724,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "DTE start-service order completed Aug 1 (confirmed by DTE email). UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
+    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
   }
 }

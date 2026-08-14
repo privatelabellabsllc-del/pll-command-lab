@@ -1,10 +1,10 @@
 {
-  "id": "ans_fde77a067095",
-  "request_id": "ads-nightly-2026-08-13",
-  "ts": "2026-08-14T01:07:03-04:00",
-  "agent": "Ads Agent",
+  "id": "ans_20260814_morning",
+  "request_id": "morning-refresh-2026-08-14",
+  "ts": "2026-08-14T07:05:48-04:00",
+  "agent": "Consultant",
   "status": "completed",
-  "cache_refresh": "blocked",
-  "text": "Ads nightly (Aug 13, read-only). LIVE REPORTING BLOCKED: the Google Ads connection is on deprecated API v21 (UNSUPPORTED_VERSION), so no fresh spend / CTR / CPC / status could be pulled and the intelligence-cache refresh is BLOCKED (brief.json left as tonight's labeled partial). Last authoritative trailing-7-day spend: $156.02 of $210 cap (~$53.98 headroom, compliant). Leads: 1 new Aug 13 Shopify skincare inquiry (Melissa / Busy Bee) \u2014 UNATTRIBUTED; 0 verified paid, 0 closes. Ledger reconciled. Watch item: an 'approved PMax Initial asset refresh' is in standard review \u2014 'Initial' is a LEGACY campaign; the callback states no account changes were made this run. Action needed: reauthorize/upgrade the Google Ads connection off API v21 to restore live reporting and attribution.",
-  "spoken_text": "Sam, quick Ads update, and the headline is a plumbing problem, not a spending one. Our Google Ads connection is running on an outdated version, so tonight I couldn't pull any fresh numbers and the dashboard's ad data is frozen on its last reading. That last solid read had us around a hundred fifty-six dollars over seven days, comfortably under budget. We did get one new skincare inquiry today, though I can't tie it to the ads yet. Nothing was changed in the account. When you get a moment, reauthorize the Google Ads connection so I can see live numbers again."
+  "cache_refresh": "ok",
+  "text": "Morning brief loaded for 2026-08-14.",
+  "spoken_text": "Morning brief loaded for 2026-08-14."
 }
