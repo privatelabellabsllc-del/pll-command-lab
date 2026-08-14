@@ -455,34 +455,34 @@
     "achievableDepositsThisMonth": "Not revalidated in this refresh"
   },
   "adsAgentBrief": {
-    "timestamp": "2026-08-13T06:30:00-04:00",
-    "mode": "MORNING SAFETY CHECK — PARTIAL / CARRY-FORWARD",
+    "timestamp": "2026-08-13T21:04:37-04:00",
+    "mode": "NIGHTLY CACHE REFRESH — PARTIAL / SOURCE PULL BLOCKED",
     "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
-    "headline": "Google Ads live reporting still blocked (API v21 deprecated), re-confirmed 06:30 ET 2026-08-13. Figures carried forward from 2026-08-12 21:05 pull: current 7-day (08-06→08-12) 6 qualified inbox inquiries / 2 GCLID-verified Ads leads; dollar totals and cap % not determinable until reporting is restored. No runaway, no breach, no broken landing/form route.",
-    "recommendation": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
+    "headline": "Google Ads reporting remains blocked (API v21 deprecated), re-confirmed 21:04 ET 2026-08-13; Outlook inquiry search returned no usable result. Current/prior exact-window spend, CTR, CPC, inquiries, and attribution are not asserted. No breach is declared; cap is not determinable. No Ads setting changed.",
+    "recommendation": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
     "approvalRequired": "YES — Sam explicit approval required",
     "answers": {
-      "today": "Today (2026-08-12 through 21:05 ET): NOT AVAILABLE — live Google Ads report blocked by deprecated API v21. No spend, impressions, clicks, CTR, or CPC is asserted.",
+      "today": "Today (2026-08-13, through 21:04 ET): NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION. No spend, impressions, clicks, CTR, or CPC is asserted.",
       "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Live campaign/ad access is blocked; legacy campaigns were not blended and no Ads change was made.",
-      "ctrCpc": "Fresh CTR/CPC for 2026-08-06 through 2026-08-12 America/New_York and 2026-07-30 through 2026-08-05 America/New_York is NOT AVAILABLE because live Google Ads reporting is blocked.",
-      "leadsEmailsCalls": "2026-08-06 through 2026-08-12 America/New_York: 6 qualified inquiries, 2 GCLID-verified Ads-attributed leads, and 4 UNATTRIBUTED qualified inquiries. 2026-07-30 through 2026-08-05 America/New_York: 6 qualified, 3 GCLID-verified, 3 UNATTRIBUTED. Booked calls, CPL, and cost per booked call are NOT YET MEASURABLE for the exact windows.",
-      "budgetCap": "Cap compliance is NOT DETERMINABLE — not a 'no breach' finding — because configured budgets and exact trailing-window spend could not be re-read. Last verified (NOT RE-VERIFIED) snapshot: Contract Manufacturing $20.33/day; White Label Samples $5.00/day; combined $25.33/day, $177.31/7 days. A single day up to 2× budget is normal pacing; breach requires trailing-window average over the live configured budget.",
+      "ctrCpc": "Fresh CTR/CPC for 2026-08-07 through 2026-08-13 America/New_York and 2026-07-31 through 2026-08-06 America/New_York is NOT AVAILABLE because Google Ads reporting is blocked.",
+      "leadsEmailsCalls": "Current window (2026-08-07 through 2026-08-13 America/New_York): NOT AVAILABLE — Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Prior window (2026-07-31 through 2026-08-06 America/New_York): NOT AVAILABLE — Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Booked calls: last agent-reported figure was 1 for an overlapping historical window, NOT RE-VERIFIED and not assigned to either exact window; CPL and cost per booked call are NOT YET MEASURABLE.",
+      "budgetCap": "Cap compliance is NOT DETERMINABLE — this is not a no-breach finding — because configured budgets and exact trailing-window spend could not be re-read. Last verified (NOT RE-VERIFIED) snapshot: Contract Manufacturing $20.33/day; White Label Samples $5.00/day; combined $25.33/day / $177.31 for 7 days. A breach requires trailing-window average over the live configured budget; a single day up to 2× is normal pacing.",
       "winners": "No fresh winner can be determined: campaign/ad reporting is unavailable and the exact seven-ad roster is unverified.",
-      "waste": "No fresh search-term or waste evidence was retrievable; no waste claim is made.",
+      "waste": "No fresh search-term/waste evidence was retrievable; no waste claim is made.",
       "optimization": "Read-only refresh: no campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
-      "suggestions": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
+      "suggestions": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
       "nextExperiment": "No experiment was launched. Restore measurement and verify scope first; any change requires Sam’s explicit approval.",
-      "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, and attribution; then refresh this cache. Await Sam’s explicit approval before any change."
+      "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, inbox attribution, and tracking; then refresh this cache. Await Sam’s explicit approval before any change."
     }
   },
   "adsIntelligence": {
-    "refreshedAt": "2026-08-13T06:30:00-04:00",
-    "refreshType": "MORNING SAFETY CHECK (06:30 ET) — SOURCE PULL BLOCKED, carry-forward",
-    "dataThrough": "Inbox reviewed through 2026-08-12 through 21:05 ET; Google Ads delivery/configuration unavailable at refresh time.",
+    "refreshedAt": "2026-08-13T21:04:37-04:00",
+    "refreshType": "NIGHTLY CACHE REFRESH (21:00 ET) — SOURCE PULL BLOCKED",
+    "dataThrough": "Attempted live Google Ads and Outlook sources at 2026-08-13 21:04 ET; neither returned usable performance/lead data.",
     "windows": {
-      "today": "2026-08-12 through 21:05 ET America/New_York",
-      "current7Day": "2026-08-06 through 2026-08-12 America/New_York",
-      "prior7Day": "2026-07-30 through 2026-08-05 America/New_York"
+      "today": "2026-08-13 through 21:04 ET America/New_York",
+      "current7Day": "2026-08-07 through 2026-08-13 America/New_York",
+      "prior7Day": "2026-07-31 through 2026-08-06 America/New_York"
     },
     "scope": {
       "campaigns": [
@@ -491,62 +491,75 @@
       ],
       "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
       "legacyCampaignsExcluded": true,
-      "note": "Intended Ads Agent campaign scope only; not live-verifiable while Google Ads endpoints are blocked."
+      "note": "Intended Ads Agent campaign scope only; live verification blocked."
     },
-    "status": "PARTIAL — CARRY-FORWARD (Google Ads reporting still blocked)",
+    "status": "PARTIAL — SOURCE PULL BLOCKED",
     "googleAdsReporting": {
       "state": "BLOCKED",
-      "error": "UNSUPPORTED_VERSION — Google Ads API v21 deprecated; requests blocked",
-      "liveReprobe": "Re-probed live at 2026-08-13T06:30:00-04:00; blocker persists (INVALID_ARGUMENT / UNSUPPORTED_VERSION v21).",
-      "independentCorroboration": "Confirmed by nightly run + Ads Agent callback ads-nightly-2026-08-12.",
-      "resolution": "Requires Google Ads connection upgrade/reauth off deprecated v21. Pending Sam."
+      "error": "UNSUPPORTED_VERSION — Google Ads API v21 deprecated; requests blocked.",
+      "liveReprobe": "Re-probed live for today/current/prior windows at 2026-08-13T21:04:37-04:00; blocker persists.",
+      "resolution": "Requires Google Ads connection upgrade/reauth off deprecated v21."
     },
     "todaySoFar": {
       "totals": {
-        "status": "NOT AVAILABLE — live Google Ads report blocked by deprecated API v21",
+        "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
         "spend": null,
         "impressions": null,
         "clicks": null,
         "ctr": null,
-        "averageCpc": null,
-        "note": "No carry-forward figure is assigned to a new calendar day."
+        "averageCpc": null
       }
     },
     "performance": {
       "current7Day": {
-        "status": "NOT AVAILABLE — live Google Ads report blocked by deprecated API v21",
+        "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
         "spend": null,
         "impressions": null,
         "clicks": null,
         "ctr": null,
         "averageCpc": null,
-        "note": "No exact dollar total for 2026-08-06 through 2026-08-12 America/New_York; do not carry forward a mismatched historical window."
+        "note": "No exact totals for 2026-08-07 through 2026-08-13 America/New_York."
       },
       "prior7Day": {
-        "status": "NOT AVAILABLE — live Google Ads report blocked by deprecated API v21",
+        "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
         "spend": null,
         "impressions": null,
         "clicks": null,
         "ctr": null,
         "averageCpc": null,
-        "note": "No exact dollar total for 2026-07-30 through 2026-08-05 America/New_York; do not fabricate."
+        "note": "No exact totals for 2026-07-31 through 2026-08-06 America/New_York."
       },
       "campaigns": [
         {
           "name": "Contract Manufacturing",
           "status": "NOT RE-VERIFIED — live campaign report blocked",
           "configuredDailyBudget": "$20.33/day — last verified 2026-08-04, NOT RE-VERIFIED",
-          "totals": {
-            "status": "NOT AVAILABLE — live Google Ads report blocked by deprecated API v21",
+          "todayTotals": {
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
             "spend": null,
             "impressions": null,
             "clicks": null,
             "ctr": null,
-            "averageCpc": null,
-            "note": "Live campaign totals/status unavailable."
+            "averageCpc": null
+          },
+          "current7DayTotals": {
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "spend": null,
+            "impressions": null,
+            "clicks": null,
+            "ctr": null,
+            "averageCpc": null
+          },
+          "prior7DayTotals": {
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "spend": null,
+            "impressions": null,
+            "clicks": null,
+            "ctr": null,
+            "averageCpc": null
           },
           "adBreakdown": {
-            "status": "NOT AVAILABLE — CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
+            "status": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED; live ad report unavailable.",
             "ads": []
           }
         },
@@ -554,17 +567,32 @@
           "name": "White Label Samples",
           "status": "NOT RE-VERIFIED — live campaign report blocked",
           "configuredDailyBudget": "$5.00/day — last verified 2026-08-04, NOT RE-VERIFIED",
-          "totals": {
-            "status": "NOT AVAILABLE — live Google Ads report blocked by deprecated API v21",
+          "todayTotals": {
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
             "spend": null,
             "impressions": null,
             "clicks": null,
             "ctr": null,
-            "averageCpc": null,
-            "note": "Live campaign totals/status unavailable."
+            "averageCpc": null
+          },
+          "current7DayTotals": {
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "spend": null,
+            "impressions": null,
+            "clicks": null,
+            "ctr": null,
+            "averageCpc": null
+          },
+          "prior7DayTotals": {
+            "status": "NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION.",
+            "spend": null,
+            "impressions": null,
+            "clicks": null,
+            "ctr": null,
+            "averageCpc": null
           },
           "adBreakdown": {
-            "status": "NOT AVAILABLE — CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
+            "status": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED; live ad report unavailable.",
             "ads": []
           }
         }
@@ -572,34 +600,34 @@
     },
     "leadsAndBookings": {
       "current7Day": {
-        "qualifiedInquiries": 6,
-        "verifiedAdsAttributedLeads": 2,
-        "unattributedQualifiedInquiries": 4,
-        "attributionStatus": "2 GCLID-verified Ads-attributed; 4 qualified inquiries UNATTRIBUTED. Six genuine manufacturing inquiries after deduplicating the same prospective buyer's duplicate form submission; two had GCLID. Vendor solicitations, consumer/no-substance entries, and out-of-scope color-cosmetics inquiry excluded.",
-        "bookedCalls": "NOT YET MEASURABLE for 2026-08-06 through 2026-08-12 America/New_York. Agent-reported 1 booked call for an overlapping historical window; calendar/CRM unavailable in this run, so it is NOT RE-VERIFIED and is not assigned to either exact refresh window.",
-        "cpl": "NOT YET MEASURABLE — exact-window spend is unavailable and booked/lead attribution is not fully verified.",
-        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM access is out of scope and exact-window spend is unavailable."
+        "qualifiedInquiries": "NOT AVAILABLE — inbox search source pull failed",
+        "verifiedAdsAttributedLeads": "NOT YET MEASURABLE",
+        "unattributedQualifiedInquiries": "NOT YET MEASURABLE",
+        "attributionStatus": "No current-window inquiry count or attribution claim is made; Outlook search returned no usable result on two attempts.",
+        "bookedCalls": "Last agent-reported 1 booked call for an overlapping historical window — NOT RE-VERIFIED and not assigned to this exact window; calendar/CRM unavailable.",
+        "cpl": "NOT YET MEASURABLE — spend unavailable; inquiry and attribution source pull failed.",
+        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM unavailable and spend unavailable."
       },
       "prior7Day": {
-        "qualifiedInquiries": 6,
-        "verifiedAdsAttributedLeads": 3,
-        "unattributedQualifiedInquiries": 3,
-        "attributionStatus": "3 GCLID-verified Ads-attributed; 3 qualified inquiries UNATTRIBUTED. Six genuine manufacturing inquiries; three had GCLID. One no-substance form entry excluded.",
-        "bookedCalls": "NOT YET MEASURABLE for 2026-07-30 through 2026-08-05 America/New_York. Agent-reported 1 booked call for an overlapping historical window; calendar/CRM unavailable in this run, so it is NOT RE-VERIFIED and is not assigned to either exact refresh window.",
-        "cpl": "NOT YET MEASURABLE — exact-window spend is unavailable and booked/lead attribution is not fully verified.",
-        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM access is out of scope and exact-window spend is unavailable."
+        "qualifiedInquiries": "NOT AVAILABLE — inbox search source pull failed",
+        "verifiedAdsAttributedLeads": "NOT YET MEASURABLE",
+        "unattributedQualifiedInquiries": "NOT YET MEASURABLE",
+        "attributionStatus": "No prior-window inquiry count or attribution claim is made; Outlook search returned no usable result on two attempts.",
+        "bookedCalls": "Last agent-reported 1 booked call for an overlapping historical window — NOT RE-VERIFIED and not assigned to this exact window; calendar/CRM unavailable.",
+        "cpl": "NOT YET MEASURABLE — spend unavailable; inquiry and attribution source pull failed.",
+        "costPerBookedCall": "NOT YET MEASURABLE — calendar/CRM unavailable and spend unavailable."
       }
     },
     "capCompliance": {
-      "status": "NOT DETERMINABLE — LIVE CONFIGURED BUDGETS AND EXACT TRAILING SPEND UNAVAILABLE",
+      "status": "NOT DETERMINABLE — configured budgets could not be re-read because the Google Ads report endpoint is blocked.",
       "breachDeclared": false,
       "verdict": "No breach is declared; this is not a verified no-breach finding.",
-      "percentOfBudgetUsed": "NOT AVAILABLE — exact trailing spend and live configured budget unavailable.",
-      "method": "Breach test = trailing-window average versus configured daily budget. Never use a remembered round cap; a single day up to 2× daily budget is normal pacing.",
+      "percentOfBudgetUsed": "NOT AVAILABLE — exact trailing spend and live configured budgets unavailable.",
+      "method": "Breach test = trailing-window average versus live configured daily budget. A single day up to 2× daily budget is normal pacing.",
       "lastVerifiedBudgetSnapshot": {
         "asOf": "2026-08-04T21:00:00-04:00",
         "contractManufacturing": 20.33,
-        "whiteLabelSamples": 5,
+        "whiteLabelSamples": 5.0,
         "total": 25.33,
         "sevenDayTotal": 177.31,
         "note": "NOT RE-VERIFIED in this refresh."
@@ -608,50 +636,45 @@
     "funnelHealth": {
       "status": "WATCH — MEASUREMENT BLOCKED",
       "notes": [
-        "google_ads-create-report and google_ads-list-campaigns returned UNSUPPORTED_VERSION: Google Ads API v21 is deprecated. Requests to this version will be blocked.",
-        "No form failure evidenced: fresh contact-form inquiries arrived. Google Ads reporting/configuration access is broken; complete Ads delivery and budget verification is unavailable.",
-        "Conversion and booked-call measurement is incomplete; exact-window CPL and cost per booked call are not measurable."
+        "Google Ads API report endpoint is blocked on deprecated v21.",
+        "Outlook lead-inbox search returned no usable result on two attempts.",
+        "No landing-page or form route was tested in this bounded read-only refresh; no break is asserted."
       ]
     },
     "searchTerms": {
-      "status": "NOT AVAILABLE — reporting blocked",
+      "status": "NOT AVAILABLE — Google Ads reporting blocked",
       "wasteEvidence": "No fresh search-term evidence; no waste claim made."
     },
-    "bestItem": "2 genuine GCLID-verified Ads-attributed manufacturing inquiries in the current window; lead-quality/closing outcome is not yet measurable.",
-    "worstItem": "Google Ads reporting/configuration route is blocked by deprecated API v21; no performance or cap conclusion can be responsibly drawn.",
-    "watchItem": "Restore reporting access, then validate scope/roster, live budgets, delivery, search terms, and attribution before acting.",
+    "bestItem": "No fresh winner can be determined because campaign/ad reporting and inquiry-source pull were unavailable.",
+    "worstItem": "Google Ads reporting/configuration route is blocked by deprecated API v21; cap and performance conclusions cannot be responsibly drawn.",
+    "watchItem": "Restore both reporting and inbox-query access, then validate scope/roster, live budgets, delivery, search terms, inquiry attribution, and tracking before acting.",
     "recommendation": {
-      "text": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
+      "text": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
       "approvalRequired": true,
       "status": "PENDING SAM APPROVAL",
       "action": "READ-ONLY RECOMMENDATION ONLY",
-      "evidence": "Both live Google Ads endpoints are blocked; exact campaign/ad scope, configured budgets, delivery, and search-term evidence cannot be verified."
+      "evidence": "Google Ads reports returned UNSUPPORTED_VERSION; Outlook inbox-search source pull returned no usable result."
     },
     "approvalRequired": true,
     "readOnly": true,
     "anomalies": [
       "GOOGLE ADS REPORTING BLOCKED — UNSUPPORTED_VERSION: Google Ads API v21 is deprecated.",
-      "GOOGLE ADS CAMPAIGN LIST BLOCKED — API v21 deprecated.",
+      "OUTLOOK LEAD-INBOX SEARCH — no usable result returned on two attempts.",
       "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
-      "Configured budgets and exact spend not re-read; cap verdict is not determinable.",
-      "No form failure evidenced; fresh form inquiries arrived, but Ads reporting/tracking visibility remains broken."
+      "Configured budgets, exact spend, and cap percentage not re-read; cap verdict not determinable."
     ],
     "preparedAnswers": {
-      "today": "Today (2026-08-12 through 21:05 ET): NOT AVAILABLE — live Google Ads report blocked by deprecated API v21. No spend, impressions, clicks, CTR, or CPC is asserted.",
+      "today": "Today (2026-08-13, through 21:04 ET): NOT AVAILABLE — live Google Ads reporting blocked: Google Ads API v21 UNSUPPORTED_VERSION. No spend, impressions, clicks, CTR, or CPC is asserted.",
       "sevenNewAds": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Live campaign/ad access is blocked; legacy campaigns were not blended and no Ads change was made.",
-      "ctrCpc": "Fresh CTR/CPC for 2026-08-06 through 2026-08-12 America/New_York and 2026-07-30 through 2026-08-05 America/New_York is NOT AVAILABLE because live Google Ads reporting is blocked.",
-      "leadsEmailsCalls": "2026-08-06 through 2026-08-12 America/New_York: 6 qualified inquiries, 2 GCLID-verified Ads-attributed leads, and 4 UNATTRIBUTED qualified inquiries. 2026-07-30 through 2026-08-05 America/New_York: 6 qualified, 3 GCLID-verified, 3 UNATTRIBUTED. Booked calls, CPL, and cost per booked call are NOT YET MEASURABLE for the exact windows.",
-      "budgetCap": "Cap compliance is NOT DETERMINABLE — not a 'no breach' finding — because configured budgets and exact trailing-window spend could not be re-read. Last verified (NOT RE-VERIFIED) snapshot: Contract Manufacturing $20.33/day; White Label Samples $5.00/day; combined $25.33/day, $177.31/7 days. A single day up to 2× budget is normal pacing; breach requires trailing-window average over the live configured budget.",
+      "ctrCpc": "Fresh CTR/CPC for 2026-08-07 through 2026-08-13 America/New_York and 2026-07-31 through 2026-08-06 America/New_York is NOT AVAILABLE because Google Ads reporting is blocked.",
+      "leadsEmailsCalls": "Current window (2026-08-07 through 2026-08-13 America/New_York): NOT AVAILABLE — Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Prior window (2026-07-31 through 2026-08-06 America/New_York): NOT AVAILABLE — Outlook inbox search returned no usable result on two attempts; genuine-inquiry review was not re-verified. Verified Ads-attributed leads: NOT YET MEASURABLE. Booked calls: last agent-reported figure was 1 for an overlapping historical window, NOT RE-VERIFIED and not assigned to either exact window; CPL and cost per booked call are NOT YET MEASURABLE.",
+      "budgetCap": "Cap compliance is NOT DETERMINABLE — this is not a no-breach finding — because configured budgets and exact trailing-window spend could not be re-read. Last verified (NOT RE-VERIFIED) snapshot: Contract Manufacturing $20.33/day; White Label Samples $5.00/day; combined $25.33/day / $177.31 for 7 days. A breach requires trailing-window average over the live configured budget; a single day up to 2× is normal pacing.",
       "winners": "No fresh winner can be determined: campaign/ad reporting is unavailable and the exact seven-ad roster is unverified.",
-      "waste": "No fresh search-term or waste evidence was retrievable; no waste claim is made.",
+      "waste": "No fresh search-term/waste evidence was retrievable; no waste claim is made.",
       "optimization": "Read-only refresh: no campaigns, ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend were changed.",
-      "suggestions": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
+      "suggestions": "PENDING SAM APPROVAL — READ-ONLY ONLY: restore the Google Ads reporting route, then validate campaign scope, exact seven-ad roster, configured budgets, delivery, search terms, and attribution before considering any performance change. Do not change ads, bids, budgets, keywords, targeting, creative, landing pages, forms, or spend.",
       "nextExperiment": "No experiment was launched. Restore measurement and verify scope first; any change requires Sam’s explicit approval.",
-      "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, and attribution; then refresh this cache. Await Sam’s explicit approval before any change."
-    },
-    "carryForward": {
-      "note": "All dollar figures, campaign scope, budgets, and cap % are CARRIED FORWARD from the last verified pull and are NOT re-verified this morning because live reporting is blocked.",
-      "lastVerifiedPull": "2026-08-12T21:05:00-04:00"
+      "whatAdsAgentShouldDo": "Remain read-only. Restore/validate reporting, campaign status, configured budgets, the exact seven-ad roster, search terms, inbox attribution, and tracking; then refresh this cache. Await Sam’s explicit approval before any change."
     }
   },
   "facilityStatus": {
