@@ -1,10 +1,5 @@
 {
-  "id": "ans-1786755982",
-  "request_id": "ads-nightly-2026-08-14",
-  "ts": "2026-08-14T21:04:00-04:00",
-  "agent": "PLL Consultant",
-  "status": "completed",
-  "approval_required": true,
-  "text": "ADS AGENT CALLBACK - request ads-nightly-2026-08-14 (needs your yes/no)\n\nRECOMMENDATION (read-only until you approve): Revert PLL-Search-ContractMfg-2026 from Maximize Conversions to Manual CPC. $0 budget change. Reason: it is bidding toward a conversion signal we are not reliably tracking, so it is optimizing blind.\n\nCONSULTANT-VERIFIED (independent 9:00pm pull, new ads only):\n- Today (combined): $34.27 = ContractMfg $24.28 / Samples $9.99. That is 135% of the configured $25.33/day combined budget - NORMAL Google daily pacing (up to 2x), NOT a cap breach. Ads Agent's 'over $30 by $4.27' is measured against a stale $30 number and is incorrect.\n- Current 7d (Aug 8-14): $164.98 combined; 49 clicks; 16.23% CTR; $3.37 CPC = 93.05% of the configured 7-day budget -> UNDER cap.\n- Prior 7d (Aug 1-7): $209.20 combined.\n- Leads current 7d: 14 qualified inquiries, only 1 verified Ads-attributed (GCLID); 13 UNATTRIBUTED. Prior 7d: 2 inquiries, 0 attributed. Attribution/tracking remains the real gap.\n- Watch-only: ContractMfg alone ran 105.76% of its own line budget this week, offset inside the combined cap - normal monthly true-up, not an overspend.\n\nCACHE: this callback carried no structured ads_intelligence object, so brief.json was NOT refreshed from it. The verified nightly cache (timestamp 21:00) is already live.\n\nYOUR CALL: reply YES to revert ContractMfg to Manual CPC, or NO to hold.",
-  "spoken_text": "Sam, quick one on the new ads. The Ads Agent wants to switch the Contract Manufacturing campaign off automated bidding and back to manual, with no budget change, because it is bidding toward a conversion signal we are not reliably tracking, so it is flying blind. I pulled the numbers myself to check. Spend is healthy, about a hundred sixty-five dollars over the last seven days, which is under budget, and today's spend is normal Google pacing, not an overspend, despite what the Ads Agent flagged. We got fourteen inquiries this week but only one is provably from ads, so attribution is still our real gap. My recommendation is yes, make the switch. It is low risk and it stops the blind bidding. Just reply yes or no."
+  "id": "de648a99-e662-41f5-8b79-1e1e0a85269a",
+  "ts": "2026-08-15T11:06:31.643Z",
+  "text": "Morning brief loaded for 2026-08-15."
 }
