@@ -1,59 +1,42 @@
 {
-  "date": "2026-08-15",
-  "ts": "2026-08-15T11:06:31.643Z",
+  "date": "2026-08-17",
+  "ts": "2026-08-17T11:04:55.732Z",
   "brief": [
     {
-      "t": "Terra Lotus, seventy-eight thousand five hundred eighty dollars, is still our biggest lever and Aidan has been silent on the volume pricing all week. My WhatsApp is logged out right now, so I can't post the escalation or see if he replied \u2014 reconnecting it is the one thing that unblocks it.",
+      "t": "Two sessions are down — WhatsApp and the CRM login. Scan the WhatsApp code I have up and restore the CRM session. Everything else is blocked until those are back.",
       "hot": true
     },
     {
-      "t": "The Kenna deals are still one confirmation from you: tell me the Atlas Eternal formula came through Wednesday and I log Atlas into production, and say go and I build the full Milk of Venus thousand-unit quote Aidan already has the fill size and price target for.",
+      "t": "Atlas Eternal is twenty-six thousand five hundred, deposit already paid. Tell me the formula came through and packaging is locked and I move it into production and set the thirteen-thousand-two-fifty balance follow-up.",
       "hot": true
     },
     {
-      "t": "Susan at Salty Pup pinged you last night asking for an update on the dog rinse \u2014 sixteen ounce bottles, four hundred labels for the first batch. She's waiting on the next step from you.",
+      "t": "Terra Lotus is seventy-eight thousand five hundred eighty, Aidan's lane. He still owes the revised volume pricing. The moment WhatsApp is back I push him again, and I escalate to you if he's two business days silent.",
       "hot": true
     },
     {
-      "t": "Laura's team approved the Miron violet-glass quote and wants to move forward and pay by card \u2014 make sure Aidan gets that order placed so the packaging doesn't hold up the project.",
+      "t": "The ads are bleeding — about twenty-nine dollars a day against a thirty-dollar cap, bidding blind with no conversion tracking. One word from you and I flip both campaigns to manual.",
+      "hot": true
+    },
+    {
+      "t": "A Spanish-speaking website lead wants a hundred one-point-seven ounce units of a custom retinol, hyaluronic, collagen and niacinamide cream. You already replied — it needs a price to close the loop.",
       "hot": false
     },
     {
-      "t": "Weekend inbound: Mohammed Al Aamri of Dhofar Frankincense in Oman came in through the website, and Monday is filling up \u2014 Tesfa at Bahrzaf on the shampoo and conditioner Monday, plus Darlene Saintil's luxury hand-care discovery Wednesday.",
+      "t": "Nikkie is working a big batch of website brand-development inquiries this weekend, including one that came straight from ChatGPT. Good top of funnel — I'm watching for booked calls.",
       "hot": false
     },
     {
-      "t": "Two sessions are logged out and blocking me: WhatsApp for the client sweep and Terra Lotus, and the CRM for developer-fix verification and the purchasing knowledge base. Reconnecting both clears the most work fastest.",
-      "hot": true
-    },
-    {
-      "t": "Ads are still one word from you \u2014 say revert ads to manual and I flip both campaigns off Maximize Conversions. The cache refreshed clean this morning and the Google Ads connection is live.",
+      "t": "The Production Pipeline CRM build is approved and queued. Say go and I execute it.",
       "hot": false
     }
   ],
   "next": [
-    "Reconnect WhatsApp and the CRM session \u2014 both are logged out and blocking the client sweep, Terra Lotus, and fix verification",
-    "Tell me the Atlas formula came through Wednesday and say go on the Milk of Venus quote \u2014 that moves both Kenna deals",
-    "Reply to Susan at Salty Pup with the dog-rinse next step",
-    "One word on the ads: revert ads to manual"
+    "Scan the WhatsApp code that's up and restore the CRM login — that unblocks the client sweep, Terra Lotus, and every fix verification.",
+    "Tell me the Atlas formula came through and packaging is locked — I move it to production and set the $13,250 balance follow-up.",
+    "One word on the ads: revert ads to manual."
   ],
   "kb": [
-    {
-      "keys": [
-        "kenna",
-        "kenna meeting",
-        "formula",
-        "chemist",
-        "atlas formula",
-        "milk of venus",
-        "gate",
-        "kenna po",
-        "1000 units",
-        "new po",
-        "quote"
-      ],
-      "a": "Milk of Venus is Kenna's thousand-unit order: one hundred eighteen milliliter fill, price target six to eight dollars per unit. Aidan and Kenna are actively working the numbers by email. Next step is the full quote \u2014 ingredients plus packaging, labor, and overhead \u2014 once Sam gives the go."
-    },
     {
       "keys": [
         "sam",
@@ -62,7 +45,16 @@
         "today",
         "priority"
       ],
-      "a": "Sam's single lane today: reconnect WhatsApp and the CRM session (both logged out), confirm the Atlas formula from Wednesday's Kenna meeting and green-light the Milk of Venus quote, and reply to Susan at Salty Pup. Terra Lotus stays Aidan's lane, silent all week."
+      "a": "Sam's lane starts with scanning the WhatsApp code and restoring the CRM login; both sessions are logged out. Then confirm the Atlas formula and packaging, decide on the manual-ads revert, and price the Spanish-language custom-cream inquiry. Terra Lotus remains Aidan's customer-communication lane."
+    },
+    {
+      "keys": [
+        "aidan",
+        "aidan status",
+        "aidan accountability",
+        "pricing revision"
+      ],
+      "a": "Aidan owns all Terra Lotus customer communication and owes the revised higher-volume, lower-per-unit pricing. Once WhatsApp is restored, he needs a concrete update that day; two business days of silence triggers escalation to Sam. He is not authorized to leave this unanswered."
     },
     {
       "keys": [
@@ -70,10 +62,9 @@
         "terra",
         "lotus",
         "78580",
-        "volume pricing",
-        "aidan"
+        "volume pricing"
       ],
-      "a": "Terra Lotus is our biggest deal at seventy-eight thousand five hundred eighty dollars, fifty-two percent of the monthly target. Aidan owns the volume-pricing conversation and has been silent all week. WhatsApp is logged out, so the escalation and reply-check are blocked until it's reconnected. Deposit is thirty-nine thousand two hundred ninety dollars on signing."
+      "a": "Terra Lotus is a $78,580 negotiation owned by Aidan. The customer asked for a lower unit price at higher quantities after receiving tier pricing, so the next move is Aidan's revised-volume response. WhatsApp being logged out blocks the immediate nudge, not the deal ownership."
     },
     {
       "keys": [
@@ -82,30 +73,136 @@
         "26500",
         "ryne bell",
         "production",
-        "deposit"
+        "deposit",
+        "kenna formula"
       ],
-      "a": "Atlas Eternal is twenty-six thousand five hundred dollars for five thousand units. The thirteen thousand two hundred fifty dollar deposit is paid; the balance is due on completion. Production kicks off the moment Sam confirms the formula is in hand from Wednesday's Kenna meeting \u2014 no confirmation has come in yet."
+      "a": "Atlas Eternal is $26,500 and its $13,250 deposit is paid. The formula must be confirmed received and packaging locked before production begins; then set the $13,250 completion-balance follow-up. The previous contract/docs question is moot because payment landed."
+    },
+    {
+      "keys": [
+        "oreka",
+        "nadia",
+        "8555",
+        "peptide cream",
+        "closed"
+      ],
+      "a": "Oreka is an $8,555 closed deal already in production. Laura owns customer communication. It is a production follow-through item, not a new-sales chase."
     },
     {
       "keys": [
         "pure good",
-        "329k",
         "pure",
-        "good"
+        "good",
+        "329k",
+        "kenna meeting"
       ],
-      "a": "Pure Good is roughly three hundred twenty-nine thousand dollars and advances off the same Kenna relationship. With the Kenna meeting now done, the next step is to schedule Pure Good's follow-up and quote."
+      "a": "Pure Good is roughly a $329,000 opportunity tied to the same Kenna meeting gate. It advances when the Kenna follow-up is resolved and a next commercial step is scheduled. Do not present it as closed or production-ready."
+    },
+    {
+      "keys": [
+        "spanish lead",
+        "spanish speaking",
+        "retinol",
+        "hyaluronic",
+        "collagen",
+        "niacinamide",
+        "100",
+        "1.7 ounce",
+        "custom cream"
+      ],
+      "a": "A Spanish-speaking website lead wants 100 units of a 1.7-ounce custom cream with retinol, hyaluronic acid, collagen, and niacinamide. Sam already replied, and the open loop is a price. Provide pricing to close the conversation without overstating a commitment."
+    },
+    {
+      "keys": [
+        "nikkie",
+        "website leads",
+        "brand development",
+        "chatgpt",
+        "inquiries"
+      ],
+      "a": "Nikkie is actively handling a large weekend batch of website brand-development inquiries, including one sourced directly from ChatGPT. This is healthy top-of-funnel activity. Watch for qualification and booked calls before assigning revenue value."
+    },
+    {
+      "keys": [
+        "production pipeline",
+        "crm build",
+        "flowchart",
+        "gmp sign-off"
+      ],
+      "a": "The Production Pipeline CRM build is approved and queued for execution. It should be executed only when Sam says go. The CRM session is currently logged out, so live verification remains blocked until Sam restores it."
+    },
+    {
+      "keys": [
+        "whatsapp",
+        "crm",
+        "sessions",
+        "login",
+        "logged out"
+      ],
+      "a": "WhatsApp and the CRM are both logged out today. Restoring WhatsApp unblocks the client sweep and Terra Lotus follow-up; restoring CRM access unblocks fix verification and operational lookup. Neither session should be described as connected until reauthenticated."
+    },
+    {
+      "keys": [
+        "ads",
+        "google ads",
+        "manual cpc",
+        "maximize conversions",
+        "revert",
+        "spend"
+      ],
+      "a": "The ads are spending about $29 a day against the approved $30 daily cap, with no conversion tracking and both scoped campaigns still bidding blind. The standing recommendation is to revert both campaigns to Manual CPC. No change occurs without Sam's explicit approval."
+    },
+    {
+      "keys": [
+        "laura",
+        "laura assistant",
+        "oreka comms",
+        "nda",
+        "bottle printing"
+      ],
+      "a": "Laura owns Oreka customer communications, white/private-label bottle-printing coordination, and NDAs. Her simpler dedicated assistant is built, but her email, WhatsApp, and CRM connections still await Sam's setup. Keep her focused on active customer operations and documentation."
+    },
+    {
+      "keys": [
+        "ronald",
+        "ronald costing",
+        "bom",
+        "ingredients cost",
+        "quote inputs"
+      ],
+      "a": "Ronald supplies formula and BOM cost inputs where needed. His costing work must include the requested inputs before any quote is issued, and no quote should rely on a BOM alone. There is no new Ronald completion recorded in this refresh."
+    },
+    {
+      "keys": [
+        "darlene saintil",
+        "darlene",
+        "hand lotion",
+        "hand wash",
+        "discovery call",
+        "august 19"
+      ],
+      "a": "Darlene Saintil has a luxury hand lotion and hand wash discovery meeting scheduled for Wednesday, August 19 at 4 PM. The concept is clean, sensitive-skin-friendly hand care with a defined budget. Prepare the discovery context; no outcome is recorded yet."
+    },
+    {
+      "keys": [
+        "tesfa",
+        "tesfatsion",
+        "bahrzaf",
+        "shampoo",
+        "conditioner",
+        "meeting"
+      ],
+      "a": "Tesfa Shiferaw at Bahrzaf has a shampoo and conditioner project and was scheduled to speak with Sam on Monday. Treat it as an active discovery conversation. No meeting result has been recorded yet."
     },
     {
       "keys": [
         "ashley harmon",
         "ashley",
         "apothik",
-        "apothikskin",
-        "postbiotic",
-        "moisturizer",
-        "balm"
+        "apothik skin",
+        "postbiotic"
       ],
-      "a": "Ashley Harmon at Apothik Skin replied this morning: she's booked tomorrow and will send call times for next week for the postbiotic moisturizer and balm project, one to three thousand units per SKU. Still warm \u2014 just a short delay before it's on the calendar."
+      "a": "Ashley Harmon at Apothik Skin remains a warm prospect for a postbiotic moisturizer and balm project at one to three thousand units per SKU. She had said she would send next-week call times. Keep the lead warm and wait for a scheduled time rather than claiming it is booked."
     },
     {
       "keys": [
@@ -115,7 +212,7 @@
         "ritual oil",
         "prototypes"
       ],
-      "a": "Tasnim Broud at AYYUR is deciding on packaging for the ritual oil: a thirty milliliter frosted glass bottle with a gold dropper and cap. She doesn't have a vendor locked in and is open to PLL sourcing it. Keep moving her toward the three prototypes at two hundred fifty, five hundred, and a thousand units."
+      "a": "Tasnim Broud at AYYUR is considering a ritual-oil package with a 30 mL frosted glass bottle and gold dropper/cap. She is open to PLL sourcing and has not selected a vendor. The commercial path is to move toward prototype quantities once packaging direction is confirmed."
     },
     {
       "keys": [
@@ -126,417 +223,221 @@
         "body lotion",
         "tubes"
       ],
-      "a": "Nabil Saleh at CN1 Fragrance still wants four thousand-plus eight-ounce tubes of scented body lotion with his own fragrance oil supplied. No new reply in the sweep \u2014 still open to qualify formula, packaging, and timeline toward a quote."
-    },
-    {
-      "keys": [
-        "raul guardado",
-        "raul",
-        "struck box",
-        "printing",
-        "status"
-      ],
-      "a": "Raul Guardado approved the final Struck Box version-five printing and asked for a status update. Laura already replied yesterday: we're waiting on a proof from the printer and will send it the moment it arrives. No action needed from Sam right now."
-    },
-    {
-      "keys": [
-        "charles thompson",
-        "charles",
-        "brighten path",
-        "missing samples",
-        "beard balm",
-        "body wash"
-      ],
-      "a": "Charles Thompson at Brighten Path flagged that his beard balm and body wash samples never arrived. Carryover customer-care item \u2014 chase the shipment so it doesn't sour a live prospect."
-    },
-    {
-      "keys": [
-        "ads",
-        "google ads",
-        "manual cpc",
-        "maximize conversions",
-        "revert",
-        "spend",
-        "connection"
-      ],
-      "a": "Both net-new campaigns are on Maximize Conversions with no conversion tracking. One word from Sam, revert ads to manual, and the Consultant has the Ads Agent flip both to Manual CPC. The Ads cache refreshed clean this morning and the Google Ads connection is live; the weekly revert recommendation is preserved pending Sam's yes."
-    },
-    {
-      "keys": [
-        "production workflow",
-        "flowchart",
-        "role cards",
-        "crm pipeline"
-      ],
-      "a": "The production workflow is finalized: Sam approved the node-and-arrow flow map and a GMP sign-off page was added, now a nine-page package. It's done \u2014 say go and the Consultant builds the live CRM Production Pipeline."
-    },
-    {
-      "keys": [
-        "oreka",
-        "nadia",
-        "8555",
-        "peptide cream",
-        "closed"
-      ],
-      "a": "Oreka, Nadia Dupuis, is closed and in production \u2014 eight thousand five hundred fifty-five dollars paid, thousand-unit peptide cream. Laura owns customer communication. No action needed."
-    },
-    {
-      "keys": [
-        "crm",
-        "session",
-        "pll_tasklet_consultant",
-        "purchasing",
-        "verification"
-      ],
-      "a": "The CRM browser session is logged out, which blocks live verification of developer fixes, Shopify sync, and the purchasing knowledge-base extraction. Sam logging back in as pll_tasklet_consultant unblocks all of it. No CRM developer replies came in overnight."
-    },
-    {
-      "keys": [
-        "victor",
-        "armendarez",
-        "curl defining cream",
-        "edge gel",
-        "costing",
-        "ronald"
-      ],
-      "a": "Victor Armendarez needs costing on two thousand units each of a curl-defining cream and an edge gel. It's overdue on Ronald's cost inputs \u2014 ingredients plus packaging, labor, and overhead before any quote goes out."
-    },
-    {
-      "keys": [
-        "opensend",
-        "outbound",
-        "domains",
-        "instantly",
-        "smartlead",
-        "icp"
-      ],
-      "a": "The OpenSend outbound engine is designed and waiting on Sam: buy three lookalike domains and a sending platform, create the separate Outbound Agent with its own login and memory off, and provide a booking calendar URL. Cold email only, never on the main domain; no cold texting."
-    },
-    {
-      "keys": [
-        "aidan command lab",
-        "command lab",
-        "whatsapp",
-        "7am",
-        "brief feed"
-      ],
-      "a": "Two sessions are logged out: the Consultant's WhatsApp (blocking the client sweep and the Terra Lotus escalation) and the CRM (blocking developer-fix verification, Shopify sync, and the purchasing knowledge base). Reconnecting both clears the most work fastest. Aidan's own WhatsApp and CRM are separately signed out on his machine."
-    },
-    {
-      "keys": [
-        "melissa hilger",
-        "busy bee",
-        "busy bee vitality",
-        "new lead",
-        "skincare inquiry"
-      ],
-      "a": "Melissa Hilger of Busy Bee Vitality submitted a new skincare inquiry through the website contact form overnight (August thirteenth, 9pm). It's unqualified and not yet tied to any ad campaign \u2014 worth a quick follow-up today to see what she needs."
-    },
-    {
-      "keys": [
-        "facility",
-        "farmington hills",
-        "24600",
-        "inspection",
-        "occupancy",
-        "fire"
-      ],
-      "a": "The Farmington Hills facility passed its final re-occupancy building and fire inspections on August thirteenth \u2014 both approved. UPS, USPS, and Shopify address changes and test-label/order paths in each system still remain pending; no new evidence yet that those were completed."
-    },
-    {
-      "keys": [
-        "susan",
-        "susan trudeau",
-        "salty pup",
-        "dog rinse",
-        "dog shampoo",
-        "after-beach"
-      ],
-      "a": "Susan Trudeau at Salty Pup pinged Sam last night asking for an update on the after-beach dog rinse \u2014 sixteen ounce bottles, four hundred labels for the first batch. She's waiting on the next step; owes her a reply to keep it moving."
-    },
-    {
-      "keys": [
-        "miron",
-        "violet glass",
-        "violetglass",
-        "brian morgan",
-        "laura kilroy",
-        "packaging order"
-      ],
-      "a": "Laura's team approved the Miron violet-glass quote and wants to move forward and pay by card. Aidan/purchasing should place the order so the packaging doesn't hold up the project."
-    },
-    {
-      "keys": [
-        "mohammed al aamri",
-        "dhofar",
-        "dhofar frankincense",
-        "oman",
-        "frankincense"
-      ],
-      "a": "Mohammed Al Aamri of Dhofar Frankincense in Oman came in through the website contact form on August fourteenth \u2014 a new international B2B inquiry. Unqualified so far; worth a qualifying reply."
-    },
-    {
-      "keys": [
-        "darlene saintil",
-        "darlene",
-        "hand lotion",
-        "hand wash",
-        "luxury skin care"
-      ],
-      "a": "Darlene Saintil booked a PLL discovery meeting for Wednesday August nineteenth at 4pm \u2014 a luxury hand lotion and hand wash line, clean sensitive-skin-friendly scent, with an allocated budget. Warm lead via Laura."
-    },
-    {
-      "keys": [
-        "tesfa",
-        "tesfatsion",
-        "shiferaw",
-        "bahrzaf",
-        "shampoo",
-        "conditioner"
-      ],
-      "a": "Tesfa Shiferaw at Bahrzaf has a shampoo and conditioner project; Sam is set to talk with him Monday. Discovery call booked."
+      "a": "Nabil Saleh at CN1 Fragrance is interested in 4,000-plus eight-ounce tubes of scented body lotion using his own fragrance oil. The next qualification points are formula, tube packaging, and timing. No new response is recorded in this refresh."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Reconnect WhatsApp + CRM sessions",
-      "why": "Both logged out. WhatsApp blocks the client sweep and the Terra Lotus ($78,580) escalation; CRM blocks developer-fix verification, Shopify sync, and the purchasing knowledge base. Fastest single unblock.",
+      "title": "Restore WhatsApp and CRM sessions",
+      "why": "Both are logged out. This unblocks the client sweep, Terra Lotus escalation, and CRM fix verification.",
       "owner": "Sam",
       "due": "Today",
       "priority": "critical",
-      "revenue": "Unblocks $78,580 + ops",
-      "status": "BOTH SESSIONS LOGGED OUT"
+      "revenue": "Unblocks $78,580 + operations",
+      "status": "BLOCKED ON LOGIN"
     },
     {
       "rank": 2,
-      "title": "Kenna deals \u2014 confirm Atlas formula + go on Milk of Venus quote",
-      "why": "Atlas Eternal $26,500 (deposit $13,250 PAID) kicks into production on formula confirm; Milk of Venus 1,000-unit PO (118mL, $6\u2013$8/unit) is ready to quote on Sam's go. Pure Good (~$329K) advances off the same relationship.",
-      "owner": "Sam",
+      "title": "Move Atlas Eternal into production",
+      "why": "$13,250 deposit is paid on the $26,500 deal. Formula receipt and packaging lock are the remaining production gate.",
+      "owner": "Sam / Production",
       "due": "Today",
       "priority": "critical",
-      "revenue": "$26,500 + new PO",
-      "status": "AWAITING SAM CONFIRM + GO"
+      "revenue": "$26,500",
+      "status": "DEPOSIT PAID — PRODUCTION GATED"
     },
     {
       "rank": 3,
-      "title": "Terra Lotus \u2014 Aidan volume pricing (Aidan's lane)",
-      "why": "$78,580, 52% of the monthly target. Aidan silent all week; needs re-nudge/escalation once WhatsApp is back. Deposit $39,290 on signing.",
+      "title": "Get Terra Lotus revised volume pricing",
+      "why": "Aidan owns the $78,580 negotiation and owes the revised higher-volume price.",
       "owner": "Aidan",
       "due": "Today",
       "priority": "critical",
       "revenue": "$78,580",
-      "status": "SILENT ALL WEEK \u2014 ESCALATE ON WHATSAPP RECONNECT"
+      "status": "AWAITING AIDAN — NUDGE AFTER WHATSAPP RESTORE"
     },
     {
       "rank": 4,
-      "title": "Susan / Salty Pup \u2014 reply on dog rinse",
-      "why": "Customer pinged 'any update?' Aug 14. 16oz bottles, 400 labels first batch. Owes next step to keep it moving.",
-      "owner": "Sam",
+      "title": "Price the Spanish-language custom cream lead",
+      "why": "Sam already replied to the 100-unit inquiry; pricing is the open close-the-loop item.",
+      "owner": "Sam / Sales",
       "due": "Today",
       "priority": "high",
-      "revenue": "Active customer",
-      "status": "CUSTOMER WAITING"
+      "revenue": "New lead",
+      "status": "AWAITING PRICE"
     },
     {
       "rank": 5,
-      "title": "Miron order \u2014 place the violet-glass PO",
-      "why": "Laura's team approved the quote and wants to pay by card. Aidan/purchasing to place it so packaging doesn't stall the project.",
-      "owner": "Aidan / Laura",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "Project enablement",
-      "status": "APPROVED \u2014 PLACE ORDER"
-    },
-    {
-      "rank": 6,
-      "title": "Fresh leads \u2014 qualify and keep warm",
-      "why": "New: Mohammed Al Aamri/Dhofar Frankincense (Oman, website). Monday calls: Tesfa/Bahrzaf (shampoo+conditioner); Darlene Saintil luxury hand care Wed. Ashley/Apothik still warm.",
-      "owner": "Consultant / Sam / Laura",
-      "due": "Ongoing",
-      "priority": "high",
-      "revenue": "Pipeline",
-      "status": "IN PROGRESS"
-    },
-    {
-      "rank": 7,
-      "title": "Ads \u2014 revert both campaigns to Manual CPC",
-      "why": "Both on Maximize Conversions with no conversion tracking. One-word yes from Sam. Cache refreshed clean this morning.",
+      "title": "Decide Manual CPC for both campaigns",
+      "why": "Ads are near the $30 daily cap without conversion tracking.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Waste reduction",
-      "status": "AWAITING SAM YES"
+      "revenue": "Spend control",
+      "status": "AWAITING APPROVAL"
+    },
+    {
+      "rank": 6,
+      "title": "Execute Production Pipeline CRM build on go",
+      "why": "The approved build is queued, while CRM login restoration is needed for live work.",
+      "owner": "Consultant",
+      "due": "On Sam's go",
+      "priority": "medium",
+      "revenue": "Operational scale",
+      "status": "APPROVED AND QUEUED"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Reconnect WhatsApp + CRM (both logged out), confirm the Atlas formula and green-light the Milk of Venus quote, and reply to Susan at Salty Pup. Terra Lotus stays Aidan's lane, silent all week.",
+      "top_task": "Restore WhatsApp and CRM, then confirm Atlas formula and packaging so production can start.",
       "tasks": [
         {
-          "title": "Reconnect WhatsApp (client sweep + Terra Lotus escalation) and the CRM session (fix verification + purchasing KB)",
+          "title": "Scan WhatsApp code and restore CRM login",
           "due": "Today"
         },
         {
-          "title": "Confirm whether the Atlas Eternal formula came through in Wednesday's Kenna meeting",
+          "title": "Confirm Atlas formula receipt and packaging lock",
           "due": "Today"
         },
         {
-          "title": "Green-light the full Milk of Venus 1,000-unit quote (Aidan has fill size + price target)",
+          "title": "Approve or decline the Manual CPC revert",
           "due": "Today"
         },
         {
-          "title": "Reply to Susan at Salty Pup with the dog-rinse next step",
-          "due": "Today"
-        },
-        {
-          "title": "Give the one-word ads decision: 'revert ads to manual'",
+          "title": "Price the Spanish-language custom cream inquiry",
           "due": "Today"
         }
       ],
-      "notes": "Terra Lotus is Aidan's lane \u2014 $78,580, silent all week; escalate once WhatsApp is back."
+      "notes": "Sessions are logged out; no CRM change was made in this refresh."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Break silence on Terra Lotus volume pricing and report; place the approved Miron order; continue Milk of Venus with Kenna.",
+      "top_task": "Send the revised Terra Lotus volume pricing and report back.",
       "tasks": [
         {
-          "title": "Close the Terra Lotus $78,580 volume-pricing conversation and report outcome + confirmed contact/billing/shipping address",
-          "due": "OVERDUE \u2014 silent all week"
-        },
-        {
-          "title": "Place the approved Miron violet-glass order (Laura's team wants to pay by card)",
-          "due": "Today"
-        },
-        {
-          "title": "Finish the Milk of Venus price-target conversation with Kenna (1,000 units, 118mL, $6\u2013$8 target)",
-          "due": "Today"
-        },
-        {
-          "title": "Reconnect CRM and WhatsApp to his Command Lab brief feed",
-          "due": "Today"
+          "title": "Respond on Terra Lotus revised higher-volume pricing",
+          "due": "Today — overdue follow-up"
         }
       ],
-      "notes": "Silent all week on Terra Lotus. Consultant re-escalates once WhatsApp is reconnected; Sam gets a text if still dark."
+      "notes": "Terra Lotus customer communications are Aidan's lane. Escalate to Sam after two business days of silence."
     },
     "laura": {
       "display_name": "Laura",
-      "top_task": "Move the approved Miron order and qualify the fresh weekend inbound.",
+      "top_task": "Maintain Oreka communications and active NDA, bottle-printing, and customer-support work.",
       "tasks": [
         {
-          "title": "Confirm the Miron violet-glass order details and payment with Aidan/purchasing",
-          "due": "Today"
-        },
-        {
-          "title": "Prep Darlene Saintil luxury hand lotion + hand wash discovery (Wed Aug 19, 4pm)",
-          "due": "By Wed"
-        },
-        {
-          "title": "Keep Ashley/Apothik warm; help qualify Tasnim/AYYUR bottle sourcing",
+          "title": "Manage Oreka production communications",
           "due": "Ongoing"
         },
         {
-          "title": "Monitor for the Struck Box printer proof for Raul Guardado",
-          "due": "On receipt"
+          "title": "Coordinate bottle-printing and NDAs",
+          "due": "Ongoing"
         }
       ],
-      "notes": "Workspace live; connections pending sit-down."
+      "notes": "Dedicated assistant exists; connection setup remains pending."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Prep sample/BOM for the new Kenna formula and close out Victor costing.",
+      "top_task": "Provide complete formula/BOM inputs when production or quoting requires them.",
       "tasks": [
         {
-          "title": "Review Kenna's Milk of Venus formula for sample/BOM once the quote is greenlit (ingredients only \u2014 packaging/labor/overhead added by Consultant)",
-          "due": "On greenlight"
-        },
-        {
-          "title": "Provide full cost inputs for Victor Armendarez (2,000 units each Curl Defining Cream + Edge Gel)",
-          "due": "OVERDUE"
+          "title": "Supply verified cost inputs for open formulation work",
+          "due": "As requested"
         }
       ],
-      "notes": "Never quote from BOM alone \u2014 ingredients only; Consultant adds packaging, labor, overhead."
+      "notes": "Do not quote from BOM alone."
+    },
+    "nikkie": {
+      "display_name": "Nikkie",
+      "top_task": "Qualify the weekend website brand-development inquiry batch.",
+      "tasks": [
+        {
+          "title": "Work website inquiries and flag booked calls",
+          "due": "Ongoing"
+        }
+      ],
+      "notes": "One inquiry came directly from ChatGPT."
     }
   },
   "revenueActions": [
     {
-      "title": "Close Terra Lotus volume pricing",
-      "why": "$78,580, 52% of the monthly target; Aidan owns it and has been silent all week.",
+      "title": "Terra Lotus revised pricing",
+      "why": "$78,580 negotiation; Aidan owes the customer's higher-volume pricing response.",
       "est_value": "$78,580",
-      "next_step": "Reconnect WhatsApp; Consultant re-escalates and texts Sam if Aidan stays dark.",
+      "next_step": "Restore WhatsApp, nudge Aidan, and escalate after two silent business days.",
       "owner": "Aidan",
       "timing": "Today",
       "value": "$78,580",
-      "status": "SILENT ALL WEEK"
+      "status": "NEGOTIATING"
     },
     {
-      "title": "Move the Kenna deals \u2014 Milk of Venus quote + Atlas formula confirm",
-      "why": "Milk of Venus 1,000-unit PO ready to quote on Sam's go; Atlas $26,500 kicks into production on formula confirm; Pure Good (~$329K) off the same relationship.",
-      "est_value": "~$355K gated + new PO",
-      "next_step": "Confirm Atlas formula in hand; build the Milk of Venus quote on Sam's go.",
-      "owner": "Sam / Consultant",
+      "title": "Atlas Eternal production release",
+      "why": "$26,500 deal with $13,250 deposit paid.",
+      "est_value": "$26,500",
+      "next_step": "Confirm Kenna formula is received and packaging is locked; start production and set completion-balance follow-up.",
+      "owner": "Sam / Production",
       "timing": "Today",
-      "value": "~$355K + new PO",
-      "status": "AWAITING SAM'S GO"
+      "value": "$26,500",
+      "status": "DEPOSIT PAID — PRODUCTION GATED"
     },
     {
-      "title": "Reply to Susan / Salty Pup + place the Miron order",
-      "why": "Susan waiting on the dog-rinse next step; Laura's team approved the Miron violet-glass quote and wants to pay.",
-      "est_value": "Active",
-      "next_step": "Sam replies to Susan; Aidan/Laura place the Miron PO.",
-      "owner": "Sam / Aidan / Laura",
+      "title": "Price Spanish-language custom cream",
+      "why": "Warm website inquiry has already received a reply and needs pricing.",
+      "est_value": "To qualify",
+      "next_step": "Send price for 100 1.7-ounce custom cream units.",
+      "owner": "Sam / Sales",
       "timing": "Today",
-      "value": "Active",
-      "status": "WAITING ON US"
+      "value": "New lead",
+      "status": "AWAITING PRICE"
     },
     {
-      "title": "Qualify fresh leads toward booked calls",
-      "why": "Mohammed Al Aamri/Dhofar (Oman); Tesfa/Bahrzaf (Mon), Darlene Saintil luxury hand care (Wed); Ashley/Apothik still warm.",
+      "title": "Convert Nikkie's brand-development inquiries",
+      "why": "Large weekend inbound batch includes a ChatGPT-sourced inquiry.",
       "est_value": "Pipeline",
-      "next_step": "Qualify Dhofar; prep Monday and Wednesday calls.",
-      "owner": "Consultant / Sam / Laura",
-      "timing": "Ongoing",
+      "next_step": "Qualify and surface booked calls.",
+      "owner": "Nikkie",
+      "timing": "This week",
       "value": "To qualify",
-      "status": "IN PROGRESS"
+      "status": "ACTIVE"
     },
     {
-      "title": "Revert ads to Manual CPC",
-      "why": "Both campaigns on Maximize Conversions with no tracked conversions. One-word yes from Sam.",
+      "title": "Protect paid-search spend",
+      "why": "About $29/day is running against the $30 cap without conversion tracking.",
       "est_value": "Waste reduction",
-      "next_step": "Sam says 'revert ads to manual'; Consultant dispatches Ads Agent and verifies live.",
+      "next_step": "Sam approves Manual CPC revert for both campaigns.",
       "owner": "Sam",
       "timing": "Today",
       "value": "Cost control",
-      "status": "AWAITING SAM YES"
+      "status": "AWAITING APPROVAL"
     }
   ],
   "pipelineStat": {
-    "total_value": "~$434K named pipeline + Milk of Venus PO",
-    "active_deals": 7,
+    "total_value": "$442,635 named pipeline against $150K monthly target",
+    "active_deals": 4,
     "hot": [
-      "Terra Lotus \u2014 $78,580; Aidan owns volume pricing, silent all week; reconnect WhatsApp to escalate",
-      "Kenna \u2014 Milk of Venus 1,000 units (118mL, $6\u2013$8/unit), full quote awaiting Sam's go",
-      "Atlas Eternal \u2014 $26,500, deposit $13,250 PAID, production on formula confirm",
-      "Pure Good \u2014 ~$329K, advances off the Kenna relationship",
-      "Fresh leads \u2014 Dhofar/Oman (new), Tesfa/Bahrzaf (Mon), Darlene Saintil luxury hand care (Wed), Ashley/Apothik warm"
+      "Terra Lotus — $78,580, negotiating; Aidan owes revised volume pricing",
+      "Atlas Eternal — $26,500, $13,250 deposit paid; production gated on Kenna formula and packaging lock",
+      "Pure Good — ~$329K, gated on the same Kenna meeting follow-up",
+      "Oreka — $8,555, closed and in production"
     ],
     "stalled": [
-      "Terra Lotus volume-pricing reply from Aidan (silent all week)",
-      "Atlas production gated on formula confirmation",
-      "WhatsApp + CRM sessions logged out (blocking sweep + verification)"
+      "WhatsApp and CRM sessions are logged out",
+      "Terra Lotus revised pricing awaits Aidan",
+      "Atlas and Pure Good are gated on Kenna follow-up"
     ],
-    "activeDeals": 7,
-    "pipelineValue": 434135,
-    "inProduction": 2,
-    "depositsCollected": 13250,
-    "note": "Terra Lotus $78,580 (52% of target) \u2014 Aidan silent all week; reconnect WhatsApp to escalate. Milk of Venus pricing moving with Kenna ($6\u2013$8/unit, 118mL); full quote awaits Sam's go. Atlas ($26,500) gated on formula confirm. Susan/Salty Pup awaiting reply; Miron order approved by Laura's team. New inbound: Dhofar Frankincense (Oman). Oreka closed/in production.",
+    "activeDeals": 4,
+    "pipelineValue": 442635,
+    "inProduction": 1,
+    "depositsCollected": 15026.63,
+    "note": "Named pipeline: Terra Lotus $78,580 negotiating (Aidan); Atlas Eternal $26,500 deposit paid and production-gated on Kenna formula; Oreka $8,555 closed/in production; Pure Good about $329K gated on the same Kenna meeting. A $1,776.63 Shopify ACH deposit landed this morning.",
     "monthlyTarget": "$150K",
-    "achievableDepositsThisMonth": "Not revalidated in this refresh"
+    "achievableDepositsThisMonth": "$15,026.63 recorded: $13,250 Atlas deposit plus $1,776.63 Shopify ACH this morning."
   },
   "adsAgentBrief": {
     "generatedAt": "2026-08-17T01:01:00.000Z",
-    "summary": "Nightly cache refresh complete. $23.20 today; $200.82 current 7 days ($28.69/day). This is 113.26% of the $25.33/day configured budget (a configured-budget breach), but 95.63% of the approved $30/day cap: no approved-cap breach. CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. No changes made.",
+    "summary": "Nightly cache refresh complete. $23.20 today; $200.82 current 7 days ($28.69/day). This is 113.26% of the $25.33/day configured budget (a configured-budget breach), but 95.63% of the approved $30/day cap: no approved-cap breach. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. No changes made.",
     "recommendation": "Read-only recommendation: with Contract Manufacturing CPC volatility (including $12.87 on Aug 13) and both campaigns currently on Maximize Conversions despite the approved Manual CPC operating model, revert the two scoped campaigns to Manual CPC without changing budgets, then measure CPC, qualified inquiries, and attributed leads for seven days.",
     "approval_required": "yes"
   },
@@ -559,7 +460,7 @@
           "configuredDailyBudget": 5.0
         }
       ],
-      "warning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED. Reporting is limited to the two named verified net-new campaigns; legacy campaigns excluded."
+      "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Reporting is limited to the two named verified net-new campaigns; legacy campaigns excluded."
     },
     "windows": {
       "today": {
@@ -650,22 +551,22 @@
       ]
     },
     "ads": {
-      "warning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED; no ad-level claims made."
+      "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED; no ad-level claims made."
     },
     "leadsAndBookings": {
       "current7Days": {
         "qualifiedInquiries": "Inbox review found 15 Shopify form submissions; final qualified-inquiry count is NOT YET MEASURABLE without CRM qualification review.",
-        "verifiedAdsAttributedLeads": "NOT YET MEASURABLE \u2014 a GCLID was observed on an Aug 9 form, outside this window; no current-window UTM/GCLID/campaign-source reconciliation established.",
+        "verifiedAdsAttributedLeads": "NOT YET MEASURABLE — a GCLID was observed on an Aug 9 form, outside this window; no current-window UTM/GCLID/campaign-source reconciliation established.",
         "bookedCalls": "Last verified figure unavailable in this run; not re-verified (calendar/CRM out of scope).",
-        "CPL": "NOT YET MEASURABLE \u2014 verified Ads-attributed lead denominator unavailable.",
-        "costPerBookedCall": "NOT YET MEASURABLE \u2014 booked-call record not re-verified."
+        "CPL": "NOT YET MEASURABLE — verified Ads-attributed lead denominator unavailable.",
+        "costPerBookedCall": "NOT YET MEASURABLE — booked-call record not re-verified."
       },
       "prior7Days": {
         "qualifiedInquiries": "Inbox review found 4 Shopify form submissions; final qualified-inquiry count is NOT YET MEASURABLE without CRM qualification review.",
-        "verifiedAdsAttributedLeads": "NOT YET MEASURABLE \u2014 no qualifying UTM/GCLID/campaign-source record established in the reviewed window.",
+        "verifiedAdsAttributedLeads": "NOT YET MEASURABLE — no qualifying UTM/GCLID/campaign-source record established in the reviewed window.",
         "bookedCalls": "Last verified figure unavailable in this run; not re-verified (calendar/CRM out of scope).",
-        "CPL": "NOT YET MEASURABLE \u2014 verified Ads-attributed lead denominator unavailable.",
-        "costPerBookedCall": "NOT YET MEASURABLE \u2014 booked-call record not re-verified."
+        "CPL": "NOT YET MEASURABLE — verified Ads-attributed lead denominator unavailable.",
+        "costPerBookedCall": "NOT YET MEASURABLE — booked-call record not re-verified."
       }
     },
     "capAndFunnelHealth": {
@@ -685,7 +586,7 @@
     "best": "Contract Manufacturing drove 48 of 57 clicks in the current seven-day window.",
     "worst": "Current seven-day spend exceeded the configured combined-budget average; Samples CPC increased to $3.33 from $1.47 in the prior window.",
     "watch": "Contract Manufacturing had volatile CPC, including $12.87 on Aug 13; exact search-term and seven-ad roster evidence was unavailable.",
-    "searchTermWaste": "NOT YET MEASURABLE \u2014 no approved search-term report was available in this run.",
+    "searchTermWaste": "NOT YET MEASURABLE — no approved search-term report was available in this run.",
     "recommendation": {
       "recommendation": "Read-only recommendation: with Contract Manufacturing CPC volatility (including $12.87 on Aug 13) and both campaigns currently on Maximize Conversions despite the approved Manual CPC operating model, revert the two scoped campaigns to Manual CPC without changing budgets, then measure CPC, qualified inquiries, and attributed leads for seven days.",
       "evidence": "Current 7-day spend was $200.82 ($28.69/day) against $25.33/day configured; Contract Manufacturing delivered $170.88 at $3.56 average CPC, versus $123.88 at $3.64 in the prior window. Exact seven-ad roster and search-term detail were not provable in the approved read-only pull.",
@@ -697,7 +598,7 @@
     "approvalRequirement": "No campaign, budget, bidding, keyword, targeting, creative, landing-page, form, or spend change was made. Sam approval is required before any recommendation is applied.",
     "preparedAnswers": {
       "today": "Today: $23.20 spend, 41 impressions, 9 clicks, 21.95% CTR, $2.58 average CPC.",
-      "sevenNewAds": "The two verified net-new campaigns are enabled. CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED.",
+      "sevenNewAds": "The two verified net-new campaigns are enabled. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
       "ctrCpc": "Current 7 days: 15.57% CTR and $3.52 average CPC; prior 7 days: 15.53% and $2.77.",
       "leadsEmailsCalls": "Inbox form submissions: 15 current-window and 4 prior-window, pending qualification. Verified Ads attribution, booked calls, CPL and cost per booked call are NOT YET MEASURABLE; calendar/CRM not re-verified.",
       "budgetCap": "Configured budgets are $20.33 + $5.00 = $25.33/day. Current 7-day average is $28.69/day (113.26%): a configured-budget breach, but 95.63% of the approved $30/day cap; no approved-cap breach.",
@@ -710,7 +611,7 @@
     }
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -718,6 +619,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
+    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
   }
 }
