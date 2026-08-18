@@ -1,9 +1,5 @@
 {
-  "id": "ads-nightly-2026-08-17",
-  "request_id": "ads-nightly-2026-08-17",
-  "ts": "2026-08-18T01:09:00.396Z",
-  "agent": "Ads Agent",
-  "status": "completed",
-  "text": "Ads Agent nightly result (net-new campaigns, Aug 17): Spend $34.69 on 63 impressions and 10 clicks, $4.69 above the $30 daily cap. Trailing 7-day spend is $200.82 vs $210 cap (under by $9.18); MTD $393.30. Both campaigns are ENABLED on Maximize Conversions. Dirk and Emma were new leads, both UNATTRIBUTED; Emma was backfilled. August totals: 26 leads, 2 qualified, 5 booked; directional paid CPL is $200.82 (T7, n=1). No changes made. Approval requested: switch ContractMfg from Maximize Conversions to Manual CPC; budget change $0. Cache unchanged; this summary-only callback does not replace the separate nightly cache refresh.",
-  "spoken_text": "Sam, the bottom line is that the new ads are spending roughly on plan for the week but ran slightly over the daily line today, and CPC is still climbing. Over the last seven days they spent $200.82 against a $210 cap, while today’s spend was $34.69. Two new leads came in from Dirk and Emma, but both remain unattributed, so the $200.82 paid CPL is directional and based on one lead. August now stands at 26 leads, 2 qualified, and 5 booked calls. I recommend approving the Ads Agent’s read-only proposal to move Contract Manufacturing to Manual CPC with no budget change to stop the bleed; no changes were made."
+  "id": "morning-2026-08-18-7c9025b17ba84da2a085ec4e5daa3b8b",
+  "ts": "2026-08-18T11:06:30.864Z",
+  "message": "Morning brief loaded for 2026-08-18."
 }

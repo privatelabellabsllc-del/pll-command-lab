@@ -1,40 +1,40 @@
 {
-  "date": "2026-08-17",
-  "ts": "2026-08-17T11:04:55.732Z",
+  "date": "2026-08-18",
+  "ts": "2026-08-18T11:06:30.864Z",
   "brief": [
     {
-      "t": "Two sessions are down — WhatsApp and the CRM login. Scan the WhatsApp code I have up and restore the CRM session. Everything else is blocked until those are back.",
+      "t": "Talova replied overnight. Their Coco Vanilla scent went viral and Marcello wants to place the reorder soon. Our reply is staged and ready to send. This is the number one Road2150 move.",
       "hot": true
     },
     {
-      "t": "Atlas Eternal is twenty-six thousand five hundred, deposit already paid. Tell me the formula came through and packaging is locked and I move it into production and set the thirteen-thousand-two-fifty balance follow-up.",
-      "hot": true
-    },
-    {
-      "t": "Terra Lotus is seventy-eight thousand five hundred eighty, Aidan's lane. He still owes the revised volume pricing. The moment WhatsApp is back I push him again, and I escalate to you if he's two business days silent.",
-      "hot": true
-    },
-    {
-      "t": "The ads are bleeding — about twenty-nine dollars a day against a thirty-dollar cap, bidding blind with no conversion tracking. One word from you and I flip both campaigns to manual.",
-      "hot": true
-    },
-    {
-      "t": "A Spanish-speaking website lead wants a hundred one-point-seven ounce units of a custom retinol, hyaluronic, collagen and niacinamide cream. You already replied — it needs a price to close the loop.",
+      "t": "Saylor. Anna has not replied yet to yesterday's email. Holding, follow up Thursday.",
       "hot": false
     },
     {
-      "t": "Nikkie is working a big batch of website brand-development inquiries this weekend, including one that came straight from ChatGPT. Good top of funnel — I'm watching for booked calls.",
+      "t": "Max at Delphos House wants a launch strategy call and proposed four pm Eastern today. Needs a quick yes.",
+      "hot": true
+    },
+    {
+      "t": "Hunter Amenities. Dan Hunter wants to meet next Wednesday. Retail and airlines amenities, could be real volume. James is looped in.",
       "hot": false
     },
     {
-      "t": "The Production Pipeline CRM build is approved and queued. Say go and I execute it.",
+      "t": "Atlas Eternal is in production with Aidan driving all four lanes. Balance of thirteen thousand two hundred fifty is due on completion.",
+      "hot": false
+    },
+    {
+      "t": "New website inquiry from Emma Garrison at Wagyu Wellness came in yesterday afternoon. Needs an ICP size check before we spend time.",
+      "hot": false
+    },
+    {
+      "t": "Nikkie is already working the inbound white label inquiries from her PLL email ahead of her August thirty-first start.",
       "hot": false
     }
   ],
   "next": [
-    "Scan the WhatsApp code that's up and restore the CRM login — that unblocks the client sweep, Terra Lotus, and every fix verification.",
-    "Tell me the Atlas formula came through and packaging is locked — I move it to production and set the $13,250 balance follow-up.",
-    "One word on the ads: revert ads to manual."
+    "Send the staged Talova reply, then confirm Kenna's revised formula on our side with Aidan and Aaron.",
+    "Say yes or no to Max's four pm call today.",
+    "Green light the Aug 30 Outbound AI finder run (Peptide Brands, Hair Brands non aerosol non OTC) for Nikkie's day-one pipeline."
   ],
   "kb": [
     {
@@ -114,13 +114,17 @@
     },
     {
       "keys": [
-        "nikkie",
-        "website leads",
+        "august 31",
         "brand development",
         "chatgpt",
-        "inquiries"
+        "inquiries",
+        "nikkie",
+        "nikkie aroh",
+        "outbound sales",
+        "website leads",
+        "white label"
       ],
-      "a": "Nikkie is actively handling a large weekend batch of website brand-development inquiries, including one sourced directly from ChatGPT. This is healthy top-of-funnel activity. Watch for qualification and booked calls before assigning revenue value."
+      "a": "Nikkie Aroh starts full time on August 31 to run Outbound Sales daily. She is already responding to inbound white-label inquiries from her PLL email, with Sam copied; the Aug 30 Outbound AI finder run is the day-one pipeline setup."
     },
     {
       "keys": [
@@ -224,214 +228,252 @@
         "tubes"
       ],
       "a": "Nabil Saleh at CN1 Fragrance is interested in 4,000-plus eight-ounce tubes of scented body lotion using his own fragrance oil. The next qualification points are formula, tube packaging, and timing. No new response is recorded in this refresh."
+    },
+    {
+      "keys": [
+        "coco vanilla",
+        "kenna whitnell",
+        "marcello",
+        "reorder",
+        "talova"
+      ],
+      "a": "Talova is an existing brand brokered through Kenna Whitnell. Its Coco Vanilla scent went viral, and Marcello wants to reorder soon; the reply is staged for August 18. Before scheduling production, confirm Kenna's mid-July revised formula is on our side."
+    },
+    {
+      "keys": [
+        "anna",
+        "follow up thursday",
+        "reorder",
+        "saylor"
+      ],
+      "a": "Saylor's product is finished and approved. Anna went quiet after Sam's personal reorder email on August 17 asking for her launch date; there is no reply yet, so follow up Thursday."
+    },
+    {
+      "keys": [
+        "4pm eastern",
+        "delphos house",
+        "launch strategy",
+        "max"
+      ],
+      "a": "Max at Delphos House wants a launch-strategy call and proposed 4 PM Eastern on August 18. Separately, Aidan owes Laura a raw-materials answer on Delphos; the call is not confirmed until Max receives a yes or no."
+    },
+    {
+      "keys": [
+        "airlines amenities",
+        "dan hunter",
+        "hunter amenities",
+        "james pitenis",
+        "retail"
+      ],
+      "a": "Dan Hunter at Hunter Amenities wants to meet next Wednesday after inbound interest through James Pitenis. The retail and airline-amenities channel could bring real volume, but units are not qualified yet."
+    },
+    {
+      "keys": [
+        "1000",
+        "emma garrison",
+        "icp",
+        "shopify",
+        "wagyu wellness"
+      ],
+      "a": "Emma Garrison at Wagyu Wellness submitted a new Shopify contact-form inquiry on August 17. It has not been qualified against the 1,000-plus-unit ICP, so complete the size check before investing further time."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Restore WhatsApp and CRM sessions",
-      "why": "Both are logged out. This unblocks the client sweep, Terra Lotus escalation, and CRM fix verification.",
-      "owner": "Sam",
+      "title": "Send Talova reply and confirm Kenna revised formula",
+      "why": "Coco Vanilla went viral and Marcello wants to reorder; formula confirmation is the production gate.",
+      "owner": "Sam / Aidan / Aaron",
       "due": "Today",
       "priority": "critical",
-      "revenue": "Unblocks $78,580 + operations",
-      "status": "BLOCKED ON LOGIN"
+      "revenue": "Talova reorder",
+      "status": "REPLY STAGED"
     },
     {
       "rank": 2,
-      "title": "Move Atlas Eternal into production",
-      "why": "$13,250 deposit is paid on the $26,500 deal. Formula receipt and packaging lock are the remaining production gate.",
-      "owner": "Sam / Production",
-      "due": "Today",
-      "priority": "critical",
-      "revenue": "$26,500",
-      "status": "DEPOSIT PAID — PRODUCTION GATED"
-    },
-    {
-      "rank": 3,
-      "title": "Get Terra Lotus revised volume pricing",
-      "why": "Aidan owns the $78,580 negotiation and owes the revised higher-volume price.",
-      "owner": "Aidan",
-      "due": "Today",
-      "priority": "critical",
-      "revenue": "$78,580",
-      "status": "AWAITING AIDAN — NUDGE AFTER WHATSAPP RESTORE"
-    },
-    {
-      "rank": 4,
-      "title": "Price the Spanish-language custom cream lead",
-      "why": "Sam already replied to the 100-unit inquiry; pricing is the open close-the-loop item.",
-      "owner": "Sam / Sales",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "New lead",
-      "status": "AWAITING PRICE"
-    },
-    {
-      "rank": 5,
-      "title": "Decide Manual CPC for both campaigns",
-      "why": "Ads are near the $30 daily cap without conversion tracking.",
+      "title": "Answer Max on the Delphos House call",
+      "why": "Max proposed 4 PM Eastern today for a launch-strategy call.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Spend control",
-      "status": "AWAITING APPROVAL"
+      "revenue": "Delphos House",
+      "status": "AWAITING YES OR NO"
     },
     {
-      "rank": 6,
-      "title": "Execute Production Pipeline CRM build on go",
-      "why": "The approved build is queued, while CRM login restoration is needed for live work.",
-      "owner": "Consultant",
-      "due": "On Sam's go",
+      "rank": 3,
+      "title": "Qualify Hunter Amenities opportunity",
+      "why": "Dan Hunter wants to meet next Wednesday; retail and airline amenities may be meaningful volume.",
+      "owner": "James / Sam",
+      "due": "Next Wednesday",
+      "priority": "high",
+      "revenue": "To qualify",
+      "status": "MEETING REQUESTED"
+    },
+    {
+      "rank": 4,
+      "title": "Run Wagyu Wellness ICP size check",
+      "why": "Emma Garrison submitted a new inquiry, but it is not yet qualified against the 1,000-plus-unit ICP.",
+      "owner": "Sam / Sales",
+      "due": "Today",
       "priority": "medium",
-      "revenue": "Operational scale",
-      "status": "APPROVED AND QUEUED"
+      "revenue": "New lead",
+      "status": "AWAITING QUALIFICATION"
+    },
+    {
+      "rank": 5,
+      "title": "Green light Aug 30 Outbound AI finder run",
+      "why": "Peptide Brands and Hair Brands non-aerosol/non-OTC are Nikkie's day-one pipeline lanes.",
+      "owner": "Sam / Nikkie",
+      "due": "Aug 30",
+      "priority": "high",
+      "revenue": "Pipeline",
+      "status": "AWAITING APPROVAL"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Restore WhatsApp and CRM, then confirm Atlas formula and packaging so production can start.",
+      "top_task": "Send the staged Talova reply, answer Max, and green-light Nikkie's Aug 30 finder run.",
       "tasks": [
         {
-          "title": "Scan WhatsApp code and restore CRM login",
+          "title": "Send Talova reply and confirm Kenna revised formula",
           "due": "Today"
         },
         {
-          "title": "Confirm Atlas formula receipt and packaging lock",
+          "title": "Answer Max on 4 PM Eastern call",
           "due": "Today"
         },
         {
-          "title": "Approve or decline the Manual CPC revert",
-          "due": "Today"
-        },
-        {
-          "title": "Price the Spanish-language custom cream inquiry",
+          "title": "Approve Aug 30 Outbound AI finder run",
           "due": "Today"
         }
       ],
-      "notes": "Sessions are logged out; no CRM change was made in this refresh."
+      "notes": "Morning lanes are sourced from the August 18 brief."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Send the revised Terra Lotus volume pricing and report back.",
+      "top_task": "Confirm Kenna's revised formula on Talova and drive Atlas production lanes.",
       "tasks": [
         {
-          "title": "Respond on Terra Lotus revised higher-volume pricing",
-          "due": "Today — overdue follow-up"
-        }
-      ],
-      "notes": "Terra Lotus customer communications are Aidan's lane. Escalate to Sam after two business days of silence."
-    },
-    "laura": {
-      "display_name": "Laura",
-      "top_task": "Maintain Oreka communications and active NDA, bottle-printing, and customer-support work.",
-      "tasks": [
-        {
-          "title": "Manage Oreka production communications",
-          "due": "Ongoing"
+          "title": "Confirm revised formula with Sam and Aaron",
+          "due": "Today"
         },
         {
-          "title": "Coordinate bottle-printing and NDAs",
+          "title": "Drive Atlas Eternal production",
           "due": "Ongoing"
         }
       ],
-      "notes": "Dedicated assistant exists; connection setup remains pending."
+      "notes": "Atlas completion balance of $13,250 is due on completion."
     },
-    "ronald": {
-      "display_name": "Ronald",
-      "top_task": "Provide complete formula/BOM inputs when production or quoting requires them.",
+    "aaron": {
+      "display_name": "Aaron",
+      "top_task": "Confirm Kenna's revised formula on our side.",
       "tasks": [
         {
-          "title": "Supply verified cost inputs for open formulation work",
-          "due": "As requested"
+          "title": "Verify revised formula with Sam and Aidan",
+          "due": "Today"
         }
       ],
-      "notes": "Do not quote from BOM alone."
+      "notes": "Formula confirmation is an open Talova reorder gate."
+    },
+    "james": {
+      "display_name": "James",
+      "top_task": "Coordinate Dan Hunter's Hunter Amenities meeting.",
+      "tasks": [
+        {
+          "title": "Prepare next-Wednesday meeting with Dan Hunter",
+          "due": "Next Wednesday"
+        }
+      ],
+      "notes": "Retail and airline amenities opportunity is not unit-qualified."
     },
     "nikkie": {
       "display_name": "Nikkie",
-      "top_task": "Qualify the weekend website brand-development inquiry batch.",
+      "top_task": "Work inbound white-label inquiries and prepare Aug 30 outbound finder lanes.",
       "tasks": [
         {
-          "title": "Work website inquiries and flag booked calls",
+          "title": "Respond to inbound white-label inquiries",
           "due": "Ongoing"
+        },
+        {
+          "title": "Prepare Peptide and Hair Brand finder run",
+          "due": "Aug 30"
         }
       ],
-      "notes": "One inquiry came directly from ChatGPT."
+      "notes": "Full-time start is August 31."
     }
   },
   "revenueActions": [
     {
-      "title": "Terra Lotus revised pricing",
-      "why": "$78,580 negotiation; Aidan owes the customer's higher-volume pricing response.",
-      "est_value": "$78,580",
-      "next_step": "Restore WhatsApp, nudge Aidan, and escalate after two silent business days.",
-      "owner": "Aidan",
-      "timing": "Today",
-      "value": "$78,580",
-      "status": "NEGOTIATING"
-    },
-    {
-      "title": "Atlas Eternal production release",
-      "why": "$26,500 deal with $13,250 deposit paid.",
-      "est_value": "$26,500",
-      "next_step": "Confirm Kenna formula is received and packaging is locked; start production and set completion-balance follow-up.",
-      "owner": "Sam / Production",
-      "timing": "Today",
-      "value": "$26,500",
-      "status": "DEPOSIT PAID — PRODUCTION GATED"
-    },
-    {
-      "title": "Price Spanish-language custom cream",
-      "why": "Warm website inquiry has already received a reply and needs pricing.",
+      "title": "Talova Coco Vanilla reorder",
+      "why": "The scent went viral and Marcello wants to reorder soon.",
       "est_value": "To qualify",
-      "next_step": "Send price for 100 1.7-ounce custom cream units.",
+      "next_step": "Send staged reply and confirm Kenna revised formula.",
+      "owner": "Sam / Aidan / Aaron",
+      "timing": "Today",
+      "value": "To qualify",
+      "status": "REORDER OPEN"
+    },
+    {
+      "title": "Delphos House launch strategy",
+      "why": "Max proposed a 4 PM Eastern call today.",
+      "est_value": "To qualify",
+      "next_step": "Give Max a yes or no.",
+      "owner": "Sam",
+      "timing": "Today",
+      "value": "To qualify",
+      "status": "AWAITING RESPONSE"
+    },
+    {
+      "title": "Hunter Amenities meeting",
+      "why": "Retail and airline amenities opportunity could be real volume.",
+      "est_value": "To qualify",
+      "next_step": "Meet Dan Hunter next Wednesday with James looped in.",
+      "owner": "James / Sam",
+      "timing": "Next Wednesday",
+      "value": "To qualify",
+      "status": "MEETING REQUESTED"
+    },
+    {
+      "title": "Wagyu Wellness qualification",
+      "why": "New inquiry from Emma Garrison needs an ICP size check.",
+      "est_value": "To qualify",
+      "next_step": "Check against 1,000-plus-unit ICP.",
       "owner": "Sam / Sales",
       "timing": "Today",
       "value": "New lead",
-      "status": "AWAITING PRICE"
+      "status": "AWAITING QUALIFICATION"
     },
     {
-      "title": "Convert Nikkie's brand-development inquiries",
-      "why": "Large weekend inbound batch includes a ChatGPT-sourced inquiry.",
+      "title": "Nikkie outbound pipeline",
+      "why": "Inbound white-label work is already active ahead of August 31 start.",
       "est_value": "Pipeline",
-      "next_step": "Qualify and surface booked calls.",
-      "owner": "Nikkie",
-      "timing": "This week",
+      "next_step": "Approve Aug 30 finder run for Peptide and Hair Brands.",
+      "owner": "Sam / Nikkie",
+      "timing": "Aug 30",
       "value": "To qualify",
-      "status": "ACTIVE"
-    },
-    {
-      "title": "Protect paid-search spend",
-      "why": "About $29/day is running against the $30 cap without conversion tracking.",
-      "est_value": "Waste reduction",
-      "next_step": "Sam approves Manual CPC revert for both campaigns.",
-      "owner": "Sam",
-      "timing": "Today",
-      "value": "Cost control",
       "status": "AWAITING APPROVAL"
     }
   ],
   "pipelineStat": {
-    "total_value": "$442,635 named pipeline against $150K monthly target",
+    "total_value": "Active value not yet quantified for today's new opportunities",
     "active_deals": 4,
     "hot": [
-      "Terra Lotus — $78,580, negotiating; Aidan owes revised volume pricing",
-      "Atlas Eternal — $26,500, $13,250 deposit paid; production gated on Kenna formula and packaging lock",
-      "Pure Good — ~$329K, gated on the same Kenna meeting follow-up",
-      "Oreka — $8,555, closed and in production"
+      "Talova — Coco Vanilla reorder open after viral scent",
+      "Delphos House — launch strategy call requested",
+      "Hunter Amenities — retail and airline amenities meeting requested",
+      "Atlas Eternal — in production; $13,250 due on completion"
     ],
     "stalled": [
-      "WhatsApp and CRM sessions are logged out",
-      "Terra Lotus revised pricing awaits Aidan",
-      "Atlas and Pure Good are gated on Kenna follow-up"
+      "Talova revised formula confirmation",
+      "Max call answer",
+      "Wagyu Wellness ICP qualification"
     ],
     "activeDeals": 4,
-    "pipelineValue": 442635,
+    "pipelineValue": 0,
     "inProduction": 1,
-    "depositsCollected": 15026.63,
-    "note": "Named pipeline: Terra Lotus $78,580 negotiating (Aidan); Atlas Eternal $26,500 deposit paid and production-gated on Kenna formula; Oreka $8,555 closed/in production; Pure Good about $329K gated on the same Kenna meeting. A $1,776.63 Shopify ACH deposit landed this morning.",
+    "depositsCollected": null,
+    "note": "Today's brief adds Talova, Delphos House, Hunter Amenities, Wagyu Wellness, and Nikkie outbound lanes; dollar values are not stated in the morning source.",
     "monthlyTarget": "$150K",
     "achievableDepositsThisMonth": "$15,026.63 recorded: $13,250 Atlas deposit plus $1,776.63 Shopify ACH this morning."
   },
