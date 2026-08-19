@@ -1,9 +1,9 @@
 {
-  "id": "ans_cmd_mt073s67_io6pmji",
-  "request_id": "cmd_mt073s67_io6pmji",
-  "ts": "2026-08-19T14:46:00Z",
-  "agent": "PLL Consultant",
-  "status": "completed",
-  "text": "Monday meeting with Dirk is SET and verified live in your Outlook. Event: 'Sam / Dirk / Ron - BJJ Shampoo and Body Wash Project' - Mon Aug 24, 2026, 10:00-10:30 AM ET, with a Google Meet link. Attendees: Dirk (dirk@diogenessolutions.com), you, chemist Ron Cruz (ron@privatelabellabs.com), and Evelyn Diakiw (evelyn@privatelabellabs.com). A confirmation email with the Meet link was also sent to Dirk. It is on your calendar as an invite. Oversight notes: (1) Email Agent executed this correctly but again did NOT post its completion callback - I verified the result independently. (2) Exactly ONE invite exists, no duplicate created by the recovery ping. (3) The command did not include Dirk's email or Ron's exact address; both were resolved from your inbox (Dirk from the Aug 17 contact-form lead; Ron Cruz = ron@privatelabellabs.com).",
-  "spoken_text": "Sam, your Monday meeting with Dirk is set. It's on the calendar for Monday at ten a.m. Eastern with a Google Meet link, and it includes you, Dirk, Ron Cruz, and Evelyn. Dirk already got a confirmation email with the link. One thing worth flagging: the Email Agent did the work correctly but didn't report back on its own again, so I verified it myself in your inbox. Everything checks out, and there are no duplicate invites."
+ "id": "ans_cmd_mt079qn8_3va3epk",
+ "request_id": "cmd_mt079qn8_3va3epk",
+ "ts": "2026-08-19T15:05:00Z",
+ "agent": "PLL Consultant",
+ "status": "completed",
+ "text": "MEETING CONFIRMED and verified live in your calendar. Event: 'Sam / Dan Hunter (Hunter Amenities)' - Wed Aug 26, 2026, 11:00-11:30 AM ET, with a Google Meet link (meet.google.com/dcd-mbmh-akf). Attendees (everyone on the email thread): you (sam@prvtlabellabs.com), Dan Hunter (dhunter@hunteramenities.com), Dave Rosati (rosati@emanay.io), and James Pitenis (james@privatelabellabs.com). Dan has already ACCEPTED the invite. Oversight notes: (1) The Email Agent executed this correctly but again did NOT post its completion callback - I verified the result independently via Outlook and Google Calendar. (2) Exactly ONE invite exists, no duplicate. (3) 'Everybody' was resolved from the Dan Hunter email thread (Re: Sam | Dave): Dan Hunter, Dave Rosati, James Pitenis, and you.",
+ "spoken_text": "Sam, the Dan Hunter meeting is set. Your email agent booked it but didn't report back again, so I checked your calendar and inbox myself to confirm. It's on for next Wednesday, August 26th at 11 a.m. Eastern, a half hour intro call with a Google Meet link. Everyone from the thread is on it: you, Dan Hunter, Dave Rosati, and James Pitenis. Dan has already accepted, and there's only one invite, no duplicate."
 }
