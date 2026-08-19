@@ -478,22 +478,23 @@
     "achievableDepositsThisMonth": "$15,026.63 recorded: $13,250 Atlas deposit plus $1,776.63 Shopify ACH this morning."
   },
   "adsAgentBrief": {
-    "generatedAt": "2026-08-18T01:03:57.000Z",
-    "summary": "Nightly cache refresh complete. $34.69 today (partial); $212.19 current 7 days ($30.31/day), 119.67% of the $25.33/day configured budget — configured-budget breach. This is 101.04% of the separately approved $30/day cap. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. No changes made.",
-    "recommendation": "Read-only recommendation: with material CPC volatility and the trailing configured-budget breach, obtain Sam's explicit approval before restoring Manual CPC on the two scoped campaigns without changing budgets; then measure CPC, qualified inquiries, and verified scoped Ads attribution for seven full days.",
+    "generatedAt": "2026-08-19T01:03:36.868Z",
+    "summary": "Nightly cache refresh complete. $10.53 today (partial); $182.19 current 7 days ($26.03/day), 102.75% of the $25.33/day configured budget — configured-budget breach; 86.76% of the approved $30/day cap. Exact seven-ad roster verified. No changes made.",
+    "recommendation": "Read-only recommendation: obtain Sam approval before changing anything; first reconcile the Samples campaign delivery against its configured $5.00/day budget and obtain search-term evidence, then measure qualified inquiries and scoped Ads attribution for seven full days.",
     "approval_required": "yes"
   },
   "adsIntelligence": {
-    "generatedAt": "2026-08-18T01:03:57.000Z",
+    "generatedAt": "2026-08-19T01:03:36.868Z",
     "refreshType": "nightly_cache_refresh",
-    "dataAsOf": "2026-08-17 21:03 America/New_York; today is partial-day data at pull time",
+    "dataAsOf": "2026-08-18 21:03 America/New_York; today is partial-day data at pull time",
     "scope": {
+      "customerId": "2915572948",
       "campaigns": [
         {
           "id": "24040031889",
           "name": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5
+          "configuredDailyBudget": 5.0
         },
         {
           "id": "24049588003",
@@ -502,32 +503,42 @@
           "configuredDailyBudget": 20.33
         }
       ],
-      "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Reporting is limited to the two named verified net-new campaigns; legacy campaigns excluded."
+      "adRosterVerified": true,
+      "adIds": [
+        "817412024830",
+        "817412025043",
+        "817412046418",
+        "817481260556",
+        "817481283335",
+        "817481283338",
+        "817481293367"
+      ],
+      "warning": "Exact seven-ad roster verified from read-only ad-level and ad-group campaign mapping; four legacy-account ads were excluded."
     },
     "windows": {
       "today": {
-        "window": "2026-08-17",
-        "spend": 34.68687,
-        "impressions": 63,
-        "clicks": 10,
-        "ctr": 0.15873015873015872,
-        "averageCpc": 3.468687
+        "window": "2026-08-18 (through 21:03 ET)",
+        "spend": 10.53359,
+        "impressions": 88,
+        "clicks": 7,
+        "ctr": 0.07954545454545454,
+        "averageCpc": 1.5047985714285714
       },
       "current7Days": {
-        "window": "2026-08-11 through 2026-08-17",
-        "spend": 212.187199,
-        "impressions": 369,
-        "clicks": 55,
-        "ctr": 0.14905149051490515,
-        "averageCpc": 3.8579490727272727
+        "window": "2026-08-12 through 2026-08-18",
+        "spend": 182.190789,
+        "impressions": 404,
+        "clicks": 51,
+        "ctr": 0.12623762376237624,
+        "averageCpc": 3.572368411764706
       },
       "prior7Days": {
-        "window": "2026-08-04 through 2026-08-10",
-        "spend": 147.699996,
+        "window": "2026-08-05 through 2026-08-11",
+        "spend": 156.019996,
         "impressions": 351,
-        "clicks": 59,
-        "ctr": 0.16809116809116809,
-        "averageCpc": 2.503389762711864
+        "clicks": 62,
+        "ctr": 0.17663817663817663,
+        "averageCpc": 2.5164515483870966
       }
     },
     "campaignBreakdown": {
@@ -535,21 +546,21 @@
         {
           "campaign": "PLL-Search-Samples-2026",
           "id": "24040031889",
-          "spend": 9.96,
-          "impressions": 3,
-          "clicks": 2,
-          "ctr": 0.6666666666666666,
-          "averageCpc": 4.98,
+          "spend": 8.98359,
+          "impressions": 34,
+          "clicks": 5,
+          "ctr": 0.14705882352941177,
+          "averageCpc": 1.7967179999999998,
           "status": "ENABLED / SERVING"
         },
         {
           "campaign": "PLL-Search-ContractMfg-2026",
           "id": "24049588003",
-          "spend": 24.72687,
-          "impressions": 60,
-          "clicks": 8,
-          "ctr": 0.13333333333333333,
-          "averageCpc": 3.09085875,
+          "spend": 1.55,
+          "impressions": 54,
+          "clicks": 2,
+          "ctr": 0.037037037037037035,
+          "averageCpc": 0.775,
           "status": "ENABLED / SERVING"
         }
       ],
@@ -557,21 +568,21 @@
         {
           "campaign": "PLL-Search-Samples-2026",
           "id": "24040031889",
-          "spend": 39.89496,
-          "impressions": 74,
-          "clicks": 11,
-          "ctr": 0.14864864864864866,
-          "averageCpc": 3.626814545454546,
+          "spend": 48.878550000000004,
+          "impressions": 108,
+          "clicks": 16,
+          "ctr": 0.14814814814814814,
+          "averageCpc": 3.0549093750000003,
           "status": "ENABLED / SERVING"
         },
         {
           "campaign": "PLL-Search-ContractMfg-2026",
           "id": "24049588003",
-          "spend": 172.292239,
-          "impressions": 295,
-          "clicks": 44,
-          "ctr": 0.14915254237288136,
-          "averageCpc": 3.9157327045454546,
+          "spend": 133.312239,
+          "impressions": 296,
+          "clicks": 35,
+          "ctr": 0.11824324324324324,
+          "averageCpc": 3.8089211142857144,
           "status": "ENABLED / SERVING"
         }
       ],
@@ -579,83 +590,178 @@
         {
           "campaign": "PLL-Search-Samples-2026",
           "id": "24040031889",
-          "spend": 26.54761,
-          "impressions": 91,
-          "clicks": 18,
-          "ctr": 0.1978021978021978,
-          "averageCpc": 1.474867222222222,
+          "spend": 20.64761,
+          "impressions": 69,
+          "clicks": 14,
+          "ctr": 0.2028985507246377,
+          "averageCpc": 1.4748292857142857,
           "status": "ENABLED / SERVING"
         },
         {
           "campaign": "PLL-Search-ContractMfg-2026",
           "id": "24049588003",
-          "spend": 121.152386,
-          "impressions": 260,
-          "clicks": 41,
-          "ctr": 0.1576923076923077,
-          "averageCpc": 2.9549362439024387,
+          "spend": 135.372386,
+          "impressions": 282,
+          "clicks": 48,
+          "ctr": 0.1702127659574468,
+          "averageCpc": 2.820258041666667,
           "status": "ENABLED / SERVING"
         }
       ]
     },
     "ads": {
-      "warning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED; no ad-level claims made. Read-only roster pull returned multiple account ads but could not prove the exact seven-ad association to the two scoped campaigns."
+      "roster": [
+        {
+          "adId": "817412024830",
+          "adGroupId": "197753978559",
+          "campaignId": "24049588003",
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "type": "RESPONSIVE_SEARCH_AD",
+          "spend": 3.09,
+          "impressions": 13,
+          "clicks": 1,
+          "ctr": 0.07692307692307693,
+          "averageCpc": 3.09
+        },
+        {
+          "adId": "817412025043",
+          "adGroupId": "197753979079",
+          "campaignId": "24049588003",
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "type": "RESPONSIVE_SEARCH_AD",
+          "spend": 57.53687,
+          "impressions": 60,
+          "clicks": 8,
+          "ctr": 0.13333333333333333,
+          "averageCpc": 7.19210875
+        },
+        {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "type": "RESPONSIVE_SEARCH_AD",
+          "spend": 5.05,
+          "impressions": 18,
+          "clicks": 3,
+          "ctr": 0.16666666666666666,
+          "averageCpc": 1.6833333333333333
+        },
+        {
+          "adId": "817481260556",
+          "adGroupId": "204146230528",
+          "campaignId": "24049588003",
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "type": "RESPONSIVE_SEARCH_AD",
+          "spend": 38.409695,
+          "impressions": 136,
+          "clicks": 13,
+          "ctr": 0.09558823529411764,
+          "averageCpc": 2.954591923076923
+        },
+        {
+          "adId": "817481283335",
+          "adGroupId": "204146230728",
+          "campaignId": "24049588003",
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "type": "RESPONSIVE_SEARCH_AD",
+          "spend": 11.905674,
+          "impressions": 11,
+          "clicks": 4,
+          "ctr": 0.36363636363636365,
+          "averageCpc": 2.9764185
+        },
+        {
+          "adId": "817481283338",
+          "adGroupId": "200118475084",
+          "campaignId": "24040031889",
+          "campaign": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "type": "RESPONSIVE_SEARCH_AD",
+          "spend": 48.87855,
+          "impressions": 108,
+          "clicks": 16,
+          "ctr": 0.14814814814814814,
+          "averageCpc": 3.054909375
+        },
+        {
+          "adId": "817481293367",
+          "adGroupId": "204146231008",
+          "campaignId": "24049588003",
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "type": "RESPONSIVE_SEARCH_AD",
+          "spend": 17.32,
+          "impressions": 58,
+          "clicks": 6,
+          "ctr": 0.10344827586206896,
+          "averageCpc": 2.8866666666666667
+        }
+      ],
+      "legacyAdsExcluded": 4,
+      "evidence": "Seven scoped ad IDs mapped to the two verified campaigns. Search-term waste evidence was not available through the approved read-only tools."
     },
     "leadsAndBookings": {
       "current7Days": {
-        "qualifiedInquiries": "9 manually reviewed genuine inquiries from 12 Shopify form submissions (vendor solicitations, no-intent/blank forms, and duplicates excluded).",
-        "verifiedAdsAttributedLeads": "0 verified to the two scoped Ads Agent campaigns. A current-window GCLID record points to legacy campaign 22755299462, so it is UNATTRIBUTED to this scope.",
-        "bookedCalls": "NOT YET MEASURABLE — calendar/CRM not in scope; last verified figure unavailable and not re-verified.",
-        "CPL": "NOT YET MEASURABLE — no verified scoped Ads-attributed lead denominator.",
-        "costPerBookedCall": "NOT YET MEASURABLE — booked-call record not re-verified."
+        "qualifiedInquiries": "6 manually reviewed genuine inquiries from 7 in-window Shopify form submissions; one packaging-vendor solicitation excluded.",
+        "verifiedAdsAttributedLeads": "0 verified to either scoped campaign. A utm_source=chatgpt form record was observed but is not Ads-attributed.",
+        "bookedCalls": "3 calendar-booked calls identified (2 new qualified prospects; 1 existing-client strategy call).",
+        "CPL": "NOT YET MEASURABLE — 0 verified scoped Ads-attributed leads.",
+        "costPerBookedCall": "$60.73 gross scoped spend per 3 calendar-booked calls; Ads-attributed cost per booked call is NOT YET MEASURABLE."
       },
       "prior7Days": {
-        "qualifiedInquiries": "3 manually reviewed genuine inquiries from 9 Shopify form submissions (vendor solicitations, no-intent/blank forms, and duplicate contact submission excluded).",
-        "verifiedAdsAttributedLeads": "0 verified to the two scoped Ads Agent campaigns. Observed GCLID record does not reconcile to either scoped campaign; UNATTRIBUTED to this scope.",
-        "bookedCalls": "NOT YET MEASURABLE — calendar/CRM not in scope; last verified figure unavailable and not re-verified.",
-        "CPL": "NOT YET MEASURABLE — no verified scoped Ads-attributed lead denominator.",
-        "costPerBookedCall": "NOT YET MEASURABLE — booked-call record not re-verified."
+        "qualifiedInquiries": "6 manually reviewed genuine inquiries from 10 in-window Shopify form submissions; vendor solicitation, duplicate submission, and no-intent submissions excluded.",
+        "verifiedAdsAttributedLeads": "0 verified to either scoped campaign. One GCLID was observed but did not reconcile to either scoped campaign; UNATTRIBUTED to this scope.",
+        "bookedCalls": "4 calendar-booked calls identified (Stellaqua, Shopokami, Ivory Maison, and Hass Alamer).",
+        "CPL": "NOT YET MEASURABLE — 0 verified scoped Ads-attributed leads.",
+        "costPerBookedCall": "$39.00 gross scoped spend per 4 calendar-booked calls; Ads-attributed cost per booked call is NOT YET MEASURABLE."
       }
     },
     "capAndFunnelHealth": {
       "configuredDailyBudgets": {
         "contractManufacturing": 20.33,
-        "whiteLabelSamples": 5,
+        "whiteLabelSamples": 5.0,
         "combined": 25.33
       },
-      "approvedCombinedDailyCap": 30,
+      "approvedCombinedDailyCap": 30.0,
       "configuredSevenDayBudget": 177.31,
-      "currentSevenDaySpend": 212.187199,
-      "currentDailyAverage": 30.312457,
-      "configuredBudgetUsedPercent": 119.67,
-      "capAssessment": "Trailing seven-day average is $30.31/day (119.67% of the configured $25.33/day; $177.31 over seven days): this is a configured-budget breach because the trailing average exceeds the configured budget. It is 101.04% of the separately approved $30.00/day cap; because this trailing average also exceeds that cap, it is an approved-cap breach. A single day above budget is not itself a breach because Google may deliver up to 2x daily budget and true up monthly.",
-      "funnelHealth": "Inbox form route is demonstrably receiving submissions. No landing-page or form failure was observed in this read-only run; attribution and booking measurement remain incomplete."
+      "currentSevenDaySpend": 182.190789,
+      "currentDailyAverage": 26.027255571428572,
+      "configuredBudgetUsedPercent": 102.75268681969432,
+      "approvedCapUsedPercentOnTrailingAverage": 86.75751857142858,
+      "capAssessment": "Trailing seven-day average is $26.03/day (102.75% of the configured $25.33/day; $177.31 configured seven-day budget): configured-budget breach. It is 86.76% of the separately approved $30.00/day cap, so the approved cap is not breached on the trailing average. Google single-day delivery can be up to 2x daily budget and is not itself a breach.",
+      "funnelHealth": "Inbox form route is receiving submissions and calendar bookings were found. No landing-page or form failure was observed. Ads attribution remains incomplete."
     },
-    "best": "Contract Manufacturing delivered 44 of 55 clicks (80.00%) in the current window, although verified scoped lead attribution is zero.",
-    "worst": "Trailing scoped spend of $212.19 averaged 119.67% of the configured combined budget; Contract Manufacturing CPC was $3.92 and Samples CPC $3.63.",
-    "watch": "CPC volatility: Contract Manufacturing reached $12.87 on Aug 13 in the current window; Samples reached $3.63 average CPC. Search-term waste and exact seven-ad evidence are unavailable.",
-    "searchTermWaste": "NOT YET MEASURABLE — no searchable search-term report was available through the approved read-only tool in this run.",
+    "best": "Samples led CTR at 14.81% and $ 3.05 CPC in the current window; Contract Manufacturing led volume with 35 clicks.",
+    "worst": "Samples spent $48.88 on a configured $35.00 seven-day budget (139.65%); total trailing spend averaged $26.03/day versus $25.33/day configured.",
+    "watch": "CTR fell from 17.66% prior to 12.62% current while CPC rose from $2.52 to $3.57; search-term waste is not measurable.",
+    "searchTermWaste": "NOT YET MEASURABLE — no searchable search-term report was available through the approved read-only tools in this run.",
     "recommendation": {
-      "recommendation": "Read-only recommendation: with material CPC volatility and the trailing configured-budget breach, obtain Sam's explicit approval before restoring Manual CPC on the two scoped campaigns without changing budgets; then measure CPC, qualified inquiries, and verified scoped Ads attribution for seven full days.",
-      "evidence": "Current seven-day spend $212.19 ($30.31/day) is 119.67% of $25.33/day configured. CPC was $3.92 for Contract Manufacturing and $3.63 for Samples; qualified-inquiry and scoped Ads-attribution measurement remain incomplete.",
-      "expectedOutcome": "Tighter CPC control and lower wasted-cost risk; not guaranteed.",
-      "measurementWindow": "Seven full days after an explicitly approved change.",
+      "recommendation": "Read-only recommendation: obtain Sam approval before changing anything; first reconcile the Samples campaign delivery against its configured $5.00/day budget and obtain search-term evidence, then measure qualified inquiries and scoped Ads attribution for seven full days.",
+      "evidence": "Current seven-day spend $182.19 averaged $26.03/day (102.75% of configured $25.33/day). Samples used 139.65% of its configured seven-day budget. Verified scoped Ads-attributed leads remain 0.",
+      "expectedOutcome": "Identify whether Samples delivery or query mix is driving the configured-budget breach and improve measurement quality; not guaranteed.",
+      "measurementWindow": "Seven full days after any explicitly approved change.",
       "approval_required": "yes",
       "status": "PENDING_SAM_APPROVAL"
     },
     "approvalRequirement": "No campaign, budget, bidding, keyword, targeting, creative, landing-page, form, or spend change was made. Sam approval is required before any recommendation is applied.",
     "preparedAnswers": {
-      "today": "Today (partial through 21:03 ET): $34.69 spend, 63 impressions, 10 clicks, 15.87% CTR, $3.47 average CPC.",
-      "sevenNewAds": "The two verified net-new campaigns are enabled. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
-      "ctrCpc": "Current 7 days: 14.91% CTR and $3.86 average CPC; prior 7 days: 16.81% and $2.50.",
-      "leadsEmailsCalls": "Qualified inquiries: 9 current / 3 prior. Verified scoped Ads-attributed leads: 0 / 0; bookings, CPL, and cost per booked call are NOT YET MEASURABLE because calendar/CRM was not re-verified.",
-      "budgetCap": "Configured budgets are $20.33 + $5.00 = $25.33/day. Current 7-day average is $30.31 (119.67%): configured-budget breach; 101.04% of the separately approved $30/day cap.",
-      "winners": "Contract Manufacturing led clicks (44), but it produced no verified scoped Ads-attributed lead.",
-      "waste": "Search-term waste is NOT YET MEASURABLE; CPC volatility is the current watch item.",
+      "today": "Today (partial through 21:03 ET): $10.53 spend, 88 impressions, 7 clicks, 7.95% CTR, $1.50 average CPC.",
+      "sevenNewAds": "The two verified net-new campaigns are enabled; exact seven-ad roster verified: 817412024830, 817412025043, 817412046418, 817481260556, 817481283335, 817481283338, 817481293367. Four legacy-account ads excluded.",
+      "ctrCpc": "Current 7 days: 12.62% CTR and $3.57 average CPC; prior 7 days: 17.66% and $2.52.",
+      "leadsEmailsCalls": "Qualified inquiries: 6 current / 6 prior. Verified scoped Ads-attributed leads: 0 / 0. Calendar-booked calls: 3 current / 4 prior; Ads-attributed CPL and cost per booked call are not measurable.",
+      "budgetCap": "Configured budgets are $20.33 + $5.00 = $25.33/day. Current 7-day average is $26.03 (102.75% of configured budget): configured-budget breach. It is 86.76% of the separately approved $30/day cap, so the approved cap is not breached on the trailing average.",
+      "winners": "Samples led current-window CTR (14.81%); Contract Manufacturing led clicks (35). No verified scoped Ads-attributed lead was recorded.",
+      "waste": "Search-term waste is NOT YET MEASURABLE; Samples configured-budget delivery is the watch item.",
       "optimization": "Read-only only; no optimization was made.",
-      "suggestions": "Read-only recommendation: with material CPC volatility and the trailing configured-budget breach, obtain Sam's explicit approval before restoring Manual CPC on the two scoped campaigns without changing budgets; then measure CPC, qualified inquiries, and verified scoped Ads attribution for seven full days.",
-      "nextExperiment": "Only after explicit approval: restore Manual CPC on the two scoped campaigns and observe one seven-day measurement window.",
-      "whatAdsAgentShouldDo": "Remain read-only; reconcile scoped attribution and obtain searchable search-term/ad-roster evidence before proposing any further change."
+      "suggestions": "Obtain Sam approval before any change; reconcile Samples delivery and obtain search-term evidence, then measure qualified inquiries and scoped Ads attribution for seven full days.",
+      "nextExperiment": "Only after explicit approval: investigate/reconcile Samples budget delivery and search terms, then run one seven-day measurement window without exceeding the approved cap.",
+      "whatAdsAgentShouldDo": "Remain read-only; monitor the configured-budget breach, reconcile Samples delivery, and obtain search-term plus scoped attribution evidence before proposing any change."
     }
   },
   "facilityStatus": {
