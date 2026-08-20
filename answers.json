@@ -1,9 +1,5 @@
 {
-  "id": "ans-ads-nightly-2026-08-19",
-  "request_id": "ads-nightly-2026-08-19",
-  "ts": "2026-08-20T01:06:25Z",
-  "agent": "Ads Agent",
-  "status": "completed",
-  "text": "Nightly Ads (read-only) — Aug 19. Net-new campaigns: today prelim $18.66 of $30. Trailing 7d (Aug 12–18) $183.83 of $210 cap; MTD $484.72. Both campaigns ENABLED on Maximize Conversions; ContractMfg Manual-CPC revert remains approval-pending (no budget change made). Today: 1 verified paid ContractMfg lead (Rannah) + 1 organic/unattributed qualified lead (Eric). Dirk progressed to booked-call. August totals: 28 leads / 2 qualified / 6 booked. Geo-twin awaits Sam's go. Cache not refreshed (no structured ads_intelligence supplied).",
-  "spoken_text": "Sam, quick nightly read on the new ads. Spend is healthy and under cap, about a hundred eighty-four of the two-ten weekly. Both campaigns are still on Maximize Conversions, so the manual CPC revert is still waiting on your go. We picked up one paid lead today, Rannah, plus one organic inquiry from Eric, and Dirk moved to a booked call. Nothing needs a decision tonight except that pending revert whenever you are ready."
+  "id": "ans_morning_20260820_82d83e65c537",
+  "ts": "2026-08-20T11:09:18.585Z",
+  "text": "Morning brief loaded for 2026-08-20."
 }
