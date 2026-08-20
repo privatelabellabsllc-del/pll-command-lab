@@ -42,6 +42,16 @@
     },
     {
       "keys": [
+        "aidan",
+        "aidan status",
+        "aidan accountability",
+        "production lanes",
+        "terra coordination"
+      ],
+      "a": "Aidan is driving Atlas Eternal's $26,500 production lanes and Terra Lotus customer/R&D coordination. Both projects are on track; Terra Lotus samples have an approximately August 24 checkpoint, and no Sam action is needed today."
+    },
+    {
+      "keys": [
         "atlas eternal",
         "atlas",
         "production",
@@ -49,18 +59,6 @@
         "aidan"
       ],
       "a": "Atlas Eternal is a $26,500 production project with Aidan driving the production lanes. It is on track and does not need a Sam action today."
-    },
-    {
-      "keys": [
-        "atlas eternal",
-        "atlas",
-        "production",
-        "deposit",
-        "balance",
-        "13250",
-        "aidan"
-      ],
-      "a": "Atlas Eternal is in production and the deposit is paid, with Aidan driving all four lanes. The $13,250 balance is due on completion."
     },
     {
       "keys": [
