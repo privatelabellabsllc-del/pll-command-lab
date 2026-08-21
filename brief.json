@@ -529,7 +529,9 @@
     "generatedAt": "2026-08-20T01:10:55.000Z",
     "status": "READ_ONLY_REFRESH_COMPLETE",
     "scopeWarning": "Exact seven-ad roster verified from the successful read-only ad-group-ad report filtered to the seven scoped IDs; four legacy-account ads were excluded.",
-    "summary": "Nightly scoped refresh: 2026-08-20 today $31.33 / 108 imps / 15 clicks / 13.89% CTR / $2.09 CPC; current 7d $190.45 / 555 imps / 70 clicks / 12.61% CTR / $2.72 CPC; prior 7d $147.52 / 291 imps / 47 clicks / 16.15% CTR / $3.14 CPC. Combined configured trailing average $27.21/day is 107.41% of $25.33 configured budget but 90.69% of approved $30/day cap. No Ads changes made; approval required for recommendation."
+    "summary": "Nightly scoped refresh: 2026-08-20 today $31.33 / 108 imps / 15 clicks / 13.89% CTR / $2.09 CPC; current 7d $190.45 / 555 imps / 70 clicks / 12.61% CTR / $2.72 CPC; prior 7d $147.52 / 291 imps / 47 clicks / 16.15% CTR / $3.14 CPC. Combined configured trailing average $27.21/day is 107.41% of $25.33 configured budget but 90.69% of approved $30/day cap. No Ads changes made; approval required for recommendation.",
+    "recommendation": "Read-only recommendation: obtain Sam approval before changing anything; reconcile the Samples campaign delivery against its configured $5.00/day budget, obtain search-term evidence, and repair scoped Ads attribution measurement before any optimization.",
+    "approval_required": "yes"
   },
   "adsIntelligence": {
     "generatedAt": "2026-08-20T01:10:55.000Z",
@@ -927,7 +929,7 @@
     },
     "best": "Ad 817481283335 led current-window CTR at 17.39% on 23 impressions/4 clicks; Samples led campaign CTR at 16.79% and Contract Manufacturing led volume with 48 clicks. Small ad samples limit confidence.",
     "worst": "Samples campaign exceeded its configured trailing seven-day budget allocation: $61.60 versus $35.00 (175.99%); ad 817481260556 had the lowest current-window CTR at 7.22% on 180 impressions.",
-    "watch": "CTR rose from 16.15% prior to 12.61% current? No — current is lower: 12.61% versus 16.15% prior, while CPC fell from $3.14 to $2.72; combined configured-budget trailing average is 107.41%, while approved $30/day cap usage is 90.69%. Search-term waste is not measurable.",
+    "watch": "CTR fell from 16.15% prior to 12.61% current while CPC fell from $3.14 to $2.72; combined configured-budget trailing average is 107.41%, while approved $30/day cap usage is 90.69%. Search-term waste is not measurable.",
     "searchTermWaste": "NOT YET MEASURABLE — no searchable search-term report was available through the approved read-only tools in this run.",
     "recommendation": {
       "recommendation": "Read-only recommendation: obtain Sam approval before changing anything; reconcile the Samples campaign delivery against its configured $5.00/day budget, obtain search-term evidence, and repair scoped Ads attribution measurement before any optimization.",
