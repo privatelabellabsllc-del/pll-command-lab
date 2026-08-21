@@ -1,33 +1,36 @@
 {
-  "date": "2026-08-20",
-  "ts": "2026-08-20T11:09:18.585Z",
+  "date": "2026-08-21",
+  "ts": "2026-08-21T11:02:53.130Z",
   "brief": [
     {
-      "t": "Approve the two overnight builds: the ConvertFlow two-branch fork (duplicate staged, live untouched, clickable mockup ready) and the Shopify floating Call/Book widget (preview and screenshots ready). One approval lets the Consultant finish the in-editor build and swap; nothing is live yet.",
+      "t": "Top priority: approve the two staged builds so the conversion funnel goes live - the ConvertFlow two-branch fork and the Shopify floating call and book widget, both staged on drafts. One look and one go publishes them.",
       "hot": true
     },
     {
-      "t": "Ashley Harmon at Apothik wants a call today at 2:30 or 3 PM Eastern, or Monday. Pick a slot and the Consultant books it.",
+      "t": "Atlas Eternal, twenty six thousand five hundred dollars, is in production with Aidan driving four lanes; balance of thirteen thousand two fifty is due on completion.",
       "hot": true
     },
     {
-      "t": "Make the stall-revival calls today: Marcello at Talova Labs (13,000 units) and Anna at Saylor (2,000 units) have both been silent since the August 17 emails. Call today or archive.",
-      "hot": true
-    },
-    {
-      "t": "Four fresh inbound leads — Kari Naughton, Radiant Glow, Eric at Solunesse, and Rannah at Aytay Beauty — are being qualified against the 1,000-plus-unit ICP filter; only real ones surface.",
+      "t": "Terra Lotus, nineteen thousand units in R&D, has a sample checkpoint Sunday - confirming all three sample sets actually shipped before building the revised quote.",
       "hot": false
     },
     {
-      "t": "Atlas Eternal is a $26,500 production project with Aidan driving its lanes, and Terra Lotus three-product R&D is on track for a samples checkpoint around August 24. No Sam action is needed today.",
+      "t": "Stall revival: did Thursday's calls to Talova's Marcello and Saylor's Anna connect? If still silent, decide pursue or archive.",
+      "hot": false
+    },
+    {
+      "t": "Quick yes or no: revert both ad campaigns to Manual CPC - they are still on Maximize Conversions with no conversion tracking and cost per click is drifting up.",
+      "hot": false
+    },
+    {
+      "t": "Quick yes or no: clear about eleven abandoned Shopify drafts to free a theme slot; the live theme is untouched.",
       "hot": false
     }
   ],
   "next": [
-    "Approve both overnight builds; the Consultant then finishes the in-editor build and swap. Nothing is live yet.",
-    "Choose Ashley Harmon's Apothik call slot: 2:30 or 3 PM Eastern today, or Monday; the Consultant books it.",
-    "Call Marcello at Talova Labs (13,000 units) and Anna at Saylor (2,000 units) today; archive either thread if it remains unresponsive.",
-    "Qualify Kari Naughton, Radiant Glow, Eric at Solunesse, and Rannah at Aytay Beauty against the 1,000-plus-unit ICP filter."
+    "Approve the two staged builds to publish the conversion funnel",
+    "Say 'revert ads to manual' for the one-click bid fix",
+    "Confirm the Talova and Saylor call outcomes"
   ],
   "kb": [
     {
@@ -48,7 +51,7 @@
         "production lanes",
         "terra coordination"
       ],
-      "a": "Aidan is driving Atlas Eternal's $26,500 production lanes and Terra Lotus customer/R&D coordination. Both projects are on track; Terra Lotus samples have an approximately August 24 checkpoint, and no Sam action is needed today."
+      "a": "Aidan is driving Atlas Eternal’s $26,500 production across four lanes and coordinating Terra Lotus’s 19,000-unit R&D. Atlas has a $13,250 balance due on completion; Terra’s Sunday, August 24 checkpoint requires confirmation that all three sample sets shipped before the revised quote."
     },
     {
       "keys": [
@@ -58,7 +61,7 @@
         "$26500",
         "aidan"
       ],
-      "a": "Atlas Eternal is a $26,500 production project with Aidan driving the production lanes. It is on track and does not need a Sam action today."
+      "a": "Atlas Eternal is a $26,500 production project with Aidan driving four lanes. The remaining $13,250 balance is due on completion; it is in production and does not need a new Sam action beyond the current approval lane."
     },
     {
       "keys": [
@@ -70,7 +73,7 @@
         "samples",
         "august 24"
       ],
-      "a": "Terra Lotus is on track in R&D for three products, with a samples checkpoint around August 24. No Sam action is needed today; Aidan and the R&D lane are carrying it forward."
+      "a": "Terra Lotus is a 19,000-unit R&D project with a sample checkpoint Sunday, August 24. Confirm all three sample sets actually shipped before building the revised quote; do not treat shipment as confirmed until verified."
     },
     {
       "keys": [
@@ -148,7 +151,7 @@
         "manual cpc",
         "revert"
       ],
-      "a": "Both campaigns are still on Maximize Conversions with zero conversion tracking, so they are spending without a usable signal. Sam can say “revert ads to manual” to move both back to Manual CPC; no change has been made yet."
+      "a": "Both campaigns remain on Maximize Conversions with no conversion tracking, and CPC is drifting up. The read-only recommendation is pending Sam: say “revert ads to manual” to move both campaigns to Manual CPC; no change has been made."
     },
     {
       "keys": [
@@ -238,7 +241,7 @@
         "august 17",
         "call today"
       ],
-      "a": "Marcello at Talova Labs (13,000 units) and Anna at Saylor (2,000 units) have both been silent since the August 17 reorder emails. Call today; archive a thread if it remains unresponsive."
+      "a": "Thursday’s calls to Marcello at Talova Labs and Anna at Saylor need outcome confirmation. If either remains silent, Sam should decide whether to pursue or archive; no connection outcome is recorded yet."
     },
     {
       "keys": [
@@ -280,7 +283,7 @@
         "screenshots",
         "live untouched"
       ],
-      "a": "The ConvertFlow two-branch fork is duplicated and staged with a clickable mockup, while the Shopify floating Call/Book widget has a preview and screenshots ready. Live remains untouched; one approval lets the Consultant finish the in-editor build and swap."
+      "a": "The ConvertFlow two-branch fork and Shopify floating Call/Book widget are both staged on drafts awaiting Sam’s go. One approval publishes the conversion funnel; the live site remains untouched until that approval."
     },
     {
       "keys": [
@@ -325,93 +328,93 @@
   "topTasks": [
     {
       "rank": 1,
-      "title": "Approve the two overnight conversion builds",
-      "why": "The ConvertFlow two-branch fork and Shopify floating Call/Book widget are staged with the mockup/preview ready; one approval is the gate before the Consultant finishes the in-editor build and swap.",
+      "title": "Approve the two staged conversion builds",
+      "why": "ConvertFlow two-branch fork and Shopify floating Call/Book widget are staged on drafts; one approval publishes the conversion funnel while the live theme/site remains untouched.",
       "owner": "Sam",
       "due": "Today",
       "priority": "critical",
       "revenue": "Conversion recovery",
-      "status": "AWAITING APPROVAL / NOTHING LIVE"
+      "status": "AWAITING APPROVAL / STAGED ON DRAFTS"
     },
     {
       "rank": 2,
-      "title": "Choose Ashley Harmon's Apothik call slot",
-      "why": "Ashley wants a call today at 2:30 or 3 PM Eastern, or Monday; the Consultant books it after Sam selects the slot.",
-      "owner": "Sam",
-      "due": "Today or Monday",
-      "priority": "critical",
-      "revenue": "Apothik opportunity",
-      "status": "AWAITING SLOT SELECTION"
+      "title": "Keep Atlas Eternal production moving",
+      "why": "Atlas Eternal is $26,500, Aidan is driving four lanes, and $13,250 is due on completion.",
+      "owner": "Aidan",
+      "due": "On completion",
+      "priority": "high",
+      "revenue": "Atlas Eternal",
+      "status": "IN PRODUCTION / FOUR LANES"
     },
     {
       "rank": 3,
-      "title": "Revive Talova and Saylor reorders",
-      "why": "Marcello (Talova Labs, 13,000 units) and Anna (Saylor, 2,000 units) have been silent since the August 17 emails.",
-      "owner": "Sam",
-      "due": "Today",
+      "title": "Verify Terra Lotus sample shipment",
+      "why": "Terra Lotus is a 19,000-unit R&D project with a Sunday, August 24 sample checkpoint; confirm all three sample sets shipped before the revised quote.",
+      "owner": "Aidan / R&D",
+      "due": "Sunday, Aug 24",
       "priority": "high",
-      "revenue": "Stall revival",
-      "status": "CALL TODAY OR ARCHIVE"
+      "revenue": "Terra Lotus",
+      "status": "R&D / SHIPMENT CONFIRMATION NEEDED"
     },
     {
       "rank": 4,
-      "title": "Qualify four fresh inbound leads",
-      "why": "Kari Naughton, Radiant Glow, Eric at Solunesse, and Rannah at Aytay Beauty must clear the 1,000-plus-unit ICP filter before further work.",
-      "owner": "Consultant / Sales",
+      "title": "Confirm Talova and Saylor call outcomes",
+      "why": "Thursday calls to Talova’s Marcello and Saylor’s Anna need a connection result; pursue or archive if still silent.",
+      "owner": "Sam",
       "due": "Today",
-      "priority": "high",
-      "revenue": "New pipeline",
-      "status": "QUALIFYING / SURFACE ONLY REAL FITS"
+      "priority": "medium",
+      "revenue": "Stall revival",
+      "status": "OUTCOME UNKNOWN"
     },
     {
       "rank": 5,
-      "title": "Keep Atlas Eternal and Terra Lotus on track",
-      "why": "Atlas Eternal ($26,500) production lanes and Terra Lotus three-product R&D are on track; Terra samples have an approximately August 24 checkpoint.",
-      "owner": "Aidan / R&D",
-      "due": "Around Aug 24 checkpoint",
+      "title": "Decide on the Manual CPC revert",
+      "why": "Both campaigns remain on Maximize Conversions without conversion tracking and CPC is drifting up.",
+      "owner": "Sam",
+      "due": "Today",
       "priority": "medium",
-      "revenue": "Active production and R&D",
-      "status": "ON TRACK / NO SAM ACTION"
+      "revenue": "Ads efficiency",
+      "status": "PENDING SAM / READ-ONLY"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Approve the two overnight builds, choose Ashley Harmon's call slot, and make the Talova/Saylor stall-revival calls.",
+      "top_task": "Approve the two staged builds, confirm the Talova/Saylor call outcomes, and decide on the Manual CPC revert.",
       "tasks": [
         {
           "title": "Approve ConvertFlow fork and Shopify floating Call/Book widget",
           "due": "Today"
         },
         {
-          "title": "Choose Ashley Harmon's Apothik call slot",
-          "due": "Today or Monday"
-        },
-        {
-          "title": "Call Marcello at Talova Labs and Anna at Saylor, or archive if silent",
+          "title": "Confirm Thursday calls to Talova and Saylor",
           "due": "Today"
         },
         {
-          "title": "Review four fresh leads against the 1,000-plus-unit ICP filter",
+          "title": "Decide whether to revert both ad campaigns to Manual CPC",
+          "due": "Today"
+        },
+        {
+          "title": "Decide whether to clear about eleven abandoned Shopify drafts; live theme untouched",
           "due": "Today"
         }
       ],
-      "notes": "Nothing is live yet. Atlas Eternal and Terra Lotus are on track with no Sam action today; no CRM Developer replies arrived overnight, and the Huntington alert awaits confirmation."
+      "notes": "Builds are staged on drafts; Atlas Eternal and Terra Lotus are active with Aidan, and the ads recommendation remains read-only pending Sam."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Drive Atlas Eternal production lanes and keep Terra Lotus coordination on track.",
+      "top_task": "Drive Atlas Eternal’s four production lanes and verify Terra Lotus sample shipment.",
       "tasks": [
         {
-          "title": "Drive Atlas Eternal $26,500 production lanes",
-          "due": "Ongoing"
+          "title": "Drive Atlas Eternal $26,500 production across four lanes",
+          "due": "On completion"
         },
         {
-          "title": "Track Terra Lotus three-product R&D toward samples checkpoint",
-          "due": "Around Aug 24"
+          "title": "Confirm all three Terra Lotus sample sets shipped before revised quote",
+          "due": "Sunday, Aug 24"
         }
       ],
-      "notes": "Both projects are on track; no Sam action is needed today."
+      "notes": "Atlas has a $13,250 balance due on completion; Terra Lotus is a 19,000-unit R&D project."
     },
     "aaron": {
       "display_name": "Aaron",
@@ -453,77 +456,74 @@
   },
   "revenueActions": [
     {
-      "title": "Approve and launch staged conversion builds",
-      "why": "ConvertFlow two-branch fork and Shopify floating Call/Book widget are staged with a clickable mockup/preview ready.",
+      "title": "Approve and publish staged conversion builds",
+      "why": "ConvertFlow fork and Shopify floating widget are staged on drafts awaiting Sam’s go.",
       "est_value": "Conversion recovery",
-      "next_step": "Approve once; Consultant finishes the in-editor build and swap.",
+      "next_step": "Approve once to publish the funnel.",
       "owner": "Sam",
       "timing": "Today",
       "value": "Conversion recovery",
-      "status": "AWAITING APPROVAL / NOTHING LIVE"
+      "status": "AWAITING APPROVAL"
     },
     {
-      "title": "Book Ashley Harmon / Apothik call",
-      "why": "Ashley wants a call today at 2:30 or 3 PM Eastern, or Monday.",
-      "est_value": "Apothik opportunity",
-      "next_step": "Choose the slot; Consultant books it.",
-      "owner": "Sam / Consultant",
-      "timing": "Today or Monday",
-      "value": "Not stated",
-      "status": "AWAITING SLOT SELECTION"
+      "title": "Advance Atlas Eternal production",
+      "why": "$26,500 project is in production with Aidan driving four lanes.",
+      "est_value": "$26,500",
+      "next_step": "Complete production; collect $13,250 balance on completion.",
+      "owner": "Aidan",
+      "timing": "On completion",
+      "value": "$13,250 balance due",
+      "status": "IN PRODUCTION"
     },
     {
-      "title": "Revive Talova and Saylor reorders",
-      "why": "Marcello (13,000 units) and Anna (2,000 units) are silent since the August 17 emails.",
+      "title": "Verify Terra Lotus samples",
+      "why": "19,000-unit R&D project has a Sunday Aug 24 checkpoint.",
+      "est_value": "Not stated",
+      "next_step": "Confirm all three sample sets shipped before revised quote.",
+      "owner": "Aidan / R&D",
+      "timing": "Sunday, Aug 24",
+      "value": "19,000 units",
+      "status": "SHIPMENT CONFIRMATION NEEDED"
+    },
+    {
+      "title": "Revive Talova and Saylor",
+      "why": "Thursday call outcomes are not yet recorded.",
       "est_value": "Reorder revival",
-      "next_step": "Call today or archive.",
+      "next_step": "Confirm connection; pursue or archive if silent.",
       "owner": "Sam",
       "timing": "Today",
-      "value": "13,000 + 2,000 units",
-      "status": "CALL OR ARCHIVE"
+      "value": "Not stated",
+      "status": "OUTCOME UNKNOWN"
     },
     {
-      "title": "Qualify four fresh inbound leads",
-      "why": "Four named inquiries are being screened against the 1,000-plus-unit ICP.",
-      "est_value": "New pipeline",
-      "next_step": "Surface only qualified leads.",
-      "owner": "Consultant / Sales",
+      "title": "Decide on Manual CPC revert",
+      "why": "Both campaigns lack conversion tracking while CPC drifts up.",
+      "est_value": "Ads efficiency",
+      "next_step": "Say “revert ads to manual” if approved; no change made.",
+      "owner": "Sam",
       "timing": "Today",
       "value": "Not stated",
-      "status": "QUALIFYING"
-    },
-    {
-      "title": "Advance Atlas Eternal and Terra Lotus",
-      "why": "Atlas Eternal production and Terra Lotus three-product R&D are both on track.",
-      "est_value": "Atlas $26,500; Terra value not stated",
-      "next_step": "Aidan/R&D continue; watch Terra samples checkpoint around August 24.",
-      "owner": "Aidan / R&D",
-      "timing": "Around Aug 24 checkpoint",
-      "value": "Atlas $26,500",
-      "status": "ON TRACK / NO SAM ACTION"
+      "status": "PENDING SAM / READ-ONLY"
     }
   ],
   "pipelineStat": {
-    "total_value": "$26,500 Atlas Eternal; other values not stated in today's brief",
+    "total_value": "$26,500 Atlas Eternal; Terra Lotus value not stated",
     "active_deals": 2,
     "hot": [
-      "ConvertFlow and Shopify conversion builds — approval gate; nothing live",
-      "Ashley Harmon / Apothik — call slot needed today or Monday",
-      "Talova and Saylor — 13,000-unit and 2,000-unit stall revival calls",
-      "Four fresh inbound leads — 1,000-plus-unit ICP qualification",
-      "Atlas Eternal — $26,500 production and Terra Lotus — three-product R&D on track"
+      "Staged conversion builds — approval needed",
+      "Atlas Eternal — $26,500 in production; $13,250 due on completion",
+      "Terra Lotus — 19,000-unit R&D; Sunday Aug 24 sample checkpoint"
     ],
     "stalled": [
-      "Talova Labs reorder — Marcello silent since Aug 17",
-      "Saylor reorder — Anna silent since Aug 17"
+      "Talova and Saylor — Thursday call outcomes unknown"
     ],
     "activeDeals": 2,
     "pipelineValue": 26500,
     "inProduction": 1,
     "depositsCollected": null,
-    "note": "Today's brief records two staged conversion builds awaiting one approval, an Ashley Harmon call slot, Talova and Saylor stall-revival calls, four fresh leads under ICP qualification, Atlas Eternal $26,500 production, and Terra Lotus three-product R&D on track for an approximately Aug 24 samples checkpoint. No Sam action is needed for Atlas/Terra today.",
+    "note": "Today: approve staged builds, verify Terra Lotus samples, confirm Talova/Saylor calls, and decide on the read-only Manual CPC revert. Atlas Eternal remains in production with Aidan across four lanes.",
     "monthlyTarget": "$150K",
-    "achievableDepositsThisMonth": "Not stated in today's brief."
+    "achievableDepositsThisMonth": "Not stated in today’s brief."
   },
   "adsAgentBrief": {
     "generatedAt": "2026-08-20T01:10:55.000Z",

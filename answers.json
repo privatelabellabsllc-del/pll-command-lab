@@ -1,9 +1,5 @@
 {
-  "id": "ads-nightly-2026-08-20",
-  "request_id": "ads-nightly-2026-08-20",
-  "ts": "2026-08-20T21:15:00-04:00",
-  "agent": "Ads Agent",
-  "status": "completed",
-  "text": "Nightly Ads self-report (Aug 20). Today: ~$31.33 spend, 15 clicks, $2.09 CPC (about $1.33 over the $30/day nominal). Trailing 7 days ~$184.85 vs prior 7 ~$154.80. MTD ~$530.35. Both net-new campaigns (ContractMfg, Samples) ENABLED on Maximize Conversions; the twin campaign is paused. No new leads since 9am; 1 verified ContractMfg lead in the trailing 7 days. No account changes made; ledger unchanged. Ads Agent recommends reverting both campaigns to Manual CPC with no budget change - pending Sam's approval. Cache note: this callback carried no structured ads_intelligence, so brief.json was not refreshed from it; the live cache was already independently refreshed at 9pm ET tonight.",
-  "spoken_text": "Sam, quick nightly read on the new ads. Today we spent about thirty one dollars for fifteen clicks, a couple dollars over the daily target. Over the last seven days spend is around one eighty five, up a little from the week before, and we picked up one verified lead. The ads are still on automatic bidding with no conversion tracking, which is why cost per click keeps drifting up. The Ads Agent again recommends switching both campaigns back to manual bidding, with no budget change. Nothing was changed tonight, it just needs your go."
+  "id": "f4a7da80-24b2-4eca-b695-0f23664a59dd",
+  "ts": "2026-08-21T11:02:53.130Z",
+  "text": "Morning brief loaded for 2026-08-21."
 }
