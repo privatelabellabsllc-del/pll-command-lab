@@ -526,17 +526,17 @@
     "achievableDepositsThisMonth": "Not stated in today’s brief."
   },
   "adsAgentBrief": {
-    "generatedAt": "2026-08-20T01:10:55.000Z",
+    "generatedAt": "2026-08-22T01:10:00.000Z",
     "status": "READ_ONLY_REFRESH_COMPLETE",
-    "scopeWarning": "Exact seven-ad roster verified from the successful read-only ad-group-ad report filtered to the seven scoped IDs; four legacy-account ads were excluded.",
-    "summary": "Nightly scoped refresh: 2026-08-20 today $31.33 / 108 imps / 15 clicks / 13.89% CTR / $2.09 CPC; current 7d $190.45 / 555 imps / 70 clicks / 12.61% CTR / $2.72 CPC; prior 7d $147.52 / 291 imps / 47 clicks / 16.15% CTR / $3.14 CPC. Combined configured trailing average $27.21/day is 107.41% of $25.33 configured budget but 90.69% of approved $30/day cap. No Ads changes made; approval required for recommendation.",
-    "recommendation": "Read-only recommendation: obtain Sam approval before changing anything; reconcile the Samples campaign delivery against its configured $5.00/day budget, obtain search-term evidence, and repair scoped Ads attribution measurement before any optimization.",
+    "scopeWarning": "Exact seven-ad roster verified from the successful dedicated read-only ad report filtered to the seven scoped IDs; four legacy-account ads were excluded.",
+    "summary": "Nightly scoped refresh: 2026-08-21 today $17.08 / 127 imps / 12 clicks / 9.45% CTR / $1.42 CPC; current 7d $173.26 / 623 imps / 76 clicks / 12.20% CTR / $2.28 CPC; prior 7d $164.98 / 302 imps / 49 clicks / 16.23% CTR / $3.37 CPC. Combined configured trailing average $24.75/day is 97.71% of $25.33 configured budget and 82.50% of approved $30/day cap; Samples individually used 151.24% of its configured 7-day allocation. No Ads changes made; approval required for recommendation.",
+    "recommendation": "Read-only recommendation: obtain Sam approval before changing anything; reconcile Samples campaign pacing against its configured $5.00/day budget, obtain search-term evidence, and preserve/repair scoped Ads attribution measurement before any optimization.",
     "approval_required": "yes"
   },
   "adsIntelligence": {
-    "generatedAt": "2026-08-20T01:10:55.000Z",
+    "generatedAt": "2026-08-22T01:10:00.000Z",
     "refreshType": "nightly_cache_refresh",
-    "dataAsOf": "2026-08-20 21:10 America/New_York; today is partial-day data at pull time",
+    "dataAsOf": "2026-08-21 21:10 America/New_York; today is partial-day data at pull time",
     "scope": {
       "customerId": "2915572948",
       "campaigns": [
@@ -563,32 +563,32 @@
         "817481283338",
         "817481293367"
       ],
-      "warning": "Exact seven-ad roster verified from the successful read-only ad-group-ad report filtered to the seven scoped IDs; four legacy-account ads were excluded."
+      "warning": "Exact seven-ad roster verified from the successful dedicated read-only ad report filtered to the seven scoped IDs; four legacy-account ads were excluded."
     },
     "windows": {
       "today": {
-        "window": "2026-08-20 (through 21:10 ET)",
-        "spend": 31.332372,
-        "impressions": 108,
-        "clicks": 15,
-        "ctr": 0.1388888888888889,
-        "averageCpc": 2.0888248
+        "window": "2026-08-21 (through 21:10 ET)",
+        "spend": 17.081484,
+        "impressions": 127,
+        "clicks": 12,
+        "ctr": 0.09448818897637795,
+        "averageCpc": 1.423457
       },
       "current7Days": {
-        "window": "2026-08-14 through 2026-08-20",
-        "spend": 190.446282,
-        "impressions": 555,
-        "clicks": 70,
-        "ctr": 0.12612612612612611,
-        "averageCpc": 2.7206611714285716
+        "window": "2026-08-15 through 2026-08-21",
+        "spend": 173.257766,
+        "impressions": 623,
+        "clicks": 76,
+        "ctr": 0.12199036918138041,
+        "averageCpc": 2.279707447368421
       },
       "prior7Days": {
-        "window": "2026-08-07 through 2026-08-13",
-        "spend": 147.516875,
-        "impressions": 291,
-        "clicks": 47,
-        "ctr": 0.16151202749140894,
-        "averageCpc": 3.138656914893617
+        "window": "2026-08-08 through 2026-08-14",
+        "spend": 164.976875,
+        "impressions": 302,
+        "clicks": 49,
+        "ctr": 0.16225165562913907,
+        "averageCpc": 3.3668750000000003
       }
     },
     "campaignBreakdown": {
@@ -596,21 +596,21 @@
         {
           "campaign": "PLL-Search-Samples-2026",
           "id": "24040031889",
-          "spend": 6.206552,
+          "spend": 1.33,
           "impressions": 15,
-          "clicks": 3,
-          "ctr": 0.2,
-          "averageCpc": 2.0688506666666666,
+          "clicks": 1,
+          "ctr": 0.06666666666666667,
+          "averageCpc": 1.33,
           "status": "ENABLED / SERVING"
         },
         {
           "campaign": "PLL-Search-ContractMfg-2026",
           "id": "24049588003",
-          "spend": 25.12582,
-          "impressions": 93,
-          "clicks": 12,
-          "ctr": 0.12903225806451613,
-          "averageCpc": 2.0938183333333336,
+          "spend": 15.751484,
+          "impressions": 113,
+          "clicks": 11,
+          "ctr": 0.09821428571428571,
+          "averageCpc": 1.431953090909091,
           "status": "ENABLED / SERVING"
         }
       ],
@@ -618,21 +618,21 @@
         {
           "campaign": "PLL-Search-Samples-2026",
           "id": "24040031889",
-          "spend": 61.595102,
-          "impressions": 131,
-          "clicks": 22,
-          "ctr": 0.16793893129770993,
-          "averageCpc": 2.7997773636363634,
+          "spend": 52.935102,
+          "impressions": 111,
+          "clicks": 20,
+          "ctr": 0.18018018018018017,
+          "averageCpc": 2.6467551,
           "status": "ENABLED / SERVING"
         },
         {
           "campaign": "PLL-Search-ContractMfg-2026",
           "id": "24049588003",
-          "spend": 128.85118,
-          "impressions": 424,
-          "clicks": 48,
-          "ctr": 0.11320754716981132,
-          "averageCpc": 2.684399583333333,
+          "spend": 120.322664,
+          "impressions": 512,
+          "clicks": 56,
+          "ctr": 0.109375,
+          "averageCpc": 2.148619,
           "status": "ENABLED / SERVING"
         }
       ],
@@ -640,21 +640,21 @@
         {
           "campaign": "PLL-Search-Samples-2026",
           "id": "24040031889",
-          "spend": 8.87761,
-          "impressions": 39,
+          "spend": 14.46761,
+          "impressions": 52,
           "clicks": 6,
-          "ctr": 0.15384615384615385,
-          "averageCpc": 1.4796016666666667,
+          "ctr": 0.11538461538461539,
+          "averageCpc": 2.4112683333333336,
           "status": "ENABLED / SERVING"
         },
         {
           "campaign": "PLL-Search-ContractMfg-2026",
           "id": "24049588003",
-          "spend": 138.639265,
-          "impressions": 252,
-          "clicks": 41,
-          "ctr": 0.1626984126984127,
-          "averageCpc": 3.381445487804878,
+          "spend": 150.509265,
+          "impressions": 250,
+          "clicks": 43,
+          "ctr": 0.172,
+          "averageCpc": 3.500215465116279,
           "status": "ENABLED / SERVING"
         }
       ]
@@ -669,24 +669,24 @@
           "status": "ENABLED",
           "type": "RESPONSIVE_SEARCH_AD",
           "current7Days": {
-            "spend": 3.09,
-            "impressions": 17,
+            "spend": 0,
+            "impressions": 22,
             "clicks": 1,
-            "ctr": 0.058823529411764705,
-            "averageCpc": 3.09,
+            "ctr": 0.045454545454545456,
+            "averageCpc": 0.0,
             "status": "ENABLED / SERVING"
           },
           "today": {
             "spend": 0,
-            "impressions": 0,
+            "impressions": 7,
             "clicks": 0,
-            "ctr": 0,
+            "ctr": 0.0,
             "averageCpc": 0,
             "status": "ENABLED / SERVING"
           },
           "prior7Days": {
             "spend": 0,
-            "impressions": 1,
+            "impressions": 2,
             "clicks": 0,
             "ctr": 0.0,
             "averageCpc": 0,
@@ -701,19 +701,19 @@
           "status": "ENABLED",
           "type": "RESPONSIVE_SEARCH_AD",
           "current7Days": {
-            "spend": 47.22269,
-            "impressions": 108,
-            "clicks": 20,
-            "ctr": 0.18518518518518517,
-            "averageCpc": 2.3611345,
+            "spend": 58.814174,
+            "impressions": 143,
+            "clicks": 28,
+            "ctr": 0.1958041958041958,
+            "averageCpc": 2.1005062142857143,
             "status": "ENABLED / SERVING"
           },
           "today": {
-            "spend": 15.76582,
-            "impressions": 29,
-            "clicks": 9,
-            "ctr": 0.3103448275862069,
-            "averageCpc": 1.7517577777777777,
+            "spend": 11.591484,
+            "impressions": 39,
+            "clicks": 8,
+            "ctr": 0.20512820512820512,
+            "averageCpc": 1.4489355,
             "status": "ENABLED / SERVING"
           },
           "prior7Days": {
@@ -734,9 +734,9 @@
           "type": "RESPONSIVE_SEARCH_AD",
           "current7Days": {
             "spend": 5.05,
-            "impressions": 25,
+            "impressions": 32,
             "clicks": 3,
-            "ctr": 0.12,
+            "ctr": 0.09375,
             "averageCpc": 1.6833333333333333,
             "status": "ENABLED / SERVING"
           },
@@ -765,27 +765,27 @@
           "status": "ENABLED",
           "type": "RESPONSIVE_SEARCH_AD",
           "current7Days": {
-            "spend": 32.602816,
-            "impressions": 180,
-            "clicks": 13,
-            "ctr": 0.07222222222222222,
-            "averageCpc": 2.507908923076923,
+            "spend": 24.482816,
+            "impressions": 215,
+            "clicks": 14,
+            "ctr": 0.06511627906976744,
+            "averageCpc": 1.7487725714285713,
             "status": "ENABLED / SERVING"
           },
           "today": {
-            "spend": 9.36,
-            "impressions": 33,
-            "clicks": 3,
-            "ctr": 0.09090909090909091,
-            "averageCpc": 3.1199999999999997,
+            "spend": 2.48,
+            "impressions": 50,
+            "clicks": 2,
+            "ctr": 0.04,
+            "averageCpc": 1.24,
             "status": "ENABLED / SERVING"
           },
           "prior7Days": {
-            "spend": 56.989699,
-            "impressions": 155,
+            "spend": 55.179699,
+            "impressions": 151,
             "clicks": 20,
-            "ctr": 0.12903225806451613,
-            "averageCpc": 2.84948495,
+            "ctr": 0.13245033112582782,
+            "averageCpc": 2.75898495,
             "status": "ENABLED / SERVING"
           }
         },
@@ -797,24 +797,24 @@
           "status": "ENABLED",
           "type": "RESPONSIVE_SEARCH_AD",
           "current7Days": {
-            "spend": 11.905674,
-            "impressions": 23,
-            "clicks": 4,
-            "ctr": 0.17391304347826086,
-            "averageCpc": 2.9764185,
+            "spend": 13.585674,
+            "impressions": 29,
+            "clicks": 5,
+            "ctr": 0.1724137931034483,
+            "averageCpc": 2.7171347999999997,
             "status": "ENABLED / SERVING"
           },
           "today": {
-            "spend": 0,
-            "impressions": 10,
-            "clicks": 0,
-            "ctr": 0.0,
-            "averageCpc": 0,
+            "spend": 1.68,
+            "impressions": 6,
+            "clicks": 1,
+            "ctr": 0.16666666666666666,
+            "averageCpc": 1.68,
             "status": "ENABLED / SERVING"
           },
           "prior7Days": {
             "spend": 0,
-            "impressions": 3,
+            "impressions": 2,
             "clicks": 0,
             "ctr": 0.0,
             "averageCpc": 0,
@@ -829,27 +829,27 @@
           "status": "ENABLED",
           "type": "RESPONSIVE_SEARCH_AD",
           "current7Days": {
-            "spend": 61.595102,
-            "impressions": 131,
-            "clicks": 22,
-            "ctr": 0.16793893129770993,
-            "averageCpc": 2.7997773636363634,
+            "spend": 52.935102,
+            "impressions": 111,
+            "clicks": 20,
+            "ctr": 0.18018018018018017,
+            "averageCpc": 2.6467551,
             "status": "ENABLED / SERVING"
           },
           "today": {
-            "spend": 6.206552,
+            "spend": 1.33,
             "impressions": 15,
-            "clicks": 3,
-            "ctr": 0.2,
-            "averageCpc": 2.0688506666666666,
+            "clicks": 1,
+            "ctr": 0.06666666666666667,
+            "averageCpc": 1.33,
             "status": "ENABLED / SERVING"
           },
           "prior7Days": {
-            "spend": 8.87761,
-            "impressions": 39,
+            "spend": 14.46761,
+            "impressions": 52,
             "clicks": 6,
-            "ctr": 0.15384615384615385,
-            "averageCpc": 1.4796016666666667,
+            "ctr": 0.11538461538461539,
+            "averageCpc": 2.4112683333333336,
             "status": "ENABLED / SERVING"
           }
         },
@@ -861,55 +861,55 @@
           "status": "ENABLED",
           "type": "RESPONSIVE_SEARCH_AD",
           "current7Days": {
-            "spend": 28.98,
+            "spend": 15.3,
             "impressions": 71,
-            "clicks": 7,
-            "ctr": 0.09859154929577464,
-            "averageCpc": 4.14,
+            "clicks": 5,
+            "ctr": 0.07042253521126761,
+            "averageCpc": 3.06,
             "status": "ENABLED / SERVING"
           },
           "today": {
             "spend": 0,
-            "impressions": 14,
+            "impressions": 4,
             "clicks": 0,
             "ctr": 0.0,
             "averageCpc": 0,
             "status": "ENABLED / SERVING"
           },
           "prior7Days": {
-            "spend": 16.939566,
-            "impressions": 45,
-            "clicks": 10,
-            "ctr": 0.2222222222222222,
-            "averageCpc": 1.6939566,
+            "spend": 30.619566,
+            "impressions": 47,
+            "clicks": 12,
+            "ctr": 0.2553191489361702,
+            "averageCpc": 2.5516305,
             "status": "ENABLED / SERVING"
           }
         }
       ],
       "legacyAdsExcluded": 4,
-      "evidence": "Seven scoped ad IDs were directly filtered and returned in the successful read-only ad-group-ad report. Search-term waste evidence was not available through the approved read-only tools."
+      "evidence": "Seven scoped ad IDs were directly returned by the successful dedicated read-only ad report. No searchable search-term report was available through the approved read-only tools in this run."
     },
     "leadsAndBookings": {
       "today": {
-        "qualifiedInquiries": "0 genuine in-window Shopify inquiries identified.",
-        "verifiedAdsAttributedLeads": "0; NOT YET MEASURABLE for today.",
-        "bookedCalls": "1 calendar-booked discovery call identified (Ashley Harmon; phone number was still pending in the event notes).",
-        "CPL": "NOT YET MEASURABLE — 0 verified scoped Ads-attributed leads.",
-        "costPerBookedCall": "$31.33 gross scoped spend per 1 calendar-booked call; Ads-attributed cost per booked call is NOT YET MEASURABLE."
+        "qualifiedInquiries": "1 manually reviewed genuine inquiry from 2 in-window Shopify form submissions; one order-support submission excluded.",
+        "verifiedAdsAttributedLeads": "0 qualified Ads-attributed leads. One non-qualified order-support contact carried a GCLID and was excluded from lead totals.",
+        "bookedCalls": "1 email-confirmed future discovery call booking (Kari; scheduled 2026-08-26); no same-day calendar event was found.",
+        "CPL": "NOT YET MEASURABLE — 0 verified scoped Ads-attributed qualified leads.",
+        "costPerBookedCall": "$17.08 gross scoped spend per 1 booking; Ads-attributed cost per booked call is NOT YET MEASURABLE."
       },
       "current7Days": {
-        "qualifiedInquiries": "6 manually reviewed genuine inquiries from 7 in-window Shopify form submissions; one lower-fit/unqualified submission excluded.",
-        "verifiedAdsAttributedLeads": "0 verified scoped Ads-attributed leads; the captured UTM identified chatgpt.com, not either scoped Ads campaign. Other qualified inquiries are UNATTRIBUTED.",
-        "bookedCalls": "3 calendar-booked customer calls identified (Tesfa Shiferaw, Max Bunting, and Ashley Harmon).",
-        "CPL": "NOT YET MEASURABLE — 0 verified scoped Ads-attributed leads.",
-        "costPerBookedCall": "$63.48 gross scoped spend per 3 calendar-booked calls; Ads-attributed cost per booked call is NOT YET MEASURABLE."
+        "qualifiedInquiries": "5 manually reviewed genuine inquiries from 7 in-window Shopify form submissions; one order-support submission and one empty/low-fit submission excluded.",
+        "verifiedAdsAttributedLeads": "1 verified scoped Ads-attributed qualified lead (Rannah; GCLID and campaign 24049588003). Remaining qualified inquiries are UNATTRIBUTED.",
+        "bookedCalls": "4 bookings identified: 3 calendar-backed customer calls (Tesfa Shiferaw, Max Bunting, Ashley Harmon) plus 1 email-confirmed future discovery call (Kari; scheduled 2026-08-26).",
+        "CPL": "$173.26 per 1 verified scoped Ads-attributed qualified lead.",
+        "costPerBookedCall": "$43.31 gross scoped spend per 4 bookings; Ads-attributed cost per booked call is NOT YET MEASURABLE."
       },
       "prior7Days": {
         "qualifiedInquiries": "9 manually reviewed genuine inquiries from 13 in-window Shopify form submissions; three vendor/no-intent or low-fit submissions excluded, with one duplicate inquiry retained as a submission.",
-        "verifiedAdsAttributedLeads": "1 with a captured GCLID; campaign-level reconciliation was not available, so it is Ads-signal-attributed but campaign NOT YET MEASURABLE. Remaining qualified inquiries are UNATTRIBUTED.",
+        "verifiedAdsAttributedLeads": "1 verified scoped Ads-attributed qualified lead (Tesfa; captured GCLID reconciled to campaign 24049588003). Other qualified inquiries are UNATTRIBUTED; legacy-campaign GCLIDs excluded.",
         "bookedCalls": "3 calendar-booked customer calls identified (Olesya Orozco, Hass Alamer, and Ashley Harmon).",
-        "CPL": "$147.52 per captured-GCLID Ads-signal lead; campaign-level CPL is NOT YET MEASURABLE.",
-        "costPerBookedCall": "$49.17 gross scoped spend per 3 calendar-booked calls; campaign-level Ads-attributed cost per booked call is NOT YET MEASURABLE."
+        "CPL": "$164.98 per 1 verified scoped Ads-attributed qualified lead.",
+        "costPerBookedCall": "$54.99 gross scoped spend per 3 calendar-booked calls; Ads-attributed cost per booked call is NOT YET MEASURABLE."
       }
     },
     "capAndFunnelHealth": {
@@ -920,38 +920,52 @@
       },
       "approvedCombinedDailyCap": 30,
       "configuredSevenDayBudget": 177.31,
-      "currentSevenDaySpend": 190.446282,
-      "currentDailyAverage": 27.206611714285714,
-      "configuredBudgetUsedPercent": 107.40865264226495,
-      "approvedCapUsedPercentOnTrailingAverage": 90.68870571428572,
-      "capAssessment": "Trailing seven-day average is $27.21/day (107.41% of the configured $25.33/day; $177.31 configured seven-day budget): the combined configured budget is breached on the trailing-average test. Samples spent $61.60 versus its $35.00 configured seven-day budget (175.99%); Contract Manufacturing spent $128.85 versus its $142.31 configured seven-day budget (90.54%). The trailing average is 90.69% of the separately approved $30.00/day cap, so the approved cap is not breached. Today's delivery above a daily budget is not itself a breach because Google may deliver up to 2x daily budget and true up monthly.",
-      "funnelHealth": "Inbox form route is receiving submissions and calendar bookings were found. No landing-page or form failure was observed. Ads attribution remains incomplete; search-term waste is NOT YET MEASURABLE."
+      "currentSevenDaySpend": 173.257766,
+      "currentDailyAverage": 24.75110942857143,
+      "configuredBudgetUsedPercent": 97.71460492922,
+      "approvedCapUsedPercentOnTrailingAverage": 82.5036980952381,
+      "campaignAllocation": {
+        "contractManufacturing": {
+          "configuredSevenDayBudget": 142.31,
+          "spend": 120.322664,
+          "usedPercent": 84.54969011313331,
+          "trailingDailyAverage": 17.188952
+        },
+        "whiteLabelSamples": {
+          "configuredSevenDayBudget": 35,
+          "spend": 52.935102,
+          "usedPercent": 151.24314857142858,
+          "trailingDailyAverage": 7.562157428571429
+        }
+      },
+      "capAssessment": "Current trailing seven-day spend is $173.26, averaging $24.75/day (97.71% of the combined configured $25.33/day; $177.31 configured seven-day budget), so the combined configured-budget trailing-average test is NOT breached. Samples is individually above its configured trailing allocation at $52.94 versus $35.00 (151.24%; $7.56/day versus $5.00/day), while Contract Manufacturing is $120.32 versus $142.31 (84.55%). The trailing average is 82.50% of the separately approved $30.00/day cap, so the approved cap is not breached. Today’s delivery above a daily budget would not itself be a breach because Google may deliver up to 2x daily budget and true up monthly; today’s combined spend was $17.08.",
+      "funnelHealth": "Inbox form route is receiving submissions and calendar/email booking evidence was found. No landing-page or form failure was observed. One current qualified inquiry (Rannah) and one prior qualified inquiry (Tesfa) are verifiably tied to scoped campaign 24049588003; remaining qualified inquiries are UNATTRIBUTED. Search-term waste is NOT YET MEASURABLE."
     },
-    "best": "Ad 817481283335 led current-window CTR at 17.39% on 23 impressions/4 clicks; Samples led campaign CTR at 16.79% and Contract Manufacturing led volume with 48 clicks. Small ad samples limit confidence.",
-    "worst": "Samples campaign exceeded its configured trailing seven-day budget allocation: $61.60 versus $35.00 (175.99%); ad 817481260556 had the lowest current-window CTR at 7.22% on 180 impressions.",
-    "watch": "CTR fell from 16.15% prior to 12.61% current while CPC fell from $3.14 to $2.72; combined configured-budget trailing average is 107.41%, while approved $30/day cap usage is 90.69%. Search-term waste is not measurable.",
+    "best": "Ad 817412025043 led current-window CTR at 19.58% on 143 impressions/28 clicks; Samples led campaign CTR at 18.02% and Contract Manufacturing led volume with 56 clicks. Small ad samples limit confidence.",
+    "worst": "Ad 817412024830 had the lowest current-window CTR at 4.55% on 22 impressions/1 click; ad 817481260556 had the lowest CTR among the higher-volume current ads at 6.51% on 215 impressions/14 clicks.",
+    "watch": "CTR fell from 16.23% prior to 12.20% current while CPC fell from $3.37 to $2.28; Samples is above its individual configured trailing allocation at 151.24%, although combined trailing average is 97.71% of configured budget and 82.50% of the approved $30/day cap. Search-term waste is not measurable.",
     "searchTermWaste": "NOT YET MEASURABLE — no searchable search-term report was available through the approved read-only tools in this run.",
     "recommendation": {
-      "recommendation": "Read-only recommendation: obtain Sam approval before changing anything; reconcile the Samples campaign delivery against its configured $5.00/day budget, obtain search-term evidence, and repair scoped Ads attribution measurement before any optimization.",
-      "evidence": "Current seven-day spend $190.45 averaged $27.21/day (107.41% of combined configured $25.33/day) but 90.69% of the separately approved $30/day cap. Samples used 175.99% of its configured seven-day allocation. No current qualified inquiry was verifiably Ads-attributed; one prior inquiry carried a GCLID without campaign reconciliation.",
-      "expectedOutcome": "Determine whether Samples pacing and query mix are driving the configured-budget overrun and improve measurement quality; not guaranteed.",
+      "recommendation": "Read-only recommendation: obtain Sam approval before changing anything; reconcile Samples campaign pacing against its configured $5.00/day budget, obtain search-term evidence, and preserve/repair scoped Ads attribution measurement before any optimization.",
+      "evidence": "Current seven-day spend $173.26 averaged $24.75/day (97.71% of combined configured $25.33/day) and 82.50% of the separately approved $30/day cap. Samples used 151.24% of its configured seven-day allocation. One current and one prior qualified inquiry are verified to scoped campaign 24049588003; search-term evidence remains unavailable.",
+      "expectedOutcome": "Determine whether Samples pacing and query mix are driving its individual allocation overrun and improve measurement quality; not guaranteed.",
       "measurementWindow": "Seven full days after any explicitly approved change.",
       "approval_required": "yes",
       "status": "PENDING_SAM_APPROVAL"
     },
     "approvalRequirement": "No campaign, budget, bidding, keyword, targeting, creative, landing-page, form, or spend change was made. Sam approval is required before any recommendation is applied.",
     "preparedAnswers": {
-      "today": "Today (partial through 21:10 ET): $31.33 spend, 108 impressions, 15 clicks, 13.89% CTR, $2.09 average CPC; 0 genuine inquiries, 0 verified Ads-attributed leads, and 1 calendar-booked call (phone pending).",
+      "today": "Today (partial through 21:10 ET): $17.08 spend, 127 impressions, 12 clicks, 9.45% CTR, $1.42 average CPC; 1 qualified inquiry, 0 verified scoped Ads-attributed qualified leads, and 1 email-confirmed future booking (Kari; Aug 26; no same-day calendar event found).",
       "sevenNewAds": "The two verified campaigns are enabled; exact seven-ad roster verified: 817412024830, 817412025043, 817412046418, 817481260556, 817481283335, 817481283338, 817481293367. Four legacy-account ads excluded.",
-      "ctrCpc": "Current 7 days: 12.61% CTR and $2.72 average CPC; prior 7 days: 16.15% CTR and $3.14 average CPC.",
-      "leadsEmailsCalls": "Qualified inquiries: 6 current / 9 prior. Verified scoped Ads-attributed leads: 0 current / 1 prior GCLID signal (campaign NOT YET MEASURABLE). Calendar-booked customer calls: 3 current / 3 prior; current campaign-level CPL is not measurable.",
-      "budgetCap": "Configured budgets are $20.33 + $5.00 = $25.33/day. Current 7-day average is $27.21 (107.41% of configured budget): combined configured budget is breached on the trailing-average test. Samples used 175.99% of its configured seven-day allocation. The trailing average is 90.69% of the separately approved $30/day cap, so the approved cap is not breached.",
-      "winners": "Ad 817481283335 led current-window CTR (17.39% on 23 impressions); Samples led campaign CTR (16.79%); Contract Manufacturing led clicks (48).",
-      "waste": "Samples configured-budget delivery is the watch item; search-term waste is NOT YET MEASURABLE.",
+      "ctrCpc": "Current 7 days: 12.20% CTR and $2.28 average CPC; prior 7 days: 16.23% CTR and $3.37 average CPC.",
+      "leadsEmailsCalls": "Qualified inquiries: 5 current / 9 prior. Verified scoped Ads-attributed qualified leads: 1 current (Rannah, campaign 24049588003) / 1 prior (Tesfa, campaign 24049588003). Bookings: 4 current (3 calendar-backed plus 1 email-confirmed future booking) / 3 prior calendar-backed; Ads-attributed CPL is $173.26 current and $164.98 prior, while Ads-attributed cost per booked call is not measurable.",
+      "budgetCap": "Configured budgets are $20.33 + $5.00 = $25.33/day. Current 7-day spend is $173.26, averaging $24.75/day (97.71% of $25.33 configured; no combined trailing-average breach). Samples used 151.24% of its individual configured seven-day allocation; approved $30/day cap usage is 82.50%, so the approved cap is not breached.",
+      "winners": "Ad 817412025043 led current-window CTR (19.58% on 143 impressions/28 clicks); Samples led campaign CTR (18.02%); Contract Manufacturing led clicks (56).",
+      "waste": "Samples individual configured-budget pacing is the watch item; search-term waste is NOT YET MEASURABLE.",
       "optimization": "Read-only only; no optimization was made.",
-      "suggestions": "Obtain Sam approval before any change; reconcile Samples delivery, obtain search-term evidence, and repair scoped attribution measurement.",
-      "nextExperiment": "Only after explicit approval: investigate/reconcile Samples budget delivery and search terms, then run one seven-day measurement window without exceeding the approved cap.",
-      "whatAdsAgentShouldDo": "Remain read-only; monitor the Samples configured-budget overrun, obtain search-term evidence, and preserve scoped attribution measurement before proposing any change."
+      "suggestions": "Obtain Sam approval before any change; reconcile Samples pacing, obtain search-term evidence, and preserve/repair scoped attribution measurement.",
+      "nextExperiment": "Only after explicit approval: investigate/reconcile Samples pacing and search terms, then run one seven-day measurement window without exceeding the approved cap.",
+      "whatAdsAgentShouldDo": "Remain read-only; monitor Samples individual configured-budget pacing, obtain search-term evidence, and preserve scoped attribution measurement before proposing any change."
     }
   },
   "facilityStatus": {
