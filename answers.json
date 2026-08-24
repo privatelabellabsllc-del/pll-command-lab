@@ -1,9 +1,5 @@
 {
-  "id": "ads-weekly-2026-08-21",
-  "request_id": "ads-weekly-2026-08-21",
-  "ts": "2026-08-22T01:41:28.433Z",
-  "agent": "Ads Agent",
-  "status": "completed",
-  "text": "Weekly Ads review: current 7 days $173.26, 625 impressions, 76 clicks, 12.2% CTR, $2.28 CPC vs prior $164.98, 302, 49, 16.2%, $3.37. Paid-attributed leads: 1; paid booked calls: 0. Recommendation: Approve changing ContractMfg from Maximize Conversions to Manual CPC only; no budget, bid, keyword, targeting, creative, or landing-page change. Approval required: yes.",
-  "spoken_text": "Weekly Ads review: current 7 days $173.26, 625 impressions, 76 clicks, 12.2% CTR, $2.28 CPC vs prior $164.98, 302, 49, 16.2%, $3.37. Paid-attributed leads: 1; paid booked calls: 0. Recommendation: Approve changing ContractMfg from Maximize Conversions to Manual CPC only; no budget, bid, keyword, targeting, creative, or landing-page change. Approval required: yes."
+  "id": "bf812ba9-062a-4ed0-aa15-f342ad5372d9",
+  "ts": "2026-08-24T11:08:08.089Z",
+  "message": "Morning brief loaded for 2026-08-24."
 }
