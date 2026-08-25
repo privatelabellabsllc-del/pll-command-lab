@@ -1,9 +1,9 @@
 {
- "id": "cmd_mt7utf15_ody8eyj",
- "request_id": "cmd_mt7utf15_ody8eyj",
- "ts": "2026-08-24T23:22:00Z",
- "agent": "PLL Consultant",
- "status": "blocked",
- "text": "Email Agent did not report, so I checked this myself. Nothing was sent. The command was to email 'All American Driving Schools' (a gmail) and say Sam says hi to him. Two blockers: (1) that contact is nowhere in Sam's Outlook or history, so there is no verified email address, only a guess like allamericandrivingschools@gmail.com, and I will not send from Sam's name to an unverified address; (2) 'him' is unnamed, so there is no one to greet. This also is not PLL cosmetics business. Need from Sam before it goes: the exact email address and the person's name. Give me both and I will send a short 'Sam says hi' in one line.",
- "spoken_text": "Sam, the email agent did not report, so I looked into it myself, and nothing was sent yet. Here is the issue. All American Driving Schools is not in your email anywhere, so I do not have a real address, only a guess, and I will not fire an email from your name to an address I cannot verify. I also do not have the name of the person you want me to say hi to. Send me the exact email address and his name, and I will get a quick hello out right away."
+  "id": "cmd_morning_20260825_6510dd5a03e25e35",
+  "request_id": "cmd_morning_20260825_6510dd5a03e25e35",
+  "ts": "2026-08-25T11:03:56.673Z",
+  "agent": "PLL Consultant",
+  "status": "ready",
+  "text": "Morning brief loaded for 2026-08-25.",
+  "spoken_text": "Morning brief loaded for 2026-08-25."
 }
