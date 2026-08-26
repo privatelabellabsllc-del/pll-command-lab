@@ -1,9 +1,5 @@
 {
-  "id": "cmd_morning_20260825_6510dd5a03e25e35",
-  "request_id": "cmd_morning_20260825_6510dd5a03e25e35",
-  "ts": "2026-08-25T11:03:56.673Z",
-  "agent": "PLL Consultant",
-  "status": "ready",
-  "text": "Morning brief loaded for 2026-08-25.",
-  "spoken_text": "Morning brief loaded for 2026-08-25."
+  "id": "ef77d79b-5f68-46a1-ad48-238ac3526abc",
+  "ts": "2026-08-26T11:08:48.326Z",
+  "message": "Morning brief loaded for 2026-08-26."
 }
