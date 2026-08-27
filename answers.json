@@ -1,10 +1,5 @@
 {
-  "id": "bf140002278641e5bf302d426cc2305d",
-  "request_id": "ads-nightly-2026-08-26",
-  "ts": "2026-08-27T01:17:30.000Z",
-  "agent": "PLL Consultant",
-  "status": "completed",
-  "text": "Ads Agent nightly callback received (read-only). It reports Aug 26 net-new spend $32.26 under cap and 0 valid buyers today. NOTE: callback carried no structured ads cache object and its totals conflict with tonight's validated Consultant refresh (today $27.12, 7-day $190.49). Validated brief.json left in place; Ads Agent summary NOT merged into the cache. Recommendation stands: keep frozen net-new campaigns unchanged.",
-  "spoken_text": "Sam, the Ads Agent checked in for the night. It says the new ads spent about thirty two dollars today, under cap, with no real buyers. Its numbers did not match tonight's verified pull, and it did not send a clean data file, so I kept our validated figures and did not let its version overwrite them. Nothing to act on. The recommendation to leave the new campaigns frozen still stands.",
-  "cache_refresh": "blocked_no_structured_object"
+  "id": "morning-2026-08-27-8b27d8f7-adfa-4628-890a-7fb4ec94e45e",
+  "ts": "2026-08-27T11:05:05.196Z",
+  "text": "Morning brief loaded for 2026-08-27."
 }
