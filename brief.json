@@ -963,6 +963,18 @@
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0.0,
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
           "adId": "817481260556",
           "adGroupId": "204146230528",
           "campaignId": "24049588003",
@@ -1434,6 +1446,18 @@
           "clicks": 1,
           "ctrPct": 25.0,
           "avgCpc": 0.445866,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0.0,
+          "impressions": 0,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
