@@ -1,41 +1,41 @@
 {
-  "date": "2026-08-27",
-  "ts": "2026-08-27T11:05:05.196Z",
+  "date": "2026-08-28",
+  "ts": "2026-08-28T11:04:35.428Z",
   "brief": [
     {
-      "t": "#1: lock the Talova reorder. Coco Vanilla went viral; verify Kenna's small revisions, then Sam calls Marcello for the PO.",
+      "t": "#1: Mark Cafolla's 11am Discovery Call is today, but the invite has no video link; patch the link before the call.",
       "hot": true
     },
     {
-      "t": "#2: confirm Terra Lotus shipped all three R&D sample sets—Shampoo 5K, Body Wash 9K, and Conditioner 5K—for 19,000 units.",
+      "t": "#2: lock the Talova/Marcello viral reorder. Verify Kenna's small revisions, then Sam sends the clean answer and locks the PO.",
       "hot": true
     },
     {
-      "t": "#3: approve the two ConvertFlow fork redlines: R&D button labels and contact-form fields. The live site stays untouched.",
-      "hot": true
-    },
-    {
-      "t": "#4: Amanda is a warm Riley referral for 2,500–3,000 units; the reply is ready, waiting for Sam to say send A or B.",
-      "hot": true
-    },
-    {
-      "t": "#5: get the Mark Higgins call outcome so the quote can be built.",
+      "t": "#3: Amanda Peters (Studio S5) and Dirk Llorens (Diogenes) received their document packages yesterday; monitor both for replies.",
       "hot": false
     },
     {
-      "t": "#6: clear the unquoted 1,000-plus brands: Ethnic Gals, Rannah Aytay, Emma/Wagyu, and Victor after cost inputs.",
+      "t": "#4: Terra Lotus has 19,000 units in R&D; confirm Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped.",
       "hot": false
     },
     {
-      "t": "Control: Ads remain unchanged; reverting the net-new campaigns to Manual CPC needs Sam's one-word approval.",
+      "t": "#5: Ads remain on Maximize Conversions with zero tracked conversions; Sam's “revert ads to manual” approval is still pending.",
+      "hot": false
+    },
+    {
+      "t": "#6: ConvertFlow's fork mockup is staged; Sam's redlines on R&D button labels and contact-form fields are still needed.",
+      "hot": false
+    },
+    {
+      "t": "#7: Atlas Eternal is in production; the remaining $13,250 balance is due on completion.",
       "hot": false
     }
   ],
   "next": [
-    "Verify Kenna's revisions → Sam locks the Talova reorder",
-    "Confirm Terra sample shipment across all 19,000 units",
-    "Sam gives the ConvertFlow fork redlines",
-    "Sam says send A or B on Amanda's reply"
+    "Patch Mark Cafolla's missing video link before the 11am Discovery Call",
+    "Verify Kenna's revision status so Sam can lock the Talova reorder",
+    "Monitor Amanda Peters and Dirk Llorens for replies to yesterday's document packages",
+    "Confirm Terra Lotus sample shipment across all 19,000 R&D units"
   ],
   "kb": [
     {
@@ -74,17 +74,17 @@
     },
     {
       "keys": [
-        "august 31",
-        "brand development",
-        "chatgpt",
-        "inquiries",
         "nikkie",
         "nikkie aroh",
-        "outbound sales",
-        "website leads",
-        "white label"
+        "curly 911",
+        "victoria",
+        "500u",
+        "rachel trautwein",
+        "mens haircare",
+        "shampoo",
+        "conditioner"
       ],
-      "a": "Nikkie Aroh starts full time on August 31 to run Outbound Sales daily. She is already responding to inbound white-label inquiries from her PLL email, with Sam copied; the Aug 30 Outbound AI finder run is the day-one pipeline setup."
+      "a": "Nikkie is actively working Curly 911/Victoria's 500-unit opportunity and Rachel Trautwein's men's haircare launch for shampoo and conditioner. The Curly 911 call invite needs the time conflict checked, while Rachel still needs qualification on size and project details."
     },
     {
       "keys": [
@@ -183,16 +183,15 @@
     },
     {
       "keys": [
-        "stall revival",
         "talova",
         "talova labs",
         "marcello",
-        "saylor",
-        "anna",
-        "reorder",
-        "kenna revisions"
+        "viral reorder",
+        "coco vanilla",
+        "kenna revisions",
+        "po"
       ],
-      "a": "Talova Labs is the warmest cash lane today: Marcello wants to reorder because Coco Vanilla went viral. The only blocker is confirming PLL received Kenna's small revisions from about one month ago. Once verified, Sam should call or WhatsApp Marcello and lock the PO."
+      "a": "Talova Labs' Marcello wants a viral Coco Vanilla reorder, making it the warmest cash lane today. The only blocker is a clean answer confirming whether PLL received Kenna's small revisions about a month ago; once verified, Sam can lock the PO."
     },
     {
       "keys": [
@@ -276,22 +275,27 @@
         "atlas",
         "production",
         "$26500",
-        "aidan"
+        "aidan",
+        "balance",
+        "$13250"
       ],
-      "a": "Atlas Eternal is a $26,500 production project with Aidan driving four lanes. The remaining $13,250 balance is due on completion; keep the handoffs moving and collect the balance when production is complete."
+      "a": "Atlas Eternal is in production at $26,500 with Aidan driving the handoffs. The remaining $13,250 balance is due on completion; production is active and the balance is not yet described as collected."
     },
     {
       "keys": [
         "terra lotus",
         "terra",
         "lotus",
+        "19000",
         "three products",
         "r&d",
         "samples",
-        "august 24",
-        "checkpoint"
+        "shampoo 5k",
+        "body wash 9k",
+        "conditioner 5k",
+        "shipment"
       ],
-      "a": "Terra Lotus has three R&D sample sets at a shipment checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K, totaling 19,000 units. Aidan or Ronald must confirm all three shipped. Once BOMs return, the revised quote waits for Sam's sign-off."
+      "a": "Terra Lotus has 19,000 units in R&D at a sample-shipment checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K. Confirm that all three sample sets shipped; no shipment confirmation is recorded yet."
     },
     {
       "keys": [
@@ -369,15 +373,15 @@
     },
     {
       "keys": [
-        "amanda riley referral",
+        "amanda peters",
         "amanda",
-        "riley referral",
+        "studio s5",
         "2500",
-        "3000",
-        "booking-link reply",
-        "send"
+        "documents sent",
+        "august 27",
+        "awaiting reply"
       ],
-      "a": "Amanda came through Riley's referral for 2,500 to 3,000 units. The reply-all is drafted, Teams conferencing is fixed, and it is ready with Sam's booking link. Sam must choose send A now or send B after a 30-second phone test."
+      "a": "Amanda Peters at Studio S5 received PLL's three-document package on August 27 for an approximately 2,500-unit opportunity. The package is sent and the current status is awaiting her reply; monitor the thread and do not treat the lead as closed."
     },
     {
       "keys": [
@@ -419,87 +423,109 @@
         "unquoted"
       ],
       "a": "Ethnic Gals is a real 2,000-unit opportunity that has not yet been quoted. Build it in the unquoted-brand cleanup lane once the warm Talova and approved-send priorities are cleared."
+    },
+    {
+      "keys": [
+        "mark cafolla",
+        "cafolla",
+        "discovery call",
+        "august 28",
+        "11am",
+        "video link",
+        "teams"
+      ],
+      "a": "Mark Cafolla's Discovery Call is today, August 28 at 11am. The invite is missing a video link, so the link is being patched before the call; do not describe the appointment as fully fixed until the live invite is verified."
+    },
+    {
+      "keys": [
+        "dirk llorens",
+        "dirk",
+        "diogenes",
+        "bjj wash",
+        "r&d brief",
+        "nda",
+        "documents sent",
+        "august 27",
+        "awaiting reply"
+      ],
+      "a": "Dirk Llorens at Diogenes received the R&D brief and NDA on August 27 for the BJJ wash project. The documents are sent and the current status is awaiting his reply; monitor the thread rather than assuming a response."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
+      "title": "Patch Mark Cafolla video link",
+      "why": "Today's 11am Discovery Call invite has no video link and the call is at risk.",
+      "owner": "Consultant",
+      "due": "Today 11:00am",
+      "priority": "critical",
+      "revenue": "Mark Cafolla",
+      "status": "LINK PATCH NEEDED / VERIFY LIVE INVITE"
+    },
+    {
+      "rank": 2,
       "title": "Lock Talova reorder with Marcello",
-      "why": "Coco Vanilla went viral; only blocker is confirming Kenna's revisions were received.",
-      "owner": "Sam",
+      "why": "The viral reorder is the warmest cash lane; only blocker is the Kenna-revision answer.",
+      "owner": "Sam / Consultant",
       "due": "Today",
       "priority": "critical",
       "revenue": "Talova Labs",
       "status": "KENNA CONFIRMATION NEEDED / CALL MARCELLO"
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "title": "Monitor Amanda and Dirk replies",
+      "why": "Studio S5 and Diogenes document packages were sent August 27 and both leads are awaiting replies.",
+      "owner": "Consultant",
+      "due": "Today",
+      "priority": "high",
+      "revenue": "Amanda Peters; Dirk Llorens",
+      "status": "MONITOR REPLIES"
+    },
+    {
+      "rank": 4,
       "title": "Confirm Terra Lotus sample shipment",
       "why": "Shampoo 5K, Body Wash 9K, and Conditioner 5K total 19,000 R&D units at the sample checkpoint.",
       "owner": "Aidan / Ronald",
       "due": "Today",
-      "priority": "critical",
+      "priority": "high",
       "revenue": "Terra Lotus",
       "status": "SHIPMENT CONFIRMATION NEEDED"
     },
     {
-      "rank": 3,
-      "title": "Close ConvertFlow fork redlines",
-      "why": "The duplicate flow is staged; Sam must approve R&D button labels and contact-form fields before build.",
-      "owner": "Sam / Consultant",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "Conversion funnel",
-      "status": "TWO REDLINES NEEDED / LIVE UNTOUCHED"
-    },
-    {
-      "rank": 4,
-      "title": "Send Amanda referral reply",
-      "why": "Riley referral is for 2,500–3,000 units; the reply is drafted and Teams is fixed.",
+      "rank": 5,
+      "title": "Approve Ads and ConvertFlow decisions",
+      "why": "Ads have zero tracked conversions on Maximize Conversions, and the staged fork needs two Sam redlines.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Amanda",
-      "status": "SEND A OR B NEEDED"
-    },
-    {
-      "rank": 5,
-      "title": "Clear Mark and unquoted-brand quote backlog",
-      "why": "Mark outcome and Victor inputs are pending; Rannah, Emma/Wagyu, and Ethnic Gals remain unquoted.",
-      "owner": "Sam / Ronald",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "Mark; Victor; Rannah; Emma; Ethnic Gals",
-      "status": "OUTCOMES / INPUTS / QUOTES NEEDED"
+      "revenue": "Acquisition; conversion funnel",
+      "status": "MANUAL-CPC APPROVAL / TWO REDLINES NEEDED"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Lock Talova with Marcello, confirm Terra, approve ConvertFlow redlines, send Amanda, and clear quote lanes.",
+      "top_task": "Verify Kenna revisions and lock Talova, approve Ads/manual-CPC and ConvertFlow decisions, then confirm Terra shipment.",
       "tasks": [
         {
           "title": "Verify Kenna's revisions and call or WhatsApp Marcello for Talova",
           "due": "Today"
         },
         {
+          "title": "Say “revert ads to manual” if approving the controlled Ads change",
+          "due": "Today"
+        },
+        {
+          "title": "Give ConvertFlow R&D-label and contact-form redlines",
+          "due": "Today"
+        },
+        {
           "title": "Confirm Terra shipment across 19,000 R&D units",
-          "due": "Today"
-        },
-        {
-          "title": "Give ConvertFlow wording and contact-form redlines",
-          "due": "Today"
-        },
-        {
-          "title": "Say SEND A or B for Amanda's drafted reply",
-          "due": "Today"
-        },
-        {
-          "title": "Clear Mark, Victor, and unquoted-brand quote lanes",
           "due": "Today"
         }
       ],
-      "notes": "Live site remains untouched; staged ConvertFlow work requires approval before any swap."
+      "notes": "Mark Cafolla's 11am link is being patched separately; Amanda and Dirk packages are sent and under reply watch."
     },
     "aidan": {
       "display_name": "Aidan",
@@ -540,90 +566,100 @@
     },
     "nikkie": {
       "display_name": "Nikkie",
-      "top_task": "Work inbound white-label inquiries and prepare Aug 30 outbound finder lanes.",
+      "top_task": "Work Curly 911/Victoria's 500-unit opportunity and Rachel Trautwein's men's haircare launch.",
       "tasks": [
         {
-          "title": "Respond to inbound white-label inquiries",
-          "due": "Ongoing"
+          "title": "Resolve Curly 911/Victoria invite time conflict",
+          "due": "Today"
         },
         {
-          "title": "Prepare Peptide and Hair Brand finder run",
-          "due": "Aug 30"
+          "title": "Qualify Rachel Trautwein's men's shampoo and conditioner launch",
+          "due": "Ongoing"
         }
       ],
-      "notes": "Full-time start is August 31."
+      "notes": "Nikkie owns both active inbound lanes; do not treat either as closed."
     }
   },
   "revenueActions": [
     {
+      "title": "Rescue Mark Cafolla call",
+      "why": "Today's 11am Discovery Call invite has no video link.",
+      "est_value": "Not stated",
+      "next_step": "Patch and verify a Teams/Meet link on the live invite before 11am.",
+      "owner": "Consultant",
+      "timing": "Today 11:00am",
+      "value": "At-risk discovery call",
+      "status": "LINK PATCH NEEDED"
+    },
+    {
       "title": "Lock Talova reorder",
       "why": "Marcello wants back in after Coco Vanilla went viral; Kenna-revision receipt is the only blocker.",
       "est_value": "Not stated",
-      "next_step": "Confirm revisions were received, then call or WhatsApp Marcello.",
-      "owner": "Sam / Aaron",
+      "next_step": "Verify the revision status, then give Sam one clean line to call Marcello and lock the PO.",
+      "owner": "Sam / Consultant",
       "timing": "Today",
-      "value": "Warmest money lane",
+      "value": "Warmest cash lane",
       "status": "BLOCKED ON CONFIRMATION"
+    },
+    {
+      "title": "Monitor Amanda and Dirk",
+      "why": "Two document packages were sent August 27 and both replies are pending.",
+      "est_value": "Not stated",
+      "next_step": "Watch Amanda Peters/Studio S5 and Dirk Llorens/Diogenes for replies, then route the next step.",
+      "owner": "Consultant",
+      "timing": "Today",
+      "value": "Two active leads",
+      "status": "AWAITING REPLIES"
     },
     {
       "title": "Confirm Terra Lotus samples",
       "why": "Three R&D sample sets totaling 19,000 units are at the shipment checkpoint.",
       "est_value": "Not stated",
-      "next_step": "Confirm all three shipped, then collect BOMs for revised quote.",
+      "next_step": "Confirm Shampoo 5K, Body Wash 9K, and Conditioner 5K all shipped.",
       "owner": "Aidan / Ronald",
       "timing": "Today",
       "value": "19,000 R&D units",
       "status": "SHIPMENT CHECK NEEDED"
     },
     {
-      "title": "Close ConvertFlow fork",
-      "why": "Two small redlines block the duplicate-popup branching build.",
-      "est_value": "Funnel conversion",
-      "next_step": "Get R&D button wording and contact-form approval, then build on draft only.",
-      "owner": "Sam / Consultant",
+      "title": "Approve controlled Ads response",
+      "why": "Net-new campaigns remain on Maximize Conversions with zero tracked conversions.",
+      "est_value": "Acquisition efficiency",
+      "next_step": "Sam says “revert ads to manual”; no Ads settings change is made until authorized.",
+      "owner": "Sam",
       "timing": "Today",
-      "value": "Conversion funnel",
+      "value": "Paid acquisition",
       "status": "APPROVAL NEEDED"
     },
     {
-      "title": "Send Amanda referral reply",
-      "why": "Riley referred Amanda for 2,500–3,000 units.",
-      "est_value": "Not stated",
-      "next_step": "Send A now or B after a phone test, with Sam's booking link.",
-      "owner": "Sam",
+      "title": "Close ConvertFlow fork redlines",
+      "why": "The staged duplicate needs R&D button-label and contact-form approval.",
+      "est_value": "Funnel conversion",
+      "next_step": "Get both Sam redlines, then build on the draft only with the live site untouched.",
+      "owner": "Sam / Consultant",
       "timing": "Today",
-      "value": "2,500–3,000 units",
-      "status": "DRAFT READY / SEND CHOICE"
-    },
-    {
-      "title": "Clear quote backlog",
-      "why": "Mark outcome, Victor inputs, and four unquoted 1,000-plus opportunities remain.",
-      "est_value": "Not stated",
-      "next_step": "Get Mark outcome, finish Victor cost inputs, then quote Rannah, Emma/Wagyu, and Ethnic Gals.",
-      "owner": "Sam / Ronald",
-      "timing": "Today",
-      "value": "Multiple live opportunities",
-      "status": "QUOTE LEAK"
+      "value": "Conversion funnel",
+      "status": "TWO REDLINES NEEDED"
     }
   ],
   "pipelineStat": {
-    "total_value": "$26,500 Atlas Eternal; Talova, Amanda, Mark, Victor, Rannah, Emma/Wagyu, and Ethnic Gals values not stated",
-    "active_deals": 9,
+    "total_value": "$26,500 Atlas Eternal; Talova, Amanda, Dirk, Terra, Mark Cafolla, Curly 911/Victoria, and Rachel Trautwein values not stated",
+    "active_deals": 8,
     "hot": [
-      "Talova reorder with Marcello — warmest money lane, blocked on Kenna revision confirmation",
-      "Terra Lotus — 19,000-unit sample shipment checkpoint",
-      "Amanda — 2,500–3,000-unit Riley referral, reply ready to send"
+      "Mark Cafolla — 11am Discovery Call at risk because invite lacks video link",
+      "Talova/Marcello — viral reorder blocked on Kenna revision confirmation",
+      "Terra Lotus — 19,000-unit sample shipment checkpoint"
     ],
     "stalled": [
-      "Mark Higgins — outcome needed before quote",
-      "Victor — pricing blocked on packaging compatibility and cost inputs",
-      "Rannah Aytay, Emma/Wagyu, and Ethnic Gals — real opportunities never quoted"
+      "Amanda Peters and Dirk Llorens — document packages sent Aug 27, awaiting replies",
+      "Ads — zero tracked conversions; Sam approval needed to revert to manual",
+      "ConvertFlow — two redlines needed before draft build"
     ],
-    "activeDeals": 9,
+    "activeDeals": 8,
     "pipelineValue": 26500,
     "inProduction": 1,
     "depositsCollected": null,
-    "note": "Today: lock Talova, confirm Terra, close ConvertFlow redlines, send Amanda, then clear quote backlog.",
+    "note": "Today: patch Mark Cafolla link, verify Kenna for Talova, monitor Amanda/Dirk, confirm Terra, then resolve Ads and ConvertFlow approvals.",
     "monthlyTarget": "$150K",
     "achievableDepositsThisMonth": "Not stated in today's brief."
   },
