@@ -1,0 +1,9 @@
+{
+  "id": "ads-nightly-2026-08-29",
+  "request_id": "ads-nightly-2026-08-29",
+  "ts": "2026-08-30T01:06:00Z",
+  "agent": "Ads Agent",
+  "status": "completed",
+  "text": "Nightly 8/29 (preliminary): managed Ads $11.13 / 1,276 impressions / 23 clicks (1.80% CTR, $0.48 CPC), $24.87 under the $36 cap. Trailing 7 days (Aug 23-29): $225.27 / 4,601 impressions / 177 clicks (3.85% CTR, $1.27 CPC) versus prior 7 days: $175.27 / 631 impressions / 78 clicks (12.36% CTR, $2.25 CPC). MTD: $796.53 / 6,081 impressions / 388 clicks. August: 43 leads, 8 qualified, 9 booked, 9 verified-paid, and 34 unattributed. Today: 0 leads; form and tracking healthy; no changes or pauses. Paid CPL and cost per booked call are not measurable; search-term mining unavailable. Recommendation: continue read-only monitoring. Approval: no. Cache refresh blocked: callback supplied summary text only, not the required structured ads_intelligence object; brief.json was not changed.",
+  "spoken_text": "Sam, here’s the bottom line: the new Ads are still under the daily cap, but performance softened versus the prior week. Over the last seven days, they spent $225 and generated 177 clicks at a $1.27 average cost per click. Compared with the previous seven days, clicks increased, but click-through rate fell and average cost per click improved. August has 43 leads, including 8 qualified and 9 booked, but only 9 are verified paid-attributed and 34 remain unattributed. The funnel and tracking look healthy, so I recommend read-only monitoring with no changes."
+}
