@@ -1,7 +1,11 @@
 {
-  "date": "2026-08-28",
-  "ts": "2026-08-28T11:04:35.428Z",
+  "date": "2026-08-31",
+  "ts": "2026-08-31T11:05:06.967Z",
   "brief": [
+    {
+      "t": "Morning refresh for 2026-08-31: no newer day-updates.jsonl source was available; carrying forward the last verified Command Lab data and Ads caches.",
+      "hot": true
+    },
     {
       "t": "#1: Mark Cafolla's 11am Discovery Call is today, but the invite has no video link; patch the link before the call.",
       "hot": true
@@ -25,17 +29,13 @@
     {
       "t": "#6: ConvertFlow's fork mockup is staged; Sam's redlines on R&D button labels and contact-form fields are still needed.",
       "hot": false
-    },
-    {
-      "t": "#7: Atlas Eternal is in production; the remaining $13,250 balance is due on completion.",
-      "hot": false
     }
   ],
   "next": [
+    "Re-verify carried-forward priorities against live CRM/calendar/email sources when available",
     "Patch Mark Cafolla's missing video link before the 11am Discovery Call",
     "Verify Kenna's revision status so Sam can lock the Talova reorder",
-    "Monitor Amanda Peters and Dirk Llorens for replies to yesterday's document packages",
-    "Confirm Terra Lotus sample shipment across all 19,000 R&D units"
+    "Monitor Amanda Peters and Dirk Llorens for replies to yesterday's document packages"
   ],
   "kb": [
     {
