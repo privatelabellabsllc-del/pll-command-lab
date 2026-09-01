@@ -664,77 +664,76 @@
     "achievableDepositsThisMonth": "Not stated in today's brief."
   },
   "adsAgentBrief": {
-    "generatedAt": "2026-08-28T01:04:51.696Z",
-    "status": "NIGHTLY_ADS_INTELLIGENCE_REFRESH_COMPLETE_CAP_ALERT",
+    "generatedAt": "2026-08-31T21:11:35-04:00",
+    "status": "NIGHTLY_ADS_INTELLIGENCE_REFRESH_COMPLETE",
     "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
     "windows": {
+      "today": {
+        "start": "2026-08-31",
+        "end": "2026-08-31"
+      },
       "current": {
-        "start": "2026-08-21",
-        "end": "2026-08-27"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       },
       "prior": {
-        "start": "2026-08-14",
-        "end": "2026-08-20"
-      },
-      "today": {
-        "start": "2026-08-27",
-        "end": "2026-08-27"
+        "start": "2026-08-18",
+        "end": "2026-08-24"
       }
     },
-    "summary": "Nightly Ads refresh: current 7 days (Aug 21–27) spent $190.72 on 839 impressions and 83 clicks (9.89% CTR, $2.30 CPC), versus prior 7 days (Aug 14–20) at $190.45 / 554 / 70 (12.64% / $2.72). The exact seven-ad roster is unverified; 6 of 7 current inbox inquiries are qualified and 1 is verifiably Ads-attributed. Current trailing pacing is 7.56% above configured $25.33/day; cap alert raised. Recommendation requires Sam approval and remains read-only.",
+    "summary": "Nightly Ads refresh: current 7 days (Aug 25–31) spent $156.28 on 1,343 impressions and 84 clicks (6.25% CTR, $1.86 CPC), versus prior 7 days (Aug 18–24) at $178.89 / 736 / 89 (12.09% / $2.01). The exact seven-ad roster is unverified; 6 of 6 current inbox inquiries are qualified and 1 is verifiably Ads-attributed by gclid (campaign unmapped). Current trailing pacing is 11.86% under configured $25.33/day; no current cap breach. Five qualified customer/project calls are recorded in the current window. Recommendation requires Sam approval and remains read-only.",
     "current7Days": {
-      "spend": 190.722064,
-      "impressions": 839,
-      "clicks": 83,
-      "ctrPct": 9.89,
-      "avgCpc": 2.2978561927710843,
+      "spend": 156.284124,
+      "impressions": 1343,
+      "clicks": 84,
+      "ctrPct": 6.25,
+      "avgCpc": 1.8605252857142855,
       "window": {
-        "start": "2026-08-21",
-        "end": "2026-08-27"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       }
     },
     "prior7Days": {
-      "spend": 190.446282,
-      "impressions": 554,
-      "clicks": 70,
-      "ctrPct": 12.64,
-      "avgCpc": 2.7206611714285716,
+      "spend": 178.888901,
+      "impressions": 736,
+      "clicks": 89,
+      "ctrPct": 12.09,
+      "avgCpc": 2.0099876516853934,
       "window": {
-        "start": "2026-08-14",
-        "end": "2026-08-20"
+        "start": "2026-08-18",
+        "end": "2026-08-24"
       }
     },
     "today": {
-      "spend": 31.564235,
-      "impressions": 26,
-      "clicks": 7,
-      "ctrPct": 26.92,
-      "avgCpc": 4.509176428571429,
+      "spend": 21.664805,
+      "impressions": 112,
+      "clicks": 10,
+      "ctrPct": 8.93,
+      "avgCpc": 2.1664805,
       "window": {
-        "start": "2026-08-27",
-        "end": "2026-08-27"
-      },
-      "preliminary": true
+        "start": "2026-08-31",
+        "end": "2026-08-31"
+      }
     },
     "campaignBreakdown": {
       "current": [
         {
-          "spend": 156.490173,
-          "impressions": 704,
-          "clicks": 62,
-          "ctrPct": 8.81,
-          "avgCpc": 2.524035048387096,
+          "spend": 124.780147,
+          "impressions": 883,
+          "clicks": 53,
+          "ctrPct": 6.0,
+          "avgCpc": 2.354342396226415,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
           "configuredDailyBudget": 20.33
         },
         {
-          "spend": 34.231891,
-          "impressions": 135,
-          "clicks": 21,
-          "ctrPct": 15.56,
-          "avgCpc": 1.6300900476190474,
+          "spend": 31.503977,
+          "impressions": 460,
+          "clicks": 31,
+          "ctrPct": 6.74,
+          "avgCpc": 1.016257322580645,
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
@@ -743,22 +742,22 @@
       ],
       "prior": [
         {
-          "spend": 128.85118,
-          "impressions": 423,
-          "clicks": 48,
-          "ctrPct": 11.35,
-          "avgCpc": 2.684399583333333,
+          "spend": 137.040286,
+          "impressions": 610,
+          "clicks": 65,
+          "ctrPct": 10.66,
+          "avgCpc": 2.1083120923076923,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
           "configuredDailyBudget": 20.33
         },
         {
-          "spend": 61.595102,
-          "impressions": 131,
-          "clicks": 22,
-          "ctrPct": 16.79,
-          "avgCpc": 2.799777363636364,
+          "spend": 41.848615,
+          "impressions": 126,
+          "clicks": 24,
+          "ctrPct": 19.05,
+          "avgCpc": 1.7436922916666668,
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
@@ -767,22 +766,22 @@
       ],
       "today": [
         {
-          "spend": 26.664235,
-          "impressions": 18,
-          "clicks": 5,
-          "ctrPct": 27.78,
-          "avgCpc": 5.332847,
+          "spend": 13.200096,
+          "impressions": 21,
+          "clicks": 2,
+          "ctrPct": 9.52,
+          "avgCpc": 6.600048,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
           "configuredDailyBudget": 20.33
         },
         {
-          "spend": 4.9,
-          "impressions": 8,
-          "clicks": 2,
-          "ctrPct": 25.0,
-          "avgCpc": 2.45,
+          "spend": 8.464709,
+          "impressions": 91,
+          "clicks": 8,
+          "ctrPct": 8.79,
+          "avgCpc": 1.058088625,
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
@@ -807,11 +806,11 @@
           "adGroupId": "197753978559",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.407869,
-          "impressions": 56,
-          "clicks": 1,
-          "ctrPct": 1.79,
-          "avgCpc": 0.407869,
+          "spend": 0.50571,
+          "impressions": 92,
+          "clicks": 2,
+          "ctrPct": 2.17,
+          "avgCpc": 0.252855,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -819,11 +818,11 @@
           "adGroupId": "197753979079",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 69.654671,
-          "impressions": 229,
-          "clicks": 29,
-          "ctrPct": 12.66,
-          "avgCpc": 2.4018852068965515,
+          "spend": 48.274171,
+          "impressions": 280,
+          "clicks": 20,
+          "ctrPct": 7.14,
+          "avgCpc": 2.41370855,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -831,8 +830,8 @@
           "adGroupId": "200118474604",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.0,
-          "impressions": 19,
+          "spend": 0,
+          "impressions": 38,
           "clicks": 0,
           "ctrPct": 0.0,
           "avgCpc": null,
@@ -843,11 +842,11 @@
           "adGroupId": "204146230528",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 59.816647,
-          "impressions": 249,
-          "clicks": 16,
-          "ctrPct": 6.43,
-          "avgCpc": 3.7385404375,
+          "spend": 52.47,
+          "impressions": 158,
+          "clicks": 14,
+          "ctrPct": 8.86,
+          "avgCpc": 3.7478571428571428,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -855,11 +854,11 @@
           "adGroupId": "204146230728",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 11.746407,
-          "impressions": 93,
+          "spend": 18.864386,
+          "impressions": 154,
           "clicks": 10,
-          "ctrPct": 10.75,
-          "avgCpc": 1.1746407,
+          "ctrPct": 6.49,
+          "avgCpc": 1.8864386,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -867,11 +866,11 @@
           "adGroupId": "200118475084",
           "campaignId": "24040031889",
           "status": "ENABLED",
-          "spend": 34.231891,
-          "impressions": 135,
-          "clicks": 21,
-          "ctrPct": 15.56,
-          "avgCpc": 1.6300900476190474,
+          "spend": 31.503977,
+          "impressions": 460,
+          "clicks": 31,
+          "ctrPct": 6.74,
+          "avgCpc": 1.016257322580645,
           "campaign": "PLL-Search-Samples-2026"
         },
         {
@@ -879,11 +878,11 @@
           "adGroupId": "204146231008",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 14.864579,
-          "impressions": 58,
-          "clicks": 6,
-          "ctrPct": 10.34,
-          "avgCpc": 2.4774298333333333,
+          "spend": 4.66588,
+          "impressions": 161,
+          "clicks": 7,
+          "ctrPct": 4.35,
+          "avgCpc": 0.6665542857142857,
           "campaign": "PLL-Search-ContractMfg-2026"
         }
       ],
@@ -893,11 +892,11 @@
           "adGroupId": "197753978559",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 3.09,
-          "impressions": 17,
+          "spend": 0.407869,
+          "impressions": 35,
           "clicks": 1,
-          "ctrPct": 5.88,
-          "avgCpc": 3.09,
+          "ctrPct": 2.86,
+          "avgCpc": 0.407869,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -905,11 +904,11 @@
           "adGroupId": "197753979079",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 47.22269,
-          "impressions": 108,
-          "clicks": 20,
-          "ctrPct": 18.52,
-          "avgCpc": 2.3611345,
+          "spend": 55.829912,
+          "impressions": 189,
+          "clicks": 34,
+          "ctrPct": 17.99,
+          "avgCpc": 1.6420562352941177,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -917,11 +916,11 @@
           "adGroupId": "200118474604",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 5.05,
-          "impressions": 25,
-          "clicks": 3,
-          "ctrPct": 12.0,
-          "avgCpc": 1.6833333333333333,
+          "spend": 0,
+          "impressions": 15,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -929,11 +928,11 @@
           "adGroupId": "204146230528",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 32.602816,
-          "impressions": 179,
-          "clicks": 13,
-          "ctrPct": 7.26,
-          "avgCpc": 2.507908923076923,
+          "spend": 48.486647,
+          "impressions": 272,
+          "clicks": 20,
+          "ctrPct": 7.35,
+          "avgCpc": 2.42433235,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -941,11 +940,11 @@
           "adGroupId": "204146230728",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 11.905674,
-          "impressions": 23,
+          "spend": 6.487621,
+          "impressions": 37,
           "clicks": 4,
-          "ctrPct": 17.39,
-          "avgCpc": 2.9764185000000003,
+          "ctrPct": 10.81,
+          "avgCpc": 1.62190525,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -953,11 +952,11 @@
           "adGroupId": "200118475084",
           "campaignId": "24040031889",
           "status": "ENABLED",
-          "spend": 61.595102,
-          "impressions": 131,
-          "clicks": 22,
-          "ctrPct": 16.79,
-          "avgCpc": 2.799777363636364,
+          "spend": 41.848615,
+          "impressions": 126,
+          "clicks": 24,
+          "ctrPct": 19.05,
+          "avgCpc": 1.7436922916666668,
           "campaign": "PLL-Search-Samples-2026"
         },
         {
@@ -965,11 +964,11 @@
           "adGroupId": "204146231008",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 28.98,
-          "impressions": 71,
-          "clicks": 7,
-          "ctrPct": 9.86,
-          "avgCpc": 4.14,
+          "spend": 25.828237,
+          "impressions": 62,
+          "clicks": 6,
+          "ctrPct": 9.68,
+          "avgCpc": 4.304706166666667,
           "campaign": "PLL-Search-ContractMfg-2026"
         }
       ],
@@ -979,11 +978,11 @@
           "adGroupId": "197753978559",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.0,
-          "impressions": 1,
-          "clicks": 0,
-          "ctrPct": 0.0,
-          "avgCpc": null,
+          "spend": 0.130096,
+          "impressions": 2,
+          "clicks": 1,
+          "ctrPct": 50.0,
+          "avgCpc": 0.130096,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -991,11 +990,11 @@
           "adGroupId": "197753979079",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.445866,
-          "impressions": 4,
-          "clicks": 1,
-          "ctrPct": 25.0,
-          "avgCpc": 0.445866,
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1003,8 +1002,8 @@
           "adGroupId": "200118474604",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.0,
-          "impressions": 0,
+          "spend": 0,
+          "impressions": 1,
           "clicks": 0,
           "ctrPct": 0.0,
           "avgCpc": null,
@@ -1015,11 +1014,11 @@
           "adGroupId": "204146230528",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 21.34,
-          "impressions": 6,
-          "clicks": 2,
-          "ctrPct": 33.33,
-          "avgCpc": 10.67,
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1027,11 +1026,11 @@
           "adGroupId": "204146230728",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 4.878369,
+          "spend": 13.07,
           "impressions": 4,
-          "clicks": 2,
-          "ctrPct": 50.0,
-          "avgCpc": 2.4391845,
+          "clicks": 1,
+          "ctrPct": 25.0,
+          "avgCpc": 13.07,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1039,11 +1038,11 @@
           "adGroupId": "200118475084",
           "campaignId": "24040031889",
           "status": "ENABLED",
-          "spend": 4.9,
-          "impressions": 8,
-          "clicks": 2,
-          "ctrPct": 25.0,
-          "avgCpc": 2.45,
+          "spend": 8.464709,
+          "impressions": 91,
+          "clicks": 8,
+          "ctrPct": 8.79,
+          "avgCpc": 1.058088625,
           "campaign": "PLL-Search-Samples-2026"
         },
         {
@@ -1051,8 +1050,8 @@
           "adGroupId": "204146231008",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.0,
-          "impressions": 3,
+          "spend": 0,
+          "impressions": 12,
           "clicks": 0,
           "ctrPct": 0.0,
           "avgCpc": null,
@@ -1062,20 +1061,21 @@
     },
     "leads": {
       "current": {
-        "totalInquiries": 7,
+        "totalInquiries": 6,
         "qualifiedInquiries": 6,
         "verifiedAdsAttributedLeads": 1,
         "adsAttributedByCampaign": {
-          "ContractMfg": 1,
-          "Samples": 0
+          "ContractMfg": 0,
+          "Samples": 0,
+          "UNMAPPED": 1
         },
-        "bookedCalls": null,
+        "bookedCalls": 5,
         "verifiedAdsAttributedBookedCalls": null,
-        "qualifiedCpl": 31.787010666666664,
-        "adsAttributedCpl": 190.722064,
-        "qualifiedCostPerBookedCall": null,
+        "qualifiedCpl": 26.047354,
+        "adsAttributedCpl": 156.284124,
+        "qualifiedCostPerBookedCall": 31.256824799999997,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "One current-window inquiry (Mark Higgins) carries a gclid and is the only verified Ads-attributed lead. Other inquiries are UNATTRIBUTED or NOT YET MEASURABLE. Booked-call counts/CPL were not re-verified because no calendar/CRM connection was in scope."
+        "attributionNote": "Six genuine current-window inquiries were identified (four Shopify contact-form messages, Salena Ogden, and Tammye Hall). Marvie Wright carries a gclid and is the only verified Ads-attributed lead; campaign mapping is UNMAPPED. Other inquiries are UNATTRIBUTED or NOT YET MEASURABLE. Five qualified customer/project calls were found in Calendar; no booked call can be tied to Ads attribution."
       },
       "prior": {
         "totalInquiries": 7,
@@ -1085,21 +1085,25 @@
           "ContractMfg": 0,
           "Samples": 0
         },
-        "bookedCalls": null,
+        "bookedCalls": 4,
         "verifiedAdsAttributedBookedCalls": null,
-        "qualifiedCpl": 27.206611714285714,
+        "qualifiedCpl": 25.555557285714286,
         "adsAttributedCpl": null,
-        "qualifiedCostPerBookedCall": null,
+        "qualifiedCostPerBookedCall": 44.72222525,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "No prior-window inquiry had verifiable attribution to either monitored campaign in the targeted inbox pull. Use UNATTRIBUTED / NOT YET MEASURABLE. Booked-call counts/CPL were not re-verified because no calendar/CRM connection was in scope."
+        "attributionNote": "Seven Shopify contact-form inquiries were identified in the prior window; no verified Ads attribution. Four qualified customer/project calls were found in Calendar; Ads-attributed booked calls remain NOT YET MEASURABLE."
       },
       "today": {
-        "totalInquiries": 1,
-        "qualifiedInquiries": 1,
+        "totalInquiries": 2,
+        "qualifiedInquiries": 2,
         "verifiedAdsAttributedLeads": 0,
-        "bookedCalls": null,
+        "bookedCalls": 4,
         "verifiedAdsAttributedBookedCalls": null,
-        "attributionNote": "One Shopify inquiry was present on 2026-08-27; no verified Ads attribution. Booked calls were not re-verified because no calendar/CRM connection was in scope."
+        "qualifiedCpl": 10.8324025,
+        "adsAttributedCpl": null,
+        "qualifiedCostPerBookedCall": 5.41620125,
+        "adsAttributedCostPerBookedCall": null,
+        "attributionNote": "Today included two genuine inbox inquiries/threads (Salena Ogden and Tammye Hall); neither carries verifiable Ads attribution. Four qualified customer/project calls occurred today (Frank Luca, David Aminov, Ari Levitin, Cameron Nelligan). Ads-attributed booked calls are NOT YET MEASURABLE."
       }
     },
     "capHealth": {
@@ -1109,9 +1113,9 @@
         "combinedDaily": 25.33,
         "combinedSevenDay": 177.31
       },
-      "dailyCap": "Configured combined daily budget is $25.33 ($20.33 ContractMfg + $5.00 Samples). Today (2026-08-27, report-time partial day) spent $31.56 (124.6% of configured daily budget), within Google's normal up-to-2x single-day delivery range; this alone is not a breach.",
-      "trailingCap": "Current 7-day spend is $190.72, 107.56% of the $177.31 seven-day configured budget; trailing average $27.25/day vs $25.33 configured, a 7.56% overage and cap-compliance alert under the standing rule.",
-      "funnel": "Current window: 7 total inbox inquiries, 6 qualified, 1 verified Ads-attributed lead. Booked-call counts and booking economics are NOT YET MEASURABLE / not re-verified without calendar or CRM access.",
+      "dailyCap": "Configured combined daily budget is $25.33 ($20.33 ContractMfg + $5.00 Samples). Today (2026-08-31) spent $21.66, 85.52% of configured daily budget; this is within normal pacing and is not a breach.",
+      "trailingCap": "Current 7-day spend is $156.28, 88.14% of the $177.31 seven-day configured budget; trailing average $22.33/day vs $25.33 configured, so no current cap breach. Prior 7-day spend was $178.89, 100.89% of configured pacing (historical prior-window overage).",
+      "funnel": "Current window: 6 total inbox inquiries, 6 qualified, 1 verified Ads-attributed lead, and 5 qualified customer/project booked calls. Verified Ads-attributed booked calls remain NOT YET MEASURABLE.",
       "dataPulls": {
         "campaignToday": true,
         "campaignCurrent": true,
@@ -1120,13 +1124,13 @@
         "exactSevenAdRoster": false,
         "searchTerms": false,
         "outlookInquiries": true,
-        "bookedCalls": false
+        "bookedCalls": true
       }
     },
     "recommendation": {
-      "action": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate attribution, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
-      "evidence": "Fresh campaign totals cover only the two verified campaign IDs. Exact seven-ad scope is unverified; search-term reporting is not exposed. Current spend is $190.72 over 7 days versus $177.31 configured pacing (107.56%); one paid lead is verifiable.",
-      "expectedOutcome": "Restore auditable ad scope, funnel attribution, and search-term evidence; confirm whether trailing pacing overage is delivery variance or a real budget issue; prevent unsupported optimization decisions.",
+      "action": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate campaign-level attribution and booked-call mapping, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
+      "evidence": "Fresh campaign totals cover only the two verified campaign IDs. Exact seven-ad scope is unverified; search-term reporting is not exposed. Current spend is $156.28 over 7 days versus $177.31 configured pacing (88.14%); one paid lead is verifiable by gclid but campaign mapping is UNMAPPED.",
+      "expectedOutcome": "Restore auditable ad scope, funnel attribution, booked-call mapping, and search-term evidence before optimization decisions.",
       "measurementWindow": "Complete validation before the next optimization review; then compare the next trailing 7 days against this baseline.",
       "approval_required": "yes",
       "pendingApproval": true,
@@ -1136,91 +1140,90 @@
     "pendingApproval": true,
     "approved": false,
     "preparedAnswers": {
-      "today": "Today (Aug 27, preliminary/partial) the two scoped campaigns spent $31.56 on 26 impressions and 7 clicks, 26.92% CTR at $4.51 CPC. Samples was $4.90 and ContractMfg was $26.66. This is within Google's normal up-to-2x single-day delivery range, not by itself a breach.",
-      "sevenNewAds": "The two campaign IDs are scoped, but CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Queried candidate IDs for Aug 21–27 totaled $190.72 / 839 impressions / 83 clicks (9.89% CTR, $2.30 CPC), versus Aug 14–20 at $190.45 / 554 / 70 (12.64% / $2.72).",
-      "ctrCpc": "Current 7-day CTR is 9.89% at $2.30 CPC, versus 12.64% at $2.72 prior week.",
-      "leadsEmailsCalls": "Current window has 7 inbox inquiries, 6 qualified, and 1 verified Ads-attributed lead. Booked-call counts and cost per booked call are NOT YET MEASURABLE / not re-verified without calendar or CRM access. Prior window has 7 inbox inquiries, 7 qualified, and 0 verified Ads-attributed leads.",
-      "budgetCap": "Configured budgets read at report time are ContractMfg $20.33/day plus Samples $5.00/day = $25.33/day ($177.31 per 7 days). Today's $31.56 is within normal 2x daily delivery pacing. Current trailing average is $27.25/day, 7.56% above configured pacing; cap-compliance alert is raised; no budget change made.",
-      "winners": "Because campaign-scope — exact seven-ad roster unverified, do not overclaim an exact ad winner. Among queried candidates, 817412025043 led current-window clicks (29 clicks, 12.66% CTR, $2.40 CPC); Samples was the campaign efficiency leader (15.56% CTR / $1.63 CPC).",
+      "today": "Today (Aug 31) the two scoped campaigns spent $21.66 on 112 impressions and 10 clicks, 8.93% CTR at $2.17 CPC. ContractMfg was $13.20 (2 clicks); Samples was $8.46 (8 clicks). This is 85.52% of the configured $25.33 combined daily budget and is not a breach.",
+      "sevenNewAds": "Current seven-day window (Aug 25–31) totaled $156.28 / 1,343 impressions / 84 clicks (6.25% CTR, $1.86 CPC), versus Aug 18–24 at $178.89 / 736 / 89 (12.09% / $2.01). The two campaign IDs are scoped, but CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
+      "ctrCpc": "Current 7-day CTR is 6.25% at $1.86 CPC, versus 12.09% at $2.01 CPC prior week.",
+      "leadsEmailsCalls": "Current window has 6 genuine inbox inquiries, all 6 qualified, 1 verified Ads-attributed by gclid (campaign UNMAPPED), and 5 qualified customer/project booked calls. Prior has 7 inquiries, 7 qualified, 0 verified Ads-attributed, and 4 qualified customer/project calls. Ads-attributed booked calls and cost per Ads-attributed booked call are NOT YET MEASURABLE.",
+      "budgetCap": "Configured budgets read at report time are ContractMfg $20.33/day plus Samples $5.00/day = $25.33/day ($177.31 per 7 days). Today used 85.52% of daily configuration. Current trailing average is $22.33/day, 88.14% of configured pacing, so no current cap breach; prior window was 100.89% of pacing. No budget change made.",
+      "winners": "Because the exact seven-ad roster is unverified, do not overclaim an exact ad winner. Among queried candidates, 817481283338 (Samples) led current-window click volume with 31 clicks, 6.74% CTR, and $1.02 CPC; Samples was also the campaign efficiency leader at 6.74% CTR / $1.02 CPC.",
       "waste": "Search-term waste is NOT YET MEASURABLE: the approved Ads connection exposes no search-term report resource. No negative keywords or other settings were changed.",
-      "optimization": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate attribution, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
-      "suggestions": "Same single recommendation: prove the exact seven-ad scope and restore attribution/search-term evidence before optimization. Approval required: yes.",
-      "nextExperiment": "After scope, attribution, and search-term validation, propose one controlled 7-day experiment only, with no budget increase and predeclared lead/booked-call measurement.",
+      "optimization": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate campaign-level attribution and booked-call mapping, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
+      "suggestions": "Same single recommendation: prove exact seven-ad scope, campaign-level attribution, booked-call mapping, and search-term evidence before optimization. Approval required: yes.",
+      "nextExperiment": "After scope, attribution, booked-call, and search-term validation, propose one controlled 7-day experiment only, with no budget increase and predeclared lead/booked-call measurement.",
       "whatAdsAgentShouldDo": "Remain read-only: prove the seven-ad roster, verify gclid/UTM/campaign mapping and booked-call attribution, obtain search-term visibility if authorized, and return one evidence-based recommendation. Do not create, edit, pause, delete, publish, or change spend/bids/keywords/targeting/creative/landing pages."
     }
   },
   "adsIntelligence": {
-    "updatedAt": "2026-08-28T01:04:51.696Z",
-    "source": "fresh Google Ads API campaign/ad reports plus targeted Outlook inquiry review; booked-call/CPL not re-verified",
+    "updatedAt": "2026-08-31T21:11:35-04:00",
+    "source": "Fresh Google Ads API campaign/ad reports plus targeted Outlook inquiry review and Google Calendar booked-call review.",
     "scope": "Only PLL-Search-ContractMfg-2026 (24049588003) and PLL-Search-Samples-2026 (24040031889); legacy campaigns excluded.",
     "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
     "windows": {
+      "today": {
+        "start": "2026-08-31",
+        "end": "2026-08-31"
+      },
       "current": {
-        "start": "2026-08-21",
-        "end": "2026-08-27"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       },
       "prior": {
-        "start": "2026-08-14",
-        "end": "2026-08-20"
-      },
-      "today": {
-        "start": "2026-08-27",
-        "end": "2026-08-27"
+        "start": "2026-08-18",
+        "end": "2026-08-24"
       }
     },
     "today": {
-      "spend": 31.564235,
-      "impressions": 26,
-      "clicks": 7,
-      "ctrPct": 26.92,
-      "avgCpc": 4.509176428571429,
+      "spend": 21.664805,
+      "impressions": 112,
+      "clicks": 10,
+      "ctrPct": 8.93,
+      "avgCpc": 2.1664805,
       "window": {
-        "start": "2026-08-27",
-        "end": "2026-08-27"
-      },
-      "preliminary": true
+        "start": "2026-08-31",
+        "end": "2026-08-31"
+      }
     },
     "current": {
-      "spend": 190.722064,
-      "impressions": 839,
-      "clicks": 83,
-      "ctrPct": 9.89,
-      "avgCpc": 2.2978561927710843,
+      "spend": 156.284124,
+      "impressions": 1343,
+      "clicks": 84,
+      "ctrPct": 6.25,
+      "avgCpc": 1.8605252857142855,
       "window": {
-        "start": "2026-08-21",
-        "end": "2026-08-27"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       }
     },
     "prior": {
-      "spend": 190.446282,
-      "impressions": 554,
-      "clicks": 70,
-      "ctrPct": 12.64,
-      "avgCpc": 2.7206611714285716,
+      "spend": 178.888901,
+      "impressions": 736,
+      "clicks": 89,
+      "ctrPct": 12.09,
+      "avgCpc": 2.0099876516853934,
       "window": {
-        "start": "2026-08-14",
-        "end": "2026-08-20"
+        "start": "2026-08-18",
+        "end": "2026-08-24"
       }
     },
     "campaignBreakdown": {
       "current": [
         {
-          "spend": 156.490173,
-          "impressions": 704,
-          "clicks": 62,
-          "ctrPct": 8.81,
-          "avgCpc": 2.524035048387096,
+          "spend": 124.780147,
+          "impressions": 883,
+          "clicks": 53,
+          "ctrPct": 6.0,
+          "avgCpc": 2.354342396226415,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
           "configuredDailyBudget": 20.33
         },
         {
-          "spend": 34.231891,
-          "impressions": 135,
-          "clicks": 21,
-          "ctrPct": 15.56,
-          "avgCpc": 1.6300900476190474,
+          "spend": 31.503977,
+          "impressions": 460,
+          "clicks": 31,
+          "ctrPct": 6.74,
+          "avgCpc": 1.016257322580645,
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
@@ -1229,22 +1232,22 @@
       ],
       "prior": [
         {
-          "spend": 128.85118,
-          "impressions": 423,
-          "clicks": 48,
-          "ctrPct": 11.35,
-          "avgCpc": 2.684399583333333,
+          "spend": 137.040286,
+          "impressions": 610,
+          "clicks": 65,
+          "ctrPct": 10.66,
+          "avgCpc": 2.1083120923076923,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
           "configuredDailyBudget": 20.33
         },
         {
-          "spend": 61.595102,
-          "impressions": 131,
-          "clicks": 22,
-          "ctrPct": 16.79,
-          "avgCpc": 2.799777363636364,
+          "spend": 41.848615,
+          "impressions": 126,
+          "clicks": 24,
+          "ctrPct": 19.05,
+          "avgCpc": 1.7436922916666668,
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
@@ -1253,22 +1256,22 @@
       ],
       "today": [
         {
-          "spend": 26.664235,
-          "impressions": 18,
-          "clicks": 5,
-          "ctrPct": 27.78,
-          "avgCpc": 5.332847,
+          "spend": 13.200096,
+          "impressions": 21,
+          "clicks": 2,
+          "ctrPct": 9.52,
+          "avgCpc": 6.600048,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
           "configuredDailyBudget": 20.33
         },
         {
-          "spend": 4.9,
-          "impressions": 8,
-          "clicks": 2,
-          "ctrPct": 25.0,
-          "avgCpc": 2.45,
+          "spend": 8.464709,
+          "impressions": 91,
+          "clicks": 8,
+          "ctrPct": 8.79,
+          "avgCpc": 1.058088625,
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
@@ -1293,11 +1296,11 @@
           "adGroupId": "197753978559",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.407869,
-          "impressions": 56,
-          "clicks": 1,
-          "ctrPct": 1.79,
-          "avgCpc": 0.407869,
+          "spend": 0.50571,
+          "impressions": 92,
+          "clicks": 2,
+          "ctrPct": 2.17,
+          "avgCpc": 0.252855,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1305,11 +1308,11 @@
           "adGroupId": "197753979079",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 69.654671,
-          "impressions": 229,
-          "clicks": 29,
-          "ctrPct": 12.66,
-          "avgCpc": 2.4018852068965515,
+          "spend": 48.274171,
+          "impressions": 280,
+          "clicks": 20,
+          "ctrPct": 7.14,
+          "avgCpc": 2.41370855,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1317,8 +1320,8 @@
           "adGroupId": "200118474604",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.0,
-          "impressions": 19,
+          "spend": 0,
+          "impressions": 38,
           "clicks": 0,
           "ctrPct": 0.0,
           "avgCpc": null,
@@ -1329,11 +1332,11 @@
           "adGroupId": "204146230528",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 59.816647,
-          "impressions": 249,
-          "clicks": 16,
-          "ctrPct": 6.43,
-          "avgCpc": 3.7385404375,
+          "spend": 52.47,
+          "impressions": 158,
+          "clicks": 14,
+          "ctrPct": 8.86,
+          "avgCpc": 3.7478571428571428,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1341,11 +1344,11 @@
           "adGroupId": "204146230728",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 11.746407,
-          "impressions": 93,
+          "spend": 18.864386,
+          "impressions": 154,
           "clicks": 10,
-          "ctrPct": 10.75,
-          "avgCpc": 1.1746407,
+          "ctrPct": 6.49,
+          "avgCpc": 1.8864386,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1353,11 +1356,11 @@
           "adGroupId": "200118475084",
           "campaignId": "24040031889",
           "status": "ENABLED",
-          "spend": 34.231891,
-          "impressions": 135,
-          "clicks": 21,
-          "ctrPct": 15.56,
-          "avgCpc": 1.6300900476190474,
+          "spend": 31.503977,
+          "impressions": 460,
+          "clicks": 31,
+          "ctrPct": 6.74,
+          "avgCpc": 1.016257322580645,
           "campaign": "PLL-Search-Samples-2026"
         },
         {
@@ -1365,11 +1368,11 @@
           "adGroupId": "204146231008",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 14.864579,
-          "impressions": 58,
-          "clicks": 6,
-          "ctrPct": 10.34,
-          "avgCpc": 2.4774298333333333,
+          "spend": 4.66588,
+          "impressions": 161,
+          "clicks": 7,
+          "ctrPct": 4.35,
+          "avgCpc": 0.6665542857142857,
           "campaign": "PLL-Search-ContractMfg-2026"
         }
       ],
@@ -1379,11 +1382,11 @@
           "adGroupId": "197753978559",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 3.09,
-          "impressions": 17,
+          "spend": 0.407869,
+          "impressions": 35,
           "clicks": 1,
-          "ctrPct": 5.88,
-          "avgCpc": 3.09,
+          "ctrPct": 2.86,
+          "avgCpc": 0.407869,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1391,11 +1394,11 @@
           "adGroupId": "197753979079",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 47.22269,
-          "impressions": 108,
-          "clicks": 20,
-          "ctrPct": 18.52,
-          "avgCpc": 2.3611345,
+          "spend": 55.829912,
+          "impressions": 189,
+          "clicks": 34,
+          "ctrPct": 17.99,
+          "avgCpc": 1.6420562352941177,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1403,11 +1406,11 @@
           "adGroupId": "200118474604",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 5.05,
-          "impressions": 25,
-          "clicks": 3,
-          "ctrPct": 12.0,
-          "avgCpc": 1.6833333333333333,
+          "spend": 0,
+          "impressions": 15,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1415,11 +1418,11 @@
           "adGroupId": "204146230528",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 32.602816,
-          "impressions": 179,
-          "clicks": 13,
-          "ctrPct": 7.26,
-          "avgCpc": 2.507908923076923,
+          "spend": 48.486647,
+          "impressions": 272,
+          "clicks": 20,
+          "ctrPct": 7.35,
+          "avgCpc": 2.42433235,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1427,11 +1430,11 @@
           "adGroupId": "204146230728",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 11.905674,
-          "impressions": 23,
+          "spend": 6.487621,
+          "impressions": 37,
           "clicks": 4,
-          "ctrPct": 17.39,
-          "avgCpc": 2.9764185000000003,
+          "ctrPct": 10.81,
+          "avgCpc": 1.62190525,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1439,11 +1442,11 @@
           "adGroupId": "200118475084",
           "campaignId": "24040031889",
           "status": "ENABLED",
-          "spend": 61.595102,
-          "impressions": 131,
-          "clicks": 22,
-          "ctrPct": 16.79,
-          "avgCpc": 2.799777363636364,
+          "spend": 41.848615,
+          "impressions": 126,
+          "clicks": 24,
+          "ctrPct": 19.05,
+          "avgCpc": 1.7436922916666668,
           "campaign": "PLL-Search-Samples-2026"
         },
         {
@@ -1451,11 +1454,11 @@
           "adGroupId": "204146231008",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 28.98,
-          "impressions": 71,
-          "clicks": 7,
-          "ctrPct": 9.86,
-          "avgCpc": 4.14,
+          "spend": 25.828237,
+          "impressions": 62,
+          "clicks": 6,
+          "ctrPct": 9.68,
+          "avgCpc": 4.304706166666667,
           "campaign": "PLL-Search-ContractMfg-2026"
         }
       ],
@@ -1465,11 +1468,11 @@
           "adGroupId": "197753978559",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.0,
-          "impressions": 1,
-          "clicks": 0,
-          "ctrPct": 0.0,
-          "avgCpc": null,
+          "spend": 0.130096,
+          "impressions": 2,
+          "clicks": 1,
+          "ctrPct": 50.0,
+          "avgCpc": 0.130096,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1477,11 +1480,11 @@
           "adGroupId": "197753979079",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.445866,
-          "impressions": 4,
-          "clicks": 1,
-          "ctrPct": 25.0,
-          "avgCpc": 0.445866,
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1489,8 +1492,8 @@
           "adGroupId": "200118474604",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.0,
-          "impressions": 0,
+          "spend": 0,
+          "impressions": 1,
           "clicks": 0,
           "ctrPct": 0.0,
           "avgCpc": null,
@@ -1501,11 +1504,11 @@
           "adGroupId": "204146230528",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 21.34,
-          "impressions": 6,
-          "clicks": 2,
-          "ctrPct": 33.33,
-          "avgCpc": 10.67,
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1513,11 +1516,11 @@
           "adGroupId": "204146230728",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 4.878369,
+          "spend": 13.07,
           "impressions": 4,
-          "clicks": 2,
-          "ctrPct": 50.0,
-          "avgCpc": 2.4391845,
+          "clicks": 1,
+          "ctrPct": 25.0,
+          "avgCpc": 13.07,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
         {
@@ -1525,11 +1528,11 @@
           "adGroupId": "200118475084",
           "campaignId": "24040031889",
           "status": "ENABLED",
-          "spend": 4.9,
-          "impressions": 8,
-          "clicks": 2,
-          "ctrPct": 25.0,
-          "avgCpc": 2.45,
+          "spend": 8.464709,
+          "impressions": 91,
+          "clicks": 8,
+          "ctrPct": 8.79,
+          "avgCpc": 1.058088625,
           "campaign": "PLL-Search-Samples-2026"
         },
         {
@@ -1537,8 +1540,8 @@
           "adGroupId": "204146231008",
           "campaignId": "24049588003",
           "status": "ENABLED",
-          "spend": 0.0,
-          "impressions": 3,
+          "spend": 0,
+          "impressions": 12,
           "clicks": 0,
           "ctrPct": 0.0,
           "avgCpc": null,
@@ -1548,20 +1551,21 @@
     },
     "leads": {
       "current": {
-        "totalInquiries": 7,
+        "totalInquiries": 6,
         "qualifiedInquiries": 6,
         "verifiedAdsAttributedLeads": 1,
         "adsAttributedByCampaign": {
-          "ContractMfg": 1,
-          "Samples": 0
+          "ContractMfg": 0,
+          "Samples": 0,
+          "UNMAPPED": 1
         },
-        "bookedCalls": null,
+        "bookedCalls": 5,
         "verifiedAdsAttributedBookedCalls": null,
-        "qualifiedCpl": 31.787010666666664,
-        "adsAttributedCpl": 190.722064,
-        "qualifiedCostPerBookedCall": null,
+        "qualifiedCpl": 26.047354,
+        "adsAttributedCpl": 156.284124,
+        "qualifiedCostPerBookedCall": 31.256824799999997,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "One current-window inquiry (Mark Higgins) carries a gclid and is the only verified Ads-attributed lead. Other inquiries are UNATTRIBUTED or NOT YET MEASURABLE. Booked-call counts/CPL were not re-verified because no calendar/CRM connection was in scope."
+        "attributionNote": "Six genuine current-window inquiries were identified (four Shopify contact-form messages, Salena Ogden, and Tammye Hall). Marvie Wright carries a gclid and is the only verified Ads-attributed lead; campaign mapping is UNMAPPED. Other inquiries are UNATTRIBUTED or NOT YET MEASURABLE. Five qualified customer/project calls were found in Calendar; no booked call can be tied to Ads attribution."
       },
       "prior": {
         "totalInquiries": 7,
@@ -1571,21 +1575,25 @@
           "ContractMfg": 0,
           "Samples": 0
         },
-        "bookedCalls": null,
+        "bookedCalls": 4,
         "verifiedAdsAttributedBookedCalls": null,
-        "qualifiedCpl": 27.206611714285714,
+        "qualifiedCpl": 25.555557285714286,
         "adsAttributedCpl": null,
-        "qualifiedCostPerBookedCall": null,
+        "qualifiedCostPerBookedCall": 44.72222525,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "No prior-window inquiry had verifiable attribution to either monitored campaign in the targeted inbox pull. Use UNATTRIBUTED / NOT YET MEASURABLE. Booked-call counts/CPL were not re-verified because no calendar/CRM connection was in scope."
+        "attributionNote": "Seven Shopify contact-form inquiries were identified in the prior window; no verified Ads attribution. Four qualified customer/project calls were found in Calendar; Ads-attributed booked calls remain NOT YET MEASURABLE."
       },
       "today": {
-        "totalInquiries": 1,
-        "qualifiedInquiries": 1,
+        "totalInquiries": 2,
+        "qualifiedInquiries": 2,
         "verifiedAdsAttributedLeads": 0,
-        "bookedCalls": null,
+        "bookedCalls": 4,
         "verifiedAdsAttributedBookedCalls": null,
-        "attributionNote": "One Shopify inquiry was present on 2026-08-27; no verified Ads attribution. Booked calls were not re-verified because no calendar/CRM connection was in scope."
+        "qualifiedCpl": 10.8324025,
+        "adsAttributedCpl": null,
+        "qualifiedCostPerBookedCall": 5.41620125,
+        "adsAttributedCostPerBookedCall": null,
+        "attributionNote": "Today included two genuine inbox inquiries/threads (Salena Ogden and Tammye Hall); neither carries verifiable Ads attribution. Four qualified customer/project calls occurred today (Frank Luca, David Aminov, Ari Levitin, Cameron Nelligan). Ads-attributed booked calls are NOT YET MEASURABLE."
       }
     },
     "health": {
@@ -1595,9 +1603,9 @@
         "combinedDaily": 25.33,
         "combinedSevenDay": 177.31
       },
-      "dailyCap": "Configured combined daily budget is $25.33 ($20.33 ContractMfg + $5.00 Samples). Today (2026-08-27, report-time partial day) spent $31.56 (124.6% of configured daily budget), within Google's normal up-to-2x single-day delivery range; this alone is not a breach.",
-      "trailingCap": "Current 7-day spend is $190.72, 107.56% of the $177.31 seven-day configured budget; trailing average $27.25/day vs $25.33 configured, a 7.56% overage and cap-compliance alert under the standing rule.",
-      "funnel": "Current window: 7 total inbox inquiries, 6 qualified, 1 verified Ads-attributed lead. Booked-call counts and booking economics are NOT YET MEASURABLE / not re-verified without calendar or CRM access.",
+      "dailyCap": "Configured combined daily budget is $25.33 ($20.33 ContractMfg + $5.00 Samples). Today (2026-08-31) spent $21.66, 85.52% of configured daily budget; this is within normal pacing and is not a breach.",
+      "trailingCap": "Current 7-day spend is $156.28, 88.14% of the $177.31 seven-day configured budget; trailing average $22.33/day vs $25.33 configured, so no current cap breach. Prior 7-day spend was $178.89, 100.89% of configured pacing (historical prior-window overage).",
+      "funnel": "Current window: 6 total inbox inquiries, 6 qualified, 1 verified Ads-attributed lead, and 5 qualified customer/project booked calls. Verified Ads-attributed booked calls remain NOT YET MEASURABLE.",
       "dataPulls": {
         "campaignToday": true,
         "campaignCurrent": true,
@@ -1606,24 +1614,24 @@
         "exactSevenAdRoster": false,
         "searchTerms": false,
         "outlookInquiries": true,
-        "bookedCalls": false
+        "bookedCalls": true
       }
     },
     "best": {
-      "adId": "817412025043",
-      "adGroupId": "197753979079",
-      "campaignId": "24049588003",
+      "adId": "817481283338",
+      "adGroupId": "200118475084",
+      "campaignId": "24040031889",
       "status": "ENABLED",
-      "spend": 69.654671,
-      "impressions": 229,
-      "clicks": 29,
-      "ctrPct": 12.66,
-      "avgCpc": 2.4018852068965515,
-      "campaign": "PLL-Search-ContractMfg-2026",
+      "spend": 31.503977,
+      "impressions": 460,
+      "clicks": 31,
+      "ctrPct": 6.74,
+      "avgCpc": 1.016257322580645,
+      "campaign": "PLL-Search-Samples-2026",
       "level": "queried-candidate-ad",
       "window": {
-        "start": "2026-08-21",
-        "end": "2026-08-27"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       },
       "reason": "Highest current-window click volume among queried candidate IDs; exact seven-ad roster unverified."
     },
@@ -1633,33 +1641,33 @@
       "campaignId": "24049588003",
       "status": "ENABLED",
       "spend": 0.0,
-      "impressions": 19,
+      "impressions": 38,
       "clicks": 0,
       "ctrPct": 0.0,
       "avgCpc": null,
       "campaign": "PLL-Search-ContractMfg-2026",
       "level": "queried-candidate-ad",
       "window": {
-        "start": "2026-08-21",
-        "end": "2026-08-27"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       },
       "reason": "Lowest current-window click volume among queried candidate IDs; search-term waste cannot be assessed."
     },
     "watch": {
-      "adId": "817412025043",
+      "adId": "817481260556",
       "reason": "Highest current-window spend among queried candidate IDs; monitor concentration while roster and search-term evidence remain unverified.",
-      "spend": 69.654671,
-      "clicks": 29,
-      "ctrPct": 12.66,
-      "avgCpc": 2.4018852068965515
+      "spend": 52.47,
+      "clicks": 14,
+      "ctrPct": 8.86,
+      "avgCpc": 3.7478571428571428
     },
     "waste": {
       "searchTerms": "NOT YET MEASURABLE — no search-term report resource is exposed by the approved Ads connection; no unsupported query or negative-keyword change made."
     },
     "recommendation": {
-      "action": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate attribution, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
-      "evidence": "Fresh campaign totals cover only the two verified campaign IDs. Exact seven-ad scope is unverified; search-term reporting is not exposed. Current spend is $190.72 over 7 days versus $177.31 configured pacing (107.56%); one paid lead is verifiable.",
-      "expectedOutcome": "Restore auditable ad scope, funnel attribution, and search-term evidence; confirm whether trailing pacing overage is delivery variance or a real budget issue; prevent unsupported optimization decisions.",
+      "action": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate campaign-level attribution and booked-call mapping, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
+      "evidence": "Fresh campaign totals cover only the two verified campaign IDs. Exact seven-ad scope is unverified; search-term reporting is not exposed. Current spend is $156.28 over 7 days versus $177.31 configured pacing (88.14%); one paid lead is verifiable by gclid but campaign mapping is UNMAPPED.",
+      "expectedOutcome": "Restore auditable ad scope, funnel attribution, booked-call mapping, and search-term evidence before optimization decisions.",
       "measurementWindow": "Complete validation before the next optimization review; then compare the next trailing 7 days against this baseline.",
       "approval_required": "yes",
       "pendingApproval": true,
@@ -1668,18 +1676,18 @@
     "approval_required": "yes",
     "pendingApproval": true,
     "approved": false,
-    "spoken": "Nightly Ads refresh: current 7 days (Aug 21–27) spent $190.72 on 839 impressions and 83 clicks (9.89% CTR, $2.30 CPC), versus prior 7 days (Aug 14–20) at $190.45 / 554 / 70 (12.64% / $2.72). The exact seven-ad roster is unverified; 6 of 7 current inbox inquiries are qualified and 1 is verifiably Ads-attributed. Current trailing pacing is 7.56% above configured $25.33/day; cap alert raised. Recommendation requires Sam approval and remains read-only.",
+    "spoken": "Nightly Ads refresh: current 7 days (Aug 25–31) spent $156.28 on 1,343 impressions and 84 clicks (6.25% CTR, $1.86 CPC), versus prior 7 days (Aug 18–24) at $178.89 / 736 / 89 (12.09% / $2.01). The exact seven-ad roster is unverified; 6 of 6 current inbox inquiries are qualified and 1 is verifiably Ads-attributed by gclid (campaign unmapped). Current trailing pacing is 11.86% under configured $25.33/day; no current cap breach. Five qualified customer/project calls are recorded in the current window. Recommendation requires Sam approval and remains read-only.",
     "preparedAnswers": {
-      "today": "Today (Aug 27, preliminary/partial) the two scoped campaigns spent $31.56 on 26 impressions and 7 clicks, 26.92% CTR at $4.51 CPC. Samples was $4.90 and ContractMfg was $26.66. This is within Google's normal up-to-2x single-day delivery range, not by itself a breach.",
-      "sevenNewAds": "The two campaign IDs are scoped, but CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED. Queried candidate IDs for Aug 21–27 totaled $190.72 / 839 impressions / 83 clicks (9.89% CTR, $2.30 CPC), versus Aug 14–20 at $190.45 / 554 / 70 (12.64% / $2.72).",
-      "ctrCpc": "Current 7-day CTR is 9.89% at $2.30 CPC, versus 12.64% at $2.72 prior week.",
-      "leadsEmailsCalls": "Current window has 7 inbox inquiries, 6 qualified, and 1 verified Ads-attributed lead. Booked-call counts and cost per booked call are NOT YET MEASURABLE / not re-verified without calendar or CRM access. Prior window has 7 inbox inquiries, 7 qualified, and 0 verified Ads-attributed leads.",
-      "budgetCap": "Configured budgets read at report time are ContractMfg $20.33/day plus Samples $5.00/day = $25.33/day ($177.31 per 7 days). Today's $31.56 is within normal 2x daily delivery pacing. Current trailing average is $27.25/day, 7.56% above configured pacing; cap-compliance alert is raised; no budget change made.",
-      "winners": "Because campaign-scope — exact seven-ad roster unverified, do not overclaim an exact ad winner. Among queried candidates, 817412025043 led current-window clicks (29 clicks, 12.66% CTR, $2.40 CPC); Samples was the campaign efficiency leader (15.56% CTR / $1.63 CPC).",
+      "today": "Today (Aug 31) the two scoped campaigns spent $21.66 on 112 impressions and 10 clicks, 8.93% CTR at $2.17 CPC. ContractMfg was $13.20 (2 clicks); Samples was $8.46 (8 clicks). This is 85.52% of the configured $25.33 combined daily budget and is not a breach.",
+      "sevenNewAds": "Current seven-day window (Aug 25–31) totaled $156.28 / 1,343 impressions / 84 clicks (6.25% CTR, $1.86 CPC), versus Aug 18–24 at $178.89 / 736 / 89 (12.09% / $2.01). The two campaign IDs are scoped, but CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
+      "ctrCpc": "Current 7-day CTR is 6.25% at $1.86 CPC, versus 12.09% at $2.01 CPC prior week.",
+      "leadsEmailsCalls": "Current window has 6 genuine inbox inquiries, all 6 qualified, 1 verified Ads-attributed by gclid (campaign UNMAPPED), and 5 qualified customer/project booked calls. Prior has 7 inquiries, 7 qualified, 0 verified Ads-attributed, and 4 qualified customer/project calls. Ads-attributed booked calls and cost per Ads-attributed booked call are NOT YET MEASURABLE.",
+      "budgetCap": "Configured budgets read at report time are ContractMfg $20.33/day plus Samples $5.00/day = $25.33/day ($177.31 per 7 days). Today used 85.52% of daily configuration. Current trailing average is $22.33/day, 88.14% of configured pacing, so no current cap breach; prior window was 100.89% of pacing. No budget change made.",
+      "winners": "Because the exact seven-ad roster is unverified, do not overclaim an exact ad winner. Among queried candidates, 817481283338 (Samples) led current-window click volume with 31 clicks, 6.74% CTR, and $1.02 CPC; Samples was also the campaign efficiency leader at 6.74% CTR / $1.02 CPC.",
       "waste": "Search-term waste is NOT YET MEASURABLE: the approved Ads connection exposes no search-term report resource. No negative keywords or other settings were changed.",
-      "optimization": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate attribution, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
-      "suggestions": "Same single recommendation: prove the exact seven-ad scope and restore attribution/search-term evidence before optimization. Approval required: yes.",
-      "nextExperiment": "After scope, attribution, and search-term validation, propose one controlled 7-day experiment only, with no budget increase and predeclared lead/booked-call measurement.",
+      "optimization": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate campaign-level attribution and booked-call mapping, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
+      "suggestions": "Same single recommendation: prove exact seven-ad scope, campaign-level attribution, booked-call mapping, and search-term evidence before optimization. Approval required: yes.",
+      "nextExperiment": "After scope, attribution, booked-call, and search-term validation, propose one controlled 7-day experiment only, with no budget increase and predeclared lead/booked-call measurement.",
       "whatAdsAgentShouldDo": "Remain read-only: prove the seven-ad roster, verify gclid/UTM/campaign mapping and booked-call attribution, obtain search-term visibility if authorized, and return one evidence-based recommendation. Do not create, edit, pause, delete, publish, or change spend/bids/keywords/targeting/creative/landing pages."
     }
   },
