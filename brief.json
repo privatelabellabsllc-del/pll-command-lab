@@ -1,41 +1,41 @@
 {
-  "date": "2026-08-31",
-  "ts": "2026-08-31T11:05:06.967Z",
+  "date": "2026-09-01",
+  "ts": "2026-09-01T11:09:16.840Z",
   "brief": [
     {
-      "t": "Morning refresh for 2026-08-31: no newer day-updates.jsonl source was available; carrying forward the last verified Command Lab data and Ads caches.",
+      "t": "Morning refresh for September 1: no newer day-updates.jsonl entry was available, so the last verified business facts and Ads cache are carried forward; today's calendar adds Payroll at 11am and Tammye Hall at 2pm ET.",
       "hot": true
     },
     {
-      "t": "#1: Mark Cafolla's 11am Discovery Call is today, but the invite has no video link; patch the link before the call.",
+      "t": "#1: Prepare the 2pm ET Tammye Hall call. The Google Meet link is live, but she previously expected a phone call; confirm the format and agenda before the meeting.",
       "hot": true
     },
     {
-      "t": "#2: lock the Talova/Marcello viral reorder. Verify Kenna's small revisions, then Sam sends the clean answer and locks the PO.",
+      "t": "#2: Resolve the urgent Morning Glory label corrections before print. Production is reportedly underway, so verify whether labels have printed and route the artwork/regulatory review.",
       "hot": true
     },
     {
-      "t": "#3: Amanda Peters (Studio S5) and Dirk Llorens (Diogenes) received their document packages yesterday; monitor both for replies.",
+      "t": "#3: Mark Higgins sent the ingredient brief for two aluminum-free roll-on deodorants; review it with formulation and choose the chemist-call time before pricing.",
+      "hot": true
+    },
+    {
+      "t": "#4: Gridlot needs a clean, project-specific beef-tallow NDA; the approved PLL_NDA_Template.docx is still missing from the sending library.",
       "hot": false
     },
     {
-      "t": "#4: Terra Lotus has 19,000 units in R&D; confirm Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped.",
+      "t": "#5: Amanda at Studio S5 is waiting on certification timing, the 5,000-unit credit mechanics, and separate packaging/labeling pricing; Sam must supply the commercial direction.",
       "hot": false
     },
     {
-      "t": "#5: Ads remain on Maximize Conversions with zero tracked conversions; Sam's “revert ads to manual” approval is still pending.",
-      "hot": false
-    },
-    {
-      "t": "#6: ConvertFlow's fork mockup is staged; Sam's redlines on R&D button labels and contact-form fields are still needed.",
+      "t": "#6: Ads remain read-only with the verified Aug 31 nightly cache preserved; no campaign, bid, budget, or landing-page changes were made.",
       "hot": false
     }
   ],
   "next": [
-    "Re-verify carried-forward priorities against live CRM/calendar/email sources when available",
-    "Patch Mark Cafolla's missing video link before the 11am Discovery Call",
-    "Verify Kenna's revision status so Sam can lock the Talova reorder",
-    "Monitor Amanda Peters and Dirk Llorens for replies to yesterday's document packages"
+    "Prepare and clearly confirm the 2pm ET Tammye Hall call format and agenda",
+    "Verify Morning Glory label print status and review the requested corrections before further production",
+    "Review Mark Higgins' ingredient brief and confirm a chemist-call time with Ron and Evelyn",
+    "Provide direction on Gridlot's clean NDA and Studio S5's certification/credit/pricing questions"
   ],
   "kb": [
     {
@@ -107,16 +107,6 @@
     },
     {
       "keys": [
-        "laura",
-        "laura assistant",
-        "oreka comms",
-        "nda",
-        "bottle printing"
-      ],
-      "a": "Laura owns Oreka customer communications, white/private-label bottle-printing coordination, and NDAs. Her simpler dedicated assistant is built, but her email, WhatsApp, and CRM connections still await Sam's setup. Keep her focused on active customer operations and documentation."
-    },
-    {
-      "keys": [
         "ronald",
         "ronald costing",
         "bom",
@@ -124,17 +114,6 @@
         "quote inputs"
       ],
       "a": "Ronald supplies formula and BOM cost inputs where needed. His costing work must include the requested inputs before any quote is issued, and no quote should rely on a BOM alone. There is no new Ronald completion recorded in this refresh."
-    },
-    {
-      "keys": [
-        "darlene saintil",
-        "darlene",
-        "hand lotion",
-        "hand wash",
-        "discovery call",
-        "august 19"
-      ],
-      "a": "Darlene Saintil's luxury hand-lotion and hand-wash discovery meeting was scheduled for August 19. No meeting outcome is recorded in this refresh, so do not present a next step as confirmed."
     },
     {
       "keys": [
@@ -183,18 +162,6 @@
     },
     {
       "keys": [
-        "talova",
-        "talova labs",
-        "marcello",
-        "viral reorder",
-        "coco vanilla",
-        "kenna revisions",
-        "po"
-      ],
-      "a": "Talova Labs' Marcello wants a viral Coco Vanilla reorder, making it the warmest cash lane today. The only blocker is a clean answer confirming whether PLL received Kenna's small revisions about a month ago; once verified, Sam can lock the PO."
-    },
-    {
-      "keys": [
         "4pm eastern",
         "delphos house",
         "launch strategy",
@@ -211,16 +178,6 @@
         "retail"
       ],
       "a": "Dan Hunter at Hunter Amenities wants to meet next Wednesday after inbound interest through James Pitenis. The retail and airline-amenities channel could bring real volume, but units are not qualified yet."
-    },
-    {
-      "keys": [
-        "1000",
-        "emma garrison",
-        "icp",
-        "shopify",
-        "wagyu wellness"
-      ],
-      "a": "Emma Garrison at Wagyu Wellness remains a real opportunity in the 1,000-plus-unit range and has not yet been quoted. Confirm the exact quantity and then move it through the quote-clearance lane."
     },
     {
       "keys": [
@@ -252,53 +209,6 @@
     },
     {
       "keys": [
-        "sam",
-        "ceo",
-        "single lane",
-        "today",
-        "priority"
-      ],
-      "a": "Sam's single lane is Talova first: verify Kenna's revisions and call Marcello, then give the two ConvertFlow redlines and authorize Amanda's send. After that, confirm Terra shipment and clear the Mark Higgins, Victor, and unquoted-brand quote lanes."
-    },
-    {
-      "keys": [
-        "aidan",
-        "aidan status",
-        "production lanes",
-        "terra coordination"
-      ],
-      "a": "Aidan is driving Atlas Eternal's $26,500 production across four lanes and coordinating Terra Lotus's 19,000-unit R&D sample checkpoint. Atlas has $13,250 due on completion. Terra still needs confirmation that Shampoo 5K, Body Wash 9K, and Conditioner 5K sample sets shipped."
-    },
-    {
-      "keys": [
-        "atlas eternal",
-        "atlas",
-        "production",
-        "$26500",
-        "aidan",
-        "balance",
-        "$13250"
-      ],
-      "a": "Atlas Eternal is in production at $26,500 with Aidan driving the handoffs. The remaining $13,250 balance is due on completion; production is active and the balance is not yet described as collected."
-    },
-    {
-      "keys": [
-        "terra lotus",
-        "terra",
-        "lotus",
-        "19000",
-        "three products",
-        "r&d",
-        "samples",
-        "shampoo 5k",
-        "body wash 9k",
-        "conditioner 5k",
-        "shipment"
-      ],
-      "a": "Terra Lotus has 19,000 units in R&D at a sample-shipment checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K. Confirm that all three sample sets shipped; no shipment confirmation is recorded yet."
-    },
-    {
-      "keys": [
         "lisa christensen",
         "lisa",
         "order 1467",
@@ -306,31 +216,6 @@
         "not shipped"
       ],
       "a": "Lisa Christensen’s order 1467 still shows not shipped after 10-plus days, although she received an on-its-way email. The live status needs checking and Laura owns an honest customer reply today; shipment is not confirmed from the email alone."
-    },
-    {
-      "keys": [
-        "calendly",
-        "teams",
-        "booking link",
-        "kari naughton",
-        "august 26",
-        "connor sousa",
-        "ari levitin"
-      ],
-      "a": "Calendly Teams conferencing is now connected, so future bookings generate a real join link. Backfill the links on the already booked Connor Sousa and Ari Levitin calls. Do not call the older bookings fixed until those links are updated."
-    },
-    {
-      "keys": [
-        "mark higgins",
-        "mark",
-        "mens deodorant",
-        "roll-on",
-        "500",
-        "1000",
-        "nda",
-        "outcome"
-      ],
-      "a": "Mark Higgins's call was booked for August 24, but the outcome is not recorded in this refresh. Sam needs to confirm units, budget, and timeline; the quote remains blocked until those details are known."
     },
     {
       "keys": [
@@ -352,36 +237,6 @@
         "contact form"
       ],
       "a": "The ConvertFlow two-branch fork and Shopify floating Call/Book widget are staged on drafts, with the live site untouched. Sam must approve the R&D button wording and contact-form fields. Then the branching can be built and screens shown before any swap."
-    },
-    {
-      "keys": [
-        "kari naughton",
-        "radiant glow",
-        "scalp system",
-        "chemist call"
-      ],
-      "a": "Kari Naughton is booked for an August 26 chemist call about a four-SKU scalp system. The prior booking-link failure makes end-to-end link testing a prerequisite for treating the appointment as secure."
-    },
-    {
-      "keys": [
-        "gridlot",
-        "yianni koutsos",
-        "beef-tallow",
-        "august 27"
-      ],
-      "a": "Gridlot, represented by Yianni Koutsos, is booked for an August 27 call about a beef-tallow line. The opportunity is still in qualification, including unit volume and commercial fit."
-    },
-    {
-      "keys": [
-        "amanda peters",
-        "amanda",
-        "studio s5",
-        "2500",
-        "documents sent",
-        "august 27",
-        "awaiting reply"
-      ],
-      "a": "Amanda Peters at Studio S5 received PLL's three-document package on August 27 for an approximately 2,500-unit opportunity. The package is sent and the current status is awaiting her reply; monitor the thread and do not treat the lead as closed."
     },
     {
       "keys": [
@@ -407,22 +262,142 @@
     },
     {
       "keys": [
-        "rannah aytay",
-        "rannah",
-        "aytay",
-        "2500",
-        "unquoted"
-      ],
-      "a": "Rannah Aytay is a real 2,500-unit opportunity that has not yet been quoted. It belongs in the quote-clearance lane after the Talova, ConvertFlow, Amanda, and Terra checkpoints."
-    },
-    {
-      "keys": [
         "ethnic gals",
         "ethnic",
         "2000",
         "unquoted"
       ],
       "a": "Ethnic Gals is a real 2,000-unit opportunity that has not yet been quoted. Build it in the unquoted-brand cleanup lane once the warm Talova and approved-send priorities are cleared."
+    },
+    {
+      "keys": [
+        "sam",
+        "ceo",
+        "single lane",
+        "today",
+        "priority"
+      ],
+      "a": "Sam’s Sept 1 lane is to protect the 2pm Tammye Hall call, resolve the urgent Morning Glory label review, review Mark Higgins’s ingredient brief, and provide direction on Gridlot’s NDA and Studio S5’s questions. Enso’s 9:15am proposal is not confirmed by Sam; Payroll is on the calendar at 11am ET. No new day-update entry was available."
+    },
+    {
+      "keys": [
+        "aidan",
+        "aidan status",
+        "production lanes",
+        "terra coordination"
+      ],
+      "a": "Aidan is driving Atlas Eternal’s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus’s 19,000-unit sample checkpoint. He should support Mark Higgins’s formulation review and confirm the three Terra sample sets shipped; neither Terra shipment nor any new completion is verified here."
+    },
+    {
+      "keys": [
+        "talova",
+        "talova labs",
+        "marcello",
+        "viral reorder",
+        "coco vanilla",
+        "kenna revisions",
+        "po"
+      ],
+      "a": "Talova Labs’ Marcello remains a warm reorder lane for Coco Vanilla. Before Sam locks the PO, PLL still needs a clean confirmation that Kenna’s small revisions were received; that confirmation is not present in today’s sources."
+    },
+    {
+      "keys": [
+        "terra lotus",
+        "terra",
+        "lotus",
+        "19000",
+        "three products",
+        "r&d",
+        "samples",
+        "shampoo 5k",
+        "body wash 9k",
+        "conditioner 5k",
+        "shipment"
+      ],
+      "a": "Terra Lotus has 19,000 units in R&D at a sample-shipment checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K. The current sources do not confirm shipment, so Aidan/Ronald must verify all three sets before the next commercial step."
+    },
+    {
+      "keys": [
+        "mark higgins",
+        "mark",
+        "mens deodorant",
+        "roll-on",
+        "500",
+        "1000",
+        "nda",
+        "outcome"
+      ],
+      "a": "Mark Higgins supplied the requested ingredient brief for two aluminum-free roll-on deodorant SKUs. It is ready for Sam and formulation-team review before pricing; a chemist-call time with Ron and Evelyn still needs to be selected and confirmed."
+    },
+    {
+      "keys": [
+        "tammye hall",
+        "tammye",
+        "2pm",
+        "manufacturing",
+        "fulfillment"
+      ],
+      "a": "Tammye Hall is booked for Tuesday, September 1 from 2:00–2:30pm ET with Google Meet link https://meet.google.com/ohj-dbga-fej. She previously missed a meeting because she expected a phone call, so confirm the format and agenda explicitly before this manufacturing-and-fulfillment discussion."
+    },
+    {
+      "keys": [
+        "morning glory",
+        "james bailey",
+        "1 of us holdings",
+        "label corrections",
+        "production",
+        "pre-print"
+      ],
+      "a": "James Bailey at 1 Of Us Holdings/Morning Glory requested urgent pre-print review of shampoo-label corrections while production is reportedly underway. Verify whether labels have printed, then route the full regulatory/artwork checklist; no client response or commitment is recorded from this refresh."
+    },
+    {
+      "keys": [
+        "gridlot",
+        "yianni koutsos",
+        "beef-tallow",
+        "august 27"
+      ],
+      "a": "Yianni Koutsos at Gridlot Partners says the previously sent NDA appears to belong to another project and needs a clean beef-tallow NDA. The approved PLL_NDA_Template.docx is still missing from the sending library; do not send a document until the correct template is verified, and keep Seb copied."
+    },
+    {
+      "keys": [
+        "af brand",
+        "toney wells",
+        "september 2",
+        "james",
+        "laura"
+      ],
+      "a": "AF Brand is on the calendar for Wednesday, September 2 from 3:00–4:00pm ET with James and Laura listed; Sam is marked declined and the organizer is declined. Resolve ownership and attendance before treating this as a live Sam meeting."
+    },
+    {
+      "keys": [
+        "cameron nelligan",
+        "cameron",
+        "sunkissd",
+        "lip balm",
+        "august 31"
+      ],
+      "a": "Cameron Nelligan’s Sunkissd discovery call was scheduled for August 31 at 6:00pm ET about a tallow-based lip balm and a 10,000-unit first order. Otter shared a recording notification, but no verified outcome or next commercial step is present in today’s sources."
+    },
+    {
+      "keys": [
+        "david aminov",
+        "david",
+        "manore",
+        "beef tallow balm",
+        "made man"
+      ],
+      "a": "David Aminov of Made Man Barber/MANORE discussed beef tallow balm, packaging, and pricing at 1,000, 2,500, and 5,000 units in 2-ounce jars. The August 31 call had a Google Meet link, but no verified outcome or attribution is recorded in this refresh."
+    },
+    {
+      "keys": [
+        "ari levitin",
+        "ari",
+        "dewpad",
+        "click industries",
+        "chemist call"
+      ],
+      "a": "Ari Levitin of Click Industries/DEWPAD had a chemist call scheduled August 31 to review custom formula pricing at 5,000, 10,000, 20,000, and 40,000 units, with a stated $3.50 target at 10,000. No verified call outcome or technical/commercial commitment is recorded here."
     },
     {
       "keys": [
@@ -434,234 +409,245 @@
         "video link",
         "teams"
       ],
-      "a": "Mark Cafolla's Discovery Call is today, August 28 at 11am. The invite is missing a video link, so the link is being patched before the call; do not describe the appointment as fully fixed until the live invite is verified."
-    },
-    {
-      "keys": [
-        "dirk llorens",
-        "dirk",
-        "diogenes",
-        "bjj wash",
-        "r&d brief",
-        "nda",
-        "documents sent",
-        "august 27",
-        "awaiting reply"
-      ],
-      "a": "Dirk Llorens at Diogenes received the R&D brief and NDA on August 27 for the BJJ wash project. The documents are sent and the current status is awaiting his reply; monitor the thread rather than assuming a response."
+      "a": "Mark Cafolla remains an active custom-peptide opportunity with NDA executed and packaging/sample specifications in progress. The old August 28 call record is historical; no September 1 call or newly verified outcome is present in today’s sources."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Patch Mark Cafolla video link",
-      "why": "Today's 11am Discovery Call invite has no video link and the call is at risk.",
-      "owner": "Consultant",
-      "due": "Today 11:00am",
+      "title": "Prepare Tammye Hall 2pm call",
+      "why": "The Sept 1 2:00–2:30pm ET Meet event is confirmed, but Tammye previously expected a phone call; prevent another format miss.",
+      "owner": "Sam / Consultant",
+      "due": "Today 2:00pm ET",
       "priority": "critical",
-      "revenue": "Mark Cafolla",
-      "status": "LINK PATCH NEEDED / VERIFY LIVE INVITE"
+      "revenue": "Tammye Hall",
+      "status": "BOOKED — FORMAT CONFIRMATION NEEDED"
     },
     {
       "rank": 2,
-      "title": "Lock Talova reorder with Marcello",
-      "why": "The viral reorder is the warmest cash lane; only blocker is the Kenna-revision answer.",
-      "owner": "Sam / Consultant",
+      "title": "Stop Morning Glory label ambiguity",
+      "why": "James Bailey requested urgent pre-print label corrections while production is reportedly underway.",
+      "owner": "Sam / James",
       "due": "Today",
       "priority": "critical",
-      "revenue": "Talova Labs",
-      "status": "KENNA CONFIRMATION NEEDED / CALL MARCELLO"
+      "revenue": "Morning Glory",
+      "status": "VERIFY PRINT STATUS / ROUTE REGULATORY REVIEW"
     },
     {
       "rank": 3,
-      "title": "Monitor Amanda and Dirk replies",
-      "why": "Studio S5 and Diogenes document packages were sent August 27 and both leads are awaiting replies.",
-      "owner": "Consultant",
+      "title": "Review Mark Higgins deodorant brief",
+      "why": "The ingredient brief for two aluminum-free roll-ons is ready for formulation review before pricing and the follow-up call.",
+      "owner": "Sam / Aidan / Ronald",
       "due": "Today",
       "priority": "high",
-      "revenue": "Amanda Peters; Dirk Llorens",
-      "status": "MONITOR REPLIES"
+      "revenue": "Mark Higgins",
+      "status": "FORMULATION REVIEW / CALL TIME NEEDED"
     },
     {
       "rank": 4,
-      "title": "Confirm Terra Lotus sample shipment",
-      "why": "Shampoo 5K, Body Wash 9K, and Conditioner 5K total 19,000 R&D units at the sample checkpoint.",
-      "owner": "Aidan / Ronald",
+      "title": "Correct Gridlot NDA",
+      "why": "Yianni says the previously sent NDA belongs to another project; the approved clean template is not in Nina’s library.",
+      "owner": "Sam / Consultant",
       "due": "Today",
       "priority": "high",
-      "revenue": "Terra Lotus",
-      "status": "SHIPMENT CONFIRMATION NEEDED"
+      "revenue": "Gridlot Partners",
+      "status": "CLEAN NDA BLOCKED ON TEMPLATE"
     },
     {
       "rank": 5,
-      "title": "Approve Ads and ConvertFlow decisions",
-      "why": "Ads have zero tracked conversions on Maximize Conversions, and the staged fork needs two Sam redlines.",
+      "title": "Answer Studio S5 commercial questions",
+      "why": "Amanda needs certification timing, exact 5,000-unit credit treatment, and packaging/labeling pricing before deciding.",
       "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "Acquisition; conversion funnel",
-      "status": "MANUAL-CPC APPROVAL / TWO REDLINES NEEDED"
+      "revenue": "Studio S5",
+      "status": "SAM DIRECTION NEEDED"
+    },
+    {
+      "rank": 6,
+      "title": "Confirm Enso 9:15am proposal",
+      "why": "Gilad proposed Sept 1 at 9:15am or 1pm ET and Aidan accepted 9:15, but Sam’s confirmation is not recorded.",
+      "owner": "Sam / Aidan",
+      "due": "Today 9:15am ET",
+      "priority": "high",
+      "revenue": "Enso Brands",
+      "status": "PROPOSED — NOT CONFIRMED"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Verify Kenna revisions and lock Talova, approve Ads/manual-CPC and ConvertFlow decisions, then confirm Terra shipment.",
+      "top_task": "Handle the Tammye 2pm call format, Morning Glory print-status escalation, Mark Higgins review, and the Gridlot/Studio S5 decisions.",
       "tasks": [
         {
-          "title": "Verify Kenna's revisions and call or WhatsApp Marcello for Talova",
+          "title": "Confirm Tammye Hall’s 2pm ET call format and agenda",
+          "due": "Today 2:00pm ET"
+        },
+        {
+          "title": "Verify whether Morning Glory labels have printed and direct the correction review",
           "due": "Today"
         },
         {
-          "title": "Say “revert ads to manual” if approving the controlled Ads change",
+          "title": "Review Mark Higgins’s ingredient brief and choose a chemist-call time",
           "due": "Today"
         },
         {
-          "title": "Give ConvertFlow R&D-label and contact-form redlines",
+          "title": "Provide Gridlot NDA and Studio S5 commercial direction",
           "due": "Today"
         },
         {
-          "title": "Confirm Terra shipment across 19,000 R&D units",
+          "title": "Confirm or decline Enso’s proposed 9:15am ET meeting",
           "due": "Today"
         }
       ],
-      "notes": "Mark Cafolla's 11am link is being patched separately; Amanda and Dirk packages are sent and under reply watch."
+      "notes": "The Sept 1 calendar also contains Payroll at 11am ET. No new day-update was available; do not treat unconfirmed proposals as booked."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Drive Atlas Eternal production and verify Terra Lotus sample shipment.",
+      "top_task": "Drive Atlas Eternal production and support Mark Higgins formulation review and Terra Lotus shipment verification.",
       "tasks": [
         {
           "title": "Drive Atlas Eternal $26,500 production across four lanes",
           "due": "On completion"
         },
         {
-          "title": "Confirm all three Terra Lotus sample sets shipped",
-          "due": "Today"
-        }
-      ],
-      "notes": "Atlas has $13,250 due on completion; Terra Lotus totals 19,000 R&D units."
-    },
-    "aaron": {
-      "display_name": "Aaron",
-      "top_task": "Confirm PLL received Kenna's revisions for the Talova reorder.",
-      "tasks": [
-        {
-          "title": "Verify Kenna's revised formula with Sam and Aidan",
-          "due": "Today"
-        }
-      ],
-      "notes": "Kenna-revision confirmation is the only stated blocker to locking Marcello's Talova reorder."
-    },
-    "james": {
-      "display_name": "James",
-      "top_task": "Coordinate Dan Hunter's Hunter Amenities meeting.",
-      "tasks": [
-        {
-          "title": "Prepare next-Wednesday meeting with Dan Hunter",
-          "due": "Next Wednesday"
-        }
-      ],
-      "notes": "Retail and airline amenities opportunity is not unit-qualified."
-    },
-    "nikkie": {
-      "display_name": "Nikkie",
-      "top_task": "Work Curly 911/Victoria's 500-unit opportunity and Rachel Trautwein's men's haircare launch.",
-      "tasks": [
-        {
-          "title": "Resolve Curly 911/Victoria invite time conflict",
+          "title": "Support Mark Higgins brief review and confirm formulation inputs",
           "due": "Today"
         },
         {
-          "title": "Qualify Rachel Trautwein's men's shampoo and conditioner launch",
+          "title": "Confirm Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped",
+          "due": "Today"
+        }
+      ],
+      "notes": "Atlas has $13,250 due on completion. Terra’s 19,000-unit sample shipment remains unconfirmed."
+    },
+    "aaron": {
+      "display_name": "Aaron",
+      "top_task": "Verify Kenna’s revisions for the Talova reorder before Sam locks the PO.",
+      "tasks": [
+        {
+          "title": "Confirm whether PLL received Kenna’s revised formula details",
+          "due": "Today"
+        }
+      ],
+      "notes": "Talova/Marcello remains a warm lane, but the Kenna-revision confirmation is not verified."
+    },
+    "james": {
+      "display_name": "James",
+      "top_task": "Escalate Morning Glory label corrections and resolve the AF Brand meeting ownership.",
+      "tasks": [
+        {
+          "title": "Verify Morning Glory label print status and route the correction checklist",
+          "due": "Today"
+        },
+        {
+          "title": "Resolve ownership/attendance for the AF Brand Sept 2 meeting",
+          "due": "Tomorrow"
+        }
+      ],
+      "notes": "James is also copied on the AF Brand invite; Sam is marked declined and Laura accepted."
+    },
+    "nikkie": {
+      "display_name": "Nikkie",
+      "top_task": "Continue outbound sales and qualify active inbound opportunities.",
+      "tasks": [
+        {
+          "title": "Work active white-label inquiries and book qualified next steps",
+          "due": "Ongoing"
+        },
+        {
+          "title": "Resolve outstanding Curly 911/Victoria timing details",
           "due": "Ongoing"
         }
       ],
-      "notes": "Nikkie owns both active inbound lanes; do not treat either as closed."
+      "notes": "Nikkie’s opportunities remain active and none should be described as closed without verified CRM evidence."
     }
   },
   "revenueActions": [
     {
-      "title": "Rescue Mark Cafolla call",
-      "why": "Today's 11am Discovery Call invite has no video link.",
+      "title": "Protect Tammye Hall call",
+      "why": "The Sept 1 2pm ET Meet is confirmed, but the client previously expected a phone call.",
       "est_value": "Not stated",
-      "next_step": "Patch and verify a Teams/Meet link on the live invite before 11am.",
-      "owner": "Consultant",
-      "timing": "Today 11:00am",
-      "value": "At-risk discovery call",
-      "status": "LINK PATCH NEEDED"
+      "next_step": "Send/confirm the actual format and agenda, then run the manufacturing-and-fulfillment qualification call.",
+      "owner": "Sam / Consultant",
+      "timing": "Today 2:00pm ET",
+      "value": "Booked discovery call",
+      "status": "FORMAT CONFIRMATION NEEDED"
     },
     {
-      "title": "Lock Talova reorder",
-      "why": "Marcello wants back in after Coco Vanilla went viral; Kenna-revision receipt is the only blocker.",
+      "title": "Resolve Morning Glory label corrections",
+      "why": "Client reports production is underway and requests urgent pre-print review.",
+      "est_value": "Existing production account",
+      "next_step": "Verify whether labels printed; then route net contents, INCI/order, company details, claims substantiation, warnings, legibility, lot/UPC, and artwork review.",
+      "owner": "Sam / James",
+      "timing": "Today",
+      "value": "Production continuity",
+      "status": "URGENT VERIFICATION"
+    },
+    {
+      "title": "Advance Mark Higgins quote lane",
+      "why": "The requested ingredient brief for two roll-on deodorants is now available for formulation review.",
       "est_value": "Not stated",
-      "next_step": "Verify the revision status, then give Sam one clean line to call Marcello and lock the PO.",
+      "next_step": "Review with formulation, confirm the Ron/Evelyn call time, and price only after required inputs are validated.",
+      "owner": "Sam / Aidan / Ronald",
+      "timing": "Today",
+      "value": "Quote-ready after review",
+      "status": "FORMULATION REVIEW NEEDED"
+    },
+    {
+      "title": "Repair Gridlot NDA",
+      "why": "The prior NDA appears to belong to another project, blocking the beef-tallow opportunity.",
+      "est_value": "Not stated",
+      "next_step": "Locate/approve the clean PLL NDA template, keep Seb copied, and do not send until the document is verified.",
       "owner": "Sam / Consultant",
       "timing": "Today",
-      "value": "Warmest cash lane",
-      "status": "BLOCKED ON CONFIRMATION"
+      "value": "Active opportunity",
+      "status": "TEMPLATE MISSING"
     },
     {
-      "title": "Monitor Amanda and Dirk",
-      "why": "Two document packages were sent August 27 and both replies are pending.",
+      "title": "Answer Studio S5 questions",
+      "why": "Amanda needs certification timing, credit mechanics, and separate packaging/labeling pricing before deciding.",
       "est_value": "Not stated",
-      "next_step": "Watch Amanda Peters/Studio S5 and Dirk Llorens/Diogenes for replies, then route the next step.",
-      "owner": "Consultant",
-      "timing": "Today",
-      "value": "Two active leads",
-      "status": "AWAITING REPLIES"
-    },
-    {
-      "title": "Confirm Terra Lotus samples",
-      "why": "Three R&D sample sets totaling 19,000 units are at the shipment checkpoint.",
-      "est_value": "Not stated",
-      "next_step": "Confirm Shampoo 5K, Body Wash 9K, and Conditioner 5K all shipped.",
-      "owner": "Aidan / Ronald",
-      "timing": "Today",
-      "value": "19,000 R&D units",
-      "status": "SHIPMENT CHECK NEEDED"
-    },
-    {
-      "title": "Approve controlled Ads response",
-      "why": "Net-new campaigns remain on Maximize Conversions with zero tracked conversions.",
-      "est_value": "Acquisition efficiency",
-      "next_step": "Sam says “revert ads to manual”; no Ads settings change is made until authorized.",
+      "next_step": "Sam supplies the exact commercial/regulatory direction; no commitments were made by Nina.",
       "owner": "Sam",
       "timing": "Today",
-      "value": "Paid acquisition",
-      "status": "APPROVAL NEEDED"
+      "value": "Active lead",
+      "status": "DIRECTION NEEDED"
     },
     {
-      "title": "Close ConvertFlow fork redlines",
-      "why": "The staged duplicate needs R&D button-label and contact-form approval.",
-      "est_value": "Funnel conversion",
-      "next_step": "Get both Sam redlines, then build on the draft only with the live site untouched.",
-      "owner": "Sam / Consultant",
-      "timing": "Today",
-      "value": "Conversion funnel",
-      "status": "TWO REDLINES NEEDED"
+      "title": "Confirm Enso meeting proposal",
+      "why": "A Sept 1 9:15am ET review was accepted by Aidan but not confirmed by Sam.",
+      "est_value": "Not stated",
+      "next_step": "Confirm or decline before treating the meeting as booked; clarify scope and any account-access or fee decisions.",
+      "owner": "Sam / Aidan",
+      "timing": "Today 9:15am ET",
+      "value": "Launch/PPC review",
+      "status": "PROPOSED — NOT CONFIRMED"
     }
   ],
   "pipelineStat": {
-    "total_value": "$26,500 Atlas Eternal; Talova, Amanda, Dirk, Terra, Mark Cafolla, Curly 911/Victoria, and Rachel Trautwein values not stated",
-    "active_deals": 8,
+    "total_value": "$26,500 Atlas Eternal; other active opportunities not stated",
+    "active_deals": 12,
     "hot": [
-      "Mark Cafolla — 11am Discovery Call at risk because invite lacks video link",
-      "Talova/Marcello — viral reorder blocked on Kenna revision confirmation",
-      "Terra Lotus — 19,000-unit sample shipment checkpoint"
+      "Tammye Hall — Sept 1 2pm ET booked call, format must be confirmed",
+      "Morning Glory — urgent label corrections while production status is unverified",
+      "Mark Higgins — ingredient brief received, formulation review before pricing",
+      "Gridlot — clean NDA blocked on approved template",
+      "Studio S5 — Sam direction needed on certification/credit/pricing"
     ],
     "stalled": [
-      "Amanda Peters and Dirk Llorens — document packages sent Aug 27, awaiting replies",
-      "Ads — zero tracked conversions; Sam approval needed to revert to manual",
-      "ConvertFlow — two redlines needed before draft build"
+      "Enso — Sept 1 meeting proposal not confirmed by Sam",
+      "Talova/Marcello — Kenna revision receipt still needs verification",
+      "Terra Lotus — 19,000-unit sample shipment still needs confirmation",
+      "Amanda/Studio S5 — waiting on exact commercial answers"
     ],
-    "activeDeals": 8,
+    "activeDeals": 12,
     "pipelineValue": 26500,
-    "inProduction": 1,
+    "inProduction": 2,
     "depositsCollected": null,
-    "note": "Today: patch Mark Cafolla link, verify Kenna for Talova, monitor Amanda/Dirk, confirm Terra, then resolve Ads and ConvertFlow approvals.",
+    "note": "Sept 1 lane: protect the Tammye call, resolve Morning Glory label status, review Mark Higgins’s brief, then clear Gridlot and Studio S5 decisions. Named pipeline value remains limited to verified Atlas Eternal value.",
     "monthlyTarget": "$150K",
-    "achievableDepositsThisMonth": "Not stated in today's brief."
+    "achievableDepositsThisMonth": "Not stated in today’s verified sources."
   },
   "adsAgentBrief": {
     "generatedAt": "2026-08-31T21:11:35-04:00",

@@ -1,9 +1,9 @@
 {
-  "id": "ads-nightly-2026-08-31",
-  "request_id": "ads-nightly-2026-08-31",
-  "ts": "2026-09-01T01:13:00Z",
-  "agent": "Ads Agent",
+  "id": "cmd_1dda56109d174da8b286ab319aeed9a3",
+  "request_id": "cmd_54cafd5754a34c368b90add60ea749fa",
+  "ts": "2026-09-01T11:09:16.840Z",
+  "agent": "PLL Consultant",
   "status": "completed",
-  "text": "Nightly (read-only): all 6 ENABLED; ContractMfg+Samples freeze held, Twin day-9 active. TODAY managed new-lane spend $26.68 / 664 impressions / 25 clicks / $1.07 CPC, $9.32 under the $36 cap (ContractMfg $13.20, Samples $8.46, Twin $5.01). T7 (Aug 25-31) $198.23 vs prior $201.40, under $252/week. MTD $853.51. Twin T7 $0.48 CPC, CTR building, no Twin-attributed booked call yet. 0 new form leads; 2 new booked calls (Tammye Hall, David Aminov), both UNATTRIBUTED. August: 45 leads / 8 qualified / 11 booked / 9 verified-paid. Runaway guard NOT met. No changes/pauses. Cache refresh blocked: callback supplied summary text only, not the required structured ads_intelligence object; brief.json was not changed.",
-  "spoken_text": "Sam, here’s the bottom line: the new ads stayed within budget and no safety trigger was hit. Today they spent $26.68 for 25 clicks at an average $1.07 per click, and the trailing week is also under its cap. We had no new form leads and two booked calls, but neither is verified as Ads-attributed. All six enabled items remain live with no changes or pauses, although the callback did not include the structured data needed to refresh the cached brief. My read is to continue monitoring without changes."
+  "text": "Morning brief loaded for 2026-09-01.",
+  "spoken_text": "Morning brief loaded for September 1, 2026."
 }
