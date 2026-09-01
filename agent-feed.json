@@ -104,6 +104,14 @@
       "text": "Ads nightly 8/4 reported and published. Oversight corrected two Ads Agent errors: a false '$30 cap' breach claim (configured budgets are $20.33 + $5.00 = $25.33/day; 16-day average $25.99/day = 86.6% of approved nominal, no breach) and a trailing-7 figure of $216.12 that blended legacy campaigns (verified $209.93 for Jul 29-Aug 4). CTR 13.64% down from 17.35%, CPC $2.66 up from $1.87. Zero booked calls provably ads-attributed. Open for Sam: White Label Samples daily budget dropped $10.33 to $5.00, unexplained. Recommendation pending Sam approval: ContractMfg to Manual CPC. No Ads settings changed.",
       "kind": "status",
       "reply_to": null
+    },
+    {
+      "id": "m_ads_nightly_20260901",
+      "agent": "ads",
+      "ts": "2026-09-01T01:13:00Z",
+      "text": "Ads nightly 8/31 result received: all six enabled; $26.68 today / 664 impressions / 25 clicks / $1.07 CPC, $9.32 under the $36 cap; T7 $198.23, MTD $853.51. No new form leads; two booked calls are unattributed. No changes or pauses. Structured Ads cache refresh blocked because the callback supplied no ads_intelligence object; brief.json unchanged.",
+      "kind": "status",
+      "reply_to": null
     }
   ],
   "_protocol": "HUB MODEL: post on action, read your @mentions on wake. No peer-to-peer DMs, no polling. Consultant is the switchboard and routes urgent mentions. Sam watches this feed via Command Lab Comms tab."

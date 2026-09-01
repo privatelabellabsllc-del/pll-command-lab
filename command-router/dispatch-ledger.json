@@ -1,0 +1,883 @@
+{
+ "ads-nightly-2026-08-24": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "origin": "nightly_automation_unsolicited_callback",
+  "status": "completed_with_discrepancy",
+  "completed_timestamp": "2026-08-24T21:07:00-04:00",
+  "callback_deadline": null,
+  "cache_refresh": "blocked_no_ads_intelligence",
+  "note": "Nightly summary-only callback; no structured ads_intelligence -> brief.json NOT refreshed (already independently refreshed by 21:00 ET nightly subagent run, commit 51f8dec, today $45.18 / 2 in-scope campaigns ContractMfg + Samples). DISCREPANCY: Ads Agent callback reports THREE ENABLED campaigns including a 'Geo' campaign ($12.39 today / 15 clicks) NOT in Consultant's verified 2-campaign scope, today $57.57 vs Consultant $45.18, and a $21.57-over-$36-cap breach. 'Geo' is not a known legacy campaign (Initial / New-Sales-Ad / Sales Campaign PLL) and not one of the two approved net-new campaigns -> possible unapproved live campaign. NOT independently verified tonight; queued for live reconciliation next Ads pull. Flagged to Sam (campaign-approval governance + cap). Agent reports runaway-pause rule not met (valid lead today); no changes made."
+ },
+ "cmd_mt201tzn_bdmnjx8": {
+  "target": "email",
+  "routed_to": "Email Agent",
+  "command": "Find our CPA (name Austin), locate his email, send a short thank-you saying thank you for saving us money today.",
+  "dispatched_at": "2026-08-20T20:56:00Z",
+  "status": "DOUBLE_SEND_consultant_error",
+  "http_body": "{\"status\":\"success\"}",
+  "overseer": "consultant",
+  "primary_agent": "Email Agent",
+  "answered_by": "PLL Consultant",
+  "callback_deadline": null,
+  "completed_timestamp": "2026-08-20T21:05:00Z",
+  "recovery_sent_at": null,
+  "note": "CORRECTED 2026-08-20T21:10:00Z. GROUND TRUTH from Outlook Sent Items: Email Agent DID execute -> sent thank-you to austen@malscpa.com at 20:55:31Z (correct recipient, correct spelling 'Austen', Sam voice). Its callback arrived LATE at 21:06:00Z (~10 min). During the gap the consultant failover check of Sent Items/Drafts returned EMPTY (false negative, almost certainly Outlook KQL search-index lag on just-sent mail), so consultant wrongly concluded non-execution and sent a SECOND thank-you at 21:04:12Z ('Austin' greeting). RESULT: DOUBLE-SEND to PLL's CPA. Root cause = consultant verification method (single immediate KQL Sent-folder search is unreliable for double-send prevention), NOT Email Agent non-execution. Prior 'did not execute' finding and 'callback-silence strike (non-execution)' RETRACTED. Email Agent fault reduced to: late callback only (~10 min past 360s guarantee). LESSON: before any send-failover, verify recipient with ret/ delayed re-query (>=2 checks spaced >60s, or query by recipient over a wide window incl. drafts) because just-sent items lag the search index; treat empty result as inconclusive, not confirmed non-send."
+ },
+ "cmd_mt073s67_io6pmji": {
+  "target": "email",
+  "routed_to": "Email Agent",
+  "command": "Create Monday Aug 24 10:00 AM ET Google Meet meeting: Dirk + Sam + Ronald (chemist) + Evelyn; put on Sam's calendar; send invite to Dirk.",
+  "dispatched_at": "2026-08-19T14:37:30Z",
+  "status": "agent_late_callback_matches_verified",
+  "http_body": "{\"status\":\"success\"}",
+  "overseer": "consultant",
+  "callback_deadline": null,
+  "completed_timestamp": "2026-08-19T14:46:00Z",
+  "recovery_sent_at": "2026-08-19T14:44:00Z",
+  "note": "Email Agent executed correctly ~14:39 (2 min after dispatch) but never posted a callback. Consultant INDEPENDENTLY VERIFIED via Outlook: Google Calendar invite 'Sam / Dirk / Ron - BJJ Shampoo and Body Wash Project' Mon Aug 24 10:00-10:30 ET with Google Meet link; attendees Dirk (dirk@diogenessolutions.com), Sam, Ron Cruz (ron@privatelabellabs.com), Evelyn (evelyn@privatelabellabs.com); confirmation email sent to Dirk. Exactly ONE invite (no duplicate from recovery ping). Dirk email + Ron's exact address were NOT in the command; resolved from inbox. Published answers/cmd_mt073s67_io6pmji.json + answers.json, commit 7049fa0. Email Agent callback-silence strike logged. LATE CALLBACK finally arrived 2026-08-19T14:50Z (~20h after execution) with status=completed; matches already-verified result. Treated as late duplicate: NOT re-published to Command Center, NOT re-notified to Sam. Callback-latency strike confirmed for Email Agent onboarding fix."
+ },
+ "cmd_mruszeym_eg9726p": {
+  "target": "crm",
+  "command_sha256": "604fb669aded1c640f4830a4862d0e3db9f63071fdd1ecdd380f73eb7e7090ff",
+  "dispatched_at": "2026-07-21T15:27:00Z",
+  "status": "completed-independent-live-verification-passed",
+  "verified_at": "2026-07-21T17:41:32Z",
+  "callback_deadline": "2026-07-21T15:57:00+00:00"
+ },
+ "cmd_mrvfil7a_q8fomly": {
+  "target": "ads",
+  "command_sha256": "1d0531bf2c4e307c62e154627f00ba2102c82f8384550dac4be9cf541d1a15f1",
+  "dispatched_at": "2026-07-22T01:57:00Z",
+  "status": "completed_with_attribution_gap",
+  "completed_at": "2026-07-22T02:01:00Z",
+  "callback_deadline": "2026-07-22T02:27:00+00:00"
+ },
+ "ads-nightly-2026-07-22": {
+  "target": "ads",
+  "command_sha256": null,
+  "dispatched_at": "2026-07-22T21:00:00-04:00",
+  "status": "completed",
+  "completed_at": "2026-07-22T21:02:00-04:00",
+  "summary": "Nightly preliminary Ads brief published; under cap, attribution not yet measurable.",
+  "callback_deadline": "2026-07-22T21:30:00-04:00"
+ },
+ "ads-nightly-2026-07-24": {
+  "target": "ads",
+  "command_sha256": null,
+  "dispatched_at": "2026-07-24T21:00:00-04:00",
+  "status": "completed",
+  "completed_at": "2026-07-24T21:03:00-04:00",
+  "summary": "Both net-new campaigns enabled and under cap; paid attribution and CPL remain not measurable.",
+  "callback_deadline": "2026-07-24T21:30:00-04:00"
+ },
+ "ads-nightly-2026-07-28": {
+  "target": "ads",
+  "command_sha256": null,
+  "dispatched_at": "2026-07-29T01:04:00Z",
+  "status": "completed",
+  "completed_at": "2026-07-29T01:04:00Z",
+  "summary": "Nightly brief published; new-lane preliminary spend exceeded daily cap via ContractMfg over-delivery, weekly pacing healthy, one clean Samples lead, and search-term reporting remains tool-gapped.",
+  "callback_deadline": "2026-07-29T01:34:00+00:00"
+ },
+ "cmd_ms6ibn4m_1iw6vom": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "command_hash": "f98b8627b62c55072979cd26f7db1b53c87a97e6bbed64ad28022b9bc9042faf",
+  "timestamp": "2026-07-29T19:58:36.053061Z",
+  "status": "no_callback_unrecoverable",
+  "callback_deadline": "2026-07-29T20:28:36.053061+00:00",
+  "closed_at": "2026-08-01T18:15:53.903007+00:00",
+  "closure_reason": "Ads Agent never called back (Jul 29). Original command text was not stored (hash only), so a faithful same-request-id recovery cannot be sent. Closed without fabricating a completion. Pre-dates the reply-lifecycle fix; command text is now retained on dispatch."
+ },
+ "ads-brief-now-20260730T141451Z-e13e8e25": {
+  "request_id": "ads-brief-now-20260730T141451Z-e13e8e25",
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "command_hash": "5dae2e47edc91a9642720c0507a07869b2003d2fd786646eb58c06421889ac41",
+  "timestamp": "2026-07-30T14:14:51.418554+00:00",
+  "status": "completed",
+  "completed_timestamp": "2026-07-30T14:23:37.051216+00:00",
+  "summary": "Ads brief 7/24-7/30: $123.95 of $210 wk cap (59%, under). 12 leads, only 1 verified Google-Ads-attributed (Tiara->Samples). 3 booked calls, none paid-attributed. CPL/cost-per-call not reliably measurable yet due to thin attribution coverage. Cap compliant, CTR/CPC healthy. Rec: fix search-term tool gap; no budget change. No campaign changes made.",
+  "callback_deadline": "2026-07-30T14:44:51.418554+00:00"
+ },
+ "entries": [
+  {
+   "request_id": "ads-refresh-now-20260730T165415Z-645ebb73",
+   "target": "ads",
+   "routed_to": "Ads Agent",
+   "command_hash": "f9c243e0a65a11d58d07b42b5d875c7aeb8a313926e9136050b78f1c7369ec32",
+   "timestamp": "2026-07-30T16:54:15.894674+00:00",
+   "status": "superseded",
+   "http_status": 200,
+   "closed_at": "2026-08-01T18:15:53.903007+00:00",
+   "superseded_by": "ads-recovery-20260730T172747Z-0aabe597",
+   "closure_reason": "Never called back; a recovery dispatch 33 minutes later completed and delivered the result. Closed as superseded, not completed."
+  },
+  {
+   "request_id": "ads-recovery-20260730T172747Z-0aabe597",
+   "target": "ads",
+   "routed_to": "Ads Agent",
+   "command_hash": "d1e07f02000de1934555d909dd9f5e0c326d6322d36799bc717eebde06763c26",
+   "timestamp": "2026-07-30T17:27:47.484028+00:00",
+   "status": "completed",
+   "http_status": 200,
+   "purpose": "recover_missing_command_center_reply",
+   "completed_timestamp": "2026-07-30T17:32:32.758Z",
+   "summary": "Improvement recs for the 7 net-new ads (read-only, no changes). Winner: 1B Skincare 44.8% CTR/$1.00 CPC \u2014 scale. Cost sink: 1C Haircare 9.8% CTR/$3.84 CPC \u2014 rein in. 3C BeardOil dormant (0 impr) \u2014 fix bid/keywords or pause. 2A Samples solid ($1.49) but CTR slipped, audit keyword mix. Highest-leverage: within-cap reallocation toward Skincare + fix search_term_view gap for negative mining. No budget change ($30/day, $210/wk held). Approval required: YES for bid/keyword edits to 1B/1C/3C."
+  },
+  {
+   "request_id": "cmd_e2e_1785700581",
+   "target": "crm",
+   "routed_to": "CRM Developer",
+   "command": "end-to-end pipeline test (unsolicited callback received; no local dispatch record)",
+   "status": "completed",
+   "timestamp": "2026-08-02T20:13:24Z",
+   "completed_timestamp": "2026-08-02T20:13:24Z",
+   "note": "Callback arrived from CRM Developer with no matching dispatch entry; answer published to answers/<request_id>.json."
+  },
+  {
+   "request_id": "ads-nightly-2026-08-02",
+   "target": "ads",
+   "routed_to": "Ads Agent",
+   "status": "completed_with_correction",
+   "completed_timestamp": "2026-08-03T01:08:19.891005+00:00",
+   "callback_deadline": null,
+   "note": "Unsolicited nightly callback. Agent claimed 'Samples paused' \u2014 live check proved Samples ENABLED/SERVING and still spending at 19:00 and 20:00 ET. No structured ads_intelligence supplied; agent cache refresh rejected. Consultant published corrected answer."
+  },
+  {
+   "request_id": "ads-nightly-2026-08-02-correction",
+   "target": "ads",
+   "routed_to": "Ads Agent",
+   "status": "verified_accurate",
+   "completed_timestamp": "2026-08-03T01:10:26.491580+00:00",
+   "note": "Agent self-corrected within ~2 min. Live check: all 5 campaigns ENABLED, Samples SERVING, $11.91/32 impr/8 clicks today, no delivery gap. Net state correct, nothing to roll back. Open defect: pause attempted on faulty guard without Sam approval; original report unverified before sending."
+  },
+  {
+   "request_id": "cmd_msdovt9p_l5t5mae",
+   "target": "consultant",
+   "routed_to": "PLL Consultant",
+   "command_hash": "eloire-1000-commercial",
+   "dispatch_timestamp": "2026-08-03T20:36:10.867Z",
+   "status": "completed",
+   "completed_timestamp": "2026-08-03T20:44:42.664Z"
+  },
+  {
+   "request_id": "ads-nightly-2026-08-03",
+   "target": "ads",
+   "routed_to": "Ads Agent",
+   "origin": "nightly_automation_unsolicited_callback",
+   "status": "completed",
+   "completed_timestamp": "2026-08-04T01:21:06+0000",
+   "callback_deadline": null,
+   "note": "First Ads Agent callback ever received (v12 callback silence RESOLVED - mechanism works). Figures verified live and accurate. Consultant corrected its cap-breach framing and recommended declining its budget-shift request. ads_intelligence absent -> brief.json cache NOT refreshed."
+  },
+  {
+   "request_id": "cmd_msgems21_n6d7ray",
+   "target": "crm",
+   "routed_to": "CRM Developer",
+   "command": "Atlas Eternal CRM closeout (unsolicited callback; no local dispatch record)",
+   "status": "completed",
+   "timestamp": "2026-08-05T18:38:00Z",
+   "completed_timestamp": "2026-08-05T18:41:43.683465+00:00",
+   "callback_deadline": null,
+   "note": "Unsolicited CRM Developer callback, no matching dispatch entry and no oversight record. Claims NOT independently verified - CRM browser session logged out, live check impossible. Published as claimed with explicit unverified label. Two concerns escalated to Sam: (1) note asserts Atlas Eternal manufacturing contract already sent to Ryne via WhatsApp although it is still pending Sam approval with 3 open pro forma placeholders; (2) three duplicate PI-2026-0802 draft proformas (ids 24/25/26) risk double-invoicing. Re-verify all 8 claims once CRM login is restored."
+  },
+  {
+   "request_id": "cmd_msgf9yka_xe2zbsq",
+   "target": "consultant",
+   "routed_to": "PLL Consultant",
+   "command": "reef me (brief me)",
+   "command_hash": "8372faeac2",
+   "timestamp": "2026-08-05T18:43:09.408993Z",
+   "status": "completed",
+   "completed_timestamp": "2026-08-05T18:43:09.408993Z",
+   "callback_deadline": null,
+   "note": "Executed in Consultant lane per ROUTER.md step 2; general executive brief, not an ads request."
+  },
+  {
+   "request_id": "cmd_msgn7kd3_etwiygy",
+   "target": "crm",
+   "routed_to": "CRM Developer",
+   "command": "tell the crm developer to create a task for aaron evelyn and ron to make steve johnson's product tomorrow we need it in 4 oz jars and we need 40 of them",
+   "command_hash": "6ba663001c",
+   "timestamp": "2026-08-05T22:13:14.287678+00:00",
+   "status": "completed",
+   "callback_deadline": null,
+   "note": "Steve Johnson production task: 40 units, 4 oz jars, due 2026-08-06, assign Aaron/Evelyn/Ron. | Task #325 created per CRM Developer; not live-verified (CRM session signed out).",
+   "completed_timestamp": "2026-08-05T22:16:14.584534+00:00"
+  },
+  {
+   "request_id": "cmd_msgo1g25_qt9zyh6",
+   "target": "ads",
+   "routed_to": "Ads Agent",
+   "status": "completed_late_reconciled",
+   "completed_timestamp": "2026-08-05T23:02:42.496904+00:00",
+   "callback_deadline": null,
+   "note": "Ads Agent callback arrived AFTER 360s guarantee and after Consultant failover was published. Late result contradicts failover (claims funnel fine, bidding is issue). No ads_intelligence object -> cache refresh BLOCKED. Independent verification impossible: Google Ads API returns UNSUPPORTED_VERSION (v21 deprecated). Consolidated reconciliation published under same request_id. Ads Agent late-report strike #2 of 3 in 7 days.",
+   "duplicate_deliveries": 1,
+   "last_duplicate_ts": "2026-08-05T23:04:12.296505+00:00"
+  },
+  {
+   "request_id": "cmd_msgo9aie_rlvnbvg",
+   "target": "crm",
+   "routed_to": "CRM Developer",
+   "command_hash": "aad2b55983443a67",
+   "ts": "2026-08-05T23:05:00.674599+00:00",
+   "status": "completed",
+   "note": "Sam confirms Terra Lotus + Atlas contracts sent via WhatsApp; closeout + next-task report requested",
+   "overseer": "consultant",
+   "recovery_sent_at": "2026-08-06T14:02:35+00:00",
+   "callback_received_at": "2026-08-06T14:04:45+00:00",
+   "callback_summary": "Already completed 5 Aug (idempotent replay, no re-execution). DB backed up. Terra Lotus: task #298 closed done with dated closeout note; customer note #11 logged WhatsApp delivery, awaiting countersignature + 50% deposit. Atlas Eternal: delivery already logged (note #8); no open send task, not duplicated. No deal stages advanced - neither customer has deals/sales_projects rows. Quote statuses untouched. Next open (Terra): #300 BOM, #304, #306."
+  },
+  {
+   "request_id": "cmd_msgt9onk_qzv3l21",
+   "role": "oversight",
+   "primary_agent": "Email Agent",
+   "primary_target": "email",
+   "command": "email uncle@marketing180.com \u2014 Sam says hi",
+   "oversight_by": "PLL Consultant",
+   "status": "AWAITING_PRIMARY_RESULT",
+   "receipt_published": false,
+   "ts": "2026-08-06T01:02:15Z"
+  },
+  {
+   "request_id": "cmd_msniiliq_jhniicr",
+   "role": "oversight",
+   "primary_agent": "Email Agent",
+   "primary_target": "email",
+   "command": "Find Delizioso's Natural Skincare (owner Ariel); send her the PLL mutual NDA; then ask her to send back the formula and process; express we look forward to working with her.",
+   "oversight_by": "PLL Consultant",
+   "status": "completed",
+   "receipt_published": true,
+   "completed_timestamp": "2026-08-10T17:41:00Z",
+   "primary_result": "Email Agent replied to Ariel (Delizioso Skincare) confirming NDA in prep + requested formula/process post-signing; dispatched Laura to send PLL NDA doc, cc Sam; logged to LEAD_OUTCOMES.md.",
+   "oversight_outcome": "Reviewed: sequence correct (NDA before formula), recipient + tone OK, no PLL data leaked. Two open confirms flagged in receipt: (1) Laura must send the MUTUAL NDA; (2) NDA delivery via Laura not yet confirmed received. Published answers/cmd_msniiliq_jhniicr.json + answers.json.",
+   "oversight_contract": "Track request_id; do NOT publish a receipt; on Email Agent result, review vs Sam's command + PLL rules, then publish ONE consolidated completion/blocker to Command Center.",
+   "review_checklist": [
+    "NDA is the mutual PLL NDA (/tasklet/agent/home/templates/PLL-Mutual-NDA.docx) - protects PLL before Ariel shares proprietary formula/process",
+    "Recipient correctly identified as Ariel @ Delizioso's Natural Skincare (verify contact email before send)",
+    "Email Agent owns inbox copy - do NOT double-send from Consultant",
+    "Confidentiality: no PLL client/pricing/formula data leaked to external party in the outreach"
+   ],
+   "ts": "2026-08-10T17:35:38Z"
+  },
+  {
+   "request_id": "cmd_msqpuylg_gqddp7v",
+   "target": "crm",
+   "routed_to": "CRM Developer",
+   "command_hash": "8ea8e527315b0e45",
+   "timestamp": "2026-08-12T23:25:19.015117Z",
+   "status": "completed",
+   "callback_deadline": "2026-08-12T23:55:19.015117Z",
+   "completed_at": "2026-08-12T23:26:39.679726+00:00",
+   "result": "CRM task #343 created, assigned Steve, due 2026-08-13"
+  },
+  {
+   "request_id": "ads-nightly-2026-08-13",
+   "target": "ads",
+   "routed_to": "Ads Agent",
+   "type": "inbound_nightly_callback",
+   "status": "completed",
+   "cache_refresh": "blocked_v21",
+   "completed_timestamp": "2026-08-14T01:07:03-04:00"
+  },
+  {
+   "request_id": "cmd_mstbn1xx_n8m2rod",
+   "target": "crm",
+   "routed_to": "crm",
+   "status": "completed",
+   "completed_timestamp": "2026-08-14T22:19:14.592111+00:00",
+   "callback_deadline": null,
+   "note": "CRM created task #352 Write SOPs for GMP for Evelyn; oversight reviewed; on-screen verify pending session restore"
+  }
+ ],
+ "crm-terra-move-20260730T171201Z-fd7cffe9": {
+  "target": "crm",
+  "command_sha256": "279a0cc0ddd4e05a2004b14324c68ce8d7e6fae48de1c7a0e6ccbdccd7e3fc28",
+  "dispatched_at": "2026-07-30T17:12:01.923297Z",
+  "status": "completed",
+  "completed_at": "2026-07-30T17:51:00Z",
+  "summary": "CRM Developer completed the Terra Lotus and address-migration assignment: created five CRM tasks (#298\u2013#302), all due 2026-07-30; no duplicates or updates, and no customer-notification task. Existing #227/#228 remained unchanged as different scope.",
+  "callback_deadline": "2026-07-30T17:42:01.923297+00:00"
+ },
+ "crm-terra-payment-20260731T145823Z-1075f736": {
+  "target": "crm",
+  "command_sha256": "b580808f4ef3d143d77e050aab073f61b6824646a56fcdc836f4bc240d02edf3",
+  "dispatched_at": "2026-07-31T14:58:24.671977Z",
+  "status": "completed",
+  "completed_at": "2026-07-31T15:03:00Z",
+  "summary": "Terra Lotus 50/50 terms recorded. CRM had no editable contract or quote, so the approved terms were appended to task #298 and the pro forma invoice draft was regenerated. Units and totals are unchanged, and nothing was sent to the customer.",
+  "callback_deadline": "2026-07-31T15:28:24.671977+00:00"
+ },
+ "cmd_ms9exulx_5gxc03c": {
+  "target": "consultant",
+  "routed_to": "PLL Consultant",
+  "command_hash": "8180324a462567b01d8b2f797a861a2c8d9b14e6c5c98179dfcd3b268b1b6115",
+  "timestamp": "2026-07-31T20:50:03.702Z",
+  "status": "completed",
+  "summary": "Existing Terra Lotus task updated to exact manufacturing-contract deliverable; Atlas pro forma task created for Aidan with Sam supervising.",
+  "callback_deadline": "2026-07-31T21:20:03.702000+00:00"
+ },
+ "cmd_ms9hwrpf_6t7ykad": {
+  "target": "email",
+  "routed_to": "Email Agent",
+  "timestamp": "2026-07-31T22:11:22.620Z",
+  "status": "blocked",
+  "completed_timestamp": "2026-07-31T22:11:22.620Z",
+  "summary": "Email Agent needs Sam to identify which James before sending; James Bailey is the likely target.",
+  "callback_deadline": "2026-07-31T22:41:22.620000+00:00"
+ },
+ "cmd_ms9i04uk_e154z06": {
+  "target": "email",
+  "routed_to": "Email Agent",
+  "command_hash": "b804fb7c3fb2b2c5aaf9f191a6efb994956f1830d0255d4dd909bec4cae7e81f",
+  "timestamp": "2026-07-31T22:13:02.601294+00:00",
+  "status": "blocked",
+  "http_status": 200,
+  "clarifies_request_id": "cmd_ms9hwrpf_6t7ykad",
+  "callback_status": "blocked",
+  "callback_summary": "Email Agent could not identify James Spatinas; needs email address.",
+  "callback_deadline": "2026-07-31T22:43:02.601294+00:00"
+ },
+ "cmd_ms9izwp9_gciuqbu": {
+  "request_id": "cmd_ms9izwp9_gciuqbu",
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command_hash": "e09b2c5e492f941a35b905575061cfc9df9a7471af8f67e7fc15f3096622f5c7",
+  "timestamp": "2026-07-31T22:41:00.039246Z",
+  "status": "completed",
+  "http_status": 200,
+  "completed_timestamp": "2026-07-31T22:45:10.365891Z",
+  "summary": "CRM Developer created task #311, 'Ship the Mothered order,' assigned to Steve (user ID 5), due 2026-08-01; no duplicate existed and exactly one matching task was verified post-creation.",
+  "callback_deadline": "2026-07-31T23:11:00.039246+00:00"
+ },
+ "ads-weekly-2026-07-31": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "command_hash": "c0b810adf51f096c692e41bc7ae55acacc47f469633bcef7efee232f283eb12f",
+  "timestamp": "2026-08-01T01:31:03.746Z",
+  "status": "completed_late_callback_cache_refresh_blocked",
+  "http_status": 200,
+  "weekly": true,
+  "completed_timestamp": "2026-08-01T01:39:14.413Z",
+  "summary": "WEEKLY ADS RECOMMENDATION: Restore search-term reporting, then present negatives mined from 76 current-7 clicks for Sam approval before adding any. This protects CPL without changing the $30/day cap; Samples CPL is $49.15. One verified lead per campaign is too thin for budget reallocation.",
+  "callback_received_late": true,
+  "cache_validation": "failed: missing updatedAt, source, scope, today, current, prior, adBreakdown, health, best, worst, waste, spoken",
+  "callback_deadline": "2026-08-01T02:01:03.746000+00:00"
+ },
+ "ads-weekly-recovery-2026-07-31": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "command_hash": "ee428b12306999f6fc681375c0c7f1463d935decb8882f3a03cf89eba6915976",
+  "timestamp": "2026-08-01T01:34:00.831Z",
+  "status": "blocked_missing_callback",
+  "http_status": 200,
+  "recovery_for": "ads_optimization",
+  "completed_timestamp": "2026-08-01T01:36:45.959Z",
+  "callback_deadline": "2026-08-01T02:04:00.831000+00:00"
+ },
+ "ads-nightly-2026-08-01": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "source": "nightly_schedule",
+  "command": "Nightly Ads intelligence refresh 2026-08-01",
+  "status": "completed",
+  "timestamp": "2026-08-02T01:06:07.584824+00:00",
+  "completed_timestamp": "2026-08-02T01:06:07.584824+00:00",
+  "callback_deadline": null,
+  "note": "Callback lacked structured ads_intelligence; brief.json cache NOT refreshed."
+ },
+ "cmd_v9probe_1785697072": {
+  "request_id": "cmd_v9probe_1785697072",
+  "agent": "Ads Agent",
+  "target": "ads",
+  "source": "routing-v9-lane-proof",
+  "command": "Connectivity test only \u2014 confirm receipt, take no other action.",
+  "dispatched_at": "2026-08-02T18:58:19.346907Z",
+  "http_status": 202,
+  "switchboard_response": {
+   "ok": true,
+   "status": "routed",
+   "target": "ads"
+  },
+  "status": "no_callback",
+  "note": "First Ads dispatch through the switchboard from outside the nightly automation. ADS_ENDPOINT confirmed configured and accepting.",
+  "callback_deadline": null,
+  "recovery_sent_at": "2026-08-02T19:30:27.171426+00:00",
+  "recovery_http": 200,
+  "completed_timestamp": "2026-08-02T19:31:37.131Z",
+  "summary": "Ads Agent confirmed receipt of connectivity test after recovery re-send. Callback lane proven working.",
+  "no_callback_at": "2026-08-02T19:45:32.224765+00:00",
+  "root_cause": "Ads Agent inbox webhook returns {\"status\":\"filtered\"} - message discarded at the door. Switchboard reads HTTP 200 as acceptance. Lane has no live receiver.",
+  "escalation": "Reported to Sam 2026-08-02; awaiting decision on rerouting ads lane. No further notification per no-duplicate-alert rule."
+ },
+ "cmd_v10ads_1785698418": {
+  "request_id": "cmd_v10ads_1785698418",
+  "agent": "Ads Agent",
+  "target": "ads",
+  "source": "concurrent-v10-two-agent-proof",
+  "command": "Concurrency test only - reply CONFIRMED RECEIPT, take no other action.",
+  "dispatched_at": "2026-08-02T19:20:44.798231Z",
+  "http_status": 202,
+  "switchboard_response": {
+   "ok": true,
+   "status": "routed",
+   "target": "ads"
+  },
+  "accept_ms": 198,
+  "status": "no_callback",
+  "callback_deadline": "2026-08-02T19:50:44.798231Z",
+  "note": "Two agents dispatched in parallel; both accepted under 0.5s. Proves switchboard concurrency.",
+  "no_callback_at": "2026-08-02T19:45:32.224765+00:00",
+  "root_cause": "Ads Agent inbox webhook returns {\"status\":\"filtered\"} - message discarded at the door. Switchboard reads HTTP 200 as acceptance. Lane has no live receiver.",
+  "recovery_sent_at": "2026-08-02T19:45:32.224765+00:00",
+  "escalation": "Reported to Sam 2026-08-02; awaiting decision on rerouting ads lane. No further notification per no-duplicate-alert rule."
+ },
+ "cmd_v10crm_1785698418": {
+  "request_id": "cmd_v10crm_1785698418",
+  "agent": "CRM Developer",
+  "target": "crm",
+  "source": "concurrent-v10-two-agent-proof",
+  "command": "Concurrency test only - reply CONFIRMED RECEIPT, take no other action.",
+  "dispatched_at": "2026-08-02T19:20:44.798231Z",
+  "http_status": 202,
+  "switchboard_response": {
+   "ok": true,
+   "status": "routed",
+   "target": "crm"
+  },
+  "accept_ms": 416,
+  "status": "completed",
+  "callback_deadline": "2026-08-02T19:50:44.798231Z",
+  "note": "Two agents dispatched in parallel; both accepted under 0.5s. Proves switchboard concurrency.",
+  "routed_to": "crm",
+  "result_summary": "CONFIRMED RECEIPT. Concurrency test acknowledged by CRM agent. No other action taken.",
+  "result_received_at": "2026-08-02T19:41:44.453367+00:00"
+ },
+ "cmd_msc7hxls_jzvuxnc": {
+  "request_id": "cmd_msc7hxls_jzvuxnc",
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command_hash": "5155403a8a249efb",
+  "dispatched_at": "2026-08-02T19:42:28.147621+00:00",
+  "callback_deadline": "2026-08-02T20:12:28.147621+00:00",
+  "status": "completed",
+  "http": "200",
+  "response": "{\"status\":\"success\"}",
+  "completed_timestamp": "2026-08-02T19:45:32.224765+00:00",
+  "callback_status": "completed",
+  "summary": "CRM Developer returned a manual verification task for Sam: upload a formula to any customer, confirm parse/link/source file, then click through Formula, Costs & Pricing, Revisions, Files tabs and report defects.",
+  "callback_latency_note": "callback received ~3.3 min after dispatch"
+ },
+ "cmd_c4bffd5a_v11live": {
+  "request_id": "cmd_c4bffd5a_v11live",
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "status": "agent_silent_consultant_answered",
+  "primary_agent": "Ads Agent",
+  "answered_by": "PLL Consultant",
+  "dispatched_at": "2026-08-02T20:00:00Z",
+  "completed_timestamp": "2026-08-02T20:15:00Z",
+  "summary": "Ads Agent lane dead (webhook discards all traffic); PLL Consultant answered live spend comparison for the two net-new campaigns (Samples + ContractMfg): current 7d spend $201.88 vs prior 7d $128.52, +57.1%. Announced failover in both text and spoken_text. Attribution NOT YET MEASURABLE; seven-ad roster unverified at ad level."
+ },
+ "cmd_1785702861_keytest": {
+  "request_id": "cmd_1785702861_keytest",
+  "agent": "Ads Agent",
+  "target": "ads",
+  "status": "completed",
+  "dispatched_at": "2026-08-02T20:34:21Z",
+  "callback_at": "2026-08-02T20:46:47Z",
+  "note": "v12 correct-stamp verification. First confirmed end-to-end round trip on the ads lane. Connectivity test only - no campaign changes. Answer published to answers/cmd_1785702861_keytest.json and answers.json.",
+  "published": true
+ },
+ "crm-ads-check-task-20260803T194034Z-efa6d474": {
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command_sha256": "6e3cbf22ee224f6018b725b8d92e2a52876fcaea31d413ffdb858caecaa251e1",
+  "dispatched_at": "2026-08-03T19:40:35.296067Z",
+  "status": "completed",
+  "origin_request_id": "cmd_msdmt1uk_up0xrar",
+  "http_body": "{\"status\":\"success\"}",
+  "completed_timestamp": "2026-08-03T19:41:59.131Z",
+  "summary": "Task #317 created for Sam, due 2026-08-03; consultant live verification pending (CRM session signed out)."
+ },
+ "cmd_msdmt1uk_up0xrar": {
+  "target": "consultant",
+  "routed_to": "PLL Consultant",
+  "command_hash": "62da82297660084b8c3b253727d33a3603c82e2a462698a7a478d7a1e821adb1",
+  "timestamp": "2026-08-03T19:40:56.740Z",
+  "status": "completed",
+  "completed_timestamp": "2026-08-03T19:40:56.740Z",
+  "summary": "Ads review task ordered for Sam (due today); CRM lane executing because Consultant CRM session signed out."
+ },
+ "cmd_msdnckqd_wrvjqmq": {
+  "target": "email",
+  "routed_to": "Email Agent",
+  "status": "completed_verified_by_consultant_agent_callback_late",
+  "primary_agent": "Email Agent",
+  "note": "Email Agent executed (email sent 19:53:32Z, verified in Sent Items) but never posted a callback; recovery ping sent; Consultant published consolidated answer.",
+  "completed_timestamp": "2026-08-03T19:58:08.481968Z",
+  "late_callback_received": "2026-08-03T19:58:32.986552Z",
+  "callback_latency_note": "Email Agent callback arrived ~5 min after dispatch (19:53:13Z dispatch -> 19:58Z callback), after the 180s guarantee window had already expired. Callback channel is FUNCTIONAL but slower than the 180s wait. Consultant answer already published; not republished (idempotency).",
+  "second_callback_received": "2026-08-03T19:59:10.458491Z",
+  "dedup_confirmed": "Email Agent reported duplicate dispatch of same request_id and suppressed the second email. Recovery ping was re-dispatched as an assignment rather than a read-only status query; agent-side dedup on request_id prevented a double-send to james@privatelabellabs.com. Confirmed: exactly one email sent.",
+  "callback_log": [
+   {
+    "received": "2026-08-03T19:59:30.661163Z",
+    "kind": "third_callback",
+    "summary": "Recovery replay of already-completed request; idempotent dedup by request_id; no duplicate email sent."
+   }
+  ],
+  "callback_total_count": 3,
+  "final_outcome": "One email sent to james@privatelabellabs.com, verified in Sent Items. Three callbacks received for this request_id (late original + 2 dedup notices). No duplicate sends. No further user notification: no new information beyond prior report."
+ },
+ "cmd_mseq4966_gfy9r10": {
+  "target": "ads",
+  "command_sha256": "3a525fc3893d414531ed51c19453c4bddb2265810d01ceb362a5484049f08de4",
+  "dispatched_at": "2026-08-04T13:58:30Z",
+  "status": "completed",
+  "callback_deadline": "2026-08-04T14:28:30Z",
+  "primary_agent": "Ads Agent",
+  "routed_to": "Ads Agent",
+  "completed_at": "2026-08-04T14:03:30.401Z",
+  "summary": "Ads Agent recommends optimize-not-new inside existing cap; Consultant answered the 3oz/3.5oz standard-mold half. One approval pending on cap reallocation. Ads Agent callback published successfully (v12 silence resolved)."
+ },
+ "cmd_mses8uls_g12uz8t": {
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command_sha256": "67707dc77f83419b940e639ff9147b4536f464b143e833cf1e262c428cc60c68",
+  "dispatched_at": "2026-08-04T14:58:57.331171Z",
+  "status": "completed",
+  "http_body": "{\"status\":\"success\"}",
+  "completed_timestamp": "2026-08-04T15:14:56.607Z",
+  "summary": "Task #321 created for Sam, due 2026-08-11; no duplicate; consultant independent live verification pending (CRM session signed out)."
+ },
+ "cmd_mseteh22_9069wcs": {
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command_sha256": "e1f918402ec1cb0618f7737b0215c7fa478b163a7ed8bd158a698435a17b82b3",
+  "command_hash": "rd-brief-template-task",
+  "dispatch_timestamp": "2026-08-04T15:32:03.658Z",
+  "status": "completed",
+  "completed_timestamp": "2026-08-04T15:33:08.693Z",
+  "summary": "Task #322 created for Sam, due 2026-08-11. Consultant live verification pending (CRM session signed out)."
+ },
+ "ads-nightly-2026-08-04": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "source": "nightly_schedule",
+  "command": "Nightly Ads intelligence refresh 2026-08-04",
+  "status": "completed",
+  "timestamp": "2026-08-05T01:12:05.365Z",
+  "completed_timestamp": "2026-08-05T01:12:05.365Z",
+  "callback_deadline": null,
+  "note": "Callback lacked structured ads_intelligence; cache NOT refreshed from callback. brief.json independently refreshed 21:00 ET (commit 7585cbc). Oversight corrections published: false $30-cap breach claim rejected (configured $25.33/day); trailing-7 restated $209.93 vs agent $216.12; legacy 5-campaign scope rejected."
+ },
+ "cmd_msgems21_n6d7ray": {
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command_hash": "20f107048507482d",
+  "dispatch_timestamp": "2026-08-05T18:13:48+0000",
+  "status": "completed",
+  "http_status": 200,
+  "note": "Atlas completion + brand rename Atlas Skin -> Atlas Eternal",
+  "recovery_sent_at": "2026-08-05T20:24:04.944682+00:00",
+  "recovery_http": 200,
+  "completed_timestamp": "2026-08-05T21:09:01.074Z",
+  "summary": "Already completed 2026-08-05 18:16Z; recovery redelivery confirmed idempotent. CRM Developer reports customer 54 company name/brand and quotes Q-2005/Q-0046 renamed Atlas Eternal; Q-0046 Accepted; historical filenames/audit text intentionally retain Atlas Skin; duplicate proforma contract entries 24/25/26 remain flagged only."
+ },
+ "cmd_msgo1g25_qt9zyh6": {
+  "target": "ads",
+  "command_hash": "f155993e5e57",
+  "timestamp": "2026-08-05T22:36:00+00:00",
+  "status": "agent_silent_consultant_answered",
+  "primary_agent": "Ads Agent",
+  "answered_by": "PLL Consultant",
+  "callback_deadline": null,
+  "completed_timestamp": "2026-08-05T22:57:39.000Z",
+  "oversight": "PLL Consultant",
+  "summary": "Ads Agent never called back after 360s guarantee + read-only recovery ping. Consultant pulled live data for the 2 net-new campaigns (7 in-scope ad groups): trailing 7d $212.26/78 clicks vs prior 7d $134.17/73 clicks (+58% spend, +7% clicks, CPC +48%). Qualified inbox inquiries fell 7 vs ~15-16 (-56%) while gclid-attributed submissions held flat (3 vs 2-3, campaign-specific attribution unconfirmed). Flagged homepage quote form/Contact Us routing defect as prime suspect. brief.json NOT touched (not a validated cache refresh)."
+ },
+ "cmd_msgpwl0s_5hsx88h": {
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command": "give me all my tasks and report back",
+  "timestamp": "2026-08-05T23:31:50.593085Z",
+  "status": "completed",
+  "completed_timestamp": "2026-08-06T00:14:26Z"
+ },
+ "dispatches": [
+  {
+   "request_id": "cmd_msgt9onk_qzv3l21",
+   "routed_to": "Email Agent",
+   "status": "completed",
+   "summary": "Sent hello email to Ako@marketing180.com from Sam via Outlook.",
+   "ts": "2026-08-06T01:11:00-04:00"
+  }
+ ],
+ "ads-nightly-2026-08-06": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "origin": "nightly_automation_unsolicited_callback",
+  "status": "completed",
+  "completed_timestamp": "2026-08-07T01:13:04.682Z",
+  "callback_deadline": null,
+  "note": "Unsolicited nightly callback; no oversight-pending, no prior dispatch entry. ads_intelligence absent (summary string only) -> brief.json cache NOT refreshed from callback (already independently refreshed 21:00 ET, commit 90ed35c). Cap-framing reconciled to day-weighted method: trailing-7 $218.22 Consultant vs $221.53 Agent (~$3 delta) = MARGINAL OVERAGE (~104% of $30/day nominal), NOT a runaway; runaway-spend guard NOT triggered (lead landed today). Agent's flat-config 'first weekly breach' claim NOT treated as settled. Manual-CPC revert for ContractMfg recommended READ-ONLY, pending Sam approval; no change made. Samples $10.33->$5.00/day cut flagged for Sam to confirm/reverse. Hass Alamer (qualified) carried in Ads Agent ledger, NOT independently verified by Consultant, no attribution claimed."
+ },
+ "ads-nightly-2026-08-07": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "status": "completed",
+  "completed_timestamp": "2026-08-07T21:06:36.833-04:00",
+  "callback_deadline": null,
+  "note": "Nightly callback published. brief.json was NOT refreshed from this callback because no structured ads_intelligence was supplied; the live cache was already current from the 2026-08-07T21:02:47-04:00 nightly run."
+ },
+ "ads-weekly-2026-08-07": {
+  "request_id": "ads-weekly-2026-08-07",
+  "target": "ads",
+  "command_hash": "a4df9145cfa1",
+  "dispatched_at": "2026-08-07T21:31:06.744236-04:00",
+  "status": "completed",
+  "note": "Friday weekly Ads strategy review; requires WEEKLY ADS RECOMMENDATION callback.",
+  "completed_timestamp": "2026-08-07T21:37:39.753619-04:00",
+  "result": "WEEKLY ADS RECOMMENDATION stored pending Sam approval: revert ContractMfg to Manual CPC."
+ },
+ "ads-nightly-2026-08-08": {
+  "command": "Nightly Ads self-report 8/8",
+  "primary_agent": "Ads Agent",
+  "primary_target": "ads",
+  "received": "2026-08-09T01:05:00Z",
+  "status": "completed",
+  "completed_timestamp": "2026-08-09T01:07:00Z",
+  "outcome": "Ads Agent nightly callback published to answers/ads-nightly-2026-08-08.json + answers.json. No structured ads_intelligence object; brief.json left as fresh 21:03 nightly cache. Recommendation: revert ContractMfg to Manual CPC (approval required)."
+ },
+ "ads-nightly-2026-08-09": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "origin": "nightly_automation_unsolicited_callback",
+  "status": "completed",
+  "completed_timestamp": "2026-08-09T21:07:00-04:00",
+  "callback_deadline": null,
+  "note": "Unsolicited nightly self-report; no oversight-pending, no prior dispatch. No structured ads_intelligence -> brief.json cache NOT refreshed from callback (already fresh from 21:03 nightly, commit 31a6244). Consultant LIVE-VERIFIED the agent's key claim: BOTH net-new campaigns on MAXIMIZE_CONVERSIONS (Contract Mfg $20.33/day, Samples $5.00/day, both ENABLED). TRUE this time. Violates Manual-CPC mandate; with 0 tracked conversions it optimizes toward a nonexistent signal (likely cause of ContractMfg CPC +32%). No change made (agent did NOT revert). Recommend revert to Manual CPC pending Sam approval. Trailing-7 $157.80 = 89% of $25.33/day cap, COMPLIANT. Agent used stale $210/$30 cap framing; Consultant used live configured $25.33/day. Answer published answers/ads-nightly-2026-08-09.json + answers.json, commit 546852c."
+ },
+ "cmd_msnd0ma7_mj3kqtz": {
+  "command": "Atlas paid 50% deposit - record in system + create customer portal & login; report Sam's named priorities today",
+  "primary_agent": "PLL Consultant",
+  "primary_target": "consultant",
+  "received": "2026-08-10T15:01:41Z",
+  "status": "completed",
+  "completed_timestamp": "2026-08-10T15:05:00Z",
+  "outcome": "Consultant-owned (target=consultant, intent=action). Priorities delivered + Atlas deposit ($13,250, QB Inv #1050, Aug 7) confirmed already logged our side. Two CRM actions (create Atlas deal record + mark deposit received; create Ryne Bell customer portal + return login) dispatched to CRM Developer via CRM UPDATE REQUEST thread 19fec34a5456145b. Answer published answers/cmd_msnd0ma7_mj3kqtz.json + answers.json, commit 284690a. Awaiting CRM Developer reply for live-verify + portal login delivery."
+ },
+ "cmd_msnd6vy2_p3pa7sg": {
+  "command": "Create a task for Aidan + ask him about Terra Lotus; reconcile possible parallel Aidan<>Terra Lotus communication to avoid miscommunication; get an update to update Sam's system",
+  "primary_agent": "PLL Consultant",
+  "primary_target": "consultant",
+  "received": "2026-08-10T15:06:33Z",
+  "status": "completed",
+  "completed_timestamp": "2026-08-10T15:09:30Z",
+  "outcome": "Consultant-owned (target=consultant, intent=action). Dispatched CRM UPDATE REQUEST (thread 19fec3928179aa77) to CRM Developer to create HIGH task assigned to Aidan on Terra Lotus: report all direct comms/channel/quote/contract version + confirmed contact name & billing/shipping address; reconcile before PLL sends $78,580 contract. Surfaced crossed-wire to Sam: contract records = UNSENT since Aug 2 w/ placeholder contact, but CRM task #298 = quote+contract delivered via WhatsApp Aug 5 (note #11). Asked Sam for one input to pull live Aidan update: restore his CRM session (Team Chat DM) OR give Aidan's email. Answer published answers/cmd_msnd6vy2_p3pa7sg.json + answers.json, commit 7fcb79e. Awaiting CRM Dev reply for task ID + note #11 contents to live-verify."
+ },
+ "cmd_msng3jz2_28clnur": {
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command_hash": "e460826e5c4a7f9f",
+  "dispatch_time": "2026-08-10T16:28:35.282302Z",
+  "status": "completed",
+  "callback_deadline": "2026-08-10T16:58:35.282302Z",
+  "completed_time": "2026-08-10T16:30:18.241107Z",
+  "result_summary": "CRM task #326 'Create a Shopify integration' assigned to Sam, due 2026-08-11"
+ },
+ "ads-nightly-2026-08-10": {
+  "request_id": "ads-nightly-2026-08-10",
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "command_hash": "nightly-ads-refresh",
+  "timestamp": "2026-08-10T21:06:00-04:00",
+  "completed_timestamp": "2026-08-10T21:15:00-04:00",
+  "status": "completed",
+  "note": "Scheduled nightly refresh; agent callback recycled T7 figure, published Consultant-verified answer."
+ },
+ "ads-nightly-2026-08-11": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "origin": "nightly_automation_unsolicited_callback",
+  "status": "completed",
+  "completed_timestamp": "2026-08-11T21:12:00-04:00",
+  "callback_deadline": null,
+  "note": "Unsolicited nightly self-report; no oversight-pending, no prior dispatch. No structured ads_intelligence -> brief.json cache NOT refreshed (nightly automation refresh earlier tonight published PARTIAL due to reporting-API v21 block). Consultant PARTIAL live-verify: both net-new campaigns ENABLED (list-campaigns OK); bid_strategy_type + spend NOT independently verifiable \u2014 create-campaign-report blocked UNSUPPORTED_VERSION v21. Agent figures published as agent-reported: TODAY $40.53/$3.68 CPC (ContractMfg $40.53, Samples $0); T7 $147.70/$210 (70%, under). 1 paid ContractMfg lead Tesfa/Bahrzaf (qualified, first since 8/1), NOT independently attribution-verified. Agent still reports both on MAXIMIZE_CONVERSIONS w/ 0 conversion tracking; Manual-CPC revert remains PENDING Sam approval, no change made. Agent-flagged approvals: budget->$25, revert Manual CPC, add 'extensions' negative. Published answers/ads-nightly-2026-08-11.json + answers.json."
+ },
+ "cmd_mstbn1xx_n8m2rod": {
+  "target": "crm",
+  "routed_to": "CRM Developer",
+  "command_sha256": "69346cc0a94a7a6211255c5cce7f4c328112654a85f99973544b86a70ced4b29",
+  "dispatched_at": "2026-08-14T19:10:44Z",
+  "status": "completed",
+  "callback_deadline": "2026-08-14T19:40:44.738356+00:00",
+  "overseer": "consultant",
+  "sam_approved": true,
+  "completed_timestamp": "2026-08-14T22:19:14.592111+00:00",
+  "reconcile_note": "Duplicate top-level record; same request_id completed in entries[] (task #352, Evelyn GMP SOPs). No recovery needed; callback arrived. On-screen verify pending CRM session restore."
+ },
+ "ads-nightly-2026-08-14": {
+  "target": "Ads Agent",
+  "intent": "agent_result",
+  "status": "completed",
+  "note": "Inbound Ads Agent nightly callback; Consultant-verified against 21:00 nightly pull; recommendation (revert ContractMfg to Manual CPC) published pending Sam approval; no structured ads_intelligence object so brief.json not refreshed from this callback.",
+  "completed_timestamp": "2026-08-14T21:04:00-04:00"
+ },
+ "ads-weekly-2026-08-14": {
+  "request_id": "ads-weekly-2026-08-14",
+  "target": "ads",
+  "command_hash": "3bcd3b791851",
+  "dispatched_at": "2026-08-14T21:31:28.985716-04:00",
+  "status": "completed",
+  "callback_deadline": "2026-08-14T22:01:28.985716-04:00",
+  "note": "Friday weekly Ads strategy review; requires WEEKLY ADS RECOMMENDATION callback. Relayed with pll-command-router stamp; ads inbox returned success.",
+  "completed_timestamp": "2026-08-14T21:38:01.395646-04:00",
+  "result": "WEEKLY ADS RECOMMENDATION: revert ContractMfg (24049588003) to Manual CPC (no budget/bid/targeting/keyword/creative change). Pending Sam approval."
+ },
+ "ads-nightly-2026-08-17": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "status": "completed",
+  "completed_timestamp": "2026-08-18T01:09:00.396Z",
+  "note": "Arrived as an unsolicited nightly callback; summary-only callback; brief.json not refreshed."
+ },
+ "cmd_mt079qn8_3va3epk": {
+  "target": "email",
+  "primary_agent": "Email Agent",
+  "command_hash": "73a7906cc8180bf9",
+  "dispatched_at": "2026-08-19T14:52:31Z",
+  "status": "agent_late_callback_matches_verified",
+  "completed_timestamp": "2026-08-19T15:01:55Z",
+  "late_callback_timestamp": "2026-08-19T15:02:43Z",
+  "late_callback_summary": "Email Agent callback arrived AFTER Consultant had independently verified and published. Content matches: Wed 8/26 11:00 AM ET Meet; attendees Sam, Dan Hunter, Dave Rosati, James Pitenis; logged to LEAD_OUTCOMES.md. Reclassified from silent to LATE callback (no discrepancy)."
+ },
+ "ads-nightly-2026-08-19": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "origin": "nightly_automation_unsolicited_callback",
+  "status": "completed",
+  "completed_timestamp": "2026-08-20T01:06:25Z",
+  "callback_deadline": null,
+  "cache_refresh": "blocked_no_ads_intelligence",
+  "note": "Nightly summary-only callback; no structured ads_intelligence -> brief.json NOT refreshed (already independently refreshed by 21:00 ET nightly automation). No oversight record. Published answers/ads-nightly-2026-08-19.json + answers.json."
+ },
+ "ads-nightly-2026-08-20": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "origin": "nightly_automation_unsolicited_callback",
+  "status": "completed",
+  "completed_timestamp": "2026-08-20T21:15:00-04:00",
+  "callback_deadline": null,
+  "cache_refresh": "blocked_no_ads_intelligence",
+  "note": "Nightly summary-only callback; no structured ads_intelligence -> brief.json NOT refreshed (already independently refreshed by 21:00 ET nightly automation, commit f0cc5aa). No oversight record. Agent recommends reverting both net-new campaigns to Manual CPC, no budget change - READ-ONLY, pending Sam approval; no change made. Published answers/ads-nightly-2026-08-20.json + answers.json, commit dcbe9be."
+ },
+ "cmd_mt30ii2q_gylcxn1": {
+  "target": "email",
+  "routed_to": "Email Agent",
+  "command": "tell the email agent to go to my email find an email from nikki and founder at radiantglow shop we need to schedule a meeting for september 4th let's do it at 11 00 a m and it just should be between me and the founder his name is austin",
+  "command_hash": "5ba0c632a1717fe90a97c3e8bebb0a59fda9ff286961b1bde63dfa43da54ef6e",
+  "timestamp": "2026-08-21T13:58:14.624826+00:00",
+  "dispatched_at": "2026-08-21T13:58:14.624826+00:00",
+  "status": "agent_late_callback_matches_verified",
+  "http_body": "{\"status\":\"success\"}",
+  "overseer": "consultant",
+  "primary_agent": "Email Agent",
+  "callback_deadline": null,
+  "completed_timestamp": "2026-08-21T14:08:39.932Z",
+  "answered_by": "PLL Consultant",
+  "summary": "Consultant failover reconciled existing Friday Sep 4, 2026 11:00-11:30 AM ET Radiant Glow event with exactly Sam and Austin, Meet link verified, and sent Austin confirmation plus date correction. Email Agent late callback arrived 2026-08-21T14:09Z (~11 min after 13:58Z dispatch), status=completed, summary matches verified result (booked Sept 4 11am ET, Google Meet, invite sent). RECLASSIFIED silent -> LATE callback: Email Agent DID execute (it created the event my failover found). Same late-callback pattern as Dirk cmd_mt073s67 + Dan Hunter cmd_mt079qn8. NOT re-published to Command Center, NOT re-notified to Sam (idempotency). No duplicate event. Email Agent late-callback strike logged for onboarding fix.",
+  "late_callback_received": "2026-08-21T14:09:00Z",
+  "duplicate_callbacks": [
+   "2026-08-21T14:11:00Z: second agent_result for same request_id, status=completed, summary matches. Ignored per idempotency (no republish, no re-notify, no re-execute).",
+   "2026-08-21T14:12:00Z: third agent_result for same request_id, status=completed ('no new action taken'). Ignored per idempotency."
+  ],
+  "meeting_already_existed": "not found in Sent Items; Google Calendar verification blocked",
+  "recovery_sent_at": "2026-08-21T14:05:54.810408+00:00",
+  "recovery_type": "read-only status query; no re-execution authorized",
+  "recovery_result": "HTTP 200; {\"status\":\"success\"}",
+  "published_commits": {
+   "per_request": "809126b2bd6f7e00e2f5574c49e614cdee2efc2b",
+   "answers_json": "094c86e4e70c5df81d04d1de39e6be6934ade267"
+  },
+  "meet_link": "https://meet.google.com/kiv-vufh-bwj",
+  "meeting_event_id": "ejks032nug47ck3a4a04egtcoo",
+  "meeting_reconciled_existing": true,
+  "attendees_verified": [
+   "sam@prvtlabellabs.com",
+   "founder@radiantglow.shop"
+  ],
+  "confirmation_email_sent": true,
+  "confirmation_correction_sent": true
+ },
+ "ads-weekly-2026-08-21": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "request_id": "ads-weekly-2026-08-21",
+  "command_hash": "4aeb90f5bfd724d46f6fadacff84b45f588bf5d5f742f4fce08e9bcc5cbc82d9",
+  "dispatched_at": "2026-08-22T01:32:19.270812+00:00",
+  "status": "completed",
+  "http_status": 200,
+  "http_body": "{\"status\":\"success\"}",
+  "callback_deadline": null,
+  "weekly": true,
+  "note": "Friday weekly Ads strategy review; requires WEEKLY ADS RECOMMENDATION callback with structured ads_intelligence. Stamped source pll-command-router.",
+  "callback_received": "2026-08-22T01:41:28.433Z",
+  "completed_timestamp": "2026-08-22T01:41:28.433Z",
+  "result": "WEEKLY ADS RECOMMENDATION: Approve ContractMfg Maximize Conversions\u2192Manual CPC only; no budget/bid/targeting/creative changes. Current $173.26/625i/76c/12.2%/$2.28 vs prior $164.98/302i/49c/16.2%/$3.37. ContractMfg remains on Smart Bidding while manual ledger shows 1 paid lead(s), 0 paid booked calls. Measure 7\u201314d. Approval required: yes."
+ },
+ "cmd_mt7b07et_drshsii": {
+  "target": "email",
+  "command_hash": "mark-higgins-nda",
+  "status": "completed",
+  "primary_agent": "Email Agent",
+  "note": "email agent delivered 10:05; consultant failover duplicated 10:06 - double send",
+  "completed_timestamp": "2026-08-24T14:12:00Z"
+ },
+ "ads-nightly-2026-08-26": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "request_id": "ads-nightly-2026-08-26",
+  "command_hash": "803c8ce3910cd5d1a5837335d15b3e94da37589ba82478444fbb7a2f57d471b2",
+  "status": "completed",
+  "note": "Nightly Ads Agent callback; no structured ads_intelligence object; numbers conflicted with validated Consultant nightly refresh. Cache refresh blocked; brief.json untouched.",
+  "callback_received": "2026-08-27T01:17:30.000Z",
+  "completed_timestamp": "2026-08-27T01:17:30.000Z",
+  "callback_deadline": null,
+  "cache_refresh": "blocked_no_structured_object"
+ },
+ "ads-nightly-2026-08-29": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "request_id": "ads-nightly-2026-08-29",
+  "status": "completed",
+  "callback_received": "2026-08-30T01:06:00Z",
+  "completed_timestamp": "2026-08-30T01:06:00Z",
+  "callback_deadline": null,
+  "cache_refresh": "blocked_no_structured_object",
+  "note": "Nightly summary-only callback; no structured ads_intelligence object -> brief.json NOT refreshed. Per-request answer and answers.json published. Approval: no."
+ },
+ "ads-nightly-2026-08-30": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "status": "completed",
+  "summary": "Nightly read-only complete: fresh managed-lane pull shows $28.79 today (1,511 impressions/30 clicks), $226.28 T7 and $826.33 MTD. Aug ledger: 43 leads, 8 qualified, 9 booked; 11 gclid-verified paid, 32 unattributed; 0 new today. No changes or pauses; CPL/cost per booked call remain directional/not measurable.",
+  "completed_timestamp": "2026-08-30T21:02:00-04:00",
+  "callback_deadline": null
+ },
+ "ads-nightly-2026-08-31": {
+  "target": "ads",
+  "routed_to": "Ads Agent",
+  "request_id": "ads-nightly-2026-08-31",
+  "status": "completed",
+  "callback_received": "2026-09-01T01:13:00Z",
+  "completed_timestamp": "2026-09-01T01:13:00Z",
+  "callback_deadline": null,
+  "cache_refresh": "blocked_no_structured_object",
+  "summary": "Nightly read-only: all 6 enabled; ContractMfg+Samples freeze held, Twin day-9 active. Today $26.68 / 664 impressions / 25 clicks / $1.07 CPC, $9.32 under $36 cap. T7 (Aug 25-31) $198.23 vs prior $201.40, under $252/week. MTD $853.51. Twin T7 $0.48 CPC, CTR building, no Twin-attributed booked call yet. 0 new form leads; 2 booked calls (Tammye Hall, David Aminov), both unattributed. August 45 leads / 8 qualified / 11 booked / 9 verified-paid. Runaway guard not met. No changes/pauses. Brief cache unchanged because callback supplied no structured ads_intelligence object."
+ }
+}
