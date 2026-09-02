@@ -35,7 +35,8 @@
     { "need": "Connect a meeting notetaker (Fireflies/Fathom/Otter) — later", "unblocks": "Email/Sales + Executive", "why": "Real-time meeting notes + action items to you and me. Free tier possible; gated by approval", "waiting": "Sep 2" },
     { "need": "Grant SEO/GEO agent its own Google Search Console + GA4 access (its workspace)", "unblocks": "SEO/GEO Agent", "why": "Can't do real organic/technical SEO work without console + analytics", "waiting": "Sep 2" },
     { "need": "Sit down with Laura to connect email, WhatsApp, named CRM login", "unblocks": "Laura's agent", "why": "Workspace live but connections empty; can't operate until connected", "waiting": "ongoing" },
-    { "need": "Aidan reconnect WhatsApp + CRM sessions", "unblocks": "Aidan's agent", "why": "Signed out — brief feed is Outlook-only until reconnected", "waiting": "ongoing" }
+    { "need": "Aidan reconnect WhatsApp + CRM sessions", "unblocks": "Aidan's agent", "why": "Signed out — brief feed is Outlook-only until reconnected", "waiting": "ongoing" },
+    { "need": "Confirm the meetings source: grant calendar access on Sam's Outlook (currently mail-only) OR name the calendar I should read", "unblocks": "Today's Meetings feed + pre-meeting alarm", "why": "The Outlook connection here reads mail only, not the calendar. Reliable daily meeting pull + accurate 2-min alarm needs a real calendar source", "waiting": "Sep 2" }
   ],
   "aiSuggestions": [
     { "tool": "Meeting notetaker (Fireflies / Fathom / Otter / Read.ai)", "what": "Bot joins your Teams calls via calendar, transcribes live, auto-produces notes + action items", "why": "You want an agent in the meeting taking notes; Tasklet agents can't join calls, a notetaker can", "cost": "Free tier to start; paid ~$10–30/user/mo if needed", "call": "TEST free tier" }
