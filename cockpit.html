@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>PLL Command Lab — Cockpit</title>
+<!--
+  PLL COMMAND LAB — COCKPIT v1 (2026-09-02)
+  Glanceable table cockpit. Additive page; does NOT touch the voice orb (index.html).
+  Data-driven from cockpit-data.json. No hand-editing HTML per update.
+  Tables: R2150 Do-Next · Waiting On Sam · Today's Meetings · Agent Setup Needs
+          · AI Tool Suggestions · Agent Accountability · Pipeline Snapshot
+  Meeting alarm: ~2 min before a meeting, audible loop + banner until dismissed.
+  One-time "Enable sound" click required by browser autoplay rules (one-time on the TV).
+-->
+<style>
+  :root{
+    --green:#2d6a4f; --green-d:#1f4d38; --cream:#f8f7f4; --cream-2:#f5f0eb;
+    --ink:#1a1a1a; --muted:#6b7168; --line:#e4ded4; --card:#ffffff;
+    --hot:#b23b2e; --warn:#c98a1a; --ok:#2d6a4f; --info:#2f5d8a;
+    --shadow:0 1px 3px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.05);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--cream);color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  a{color:var(--green);text-decoration:none}
+  header.top{position:sticky;top:0;z-index:40;background:var(--green);color:#fff;
+    padding:14px 24px;display:flex;align-items:center;gap:18px;box-shadow:0 2px 12px rgba(0,0,0,.15)}
+  header.top .brand{font-weight:800;letter-spacing:.5px;font-size:20px}
+  header.top .sub{opacity:.85;font-size:13px;font-weight:500}
+  header.top .right{margin-left:auto;display:flex;align-items:center;gap:14px;font-size:13px}
+  .pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);
+    padding:6px 12px;border-radius:999px;font-weight:600;font-size:12px}
+  .btn{cursor:pointer;border:none;border-radius:8px;padding:8px 14px;font-weight:700;font-size:13px;font-family:inherit}
+  .btn-sound{background:#fff;color:var(--green-d)}
+  .btn-sound.on{background:#cbe8d6;color:var(--green-d)}
+  .wrap{max-width:1500px;margin:0 auto;padding:22px 24px 80px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:1100px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);overflow:hidden}
+  .card.span2{grid-column:1/-1}
+  .card h2{margin:0;padding:14px 18px;font-size:15px;letter-spacing:.3px;
+    background:var(--cream-2);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}
+  .card h2 .count{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600}
+  .card h2 .ico{width:22px;height:22px;border-radius:6px;background:var(--green);color:#fff;
+    display:grid;place-items:center;font-size:12px;font-weight:800}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:700;background:#fcfbf9}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#fbfaf7}
+  .tag{display:inline-block;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:700;white-space:nowrap}
+  .t-hot{background:#f7ddd8;color:var(--hot)}
+  .t-warn{background:#f6e9cf;color:#8a5f14}
+  .t-ok{background:#d6ead d;color:var(--ok)}
+  .t-ok{background:#d6eadd;color:var(--ok)}
+  .t-info{background:#dbe7f2;color:var(--info)}
+  .t-mute{background:#eee9e0;color:var(--muted)}
+  .rank{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:8px;
+    background:var(--green);color:#fff;font-weight:800;font-size:13px}
+  .rank.r1{background:var(--hot)}
+  .owner{font-weight:600}
+  .small{font-size:12px;color:var(--muted)}
+  .next{color:#37403a}
+  .spendbar{height:8px;border-radius:999px;background:#e7e2d8;overflow:hidden;margin-top:6px;width:160px}
+  .spendbar > i{display:block;height:100%;background:linear-gradient(90deg,var(--green),#4c9e77)}
+  .empty{padding:20px;color:var(--muted);font-size:13px;font-style:italic}
+  footer{max-width:1500px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:12px}
+  /* Meeting alarm */
+  #alarm{position:fixed;inset:0;z-index:100;background:rgba(178,59,46,.96);color:#fff;
+    display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;animation:pulse 1s infinite alternate}
+  @keyframes pulse{from{background:rgba(178,59,46,.90)}to{background:rgba(150,40,30,.99)}}
+  #alarm .big{font-size:64px;font-weight:900;letter-spacing:1px;margin-bottom:10px}
+  #alarm .det{font-size:24px;font-weight:600;margin-bottom:6px}
+  #alarm .join{font-size:20px;margin:14px 0 26px}
+  #alarm .join a{background:#fff;color:var(--hot);padding:12px 26px;border-radius:10px;font-weight:800}
+  #alarm .dismiss{background:#fff;color:var(--hot);font-size:20px;padding:14px 40px;border-radius:12px;font-weight:900;cursor:pointer;border:none}
+  .flash{animation:flash 1s infinite}
+  @keyframes flash{50%{opacity:.4}}
+  .soundwarn{background:#f6e9cf;color:#8a5f14;padding:8px 16px;font-size:12.5px;text-align:center;font-weight:600}
+</style>
+</head>
+<body>
+<header class="top">
+  <span class="brand">PLL COMMAND LAB</span>
+  <span class="sub">Cockpit</span>
+  <div class="right">
+    <span class="pill" id="clock">--:--</span>
+    <span class="pill" id="stamp">loading…</span>
+    <button class="btn btn-sound" id="soundBtn" onclick="enableSound()">🔔 Enable sound</button>
+  </div>
+</header>
+
+<div class="soundwarn" id="soundWarn">Click “Enable sound” once on this TV so meeting alarms can play out loud. (One-time.)</div>
+
+<div class="wrap">
+  <div class="grid">
+    <div class="card span2" id="c-r2150"></div>
+    <div class="card" id="c-meetings"></div>
+    <div class="card" id="c-waiting"></div>
+    <div class="card" id="c-setup"></div>
+    <div class="card" id="c-ai"></div>
+    <div class="card span2" id="c-agents"></div>
+    <div class="card span2" id="c-pipeline"></div>
+  </div>
+</div>
+
+<footer>
+  PLL Command Lab · glanceable cockpit · data from cockpit-data.json · confidential.
+</footer>
+
+<div id="alarm">
+  <div class="big flash">📣 MEETING NOW</div>
+  <div class="det" id="alarmTitle"></div>
+  <div class="det" id="alarmTime"></div>
+  <div class="join" id="alarmJoin"></div>
+  <button class="dismiss" onclick="dismissAlarm()">STOP ALARM ✕</button>
+</div>
+
+<script>
+const DATA_URL = 'cockpit-data.json';
+let DATA = null;
+let soundOn = false;
+let audioCtx = null;
+let alarmActive = false;
+let alarmLoop = null;
+let firedKeys = {}; // meeting keys already alarmed
+
+/* ---------- helpers ---------- */
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function statusTag(s){
+  s=(s||'').toLowerCase();
+  if(s.includes('waiting')) return '<span class="tag t-warn">waiting on Sam</span>';
+  if(s.includes('progress')) return '<span class="tag t-info">in progress</span>';
+  if(s.includes('flag')||s.includes('trust')||s.includes('audit')) return '<span class="tag t-hot">flag</span>';
+  if(s.includes('not')) return '<span class="tag t-mute">not started</span>';
+  if(s.includes('monitor')) return '<span class="tag t-info">monitoring</span>';
+  if(s.includes('clean')||s.includes('ok')) return '<span class="tag t-ok">clean</span>';
+  return '<span class="tag t-mute">'+esc(s||'—')+'</span>';
+}
+function impactTag(i){
+  i=(i||'').toLowerCase();
+  if(i==='high') return '<span class="tag t-hot">high</span>';
+  if(i==='med') return '<span class="tag t-warn">med</span>';
+  return '<span class="tag t-mute">low</span>';
+}
+function callTag(c){
+  c=(c||'').toLowerCase();
+  if(c.includes('adopt')) return '<span class="tag t-ok">adopt</span>';
+  if(c.includes('test')) return '<span class="tag t-info">test</span>';
+  return '<span class="tag t-mute">hold</span>';
+}
+function head(icon,title,count){
+  return '<h2><span class="ico">'+icon+'</span>'+esc(title)+'<span class="count">'+(count==null?'':count)+'</span></h2>';
+}
+function emptyRow(msg){return '<div class="empty">'+esc(msg)+'</div>';}
+
+/* ---------- renderers ---------- */
+function render(){
+  if(!DATA) return;
+  document.getElementById('stamp').textContent = DATA.generatedLabel || 'updated';
+
+  // R2150 Do Next
+  let r = head('1','R2150 — Do Next', (DATA.r2150DoNext||[]).length);
+  r += '<table><thead><tr><th>#</th><th>Task</th><th>Owner</th><th>Next move</th><th>Status</th></tr></thead><tbody>';
+  (DATA.r2150DoNext||[]).forEach(x=>{
+    r += '<tr><td><span class="rank '+(x.rank===1?'r1':'')+'">'+esc(x.rank)+'</span></td>'
+      +'<td>'+esc(x.task)+'</td>'
+      +'<td class="owner">'+esc(x.owner)+'</td>'
+      +'<td class="next">'+esc(x.next)+'</td>'
+      +'<td>'+statusTag(x.status)+'</td></tr>';
+  });
+  r += '</tbody></table>';
+  document.getElementById('c-r2150').innerHTML = r;
+
+  // Meetings
+  let m = head('📅','Today\u2019s Meetings', (DATA.meetings||[]).length);
+  if((DATA.meetings||[]).length){
+    m += '<table><thead><tr><th>Time</th><th>Meeting</th><th>With</th><th>Join</th></tr></thead><tbody>';
+    (DATA.meetings||[]).forEach(x=>{
+      const join = x.join ? '<a href="'+esc(x.join)+'" target="_blank">Join ↗</a>' : '<span class="small">—</span>';
+      m += '<tr><td><b>'+esc(x.time)+'</b></td><td>'+esc(x.title)+'</td><td>'+esc(x.with||'')+'</td><td>'+join+'</td></tr>';
+    });
+    m += '</tbody></table>';
+  } else {
+    m += emptyRow(DATA.meetingsNote || 'No meetings loaded yet. Feed refreshes each morning.');
+  }
+  document.getElementById('c-meetings').innerHTML = m;
+
+  // Waiting On Sam
+  let w = head('✋','Waiting On Sam', (DATA.waitingOnSam||[]).length);
+  w += '<table><thead><tr><th>Decision</th><th>Why it matters</th><th>Impact</th><th>Since</th></tr></thead><tbody>';
+  (DATA.waitingOnSam||[]).forEach(x=>{
+    w += '<tr><td><b>'+esc(x.item)+'</b></td><td class="small">'+esc(x.why)+'</td><td>'+impactTag(x.impact)+'</td><td class="small">'+esc(x.since)+'</td></tr>';
+  });
+  w += '</tbody></table>';
+  document.getElementById('c-waiting').innerHTML = w;
+
+  // Setup Needs
+  let s = head('🔌','Agent Setup Needs', (DATA.setupNeeds||[]).length);
+  s += '<table><thead><tr><th>What\u2019s needed</th><th>Unblocks</th><th>Why</th><th>Waiting</th></tr></thead><tbody>';
+  (DATA.setupNeeds||[]).forEach(x=>{
+    s += '<tr><td><b>'+esc(x.need)+'</b></td><td>'+esc(x.unblocks)+'</td><td class="small">'+esc(x.why)+'</td><td class="small">'+esc(x.waiting)+'</td></tr>';
+  });
+  s += '</tbody></table>';
+  document.getElementById('c-setup').innerHTML = s;
+
+  // AI Suggestions
+  let a = head('✨','AI Tool Suggestions', (DATA.aiSuggestions||[]).length);
+  a += '<table><thead><tr><th>Tool</th><th>What / why</th><th>Cost</th><th>My call</th></tr></thead><tbody>';
+  (DATA.aiSuggestions||[]).forEach(x=>{
+    a += '<tr><td><b>'+esc(x.tool)+'</b></td><td class="small">'+esc(x.what)+'<br><i>'+esc(x.why)+'</i></td><td class="small">'+esc(x.cost)+'</td><td>'+callTag(x.call)+'</td></tr>';
+  });
+  a += '</tbody></table>';
+  document.getElementById('c-ai').innerHTML = a;
+
+  // Agent Accountability
+  let g = head('🤖','Agent Accountability', (DATA.agentAccountability||[]).length);
+  g += '<table><thead><tr><th>Agent</th><th>Last dispatch</th><th>Status</th><th>Honesty</th><th>Note</th></tr></thead><tbody>';
+  (DATA.agentAccountability||[]).forEach(x=>{
+    const hon = /flag/i.test(x.honesty||'') ? '<span class="tag t-hot">'+esc(x.honesty)+'</span>' : '<span class="small">'+esc(x.honesty||'—')+'</span>';
+    g += '<tr><td><b>'+esc(x.agent)+'</b></td><td class="small">'+esc(x.lastDispatch)+'</td><td>'+statusTag(x.status)+'</td><td>'+hon+'</td><td class="small">'+esc(x.note||'')+'</td></tr>';
+  });
+  g += '</tbody></table>';
+  document.getElementById('c-agents').innerHTML = g;
+
+  // Pipeline
+  let p = head('💰','Pipeline Snapshot — real 1,000+ unit deals', (DATA.pipeline||[]).length);
+  p += '<table><thead><tr><th>Deal</th><th>Units</th><th>Product</th><th>Stage</th><th>Value</th><th>Owner</th></tr></thead><tbody>';
+  (DATA.pipeline||[]).forEach(x=>{
+    p += '<tr><td><b>'+esc(x.deal)+'</b></td><td>'+esc(x.units)+'</td><td class="small">'+esc(x.product)+'</td><td>'+statusTag(x.stage)+'</td><td>'+esc(x.value)+'</td><td class="small">'+esc(x.owner)+'</td></tr>';
+  });
+  p += '</tbody></table>';
+  document.getElementById('c-pipeline').innerHTML = p;
+
+  // spend pill
+  if(DATA.spend){
+    const pct = Math.min(100, Math.round(100*DATA.spend.monthToDateUSD/DATA.spend.capUSD));
+    document.querySelector('#stamp').insertAdjacentHTML('beforebegin',
+      '<span class="pill" id="spendpill" title="'+esc(DATA.spend.note||'')+'">$'+DATA.spend.monthToDateUSD+' / $'+DATA.spend.capUSD+' AI</span>');
+    const ex = document.getElementById('spendpill');
+    // avoid duplicates on re-render
+    document.querySelectorAll('#spendpill').forEach((el,i)=>{if(i>0)el.remove();});
+    void pct;
+  }
+}
+
+/* ---------- sound + alarm ---------- */
+function enableSound(){
+  try{
+    audioCtx = new (window.AudioContext||window.webkitAudioContext)();
+    if(audioCtx.state==='suspended') audioCtx.resume();
+    // prime speech
+    if('speechSynthesis' in window){ const u=new SpeechSynthesisUtterance(' '); window.speechSynthesis.speak(u); }
+    soundOn = true;
+    const b=document.getElementById('soundBtn'); b.textContent='🔔 Sound on'; b.classList.add('on');
+    document.getElementById('soundWarn').style.display='none';
+    beep(0.05);
+  }catch(e){ alert('Could not enable sound: '+e.message); }
+}
+function beep(vol){
+  if(!audioCtx) return;
+  const o=audioCtx.createOscillator(), g=audioCtx.createGain();
+  o.type='sine'; o.frequency.value=880; g.gain.value=vol||0.2;
+  o.connect(g); g.connect(audioCtx.destination);
+  o.start(); o.stop(audioCtx.currentTime+0.25);
+}
+function speak(txt){
+  if(!soundOn || !('speechSynthesis' in window)) return;
+  const u=new SpeechSynthesisUtterance(txt); u.rate=1; u.pitch=1; u.volume=1;
+  window.speechSynthesis.speak(u);
+}
+function fireAlarm(meeting){
+  if(alarmActive) return;
+  alarmActive = true;
+  document.getElementById('alarmTitle').textContent = meeting.title + (meeting.with?(' — '+meeting.with):'');
+  document.getElementById('alarmTime').textContent = meeting.time || '';
+  document.getElementById('alarmJoin').innerHTML = meeting.join ? '<a href="'+esc(meeting.join)+'" target="_blank">JOIN MEETING ↗</a>' : '';
+  document.getElementById('alarm').style.display='flex';
+  const announce=()=>{ if(!alarmActive) return; beep(0.3); speak('You have a meeting now. '+meeting.title); };
+  announce();
+  alarmLoop = setInterval(announce, 8000); // repeats until dismissed
+}
+function dismissAlarm(){
+  alarmActive=false;
+  if(alarmLoop){clearInterval(alarmLoop); alarmLoop=null;}
+  document.getElementById('alarm').style.display='none';
+  if('speechSynthesis' in window) window.speechSynthesis.cancel();
+}
+function checkMeetings(){
+  if(!DATA || !(DATA.meetings||[]).length) return;
+  const now = Date.now();
+  DATA.meetings.forEach((mtg,i)=>{
+    if(!mtg.iso) return;
+    const t = new Date(mtg.iso).getTime();
+    if(isNaN(t)) return;
+    const key = mtg.iso+'|'+i;
+    const lead = 2*60*1000; // 2 minutes before
+    // fire window: from 2 min before until 1 min after start
+    if(now >= (t-lead) && now <= (t+60*1000) && !firedKeys[key]){
+      firedKeys[key]=true;
+      fireAlarm(mtg);
+    }
+  });
+}
+
+/* ---------- loop ---------- */
+async function load(){
+  try{
+    const res = await fetch(DATA_URL+'?_='+Date.now());
+    DATA = await res.json();
+    render();
+  }catch(e){
+    document.getElementById('stamp').textContent = 'data load failed';
+    console.error(e);
+  }
+}
+function tickClock(){
+  const d=new Date();
+  const opt={hour:'2-digit',minute:'2-digit',timeZone:'America/New_York'};
+  document.getElementById('clock').textContent = d.toLocaleTimeString('en-US',opt)+' ET';
+}
+load();
+setInterval(load, 3*60*1000);      // refresh data every 3 min
+setInterval(tickClock, 1000);       // clock
+setInterval(checkMeetings, 15000);  // meeting alarm check
+tickClock();
+</script>
+</body>
+</html>
