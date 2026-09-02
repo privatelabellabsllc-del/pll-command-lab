@@ -66,6 +66,34 @@
   .spendbar > i{display:block;height:100%;background:linear-gradient(90deg,var(--green),#4c9e77)}
   .empty{padding:20px;color:var(--muted);font-size:13px;font-style:italic}
   .hubline{margin:5px 0;line-height:1.5}
+  /* Tabs */
+  nav.tabs{position:sticky;top:52px;z-index:35;background:var(--cream);border-bottom:1px solid var(--line);
+    display:flex;gap:4px;padding:0 24px;overflow-x:auto;box-shadow:0 2px 8px rgba(0,0,0,.03)}
+  nav.tabs button{cursor:pointer;border:none;background:none;font-family:inherit;font-size:14px;font-weight:700;
+    color:var(--muted);padding:14px 18px 12px;border-bottom:3px solid transparent;white-space:nowrap;display:flex;align-items:center;gap:8px}
+  nav.tabs button:hover{color:var(--ink)}
+  nav.tabs button.active{color:var(--green-d);border-bottom-color:var(--green)}
+  nav.tabs button .badge{background:var(--green);color:#fff;border-radius:999px;font-size:11px;font-weight:800;
+    min-width:20px;height:20px;padding:0 6px;display:inline-grid;place-items:center}
+  nav.tabs button .badge.hot{background:var(--hot)}
+  nav.tabs button .badge.mute{background:#cfc9bd}
+  .tabpanel{display:none;animation:fade .2s ease}
+  .tabpanel.active{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  /* Next-call hero (Calls tab) */
+  .hero{background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;border-radius:14px;
+    padding:22px 24px;margin-bottom:20px;box-shadow:var(--shadow);display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+  .hero .lbl{font-size:12px;text-transform:uppercase;letter-spacing:1px;opacity:.8;font-weight:700}
+  .hero .time{font-size:40px;font-weight:900;line-height:1}
+  .hero .ttl{font-size:20px;font-weight:700;margin-top:4px}
+  .hero .who{opacity:.85;font-size:14px;margin-top:2px}
+  .hero .countdown{margin-left:auto;text-align:right}
+  .hero .countdown .num{font-size:34px;font-weight:900}
+  .hero .join-hero{background:#fff;color:var(--green-d);padding:12px 24px;border-radius:10px;font-weight:800;font-size:15px}
+  .hero.none{background:#eef0ec;color:var(--muted)}
+  .hero.none .time{color:var(--muted)}
+  .srcnote{background:var(--cream-2);border:1px solid var(--line);border-radius:10px;padding:12px 16px;
+    font-size:12.5px;color:var(--muted);margin-bottom:16px;line-height:1.5}
   footer{max-width:1500px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:12px}
   /* Meeting alarm */
   #alarm{position:fixed;inset:0;z-index:100;background:rgba(178,59,46,.96);color:#fff;
@@ -94,17 +122,53 @@
 
 <div class="soundwarn" id="soundWarn">Click “Enable sound” once on this TV so meeting alarms can play out loud. (One-time.)</div>
 
+<nav class="tabs" id="tabnav">
+  <button data-tab="r2150" class="active">🎯 R2150 <span class="badge" id="b-r2150">0</span></button>
+  <button data-tab="calls">📞 Calls <span class="badge" id="b-calls">0</span></button>
+  <button data-tab="needs">🔌 Agent Needs <span class="badge" id="b-needs">0</span></button>
+  <button data-tab="hub">🛰️ Agent Hub <span class="badge" id="b-hub">0</span></button>
+  <button data-tab="waiting">✋ Waiting on Sam <span class="badge" id="b-waiting">0</span></button>
+  <button data-tab="pipeline">💰 Pipeline <span class="badge" id="b-pipeline">0</span></button>
+</nav>
+
 <div class="wrap">
-  <div class="grid">
-    <div class="card span2" id="c-r2150"></div>
-    <div class="card span2" id="c-hub"></div>
-    <div class="card" id="c-meetings"></div>
-    <div class="card" id="c-waiting"></div>
-    <div class="card" id="c-setup"></div>
-    <div class="card" id="c-ai"></div>
-    <div class="card span2" id="c-agents"></div>
-    <div class="card span2" id="c-pipeline"></div>
-  </div>
+  <!-- R2150 -->
+  <section class="tabpanel active" data-panel="r2150">
+    <div class="grid"><div class="card span2" id="c-r2150"></div></div>
+  </section>
+
+  <!-- Calls -->
+  <section class="tabpanel" data-panel="calls">
+    <div id="c-nextcall"></div>
+    <div id="c-callsrc" class="srcnote"></div>
+    <div class="grid"><div class="card span2" id="c-meetings"></div></div>
+  </section>
+
+  <!-- Agent Needs (connections + AI tool suggestions) -->
+  <section class="tabpanel" data-panel="needs">
+    <div class="grid">
+      <div class="card span2" id="c-setup"></div>
+      <div class="card span2" id="c-ai"></div>
+    </div>
+  </section>
+
+  <!-- Agent Hub -->
+  <section class="tabpanel" data-panel="hub">
+    <div class="grid">
+      <div class="card span2" id="c-hub"></div>
+      <div class="card span2" id="c-agents"></div>
+    </div>
+  </section>
+
+  <!-- Waiting on Sam -->
+  <section class="tabpanel" data-panel="waiting">
+    <div class="grid"><div class="card span2" id="c-waiting"></div></div>
+  </section>
+
+  <!-- Pipeline -->
+  <section class="tabpanel" data-panel="pipeline">
+    <div class="grid"><div class="card span2" id="c-pipeline"></div></div>
+  </section>
 </div>
 
 <footer>
@@ -265,6 +329,24 @@ function render(){
   p += '</tbody></table>';
   document.getElementById('c-pipeline').innerHTML = p;
 
+  // ---- Calls tab: next-call hero + source note ----
+  renderNextCall();
+  // source note explains where meetings come from + calendar status
+  const cs = document.getElementById('c-callsrc');
+  if(cs){
+    cs.innerHTML = DATA.callsSource
+      ? esc(DATA.callsSource)
+      : 'Source: meeting invites read from Sam@prvtlabellabs.com inbox. A live calendar connection gives reliable, complete pulls — see Agent Needs.';
+  }
+
+  // ---- tab badges ----
+  setBadge('b-r2150', (DATA.r2150DoNext||[]).length);
+  setBadge('b-calls', (DATA.meetings||[]).length);
+  setBadge('b-needs', (DATA.setupNeeds||[]).length, (DATA.setupNeeds||[]).length>0?'hot':'mute');
+  setBadge('b-hub',   (DATA.agentHub&&DATA.agentHub.agents?DATA.agentHub.agents.length:0));
+  setBadge('b-waiting',(DATA.waitingOnSam||[]).length, (DATA.waitingOnSam||[]).length>0?'hot':'mute');
+  setBadge('b-pipeline',(DATA.pipeline||[]).length);
+
   // spend pill
   if(DATA.spend){
     const pct = Math.min(100, Math.round(100*DATA.spend.monthToDateUSD/DATA.spend.capUSD));
@@ -275,6 +357,52 @@ function render(){
     document.querySelectorAll('#spendpill').forEach((el,i)=>{if(i>0)el.remove();});
     void pct;
   }
+}
+
+/* ---------- tabs ---------- */
+function setBadge(id,n,cls){
+  const el=document.getElementById(id); if(!el) return;
+  el.textContent=n; el.className='badge'+(cls?(' '+cls):'');
+}
+function initTabs(){
+  document.querySelectorAll('#tabnav button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const t=btn.getAttribute('data-tab');
+      document.querySelectorAll('#tabnav button').forEach(b=>b.classList.toggle('active',b===btn));
+      document.querySelectorAll('.tabpanel').forEach(p=>p.classList.toggle('active',p.getAttribute('data-panel')===t));
+      try{localStorage.setItem('pll_cockpit_tab',t);}catch(e){}
+    });
+  });
+  // restore last tab
+  try{
+    const saved=localStorage.getItem('pll_cockpit_tab');
+    if(saved){const b=document.querySelector('#tabnav button[data-tab="'+saved+'"]'); if(b) b.click();}
+  }catch(e){}
+}
+function renderNextCall(){
+  const host=document.getElementById('c-nextcall'); if(!host) return;
+  const now=Date.now();
+  const upcoming=(DATA.meetings||[])
+    .filter(m=>m.iso && !isNaN(new Date(m.iso).getTime()) && new Date(m.iso).getTime()>now-60*60*1000)
+    .sort((a,b)=>new Date(a.iso)-new Date(b.iso));
+  if(!upcoming.length){
+    host.innerHTML='<div class="hero none"><div><div class="lbl">Next call</div>'
+      +'<div class="time">—</div><div class="ttl">No upcoming calls loaded</div>'
+      +'<div class="who">Refreshes each morning from your inbox invites.</div></div></div>';
+    return;
+  }
+  const n=upcoming[0];
+  const t=new Date(n.iso).getTime();
+  const mins=Math.round((t-now)/60000);
+  let cd = mins<0 ? 'in progress' : mins<60 ? mins+' min' : Math.floor(mins/60)+'h '+(mins%60)+'m';
+  const join=n.join?'<a class="join-hero" href="'+esc(n.join)+'" target="_blank">JOIN ↗</a>':'';
+  host.innerHTML='<div class="hero"><div>'
+    +'<div class="lbl">Your next call</div>'
+    +'<div class="time">'+esc(n.time||'')+'</div>'
+    +'<div class="ttl">'+esc(n.title||'')+'</div>'
+    +'<div class="who">'+esc(n.with||'')+'</div></div>'
+    +'<div class="countdown"><div class="lbl">starts in</div><div class="num">'+esc(cd)+'</div>'+join+'</div>'
+    +'</div>';
 }
 
 /* ---------- sound + alarm ---------- */
@@ -352,6 +480,7 @@ function tickClock(){
   const opt={hour:'2-digit',minute:'2-digit',timeZone:'America/New_York'};
   document.getElementById('clock').textContent = d.toLocaleTimeString('en-US',opt)+' ET';
 }
+initTabs();
 load();
 setInterval(load, 3*60*1000);      // refresh data every 3 min
 setInterval(tickClock, 1000);       // clock

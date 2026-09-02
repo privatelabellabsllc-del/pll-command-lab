@@ -44,8 +44,13 @@
     ],
     "lastDispatch": { "id": "R2150-20260902-01", "to": "SEO/GEO", "task": "Homepage SEO/meta check", "status": "done-verified", "note": "Bare <title>, no meta description, no quote CTA — real gap surfaced for the queue." }
   },
-  "meetings": [],
-  "meetingsNote": "Meetings feed wires to Sam's Outlook (sam@prvtlabellabs.com). First live morning pull verifies Sep 2. Table auto-fills each morning; audible 2-min alarm loops until dismissed.",
+  "meetings": [
+    { "time": "Today 1:00 PM ET", "iso": "2026-09-02T17:00:00Z", "title": "PLL Chemist Call: Mark Higgins (deodorant)", "with": "Mark Higgins · aluminum-free roll-on deodorant, 2 SKUs, 500–1,000 units · with Ron + Evelyn on pricing tiers", "join": "https://meet.google.com/zgr-qycm-ppi" },
+    { "time": "Thu Sep 3, 10:00 AM ET", "iso": "2026-09-03T14:00:00Z", "title": "Ephix <> Enso", "with": "Enso Brands (Gilad/Natan) · Aidan's deal — you're a guest", "join": "" },
+    { "time": "Mon Sep 7, 12:00 PM ET", "iso": "2026-09-07T16:00:00Z", "title": "PLL Discovery Call: Amber Scapellato", "with": "Amber Scapellato · Yoni oil / feminine care line (booked via Calendly)", "join": "https://meet.google.com/jtq-szpj-aqn" }
+  ],
+  "meetingsNote": "Pulled from meeting invites in Sam's inbox (sam@prvtlabellabs.com), Sep 2. Not a live calendar sync yet — reschedules or calendar-only events may not appear until a calendar connection is added (see Agent Needs).",
+  "callsSource": "Source: meeting invites read from Sam's inbox (sam@prvtlabellabs.com) on Sep 2. This is a real read, but not a live two-way calendar sync — a Google/Outlook calendar connection would make it complete and self-updating. Add it from the Agent Needs tab.",
   "setupNeeds": [
     { "need": "Approve creating the 'PLL Command' shared drive", "unblocks": "All agents (shared source of truth + ledger)", "why": "One-click approval card — the foundation everything reads/writes", "waiting": "Sep 2" },
     { "need": "Connect a meeting notetaker (Fireflies/Fathom/Otter) — later", "unblocks": "Email/Sales + Executive", "why": "Real-time meeting notes + action items to you and me. Free tier possible; gated by approval", "waiting": "Sep 2" },
