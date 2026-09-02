@@ -458,6 +458,71 @@
   @media(max-width:1180px){.brand img{width:105px}.brand-system{display:none}.strip{gap:9px}.tbtns{margin-left:5px}}
   @media(max-width:680px){.logo-core{width:132px;top:calc(50% - 20px)}.brand img{width:92px}.strip{background:#fff}.hud{left:10px;top:10px}.statebox{right:10px;top:10px}}
 
+  /* ═══════════ COCKPIT TABS — additive; orb + existing styles untouched ═══════════ */
+  .labtabs{display:flex;gap:2px;padding:0 14px;overflow-x:auto;background:var(--panel);
+    border-bottom:1px solid var(--line2);flex:0 0 auto;z-index:20;}
+  .labtabs button{cursor:pointer;border:none;background:none;font-family:var(--mono);
+    font-size:11.5px;font-weight:700;letter-spacing:.5px;color:var(--dim);
+    padding:10px 14px 8px;border-bottom:2px solid transparent;white-space:nowrap;
+    display:flex;align-items:center;gap:7px;text-transform:uppercase;}
+  .labtabs button:hover{color:var(--cy);}
+  .labtabs button.active{color:var(--cy2);border-bottom-color:var(--green);}
+  .labtabs .lbadge{background:var(--green);color:var(--bg);border-radius:999px;
+    font-size:10px;font-weight:800;min-width:16px;height:16px;padding:0 5px;
+    display:inline-grid;place-items:center;}
+  .labtabs .lbadge.hot{background:var(--red);color:#fff;}
+  .labtabs .lbadge.mute{background:var(--dimmer);}
+  /* cockpit content — fully scoped so it never touches orb styles */
+  #labextra{display:none;flex:1;min-height:0;overflow-y:auto;padding:16px 18px 40px;}
+  #labextra .lp{display:none;}
+  #labextra .lp.active{display:block;animation:labfade .2s ease;}
+  @keyframes labfade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+  #labextra .ck-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  #labextra .ck-card.span2{grid-column:1/-1;}
+  @media(max-width:1000px){#labextra .ck-grid{grid-template-columns:1fr;}}
+  #labextra .ck-card{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  #labextra .ck-card h3{margin:0;padding:11px 15px;font-size:11.5px;letter-spacing:.6px;text-transform:uppercase;
+    color:var(--cy2);background:var(--panel2);border-bottom:1px solid var(--line);
+    display:flex;align-items:center;gap:9px;font-family:var(--mono);font-weight:700;}
+  #labextra .ck-card h3 .ico{width:20px;height:20px;border-radius:5px;background:var(--green);color:var(--bg);
+    display:grid;place-items:center;font-size:11px;font-weight:800;}
+  #labextra .ck-card h3 .count{margin-left:auto;font-size:11px;color:var(--dim);font-weight:600;}
+  #labextra table{width:100%;border-collapse:collapse;font-size:12.5px;color:var(--cy);}
+  #labextra th,#labextra td{text-align:left;padding:9px 13px;border-bottom:1px solid var(--line);vertical-align:top;}
+  #labextra th{font-size:10px;text-transform:uppercase;letter-spacing:.5px;color:var(--dim);font-weight:700;}
+  #labextra tr:last-child td{border-bottom:none;}
+  #labextra .ck-tag{display:inline-block;padding:2px 8px;border-radius:999px;font-size:10.5px;font-weight:700;white-space:nowrap;}
+  #labextra .th{background:rgba(255,93,93,.16);color:var(--red);}
+  #labextra .tw{background:rgba(255,193,77,.18);color:var(--amber);}
+  #labextra .to{background:rgba(52,255,150,.15);color:var(--cy2);}
+  #labextra .ti{background:rgba(18,158,208,.18);color:#2f9ed0;}
+  #labextra .tm{background:rgba(140,140,140,.16);color:var(--dim);}
+  #labextra .ck-rank{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:6px;background:var(--green);color:var(--bg);font-weight:800;font-size:12px;}
+  #labextra .ck-rank.r1{background:var(--red);color:#fff;}
+  #labextra .ck-sm{font-size:11px;color:var(--dim);}
+  #labextra .ck-empty{padding:16px;color:var(--dim);font-style:italic;font-size:12px;}
+  #labextra .ck-line{margin:5px 0;line-height:1.5;}
+  #labextra .ck-hero{background:linear-gradient(135deg,var(--green),var(--line2));color:#fff;border-radius:12px;
+    padding:18px 20px;margin-bottom:16px;display:flex;align-items:center;gap:20px;flex-wrap:wrap;}
+  #labextra .ck-hero .lbl{font-size:10px;text-transform:uppercase;letter-spacing:1px;opacity:.85;font-weight:700;}
+  #labextra .ck-hero .time{font-size:30px;font-weight:900;line-height:1;}
+  #labextra .ck-hero .ttl{font-size:16px;font-weight:700;margin-top:3px;}
+  #labextra .ck-hero .who{opacity:.9;font-size:12px;margin-top:2px;max-width:640px;}
+  #labextra .ck-hero .cd{margin-left:auto;text-align:right;}
+  #labextra .ck-hero .cd .num{font-size:26px;font-weight:900;}
+  #labextra .ck-hero .join{background:#fff;color:var(--green);padding:9px 18px;border-radius:8px;font-weight:800;font-size:13px;display:inline-block;margin-top:6px;}
+  #labextra .ck-hero.none{background:var(--panel2);color:var(--dim);}
+  #labextra .ck-hero.none .time{color:var(--dim);}
+  #labextra .ck-src{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:10px 14px;font-size:11.5px;color:var(--dim);margin-bottom:14px;line-height:1.5;}
+  /* meeting alarm (namespaced) */
+  #ckAlarm{position:fixed;inset:0;z-index:100;background:rgba(178,59,46,.96);color:#fff;
+    display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+  #ckAlarm .big{font-size:58px;font-weight:900;letter-spacing:1px;margin-bottom:10px;animation:ckflash 1s infinite;}
+  @keyframes ckflash{50%{opacity:.45}}
+  #ckAlarm .det{font-size:22px;font-weight:600;margin-bottom:6px;max-width:80%;}
+  #ckAlarm .join{font-size:18px;margin:14px 0 26px;}
+  #ckAlarm .join a{background:#fff;color:#b23b2e;padding:12px 26px;border-radius:10px;font-weight:800;}
+  #ckAlarm .dismiss{background:#fff;color:#b23b2e;font-size:18px;padding:13px 38px;border-radius:12px;font-weight:900;cursor:pointer;border:none;}
 </style>
 </head>
 <body class="booting">
@@ -492,6 +557,17 @@
   </div>
   <div class="linkpill"><span class="ldot" id="linkDot"></span><span id="linkTxt">Link</span></div>
 </div>
+
+<!-- ═══════════ TAB BAR — Command Lab + cockpit tabs ═══════════ -->
+<nav class="labtabs" id="labTabs">
+  <button data-tab="home" class="active">⌂ Command Lab</button>
+  <button data-tab="r2150">🎯 R2150 <span class="lbadge" id="lb-r2150">0</span></button>
+  <button data-tab="calls">📞 Calls <span class="lbadge" id="lb-calls">0</span></button>
+  <button data-tab="needs">🔌 Agent Needs <span class="lbadge mute" id="lb-needs">0</span></button>
+  <button data-tab="hub">🛰️ Agent Hub <span class="lbadge" id="lb-hub">0</span></button>
+  <button data-tab="waiting">✋ Waiting on Sam <span class="lbadge mute" id="lb-waiting">0</span></button>
+  <button data-tab="pipeline">💰 Pipeline <span class="lbadge" id="lb-pipeline">0</span></button>
+</nav>
 
 <!-- ═══════════ ZONE 2/3/4 — MAIN GRID ═══════════ -->
 <div class="main">
@@ -557,6 +633,29 @@
       <div class="qscroll" id="missionQueue"></div>
     </div>
   </div>
+</div>
+
+<!-- ═══════════ COCKPIT TAB PANELS (hidden until a tab is chosen) ═══════════ -->
+<div id="labextra">
+  <div class="lp" data-panel="r2150"><div class="ck-grid"><div class="ck-card span2" id="ck-r2150"></div></div></div>
+  <div class="lp" data-panel="calls">
+    <div id="ck-nextcall"></div>
+    <div id="ck-callsrc" class="ck-src"></div>
+    <div class="ck-grid"><div class="ck-card span2" id="ck-meetings"></div></div>
+  </div>
+  <div class="lp" data-panel="needs"><div class="ck-grid"><div class="ck-card span2" id="ck-setup"></div><div class="ck-card span2" id="ck-ai"></div></div></div>
+  <div class="lp" data-panel="hub"><div class="ck-grid"><div class="ck-card span2" id="ck-hub"></div><div class="ck-card span2" id="ck-agents"></div></div></div>
+  <div class="lp" data-panel="waiting"><div class="ck-grid"><div class="ck-card span2" id="ck-waiting"></div></div></div>
+  <div class="lp" data-panel="pipeline"><div class="ck-grid"><div class="ck-card span2" id="ck-pipeline"></div></div></div>
+</div>
+
+<!-- meeting alarm overlay -->
+<div id="ckAlarm">
+  <div class="big">📣 MEETING NOW</div>
+  <div class="det" id="ckAlarmTitle"></div>
+  <div class="det" id="ckAlarmTime"></div>
+  <div class="join" id="ckAlarmJoin"></div>
+  <button class="dismiss" onclick="ckDismissAlarm()">STOP ALARM ✕</button>
 </div>
 
 <!-- ═══════════ V5.0 — TOP TASK FULL-SCREEN TAKEOVER ═══════════ -->
@@ -3252,5 +3351,157 @@ addEventListener('keydown', function(e){
   <button onclick="tvResumeGo()">▶ GO FULLSCREEN</button>
   <small>F toggles — Esc exits</small>
 </div>
+<!-- ═══════════ COCKPIT TABS ENGINE — additive, self-contained, orb untouched ═══════════ -->
+<script>
+(function(){
+  var CK_URL='cockpit-data.json', CK=null;
+  var $=function(id){return document.getElementById(id);};
+  function esc(s){return (s==null?'':String(s)).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function statusTag(s){s=(s||'').toLowerCase();
+    if(s.indexOf('waiting')>=0)return '<span class="ck-tag tw">waiting on Sam</span>';
+    if(s.indexOf('progress')>=0)return '<span class="ck-tag ti">in progress</span>';
+    if(s.indexOf('flag')>=0||s.indexOf('trust')>=0||s.indexOf('audit')>=0)return '<span class="ck-tag th">flag</span>';
+    if(s.indexOf('not')>=0)return '<span class="ck-tag tm">not started</span>';
+    if(s.indexOf('monitor')>=0)return '<span class="ck-tag ti">monitoring</span>';
+    if(s.indexOf('clean')>=0||s.indexOf('ok')>=0||s.indexOf('done')>=0)return '<span class="ck-tag to">clean</span>';
+    return '<span class="ck-tag tm">'+esc(s||'—')+'</span>';}
+  function impactTag(i){i=(i||'').toLowerCase();
+    if(i==='high')return '<span class="ck-tag th">high</span>';
+    if(i==='med')return '<span class="ck-tag tw">med</span>';
+    return '<span class="ck-tag tm">low</span>';}
+  function callTag(c){c=(c||'').toLowerCase();
+    if(c.indexOf('adopt')>=0)return '<span class="ck-tag to">adopt</span>';
+    if(c.indexOf('test')>=0)return '<span class="ck-tag ti">test</span>';
+    return '<span class="ck-tag tm">hold</span>';}
+  function head(icon,title,count){return '<h3><span class="ico">'+icon+'</span>'+esc(title)+'<span class="count">'+(count==null?'':count)+'</span></h3>';}
+  function empty(m){return '<div class="ck-empty">'+esc(m)+'</div>';}
+  function setB(id,n,cls){var el=$(id);if(!el)return;el.textContent=n;el.className='lbadge'+(cls?(' '+cls):'');}
+
+  function ckRender(){
+    if(!CK)return;
+    // R2150
+    var r=head('1','R2150 — Do Next',(CK.r2150DoNext||[]).length);
+    r+='<table><thead><tr><th>#</th><th>Task</th><th>Owner</th><th>Next move</th><th>Status</th></tr></thead><tbody>';
+    (CK.r2150DoNext||[]).forEach(function(x){r+='<tr><td><span class="ck-rank '+(x.rank===1?'r1':'')+'">'+esc(x.rank)+'</span></td><td>'+esc(x.task)+'</td><td>'+esc(x.owner)+'</td><td>'+esc(x.next)+'</td><td>'+statusTag(x.status)+'</td></tr>';});
+    r+='</tbody></table>'; if($('ck-r2150'))$('ck-r2150').innerHTML=r;
+
+    // Agent Hub
+    var HUB=CK.agentHub;
+    if(HUB){
+      var h=head('🛰️','Agent Hub — live command ledger',(HUB.agents||[]).length);
+      h+='<div class="ck-line" style="padding:10px 15px 0"><span class="ck-tag to">Drive LIVE</span> <span class="ck-sm">'+esc(HUB.driveStatus||'')+'</span></div>';
+      h+='<div class="ck-line" style="padding:0 15px"><span class="ck-sm"><b>Built:</b> '+esc(HUB.built||'')+'</span></div>';
+      h+='<div class="ck-line" style="padding:0 15px"><span class="ck-tag '+((HUB.honestyFlagsOpen||0)>0?'th':'to')+'">Honesty flags: '+esc(HUB.honestyFlagsOpen||0)+'</span> <span class="ck-tag '+((HUB.disagreementsOpen||0)>0?'tw':'tm')+'">Open disagreements: '+esc(HUB.disagreementsOpen||0)+'</span></div>';
+      h+='<table style="margin-top:8px"><thead><tr><th>Agent</th><th>Lane</th><th>Charter</th><th>Model</th><th>Wired?</th></tr></thead><tbody>';
+      (HUB.agents||[]).forEach(function(x){
+        var ch=x.charter?'<span class="ck-tag to">✓ set</span>':'<span class="ck-tag tm">—</span>';
+        var wired=/active|live/i.test(x.wired||'')?'<span class="ck-tag to">'+esc(x.wired)+'</span>':/not yet|not stood|needs/i.test(x.wired||'')?'<span class="ck-tag tm">'+esc(x.wired)+'</span>':'<span class="ck-tag tw">'+esc(x.wired||'—')+'</span>';
+        h+='<tr><td><b>'+esc(x.agent)+'</b></td><td class="ck-sm">'+esc(x.lane)+'</td><td>'+ch+'</td><td class="ck-sm">'+esc(x.model)+'</td><td>'+wired+'</td></tr>';});
+      h+='</tbody></table>';
+      if(HUB.lastDispatch){var d=HUB.lastDispatch;h+='<div class="ck-line ck-sm" style="padding:8px 15px"><b>Last dispatch:</b> '+esc(d.id)+' → '+esc(d.to)+' · '+esc(d.task)+' '+statusTag(d.status)+' <i>'+esc(d.note||'')+'</i></div>';}
+      if($('ck-hub'))$('ck-hub').innerHTML=h;
+    } else if($('ck-hub')){ $('ck-hub').innerHTML=head('🛰️','Agent Hub',0)+empty('Hub data not loaded.'); }
+
+    // Meetings
+    var m=head('📅','Today\u2019s Meetings',(CK.meetings||[]).length);
+    if((CK.meetings||[]).length){
+      m+='<table><thead><tr><th>Time</th><th>Meeting</th><th>With</th><th>Join</th></tr></thead><tbody>';
+      (CK.meetings||[]).forEach(function(x){var j=x.join?'<a href="'+esc(x.join)+'" target="_blank" style="color:var(--cy2)">Join ↗</a>':'<span class="ck-sm">—</span>';m+='<tr><td><b>'+esc(x.time)+'</b></td><td>'+esc(x.title)+'</td><td class="ck-sm">'+esc(x.with||'')+'</td><td>'+j+'</td></tr>';});
+      m+='</tbody></table>';
+    } else { m+=empty(CK.meetingsNote||'No meetings loaded yet.'); }
+    if($('ck-meetings'))$('ck-meetings').innerHTML=m;
+
+    // Waiting
+    var w=head('✋','Waiting On Sam',(CK.waitingOnSam||[]).length);
+    w+='<table><thead><tr><th>Decision</th><th>Why it matters</th><th>Impact</th><th>Since</th></tr></thead><tbody>';
+    (CK.waitingOnSam||[]).forEach(function(x){w+='<tr><td><b>'+esc(x.item)+'</b></td><td class="ck-sm">'+esc(x.why)+'</td><td>'+impactTag(x.impact)+'</td><td class="ck-sm">'+esc(x.since)+'</td></tr>';});
+    w+='</tbody></table>'; if($('ck-waiting'))$('ck-waiting').innerHTML=w;
+
+    // Setup Needs
+    var s=head('🔌','Agent Setup Needs',(CK.setupNeeds||[]).length);
+    s+='<table><thead><tr><th>What\u2019s needed</th><th>Unblocks</th><th>Why</th><th>Waiting</th></tr></thead><tbody>';
+    (CK.setupNeeds||[]).forEach(function(x){s+='<tr><td><b>'+esc(x.need)+'</b></td><td>'+esc(x.unblocks)+'</td><td class="ck-sm">'+esc(x.why)+'</td><td class="ck-sm">'+esc(x.waiting)+'</td></tr>';});
+    s+='</tbody></table>'; if($('ck-setup'))$('ck-setup').innerHTML=s;
+
+    // AI Suggestions
+    var a=head('✨','AI Tool Suggestions',(CK.aiSuggestions||[]).length);
+    a+='<table><thead><tr><th>Tool</th><th>What / why</th><th>Cost</th><th>My call</th></tr></thead><tbody>';
+    (CK.aiSuggestions||[]).forEach(function(x){a+='<tr><td><b>'+esc(x.tool)+'</b></td><td class="ck-sm">'+esc(x.what)+'<br><i>'+esc(x.why)+'</i></td><td class="ck-sm">'+esc(x.cost)+'</td><td>'+callTag(x.call)+'</td></tr>';});
+    a+='</tbody></table>'; if($('ck-ai'))$('ck-ai').innerHTML=a;
+
+    // Accountability
+    var g=head('🤖','Agent Accountability',(CK.agentAccountability||[]).length);
+    g+='<table><thead><tr><th>Agent</th><th>Last dispatch</th><th>Status</th><th>Honesty</th><th>Note</th></tr></thead><tbody>';
+    (CK.agentAccountability||[]).forEach(function(x){var hon=/flag/i.test(x.honesty||'')?'<span class="ck-tag th">'+esc(x.honesty)+'</span>':'<span class="ck-sm">'+esc(x.honesty||'—')+'</span>';g+='<tr><td><b>'+esc(x.agent)+'</b></td><td class="ck-sm">'+esc(x.lastDispatch)+'</td><td>'+statusTag(x.status)+'</td><td>'+hon+'</td><td class="ck-sm">'+esc(x.note||'')+'</td></tr>';});
+    g+='</tbody></table>'; if($('ck-agents'))$('ck-agents').innerHTML=g;
+
+    // Pipeline
+    var p=head('💰','Pipeline — real 1,000+ unit deals',(CK.pipeline||[]).length);
+    p+='<table><thead><tr><th>Deal</th><th>Units</th><th>Product</th><th>Stage</th><th>Value</th><th>Owner</th></tr></thead><tbody>';
+    (CK.pipeline||[]).forEach(function(x){p+='<tr><td><b>'+esc(x.deal)+'</b></td><td>'+esc(x.units)+'</td><td class="ck-sm">'+esc(x.product)+'</td><td>'+statusTag(x.stage)+'</td><td>'+esc(x.value)+'</td><td class="ck-sm">'+esc(x.owner)+'</td></tr>';});
+    p+='</tbody></table>'; if($('ck-pipeline'))$('ck-pipeline').innerHTML=p;
+
+    // Calls hero + source
+    ckNextCall();
+    if($('ck-callsrc'))$('ck-callsrc').innerHTML=CK.callsSource?esc(CK.callsSource):'Source: meeting invites read from Sam@prvtlabellabs.com inbox. A live calendar connection gives reliable, complete pulls — see Agent Needs.';
+
+    // badges
+    setB('lb-r2150',(CK.r2150DoNext||[]).length);
+    setB('lb-calls',(CK.meetings||[]).length);
+    setB('lb-needs',(CK.setupNeeds||[]).length,(CK.setupNeeds||[]).length>0?'hot':'mute');
+    setB('lb-hub',(CK.agentHub&&CK.agentHub.agents?CK.agentHub.agents.length:0));
+    setB('lb-waiting',(CK.waitingOnSam||[]).length,(CK.waitingOnSam||[]).length>0?'hot':'mute');
+    setB('lb-pipeline',(CK.pipeline||[]).length);
+  }
+
+  function ckNextCall(){
+    var host=$('ck-nextcall'); if(!host)return;
+    var now=Date.now();
+    var up=(CK.meetings||[]).filter(function(m){return m.iso&&!isNaN(new Date(m.iso).getTime())&&new Date(m.iso).getTime()>now-3600000;}).sort(function(a,b){return new Date(a.iso)-new Date(b.iso);});
+    if(!up.length){host.innerHTML='<div class="ck-hero none"><div><div class="lbl">Next call</div><div class="time">—</div><div class="ttl">No upcoming calls loaded</div><div class="who">Refreshes each morning from your inbox invites.</div></div></div>';return;}
+    var n=up[0], t=new Date(n.iso).getTime(), mins=Math.round((t-now)/60000);
+    var cd=mins<0?'in progress':mins<60?mins+' min':Math.floor(mins/60)+'h '+(mins%60)+'m';
+    var join=n.join?'<a class="join" href="'+esc(n.join)+'" target="_blank">JOIN ↗</a>':'';
+    host.innerHTML='<div class="ck-hero"><div><div class="lbl">Your next call</div><div class="time">'+esc(n.time||'')+'</div><div class="ttl">'+esc(n.title||'')+'</div><div class="who">'+esc(n.with||'')+'</div></div><div class="cd"><div class="lbl">starts in</div><div class="num">'+esc(cd)+'</div>'+join+'</div></div>';
+  }
+
+  // ---- tab switching (orb-safe) ----
+  function showTab(t){
+    var btns=document.querySelectorAll('.labtabs button');
+    for(var i=0;i<btns.length;i++)btns[i].classList.toggle('active',btns[i].getAttribute('data-tab')===t);
+    var home=(t==='home');
+    var main=document.querySelector('.main'), dock=document.querySelector('.dock'), lx=$('labextra');
+    if(main)main.style.display=home?'':'none';
+    if(dock)dock.style.display=home?'':'none';
+    if(lx)lx.style.display=home?'none':'flex';
+    if(!home){var ps=document.querySelectorAll('#labextra .lp');for(var j=0;j<ps.length;j++)ps[j].classList.toggle('active',ps[j].getAttribute('data-panel')===t);}
+    else{try{window.dispatchEvent(new Event('resize'));}catch(e){}}
+    try{localStorage.setItem('pll_lab_tab',t);}catch(e){}
+  }
+  (function wire(){var btns=document.querySelectorAll('.labtabs button');for(var i=0;i<btns.length;i++){(function(b){b.addEventListener('click',function(){showTab(b.getAttribute('data-tab'));});})(btns[i]);}})();
+
+  // ---- meeting alarm (own audio; independent of orb voice) ----
+  var ckActx=null, ckFired={}, ckAlarmOn=false, ckAlarmLoop=null;
+  function ckBeep(){try{if(!ckActx)ckActx=new (window.AudioContext||window.webkitAudioContext)();if(ckActx.state==='suspended')ckActx.resume();var o=ckActx.createOscillator(),g=ckActx.createGain();o.type='sine';o.frequency.value=880;g.gain.value=0.3;o.connect(g);g.connect(ckActx.destination);o.start();o.stop(ckActx.currentTime+0.25);}catch(e){}}
+  function ckSpeak(txt){try{if('speechSynthesis' in window){var u=new SpeechSynthesisUtterance(txt);window.speechSynthesis.speak(u);}}catch(e){}}
+  window.ckDismissAlarm=function(){ckAlarmOn=false;if(ckAlarmLoop){clearInterval(ckAlarmLoop);ckAlarmLoop=null;}var el=$('ckAlarm');if(el)el.style.display='none';try{window.speechSynthesis.cancel();}catch(e){}};
+  function ckFireAlarm(mtg){if(ckAlarmOn)return;ckAlarmOn=true;
+    $('ckAlarmTitle').textContent=mtg.title+(mtg.with?(' — '+String(mtg.with).split('·')[0]):'');
+    $('ckAlarmTime').textContent=mtg.time||'';
+    $('ckAlarmJoin').innerHTML=mtg.join?'<a href="'+esc(mtg.join)+'" target="_blank">JOIN MEETING ↗</a>':'';
+    $('ckAlarm').style.display='flex';
+    var announce=function(){if(!ckAlarmOn)return;ckBeep();ckSpeak('You have a meeting now. '+mtg.title);};
+    announce();ckAlarmLoop=setInterval(announce,8000);}
+  function ckCheckMeetings(){if(!CK||!(CK.meetings||[]).length)return;var now=Date.now();CK.meetings.forEach(function(mtg,i){if(!mtg.iso)return;var t=new Date(mtg.iso).getTime();if(isNaN(t))return;var key=mtg.iso+'|'+i,lead=120000;if(now>=(t-lead)&&now<=(t+60000)&&!ckFired[key]){ckFired[key]=true;ckFireAlarm(mtg);}});}
+
+  // ---- load + loops ----
+  function ckLoad(){fetch(CK_URL+'?_='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){CK=d;ckRender();}).catch(function(e){console.error('cockpit data load failed',e);});}
+  ckLoad();
+  setInterval(ckLoad,180000);
+  setInterval(ckCheckMeetings,15000);
+  // restore last tab (default: Command Lab / orb)
+  try{var saved=localStorage.getItem('pll_lab_tab');if(saved&&saved!=='home')showTab(saved);}catch(e){}
+})();
+</script>
 </body>
 </html>
