@@ -65,6 +65,7 @@
   .spendbar{height:8px;border-radius:999px;background:#e7e2d8;overflow:hidden;margin-top:6px;width:160px}
   .spendbar > i{display:block;height:100%;background:linear-gradient(90deg,var(--green),#4c9e77)}
   .empty{padding:20px;color:var(--muted);font-size:13px;font-style:italic}
+  .hubline{margin:5px 0;line-height:1.5}
   footer{max-width:1500px;margin:0 auto;padding:0 24px 40px;color:var(--muted);font-size:12px}
   /* Meeting alarm */
   #alarm{position:fixed;inset:0;z-index:100;background:rgba(178,59,46,.96);color:#fff;
@@ -96,6 +97,7 @@
 <div class="wrap">
   <div class="grid">
     <div class="card span2" id="c-r2150"></div>
+    <div class="card span2" id="c-hub"></div>
     <div class="card" id="c-meetings"></div>
     <div class="card" id="c-waiting"></div>
     <div class="card" id="c-setup"></div>
@@ -172,6 +174,36 @@ function render(){
   });
   r += '</tbody></table>';
   document.getElementById('c-r2150').innerHTML = r;
+
+  // Agent Hub — live command ledger
+  const HUB = DATA.agentHub;
+  if(HUB){
+    let h = head('🛰️','Agent Hub — live command ledger', (HUB.agents||[]).length);
+    h += '<div class="hubline">'
+      + '<span class="tag t-ok">Drive LIVE</span> '
+      + '<span class="small">'+esc(HUB.driveStatus||'')+'</span></div>';
+    h += '<div class="hubline"><span class="small"><b>Built:</b> '+esc(HUB.built||'')+'</span></div>';
+    h += '<div class="hubline"><span class="tag t-ok">Proof</span> <span class="small">'+esc(HUB.proof||'')+'</span></div>';
+    h += '<div class="hubline">'
+      + '<span class="tag '+((HUB.honestyFlagsOpen||0)>0?'t-hot':'t-ok')+'">Honesty flags in ledger: '+esc(HUB.honestyFlagsOpen||0)+'</span> '
+      + '<span class="tag '+((HUB.disagreementsOpen||0)>0?'t-warn':'t-mute')+'">Open disagreements: '+esc(HUB.disagreementsOpen||0)+'</span></div>';
+    h += '<table><thead><tr><th>Agent</th><th>Lane</th><th>Charter</th><th>Model default</th><th>Wired?</th></tr></thead><tbody>';
+    (HUB.agents||[]).forEach(x=>{
+      const ch = x.charter ? '<span class="tag t-ok">✓ set</span>' : '<span class="tag t-mute">—</span>';
+      const wired = /active|live/i.test(x.wired||'') ? '<span class="tag t-ok">'+esc(x.wired)+'</span>'
+        : /not yet|not stood/i.test(x.wired||'') ? '<span class="tag t-mute">'+esc(x.wired)+'</span>'
+        : '<span class="tag t-warn">'+esc(x.wired||'—')+'</span>';
+      h += '<tr><td><b>'+esc(x.agent)+'</b></td><td class="small">'+esc(x.lane)+'</td><td>'+ch+'</td><td class="small">'+esc(x.model)+'</td><td>'+wired+'</td></tr>';
+    });
+    h += '</tbody></table>';
+    if(HUB.lastDispatch){
+      const d=HUB.lastDispatch;
+      h += '<div class="hubline small"><b>Last dispatch:</b> '+esc(d.id)+' → '+esc(d.to)+' · '+esc(d.task)+' · '+statusTag(d.status)+' <i>'+esc(d.note||'')+'</i></div>';
+    }
+    document.getElementById('c-hub').innerHTML = h;
+  } else {
+    document.getElementById('c-hub').innerHTML = head('🛰️','Agent Hub', 0)+emptyRow('Hub data not loaded.');
+  }
 
   // Meetings
   let m = head('📅','Today\u2019s Meetings', (DATA.meetings||[]).length);
