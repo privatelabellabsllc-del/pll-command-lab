@@ -1,41 +1,37 @@
 {
-  "date": "2026-09-01",
-  "ts": "2026-09-01T11:09:16.840Z",
+  "date": "2026-09-02",
+  "ts": "2026-09-02T11:06:07.493Z",
   "brief": [
     {
-      "t": "Morning refresh for September 1: no newer day-updates.jsonl entry was available, so the last verified business facts and Ads cache are carried forward; today's calendar adds Payroll at 11am and Tammye Hall at 2pm ET.",
+      "t": "Morning refresh for September 2: no newer narrated day-update was available, so the verified operating facts and Ads cache are carried forward; Outlook mail confirms one reliable meeting today at 1pm ET.",
       "hot": true
     },
     {
-      "t": "#1: Prepare the 2pm ET Tammye Hall call. The Google Meet link is live, but she previously expected a phone call; confirm the format and agenda before the meeting.",
+      "t": "#1: Lock the Talova reorder today. Marcello said Coco Vanilla went viral and wants to reorder; confirm Kenna’s small revisions, then Sam calls or messages Marcello before another day leaks.",
       "hot": true
     },
     {
-      "t": "#2: Resolve the urgent Morning Glory label corrections before print. Production is reportedly underway, so verify whether labels have printed and route the artwork/regulatory review.",
+      "t": "#2: Verify Terra Lotus’s 19,000-unit sample checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K. Confirm all three sets shipped or arrived before rebuilding the suspended quote.",
       "hot": true
     },
     {
-      "t": "#3: Mark Higgins sent the ingredient brief for two aluminum-free roll-on deodorants; review it with formulation and choose the chemist-call time before pricing.",
+      "t": "#3: Protect the Atlas Eternal $26,500 production handoff. Spot-check Aaron, Ronald, Evelyn, and Laura’s four lanes so the $13,250 completion balance is earned by verified delivery.",
       "hot": true
     },
     {
-      "t": "#4: Gridlot needs a clean, project-specific beef-tallow NDA; the approved PLL_NDA_Template.docx is still missing from the sending library.",
+      "t": "#4: Review last night’s Command Lab build, then answer the four unlock questions: meeting source, reminder channel, notetaker, and the short sit-down to connect real agent accounts.",
       "hot": false
     },
     {
-      "t": "#5: Amanda at Studio S5 is waiting on certification timing, the 5,000-unit credit mechanics, and separate packaging/labeling pricing; Sam must supply the commercial direction.",
-      "hot": false
-    },
-    {
-      "t": "#6: Ads remain read-only with the verified Aug 31 nightly cache preserved; no campaign, bid, budget, or landing-page changes were made.",
+      "t": "#5: Ads remain a read-only watch: both net-new campaigns still have zero conversion tracking and CPC is up about 32%; say “revert ads to manual” only if Sam authorizes the change.",
       "hot": false
     }
   ],
   "next": [
-    "Prepare and clearly confirm the 2pm ET Tammye Hall call format and agenda",
-    "Verify Morning Glory label print status and review the requested corrections before further production",
-    "Review Mark Higgins' ingredient brief and confirm a chemist-call time with Ron and Evelyn",
-    "Provide direction on Gridlot's clean NDA and Studio S5's certification/credit/pricing questions"
+    "Confirm Kenna’s revisions and lock Marcello’s Talova reorder today",
+    "Verify Terra Lotus’s three sample sets shipped or arrived, then prepare the revised quote for Sam sign-off",
+    "Spot-check all four Atlas Eternal production lanes and protect the $13,250 completion balance",
+    "Review the Command Lab build and provide the calendar, reminder, notetaker, and agent-account answers"
   ],
   "kb": [
     {
@@ -277,7 +273,7 @@
         "today",
         "priority"
       ],
-      "a": "Sam’s Sept 1 lane is to protect the 2pm Tammye Hall call, resolve the urgent Morning Glory label review, review Mark Higgins’s ingredient brief, and provide direction on Gridlot’s NDA and Studio S5’s questions. Enso’s 9:15am proposal is not confirmed by Sam; Payroll is on the calendar at 11am ET. No new day-update entry was available."
+      "a": "Sam’s September 2 lane is to lock the Talova reorder, verify Terra Lotus’s three sample sets, spot-check Atlas Eternal’s four production handoffs, and review the Command Lab build. The four setup answers needed are a reliable calendar source, reminder channel, notetaker decision, and short sit-down to connect the real agent accounts. No newer narrated day-update is available."
     },
     {
       "keys": [
@@ -286,7 +282,7 @@
         "production lanes",
         "terra coordination"
       ],
-      "a": "Aidan is driving Atlas Eternal’s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus’s 19,000-unit sample checkpoint. He should support Mark Higgins’s formulation review and confirm the three Terra sample sets shipped; neither Terra shipment nor any new completion is verified here."
+      "a": "Aidan is driving Atlas Eternal’s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus’s 19,000-unit sample checkpoint. Today he should spot-check Aaron, Ronald, Evelyn, and Laura’s handoffs and confirm all three Terra sample sets shipped or arrived; neither Terra shipment nor a new Atlas completion is verified."
     },
     {
       "keys": [
@@ -298,7 +294,7 @@
         "kenna revisions",
         "po"
       ],
-      "a": "Talova Labs’ Marcello remains a warm reorder lane for Coco Vanilla. Before Sam locks the PO, PLL still needs a clean confirmation that Kenna’s small revisions were received; that confirmation is not present in today’s sources."
+      "a": "Talova Labs’ Marcello replied August 18 that Coco Vanilla went viral and he wants to reorder. This is the warmest dollar on the board and has leaked for 15-plus days; confirm Kenna’s small revisions, then Sam should call or message Marcello today to lock the reorder."
     },
     {
       "keys": [
@@ -314,7 +310,7 @@
         "conditioner 5k",
         "shipment"
       ],
-      "a": "Terra Lotus has 19,000 units in R&D at a sample-shipment checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K. The current sources do not confirm shipment, so Aidan/Ronald must verify all three sets before the next commercial step."
+      "a": "Terra Lotus has 19,000 units in R&D: Shampoo 5K, Body Wash 9K, and Conditioner 5K. The sample checkpoint around August 24 may have passed, but shipment or arrival is not verified; confirm all three sets, then build a revised quote because the old $78,580 quote is suspended and Sam must sign off."
     },
     {
       "keys": [
@@ -337,7 +333,7 @@
         "manufacturing",
         "fulfillment"
       ],
-      "a": "Tammye Hall is booked for Tuesday, September 1 from 2:00–2:30pm ET with Google Meet link https://meet.google.com/ohj-dbga-fej. She previously missed a meeting because she expected a phone call, so confirm the format and agenda explicitly before this manufacturing-and-fulfillment discussion."
+      "a": "Tammye Hall’s September 1 manufacturing-and-fulfillment call is historical, not a September 2 meeting. The prior format miss is recorded, but there is no new Tammye booking in today’s reliable Outlook meeting evidence."
     },
     {
       "keys": [
@@ -415,237 +411,216 @@
   "topTasks": [
     {
       "rank": 1,
-      "title": "Prepare Tammye Hall 2pm call",
-      "why": "The Sept 1 2:00–2:30pm ET Meet event is confirmed, but Tammye previously expected a phone call; prevent another format miss.",
-      "owner": "Sam / Consultant",
-      "due": "Today 2:00pm ET",
+      "title": "Lock Talova reorder with Marcello",
+      "why": "Marcello said Coco Vanilla went viral and wants to reorder; this warm customer-led opportunity has already leaked 15-plus days.",
+      "owner": "Sam / Aaron",
+      "due": "Today",
       "priority": "critical",
-      "revenue": "Tammye Hall",
-      "status": "BOOKED — FORMAT CONFIRMATION NEEDED"
+      "revenue": "Talova Labs",
+      "status": "CONFIRM KENNA REVISIONS → CALL/MESSAGE MARCELLO"
     },
     {
       "rank": 2,
-      "title": "Stop Morning Glory label ambiguity",
-      "why": "James Bailey requested urgent pre-print label corrections while production is reportedly underway.",
-      "owner": "Sam / James",
+      "title": "Verify Terra Lotus sample checkpoint",
+      "why": "Three R&D products total 19,000 units, but no source confirms the Shampoo, Body Wash, and Conditioner samples shipped or arrived.",
+      "owner": "Aidan / Ronald",
       "due": "Today",
       "priority": "critical",
-      "revenue": "Morning Glory",
-      "status": "VERIFY PRINT STATUS / ROUTE REGULATORY REVIEW"
+      "revenue": "Terra Lotus",
+      "status": "VERIFY 3 SETS → REBUILD REVISED QUOTE"
     },
     {
       "rank": 3,
-      "title": "Review Mark Higgins deodorant brief",
-      "why": "The ingredient brief for two aluminum-free roll-ons is ready for formulation review before pricing and the follow-up call.",
-      "owner": "Sam / Aidan / Ronald",
+      "title": "Verify Atlas Eternal production handoffs",
+      "why": "The $26,500 production account has $13,250 due on completion; the balance depends on four lanes actually moving.",
+      "owner": "Aidan",
       "due": "Today",
       "priority": "high",
-      "revenue": "Mark Higgins",
-      "status": "FORMULATION REVIEW / CALL TIME NEEDED"
+      "revenue": "Atlas Eternal",
+      "status": "SPOT-CHECK AARON / RONALD / EVELYN / LAURA"
     },
     {
       "rank": 4,
-      "title": "Correct Gridlot NDA",
-      "why": "Yianni says the previously sent NDA belongs to another project; the approved clean template is not in Nina’s library.",
-      "owner": "Sam / Consultant",
+      "title": "Review Command Lab build and unlock hub",
+      "why": "The shared PLL Command foundation and first dispatch are real and reversible; four Sam decisions and a short account-connection sit-down remain.",
+      "owner": "Sam / Executive",
       "due": "Today",
       "priority": "high",
-      "revenue": "Gridlot Partners",
-      "status": "CLEAN NDA BLOCKED ON TEMPLATE"
+      "revenue": "PLL Command Lab",
+      "status": "4 ANSWERS + AGENT-ACCOUNT SIT-DOWN NEEDED"
     },
     {
       "rank": 5,
-      "title": "Answer Studio S5 commercial questions",
-      "why": "Amanda needs certification timing, exact 5,000-unit credit treatment, and packaging/labeling pricing before deciding.",
-      "owner": "Sam",
-      "due": "Today",
+      "title": "Stop Ads bleed when authorized",
+      "why": "Both net-new campaigns are on Maximize Conversions with zero conversion tracking and CPC is up about 32%.",
+      "owner": "Sam / Ads Agent",
+      "due": "On Sam authorization",
       "priority": "high",
-      "revenue": "Studio S5",
-      "status": "SAM DIRECTION NEEDED"
-    },
-    {
-      "rank": 6,
-      "title": "Confirm Enso 9:15am proposal",
-      "why": "Gilad proposed Sept 1 at 9:15am or 1pm ET and Aidan accepted 9:15, but Sam’s confirmation is not recorded.",
-      "owner": "Sam / Aidan",
-      "due": "Today 9:15am ET",
-      "priority": "high",
-      "revenue": "Enso Brands",
-      "status": "PROPOSED — NOT CONFIRMED"
+      "revenue": "Paid acquisition",
+      "status": "WAITING FOR “REVERT ADS TO MANUAL”"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Handle the Tammye 2pm call format, Morning Glory print-status escalation, Mark Higgins review, and the Gridlot/Studio S5 decisions.",
+      "top_task": "Lock Talova, verify Terra samples, spot-check Atlas handoffs, and review the Command Lab unlock decisions.",
       "tasks": [
         {
-          "title": "Confirm Tammye Hall’s 2pm ET call format and agenda",
-          "due": "Today 2:00pm ET"
-        },
-        {
-          "title": "Verify whether Morning Glory labels have printed and direct the correction review",
+          "title": "Confirm Kenna’s revisions and lock Marcello’s Talova reorder",
           "due": "Today"
         },
         {
-          "title": "Review Mark Higgins’s ingredient brief and choose a chemist-call time",
+          "title": "Verify Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped or arrived",
           "due": "Today"
         },
         {
-          "title": "Provide Gridlot NDA and Studio S5 commercial direction",
+          "title": "Spot-check Atlas Eternal’s four production lanes",
           "due": "Today"
         },
         {
-          "title": "Confirm or decline Enso’s proposed 9:15am ET meeting",
+          "title": "Answer calendar, reminder, notetaker, and agent-account setup questions",
           "due": "Today"
         }
       ],
-      "notes": "The Sept 1 calendar also contains Payroll at 11am ET. No new day-update was available; do not treat unconfirmed proposals as booked."
+      "notes": "No newer narrated day-update is available. Outlook mail confirms Mark Higgins at 1:00pm ET today; no other reliable Sep 2 meeting was found."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Drive Atlas Eternal production and support Mark Higgins formulation review and Terra Lotus shipment verification.",
+      "top_task": "Verify Atlas Eternal handoffs and Terra Lotus’s three sample sets.",
       "tasks": [
         {
-          "title": "Drive Atlas Eternal $26,500 production across four lanes",
-          "due": "On completion"
-        },
-        {
-          "title": "Support Mark Higgins brief review and confirm formulation inputs",
+          "title": "Spot-check Aaron, Ronald, Evelyn, and Laura’s Atlas Eternal lanes",
           "due": "Today"
         },
         {
-          "title": "Confirm Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped",
+          "title": "Confirm Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped or arrived",
           "due": "Today"
+        },
+        {
+          "title": "Support the Mark Higgins formulation discussion with Ron and Evelyn",
+          "due": "Today 1:00pm ET"
         }
       ],
-      "notes": "Atlas has $13,250 due on completion. Terra’s 19,000-unit sample shipment remains unconfirmed."
+      "notes": "Atlas is $26,500 with $13,250 due on completion. Terra’s sample shipment remains unverified."
     },
     "aaron": {
       "display_name": "Aaron",
-      "top_task": "Verify Kenna’s revisions for the Talova reorder before Sam locks the PO.",
+      "top_task": "Confirm Kenna’s revision details so Sam can close the Talova reorder.",
       "tasks": [
         {
-          "title": "Confirm whether PLL received Kenna’s revised formula details",
-          "due": "Today"
-        }
-      ],
-      "notes": "Talova/Marcello remains a warm lane, but the Kenna-revision confirmation is not verified."
-    },
-    "james": {
-      "display_name": "James",
-      "top_task": "Escalate Morning Glory label corrections and resolve the AF Brand meeting ownership.",
-      "tasks": [
-        {
-          "title": "Verify Morning Glory label print status and route the correction checklist",
+          "title": "Verify whether PLL received Kenna’s revised formula details",
           "due": "Today"
         },
         {
-          "title": "Resolve ownership/attendance for the AF Brand Sept 2 meeting",
-          "due": "Tomorrow"
+          "title": "Report any Atlas Eternal lane blocker in the handoff check",
+          "due": "Today"
         }
       ],
-      "notes": "James is also copied on the AF Brand invite; Sam is marked declined and Laura accepted."
+      "notes": "Talova/Marcello is the warmest lane; do not claim the reorder is locked until Sam confirms it."
+    },
+    "james": {
+      "display_name": "James",
+      "top_task": "Support the Command Lab account-connection sit-down and keep operational handoffs honest.",
+      "tasks": [
+        {
+          "title": "Join the short sit-down to connect the real agent accounts if assigned",
+          "due": "Today"
+        },
+        {
+          "title": "Flag any stalled Atlas Eternal handoff rather than reporting work that has not started",
+          "due": "Today"
+        }
+      ],
+      "notes": "No new James-specific client completion is recorded in today’s sources."
     },
     "nikkie": {
       "display_name": "Nikkie",
-      "top_task": "Continue outbound sales and qualify active inbound opportunities.",
+      "top_task": "Continue outbound sales and qualify active inbound opportunities without overstating status.",
       "tasks": [
         {
           "title": "Work active white-label inquiries and book qualified next steps",
           "due": "Ongoing"
         },
         {
-          "title": "Resolve outstanding Curly 911/Victoria timing details",
+          "title": "Keep Curly 911/Victoria timing details current",
           "due": "Ongoing"
         }
       ],
-      "notes": "Nikkie’s opportunities remain active and none should be described as closed without verified CRM evidence."
+      "notes": "Active opportunities remain open; none should be called closed without verified evidence."
     }
   },
   "revenueActions": [
     {
-      "title": "Protect Tammye Hall call",
-      "why": "The Sept 1 2pm ET Meet is confirmed, but the client previously expected a phone call.",
+      "title": "Lock Talova reorder",
+      "why": "Marcello’s Coco Vanilla went viral and he asked to reorder; the customer is already raising his hand.",
       "est_value": "Not stated",
-      "next_step": "Send/confirm the actual format and agenda, then run the manufacturing-and-fulfillment qualification call.",
-      "owner": "Sam / Consultant",
-      "timing": "Today 2:00pm ET",
-      "value": "Booked discovery call",
-      "status": "FORMAT CONFIRMATION NEEDED"
-    },
-    {
-      "title": "Resolve Morning Glory label corrections",
-      "why": "Client reports production is underway and requests urgent pre-print review.",
-      "est_value": "Existing production account",
-      "next_step": "Verify whether labels printed; then route net contents, INCI/order, company details, claims substantiation, warnings, legibility, lot/UPC, and artwork review.",
-      "owner": "Sam / James",
+      "next_step": "Confirm Kenna’s small revisions, then Sam calls or messages Marcello today to lock the reorder.",
+      "owner": "Sam / Aaron",
       "timing": "Today",
-      "value": "Production continuity",
-      "status": "URGENT VERIFICATION"
+      "value": "Warm reorder / recurring revenue",
+      "status": "REVISION CONFIRMATION NEEDED"
     },
     {
-      "title": "Advance Mark Higgins quote lane",
-      "why": "The requested ingredient brief for two roll-on deodorants is now available for formulation review.",
-      "est_value": "Not stated",
-      "next_step": "Review with formulation, confirm the Ron/Evelyn call time, and price only after required inputs are validated.",
-      "owner": "Sam / Aidan / Ronald",
+      "title": "Advance Terra Lotus R&D checkpoint",
+      "why": "Shampoo 5K, Body Wash 9K, and Conditioner 5K total 19,000 units, but sample shipment/arrival is unverified.",
+      "est_value": "Old quote $78,580 suspended",
+      "next_step": "Confirm all three sample sets shipped or arrived; then build the revised quote and obtain Sam sign-off before customer delivery.",
+      "owner": "Aidan / Ronald / Sam",
       "timing": "Today",
-      "value": "Quote-ready after review",
-      "status": "FORMULATION REVIEW NEEDED"
+      "value": "19,000-unit R&D opportunity",
+      "status": "SAMPLE VERIFICATION NEEDED"
     },
     {
-      "title": "Repair Gridlot NDA",
-      "why": "The prior NDA appears to belong to another project, blocking the beef-tallow opportunity.",
-      "est_value": "Not stated",
-      "next_step": "Locate/approve the clean PLL NDA template, keep Seb copied, and do not send until the document is verified.",
-      "owner": "Sam / Consultant",
+      "title": "Protect Atlas Eternal completion balance",
+      "why": "The $26,500 account has $13,250 due on completion, so four production handoffs must be real and verified.",
+      "est_value": "$13,250 balance due",
+      "next_step": "Spot-check Aaron, Ronald, Evelyn, and Laura’s lanes and flag any stall before client status is reported.",
+      "owner": "Aidan / Sam",
       "timing": "Today",
-      "value": "Active opportunity",
-      "status": "TEMPLATE MISSING"
+      "value": "$26,500 production account",
+      "status": "HANDOFF VERIFICATION NEEDED"
     },
     {
-      "title": "Answer Studio S5 questions",
-      "why": "Amanda needs certification timing, credit mechanics, and separate packaging/labeling pricing before deciding.",
-      "est_value": "Not stated",
-      "next_step": "Sam supplies the exact commercial/regulatory direction; no commitments were made by Nina.",
-      "owner": "Sam",
+      "title": "Unlock Command Lab operations",
+      "why": "The shared foundation and first dispatch are live; the remaining blocker is Sam’s setup decisions and account-connection sit-down.",
+      "est_value": "Operational leverage",
+      "next_step": "Answer meeting source, reminder channel, notetaker, and sit-down questions; then redline what to cut on the TV cockpit.",
+      "owner": "Sam / Executive",
       "timing": "Today",
-      "value": "Active lead",
-      "status": "DIRECTION NEEDED"
+      "value": "Agent hub / execution capacity",
+      "status": "SAM INPUT NEEDED"
     },
     {
-      "title": "Confirm Enso meeting proposal",
-      "why": "A Sept 1 9:15am ET review was accepted by Aidan but not confirmed by Sam.",
-      "est_value": "Not stated",
-      "next_step": "Confirm or decline before treating the meeting as booked; clarify scope and any account-access or fee decisions.",
-      "owner": "Sam / Aidan",
-      "timing": "Today 9:15am ET",
-      "value": "Launch/PPC review",
-      "status": "PROPOSED — NOT CONFIRMED"
+      "title": "Control Ads bleed",
+      "why": "Both net-new campaigns have zero conversion tracking and CPC is up about 32%.",
+      "est_value": "Paid-acquisition efficiency",
+      "next_step": "Only after Sam says “revert ads to manual,” move both campaigns to Manual CPC and verify live; otherwise remain read-only.",
+      "owner": "Sam / Ads Agent",
+      "timing": "On authorization",
+      "value": "Cost control",
+      "status": "READ-ONLY / APPROVAL REQUIRED"
     }
   ],
   "pipelineStat": {
-    "total_value": "$26,500 Atlas Eternal; other active opportunities not stated",
+    "total_value": "$26,500 Atlas Eternal; Talova reorder and Terra Lotus 19,000-unit opportunity are active with values not yet stated",
     "active_deals": 12,
     "hot": [
-      "Tammye Hall — Sept 1 2pm ET booked call, format must be confirmed",
-      "Morning Glory — urgent label corrections while production status is unverified",
-      "Mark Higgins — ingredient brief received, formulation review before pricing",
-      "Gridlot — clean NDA blocked on approved template",
-      "Studio S5 — Sam direction needed on certification/credit/pricing"
+      "Talova/Marcello — viral Coco Vanilla reorder; confirm Kenna revisions and lock today",
+      "Terra Lotus — 19,000 units across three products; verify sample shipment/arrival",
+      "Atlas Eternal — $26,500 production; verify four handoffs before $13,250 balance",
+      "Command Lab — foundation live; four setup answers plus account sit-down needed"
     ],
     "stalled": [
-      "Enso — Sept 1 meeting proposal not confirmed by Sam",
-      "Talova/Marcello — Kenna revision receipt still needs verification",
-      "Terra Lotus — 19,000-unit sample shipment still needs confirmation",
-      "Amanda/Studio S5 — waiting on exact commercial answers"
+      "Talova — Kenna revision receipt still needs confirmation",
+      "Terra Lotus — three sample sets still unverified",
+      "Atlas Eternal — completion handoffs need independent spot-check",
+      "Ads — zero conversion tracking; Manual-CPC revert awaits Sam"
     ],
     "activeDeals": 12,
     "pipelineValue": 26500,
     "inProduction": 2,
     "depositsCollected": null,
-    "note": "Sept 1 lane: protect the Tammye call, resolve Morning Glory label status, review Mark Higgins’s brief, then clear Gridlot and Studio S5 decisions. Named pipeline value remains limited to verified Atlas Eternal value.",
+    "note": "September 2 lane: lock Talova first, verify Terra, protect Atlas, then unlock the Command Lab. Named pipeline value remains limited to verified Atlas Eternal value.",
     "monthlyTarget": "$150K",
     "achievableDepositsThisMonth": "Not stated in today’s verified sources."
   },
@@ -707,7 +682,7 @@
           "spend": 124.780147,
           "impressions": 883,
           "clicks": 53,
-          "ctrPct": 6.0,
+          "ctrPct": 6,
           "avgCpc": 2.354342396226415,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
@@ -723,7 +698,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ],
       "prior": [
@@ -747,7 +722,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ],
       "today": [
@@ -771,7 +746,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ]
     },
@@ -819,7 +794,7 @@
           "spend": 0,
           "impressions": 38,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -905,7 +880,7 @@
           "spend": 0,
           "impressions": 15,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -967,7 +942,7 @@
           "spend": 0.130096,
           "impressions": 2,
           "clicks": 1,
-          "ctrPct": 50.0,
+          "ctrPct": 50,
           "avgCpc": 0.130096,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -979,7 +954,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -991,7 +966,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1003,7 +978,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1015,7 +990,7 @@
           "spend": 13.07,
           "impressions": 4,
           "clicks": 1,
-          "ctrPct": 25.0,
+          "ctrPct": 25,
           "avgCpc": 13.07,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1039,7 +1014,7 @@
           "spend": 0,
           "impressions": 12,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         }
@@ -1095,7 +1070,7 @@
     "capHealth": {
       "configuredDailyBudgets": {
         "PLL-Search-ContractMfg-2026": 20.33,
-        "PLL-Search-Samples-2026": 5.0,
+        "PLL-Search-Samples-2026": 5,
         "combinedDaily": 25.33,
         "combinedSevenDay": 177.31
       },
@@ -1197,7 +1172,7 @@
           "spend": 124.780147,
           "impressions": 883,
           "clicks": 53,
-          "ctrPct": 6.0,
+          "ctrPct": 6,
           "avgCpc": 2.354342396226415,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
@@ -1213,7 +1188,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ],
       "prior": [
@@ -1237,7 +1212,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ],
       "today": [
@@ -1261,7 +1236,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ]
     },
@@ -1309,7 +1284,7 @@
           "spend": 0,
           "impressions": 38,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1395,7 +1370,7 @@
           "spend": 0,
           "impressions": 15,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1457,7 +1432,7 @@
           "spend": 0.130096,
           "impressions": 2,
           "clicks": 1,
-          "ctrPct": 50.0,
+          "ctrPct": 50,
           "avgCpc": 0.130096,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1469,7 +1444,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1481,7 +1456,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1493,7 +1468,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1505,7 +1480,7 @@
           "spend": 13.07,
           "impressions": 4,
           "clicks": 1,
-          "ctrPct": 25.0,
+          "ctrPct": 25,
           "avgCpc": 13.07,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1529,7 +1504,7 @@
           "spend": 0,
           "impressions": 12,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         }
@@ -1585,7 +1560,7 @@
     "health": {
       "configuredDailyBudgets": {
         "PLL-Search-ContractMfg-2026": 20.33,
-        "PLL-Search-Samples-2026": 5.0,
+        "PLL-Search-Samples-2026": 5,
         "combinedDaily": 25.33,
         "combinedSevenDay": 177.31
       },
@@ -1626,10 +1601,10 @@
       "adGroupId": "200118474604",
       "campaignId": "24049588003",
       "status": "ENABLED",
-      "spend": 0.0,
+      "spend": 0,
       "impressions": 38,
       "clicks": 0,
-      "ctrPct": 0.0,
+      "ctrPct": 0,
       "avgCpc": null,
       "campaign": "PLL-Search-ContractMfg-2026",
       "level": "queried-candidate-ad",
