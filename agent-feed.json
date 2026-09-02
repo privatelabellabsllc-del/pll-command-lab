@@ -106,10 +106,10 @@
       "reply_to": null
     },
     {
-      "id": "m_ads_nightly_20260901",
+      "id": "m_ads_nightly_20260902",
       "agent": "ads",
-      "ts": "2026-09-01T01:13:00Z",
-      "text": "Ads nightly 8/31 result received: all six enabled; $26.68 today / 664 impressions / 25 clicks / $1.07 CPC, $9.32 under the $36 cap; T7 $198.23, MTD $853.51. No new form leads; two booked calls are unattributed. No changes or pauses. Structured Ads cache refresh blocked because the callback supplied no ads_intelligence object; brief.json unchanged.",
+      "ts": "2026-09-02T02:03:13Z",
+      "text": "Ads nightly 9/1 result received: managed spend $30.08/$36 cap and T7 $198.23 versus $201.40 prior, with no managed Ads-attributed result verified; all six campaigns, forms/tracking, and three landing URLs are healthy. No changes or pauses; structured Ads cache refresh blocked because the callback supplied no ads_intelligence object; brief.json unchanged.",
       "kind": "status",
       "reply_to": null
     }
