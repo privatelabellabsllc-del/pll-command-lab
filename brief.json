@@ -1,37 +1,33 @@
 {
-  "date": "2026-09-02",
-  "ts": "2026-09-02T11:06:07.493Z",
+  "date": "2026-09-03",
+  "ts": "2026-09-03T11:00:00Z",
   "brief": [
     {
-      "t": "Morning refresh for September 2: no newer narrated day-update was available, so the verified operating facts and Ads cache are carried forward; Outlook mail confirms one reliable meeting today at 1pm ET.",
+      "t": "Morning refresh for September 3: today’s calls are not verifiable from the connected Google Calendar; it is not Sam’s full schedule. Friday at 11:00 AM ET has a prominent double-booking that needs resolution.",
       "hot": true
     },
     {
-      "t": "#1: Lock the Talova reorder today. Marcello said Coco Vanilla went viral and wants to reorder; confirm Kenna\u2019s small revisions, then Sam calls or messages Marcello before another day leaks.",
+      "t": "Friday 11:00 AM ET conflict: Austin (Radiant Glow) has not responded, while Ari Levitin’s DEWPAD R&D Review has seven attendees and Ari confirmed by email. Executive recommends moving Austin to 10:00 AM ET.",
       "hot": true
     },
     {
-      "t": "#2: Verify Terra Lotus\u2019s 19,000-unit sample checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K. Confirm all three sets shipped or arrived before rebuilding the suspended quote.",
+      "t": "Waiting on Sam: revert Ads to Manual CPC, authorize conversion tracking, decide whether legacy campaigns keep about $447 per month, approve ConvertFlow redlines, and authorize the six pending quotes.",
       "hot": true
     },
     {
-      "t": "#3: Protect the Atlas Eternal $26,500 production handoff. Spot-check Aaron, Ronald, Evelyn, and Laura\u2019s four lanes so the $13,250 completion balance is earned by verified delivery.",
+      "t": "Qualify new inbound: Mark C. peptide testing, Victoria/Curly 911 tech transfer, Shameka Lee braiding spray with Calendly booked, plus Wahid Habib, Nikkie Aroh, Darryl, and Uri bookings.",
       "hot": true
     },
     {
-      "t": "#4: Review last night\u2019s Command Lab build, then answer the four unlock questions: meeting source, reminder channel, notetaker, and the short sit-down to connect real agent accounts.",
-      "hot": false
-    },
-    {
-      "t": "#5: Ads remain a read-only watch: both net-new campaigns still have zero conversion tracking and CPC is up about 32%; say \u201crevert ads to manual\u201d only if Sam authorizes the change.",
+      "t": "Verified Ads snapshot for Aug 27–Sep 2: $305.73 account spend, 528 clicks, $0.58 CPC, 1.61% CTR, zero conversions; six enabled campaigns and 21 enabled ads.",
       "hot": false
     }
   ],
   "next": [
-    "Confirm Kenna\u2019s revisions and lock Marcello\u2019s Talova reorder today",
-    "Verify Terra Lotus\u2019s three sample sets shipped or arrived, then prepare the revised quote for Sam sign-off",
-    "Spot-check all four Atlas Eternal production lanes and protect the $13,250 completion balance",
-    "Review the Command Lab build and provide the calendar, reminder, notetaker, and agent-account answers"
+    "Resolve Friday 11:00 AM ET double-booking; recommend moving Austin to 10:00 AM ET",
+    "Answer Ads decisions: Manual CPC, conversion tracking, and legacy-campaign ~$447/month disposition",
+    "Review ConvertFlow fork mockup redlines and authorize pending quotes: Ethnic Gals, Rannah/Aytay, Emma/Wagyu, Victor",
+    "Qualify Mark C., Victoria/Curly 911, Shameka Lee, Wahid Habib, Nikkie Aroh, Darryl, and Uri"
   ],
   "kb": [
     {
@@ -211,7 +207,7 @@
         "shopify",
         "not shipped"
       ],
-      "a": "Lisa Christensen\u2019s order 1467 still shows not shipped after 10-plus days, although she received an on-its-way email. The live status needs checking and Laura owns an honest customer reply today; shipment is not confirmed from the email alone."
+      "a": "Lisa Christensen’s order 1467 still shows not shipped after 10-plus days, although she received an on-its-way email. The live status needs checking and Laura owns an honest customer reply today; shipment is not confirmed from the email alone."
     },
     {
       "keys": [
@@ -220,7 +216,7 @@
         "manual cpc",
         "contractmfg"
       ],
-      "a": "The Geo Twin, PLL-Search-ContractMfg-2026 #2, was re-enabled and spent $10.12 on August 23 after zero spend August 20\u201322. Sam must decide whether to pause it or keep it in the Manual-CPC plan; the main campaigns remain on Maximize Conversions pending approval."
+      "a": "The Geo Twin, PLL-Search-ContractMfg-2026 #2, was re-enabled and spent $10.12 on August 23 after zero spend August 20–22. Sam must decide whether to pause it or keep it in the Manual-CPC plan; the main campaigns remain on Maximize Conversions pending approval."
     },
     {
       "keys": [
@@ -273,7 +269,7 @@
         "today",
         "priority"
       ],
-      "a": "Sam\u2019s September 2 lane is to lock the Talova reorder, verify Terra Lotus\u2019s three sample sets, spot-check Atlas Eternal\u2019s four production handoffs, and review the Command Lab build. The four setup answers needed are a reliable calendar source, reminder channel, notetaker decision, and short sit-down to connect the real agent accounts. No newer narrated day-update is available."
+      "a": "Sam’s Sept 1 lane is to protect the 2pm Tammye Hall call, resolve the urgent Morning Glory label review, review Mark Higgins’s ingredient brief, and provide direction on Gridlot’s NDA and Studio S5’s questions. Enso’s 9:15am proposal is not confirmed by Sam; Payroll is on the calendar at 11am ET. No new day-update entry was available."
     },
     {
       "keys": [
@@ -282,7 +278,7 @@
         "production lanes",
         "terra coordination"
       ],
-      "a": "Aidan is driving Atlas Eternal\u2019s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus\u2019s 19,000-unit sample checkpoint. Today he should spot-check Aaron, Ronald, Evelyn, and Laura\u2019s handoffs and confirm all three Terra sample sets shipped or arrived; neither Terra shipment nor a new Atlas completion is verified."
+      "a": "Aidan is driving Atlas Eternal’s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus’s 19,000-unit sample checkpoint. He should support Mark Higgins’s formulation review and confirm the three Terra sample sets shipped; neither Terra shipment nor any new completion is verified here."
     },
     {
       "keys": [
@@ -294,7 +290,7 @@
         "kenna revisions",
         "po"
       ],
-      "a": "Talova Labs\u2019 Marcello replied August 18 that Coco Vanilla went viral and he wants to reorder. This is the warmest dollar on the board and has leaked for 15-plus days; confirm Kenna\u2019s small revisions, then Sam should call or message Marcello today to lock the reorder."
+      "a": "Talova Labs’ Marcello remains a warm reorder lane for Coco Vanilla. Before Sam locks the PO, PLL still needs a clean confirmation that Kenna’s small revisions were received; that confirmation is not present in today’s sources."
     },
     {
       "keys": [
@@ -310,7 +306,7 @@
         "conditioner 5k",
         "shipment"
       ],
-      "a": "Terra Lotus has 19,000 units in R&D: Shampoo 5K, Body Wash 9K, and Conditioner 5K. The sample checkpoint around August 24 may have passed, but shipment or arrival is not verified; confirm all three sets, then build a revised quote because the old $78,580 quote is suspended and Sam must sign off."
+      "a": "Terra Lotus has 19,000 units in R&D at a sample-shipment checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K. The current sources do not confirm shipment, so Aidan/Ronald must verify all three sets before the next commercial step."
     },
     {
       "keys": [
@@ -333,7 +329,7 @@
         "manufacturing",
         "fulfillment"
       ],
-      "a": "Tammye Hall\u2019s September 1 manufacturing-and-fulfillment call is historical, not a September 2 meeting. The prior format miss is recorded, but there is no new Tammye booking in today\u2019s reliable Outlook meeting evidence."
+      "a": "Tammye Hall is booked for Tuesday, September 1 from 2:00–2:30pm ET with Google Meet link https://meet.google.com/ohj-dbga-fej. She previously missed a meeting because she expected a phone call, so confirm the format and agenda explicitly before this manufacturing-and-fulfillment discussion."
     },
     {
       "keys": [
@@ -363,7 +359,7 @@
         "james",
         "laura"
       ],
-      "a": "AF Brand is on the calendar for Wednesday, September 2 from 3:00\u20134:00pm ET with James and Laura listed; Sam is marked declined and the organizer is declined. Resolve ownership and attendance before treating this as a live Sam meeting."
+      "a": "AF Brand is on the calendar for Wednesday, September 2 from 3:00–4:00pm ET with James and Laura listed; Sam is marked declined and the organizer is declined. Resolve ownership and attendance before treating this as a live Sam meeting."
     },
     {
       "keys": [
@@ -373,7 +369,7 @@
         "lip balm",
         "august 31"
       ],
-      "a": "Cameron Nelligan\u2019s Sunkissd discovery call was scheduled for August 31 at 6:00pm ET about a tallow-based lip balm and a 10,000-unit first order. Otter shared a recording notification, but no verified outcome or next commercial step is present in today\u2019s sources."
+      "a": "Cameron Nelligan’s Sunkissd discovery call was scheduled for August 31 at 6:00pm ET about a tallow-based lip balm and a 10,000-unit first order. Otter shared a recording notification, but no verified outcome or next commercial step is present in today’s sources."
     },
     {
       "keys": [
@@ -405,414 +401,679 @@
         "video link",
         "teams"
       ],
-      "a": "Mark Cafolla remains an active custom-peptide opportunity with NDA executed and packaging/sample specifications in progress. The old August 28 call record is historical; no September 1 call or newly verified outcome is present in today\u2019s sources."
+      "a": "Mark Cafolla remains an active custom-peptide opportunity with NDA executed and packaging/sample specifications in progress. The old August 28 call record is historical; no September 1 call or newly verified outcome is present in today’s sources."
     }
   ],
   "topTasks": [
     {
       "rank": 1,
-      "title": "Lock Talova reorder with Marcello",
-      "why": "Marcello said Coco Vanilla went viral and wants to reorder; this warm customer-led opportunity has already leaked 15-plus days.",
-      "owner": "Sam / Aaron",
-      "due": "Today",
+      "title": "Resolve Friday 11:00 ET double-booking",
+      "why": "Austin/Radiant Glow and Ari Levitin/DEWPAD R&D Review overlap; the connected calendar is incomplete.",
+      "owner": "Sam",
+      "due": "Before Fri Sep 4",
       "priority": "critical",
-      "revenue": "Talova Labs",
-      "status": "CONFIRM KENNA REVISIONS \u2192 CALL/MESSAGE MARCELLO"
+      "revenue": "Scheduling",
+      "status": "MOVE AUSTIN TO 10:00 ET RECOMMENDED"
     },
     {
       "rank": 2,
-      "title": "Verify Terra Lotus sample checkpoint",
-      "why": "Three R&D products total 19,000 units, but no source confirms the Shampoo, Body Wash, and Conditioner samples shipped or arrived.",
-      "owner": "Aidan / Ronald",
+      "title": "Clear Ads approvals",
+      "why": "Verified account snapshot has zero conversions tracked; settings must not change without Sam.",
+      "owner": "Sam / Ads Agent",
       "due": "Today",
-      "priority": "critical",
-      "revenue": "Terra Lotus",
-      "status": "VERIFY 3 SETS \u2192 REBUILD REVISED QUOTE"
+      "priority": "high",
+      "revenue": "Paid acquisition",
+      "status": "MANUAL CPC + TRACKING + LEGACY DECISION"
     },
     {
       "rank": 3,
-      "title": "Verify Atlas Eternal production handoffs",
-      "why": "The $26,500 production account has $13,250 due on completion; the balance depends on four lanes actually moving.",
-      "owner": "Aidan",
+      "title": "Qualify new inbound",
+      "why": "Seven named inbound opportunities need qualification and next-step capture.",
+      "owner": "Email / Sales",
       "due": "Today",
       "priority": "high",
-      "revenue": "Atlas Eternal",
-      "status": "SPOT-CHECK AARON / RONALD / EVELYN / LAURA"
+      "revenue": "New inbound",
+      "status": "MARK C. / VICTORIA / SHAMEKA + 4 BOOKINGS"
     },
     {
       "rank": 4,
-      "title": "Review Command Lab build and unlock hub",
-      "why": "The shared PLL Command foundation and first dispatch are real and reversible; four Sam decisions and a short account-connection sit-down remain.",
-      "owner": "Sam / Executive",
+      "title": "Approve quotes and ConvertFlow redlines",
+      "why": "Four quote authorizations and mockup redlines remain open decisions.",
+      "owner": "Sam",
       "due": "Today",
       "priority": "high",
-      "revenue": "PLL Command Lab",
-      "status": "4 ANSWERS + AGENT-ACCOUNT SIT-DOWN NEEDED"
-    },
-    {
-      "rank": 5,
-      "title": "Stop Ads bleed when authorized",
-      "why": "Both net-new campaigns are on Maximize Conversions with zero conversion tracking and CPC is up about 32%.",
-      "owner": "Sam / Ads Agent",
-      "due": "On Sam authorization",
-      "priority": "high",
-      "revenue": "Paid acquisition",
-      "status": "WAITING FOR \u201cREVERT ADS TO MANUAL\u201d"
+      "revenue": "Pipeline",
+      "status": "ETHNIC GALS / RANNAH-AYTAY / EMMA-WAGYU / VICTOR"
     }
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Lock Talova, verify Terra samples, spot-check Atlas handoffs, and review the Command Lab unlock decisions.",
+      "top_task": "Handle the Tammye 2pm call format, Morning Glory print-status escalation, Mark Higgins review, and the Gridlot/Studio S5 decisions.",
       "tasks": [
         {
-          "title": "Confirm Kenna\u2019s revisions and lock Marcello\u2019s Talova reorder",
+          "title": "Confirm Tammye Hall’s 2pm ET call format and agenda",
+          "due": "Today 2:00pm ET"
+        },
+        {
+          "title": "Verify whether Morning Glory labels have printed and direct the correction review",
           "due": "Today"
         },
         {
-          "title": "Verify Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped or arrived",
+          "title": "Review Mark Higgins’s ingredient brief and choose a chemist-call time",
           "due": "Today"
         },
         {
-          "title": "Spot-check Atlas Eternal\u2019s four production lanes",
+          "title": "Provide Gridlot NDA and Studio S5 commercial direction",
           "due": "Today"
         },
         {
-          "title": "Answer calendar, reminder, notetaker, and agent-account setup questions",
+          "title": "Confirm or decline Enso’s proposed 9:15am ET meeting",
           "due": "Today"
         }
       ],
-      "notes": "No newer narrated day-update is available. Outlook mail confirms Mark Higgins at 1:00pm ET today; no other reliable Sep 2 meeting was found."
+      "notes": "The Sept 1 calendar also contains Payroll at 11am ET. No new day-update was available; do not treat unconfirmed proposals as booked."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Verify Atlas Eternal handoffs and Terra Lotus\u2019s three sample sets.",
+      "top_task": "Drive Atlas Eternal production and support Mark Higgins formulation review and Terra Lotus shipment verification.",
       "tasks": [
         {
-          "title": "Spot-check Aaron, Ronald, Evelyn, and Laura\u2019s Atlas Eternal lanes",
+          "title": "Drive Atlas Eternal $26,500 production across four lanes",
+          "due": "On completion"
+        },
+        {
+          "title": "Support Mark Higgins brief review and confirm formulation inputs",
           "due": "Today"
         },
         {
-          "title": "Confirm Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped or arrived",
+          "title": "Confirm Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped",
           "due": "Today"
-        },
-        {
-          "title": "Support the Mark Higgins formulation discussion with Ron and Evelyn",
-          "due": "Today 1:00pm ET"
         }
       ],
-      "notes": "Atlas is $26,500 with $13,250 due on completion. Terra\u2019s sample shipment remains unverified."
+      "notes": "Atlas has $13,250 due on completion. Terra’s 19,000-unit sample shipment remains unconfirmed."
     },
     "aaron": {
       "display_name": "Aaron",
-      "top_task": "Confirm Kenna\u2019s revision details so Sam can close the Talova reorder.",
+      "top_task": "Verify Kenna’s revisions for the Talova reorder before Sam locks the PO.",
       "tasks": [
         {
-          "title": "Verify whether PLL received Kenna\u2019s revised formula details",
-          "due": "Today"
-        },
-        {
-          "title": "Report any Atlas Eternal lane blocker in the handoff check",
+          "title": "Confirm whether PLL received Kenna’s revised formula details",
           "due": "Today"
         }
       ],
-      "notes": "Talova/Marcello is the warmest lane; do not claim the reorder is locked until Sam confirms it."
+      "notes": "Talova/Marcello remains a warm lane, but the Kenna-revision confirmation is not verified."
     },
     "james": {
       "display_name": "James",
-      "top_task": "Support the Command Lab account-connection sit-down and keep operational handoffs honest.",
+      "top_task": "Escalate Morning Glory label corrections and resolve the AF Brand meeting ownership.",
       "tasks": [
         {
-          "title": "Join the short sit-down to connect the real agent accounts if assigned",
+          "title": "Verify Morning Glory label print status and route the correction checklist",
           "due": "Today"
         },
         {
-          "title": "Flag any stalled Atlas Eternal handoff rather than reporting work that has not started",
-          "due": "Today"
+          "title": "Resolve ownership/attendance for the AF Brand Sept 2 meeting",
+          "due": "Tomorrow"
         }
       ],
-      "notes": "No new James-specific client completion is recorded in today\u2019s sources."
+      "notes": "James is also copied on the AF Brand invite; Sam is marked declined and Laura accepted."
     },
     "nikkie": {
       "display_name": "Nikkie",
-      "top_task": "Continue outbound sales and qualify active inbound opportunities without overstating status.",
+      "top_task": "Continue outbound sales and qualify active inbound opportunities.",
       "tasks": [
         {
           "title": "Work active white-label inquiries and book qualified next steps",
           "due": "Ongoing"
         },
         {
-          "title": "Keep Curly 911/Victoria timing details current",
+          "title": "Resolve outstanding Curly 911/Victoria timing details",
           "due": "Ongoing"
         }
       ],
-      "notes": "Active opportunities remain open; none should be called closed without verified evidence."
+      "notes": "Nikkie’s opportunities remain active and none should be described as closed without verified CRM evidence."
     }
   },
   "revenueActions": [
     {
-      "title": "Lock Talova reorder",
-      "why": "Marcello\u2019s Coco Vanilla went viral and he asked to reorder; the customer is already raising his hand.",
+      "title": "Protect Tammye Hall call",
+      "why": "The Sept 1 2pm ET Meet is confirmed, but the client previously expected a phone call.",
       "est_value": "Not stated",
-      "next_step": "Confirm Kenna\u2019s small revisions, then Sam calls or messages Marcello today to lock the reorder.",
-      "owner": "Sam / Aaron",
-      "timing": "Today",
-      "value": "Warm reorder / recurring revenue",
-      "status": "REVISION CONFIRMATION NEEDED"
+      "next_step": "Send/confirm the actual format and agenda, then run the manufacturing-and-fulfillment qualification call.",
+      "owner": "Sam / Consultant",
+      "timing": "Today 2:00pm ET",
+      "value": "Booked discovery call",
+      "status": "FORMAT CONFIRMATION NEEDED"
     },
     {
-      "title": "Advance Terra Lotus R&D checkpoint",
-      "why": "Shampoo 5K, Body Wash 9K, and Conditioner 5K total 19,000 units, but sample shipment/arrival is unverified.",
-      "est_value": "Old quote $78,580 suspended",
-      "next_step": "Confirm all three sample sets shipped or arrived; then build the revised quote and obtain Sam sign-off before customer delivery.",
-      "owner": "Aidan / Ronald / Sam",
+      "title": "Resolve Morning Glory label corrections",
+      "why": "Client reports production is underway and requests urgent pre-print review.",
+      "est_value": "Existing production account",
+      "next_step": "Verify whether labels printed; then route net contents, INCI/order, company details, claims substantiation, warnings, legibility, lot/UPC, and artwork review.",
+      "owner": "Sam / James",
       "timing": "Today",
-      "value": "19,000-unit R&D opportunity",
-      "status": "SAMPLE VERIFICATION NEEDED"
+      "value": "Production continuity",
+      "status": "URGENT VERIFICATION"
     },
     {
-      "title": "Protect Atlas Eternal completion balance",
-      "why": "The $26,500 account has $13,250 due on completion, so four production handoffs must be real and verified.",
-      "est_value": "$13,250 balance due",
-      "next_step": "Spot-check Aaron, Ronald, Evelyn, and Laura\u2019s lanes and flag any stall before client status is reported.",
-      "owner": "Aidan / Sam",
+      "title": "Advance Mark Higgins quote lane",
+      "why": "The requested ingredient brief for two roll-on deodorants is now available for formulation review.",
+      "est_value": "Not stated",
+      "next_step": "Review with formulation, confirm the Ron/Evelyn call time, and price only after required inputs are validated.",
+      "owner": "Sam / Aidan / Ronald",
       "timing": "Today",
-      "value": "$26,500 production account",
-      "status": "HANDOFF VERIFICATION NEEDED"
+      "value": "Quote-ready after review",
+      "status": "FORMULATION REVIEW NEEDED"
     },
     {
-      "title": "Unlock Command Lab operations",
-      "why": "The shared foundation and first dispatch are live; the remaining blocker is Sam\u2019s setup decisions and account-connection sit-down.",
-      "est_value": "Operational leverage",
-      "next_step": "Answer meeting source, reminder channel, notetaker, and sit-down questions; then redline what to cut on the TV cockpit.",
-      "owner": "Sam / Executive",
+      "title": "Repair Gridlot NDA",
+      "why": "The prior NDA appears to belong to another project, blocking the beef-tallow opportunity.",
+      "est_value": "Not stated",
+      "next_step": "Locate/approve the clean PLL NDA template, keep Seb copied, and do not send until the document is verified.",
+      "owner": "Sam / Consultant",
       "timing": "Today",
-      "value": "Agent hub / execution capacity",
-      "status": "SAM INPUT NEEDED"
+      "value": "Active opportunity",
+      "status": "TEMPLATE MISSING"
     },
     {
-      "title": "Control Ads bleed",
-      "why": "Both net-new campaigns have zero conversion tracking and CPC is up about 32%.",
-      "est_value": "Paid-acquisition efficiency",
-      "next_step": "Only after Sam says \u201crevert ads to manual,\u201d move both campaigns to Manual CPC and verify live; otherwise remain read-only.",
-      "owner": "Sam / Ads Agent",
-      "timing": "On authorization",
-      "value": "Cost control",
-      "status": "READ-ONLY / APPROVAL REQUIRED"
+      "title": "Answer Studio S5 questions",
+      "why": "Amanda needs certification timing, credit mechanics, and separate packaging/labeling pricing before deciding.",
+      "est_value": "Not stated",
+      "next_step": "Sam supplies the exact commercial/regulatory direction; no commitments were made by Nina.",
+      "owner": "Sam",
+      "timing": "Today",
+      "value": "Active lead",
+      "status": "DIRECTION NEEDED"
+    },
+    {
+      "title": "Confirm Enso meeting proposal",
+      "why": "A Sept 1 9:15am ET review was accepted by Aidan but not confirmed by Sam.",
+      "est_value": "Not stated",
+      "next_step": "Confirm or decline before treating the meeting as booked; clarify scope and any account-access or fee decisions.",
+      "owner": "Sam / Aidan",
+      "timing": "Today 9:15am ET",
+      "value": "Launch/PPC review",
+      "status": "PROPOSED — NOT CONFIRMED"
     }
   ],
   "pipelineStat": {
-    "total_value": "$26,500 Atlas Eternal; Talova reorder and Terra Lotus 19,000-unit opportunity are active with values not yet stated",
+    "total_value": "$26,500 Atlas Eternal; other active opportunities not stated",
     "active_deals": 12,
     "hot": [
-      "Talova/Marcello \u2014 viral Coco Vanilla reorder; confirm Kenna revisions and lock today",
-      "Terra Lotus \u2014 19,000 units across three products; verify sample shipment/arrival",
-      "Atlas Eternal \u2014 $26,500 production; verify four handoffs before $13,250 balance",
-      "Command Lab \u2014 foundation live; four setup answers plus account sit-down needed"
+      "Tammye Hall — Sept 1 2pm ET booked call, format must be confirmed",
+      "Morning Glory — urgent label corrections while production status is unverified",
+      "Mark Higgins — ingredient brief received, formulation review before pricing",
+      "Gridlot — clean NDA blocked on approved template",
+      "Studio S5 — Sam direction needed on certification/credit/pricing"
     ],
     "stalled": [
-      "Talova \u2014 Kenna revision receipt still needs confirmation",
-      "Terra Lotus \u2014 three sample sets still unverified",
-      "Atlas Eternal \u2014 completion handoffs need independent spot-check",
-      "Ads \u2014 zero conversion tracking; Manual-CPC revert awaits Sam"
+      "Enso — Sept 1 meeting proposal not confirmed by Sam",
+      "Talova/Marcello — Kenna revision receipt still needs verification",
+      "Terra Lotus — 19,000-unit sample shipment still needs confirmation",
+      "Amanda/Studio S5 — waiting on exact commercial answers"
     ],
     "activeDeals": 12,
     "pipelineValue": 26500,
     "inProduction": 2,
     "depositsCollected": null,
-    "note": "September 2 lane: lock Talova first, verify Terra, protect Atlas, then unlock the Command Lab. Named pipeline value remains limited to verified Atlas Eternal value.",
+    "note": "September 3 verified lane: resolve Friday conflict, clear Sam decisions, qualify new inbound. Account Ads snapshot is Aug 27–Sep 2; zero conversions tracked.",
     "monthlyTarget": "$150K",
-    "achievableDepositsThisMonth": "Not stated in today\u2019s verified sources."
+    "achievableDepositsThisMonth": "Not stated in today’s verified sources."
   },
   "adsAgentBrief": {
-    "generatedAt": "2026-09-02T21:01:00-04:00",
+    "generatedAt": "2026-08-31T21:11:35-04:00",
     "status": "NIGHTLY_ADS_INTELLIGENCE_REFRESH_COMPLETE",
-    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
     "windows": {
       "today": {
-        "start": "2026-09-02",
-        "end": "2026-09-02"
+        "start": "2026-08-31",
+        "end": "2026-08-31"
       },
       "current": {
-        "start": "2026-08-27",
-        "end": "2026-09-02"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       },
       "prior": {
-        "start": "2026-08-20",
-        "end": "2026-08-26"
+        "start": "2026-08-18",
+        "end": "2026-08-24"
       }
     },
-    "summary": "Nightly refresh for 2026-09-02: scoped campaign data refreshed; exact seven-ad roster and search-term evidence remain unverified. Current $152.32 / 129 clicks / $1.18 CPC / 0 conversions; prior $190.49 / 91 / $2.09 / 0.",
+    "summary": "Nightly Ads refresh: current 7 days (Aug 25–31) spent $156.28 on 1,343 impressions and 84 clicks (6.25% CTR, $1.86 CPC), versus prior 7 days (Aug 18–24) at $178.89 / 736 / 89 (12.09% / $2.01). The exact seven-ad roster is unverified; 6 of 6 current inbox inquiries are qualified and 1 is verifiably Ads-attributed by gclid (campaign unmapped). Current trailing pacing is 11.86% under configured $25.33/day; no current cap breach. Five qualified customer/project calls are recorded in the current window. Recommendation requires Sam approval and remains read-only.",
     "current7Days": {
-      "spend": 152.317138,
-      "impressions": 3467,
-      "clicks": 129,
-      "ctrPct": 3.72079607730026,
-      "avgCpc": 1.180753007751938,
-      "conversions": 0,
+      "spend": 156.284124,
+      "impressions": 1343,
+      "clicks": 84,
+      "ctrPct": 6.25,
+      "avgCpc": 1.8605252857142855,
       "window": {
-        "start": "2026-08-27",
-        "end": "2026-09-02"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       }
     },
     "prior7Days": {
-      "spend": 190.490201,
-      "impressions": 920,
-      "clicks": 91,
-      "ctrPct": 9.891304347826086,
-      "avgCpc": 2.093298912087912,
-      "conversions": 0,
+      "spend": 178.888901,
+      "impressions": 736,
+      "clicks": 89,
+      "ctrPct": 12.09,
+      "avgCpc": 2.0099876516853934,
       "window": {
-        "start": "2026-08-20",
-        "end": "2026-08-26"
+        "start": "2026-08-18",
+        "end": "2026-08-24"
       }
     },
     "today": {
-      "spend": 27.841784,
-      "impressions": 1078,
-      "clicks": 32,
-      "ctrPct": 2.9684601113172544,
-      "avgCpc": 0.87005575,
-      "conversions": 0,
+      "spend": 21.664805,
+      "impressions": 112,
+      "clicks": 10,
+      "ctrPct": 8.93,
+      "avgCpc": 2.1664805,
       "window": {
-        "start": "2026-09-02",
-        "end": "2026-09-02"
+        "start": "2026-08-31",
+        "end": "2026-08-31"
       }
     },
     "campaignBreakdown": {
       "current": [
         {
-          "campaignId": "24040031889",
-          "campaign": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 30.987565,
-          "impressions": 1140,
-          "clicks": 48,
-          "ctrPct": 4.2105263157894735,
-          "avgCpc": 0.6455742708333334,
-          "conversions": 0,
-          "configuredDailyBudget": 5
-        },
-        {
+          "spend": 124.780147,
+          "impressions": 883,
+          "clicks": 53,
+          "ctrPct": 6.0,
+          "avgCpc": 2.354342396226415,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "spend": 121.329573,
-          "impressions": 2327,
-          "clicks": 81,
-          "ctrPct": 3.4808766652342076,
-          "avgCpc": 1.497895962962963,
-          "conversions": 0,
           "configuredDailyBudget": 20.33
+        },
+        {
+          "spend": 31.503977,
+          "impressions": 460,
+          "clicks": 31,
+          "ctrPct": 6.74,
+          "avgCpc": 1.016257322580645,
+          "campaignId": "24040031889",
+          "campaign": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "configuredDailyBudget": 5.0
         }
       ],
       "prior": [
         {
-          "campaignId": "24040031889",
-          "campaign": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 35.538443,
-          "impressions": 142,
-          "clicks": 22,
-          "ctrPct": 15.492957746478872,
-          "avgCpc": 1.6153837727272726,
-          "conversions": 0,
-          "configuredDailyBudget": 5
-        },
-        {
+          "spend": 137.040286,
+          "impressions": 610,
+          "clicks": 65,
+          "ctrPct": 10.66,
+          "avgCpc": 2.1083120923076923,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "spend": 154.951758,
-          "impressions": 778,
-          "clicks": 69,
-          "ctrPct": 8.868894601542417,
-          "avgCpc": 2.2456776521739132,
-          "conversions": 0,
           "configuredDailyBudget": 20.33
+        },
+        {
+          "spend": 41.848615,
+          "impressions": 126,
+          "clicks": 24,
+          "ctrPct": 19.05,
+          "avgCpc": 1.7436922916666668,
+          "campaignId": "24040031889",
+          "campaign": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "configuredDailyBudget": 5.0
         }
       ],
       "today": [
         {
-          "campaignId": "24040031889",
-          "campaign": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 4.622826,
-          "impressions": 383,
-          "clicks": 12,
-          "ctrPct": 3.1331592689295036,
-          "avgCpc": 0.3852355,
-          "conversions": 0,
-          "configuredDailyBudget": 5
-        },
-        {
+          "spend": 13.200096,
+          "impressions": 21,
+          "clicks": 2,
+          "ctrPct": 9.52,
+          "avgCpc": 6.600048,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "spend": 23.218958,
-          "impressions": 695,
-          "clicks": 20,
-          "ctrPct": 2.877697841726619,
-          "avgCpc": 1.1609478999999998,
-          "conversions": 0,
           "configuredDailyBudget": 20.33
+        },
+        {
+          "spend": 8.464709,
+          "impressions": 91,
+          "clicks": 8,
+          "ctrPct": 8.79,
+          "avgCpc": 1.058088625,
+          "campaignId": "24040031889",
+          "campaign": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "configuredDailyBudget": 5.0
         }
       ]
     },
     "adBreakdown": {
-      "rosterStatus": "UNVERIFIED \u2014 ad-level report returned no usable rows; CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED",
-      "current": [],
-      "prior": [],
-      "today": []
+      "rosterStatus": "UNVERIFIED — the seven candidate IDs were queried, but the exact seven-ad roster could not be conclusively proven through the available reporting path. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
+      "candidateAdIds": [
+        "817412024830",
+        "817412025043",
+        "817412046418",
+        "817481260556",
+        "817481283335",
+        "817481283338",
+        "817481293367"
+      ],
+      "current": [
+        {
+          "adId": "817412024830",
+          "adGroupId": "197753978559",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0.50571,
+          "impressions": 92,
+          "clicks": 2,
+          "ctrPct": 2.17,
+          "avgCpc": 0.252855,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412025043",
+          "adGroupId": "197753979079",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 48.274171,
+          "impressions": 280,
+          "clicks": 20,
+          "ctrPct": 7.14,
+          "avgCpc": 2.41370855,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 38,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481260556",
+          "adGroupId": "204146230528",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 52.47,
+          "impressions": 158,
+          "clicks": 14,
+          "ctrPct": 8.86,
+          "avgCpc": 3.7478571428571428,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283335",
+          "adGroupId": "204146230728",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 18.864386,
+          "impressions": 154,
+          "clicks": 10,
+          "ctrPct": 6.49,
+          "avgCpc": 1.8864386,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283338",
+          "adGroupId": "200118475084",
+          "campaignId": "24040031889",
+          "status": "ENABLED",
+          "spend": 31.503977,
+          "impressions": 460,
+          "clicks": 31,
+          "ctrPct": 6.74,
+          "avgCpc": 1.016257322580645,
+          "campaign": "PLL-Search-Samples-2026"
+        },
+        {
+          "adId": "817481293367",
+          "adGroupId": "204146231008",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 4.66588,
+          "impressions": 161,
+          "clicks": 7,
+          "ctrPct": 4.35,
+          "avgCpc": 0.6665542857142857,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        }
+      ],
+      "prior": [
+        {
+          "adId": "817412024830",
+          "adGroupId": "197753978559",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0.407869,
+          "impressions": 35,
+          "clicks": 1,
+          "ctrPct": 2.86,
+          "avgCpc": 0.407869,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412025043",
+          "adGroupId": "197753979079",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 55.829912,
+          "impressions": 189,
+          "clicks": 34,
+          "ctrPct": 17.99,
+          "avgCpc": 1.6420562352941177,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 15,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481260556",
+          "adGroupId": "204146230528",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 48.486647,
+          "impressions": 272,
+          "clicks": 20,
+          "ctrPct": 7.35,
+          "avgCpc": 2.42433235,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283335",
+          "adGroupId": "204146230728",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 6.487621,
+          "impressions": 37,
+          "clicks": 4,
+          "ctrPct": 10.81,
+          "avgCpc": 1.62190525,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283338",
+          "adGroupId": "200118475084",
+          "campaignId": "24040031889",
+          "status": "ENABLED",
+          "spend": 41.848615,
+          "impressions": 126,
+          "clicks": 24,
+          "ctrPct": 19.05,
+          "avgCpc": 1.7436922916666668,
+          "campaign": "PLL-Search-Samples-2026"
+        },
+        {
+          "adId": "817481293367",
+          "adGroupId": "204146231008",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 25.828237,
+          "impressions": 62,
+          "clicks": 6,
+          "ctrPct": 9.68,
+          "avgCpc": 4.304706166666667,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        }
+      ],
+      "today": [
+        {
+          "adId": "817412024830",
+          "adGroupId": "197753978559",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0.130096,
+          "impressions": 2,
+          "clicks": 1,
+          "ctrPct": 50.0,
+          "avgCpc": 0.130096,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412025043",
+          "adGroupId": "197753979079",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481260556",
+          "adGroupId": "204146230528",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283335",
+          "adGroupId": "204146230728",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 13.07,
+          "impressions": 4,
+          "clicks": 1,
+          "ctrPct": 25.0,
+          "avgCpc": 13.07,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283338",
+          "adGroupId": "200118475084",
+          "campaignId": "24040031889",
+          "status": "ENABLED",
+          "spend": 8.464709,
+          "impressions": 91,
+          "clicks": 8,
+          "ctrPct": 8.79,
+          "avgCpc": 1.058088625,
+          "campaign": "PLL-Search-Samples-2026"
+        },
+        {
+          "adId": "817481293367",
+          "adGroupId": "204146231008",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 12,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        }
+      ]
     },
     "leads": {
       "current": {
-        "totalInquiries": 7,
-        "qualifiedInquiries": 7,
+        "totalInquiries": 6,
+        "qualifiedInquiries": 6,
         "verifiedAdsAttributedLeads": 1,
+        "adsAttributedByCampaign": {
+          "ContractMfg": 0,
+          "Samples": 0,
+          "UNMAPPED": 1
+        },
         "bookedCalls": 5,
-        "bookedCallsNote": "Carried forward from prior verified cache; calendar/CRM not re-verified in this run.",
-        "qualifiedCpl": 21.759591142857143,
-        "adsAttributedCpl": null,
         "verifiedAdsAttributedBookedCalls": null,
+        "qualifiedCpl": 26.047354,
+        "adsAttributedCpl": 156.284124,
+        "qualifiedCostPerBookedCall": 31.256824799999997,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "Inbox search verified genuine Shopify contact-form inquiries; attribution only counted where gclid is visible. Other leads are UNATTRIBUTED/NOT YET MEASURABLE."
+        "attributionNote": "Six genuine current-window inquiries were identified (four Shopify contact-form messages, Salena Ogden, and Tammye Hall). Marvie Wright carries a gclid and is the only verified Ads-attributed lead; campaign mapping is UNMAPPED. Other inquiries are UNATTRIBUTED or NOT YET MEASURABLE. Five qualified customer/project calls were found in Calendar; no booked call can be tied to Ads attribution."
       },
       "prior": {
-        "totalInquiries": 5,
-        "qualifiedInquiries": 5,
-        "verifiedAdsAttributedLeads": 1,
+        "totalInquiries": 7,
+        "qualifiedInquiries": 7,
+        "verifiedAdsAttributedLeads": 0,
+        "adsAttributedByCampaign": {
+          "ContractMfg": 0,
+          "Samples": 0
+        },
         "bookedCalls": 4,
-        "bookedCallsNote": "Carried forward from prior verified cache; calendar/CRM not re-verified in this run.",
-        "qualifiedCpl": 38.0980402,
-        "adsAttributedCpl": null,
         "verifiedAdsAttributedBookedCalls": null,
+        "qualifiedCpl": 25.555557285714286,
+        "adsAttributedCpl": null,
+        "qualifiedCostPerBookedCall": 44.72222525,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "Inbox search verified genuine Shopify contact-form inquiries; attribution only counted where gclid is visible."
+        "attributionNote": "Seven Shopify contact-form inquiries were identified in the prior window; no verified Ads attribution. Four qualified customer/project calls were found in Calendar; Ads-attributed booked calls remain NOT YET MEASURABLE."
       },
       "today": {
-        "totalInquiries": 0,
-        "qualifiedInquiries": 0,
+        "totalInquiries": 2,
+        "qualifiedInquiries": 2,
         "verifiedAdsAttributedLeads": 0,
         "bookedCalls": 4,
-        "bookedCallsNote": "Carried forward from prior verified cache; calendar/CRM not re-verified in this run.",
-        "qualifiedCpl": null,
-        "adsAttributedCpl": null,
         "verifiedAdsAttributedBookedCalls": null,
+        "qualifiedCpl": 10.8324025,
+        "adsAttributedCpl": null,
+        "qualifiedCostPerBookedCall": 5.41620125,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "No separate today-only inquiry search was performed beyond the current-window inbox pull; not separately measurable."
+        "attributionNote": "Today included two genuine inbox inquiries/threads (Salena Ogden and Tammye Hall); neither carries verifiable Ads attribution. Four qualified customer/project calls occurred today (Frank Luca, David Aminov, Ari Levitin, Cameron Nelligan). Ads-attributed booked calls are NOT YET MEASURABLE."
       }
     },
     "capHealth": {
       "configuredDailyBudgets": {
-        "ContractMfg": 20.33,
-        "Samples": 5,
+        "PLL-Search-ContractMfg-2026": 20.33,
+        "PLL-Search-Samples-2026": 5.0,
         "combinedDaily": 25.33,
         "combinedSevenDay": 177.31
       },
-      "dailyCap": "Today spent $27.84; configured combined daily budget $25.33.",
-      "trailingCap": "Current trailing spend is 85.90% of configured seven-day pacing; prior is 107.43%.",
-      "funnel": "Booked-call metrics carried forward and not re-verified; Ads-attributed booked calls NOT YET MEASURABLE.",
+      "dailyCap": "Configured combined daily budget is $25.33 ($20.33 ContractMfg + $5.00 Samples). Today (2026-08-31) spent $21.66, 85.52% of configured daily budget; this is within normal pacing and is not a breach.",
+      "trailingCap": "Current 7-day spend is $156.28, 88.14% of the $177.31 seven-day configured budget; trailing average $22.33/day vs $25.33 configured, so no current cap breach. Prior 7-day spend was $178.89, 100.89% of configured pacing (historical prior-window overage).",
+      "funnel": "Current window: 6 total inbox inquiries, 6 qualified, 1 verified Ads-attributed lead, and 5 qualified customer/project booked calls. Verified Ads-attributed booked calls remain NOT YET MEASURABLE.",
       "dataPulls": {
         "campaignToday": true,
         "campaignCurrent": true,
@@ -821,15 +1082,14 @@
         "exactSevenAdRoster": false,
         "searchTerms": false,
         "outlookInquiries": true,
-        "bookedCalls": false
-      },
-      "interpretation": "Current trailing-window average is within configured pacing (85.90%); prior trailing window exceeded configured average (107.43%). Today exceeded the configured daily amount, but single-day overdelivery is normal and is not itself a breach."
+        "bookedCalls": true
+      }
     },
     "recommendation": {
-      "action": "Do not change Ads settings. Prove the exact seven-ad roster, obtain ad-level scope/search-term access, and validate campaign-level attribution and booked-call mapping before optimization.",
-      "evidence": "Scoped campaigns returned current $152.32 spend, 129 clicks, and 0 conversions; ad-level report returned no usable rows and exact roster is unverified.",
-      "expectedOutcome": "Auditable scope and funnel evidence before any optimization.",
-      "measurementWindow": "Before next optimization review; then compare next trailing 7 days.",
+      "action": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate campaign-level attribution and booked-call mapping, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
+      "evidence": "Fresh campaign totals cover only the two verified campaign IDs. Exact seven-ad scope is unverified; search-term reporting is not exposed. Current spend is $156.28 over 7 days versus $177.31 configured pacing (88.14%); one paid lead is verifiable by gclid but campaign mapping is UNMAPPED.",
+      "expectedOutcome": "Restore auditable ad scope, funnel attribution, booked-call mapping, and search-term evidence before optimization decisions.",
+      "measurementWindow": "Complete validation before the next optimization review; then compare the next trailing 7 days against this baseline.",
       "approval_required": "yes",
       "pendingApproval": true,
       "approved": false
@@ -838,208 +1098,472 @@
     "pendingApproval": true,
     "approved": false,
     "preparedAnswers": {
-      "today": "Today (2026-09-02) the two scoped campaigns spent $27.84 on 1078 impressions and 32 clicks (2.97% CTR, $0.87 CPC), with 0 Google Ads conversions.",
-      "sevenNewAds": "Current 2026-08-27\u20132026-09-02 spent $152.32 on 3467 impressions and 129 clicks (3.72% CTR, $1.18 CPC), versus 2026-08-20\u20132026-08-26 at $190.49 / 920 / 91. CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED.",
-      "ctrCpc": "Current CTR 3.72% at $1.18 CPC; prior 9.89% at $2.09 CPC.",
-      "leadsEmailsCalls": "Current inbox pull found 7 genuine Shopify inquiries (1 gclid-visible); prior found 5 (1 gclid-visible). Booked-call figures are carried forward and not re-verified; Ads-attributed booked calls NOT YET MEASURABLE.",
-      "budgetCap": "Configured budgets at report time: ContractMfg $20.33/day + Samples $5.00/day = $25.33/day. Current trailing use is 85.90% of 7-day configured pacing; prior 107.43%. No budget change.",
-      "winners": "Exact seven-ad roster and ad-level report are unverified; do not claim an ad winner. Campaign-level comparison is available only for the two scoped campaign IDs.",
-      "waste": "Search-term waste is NOT YET MEASURABLE through the approved reporting path; no settings changed.",
-      "optimization": "Do not change Ads settings. Prove the exact seven-ad roster, obtain ad-level scope/search-term access, and validate campaign-level attribution and booked-call mapping before optimization.",
-      "suggestions": "Do not change Ads settings. Prove the exact seven-ad roster, obtain ad-level scope/search-term access, and validate campaign-level attribution and booked-call mapping before optimization.",
-      "nextExperiment": "After scope/attribution/search-term validation, propose one controlled 7-day experiment with no budget increase.",
-      "whatAdsAgentShouldDo": "Remain read-only; prove roster, attribution, booked-call mapping, and search-term visibility. Do not create, edit, pause, delete, publish, or change spend/bids/keywords/targeting/creative/landing pages."
+      "today": "Today (Aug 31) the two scoped campaigns spent $21.66 on 112 impressions and 10 clicks, 8.93% CTR at $2.17 CPC. ContractMfg was $13.20 (2 clicks); Samples was $8.46 (8 clicks). This is 85.52% of the configured $25.33 combined daily budget and is not a breach.",
+      "sevenNewAds": "Current seven-day window (Aug 25–31) totaled $156.28 / 1,343 impressions / 84 clicks (6.25% CTR, $1.86 CPC), versus Aug 18–24 at $178.89 / 736 / 89 (12.09% / $2.01). The two campaign IDs are scoped, but CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
+      "ctrCpc": "Current 7-day CTR is 6.25% at $1.86 CPC, versus 12.09% at $2.01 CPC prior week.",
+      "leadsEmailsCalls": "Current window has 6 genuine inbox inquiries, all 6 qualified, 1 verified Ads-attributed by gclid (campaign UNMAPPED), and 5 qualified customer/project booked calls. Prior has 7 inquiries, 7 qualified, 0 verified Ads-attributed, and 4 qualified customer/project calls. Ads-attributed booked calls and cost per Ads-attributed booked call are NOT YET MEASURABLE.",
+      "budgetCap": "Configured budgets read at report time are ContractMfg $20.33/day plus Samples $5.00/day = $25.33/day ($177.31 per 7 days). Today used 85.52% of daily configuration. Current trailing average is $22.33/day, 88.14% of configured pacing, so no current cap breach; prior window was 100.89% of pacing. No budget change made.",
+      "winners": "Because the exact seven-ad roster is unverified, do not overclaim an exact ad winner. Among queried candidates, 817481283338 (Samples) led current-window click volume with 31 clicks, 6.74% CTR, and $1.02 CPC; Samples was also the campaign efficiency leader at 6.74% CTR / $1.02 CPC.",
+      "waste": "Search-term waste is NOT YET MEASURABLE: the approved Ads connection exposes no search-term report resource. No negative keywords or other settings were changed.",
+      "optimization": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate campaign-level attribution and booked-call mapping, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
+      "suggestions": "Same single recommendation: prove exact seven-ad scope, campaign-level attribution, booked-call mapping, and search-term evidence before optimization. Approval required: yes.",
+      "nextExperiment": "After scope, attribution, booked-call, and search-term validation, propose one controlled 7-day experiment only, with no budget increase and predeclared lead/booked-call measurement.",
+      "whatAdsAgentShouldDo": "Remain read-only: prove the seven-ad roster, verify gclid/UTM/campaign mapping and booked-call attribution, obtain search-term visibility if authorized, and return one evidence-based recommendation. Do not create, edit, pause, delete, publish, or change spend/bids/keywords/targeting/creative/landing pages."
     }
   },
   "adsIntelligence": {
-    "updatedAt": "2026-09-02T21:01:00-04:00",
-    "source": "Fresh Google Ads API campaign reports plus targeted Outlook inquiry review.",
+    "updatedAt": "2026-08-31T21:11:35-04:00",
+    "source": "Fresh Google Ads API campaign/ad reports plus targeted Outlook inquiry review and Google Calendar booked-call review.",
     "scope": "Only PLL-Search-ContractMfg-2026 (24049588003) and PLL-Search-Samples-2026 (24040031889); legacy campaigns excluded.",
-    "scopeWarning": "CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED",
+    "scopeWarning": "CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
     "windows": {
       "today": {
-        "start": "2026-09-02",
-        "end": "2026-09-02"
+        "start": "2026-08-31",
+        "end": "2026-08-31"
       },
       "current": {
-        "start": "2026-08-27",
-        "end": "2026-09-02"
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       },
       "prior": {
-        "start": "2026-08-20",
-        "end": "2026-08-26"
-      }
-    },
-    "current7Days": {
-      "spend": 152.317138,
-      "impressions": 3467,
-      "clicks": 129,
-      "ctrPct": 3.72079607730026,
-      "avgCpc": 1.180753007751938,
-      "conversions": 0,
-      "window": {
-        "start": "2026-08-27",
-        "end": "2026-09-02"
-      }
-    },
-    "prior7Days": {
-      "spend": 190.490201,
-      "impressions": 920,
-      "clicks": 91,
-      "ctrPct": 9.891304347826086,
-      "avgCpc": 2.093298912087912,
-      "conversions": 0,
-      "window": {
-        "start": "2026-08-20",
-        "end": "2026-08-26"
+        "start": "2026-08-18",
+        "end": "2026-08-24"
       }
     },
     "today": {
-      "spend": 27.841784,
-      "impressions": 1078,
-      "clicks": 32,
-      "ctrPct": 2.9684601113172544,
-      "avgCpc": 0.87005575,
-      "conversions": 0,
+      "spend": 21.664805,
+      "impressions": 112,
+      "clicks": 10,
+      "ctrPct": 8.93,
+      "avgCpc": 2.1664805,
       "window": {
-        "start": "2026-09-02",
-        "end": "2026-09-02"
+        "start": "2026-08-31",
+        "end": "2026-08-31"
+      }
+    },
+    "current": {
+      "spend": 156.284124,
+      "impressions": 1343,
+      "clicks": 84,
+      "ctrPct": 6.25,
+      "avgCpc": 1.8605252857142855,
+      "window": {
+        "start": "2026-08-25",
+        "end": "2026-08-31"
+      }
+    },
+    "prior": {
+      "spend": 178.888901,
+      "impressions": 736,
+      "clicks": 89,
+      "ctrPct": 12.09,
+      "avgCpc": 2.0099876516853934,
+      "window": {
+        "start": "2026-08-18",
+        "end": "2026-08-24"
       }
     },
     "campaignBreakdown": {
       "current": [
         {
-          "campaignId": "24040031889",
-          "campaign": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 30.987565,
-          "impressions": 1140,
-          "clicks": 48,
-          "ctrPct": 4.2105263157894735,
-          "avgCpc": 0.6455742708333334,
-          "conversions": 0,
-          "configuredDailyBudget": 5
-        },
-        {
+          "spend": 124.780147,
+          "impressions": 883,
+          "clicks": 53,
+          "ctrPct": 6.0,
+          "avgCpc": 2.354342396226415,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "spend": 121.329573,
-          "impressions": 2327,
-          "clicks": 81,
-          "ctrPct": 3.4808766652342076,
-          "avgCpc": 1.497895962962963,
-          "conversions": 0,
           "configuredDailyBudget": 20.33
+        },
+        {
+          "spend": 31.503977,
+          "impressions": 460,
+          "clicks": 31,
+          "ctrPct": 6.74,
+          "avgCpc": 1.016257322580645,
+          "campaignId": "24040031889",
+          "campaign": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "configuredDailyBudget": 5.0
         }
       ],
       "prior": [
         {
-          "campaignId": "24040031889",
-          "campaign": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 35.538443,
-          "impressions": 142,
-          "clicks": 22,
-          "ctrPct": 15.492957746478872,
-          "avgCpc": 1.6153837727272726,
-          "conversions": 0,
-          "configuredDailyBudget": 5
-        },
-        {
+          "spend": 137.040286,
+          "impressions": 610,
+          "clicks": 65,
+          "ctrPct": 10.66,
+          "avgCpc": 2.1083120923076923,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "spend": 154.951758,
-          "impressions": 778,
-          "clicks": 69,
-          "ctrPct": 8.868894601542417,
-          "avgCpc": 2.2456776521739132,
-          "conversions": 0,
           "configuredDailyBudget": 20.33
+        },
+        {
+          "spend": 41.848615,
+          "impressions": 126,
+          "clicks": 24,
+          "ctrPct": 19.05,
+          "avgCpc": 1.7436922916666668,
+          "campaignId": "24040031889",
+          "campaign": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "configuredDailyBudget": 5.0
         }
       ],
       "today": [
         {
-          "campaignId": "24040031889",
-          "campaign": "PLL-Search-Samples-2026",
-          "status": "ENABLED",
-          "spend": 4.622826,
-          "impressions": 383,
-          "clicks": 12,
-          "ctrPct": 3.1331592689295036,
-          "avgCpc": 0.3852355,
-          "conversions": 0,
-          "configuredDailyBudget": 5
-        },
-        {
+          "spend": 13.200096,
+          "impressions": 21,
+          "clicks": 2,
+          "ctrPct": 9.52,
+          "avgCpc": 6.600048,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
           "status": "ENABLED",
-          "spend": 23.218958,
-          "impressions": 695,
-          "clicks": 20,
-          "ctrPct": 2.877697841726619,
-          "avgCpc": 1.1609478999999998,
-          "conversions": 0,
           "configuredDailyBudget": 20.33
+        },
+        {
+          "spend": 8.464709,
+          "impressions": 91,
+          "clicks": 8,
+          "ctrPct": 8.79,
+          "avgCpc": 1.058088625,
+          "campaignId": "24040031889",
+          "campaign": "PLL-Search-Samples-2026",
+          "status": "ENABLED",
+          "configuredDailyBudget": 5.0
         }
       ]
     },
     "adBreakdown": {
-      "rosterStatus": "UNVERIFIED \u2014 ad-level report returned no usable rows; CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED",
-      "current": [],
-      "prior": [],
-      "today": []
+      "rosterStatus": "UNVERIFIED — the seven candidate IDs were queried, but the exact seven-ad roster could not be conclusively proven through the available reporting path. CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED",
+      "candidateAdIds": [
+        "817412024830",
+        "817412025043",
+        "817412046418",
+        "817481260556",
+        "817481283335",
+        "817481283338",
+        "817481293367"
+      ],
+      "current": [
+        {
+          "adId": "817412024830",
+          "adGroupId": "197753978559",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0.50571,
+          "impressions": 92,
+          "clicks": 2,
+          "ctrPct": 2.17,
+          "avgCpc": 0.252855,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412025043",
+          "adGroupId": "197753979079",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 48.274171,
+          "impressions": 280,
+          "clicks": 20,
+          "ctrPct": 7.14,
+          "avgCpc": 2.41370855,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 38,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481260556",
+          "adGroupId": "204146230528",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 52.47,
+          "impressions": 158,
+          "clicks": 14,
+          "ctrPct": 8.86,
+          "avgCpc": 3.7478571428571428,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283335",
+          "adGroupId": "204146230728",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 18.864386,
+          "impressions": 154,
+          "clicks": 10,
+          "ctrPct": 6.49,
+          "avgCpc": 1.8864386,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283338",
+          "adGroupId": "200118475084",
+          "campaignId": "24040031889",
+          "status": "ENABLED",
+          "spend": 31.503977,
+          "impressions": 460,
+          "clicks": 31,
+          "ctrPct": 6.74,
+          "avgCpc": 1.016257322580645,
+          "campaign": "PLL-Search-Samples-2026"
+        },
+        {
+          "adId": "817481293367",
+          "adGroupId": "204146231008",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 4.66588,
+          "impressions": 161,
+          "clicks": 7,
+          "ctrPct": 4.35,
+          "avgCpc": 0.6665542857142857,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        }
+      ],
+      "prior": [
+        {
+          "adId": "817412024830",
+          "adGroupId": "197753978559",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0.407869,
+          "impressions": 35,
+          "clicks": 1,
+          "ctrPct": 2.86,
+          "avgCpc": 0.407869,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412025043",
+          "adGroupId": "197753979079",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 55.829912,
+          "impressions": 189,
+          "clicks": 34,
+          "ctrPct": 17.99,
+          "avgCpc": 1.6420562352941177,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 15,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481260556",
+          "adGroupId": "204146230528",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 48.486647,
+          "impressions": 272,
+          "clicks": 20,
+          "ctrPct": 7.35,
+          "avgCpc": 2.42433235,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283335",
+          "adGroupId": "204146230728",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 6.487621,
+          "impressions": 37,
+          "clicks": 4,
+          "ctrPct": 10.81,
+          "avgCpc": 1.62190525,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283338",
+          "adGroupId": "200118475084",
+          "campaignId": "24040031889",
+          "status": "ENABLED",
+          "spend": 41.848615,
+          "impressions": 126,
+          "clicks": 24,
+          "ctrPct": 19.05,
+          "avgCpc": 1.7436922916666668,
+          "campaign": "PLL-Search-Samples-2026"
+        },
+        {
+          "adId": "817481293367",
+          "adGroupId": "204146231008",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 25.828237,
+          "impressions": 62,
+          "clicks": 6,
+          "ctrPct": 9.68,
+          "avgCpc": 4.304706166666667,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        }
+      ],
+      "today": [
+        {
+          "adId": "817412024830",
+          "adGroupId": "197753978559",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0.130096,
+          "impressions": 2,
+          "clicks": 1,
+          "ctrPct": 50.0,
+          "avgCpc": 0.130096,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412025043",
+          "adGroupId": "197753979079",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817412046418",
+          "adGroupId": "200118474604",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481260556",
+          "adGroupId": "204146230528",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 1,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283335",
+          "adGroupId": "204146230728",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 13.07,
+          "impressions": 4,
+          "clicks": 1,
+          "ctrPct": 25.0,
+          "avgCpc": 13.07,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        },
+        {
+          "adId": "817481283338",
+          "adGroupId": "200118475084",
+          "campaignId": "24040031889",
+          "status": "ENABLED",
+          "spend": 8.464709,
+          "impressions": 91,
+          "clicks": 8,
+          "ctrPct": 8.79,
+          "avgCpc": 1.058088625,
+          "campaign": "PLL-Search-Samples-2026"
+        },
+        {
+          "adId": "817481293367",
+          "adGroupId": "204146231008",
+          "campaignId": "24049588003",
+          "status": "ENABLED",
+          "spend": 0,
+          "impressions": 12,
+          "clicks": 0,
+          "ctrPct": 0.0,
+          "avgCpc": null,
+          "campaign": "PLL-Search-ContractMfg-2026"
+        }
+      ]
     },
     "leads": {
       "current": {
-        "totalInquiries": 7,
-        "qualifiedInquiries": 7,
+        "totalInquiries": 6,
+        "qualifiedInquiries": 6,
         "verifiedAdsAttributedLeads": 1,
+        "adsAttributedByCampaign": {
+          "ContractMfg": 0,
+          "Samples": 0,
+          "UNMAPPED": 1
+        },
         "bookedCalls": 5,
-        "bookedCallsNote": "Carried forward from prior verified cache; calendar/CRM not re-verified in this run.",
-        "qualifiedCpl": 21.759591142857143,
-        "adsAttributedCpl": null,
         "verifiedAdsAttributedBookedCalls": null,
+        "qualifiedCpl": 26.047354,
+        "adsAttributedCpl": 156.284124,
+        "qualifiedCostPerBookedCall": 31.256824799999997,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "Inbox search verified genuine Shopify contact-form inquiries; attribution only counted where gclid is visible. Other leads are UNATTRIBUTED/NOT YET MEASURABLE."
+        "attributionNote": "Six genuine current-window inquiries were identified (four Shopify contact-form messages, Salena Ogden, and Tammye Hall). Marvie Wright carries a gclid and is the only verified Ads-attributed lead; campaign mapping is UNMAPPED. Other inquiries are UNATTRIBUTED or NOT YET MEASURABLE. Five qualified customer/project calls were found in Calendar; no booked call can be tied to Ads attribution."
       },
       "prior": {
-        "totalInquiries": 5,
-        "qualifiedInquiries": 5,
-        "verifiedAdsAttributedLeads": 1,
+        "totalInquiries": 7,
+        "qualifiedInquiries": 7,
+        "verifiedAdsAttributedLeads": 0,
+        "adsAttributedByCampaign": {
+          "ContractMfg": 0,
+          "Samples": 0
+        },
         "bookedCalls": 4,
-        "bookedCallsNote": "Carried forward from prior verified cache; calendar/CRM not re-verified in this run.",
-        "qualifiedCpl": 38.0980402,
-        "adsAttributedCpl": null,
         "verifiedAdsAttributedBookedCalls": null,
+        "qualifiedCpl": 25.555557285714286,
+        "adsAttributedCpl": null,
+        "qualifiedCostPerBookedCall": 44.72222525,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "Inbox search verified genuine Shopify contact-form inquiries; attribution only counted where gclid is visible."
+        "attributionNote": "Seven Shopify contact-form inquiries were identified in the prior window; no verified Ads attribution. Four qualified customer/project calls were found in Calendar; Ads-attributed booked calls remain NOT YET MEASURABLE."
       },
       "today": {
-        "totalInquiries": 0,
-        "qualifiedInquiries": 0,
+        "totalInquiries": 2,
+        "qualifiedInquiries": 2,
         "verifiedAdsAttributedLeads": 0,
         "bookedCalls": 4,
-        "bookedCallsNote": "Carried forward from prior verified cache; calendar/CRM not re-verified in this run.",
-        "qualifiedCpl": null,
-        "adsAttributedCpl": null,
         "verifiedAdsAttributedBookedCalls": null,
+        "qualifiedCpl": 10.8324025,
+        "adsAttributedCpl": null,
+        "qualifiedCostPerBookedCall": 5.41620125,
         "adsAttributedCostPerBookedCall": null,
-        "attributionNote": "No separate today-only inquiry search was performed beyond the current-window inbox pull; not separately measurable."
+        "attributionNote": "Today included two genuine inbox inquiries/threads (Salena Ogden and Tammye Hall); neither carries verifiable Ads attribution. Four qualified customer/project calls occurred today (Frank Luca, David Aminov, Ari Levitin, Cameron Nelligan). Ads-attributed booked calls are NOT YET MEASURABLE."
       }
     },
-    "capHealth": {
+    "health": {
       "configuredDailyBudgets": {
-        "ContractMfg": 20.33,
-        "Samples": 5,
+        "PLL-Search-ContractMfg-2026": 20.33,
+        "PLL-Search-Samples-2026": 5.0,
         "combinedDaily": 25.33,
         "combinedSevenDay": 177.31
       },
-      "dailyCap": "Today spent $27.84; configured combined daily budget $25.33.",
-      "trailingCap": "Current trailing spend is 85.90% of configured seven-day pacing; prior is 107.43%.",
-      "funnel": "Booked-call metrics carried forward and not re-verified; Ads-attributed booked calls NOT YET MEASURABLE.",
+      "dailyCap": "Configured combined daily budget is $25.33 ($20.33 ContractMfg + $5.00 Samples). Today (2026-08-31) spent $21.66, 85.52% of configured daily budget; this is within normal pacing and is not a breach.",
+      "trailingCap": "Current 7-day spend is $156.28, 88.14% of the $177.31 seven-day configured budget; trailing average $22.33/day vs $25.33 configured, so no current cap breach. Prior 7-day spend was $178.89, 100.89% of configured pacing (historical prior-window overage).",
+      "funnel": "Current window: 6 total inbox inquiries, 6 qualified, 1 verified Ads-attributed lead, and 5 qualified customer/project booked calls. Verified Ads-attributed booked calls remain NOT YET MEASURABLE.",
       "dataPulls": {
         "campaignToday": true,
         "campaignCurrent": true,
@@ -1048,15 +1572,61 @@
         "exactSevenAdRoster": false,
         "searchTerms": false,
         "outlookInquiries": true,
-        "bookedCalls": false
+        "bookedCalls": true
+      }
+    },
+    "best": {
+      "adId": "817481283338",
+      "adGroupId": "200118475084",
+      "campaignId": "24040031889",
+      "status": "ENABLED",
+      "spend": 31.503977,
+      "impressions": 460,
+      "clicks": 31,
+      "ctrPct": 6.74,
+      "avgCpc": 1.016257322580645,
+      "campaign": "PLL-Search-Samples-2026",
+      "level": "queried-candidate-ad",
+      "window": {
+        "start": "2026-08-25",
+        "end": "2026-08-31"
       },
-      "interpretation": "Current trailing-window average is within configured pacing (85.90%); prior trailing window exceeded configured average (107.43%). Today exceeded the configured daily amount, but single-day overdelivery is normal and is not itself a breach."
+      "reason": "Highest current-window click volume among queried candidate IDs; exact seven-ad roster unverified."
+    },
+    "worst": {
+      "adId": "817412046418",
+      "adGroupId": "200118474604",
+      "campaignId": "24049588003",
+      "status": "ENABLED",
+      "spend": 0.0,
+      "impressions": 38,
+      "clicks": 0,
+      "ctrPct": 0.0,
+      "avgCpc": null,
+      "campaign": "PLL-Search-ContractMfg-2026",
+      "level": "queried-candidate-ad",
+      "window": {
+        "start": "2026-08-25",
+        "end": "2026-08-31"
+      },
+      "reason": "Lowest current-window click volume among queried candidate IDs; search-term waste cannot be assessed."
+    },
+    "watch": {
+      "adId": "817481260556",
+      "reason": "Highest current-window spend among queried candidate IDs; monitor concentration while roster and search-term evidence remain unverified.",
+      "spend": 52.47,
+      "clicks": 14,
+      "ctrPct": 8.86,
+      "avgCpc": 3.7478571428571428
+    },
+    "waste": {
+      "searchTerms": "NOT YET MEASURABLE — no search-term report resource is exposed by the approved Ads connection; no unsupported query or negative-keyword change made."
     },
     "recommendation": {
-      "action": "Do not change Ads settings. Prove the exact seven-ad roster, obtain ad-level scope/search-term access, and validate campaign-level attribution and booked-call mapping before optimization.",
-      "evidence": "Scoped campaigns returned current $152.32 spend, 129 clicks, and 0 conversions; ad-level report returned no usable rows and exact roster is unverified.",
-      "expectedOutcome": "Auditable scope and funnel evidence before any optimization.",
-      "measurementWindow": "Before next optimization review; then compare next trailing 7 days.",
+      "action": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate campaign-level attribution and booked-call mapping, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
+      "evidence": "Fresh campaign totals cover only the two verified campaign IDs. Exact seven-ad scope is unverified; search-term reporting is not exposed. Current spend is $156.28 over 7 days versus $177.31 configured pacing (88.14%); one paid lead is verifiable by gclid but campaign mapping is UNMAPPED.",
+      "expectedOutcome": "Restore auditable ad scope, funnel attribution, booked-call mapping, and search-term evidence before optimization decisions.",
+      "measurementWindow": "Complete validation before the next optimization review; then compare the next trailing 7 days against this baseline.",
       "approval_required": "yes",
       "pendingApproval": true,
       "approved": false
@@ -1064,22 +1634,23 @@
     "approval_required": "yes",
     "pendingApproval": true,
     "approved": false,
+    "spoken": "Nightly Ads refresh: current 7 days (Aug 25–31) spent $156.28 on 1,343 impressions and 84 clicks (6.25% CTR, $1.86 CPC), versus prior 7 days (Aug 18–24) at $178.89 / 736 / 89 (12.09% / $2.01). The exact seven-ad roster is unverified; 6 of 6 current inbox inquiries are qualified and 1 is verifiably Ads-attributed by gclid (campaign unmapped). Current trailing pacing is 11.86% under configured $25.33/day; no current cap breach. Five qualified customer/project calls are recorded in the current window. Recommendation requires Sam approval and remains read-only.",
     "preparedAnswers": {
-      "today": "Today (2026-09-02) the two scoped campaigns spent $27.84 on 1078 impressions and 32 clicks (2.97% CTR, $0.87 CPC), with 0 Google Ads conversions.",
-      "sevenNewAds": "Current 2026-08-27\u20132026-09-02 spent $152.32 on 3467 impressions and 129 clicks (3.72% CTR, $1.18 CPC), versus 2026-08-20\u20132026-08-26 at $190.49 / 920 / 91. CAMPAIGN-SCOPE \u2014 EXACT SEVEN-AD ROSTER UNVERIFIED.",
-      "ctrCpc": "Current CTR 3.72% at $1.18 CPC; prior 9.89% at $2.09 CPC.",
-      "leadsEmailsCalls": "Current inbox pull found 7 genuine Shopify inquiries (1 gclid-visible); prior found 5 (1 gclid-visible). Booked-call figures are carried forward and not re-verified; Ads-attributed booked calls NOT YET MEASURABLE.",
-      "budgetCap": "Configured budgets at report time: ContractMfg $20.33/day + Samples $5.00/day = $25.33/day. Current trailing use is 85.90% of 7-day configured pacing; prior 107.43%. No budget change.",
-      "winners": "Exact seven-ad roster and ad-level report are unverified; do not claim an ad winner. Campaign-level comparison is available only for the two scoped campaign IDs.",
-      "waste": "Search-term waste is NOT YET MEASURABLE through the approved reporting path; no settings changed.",
-      "optimization": "Do not change Ads settings. Prove the exact seven-ad roster, obtain ad-level scope/search-term access, and validate campaign-level attribution and booked-call mapping before optimization.",
-      "suggestions": "Do not change Ads settings. Prove the exact seven-ad roster, obtain ad-level scope/search-term access, and validate campaign-level attribution and booked-call mapping before optimization.",
-      "nextExperiment": "After scope/attribution/search-term validation, propose one controlled 7-day experiment with no budget increase.",
-      "whatAdsAgentShouldDo": "Remain read-only; prove roster, attribution, booked-call mapping, and search-term visibility. Do not create, edit, pause, delete, publish, or change spend/bids/keywords/targeting/creative/landing pages."
+      "today": "Today (Aug 31) the two scoped campaigns spent $21.66 on 112 impressions and 10 clicks, 8.93% CTR at $2.17 CPC. ContractMfg was $13.20 (2 clicks); Samples was $8.46 (8 clicks). This is 85.52% of the configured $25.33 combined daily budget and is not a breach.",
+      "sevenNewAds": "Current seven-day window (Aug 25–31) totaled $156.28 / 1,343 impressions / 84 clicks (6.25% CTR, $1.86 CPC), versus Aug 18–24 at $178.89 / 736 / 89 (12.09% / $2.01). The two campaign IDs are scoped, but CAMPAIGN-SCOPE — EXACT SEVEN-AD ROSTER UNVERIFIED.",
+      "ctrCpc": "Current 7-day CTR is 6.25% at $1.86 CPC, versus 12.09% at $2.01 CPC prior week.",
+      "leadsEmailsCalls": "Current window has 6 genuine inbox inquiries, all 6 qualified, 1 verified Ads-attributed by gclid (campaign UNMAPPED), and 5 qualified customer/project booked calls. Prior has 7 inquiries, 7 qualified, 0 verified Ads-attributed, and 4 qualified customer/project calls. Ads-attributed booked calls and cost per Ads-attributed booked call are NOT YET MEASURABLE.",
+      "budgetCap": "Configured budgets read at report time are ContractMfg $20.33/day plus Samples $5.00/day = $25.33/day ($177.31 per 7 days). Today used 85.52% of daily configuration. Current trailing average is $22.33/day, 88.14% of configured pacing, so no current cap breach; prior window was 100.89% of pacing. No budget change made.",
+      "winners": "Because the exact seven-ad roster is unverified, do not overclaim an exact ad winner. Among queried candidates, 817481283338 (Samples) led current-window click volume with 31 clicks, 6.74% CTR, and $1.02 CPC; Samples was also the campaign efficiency leader at 6.74% CTR / $1.02 CPC.",
+      "waste": "Search-term waste is NOT YET MEASURABLE: the approved Ads connection exposes no search-term report resource. No negative keywords or other settings were changed.",
+      "optimization": "Do not change Ads settings in this read-only run. Recommend Sam approve one controlled follow-up: prove the seven-ad roster, validate campaign-level attribution and booked-call mapping, and obtain search-term access before any bid, keyword, creative, targeting, landing-page, or budget optimization.",
+      "suggestions": "Same single recommendation: prove exact seven-ad scope, campaign-level attribution, booked-call mapping, and search-term evidence before optimization. Approval required: yes.",
+      "nextExperiment": "After scope, attribution, booked-call, and search-term validation, propose one controlled 7-day experiment only, with no budget increase and predeclared lead/booked-call measurement.",
+      "whatAdsAgentShouldDo": "Remain read-only: prove the seven-ad roster, verify gclid/UTM/campaign mapping and booked-call attribution, obtain search-term visibility if authorized, and return one evidence-based recommendation. Do not create, edit, pause, delete, publish, or change spend/bids/keywords/targeting/creative/landing pages."
     }
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -1087,6 +1658,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
+    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
   }
 }

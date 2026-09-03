@@ -1,32 +1,79 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-02T07:15:00-04:00",
-  "generatedLabel": "Sep 2 2026 · overnight build",
+  "generatedISO": "2026-09-03T11:00:00-04:00",
+  "generatedLabel": "Sep 3 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
-    "note": "~$1K/mo run rate against $2K hard cap. Tiered model use keeps six agents + meetings + weekly scan under cap."
+    "note": "Verified Ads snapshot Aug 27–Sep 2: account $305.73, 528 clicks, $0.58 CPC, 1.61% CTR, zero conversions; six enabled campaigns and 21 enabled ads."
   },
   "r2150DoNext": [
-    { "rank": 1, "task": "Talova reorder — Marcello (Coco Vanilla went viral, wants reorder). Warmest money on the board, 7+ days leaking.", "owner": "Sam", "next": "Verify Kenna's small revisions → Sam calls/messages Marcello today to lock reorder.", "status": "waiting on Sam" },
-    { "rank": 2, "task": "Terra Lotus 19K-unit R&D (Shampoo 5K + Body Wash 9K + Conditioner 5K). Old $78,580 quote suspended.", "owner": "Executive + Ronald", "next": "Confirm 3 sample sets actually shipped/arrived → build revised quote; Sam sign-off before it goes to customer.", "status": "in progress" },
-    { "rank": 3, "task": "Atlas Eternal production coordination ($26,500). Deposit $13,250 paid; balance $13,250 due on completion.", "owner": "Aidan", "next": "Monitor four parallel lanes (Aaron / Ronald / Evelyn / Laura); verify each handoff. Hold balance for completion.", "status": "in progress" },
-    { "rank": 4, "task": "Pipeline integrity — log Terra Lotus (19K) + Victor Armendarez (4K) into CRM; fix Atlas/Oreka as real deals.", "owner": "Executive", "next": "Sam approves CRM data change → log deals with stage, units, last-touch, owner.", "status": "waiting on Sam" },
-    { "rank": 5, "task": "Ads bleed — both net-new campaigns on Maximize Conversions with zero conversion tracking. CPC +32%.", "owner": "Ads Agent", "next": "Sam says 'revert ads to manual' → flip both to Manual CPC → verify live.", "status": "waiting on Sam" }
+    {
+      "rank": 1,
+      "task": "FRI SEP 4 11:00 ET CONFLICT — Austin (Radiant Glow) overlaps Ari Levitin (DEWPAD R&D Review).",
+      "owner": "Sam",
+      "next": "Move Austin to 10:00 ET recommended; Austin has not responded. Ari confirmed by email; DEWPAD has 7 attendees.",
+      "status": "waiting on Sam"
+    },
+    {
+      "rank": 2,
+      "task": "Ads approvals — revert to Manual CPC, authorize conversion tracking, decide legacy campaigns (~$447/month).",
+      "owner": "Sam",
+      "next": "Provide the three decisions; Ads remains read-only until authorized.",
+      "status": "waiting on Sam"
+    },
+    {
+      "rank": 3,
+      "task": "Qualify Mark C., Victoria/Curly 911, Shameka Lee, Wahid Habib, Nikkie Aroh, Darryl, and Uri.",
+      "owner": "Email / Sales",
+      "next": "Capture product, units, timing, and next step; Shameka has a Calendly booking.",
+      "status": "in progress"
+    },
+    {
+      "rank": 4,
+      "task": "ConvertFlow redlines and four quote authorizations.",
+      "owner": "Sam",
+      "next": "Approve redlines; authorize Ethnic Gals, Rannah/Aytay, Emma/Wagyu, and Victor quotes.",
+      "status": "waiting on Sam"
+    }
   ],
   "waitingOnSam": [
-    { "item": "Say 'go' on the OS build (Phase 0 foundation / Phase 1 tables)", "why": "Unlocks the full nervous-system rollout", "impact": "high", "since": "Sep 2" },
-    { "item": "Approve ConvertFlow two-branch fork mockup", "why": "Build goes on a duplicate; live popup untouched", "impact": "high", "since": "Aug 26" },
-    { "item": "'Revert ads to manual' CPC", "why": "Stops CPC bleed (+32%) on untracked campaigns", "impact": "high", "since": "ongoing" },
-    { "item": "Green-light conversion tracking install + first 'Get a Quote' landing page", "why": "84 clicks, ~$220 spend, 0 recorded leads — we are flying blind", "impact": "high", "since": "ongoing" },
-    { "item": "Authorize deleting abandoned Shopify draft themes (~11)", "why": "Shopify at 20-theme hard cap, blocks redesign work", "impact": "med", "since": "ongoing" },
-    { "item": "Clarify what 'Ephix PM' automations means", "why": "Candidates are Aidan 7am brief + daily accountability — I kill on your confirm", "impact": "med", "since": "Aug 28" },
-    { "item": "Aaron Miotke written warning details: exact dates caught sleeping, Aaron's title, Sam's last name + prior verbal warning date", "why": "Three placeholders block finalizing the PDF", "impact": "med", "since": "Aug 21" },
-    { "item": "Confirm Nikkie's phase ownership in writing (Phases 2, 4, 5)", "why": "Lets me write her lane spec + onboarding brief; she starts Aug 31", "impact": "med", "since": "Aug 28" },
-    { "item": "Book the Calendly Teams test call from your own browser", "why": "Final manual proof the Teams join link opens a real meeting", "impact": "med", "since": "Aug 28" },
-    { "item": "Confirm CEO vs Co-Founder title on NDAs vs manufacturing agreements", "why": "Aligns both templates", "impact": "low", "since": "open" },
-    { "item": "Reminder channel choice: pre-meeting alerts by text (248-227-3586), email, or both", "why": "Sets up meeting reminders (Phase 2)", "impact": "med", "since": "Sep 2" },
-    { "item": "Meeting notetaker decision: free-tier bot (my rec) vs record-and-transcribe vs hold", "why": "Only piece that may cost money; runs through the approval gate", "impact": "med", "since": "Sep 2" }
+    {
+      "item": "Resolve Friday 11:00 double-booking (Executive recommends moving Austin to 10:00 ET)",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "Ads: revert to manual CPC",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "Ads: authorize conversion tracking install",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "Ads: decide whether legacy campaigns keep ~$447/month",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "ConvertFlow fork mockup redlines",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "Authorize quotes for Ethnic Gals, Rannah/Aytay, Emma/Wagyu, Victor",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    }
   ],
   "agentHub": {
     "driveStatus": "PLL Command shared drive LIVE at /tasklet/shared/pll-command (read-write) — the backbone all agents read and write.",
@@ -35,48 +82,207 @@
     "honestyFlagsOpen": 0,
     "disagreementsOpen": 0,
     "agents": [
-      { "agent": "Executive (COO)", "lane": "Runs all lanes; QC + honesty sweeps", "charter": true, "model": "deep on judgment, cheap on routine", "wired": "active (this workspace)" },
-      { "agent": "Email / Sales", "lane": "ConvertFlow outbound; sales desk", "charter": true, "model": "cheap default", "wired": "needs account hookup" },
-      { "agent": "CRM Developer", "lane": "CRM build + fixes", "charter": true, "model": "cheap default", "wired": "needs account hookup" },
-      { "agent": "SEO / GEO", "lane": "Organic + AI-engine citations", "charter": true, "model": "cheap default", "wired": "needs Search Console + GA4" },
-      { "agent": "Ads", "lane": "Google Ads acct 2915572948", "charter": true, "model": "cheap default", "wired": "needs account hookup" },
-      { "agent": "Content", "lane": "Content production", "charter": true, "model": "cheap default", "wired": "not yet stood up" }
+      {
+        "agent": "Executive (COO)",
+        "lane": "Runs all lanes; QC + honesty sweeps",
+        "charter": true,
+        "model": "deep on judgment, cheap on routine",
+        "wired": "active (this workspace)"
+      },
+      {
+        "agent": "Email / Sales",
+        "lane": "ConvertFlow outbound; sales desk",
+        "charter": true,
+        "model": "cheap default",
+        "wired": "needs account hookup"
+      },
+      {
+        "agent": "CRM Developer",
+        "lane": "CRM build + fixes",
+        "charter": true,
+        "model": "cheap default",
+        "wired": "needs account hookup"
+      },
+      {
+        "agent": "SEO / GEO",
+        "lane": "Organic + AI-engine citations",
+        "charter": true,
+        "model": "cheap default",
+        "wired": "needs Search Console + GA4"
+      },
+      {
+        "agent": "Ads",
+        "lane": "Google Ads acct 2915572948",
+        "charter": true,
+        "model": "cheap default",
+        "wired": "needs account hookup"
+      },
+      {
+        "agent": "Content",
+        "lane": "Content production",
+        "charter": true,
+        "model": "cheap default",
+        "wired": "not yet stood up"
+      }
     ],
-    "lastDispatch": { "id": "R2150-20260902-01", "to": "SEO/GEO", "task": "Homepage SEO/meta check", "status": "done-verified", "note": "Bare <title>, no meta description, no quote CTA — real gap surfaced for the queue." }
+    "lastDispatch": {
+      "id": "R2150-20260902-01",
+      "to": "SEO/GEO",
+      "task": "Homepage SEO/meta check",
+      "status": "done-verified",
+      "note": "Bare <title>, no meta description, no quote CTA — real gap surfaced for the queue."
+    }
   },
-  "meetings": [
-    { "time": "Today 1:00 PM ET", "iso": "2026-09-02T17:00:00Z", "title": "PLL Chemist Call: Mark Higgins (deodorant)", "with": "Mark Higgins · aluminum-free roll-on deodorant, 2 SKUs, 500–1,000 units · with Ron + Evelyn on pricing tiers", "join": "https://meet.google.com/zgr-qycm-ppi" },
-    { "time": "Thu Sep 3, 10:00 AM ET", "iso": "2026-09-03T14:00:00Z", "title": "Ephix <> Enso", "with": "Enso Brands (Gilad/Natan) · Aidan's deal — you're a guest", "join": "" },
-    { "time": "Mon Sep 7, 12:00 PM ET", "iso": "2026-09-07T16:00:00Z", "title": "PLL Discovery Call: Amber Scapellato", "with": "Amber Scapellato · Yoni oil / feminine care line (booked via Calendly)", "join": "https://meet.google.com/jtq-szpj-aqn" }
-  ],
-  "meetingsNote": "Pulled from meeting invites in Sam's inbox (sam@prvtlabellabs.com), Sep 2. Not a live calendar sync yet — reschedules or calendar-only events may not appear until a calendar connection is added (see Agent Needs).",
-  "callsSource": "Source: meeting invites read from Sam's inbox (sam@prvtlabellabs.com) on Sep 2. This is a real read, but not a live two-way calendar sync — a Google/Outlook calendar connection would make it complete and self-updating. Add it from the Agent Needs tab.",
+  "meetings": [],
+  "meetingsNote": "Today’s calls are not verifiable from the connected Google Calendar; it is not Sam’s full schedule. Friday Sep 4 11:00 AM ET conflict is recorded in the Do Next / waiting lane from verified Executive checks.",
+  "callsSource": "Google Calendar privatelabellabs@gmail.com checked for Thu Sep 3: no events on this connected calendar, which is not Sam’s full schedule; calls therefore remain not verifiable from connected calendar.",
   "setupNeeds": [
-    { "need": "Approve creating the 'PLL Command' shared drive", "unblocks": "All agents (shared source of truth + ledger)", "why": "One-click approval card — the foundation everything reads/writes", "waiting": "Sep 2" },
-    { "need": "Connect a meeting notetaker (Fireflies/Fathom/Otter) — later", "unblocks": "Email/Sales + Executive", "why": "Real-time meeting notes + action items to you and me. Free tier possible; gated by approval", "waiting": "Sep 2" },
-    { "need": "Grant SEO/GEO agent its own Google Search Console + GA4 access (its workspace)", "unblocks": "SEO/GEO Agent", "why": "Can't do real organic/technical SEO work without console + analytics", "waiting": "Sep 2" },
-    { "need": "Sit down with Laura to connect email, WhatsApp, named CRM login", "unblocks": "Laura's agent", "why": "Workspace live but connections empty; can't operate until connected", "waiting": "ongoing" },
-    { "need": "Aidan reconnect WhatsApp + CRM sessions", "unblocks": "Aidan's agent", "why": "Signed out — brief feed is Outlook-only until reconnected", "waiting": "ongoing" },
-    { "need": "Confirm the meetings source: grant calendar access on Sam's Outlook (currently mail-only) OR name the calendar I should read", "unblocks": "Today's Meetings feed + pre-meeting alarm", "why": "The Outlook connection here reads mail only, not the calendar. Reliable daily meeting pull + accurate 2-min alarm needs a real calendar source", "waiting": "Sep 2" }
+    {
+      "need": "Approve creating the 'PLL Command' shared drive",
+      "unblocks": "All agents (shared source of truth + ledger)",
+      "why": "One-click approval card — the foundation everything reads/writes",
+      "waiting": "Sep 2"
+    },
+    {
+      "need": "Connect a meeting notetaker (Fireflies/Fathom/Otter) — later",
+      "unblocks": "Email/Sales + Executive",
+      "why": "Real-time meeting notes + action items to you and me. Free tier possible; gated by approval",
+      "waiting": "Sep 2"
+    },
+    {
+      "need": "Grant SEO/GEO agent its own Google Search Console + GA4 access (its workspace)",
+      "unblocks": "SEO/GEO Agent",
+      "why": "Can't do real organic/technical SEO work without console + analytics",
+      "waiting": "Sep 2"
+    },
+    {
+      "need": "Sit down with Laura to connect email, WhatsApp, named CRM login",
+      "unblocks": "Laura's agent",
+      "why": "Workspace live but connections empty; can't operate until connected",
+      "waiting": "ongoing"
+    },
+    {
+      "need": "Aidan reconnect WhatsApp + CRM sessions",
+      "unblocks": "Aidan's agent",
+      "why": "Signed out — brief feed is Outlook-only until reconnected",
+      "waiting": "ongoing"
+    },
+    {
+      "need": "Confirm the meetings source: grant calendar access on Sam's Outlook (currently mail-only) OR name the calendar I should read",
+      "unblocks": "Today's Meetings feed + pre-meeting alarm",
+      "why": "The Outlook connection here reads mail only, not the calendar. Reliable daily meeting pull + accurate 2-min alarm needs a real calendar source",
+      "waiting": "Sep 2"
+    }
   ],
   "aiSuggestions": [
-    { "tool": "Meeting notetaker (Fireflies / Fathom / Otter / Read.ai)", "what": "Bot joins your Teams calls via calendar, transcribes live, auto-produces notes + action items", "why": "You want an agent in the meeting taking notes; Tasklet agents can't join calls, a notetaker can", "cost": "Free tier to start; paid ~$10–30/user/mo if needed", "call": "TEST free tier" }
+    {
+      "tool": "Meeting notetaker (Fireflies / Fathom / Otter / Read.ai)",
+      "what": "Bot joins your Teams calls via calendar, transcribes live, auto-produces notes + action items",
+      "why": "You want an agent in the meeting taking notes; Tasklet agents can't join calls, a notetaker can",
+      "cost": "Free tier to start; paid ~$10–30/user/mo if needed",
+      "call": "TEST free tier"
+    }
   ],
   "agentAccountability": [
-    { "agent": "Executive (COO)", "lastDispatch": "OS master build + cockpit (overnight Sep 2)", "status": "in progress", "honesty": "clean", "note": "Runs all lanes; QC honesty sweeps" },
-    { "agent": "Email / Sales", "lastDispatch": "ConvertFlow outbound + NDA sends (Amanda, Dirk)", "status": "under audit", "honesty": "FLAG — told client(s) 'we started' before true (Aug 28)", "note": "Charter honesty rule being embedded; behavior audit pending" },
-    { "agent": "CRM Developer", "lastDispatch": "Open defect sweep", "status": "monitoring", "honesty": "verify-every-fix policy", "note": "Independently live-verify all claimed fixes + adjacent regressions" },
-    { "agent": "SEO / GEO", "lastDispatch": "not yet awakened", "status": "not started", "honesty": "n/a", "note": "Needs Search Console + GA4 in its workspace to start" },
-    { "agent": "Ads", "lastDispatch": "Nightly brief + weekly optimization", "status": "trust gap", "honesty": "FLAG — filed false report Aug 2; independent verification required", "note": "Zero conversion tracking; manual-CPC revert pending Sam" },
-    { "agent": "Content", "lastDispatch": "not yet stood up", "status": "not started", "honesty": "n/a", "note": "Part of six-agent rollout" }
+    {
+      "agent": "Executive (COO)",
+      "lastDispatch": "OS master build + cockpit (overnight Sep 2)",
+      "status": "in progress",
+      "honesty": "clean",
+      "note": "Runs all lanes; QC honesty sweeps"
+    },
+    {
+      "agent": "Email / Sales",
+      "lastDispatch": "ConvertFlow outbound + NDA sends (Amanda, Dirk)",
+      "status": "under audit",
+      "honesty": "FLAG — told client(s) 'we started' before true (Aug 28)",
+      "note": "Charter honesty rule being embedded; behavior audit pending"
+    },
+    {
+      "agent": "CRM Developer",
+      "lastDispatch": "Open defect sweep",
+      "status": "monitoring",
+      "honesty": "verify-every-fix policy",
+      "note": "Independently live-verify all claimed fixes + adjacent regressions"
+    },
+    {
+      "agent": "SEO / GEO",
+      "lastDispatch": "not yet awakened",
+      "status": "not started",
+      "honesty": "n/a",
+      "note": "Needs Search Console + GA4 in its workspace to start"
+    },
+    {
+      "agent": "Ads",
+      "lastDispatch": "Nightly brief + weekly optimization",
+      "status": "trust gap",
+      "honesty": "FLAG — filed false report Aug 2; independent verification required",
+      "note": "Zero conversion tracking; manual-CPC revert pending Sam"
+    },
+    {
+      "agent": "Content",
+      "lastDispatch": "not yet stood up",
+      "status": "not started",
+      "honesty": "n/a",
+      "note": "Part of six-agent rollout"
+    }
   ],
   "pipeline": [
-    { "deal": "STRUCK (Raul)", "units": "1,000", "product": "peptide serum", "stage": "Closed Won", "value": "paid Aug 17", "owner": "Sam" },
-    { "deal": "Atlas Eternal (Ryne Bell)", "units": "—", "product": "skincare", "stage": "Production", "value": "$26,500 ($13,250 paid)", "owner": "Aidan" },
-    { "deal": "Terra Lotus", "units": "19,000", "product": "Shampoo + Body Wash + Conditioner (R&D)", "stage": "R&D / Quote pending", "value": "TBD (old $78,580 suspended)", "owner": "Executive + Ronald" },
-    { "deal": "Talova (Marcello)", "units": "reorder", "product": "Coco Vanilla (viral)", "stage": "Warm — reorder", "value": "TBD", "owner": "Sam" },
-    { "deal": "Victor Armendarez", "units": "4,000", "product": "Curl Cream 2K + Edge Gel 2K", "stage": "Needs quote", "value": "TBD", "owner": "Ronald / Executive" },
-    { "deal": "Amanda Peters / Studio S5", "units": "~2,500", "product": "body wash + scrub", "stage": "Warm (NDA sent Aug 27)", "value": "TBD", "owner": "Sam" },
-    { "deal": "Dirk Llorens / Diogenes", "units": "500–2,500", "product": "post-training shampoo + body wash", "stage": "Warm (NDA sent Aug 27)", "value": "TBD", "owner": "Sam" }
+    {
+      "deal": "STRUCK (Raul)",
+      "units": "1,000",
+      "product": "peptide serum",
+      "stage": "Closed Won",
+      "value": "paid Aug 17",
+      "owner": "Sam"
+    },
+    {
+      "deal": "Atlas Eternal (Ryne Bell)",
+      "units": "—",
+      "product": "skincare",
+      "stage": "Production",
+      "value": "$26,500 ($13,250 paid)",
+      "owner": "Aidan"
+    },
+    {
+      "deal": "Terra Lotus",
+      "units": "19,000",
+      "product": "Shampoo + Body Wash + Conditioner (R&D)",
+      "stage": "R&D / Quote pending",
+      "value": "TBD (old $78,580 suspended)",
+      "owner": "Executive + Ronald"
+    },
+    {
+      "deal": "Talova (Marcello)",
+      "units": "reorder",
+      "product": "Coco Vanilla (viral)",
+      "stage": "Warm — reorder",
+      "value": "TBD",
+      "owner": "Sam"
+    },
+    {
+      "deal": "Victor Armendarez",
+      "units": "4,000",
+      "product": "Curl Cream 2K + Edge Gel 2K",
+      "stage": "Needs quote",
+      "value": "TBD",
+      "owner": "Ronald / Executive"
+    },
+    {
+      "deal": "Amanda Peters / Studio S5",
+      "units": "~2,500",
+      "product": "body wash + scrub",
+      "stage": "Warm (NDA sent Aug 27)",
+      "value": "TBD",
+      "owner": "Sam"
+    },
+    {
+      "deal": "Dirk Llorens / Diogenes",
+      "units": "500–2,500",
+      "product": "post-training shampoo + body wash",
+      "stage": "Warm (NDA sent Aug 27)",
+      "value": "TBD",
+      "owner": "Sam"
+    }
   ]
 }

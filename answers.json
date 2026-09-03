@@ -1,9 +1,5 @@
 {
-  "id": "cmd_mtkg74kv_c92q3xy",
-  "request_id": "cmd_mtkg74kv_c92q3xy",
-  "ts": "2026-09-02T19:04:16.623Z",
-  "agent": "PLL Consultant",
-  "status": "completed",
-  "text": "Mutual NDA for Seal Team Slicks - Email Agent blocked on a counterparty it already had in context and texted Sam unnecessarily. Executive resolved it and re-dispatched with Seal Team Slicks named. Draft only, replaces the unsigned one-way NDA sent earlier today. Nothing goes to the customer until Sam says send.",
-  "spoken_text": "Sam, the Email Agent blocked on a counterparty it already had in context and texted you unnecessarily. I resolved that and re-dispatched the mutual NDA with Seal Team Slicks named. It is draft only and replaces the unsigned one-way NDA sent earlier today. Nothing will go to the customer until you say send."
+  "id": "morning-20260903-736d20aeef",
+  "ts": "2026-09-03T11:00:00Z",
+  "message": "Morning brief loaded for 2026-09-03."
 }
