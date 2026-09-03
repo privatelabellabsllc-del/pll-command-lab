@@ -404,48 +404,7 @@
       "a": "Mark Cafolla remains an active custom-peptide opportunity with NDA executed and packaging/sample specifications in progress. The old August 28 call record is historical; no September 1 call or newly verified outcome is present in today’s sources."
     }
   ],
-  "topTasks": [
-    {
-      "rank": 1,
-      "title": "Resolve Friday 11:00 ET double-booking",
-      "why": "Austin/Radiant Glow and Ari Levitin/DEWPAD R&D Review overlap; the connected calendar is incomplete.",
-      "owner": "Sam",
-      "due": "Before Fri Sep 4",
-      "priority": "critical",
-      "revenue": "Scheduling",
-      "status": "MOVE AUSTIN TO 10:00 ET RECOMMENDED"
-    },
-    {
-      "rank": 2,
-      "title": "Clear Ads approvals",
-      "why": "Verified account snapshot has zero conversions tracked; settings must not change without Sam.",
-      "owner": "Sam / Ads Agent",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "Paid acquisition",
-      "status": "MANUAL CPC + TRACKING + LEGACY DECISION"
-    },
-    {
-      "rank": 3,
-      "title": "Qualify new inbound",
-      "why": "Seven named inbound opportunities need qualification and next-step capture.",
-      "owner": "Email / Sales",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "New inbound",
-      "status": "MARK C. / VICTORIA / SHAMEKA + 4 BOOKINGS"
-    },
-    {
-      "rank": 4,
-      "title": "Approve quotes and ConvertFlow redlines",
-      "why": "Four quote authorizations and mockup redlines remain open decisions.",
-      "owner": "Sam",
-      "due": "Today",
-      "priority": "high",
-      "revenue": "Pipeline",
-      "status": "ETHNIC GALS / RANNAH-AYTAY / EMMA-WAGYU / VICTOR"
-    }
-  ],
+  "topTasks": [],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
@@ -679,7 +638,7 @@
           "spend": 124.780147,
           "impressions": 883,
           "clicks": 53,
-          "ctrPct": 6.0,
+          "ctrPct": 6,
           "avgCpc": 2.354342396226415,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
@@ -695,7 +654,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ],
       "prior": [
@@ -719,7 +678,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ],
       "today": [
@@ -743,7 +702,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ]
     },
@@ -791,7 +750,7 @@
           "spend": 0,
           "impressions": 38,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -877,7 +836,7 @@
           "spend": 0,
           "impressions": 15,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -939,7 +898,7 @@
           "spend": 0.130096,
           "impressions": 2,
           "clicks": 1,
-          "ctrPct": 50.0,
+          "ctrPct": 50,
           "avgCpc": 0.130096,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -951,7 +910,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -963,7 +922,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -975,7 +934,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -987,7 +946,7 @@
           "spend": 13.07,
           "impressions": 4,
           "clicks": 1,
-          "ctrPct": 25.0,
+          "ctrPct": 25,
           "avgCpc": 13.07,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1011,7 +970,7 @@
           "spend": 0,
           "impressions": 12,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         }
@@ -1067,7 +1026,7 @@
     "capHealth": {
       "configuredDailyBudgets": {
         "PLL-Search-ContractMfg-2026": 20.33,
-        "PLL-Search-Samples-2026": 5.0,
+        "PLL-Search-Samples-2026": 5,
         "combinedDaily": 25.33,
         "combinedSevenDay": 177.31
       },
@@ -1169,7 +1128,7 @@
           "spend": 124.780147,
           "impressions": 883,
           "clicks": 53,
-          "ctrPct": 6.0,
+          "ctrPct": 6,
           "avgCpc": 2.354342396226415,
           "campaignId": "24049588003",
           "campaign": "PLL-Search-ContractMfg-2026",
@@ -1185,7 +1144,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ],
       "prior": [
@@ -1209,7 +1168,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ],
       "today": [
@@ -1233,7 +1192,7 @@
           "campaignId": "24040031889",
           "campaign": "PLL-Search-Samples-2026",
           "status": "ENABLED",
-          "configuredDailyBudget": 5.0
+          "configuredDailyBudget": 5
         }
       ]
     },
@@ -1281,7 +1240,7 @@
           "spend": 0,
           "impressions": 38,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1367,7 +1326,7 @@
           "spend": 0,
           "impressions": 15,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1429,7 +1388,7 @@
           "spend": 0.130096,
           "impressions": 2,
           "clicks": 1,
-          "ctrPct": 50.0,
+          "ctrPct": 50,
           "avgCpc": 0.130096,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1441,7 +1400,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1453,7 +1412,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1465,7 +1424,7 @@
           "spend": 0,
           "impressions": 1,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1477,7 +1436,7 @@
           "spend": 13.07,
           "impressions": 4,
           "clicks": 1,
-          "ctrPct": 25.0,
+          "ctrPct": 25,
           "avgCpc": 13.07,
           "campaign": "PLL-Search-ContractMfg-2026"
         },
@@ -1501,7 +1460,7 @@
           "spend": 0,
           "impressions": 12,
           "clicks": 0,
-          "ctrPct": 0.0,
+          "ctrPct": 0,
           "avgCpc": null,
           "campaign": "PLL-Search-ContractMfg-2026"
         }
@@ -1557,7 +1516,7 @@
     "health": {
       "configuredDailyBudgets": {
         "PLL-Search-ContractMfg-2026": 20.33,
-        "PLL-Search-Samples-2026": 5.0,
+        "PLL-Search-Samples-2026": 5,
         "combinedDaily": 25.33,
         "combinedSevenDay": 177.31
       },
@@ -1598,10 +1557,10 @@
       "adGroupId": "200118474604",
       "campaignId": "24049588003",
       "status": "ENABLED",
-      "spend": 0.0,
+      "spend": 0,
       "impressions": 38,
       "clicks": 0,
-      "ctrPct": 0.0,
+      "ctrPct": 0,
       "avgCpc": null,
       "campaign": "PLL-Search-ContractMfg-2026",
       "level": "queried-candidate-ad",
