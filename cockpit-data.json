@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-03T11:00:00-04:00",
-  "generatedLabel": "Sep 3 2026 · morning refresh",
+  "generatedISO": "2026-09-04T07:05:00-04:00",
+  "generatedLabel": "Sep 4 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,69 +10,75 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "FRI SEP 4 11:00 ET CONFLICT — Austin (Radiant Glow) overlaps Ari Levitin (DEWPAD R&D Review).",
+      "task": "Talova viral reorder: ask Marcello for quantity.",
       "owner": "Sam",
-      "next": "Move Austin to 10:00 ET recommended; Austin has not responded. Ari confirmed by email; DEWPAD has 7 attendees.",
+      "next": "Kenna R2 formulas are verified on file; build the quote when quantity lands.",
       "status": "waiting on Sam"
     },
     {
       "rank": 2,
-      "task": "Ads approvals — revert to Manual CPC, authorize conversion tracking, decide legacy campaigns (~$447/month).",
+      "task": "Run Awa NDiaye discovery at 10:30 ET.",
       "owner": "Sam",
-      "next": "Provide the three decisions; Ads remains read-only until authorized.",
-      "status": "waiting on Sam"
+      "next": "Capture six quote inputs and end on time for the 11:00 review.",
+      "status": "booked today"
     },
     {
       "rank": 3,
-      "task": "Qualify Mark C., Victoria/Curly 911, Shameka Lee, Wahid Habib, Nikkie Aroh, Darryl, and Uri.",
-      "owner": "Email / Sales",
-      "next": "Capture product, units, timing, and next step; Shameka has a Calendly booking.",
-      "status": "in progress"
+      "task": "Protect Ari Levitin DEWPAD R&D Review at 11:00 ET.",
+      "owner": "Sam",
+      "next": "Join with Ron, Evelyn, and Aaron. Austin declined and is unavailable about 30 days.",
+      "status": "booked today"
     },
     {
       "rank": 4,
-      "task": "ConvertFlow redlines and four quote authorizations.",
+      "task": "Clear R2150 decisions and quote inputs.",
       "owner": "Sam",
-      "next": "Approve redlines; authorize Ethnic Gals, Rannah/Aytay, Emma/Wagyu, and Victor quotes.",
+      "next": "Authorize ICP brands, revert Ads to manual, approve ConvertFlow, choose Amanda A or B, and provide Mark specs.",
       "status": "waiting on Sam"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Resolve Friday 11:00 double-booking (Executive recommends moving Austin to 10:00 ET)",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "Message Marcello for Talova reorder quantity",
+      "why": "Warmest cash lane; Kenna R2 formulas verified on file",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 4"
     },
     {
-      "item": "Ads: revert to manual CPC",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "Authorize unquoted ICP brands",
+      "why": "Ethnic Gals, Rannah and Aytay, Emma and Wagyu, and Talova lip oil need a go",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 4"
     },
     {
-      "item": "Ads: authorize conversion tracking install",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "Revert Ads to manual",
+      "why": "Both campaigns have no tracked conversions",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 4"
     },
     {
-      "item": "Ads: decide whether legacy campaigns keep ~$447/month",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "ConvertFlow fork redlines",
+      "why": "Staged funnel waits for approval",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 4"
     },
     {
-      "item": "ConvertFlow fork mockup redlines",
-      "why": "Open decision from Sep 3 Executive check",
-      "impact": "high",
-      "since": "Sep 3"
+      "item": "Amanda send A or B",
+      "why": "Reply is drafted and awaits selection",
+      "impact": "medium",
+      "since": "Sep 4"
     },
     {
-      "item": "Authorize quotes for Ethnic Gals, Rannah/Aytay, Emma/Wagyu, Victor",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "Mark Higgins specs",
+      "why": "Quote cannot be built without call specifications",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 4"
+    },
+    {
+      "item": "Review Stella redirect draft",
+      "why": "Low MOQ and customer supplied materials are off ICP",
+      "impact": "medium",
+      "since": "Sep 4"
     }
   ],
   "agentHub": {
@@ -108,7 +114,7 @@
         "lane": "Organic + AI-engine citations",
         "charter": true,
         "model": "cheap default",
-        "wired": "needs Search Console + GA4"
+        "wired": "needs account hookup"
       },
       {
         "agent": "Ads",
@@ -122,20 +128,37 @@
         "lane": "Content production",
         "charter": true,
         "model": "cheap default",
-        "wired": "not yet stood up"
+        "wired": "needs account hookup"
       }
     ],
     "lastDispatch": {
-      "id": "R2150-20260902-01",
-      "to": "SEO/GEO",
-      "task": "Homepage SEO/meta check",
-      "status": "done-verified",
-      "note": "Bare <title>, no meta description, no quote CTA — real gap surfaced for the queue."
+      "id": "R2150-20260904-05",
+      "to": "content",
+      "task": "Adopt R2150 directive 5.5: company and capabilities decks; one page How We Work PDF; quote cover note template in Sam’s voice.",
+      "status": "queued",
+      "note": "Five R2150 spokes remain queued pending account hookup."
     }
   },
-  "meetings": [],
-  "meetingsNote": "Today’s calls are not verifiable from the connected Google Calendar; it is not Sam’s full schedule. Friday Sep 4 11:00 AM ET conflict is recorded in the Do Next / waiting lane from verified Executive checks.",
-  "callsSource": "Google Calendar privatelabellabs@gmail.com checked for Thu Sep 3: no events on this connected calendar, which is not Sam’s full schedule; calls therefore remain not verifiable from connected calendar.",
+  "meetings": [
+    {
+      "timeISO": "2026-09-04T10:30:00-04:00",
+      "time": "10:30 AM ET",
+      "title": "PLL Discovery Call",
+      "who": "Awa NDiaye",
+      "join": "https://meet.google.com/mhb-bhcd-gsu",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-04T11:00:00-04:00",
+      "time": "11:00 AM ET",
+      "title": "DEWPAD R&D Review",
+      "who": "Ari Levitin with Ron, Evelyn, and Aaron",
+      "join": "https://meet.google.com/onw-hdqh-yxc",
+      "location": "Google Meet"
+    }
+  ],
+  "meetingsNote": "Verified today from Sam’s narrated daily task list and meeting invite evidence. Austin of Radiant Glow declined the overlapping 11:00 invite and is unavailable for about 30 days, so he is removed.",
+  "callsSource": "Today’s meetings are Awa NDiaye at 10:30 AM ET and Ari Levitin of DEWPAD at 11:00 AM ET, with Google Meet links from verified morning evidence. Outlook remains mail only.",
   "setupNeeds": [
     {
       "need": "Approve creating the 'PLL Command' shared drive",
@@ -172,6 +195,12 @@
       "unblocks": "Today's Meetings feed + pre-meeting alarm",
       "why": "The Outlook connection here reads mail only, not the calendar. Reliable daily meeting pull + accurate 2-min alarm needs a real calendar source",
       "waiting": "Sep 2"
+    },
+    {
+      "need": "Grant a real calendar source for Sam’s schedule",
+      "unblocks": "Today’s Meetings feed and pre meeting alarm",
+      "why": "Outlook connection is mail only; current meeting times came from verified invite evidence",
+      "waiting": "ongoing"
     }
   ],
   "aiSuggestions": [
@@ -186,45 +215,45 @@
   "agentAccountability": [
     {
       "agent": "Executive (COO)",
-      "lastDispatch": "OS master build + cockpit (overnight Sep 2)",
+      "lastDispatch": "R2150 directives and morning refresh",
       "status": "in progress",
       "honesty": "clean",
-      "note": "Runs all lanes; QC honesty sweeps"
+      "note": "Runs all lanes; QC and honesty sweeps"
     },
     {
       "agent": "Email / Sales",
-      "lastDispatch": "ConvertFlow outbound + NDA sends (Amanda, Dirk)",
-      "status": "under audit",
-      "honesty": "FLAG — told client(s) 'we started' before true (Aug 28)",
-      "note": "Charter honesty rule being embedded; behavior audit pending"
+      "lastDispatch": "R2150-20260904-01",
+      "status": "queued",
+      "honesty": "clean",
+      "note": "Needs account hookup before acting"
     },
     {
       "agent": "CRM Developer",
-      "lastDispatch": "Open defect sweep",
-      "status": "monitoring",
-      "honesty": "verify-every-fix policy",
-      "note": "Independently live-verify all claimed fixes + adjacent regressions"
+      "lastDispatch": "R2150-20260904-02",
+      "status": "queued",
+      "honesty": "clean",
+      "note": "Needs account hookup before acting"
     },
     {
       "agent": "SEO / GEO",
-      "lastDispatch": "not yet awakened",
-      "status": "not started",
-      "honesty": "n/a",
-      "note": "Needs Search Console + GA4 in its workspace to start"
+      "lastDispatch": "R2150-20260904-03",
+      "status": "queued",
+      "honesty": "clean",
+      "note": "Needs account hookup before acting"
     },
     {
       "agent": "Ads",
-      "lastDispatch": "Nightly brief + weekly optimization",
-      "status": "trust gap",
-      "honesty": "FLAG — filed false report Aug 2; independent verification required",
-      "note": "Zero conversion tracking; manual-CPC revert pending Sam"
+      "lastDispatch": "R2150-20260904-04",
+      "status": "queued",
+      "honesty": "clean",
+      "note": "Needs account hookup; manual CPC remains Sam decision"
     },
     {
       "agent": "Content",
-      "lastDispatch": "not yet stood up",
-      "status": "not started",
-      "honesty": "n/a",
-      "note": "Part of six-agent rollout"
+      "lastDispatch": "R2150-20260904-05",
+      "status": "queued",
+      "honesty": "clean",
+      "note": "Needs account hookup before acting"
     }
   ],
   "pipeline": [
@@ -256,7 +285,7 @@
       "deal": "Talova (Marcello)",
       "units": "reorder",
       "product": "Coco Vanilla (viral)",
-      "stage": "Warm — reorder",
+      "stage": "Warm, reorder quantity requested",
       "value": "TBD",
       "owner": "Sam"
     },
@@ -272,7 +301,7 @@
       "deal": "Amanda Peters / Studio S5",
       "units": "~2,500",
       "product": "body wash + scrub",
-      "stage": "Warm (NDA sent Aug 27)",
+      "stage": "Warm, reply awaits send A or B",
       "value": "TBD",
       "owner": "Sam"
     },
@@ -281,6 +310,14 @@
       "units": "500–2,500",
       "product": "post-training shampoo + body wash",
       "stage": "Warm (NDA sent Aug 27)",
+      "value": "TBD",
+      "owner": "Sam"
+    },
+    {
+      "deal": "Awa NDiaye",
+      "units": "Not stated",
+      "product": "Not stated",
+      "stage": "Discovery booked",
       "value": "TBD",
       "owner": "Sam"
     }
