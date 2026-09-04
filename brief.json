@@ -1,33 +1,41 @@
 {
-  "date": "2026-09-03",
-  "ts": "2026-09-03T11:00:00Z",
+  "date": "2026-09-04",
+  "ts": "2026-09-04T11:05:00Z",
   "brief": [
     {
-      "t": "Morning refresh for September 3: today’s calls are not verifiable from the connected Google Calendar; it is not Sam’s full schedule. Friday at 11:00 AM ET has a prominent double-booking that needs resolution.",
+      "t": "Today is Friday, September 4. The revenue block runs from 10:00 AM to 12:30 PM, with Awa NDiaye at 10:30 and Ari Levitin of DEWPAD at 11:00. Awa needs the six quote inputs, and the discovery call must end on time.",
       "hot": true
     },
     {
-      "t": "Friday 11:00 AM ET conflict: Austin (Radiant Glow) has not responded, while Ari Levitin’s DEWPAD R&D Review has seven attendees and Ari confirmed by email. Executive recommends moving Austin to 10:00 AM ET.",
+      "t": "Road2150 number one is the Talova reorder. Kenna’s revised Coco Vanilla and Grapefruit formulas are verified on file, so Sam’s one move is to ask Marcello for the reorder quantity.",
       "hot": true
     },
     {
-      "t": "Waiting on Sam: revert Ads to Manual CPC, authorize conversion tracking, decide whether legacy campaigns keep about $447 per month, approve ConvertFlow redlines, and authorize the six pending quotes.",
+      "t": "Ari’s 11:00 R&D Review is confirmed with Ron, Evelyn, and Aaron. Austin of Radiant Glow declined the overlapping invite and remains interested but unavailable for about 30 days, so there is no Austin call today.",
       "hot": true
     },
     {
-      "t": "Qualify new inbound: Mark C. peptide testing, Victoria/Curly 911 tech transfer, Shameka Lee braiding spray with Calendly booked, plus Wahid Habib, Nikkie Aroh, Darryl, and Uri bookings.",
+      "t": "Waiting on Sam: authorize the unquoted ICP brands, say revert ads to manual, approve ConvertFlow redlines, choose Amanda send A or B, and provide Mark Higgins specifications.",
       "hot": true
     },
     {
-      "t": "Verified Ads snapshot for Aug 27–Sep 2: $305.73 account spend, 528 clicks, $0.58 CPC, 1.61% CTR, zero conversions; six enabled campaigns and 21 enabled ads.",
+      "t": "Stella N. asked about low minimum quantities using her own raw materials for five products. That is outside our fit on both points; a warm redirect to the white label collection is drafted and held for Sam.",
+      "hot": false
+    },
+    {
+      "t": "A new Mac sign in hit the shared PLL Gmail account yesterday at 4:31 PM. Ignore it only if it was recognized; otherwise rotate the shared password today.",
+      "hot": true
+    },
+    {
+      "t": "The hub has five R2150 dispatches queued and none acted on because five spokes still need account hookup. There are zero open honesty flags and zero unresolved disagreements.",
       "hot": false
     }
   ],
   "next": [
-    "Resolve Friday 11:00 AM ET double-booking; recommend moving Austin to 10:00 AM ET",
-    "Answer Ads decisions: Manual CPC, conversion tracking, and legacy-campaign ~$447/month disposition",
-    "Review ConvertFlow fork mockup redlines and authorize pending quotes: Ethnic Gals, Rannah/Aytay, Emma/Wagyu, Victor",
-    "Qualify Mark C., Victoria/Curly 911, Shameka Lee, Wahid Habib, Nikkie Aroh, Darryl, and Uri"
+    "Message Marcello for Talova reorder quantity, then build the quote when it lands",
+    "Run Awa’s six quote inputs at 10:30 and protect the 11:00 DEWPAD review",
+    "Authorize unquoted ICP brands, revert Ads to manual, and approve ConvertFlow redlines",
+    "Choose Amanda send A or B, provide Mark Higgins specs, and review the held Stella redirect"
   ],
   "kb": [
     {
@@ -120,16 +128,12 @@
     },
     {
       "keys": [
-        "ashley harmon",
-        "ashley",
-        "apothik",
-        "apothik skin",
-        "call today",
-        "2:30",
-        "3 pm eastern",
-        "monday"
+        "monday",
+        "amber scapellato",
+        "anastasia staley",
+        "september 7"
       ],
-      "a": "Ashley Harmon at Apothik wants a call today at 2:30 or 3 PM Eastern, or Monday. Sam should pick a slot; the Consultant will book it, and it should not be described as booked before that choice."
+      "a": "Monday September 7 has Amber Scapellato at 12:00 PM ET for Yoni oil at https://meet.google.com/jtq-szpj-aqn and Anastasia Staley at 4:00 PM ET at https://meet.google.com/nsp-wwuq-zqi. Both are client side needsAction."
     },
     {
       "keys": [
@@ -269,7 +273,7 @@
         "today",
         "priority"
       ],
-      "a": "Sam’s Sept 1 lane is to protect the 2pm Tammye Hall call, resolve the urgent Morning Glory label review, review Mark Higgins’s ingredient brief, and provide direction on Gridlot’s NDA and Studio S5’s questions. Enso’s 9:15am proposal is not confirmed by Sam; Payroll is on the calendar at 11am ET. No new day-update entry was available."
+      "a": "Sam’s top lane today is the Talova reorder message, followed by Awa’s 10:30 discovery call and Ari’s 11:00 DEWPAD review. Waiting decisions are ICP quote authorization, manual Ads, ConvertFlow redlines, Amanda send A or B, and Mark Higgins specifications."
     },
     {
       "keys": [
@@ -290,7 +294,7 @@
         "kenna revisions",
         "po"
       ],
-      "a": "Talova Labs’ Marcello remains a warm reorder lane for Coco Vanilla. Before Sam locks the PO, PLL still needs a clean confirmation that Kenna’s small revisions were received; that confirmation is not present in today’s sources."
+      "a": "Talova’s Marcello is waiting on a reorder quantity after Coco Vanilla went viral. Kenna’s revised Coco Vanilla and Grapefruit formulas are verified on file, so Sam’s next move is one message asking for quantity; the quote follows when it lands."
     },
     {
       "keys": [
@@ -389,194 +393,230 @@
         "click industries",
         "chemist call"
       ],
-      "a": "Ari Levitin of Click Industries/DEWPAD had a chemist call scheduled August 31 to review custom formula pricing at 5,000, 10,000, 20,000, and 40,000 units, with a stated $3.50 target at 10,000. No verified call outcome or technical/commercial commitment is recorded here."
+      "a": "Ari Levitin of DEWPAD has an 11:00 AM ET R&D Review today with Ron, Evelyn, and Aaron. The Google Meet link is https://meet.google.com/onw-hdqh-yxc, and the review should run after Awa’s 10:30 discovery call."
     },
     {
       "keys": [
-        "mark cafolla",
-        "cafolla",
+        "awa ndiaye",
+        "awa",
         "discovery call",
-        "august 28",
-        "11am",
-        "video link",
-        "teams"
+        "mhb-bhcd-gsu"
       ],
-      "a": "Mark Cafolla remains an active custom-peptide opportunity with NDA executed and packaging/sample specifications in progress. The old August 28 call record is historical; no September 1 call or newly verified outcome is present in today’s sources."
+      "a": "Awa NDiaye has a 10:30 AM ET discovery call today at https://meet.google.com/mhb-bhcd-gsu. No product or unit count is on file, so ask for product, units, packaging, fill size, timeline, and target price."
+    },
+    {
+      "keys": [
+        "austin",
+        "radiant glow",
+        "declined",
+        "30 days"
+      ],
+      "a": "Austin of Radiant Glow declined today’s 11:00 invite because a day job has him tied up for about 30 days. He remains interested; there is no Austin meeting today and a 30 day follow up is planned."
+    },
+    {
+      "keys": [
+        "stella n",
+        "stella",
+        "low moq",
+        "own raw materials"
+      ],
+      "a": "Stella N. asked about low MOQ manufacturing using her own raw materials for serum, cream, lotion, cleanser, and tonic. That is outside fit on low MOQ and customer supplied materials; a warm redirect to the white label collection is drafted and held for Sam."
+    },
+    {
+      "keys": [
+        "security alert",
+        "new mac",
+        "shared gmail",
+        "password rotation"
+      ],
+      "a": "A Google security alert reported a new Mac sign in to privatelabellabsllc@gmail.com on September 3 at 4:31 PM ET. Ignore it only if recognized by Sam or a team member; otherwise rotate the shared password."
     }
   ],
-  "topTasks": [],
+  "topTasks": [
+    {
+      "title": "Message Marcello for Talova reorder quantity",
+      "owner": "Sam",
+      "due": "Today",
+      "priority": 1
+    },
+    {
+      "title": "Run Awa NDiaye discovery call and capture six quote inputs",
+      "owner": "Sam",
+      "due": "Today 10:30 AM ET",
+      "priority": 2
+    },
+    {
+      "title": "Protect Ari Levitin DEWPAD R&D Review",
+      "owner": "Sam",
+      "due": "Today 11:00 AM ET",
+      "priority": 3
+    },
+    {
+      "title": "Clear pending approvals and quote inputs",
+      "owner": "Sam",
+      "due": "Today",
+      "priority": 4
+    }
+  ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Handle the Tammye 2pm call format, Morning Glory print-status escalation, Mark Higgins review, and the Gridlot/Studio S5 decisions.",
+      "top_task": "Message Marcello for Talova reorder quantity and protect today’s two calls.",
       "tasks": [
         {
-          "title": "Confirm Tammye Hall’s 2pm ET call format and agenda",
-          "due": "Today 2:00pm ET"
-        },
-        {
-          "title": "Verify whether Morning Glory labels have printed and direct the correction review",
+          "title": "Ask Marcello for Talova reorder quantity",
           "due": "Today"
         },
         {
-          "title": "Review Mark Higgins’s ingredient brief and choose a chemist-call time",
-          "due": "Today"
+          "title": "Run Awa NDiaye discovery call",
+          "due": "Today 10:30am ET"
         },
         {
-          "title": "Provide Gridlot NDA and Studio S5 commercial direction",
-          "due": "Today"
+          "title": "Protect Ari Levitin DEWPAD review",
+          "due": "Today 11:00am ET"
         },
         {
-          "title": "Confirm or decline Enso’s proposed 9:15am ET meeting",
+          "title": "Clear R2150 approvals and inputs",
           "due": "Today"
         }
       ],
-      "notes": "The Sept 1 calendar also contains Payroll at 11am ET. No new day-update was available; do not treat unconfirmed proposals as booked."
+      "notes": "Austin declined the overlapping invite and is unavailable for about 30 days."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Drive Atlas Eternal production and support Mark Higgins formulation review and Terra Lotus shipment verification.",
+      "top_task": "Drive Atlas production and confirm Terra Lotus sample status.",
       "tasks": [
         {
-          "title": "Drive Atlas Eternal $26,500 production across four lanes",
+          "title": "Drive Atlas Eternal production",
           "due": "On completion"
         },
         {
-          "title": "Support Mark Higgins brief review and confirm formulation inputs",
-          "due": "Today"
-        },
-        {
-          "title": "Confirm Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped",
+          "title": "Confirm Terra Lotus sample sets shipped",
           "due": "Today"
         }
       ],
-      "notes": "Atlas has $13,250 due on completion. Terra’s 19,000-unit sample shipment remains unconfirmed."
+      "notes": "Atlas balance is due on completion. Terra shipment remains unconfirmed."
     },
     "aaron": {
       "display_name": "Aaron",
-      "top_task": "Verify Kenna’s revisions for the Talova reorder before Sam locks the PO.",
+      "top_task": "Support the DEWPAD R&D Review and Talova formula handoff.",
       "tasks": [
         {
-          "title": "Confirm whether PLL received Kenna’s revised formula details",
+          "title": "Join DEWPAD R&D Review",
+          "due": "Today 11:00am ET"
+        },
+        {
+          "title": "Support Talova formula handoff",
           "due": "Today"
         }
       ],
-      "notes": "Talova/Marcello remains a warm lane, but the Kenna-revision confirmation is not verified."
+      "notes": "Kenna’s R2 formulas are verified on file."
     },
     "james": {
       "display_name": "James",
-      "top_task": "Escalate Morning Glory label corrections and resolve the AF Brand meeting ownership.",
+      "top_task": "Maintain assigned production follow through.",
       "tasks": [
         {
-          "title": "Verify Morning Glory label print status and route the correction checklist",
-          "due": "Today"
-        },
-        {
-          "title": "Resolve ownership/attendance for the AF Brand Sept 2 meeting",
-          "due": "Tomorrow"
+          "title": "Review active production handoffs",
+          "due": "Ongoing"
         }
       ],
-      "notes": "James is also copied on the AF Brand invite; Sam is marked declined and Laura accepted."
+      "notes": "No new narrated update this morning."
     },
     "nikkie": {
       "display_name": "Nikkie",
-      "top_task": "Continue outbound sales and qualify active inbound opportunities.",
+      "top_task": "Qualify active inbound opportunities.",
       "tasks": [
         {
-          "title": "Work active white-label inquiries and book qualified next steps",
-          "due": "Ongoing"
-        },
-        {
-          "title": "Resolve outstanding Curly 911/Victoria timing details",
+          "title": "Work active white label inquiries",
           "due": "Ongoing"
         }
       ],
-      "notes": "Nikkie’s opportunities remain active and none should be described as closed without verified CRM evidence."
+      "notes": "No new narrated update this morning."
     }
   },
   "revenueActions": [
     {
-      "title": "Protect Tammye Hall call",
-      "why": "The Sept 1 2pm ET Meet is confirmed, but the client previously expected a phone call.",
+      "title": "Talova viral reorder",
+      "why": "Marcello’s reorder is the warmest cash lane and Kenna R2 formulas are verified on file.",
       "est_value": "Not stated",
-      "next_step": "Send/confirm the actual format and agenda, then run the manufacturing-and-fulfillment qualification call.",
-      "owner": "Sam / Consultant",
-      "timing": "Today 2:00pm ET",
-      "value": "Booked discovery call",
-      "status": "FORMAT CONFIRMATION NEEDED"
-    },
-    {
-      "title": "Resolve Morning Glory label corrections",
-      "why": "Client reports production is underway and requests urgent pre-print review.",
-      "est_value": "Existing production account",
-      "next_step": "Verify whether labels printed; then route net contents, INCI/order, company details, claims substantiation, warnings, legibility, lot/UPC, and artwork review.",
-      "owner": "Sam / James",
+      "next_step": "Sam asks for quantity; build quote when it lands.",
+      "owner": "Sam / Executive",
       "timing": "Today",
-      "value": "Production continuity",
-      "status": "URGENT VERIFICATION"
+      "value": "Warm reorder",
+      "status": "WAITING ON SAM"
     },
     {
-      "title": "Advance Mark Higgins quote lane",
-      "why": "The requested ingredient brief for two roll-on deodorants is now available for formulation review.",
+      "title": "Awa NDiaye discovery",
+      "why": "Today’s 10:30 call has no product or unit count on file.",
       "est_value": "Not stated",
-      "next_step": "Review with formulation, confirm the Ron/Evelyn call time, and price only after required inputs are validated.",
-      "owner": "Sam / Aidan / Ronald",
-      "timing": "Today",
-      "value": "Quote-ready after review",
-      "status": "FORMULATION REVIEW NEEDED"
-    },
-    {
-      "title": "Repair Gridlot NDA",
-      "why": "The prior NDA appears to belong to another project, blocking the beef-tallow opportunity.",
-      "est_value": "Not stated",
-      "next_step": "Locate/approve the clean PLL NDA template, keep Seb copied, and do not send until the document is verified.",
-      "owner": "Sam / Consultant",
-      "timing": "Today",
-      "value": "Active opportunity",
-      "status": "TEMPLATE MISSING"
-    },
-    {
-      "title": "Answer Studio S5 questions",
-      "why": "Amanda needs certification timing, credit mechanics, and separate packaging/labeling pricing before deciding.",
-      "est_value": "Not stated",
-      "next_step": "Sam supplies the exact commercial/regulatory direction; no commitments were made by Nina.",
+      "next_step": "Capture product, units, packaging, fill size, timeline, and target price.",
       "owner": "Sam",
-      "timing": "Today",
-      "value": "Active lead",
-      "status": "DIRECTION NEEDED"
+      "timing": "Today 10:30am ET",
+      "value": "New qualified opportunity",
+      "status": "CALL BOOKED"
     },
     {
-      "title": "Confirm Enso meeting proposal",
-      "why": "A Sept 1 9:15am ET review was accepted by Aidan but not confirmed by Sam.",
+      "title": "DEWPAD R&D Review",
+      "why": "Ari accepted the 11:00 review with the formulation team.",
       "est_value": "Not stated",
-      "next_step": "Confirm or decline before treating the meeting as booked; clarify scope and any account-access or fee decisions.",
-      "owner": "Sam / Aidan",
-      "timing": "Today 9:15am ET",
-      "value": "Launch/PPC review",
-      "status": "PROPOSED — NOT CONFIRMED"
+      "next_step": "Run the review with Ron, Evelyn, and Aaron.",
+      "owner": "Sam / Team",
+      "timing": "Today 11:00am ET",
+      "value": "Active opportunity",
+      "status": "CALL BOOKED"
+    },
+    {
+      "title": "Unquoted ICP brands",
+      "why": "Four ICP opportunities remain unquoted and are the biggest quote velocity lever.",
+      "est_value": "Not stated",
+      "next_step": "Sam says go for Ethnic Gals, Rannah and Aytay, Emma and Wagyu, and Talova lip oil.",
+      "owner": "Sam / Executive",
+      "timing": "Today",
+      "value": "Multiple active opportunities",
+      "status": "WAITING ON SAM"
+    },
+    {
+      "title": "Ads and funnel decisions",
+      "why": "Both campaigns are on Maximize Conversions with no tracked conversions.",
+      "est_value": "Not stated",
+      "next_step": "Sam says revert ads to manual and supplies ConvertFlow redlines.",
+      "owner": "Sam / Ads",
+      "timing": "Today",
+      "value": "Acquisition efficiency",
+      "status": "WAITING ON SAM"
+    },
+    {
+      "title": "Stella redirect",
+      "why": "The request is low MOQ and customer supplied materials, outside fit.",
+      "est_value": "Not stated",
+      "next_step": "Review the warm white label redirect draft; do not send without Sam.",
+      "owner": "Sam / Executive",
+      "timing": "Today",
+      "value": "Lead disposition",
+      "status": "DRAFT HELD"
     }
   ],
   "pipelineStat": {
     "total_value": "$26,500 Atlas Eternal; other active opportunities not stated",
     "active_deals": 12,
     "hot": [
-      "Tammye Hall — Sept 1 2pm ET booked call, format must be confirmed",
-      "Morning Glory — urgent label corrections while production status is unverified",
-      "Mark Higgins — ingredient brief received, formulation review before pricing",
-      "Gridlot — clean NDA blocked on approved template",
-      "Studio S5 — Sam direction needed on certification/credit/pricing"
+      "Talova Marcello viral reorder",
+      "Awa NDiaye discovery call today",
+      "Ari Levitin DEWPAD R&D Review today",
+      "Unquoted ICP brands awaiting authorization"
     ],
     "stalled": [
-      "Enso — Sept 1 meeting proposal not confirmed by Sam",
-      "Talova/Marcello — Kenna revision receipt still needs verification",
-      "Terra Lotus — 19,000-unit sample shipment still needs confirmation",
-      "Amanda/Studio S5 — waiting on exact commercial answers"
+      "Terra Lotus sample shipment needs confirmation",
+      "Amanda reply awaiting send A or B",
+      "Mark Higgins specs needed for quote",
+      "Stella N. is off ICP and redirect awaits approval"
     ],
     "activeDeals": 12,
     "pipelineValue": 26500,
     "inProduction": 2,
-    "depositsCollected": null,
-    "note": "September 3 verified lane: resolve Friday conflict, clear Sam decisions, qualify new inbound. Account Ads snapshot is Aug 27–Sep 2; zero conversions tracked.",
+    "depositsCollected": 13250,
+    "note": "September 4 verified lane: Talova reorder first, two calls today, and five Sam decisions. Ads intelligence is preserved from the verified nightly refresh.",
     "monthlyTarget": "$150K",
     "achievableDepositsThisMonth": "Not stated in today’s verified sources."
   },
