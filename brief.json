@@ -1,41 +1,41 @@
 {
-  "date": "2026-09-04",
-  "ts": "2026-09-04T11:05:00Z",
+  "date": "2026-09-07",
+  "ts": "2026-09-07T11:00:00Z",
   "brief": [
     {
-      "t": "Today is Friday, September 4. The revenue block runs from 10:00 AM to 12:30 PM, with Awa NDiaye at 10:30 and Ari Levitin of DEWPAD at 11:00. Awa needs the six quote inputs, and the discovery call must end on time.",
+      "t": "Today is Labor Day. Amber Scapellato is at 12:00 PM ET and Anastasia Staley at 4:00 PM ET; both client invites are still needsAction, so confirm they are still good.",
       "hot": true
     },
     {
-      "t": "Road2150 number one is the Talova reorder. Kenna\u2019s revised Coco Vanilla and Grapefruit formulas are verified on file, so Sam\u2019s one move is to ask Marcello for the reorder quantity.",
+      "t": "Road2150 number one is Talova: say “send Marcello” and I send the drafted note asking for the reorder quantity; Kenna’s R2 formulas are verified on file.",
       "hot": true
     },
     {
-      "t": "Ari\u2019s 11:00 R&D Review is confirmed with Ron, Evelyn, and Aaron. Austin of Radiant Glow declined the overlapping invite and remains interested but unavailable for about 30 days, so there is no Austin call today.",
+      "t": "Maher Jurdi accepted Tuesday at 9:00 AM ET for Pharma Tech ME. Ron should join; keep the call cosmetic-only, avoid hair-regrowth or GMP-certified claims, and cover UAE export documentation.",
       "hot": true
     },
     {
-      "t": "Waiting on Sam: authorize the unquoted ICP brands, say revert ads to manual, approve ConvertFlow redlines, choose Amanda send A or B, and provide Mark Higgins specifications.",
+      "t": "Mark Higgins is waiting for his deodorant quote. Aidan has held the formula and tiers for seven days; one nudge should name Mark, Hilton, and Heirloom.",
       "hot": true
     },
     {
-      "t": "Stella N. asked about low minimum quantities using her own raw materials for five products. That is outside our fit on both points; a warm redirect to the white label collection is drafted and held for Sam.",
+      "t": "Waiting on Sam: send Marcello, lock Maher, authorize unquoted ICP brands, revert Ads to manual, approve ConvertFlow redlines, choose Amanda A or B, and approve the Aidan priorities nudge.",
+      "hot": true
+    },
+    {
+      "t": "The hub still has five R2150 dispatches queued; all five spokes need account hookup. There are zero open honesty flags and zero unresolved disagreements.",
       "hot": false
     },
     {
-      "t": "A new Mac sign in hit the shared PLL Gmail account yesterday at 4:31 PM. Ignore it only if it was recognized; otherwise rotate the shared password today.",
-      "hot": true
-    },
-    {
-      "t": "The hub has five R2150 dispatches queued and none acted on because five spokes still need account hookup. There are zero open honesty flags and zero unresolved disagreements.",
+      "t": "Lisa Christensen’s order 1467 refund and Frouzan Mayell’s booked date remain unverified or unresolved; do not claim either is complete.",
       "hot": false
     }
   ],
   "next": [
-    "Message Marcello for Talova reorder quantity, then build the quote when it lands",
-    "Run Awa\u2019s six quote inputs at 10:30 and protect the 11:00 DEWPAD review",
-    "Authorize unquoted ICP brands, revert Ads to manual, and approve ConvertFlow redlines",
-    "Choose Amanda send A or B, provide Mark Higgins specs, and review the held Stella redirect"
+    "Say “send Marcello”; quote when quantity lands",
+    "Confirm both Labor Day calls and lock Maher for Tue 9:00 AM ET with Ron",
+    "Authorize ICP quotes, Ads manual revert, ConvertFlow redlines, Amanda A/B, and Aidan nudge",
+    "Find Frouzan date, verify Lisa refund, and add Givaudan Oct 1 adjustment"
   ],
   "kb": [
     {
@@ -128,15 +128,6 @@
     },
     {
       "keys": [
-        "monday",
-        "amber scapellato",
-        "anastasia staley",
-        "september 7"
-      ],
-      "a": "Monday September 7 has Amber Scapellato at 12:00 PM ET for Yoni oil at https://meet.google.com/jtq-szpj-aqn and Anastasia Staley at 4:00 PM ET at https://meet.google.com/nsp-wwuq-zqi. Both are client side needsAction."
-    },
-    {
-      "keys": [
         "tasnim broud",
         "tasnim",
         "ayyur",
@@ -211,7 +202,7 @@
         "shopify",
         "not shipped"
       ],
-      "a": "Lisa Christensen\u2019s order 1467 still shows not shipped after 10-plus days, although she received an on-its-way email. The live status needs checking and Laura owns an honest customer reply today; shipment is not confirmed from the email alone."
+      "a": "Lisa Christensen’s order 1467 still shows not shipped after 10-plus days, although she received an on-its-way email. The live status needs checking and Laura owns an honest customer reply today; shipment is not confirmed from the email alone."
     },
     {
       "keys": [
@@ -220,7 +211,7 @@
         "manual cpc",
         "contractmfg"
       ],
-      "a": "The Geo Twin, PLL-Search-ContractMfg-2026 #2, was re-enabled and spent $10.12 on August 23 after zero spend August 20\u201322. Sam must decide whether to pause it or keep it in the Manual-CPC plan; the main campaigns remain on Maximize Conversions pending approval."
+      "a": "The Geo Twin, PLL-Search-ContractMfg-2026 #2, was re-enabled and spent $10.12 on August 23 after zero spend August 20–22. Sam must decide whether to pause it or keep it in the Manual-CPC plan; the main campaigns remain on Maximize Conversions pending approval."
     },
     {
       "keys": [
@@ -273,7 +264,7 @@
         "today",
         "priority"
       ],
-      "a": "Sam\u2019s top lane today is the Talova reorder message, followed by Awa\u2019s 10:30 discovery call and Ari\u2019s 11:00 DEWPAD review. Waiting decisions are ICP quote authorization, manual Ads, ConvertFlow redlines, Amanda send A or B, and Mark Higgins specifications."
+      "a": "Sam’s top lane today is the Talova reorder message, followed by Awa’s 10:30 discovery call and Ari’s 11:00 DEWPAD review. Waiting decisions are ICP quote authorization, manual Ads, ConvertFlow redlines, Amanda send A or B, and Mark Higgins specifications."
     },
     {
       "keys": [
@@ -282,19 +273,7 @@
         "production lanes",
         "terra coordination"
       ],
-      "a": "Aidan is driving Atlas Eternal\u2019s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus\u2019s 19,000-unit sample checkpoint. He should support Mark Higgins\u2019s formulation review and confirm the three Terra sample sets shipped; neither Terra shipment nor any new completion is verified here."
-    },
-    {
-      "keys": [
-        "talova",
-        "talova labs",
-        "marcello",
-        "viral reorder",
-        "coco vanilla",
-        "kenna revisions",
-        "po"
-      ],
-      "a": "Talova\u2019s Marcello is waiting on a reorder quantity after Coco Vanilla went viral. Kenna\u2019s revised Coco Vanilla and Grapefruit formulas are verified on file, so Sam\u2019s next move is one message asking for quantity; the quote follows when it lands."
+      "a": "Aidan is driving Atlas Eternal’s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus’s 19,000-unit sample checkpoint. He should support Mark Higgins’s formulation review and confirm the three Terra sample sets shipped; neither Terra shipment nor any new completion is verified here."
     },
     {
       "keys": [
@@ -314,26 +293,13 @@
     },
     {
       "keys": [
-        "mark higgins",
-        "mark",
-        "mens deodorant",
-        "roll-on",
-        "500",
-        "1000",
-        "nda",
-        "outcome"
-      ],
-      "a": "Mark Higgins supplied the requested ingredient brief for two aluminum-free roll-on deodorant SKUs. It is ready for Sam and formulation-team review before pricing; a chemist-call time with Ron and Evelyn still needs to be selected and confirmed."
-    },
-    {
-      "keys": [
         "tammye hall",
         "tammye",
         "2pm",
         "manufacturing",
         "fulfillment"
       ],
-      "a": "Tammye Hall is booked for Tuesday, September 1 from 2:00\u20132:30pm ET with Google Meet link https://meet.google.com/ohj-dbga-fej. She previously missed a meeting because she expected a phone call, so confirm the format and agenda explicitly before this manufacturing-and-fulfillment discussion."
+      "a": "Tammye Hall is booked for Tuesday, September 1 from 2:00–2:30pm ET with Google Meet link https://meet.google.com/ohj-dbga-fej. She previously missed a meeting because she expected a phone call, so confirm the format and agenda explicitly before this manufacturing-and-fulfillment discussion."
     },
     {
       "keys": [
@@ -363,7 +329,7 @@
         "james",
         "laura"
       ],
-      "a": "AF Brand is on the calendar for Wednesday, September 2 from 3:00\u20134:00pm ET with James and Laura listed; Sam is marked declined and the organizer is declined. Resolve ownership and attendance before treating this as a live Sam meeting."
+      "a": "AF Brand is on the calendar for Wednesday, September 2 from 3:00–4:00pm ET with James and Laura listed; Sam is marked declined and the organizer is declined. Resolve ownership and attendance before treating this as a live Sam meeting."
     },
     {
       "keys": [
@@ -373,7 +339,7 @@
         "lip balm",
         "august 31"
       ],
-      "a": "Cameron Nelligan\u2019s Sunkissd discovery call was scheduled for August 31 at 6:00pm ET about a tallow-based lip balm and a 10,000-unit first order. Otter shared a recording notification, but no verified outcome or next commercial step is present in today\u2019s sources."
+      "a": "Cameron Nelligan’s Sunkissd discovery call was scheduled for August 31 at 6:00pm ET about a tallow-based lip balm and a 10,000-unit first order. Otter shared a recording notification, but no verified outcome or next commercial step is present in today’s sources."
     },
     {
       "keys": [
@@ -393,7 +359,7 @@
         "click industries",
         "chemist call"
       ],
-      "a": "Ari Levitin of DEWPAD has an 11:00 AM ET R&D Review today with Ron, Evelyn, and Aaron. The Google Meet link is https://meet.google.com/onw-hdqh-yxc, and the review should run after Awa\u2019s 10:30 discovery call."
+      "a": "Ari Levitin of DEWPAD has an 11:00 AM ET R&D Review today with Ron, Evelyn, and Aaron. The Google Meet link is https://meet.google.com/onw-hdqh-yxc, and the review should run after Awa’s 10:30 discovery call."
     },
     {
       "keys": [
@@ -411,7 +377,7 @@
         "declined",
         "30 days"
       ],
-      "a": "Austin of Radiant Glow declined today\u2019s 11:00 invite because a day job has him tied up for about 30 days. He remains interested; there is no Austin meeting today and a 30 day follow up is planned."
+      "a": "Austin of Radiant Glow declined today’s 11:00 invite because a day job has him tied up for about 30 days. He remains interested; there is no Austin meeting today and a 30 day follow up is planned."
     },
     {
       "keys": [
@@ -430,29 +396,76 @@
         "password rotation"
       ],
       "a": "A Google security alert reported a new Mac sign in to privatelabellabsllc@gmail.com on September 3 at 4:31 PM ET. Ignore it only if recognized by Sam or a team member; otherwise rotate the shared password."
+    },
+    {
+      "keys": [
+        "talova",
+        "marcello",
+        "viral reorder",
+        "kenna r2",
+        "send marcello"
+      ],
+      "a": "Talova’s Marcello is waiting on a reorder quantity after Coco Vanilla went viral. Kenna’s R2 Coco Vanilla and Grapefruit formulas are verified on file; Sam’s one move is to say “send Marcello,” then the quote is built when quantity lands."
+    },
+    {
+      "keys": [
+        "maher",
+        "pharma tech me",
+        "ghk-cu",
+        "dubai",
+        "tuesday"
+      ],
+      "a": "Maher Jurdi of Pharma Tech ME proposed Tuesday at 5 PM Dubai, which is 9:00 AM ET, for the GHK-Cu serum and cream discussion. Ron should join; keep scope cosmetic-only and cover pricing tiers, R&D, stability, COAs, and UAE export documents without promising GMP certification."
+    },
+    {
+      "keys": [
+        "mark higgins",
+        "aluminum-free roll-on",
+        "500",
+        "1000",
+        "quote"
+      ],
+      "a": "Mark Higgins needs pricing for two aluminum-free roll-on deodorant SKUs at 500 and 1,000 units. Aidan has the formula and tiers but has not returned numbers after seven days; the requested escalation names Mark, Hilton, and Heirloom."
+    },
+    {
+      "keys": [
+        "monday",
+        "amber scapellato",
+        "anastasia staley",
+        "september 7"
+      ],
+      "a": "Today, Monday September 7, Amber Scapellato is at 12:00 PM ET for Yoni oil at https://meet.google.com/jtq-szpj-aqn and Anastasia Staley is at 4:00 PM ET at https://meet.google.com/nsp-wwuq-zqi. Both client attendees are needsAction; confirm attendance before treating either call as secure."
+    },
+    {
+      "keys": [
+        "frouzan mayell",
+        "frouzan",
+        "calendly"
+      ],
+      "a": "Frouzan Mayell self-booked a luxury hair oil/serum discovery call with Eric Moniz, but its date is not on the September 7–11 calendar evidence. Locate and verify the booking before adding it to today’s Calls tab."
     }
   ],
   "topTasks": [
     {
-      "title": "Message Marcello for Talova reorder quantity",
-      "owner": "Sam",
+      "title": "Send Marcello Talova reorder message",
+      "owner": "Sam / Executive",
       "due": "Today",
       "priority": 1
     },
     {
-      "title": "Run Awa NDiaye discovery call and capture six quote inputs",
+      "title": "Confirm Amber and Anastasia calls",
       "owner": "Sam",
-      "due": "Today 10:30 AM ET",
+      "due": "Today",
       "priority": 2
     },
     {
-      "title": "Protect Ari Levitin DEWPAD R&D Review",
+      "title": "Lock Maher Tuesday 9:00 AM ET call with Ron",
       "owner": "Sam",
-      "due": "Today 11:00 AM ET",
+      "due": "Today",
       "priority": 3
     },
     {
-      "title": "Clear pending approvals and quote inputs",
+      "title": "Clear R2150 approvals and Aidan quote nudge",
       "owner": "Sam",
       "due": "Today",
       "priority": 4
@@ -461,7 +474,7 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Message Marcello for Talova reorder quantity and protect today\u2019s two calls.",
+      "top_task": "Message Marcello for Talova reorder quantity and protect today’s two calls.",
       "tasks": [
         {
           "title": "Ask Marcello for Talova reorder quantity",
@@ -510,7 +523,7 @@
           "due": "Today"
         }
       ],
-      "notes": "Kenna\u2019s R2 formulas are verified on file."
+      "notes": "Kenna’s R2 formulas are verified on file."
     },
     "james": {
       "display_name": "James",
@@ -538,7 +551,7 @@
   "revenueActions": [
     {
       "title": "Talova viral reorder",
-      "why": "Marcello\u2019s reorder is the warmest cash lane and Kenna R2 formulas are verified on file.",
+      "why": "Marcello’s reorder is the warmest cash lane and Kenna R2 formulas are verified on file.",
       "est_value": "Not stated",
       "next_step": "Sam asks for quantity; build quote when it lands.",
       "owner": "Sam / Executive",
@@ -548,7 +561,7 @@
     },
     {
       "title": "Awa NDiaye discovery",
-      "why": "Today\u2019s 10:30 call has no product or unit count on file.",
+      "why": "Today’s 10:30 call has no product or unit count on file.",
       "est_value": "Not stated",
       "next_step": "Capture product, units, packaging, fill size, timeline, and target price.",
       "owner": "Sam",
@@ -616,9 +629,9 @@
     "pipelineValue": 26500,
     "inProduction": 2,
     "depositsCollected": 13250,
-    "note": "September 4 verified lane: Talova reorder first, two calls today, and five Sam decisions. Ads intelligence is preserved from the verified nightly refresh.",
+    "note": "September 7 verified lane: Talova is R2150 #1; Maher is a new Tuesday call; Mark/Hilton/Heirloom are blocked on Aidan. Ads cache preserved from latest verified nightly refresh.",
     "monthlyTarget": "$150K",
-    "achievableDepositsThisMonth": "Not stated in today\u2019s verified sources."
+    "achievableDepositsThisMonth": "Not stated in today’s verified sources."
   },
   "adsAgentBrief": "Nightly read-only refresh 2026-09-04: managed PLL-Search totals today $41.46/40 clicks/2.09% CTR/$1.03 CPC/0 conversions; trailing 7d $222.31/236 clicks/2.35%/$0.94/0; prior 7d $165.18/142/5.12%/$1.16/0; MTD $132.85/151/1.92%/$0.74/0. Scope includes Samples paused, ContractMfg, ContractMfg #2 enabled. Exact ad roster unverified. Recommend tracking/search-term review only; approval required.",
   "adsIntelligence": {
@@ -679,7 +692,7 @@
     }
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -687,6 +700,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
+    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
   }
 }

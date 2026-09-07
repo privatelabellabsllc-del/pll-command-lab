@@ -1,9 +1,9 @@
 {
-  "id": "ads-nightly-2026-09-06",
-  "request_id": "ads-nightly-2026-09-06",
-  "ts": "2026-09-07T01:01:00Z",
+  "id": "morning-2026-09-07-1100",
+  "request_id": "morning-2026-09-07-1100",
+  "ts": "2026-09-07T11:00:00Z",
   "agent": "PLL Command Router",
-  "status": "blocked",
-  "text": "Ads Agent callback logged as unsolicited: no matching dispatch for request_id ads-nightly-2026-09-06. Figures are CLAIMED, not verified; Ads cache was not refreshed.",
-  "spoken_text": "This Ads Agent callback was unsolicited because no matching dispatch was found. I logged it, but did not treat its figures as verified or refresh the Ads cache."
+  "status": "complete",
+  "text": "Morning brief loaded for 2026-09-07.",
+  "spoken_text": "Morning brief loaded for September 7, 2026."
 }

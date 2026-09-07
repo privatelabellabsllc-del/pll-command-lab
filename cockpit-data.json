@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-04T07:05:00-04:00",
-  "generatedLabel": "Sep 4 2026 · morning refresh",
+  "generatedISO": "2026-09-07T11:00:00-04:00",
+  "generatedLabel": "Sep 7 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,75 +10,57 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Talova viral reorder: ask Marcello for quantity.",
+      "task": "Talova viral reorder: say “send Marcello”.",
       "owner": "Sam",
-      "next": "Kenna R2 formulas are verified on file; build the quote when quantity lands.",
+      "next": "Kenna R2 formulas verified; send the quantity ask, then build quote.",
       "status": "waiting on Sam"
     },
     {
       "rank": 2,
-      "task": "Run Awa NDiaye discovery at 10:30 ET.",
+      "task": "Confirm Amber Scapellato at 12:00 ET.",
       "owner": "Sam",
-      "next": "Capture six quote inputs and end on time for the 11:00 review.",
+      "next": "Client is needsAction; confirm holiday attendance.",
       "status": "booked today"
     },
     {
       "rank": 3,
-      "task": "Protect Ari Levitin DEWPAD R&D Review at 11:00 ET.",
+      "task": "Confirm Anastasia Staley at 4:00 ET.",
       "owner": "Sam",
-      "next": "Join with Ron, Evelyn, and Aaron. Austin declined and is unavailable about 30 days.",
+      "next": "Client is needsAction; capture six quote inputs.",
       "status": "booked today"
     },
     {
       "rank": 4,
-      "task": "Clear R2150 decisions and quote inputs.",
+      "task": "Lock Maher for Tue 9:00 ET and clear decisions.",
       "owner": "Sam",
-      "next": "Authorize ICP brands, revert Ads to manual, approve ConvertFlow, choose Amanda A or B, and provide Mark specs.",
+      "next": "Ron joins; cosmetic-only scope; also clear ICP, Ads, ConvertFlow, Amanda, and Aidan nudge.",
       "status": "waiting on Sam"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Message Marcello for Talova reorder quantity",
-      "why": "Warmest cash lane; Kenna R2 formulas verified on file",
+      "item": "Say “send Marcello”",
+      "why": "Talova viral reorder is warmest cash lane",
       "impact": "high",
-      "since": "Sep 4"
+      "since": "Sep 7"
     },
     {
-      "item": "Authorize unquoted ICP brands",
-      "why": "Ethnic Gals, Rannah and Aytay, Emma and Wagyu, and Talova lip oil need a go",
+      "item": "Lock Maher Tue 9:00 AM ET",
+      "why": "New 2-SKU GHK-Cu opportunity",
       "impact": "high",
-      "since": "Sep 4"
+      "since": "Sep 7"
     },
     {
-      "item": "Revert Ads to manual",
-      "why": "Both campaigns have no tracked conversions",
+      "item": "Authorize ICP / Ads / ConvertFlow / Amanda decisions",
+      "why": "Clears quote and acquisition bottlenecks",
       "impact": "high",
-      "since": "Sep 4"
+      "since": "Sep 7"
     },
     {
-      "item": "ConvertFlow fork redlines",
-      "why": "Staged funnel waits for approval",
+      "item": "Approve Aidan priorities nudge",
+      "why": "Mark, Hilton, and Heirloom quotes are held",
       "impact": "high",
-      "since": "Sep 4"
-    },
-    {
-      "item": "Amanda send A or B",
-      "why": "Reply is drafted and awaits selection",
-      "impact": "medium",
-      "since": "Sep 4"
-    },
-    {
-      "item": "Mark Higgins specs",
-      "why": "Quote cannot be built without call specifications",
-      "impact": "high",
-      "since": "Sep 4"
-    },
-    {
-      "item": "Review Stella redirect draft",
-      "why": "Low MOQ and customer supplied materials are off ICP",
-      "impact": "medium",
-      "since": "Sep 4"
+      "since": "Sep 7"
     }
   ],
   "agentHub": {
@@ -134,31 +116,31 @@
     "lastDispatch": {
       "id": "R2150-20260904-05",
       "to": "content",
-      "task": "Adopt R2150 directive 5.5: company and capabilities decks; one page How We Work PDF; quote cover note template in Sam’s voice.",
+      "task": "Adopt R2150 directive 5.5: company + capabilities decks; one-page How We Work PDF; quote cover note template in Sam’s voice.",
       "status": "queued",
       "note": "Five R2150 spokes remain queued pending account hookup."
     }
   },
   "meetings": [
     {
-      "timeISO": "2026-09-04T10:30:00-04:00",
-      "time": "10:30 AM ET",
-      "title": "PLL Discovery Call",
-      "who": "Awa NDiaye",
-      "join": "https://meet.google.com/mhb-bhcd-gsu",
+      "timeISO": "2026-09-07T12:00:00-04:00",
+      "time": "12:00 PM ET",
+      "title": "PLL Discovery Call: Amber Scapellato",
+      "who": "Amber Scapellato",
+      "join": "https://meet.google.com/jtq-szpj-aqn",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-04T11:00:00-04:00",
-      "time": "11:00 AM ET",
-      "title": "DEWPAD R&D Review",
-      "who": "Ari Levitin with Ron, Evelyn, and Aaron",
-      "join": "https://meet.google.com/onw-hdqh-yxc",
+      "timeISO": "2026-09-07T16:00:00-04:00",
+      "time": "4:00 PM ET",
+      "title": "Sam / Anastasia Staley",
+      "who": "Anastasia Staley",
+      "join": "https://meet.google.com/nsp-wwuq-zqi",
       "location": "Google Meet"
     }
   ],
-  "meetingsNote": "Verified today from Sam’s narrated daily task list and meeting invite evidence. Austin of Radiant Glow declined the overlapping 11:00 invite and is unavailable for about 30 days, so he is removed.",
-  "callsSource": "Today’s meetings are Awa NDiaye at 10:30 AM ET and Ari Levitin of DEWPAD at 11:00 AM ET, with Google Meet links from verified morning evidence. Outlook remains mail only.",
+  "meetingsNote": "Today’s two client invites are from verified calendar evidence; both client attendees are needsAction. The Wed Sep 9 AF Brand event is Laura’s, Sam declined, and is not a Sam meeting.",
+  "callsSource": "Verified calendar evidence: Amber Scapellato 12:00 PM ET and Anastasia Staley 4:00 PM ET today. Outlook remains mail-only; Wed Sep 9 AF Brand is not Sam’s meeting.",
   "setupNeeds": [
     {
       "need": "Approve creating the 'PLL Command' shared drive",
