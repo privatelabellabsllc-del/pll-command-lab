@@ -1,0 +1,8 @@
+{
+  "request_id": "ads-nightly-2026-09-06",
+  "type": "unmatched_inbound_callback",
+  "primary_agent": "Ads Agent",
+  "received": "2026-09-07T01:01:00Z",
+  "status": "logged",
+  "note": "Unsolicited callback; no matching dispatch in ledger. No oversight review or Ads cache refresh performed."
+}
