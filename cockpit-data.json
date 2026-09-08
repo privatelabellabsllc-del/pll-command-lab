@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-07T11:00:00-04:00",
-  "generatedLabel": "Sep 7 2026 · morning refresh",
+  "generatedISO": "2026-09-08T07:10:00-04:00",
+  "generatedLabel": "Sep 8 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,58 +10,19 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Talova viral reorder: say “send Marcello”.",
+      "task": "Send Marcello",
       "owner": "Sam",
-      "next": "Kenna R2 formulas verified; send the quantity ask, then build quote.",
-      "status": "waiting on Sam"
-    },
-    {
-      "rank": 2,
-      "task": "Confirm Amber Scapellato at 12:00 ET.",
-      "owner": "Sam",
-      "next": "Client is needsAction; confirm holiday attendance.",
-      "status": "booked today"
-    },
-    {
-      "rank": 3,
-      "task": "Confirm Anastasia Staley at 4:00 ET.",
-      "owner": "Sam",
-      "next": "Client is needsAction; capture six quote inputs.",
-      "status": "booked today"
-    },
-    {
-      "rank": 4,
-      "task": "Lock Maher for Tue 9:00 ET and clear decisions.",
-      "owner": "Sam",
-      "next": "Ron joins; cosmetic-only scope; also clear ICP, Ads, ConvertFlow, Amanda, and Aidan nudge.",
+      "next": "Send the quantity ask; build quote when quantity lands.",
       "status": "waiting on Sam"
     }
   ],
   "waitingOnSam": [
-    {
-      "item": "Say “send Marcello”",
-      "why": "Talova viral reorder is warmest cash lane",
-      "impact": "high",
-      "since": "Sep 7"
-    },
-    {
-      "item": "Lock Maher Tue 9:00 AM ET",
-      "why": "New 2-SKU GHK-Cu opportunity",
-      "impact": "high",
-      "since": "Sep 7"
-    },
-    {
-      "item": "Authorize ICP / Ads / ConvertFlow / Amanda decisions",
-      "why": "Clears quote and acquisition bottlenecks",
-      "impact": "high",
-      "since": "Sep 7"
-    },
-    {
-      "item": "Approve Aidan priorities nudge",
-      "why": "Mark, Hilton, and Heirloom quotes are held",
-      "impact": "high",
-      "since": "Sep 7"
-    }
+    "Send Marcello",
+    "Go on Aidan nudge naming Higgins, Hilton, Heirloom",
+    "Clear Gusto payroll flags",
+    "Go on four un-quoted brands",
+    "Approve ConvertFlow fork redlines",
+    "Revert Ads to manual CPC"
   ],
   "agentHub": {
     "driveStatus": "PLL Command shared drive LIVE at /tasklet/shared/pll-command (read-write) — the backbone all agents read and write.",
@@ -116,31 +77,47 @@
     "lastDispatch": {
       "id": "R2150-20260904-05",
       "to": "content",
-      "task": "Adopt R2150 directive 5.5: company + capabilities decks; one-page How We Work PDF; quote cover note template in Sam’s voice.",
+      "task": "Adopt R2150 directive 5.5: company + capabilities decks; one-page How We Work PDF; quote cover note template in Sam's voice.",
       "status": "queued",
-      "note": "Five R2150 spokes remain queued pending account hookup."
+      "note": "agent not yet wired to a live account; takes effect at Sam's account hookup sit-down"
     }
   },
   "meetings": [
     {
-      "timeISO": "2026-09-07T12:00:00-04:00",
-      "time": "12:00 PM ET",
-      "title": "PLL Discovery Call: Amber Scapellato",
-      "who": "Amber Scapellato",
-      "join": "https://meet.google.com/jtq-szpj-aqn",
+      "timeISO": "2026-09-08T09:00:00-04:00",
+      "time": "9:00 AM ET",
+      "title": "PLL Discovery Call: Maher Jurdi / Pharma Tech ME",
+      "who": "Maher Jurdi / Pharma Tech ME",
+      "join": "",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-07T16:00:00-04:00",
+      "timeISO": "2026-09-08T12:00:00-04:00",
+      "time": "12:00 PM ET",
+      "title": "PLL Discovery Call: Amber Scapellato",
+      "who": "Amber Scapellato",
+      "join": "",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-08T14:00:00-04:00",
+      "time": "2:00 PM ET",
+      "title": "PLL Discovery Call: Jessica Martinez",
+      "who": "Jessica Martinez",
+      "join": "",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-08T16:00:00-04:00",
       "time": "4:00 PM ET",
       "title": "Sam / Anastasia Staley",
       "who": "Anastasia Staley",
-      "join": "https://meet.google.com/nsp-wwuq-zqi",
+      "join": "https://meet.google.com/xag-qcjt-mds",
       "location": "Google Meet"
     }
   ],
-  "meetingsNote": "Today’s two client invites are from verified calendar evidence; both client attendees are needsAction. The Wed Sep 9 AF Brand event is Laura’s, Sam declined, and is not a Sam meeting.",
-  "callsSource": "Verified calendar evidence: Amber Scapellato 12:00 PM ET and Anastasia Staley 4:00 PM ET today. Outlook remains mail-only; Wed Sep 9 AF Brand is not Sam’s meeting.",
+  "meetingsNote": "Today’s four meetings are sourced from Outlook inbox invitations; Outlook is mail-only, not a live calendar. One invitation included a reliable join link; the other three links were not reliably extracted.",
+  "callsSource": "Outlook inbox invitations (mail-only), not live calendar.",
   "setupNeeds": [
     {
       "need": "Approve creating the 'PLL Command' shared drive",

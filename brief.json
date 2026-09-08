@@ -1,41 +1,41 @@
 {
-  "date": "2026-09-07",
-  "ts": "2026-09-07T11:00:00Z",
+  "date": "2026-09-08",
+  "ts": "2026-09-08T11:10:00Z",
   "brief": [
     {
-      "t": "Today is Labor Day. Amber Scapellato is at 12:00 PM ET and Anastasia Staley at 4:00 PM ET; both client invites are still needsAction, so confirm they are still good.",
+      "t": "Four discovery calls today, first is Maher Jurdi at 9:00 AM ET for Pharma Tech ME.",
       "hot": true
     },
     {
-      "t": "Road2150 number one is Talova: say \u201csend Marcello\u201d and I send the drafted note asking for the reorder quantity; Kenna\u2019s R2 formulas are verified on file.",
+      "t": "Send Marcello: the Talova reorder is Day 21 and is the warmest dollar on the board.",
       "hot": true
     },
     {
-      "t": "Maher Jurdi accepted Tuesday at 9:00 AM ET for Pharma Tech ME. Ron should join; keep the call cosmetic-only, avoid hair-regrowth or GMP-certified claims, and cover UAE export documentation.",
+      "t": "Aidan is holding three costings, and Mark Higgins is waiting on the quote promised “very soon.”",
       "hot": true
     },
     {
-      "t": "Mark Higgins is waiting for his deodorant quote. Aidan has held the formula and tiers for seven days; one nudge should name Mark, Hilton, and Heirloom.",
+      "t": "Payroll is due Thursday; Gusto shows two flags to clear before running it.",
       "hot": true
     },
     {
-      "t": "Waiting on Sam: send Marcello, lock Maher, authorize unquoted ICP brands, revert Ads to manual, approve ConvertFlow redlines, choose Amanda A or B, and approve the Aidan priorities nudge.",
-      "hot": true
-    },
-    {
-      "t": "The hub still has five R2150 dispatches queued; all five spokes need account hookup. There are zero open honesty flags and zero unresolved disagreements.",
+      "t": "Ashley Harmon is 19 days silent, not a 90% close; make one phone attempt, then Cold if silent.",
       "hot": false
     },
     {
-      "t": "Lisa Christensen\u2019s order 1467 refund and Frouzan Mayell\u2019s booked date remain unverified or unresolved; do not claim either is complete.",
+      "t": "Four brands remain un-quoted: Ethnic Gals, Rannah/Aytay, Emma/Wagyu, and Victor; one go covers all four.",
+      "hot": false
+    },
+    {
+      "t": "CELL 01 / Sanaullah replied; waiting on the spec sheet and call time. Its SPF is OTC drug territory.",
       "hot": false
     }
   ],
   "next": [
-    "Say \u201csend Marcello\u201d; quote when quantity lands",
-    "Confirm both Labor Day calls and lock Maher for Tue 9:00 AM ET with Ron",
-    "Authorize ICP quotes, Ads manual revert, ConvertFlow redlines, Amanda A/B, and Aidan nudge",
-    "Find Frouzan date, verify Lisa refund, and add Givaudan Oct 1 adjustment"
+    "Send Marcello",
+    "Go on Aidan nudge naming Higgins, Hilton, Heirloom",
+    "Clear Gusto payroll flags",
+    "Go on four un-quoted brands"
   ],
   "kb": [
     {
@@ -71,20 +71,6 @@
         "custom cream"
       ],
       "a": "A Spanish-speaking website lead wants 100 units of a 1.7-ounce custom cream with retinol, hyaluronic acid, collagen, and niacinamide. Sam already replied, and the open loop is a price. Provide pricing to close the conversation without overstating a commitment."
-    },
-    {
-      "keys": [
-        "nikkie",
-        "nikkie aroh",
-        "curly 911",
-        "victoria",
-        "500u",
-        "rachel trautwein",
-        "mens haircare",
-        "shampoo",
-        "conditioner"
-      ],
-      "a": "Nikkie is actively working Curly 911/Victoria's 500-unit opportunity and Rachel Trautwein's men's haircare launch for shampoo and conditioner. The Curly 911 call invite needs the time conflict checked, while Rachel still needs qualification on size and project details."
     },
     {
       "keys": [
@@ -202,7 +188,7 @@
         "shopify",
         "not shipped"
       ],
-      "a": "Lisa Christensen\u2019s order 1467 still shows not shipped after 10-plus days, although she received an on-its-way email. The live status needs checking and Laura owns an honest customer reply today; shipment is not confirmed from the email alone."
+      "a": "Lisa Christensen’s order 1467 still shows not shipped after 10-plus days, although she received an on-its-way email. The live status needs checking and Laura owns an honest customer reply today; shipment is not confirmed from the email alone."
     },
     {
       "keys": [
@@ -211,7 +197,7 @@
         "manual cpc",
         "contractmfg"
       ],
-      "a": "The Geo Twin, PLL-Search-ContractMfg-2026 #2, was re-enabled and spent $10.12 on August 23 after zero spend August 20\u201322. Sam must decide whether to pause it or keep it in the Manual-CPC plan; the main campaigns remain on Maximize Conversions pending approval."
+      "a": "The Geo Twin, PLL-Search-ContractMfg-2026 #2, was re-enabled and spent $10.12 on August 23 after zero spend August 20–22. Sam must decide whether to pause it or keep it in the Manual-CPC plan; the main campaigns remain on Maximize Conversions pending approval."
     },
     {
       "keys": [
@@ -258,25 +244,6 @@
     },
     {
       "keys": [
-        "sam",
-        "ceo",
-        "single lane",
-        "today",
-        "priority"
-      ],
-      "a": "Sam\u2019s top lane today is the Talova reorder message, followed by Awa\u2019s 10:30 discovery call and Ari\u2019s 11:00 DEWPAD review. Waiting decisions are ICP quote authorization, manual Ads, ConvertFlow redlines, Amanda send A or B, and Mark Higgins specifications."
-    },
-    {
-      "keys": [
-        "aidan",
-        "aidan status",
-        "production lanes",
-        "terra coordination"
-      ],
-      "a": "Aidan is driving Atlas Eternal\u2019s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus\u2019s 19,000-unit sample checkpoint. He should support Mark Higgins\u2019s formulation review and confirm the three Terra sample sets shipped; neither Terra shipment nor any new completion is verified here."
-    },
-    {
-      "keys": [
         "terra lotus",
         "terra",
         "lotus",
@@ -299,7 +266,7 @@
         "manufacturing",
         "fulfillment"
       ],
-      "a": "Tammye Hall is booked for Tuesday, September 1 from 2:00\u20132:30pm ET with Google Meet link https://meet.google.com/ohj-dbga-fej. She previously missed a meeting because she expected a phone call, so confirm the format and agenda explicitly before this manufacturing-and-fulfillment discussion."
+      "a": "Tammye Hall is booked for Tuesday, September 1 from 2:00–2:30pm ET with Google Meet link https://meet.google.com/ohj-dbga-fej. She previously missed a meeting because she expected a phone call, so confirm the format and agenda explicitly before this manufacturing-and-fulfillment discussion."
     },
     {
       "keys": [
@@ -329,7 +296,7 @@
         "james",
         "laura"
       ],
-      "a": "AF Brand is on the calendar for Wednesday, September 2 from 3:00\u20134:00pm ET with James and Laura listed; Sam is marked declined and the organizer is declined. Resolve ownership and attendance before treating this as a live Sam meeting."
+      "a": "AF Brand is on the calendar for Wednesday, September 2 from 3:00–4:00pm ET with James and Laura listed; Sam is marked declined and the organizer is declined. Resolve ownership and attendance before treating this as a live Sam meeting."
     },
     {
       "keys": [
@@ -339,7 +306,7 @@
         "lip balm",
         "august 31"
       ],
-      "a": "Cameron Nelligan\u2019s Sunkissd discovery call was scheduled for August 31 at 6:00pm ET about a tallow-based lip balm and a 10,000-unit first order. Otter shared a recording notification, but no verified outcome or next commercial step is present in today\u2019s sources."
+      "a": "Cameron Nelligan’s Sunkissd discovery call was scheduled for August 31 at 6:00pm ET about a tallow-based lip balm and a 10,000-unit first order. Otter shared a recording notification, but no verified outcome or next commercial step is present in today’s sources."
     },
     {
       "keys": [
@@ -359,7 +326,7 @@
         "click industries",
         "chemist call"
       ],
-      "a": "Ari Levitin of DEWPAD has an 11:00 AM ET R&D Review today with Ron, Evelyn, and Aaron. The Google Meet link is https://meet.google.com/onw-hdqh-yxc, and the review should run after Awa\u2019s 10:30 discovery call."
+      "a": "Ari Levitin of DEWPAD has an 11:00 AM ET R&D Review today with Ron, Evelyn, and Aaron. The Google Meet link is https://meet.google.com/onw-hdqh-yxc, and the review should run after Awa’s 10:30 discovery call."
     },
     {
       "keys": [
@@ -377,7 +344,7 @@
         "declined",
         "30 days"
       ],
-      "a": "Austin of Radiant Glow declined today\u2019s 11:00 invite because a day job has him tied up for about 30 days. He remains interested; there is no Austin meeting today and a 30 day follow up is planned."
+      "a": "Austin of Radiant Glow declined today’s 11:00 invite because a day job has him tied up for about 30 days. He remains interested; there is no Austin meeting today and a 30 day follow up is planned."
     },
     {
       "keys": [
@@ -405,36 +372,7 @@
         "kenna r2",
         "send marcello"
       ],
-      "a": "Talova\u2019s Marcello is waiting on a reorder quantity after Coco Vanilla went viral. Kenna\u2019s R2 Coco Vanilla and Grapefruit formulas are verified on file; Sam\u2019s one move is to say \u201csend Marcello,\u201d then the quote is built when quantity lands."
-    },
-    {
-      "keys": [
-        "maher",
-        "pharma tech me",
-        "ghk-cu",
-        "dubai",
-        "tuesday"
-      ],
-      "a": "Maher Jurdi of Pharma Tech ME proposed Tuesday at 5 PM Dubai, which is 9:00 AM ET, for the GHK-Cu serum and cream discussion. Ron should join; keep scope cosmetic-only and cover pricing tiers, R&D, stability, COAs, and UAE export documents without promising GMP certification."
-    },
-    {
-      "keys": [
-        "mark higgins",
-        "aluminum-free roll-on",
-        "500",
-        "1000",
-        "quote"
-      ],
-      "a": "Mark Higgins needs pricing for two aluminum-free roll-on deodorant SKUs at 500 and 1,000 units. Aidan has the formula and tiers but has not returned numbers after seven days; the requested escalation names Mark, Hilton, and Heirloom."
-    },
-    {
-      "keys": [
-        "monday",
-        "amber scapellato",
-        "anastasia staley",
-        "september 7"
-      ],
-      "a": "Today, Monday September 7, Amber Scapellato is at 12:00 PM ET for Yoni oil at https://meet.google.com/jtq-szpj-aqn and Anastasia Staley is at 4:00 PM ET at https://meet.google.com/nsp-wwuq-zqi. Both client attendees are needsAction; confirm attendance before treating either call as secure."
+      "a": "Talova’s Marcello is waiting on a reorder quantity after Coco Vanilla went viral. Kenna’s R2 Coco Vanilla and Grapefruit formulas are verified on file; Sam’s one move is to say “send Marcello,” then the quote is built when quantity lands."
     },
     {
       "keys": [
@@ -442,7 +380,39 @@
         "frouzan",
         "calendly"
       ],
-      "a": "Frouzan Mayell self-booked a luxury hair oil/serum discovery call with Eric Moniz, but its date is not on the September 7\u201311 calendar evidence. Locate and verify the booking before adding it to today\u2019s Calls tab."
+      "a": "Frouzan Mayell self-booked a luxury hair oil/serum discovery call with Eric Moniz, but its date is not on the September 7–11 calendar evidence. Locate and verify the booking before adding it to today’s Calls tab."
+    },
+    {
+      "q": "Maher Jurdi",
+      "a": "Today at 9:00 AM ET: Pharma Tech ME (Dubai) wants GHK-Cu serum and cream at 1% GHK-Cu, with pricing for 500, 1,000, and 5,000 units. Keep claims cosmetic, avoid hair-regrowth and GMP-certified language, and push MOQ to 1,000."
+    },
+    {
+      "q": "Amber Scapellato",
+      "a": "Today at 12:00 PM ET: Amber is discussing a Yoni oil and feminine-care line. Qualify units early; intimate-area products draw claim scrutiny."
+    },
+    {
+      "q": "Jessica Martinez",
+      "a": "Today at 2:00 PM ET: Jessica is rescheduled after the Sep 7 no-show. She confirmed the new time, and Fireflies is on the invite from the PLL Google account."
+    },
+    {
+      "q": "Anastasia Staley",
+      "a": "Today at 4:00 PM ET: Anastasia is starting a men’s skincare line from zero. Ask units in the first five minutes."
+    },
+    {
+      "q": "CELL 01 / Sanaullah Rahimi",
+      "a": "CELL 01 / Sanaullah replied at 7:04 PM; the next items are his spec sheet and a call time. His lineup includes an SPF, which is OTC drug territory, so say that plainly and early."
+    },
+    {
+      "q": "Ashley Harmon",
+      "a": "Ashley’s last message was Aug 20; Sam sent Aug 21 and Aug 27 with no reply. She is 19 days silent and Warm at risk, not a 90% close; make one phone attempt at 703 402 4152, then Cold if silent."
+    },
+    {
+      "q": "Mark Higgins",
+      "a": "Sam promised Mark Higgins a quote “very soon” on Sun Sep 6. It is blocked on Aidan’s costing, which has been held since Aug 31; the nudge should name Higgins, Hilton, and Heirloom."
+    },
+    {
+      "q": "Nikkie",
+      "a": "Nikkie sent five inbound responses Monday night: Aiden, Frouzan, Fiona, Bellah, and Jessica. She correctly declined Jen’s OTC request; check that the replies land in CRM."
     }
   ],
   "topTasks": [
@@ -474,7 +444,7 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Message Marcello for Talova reorder quantity and protect today\u2019s two calls.",
+      "top_task": "Message Marcello for Talova reorder quantity and protect today’s two calls.",
       "tasks": [
         {
           "title": "Ask Marcello for Talova reorder quantity",
@@ -523,7 +493,7 @@
           "due": "Today"
         }
       ],
-      "notes": "Kenna\u2019s R2 formulas are verified on file."
+      "notes": "Kenna’s R2 formulas are verified on file."
     },
     "james": {
       "display_name": "James",
@@ -551,7 +521,7 @@
   "revenueActions": [
     {
       "title": "Talova viral reorder",
-      "why": "Marcello\u2019s reorder is the warmest cash lane and Kenna R2 formulas are verified on file.",
+      "why": "Marcello’s reorder is the warmest cash lane and Kenna R2 formulas are verified on file.",
       "est_value": "Not stated",
       "next_step": "Sam asks for quantity; build quote when it lands.",
       "owner": "Sam / Executive",
@@ -561,7 +531,7 @@
     },
     {
       "title": "Awa NDiaye discovery",
-      "why": "Today\u2019s 10:30 call has no product or unit count on file.",
+      "why": "Today’s 10:30 call has no product or unit count on file.",
       "est_value": "Not stated",
       "next_step": "Capture product, units, packaging, fill size, timeline, and target price.",
       "owner": "Sam",
@@ -631,7 +601,7 @@
     "depositsCollected": 13250,
     "note": "September 7 verified lane: Talova is R2150 #1; Maher is a new Tuesday call; Mark/Hilton/Heirloom are blocked on Aidan. Ads cache preserved from latest verified nightly refresh.",
     "monthlyTarget": "$150K",
-    "achievableDepositsThisMonth": "Not stated in today\u2019s verified sources."
+    "achievableDepositsThisMonth": "Not stated in today’s verified sources."
   },
   "adsAgentBrief": "Nightly read-only refresh 2026-09-07: managed PLL-Search totals today $23.85/2,892 impressions/53 clicks/1.83% CTR/$0.45 CPC/0 conversions; trailing 7d (2026-09-01..2026-09-07) $193.93/14,278/328/2.30%/$0.59/0; prior 7d (2026-08-25..2026-08-31) $198.23/5,995/172/2.87%/$1.15/0; MTD $193.93/14,278/328/2.30%/$0.59/0. Account totals and legacy tier included. Samples remains paused; all bidding strategy types observed MAXIMIZE_CONVERSIONS. Exact ad roster unverified. Read-only recommendation pending approval.",
   "adsIntelligence": {
@@ -812,7 +782,7 @@
     }
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -820,6 +790,36 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
-  }
+    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
+  },
+  "r2150DoNext": [
+    {
+      "rank": 1,
+      "task": "Send Marcello",
+      "owner": "Sam",
+      "next": "Execute today.",
+      "status": "waiting on Sam"
+    },
+    {
+      "rank": 2,
+      "task": "Go on Aidan nudge naming Higgins, Hilton, Heirloom",
+      "owner": "Sam",
+      "next": "Execute today.",
+      "status": "waiting on Sam"
+    },
+    {
+      "rank": 3,
+      "task": "Clear Gusto payroll flags",
+      "owner": "Sam",
+      "next": "Execute today.",
+      "status": "waiting on Sam"
+    },
+    {
+      "rank": 4,
+      "task": "Go on four un-quoted brands",
+      "owner": "Sam",
+      "next": "Execute today.",
+      "status": "waiting on Sam"
+    }
+  ]
 }
