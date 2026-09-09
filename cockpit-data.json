@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-08T07:10:00-04:00",
-  "generatedLabel": "Sep 8 2026 · morning refresh",
+  "generatedISO": "2026-09-09T11:10:00Z",
+  "generatedLabel": "Sep 9 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,18 +10,41 @@
   "r2150DoNext": [
     {
       "rank": 1,
+      "task": "Fix the 11:00 double-booking",
+      "owner": "Sam",
+      "next": "Keep Dan Hunter; move unaccepted Bader to 11:30 or 1:00 before 9:15.",
+      "status": "waiting on Sam"
+    },
+    {
+      "rank": 2,
+      "task": "Reply to Amber Scapellato",
+      "owner": "Sam",
+      "next": "Apologize and offer two slots today/tomorrow, or take her call.",
+      "status": "waiting on Sam"
+    },
+    {
+      "rank": 3,
       "task": "Send Marcello",
       "owner": "Sam",
-      "next": "Send the quantity ask; build quote when quantity lands.",
+      "next": "Send the quantity ask; build Talova reorder quote when quantity lands.",
+      "status": "waiting on Sam"
+    },
+    {
+      "rank": 4,
+      "task": "Aidan five-costing nudge",
+      "owner": "Sam",
+      "next": "Say go on one priorities message naming Higgins, Hilton, Heirloom, Bader, and Gridlot.",
       "status": "waiting on Sam"
     }
   ],
   "waitingOnSam": [
+    "Move Bader from the 11:00 clash",
+    "Reply to Amber",
     "Send Marcello",
-    "Go on Aidan nudge naming Higgins, Hilton, Heirloom",
-    "Clear Gusto payroll flags",
-    "Go on four un-quoted brands",
-    "Approve ConvertFlow fork redlines",
+    "Go on Aidan five-costing nudge",
+    "Finish Nikkie I-9 in Gusto",
+    "Go on four unquoted 1,000+ brands",
+    "Approve ConvertFlow redlines",
     "Revert Ads to manual CPC"
   ],
   "agentHub": {
@@ -84,40 +107,32 @@
   },
   "meetings": [
     {
-      "timeISO": "2026-09-08T09:00:00-04:00",
-      "time": "9:00 AM ET",
-      "title": "PLL Discovery Call: Maher Jurdi / Pharma Tech ME",
-      "who": "Maher Jurdi / Pharma Tech ME",
-      "join": "https://meet.google.com/qun-rzqy-zum",
-      "location": "Google Meet"
+      "timeISO": "2026-09-09T11:00:00-04:00",
+      "time": "11:00 AM ET",
+      "title": "Sam / James / Dan Hunter — Hunter Amenities (Hilton C&E conditioner)",
+      "who": "Dan Hunter; James",
+      "join": "https://meet.google.com/rjr-osiy-nnr",
+      "location": "Google Meet — Dan tentative; clashes with Bader"
     },
     {
-      "timeISO": "2026-09-08T12:00:00-04:00",
-      "time": "12:00 PM ET",
-      "title": "PLL Discovery Call: Amber Scapellato",
-      "who": "Amber Scapellato",
-      "join": "https://meet.google.com/und-ohjq-uxn",
-      "location": "Google Meet"
+      "timeISO": "2026-09-09T11:00:00-04:00",
+      "time": "11:00 AM ET",
+      "title": "PLL / Bader Thaer — Rosemary Hair Oil",
+      "who": "Bader Thaer",
+      "join": "https://meet.google.com/vyk-hnnn-jkf",
+      "location": "Google Meet — Bader not accepted; clashes with Dan"
     },
     {
-      "timeISO": "2026-09-08T14:00:00-04:00",
-      "time": "2:00 PM ET",
-      "title": "PLL Discovery Call: Jessica Martinez",
-      "who": "Jessica Martinez",
-      "join": "https://meet.google.com/tdy-owzq-xdm",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-08T16:00:00-04:00",
-      "time": "4:00 PM ET",
-      "title": "Sam / Anastasia Staley",
-      "who": "Anastasia Staley",
-      "join": "https://meet.google.com/xag-qcjt-mds",
-      "location": "Google Meet"
+      "timeISO": "2026-09-09T15:00:00-04:00",
+      "time": "3:00 PM ET",
+      "title": "PLL / AF Brand",
+      "who": "Toney Wells; Laura accepted",
+      "join": "",
+      "location": "Team meeting; Sam declined"
     }
   ],
-  "meetingsNote": "Today’s four meetings are sourced from Outlook inbox invitations; Outlook is mail-only, not a live calendar. One invitation included a reliable join link; the other three links were not reliably extracted.",
-  "callsSource": "Outlook inbox invitations (mail-only), not live calendar.",
+  "meetingsNote": "Verified on PLL Google Calendar for Sep 9. Sam is double-booked at 11:00: keep Dan Hunter and move unaccepted Bader to 11:30 or 1:00. The 3:00 AF Brand call is a team meeting; Sam declined.",
+  "callsSource": "PLL Google Calendar, verified Sep 9 2026.",
   "setupNeeds": [
     {
       "need": "Approve creating the 'PLL Command' shared drive",
@@ -147,18 +162,6 @@
       "need": "Aidan reconnect WhatsApp + CRM sessions",
       "unblocks": "Aidan's agent",
       "why": "Signed out — brief feed is Outlook-only until reconnected",
-      "waiting": "ongoing"
-    },
-    {
-      "need": "Confirm the meetings source: grant calendar access on Sam's Outlook (currently mail-only) OR name the calendar I should read",
-      "unblocks": "Today's Meetings feed + pre-meeting alarm",
-      "why": "The Outlook connection here reads mail only, not the calendar. Reliable daily meeting pull + accurate 2-min alarm needs a real calendar source",
-      "waiting": "Sep 2"
-    },
-    {
-      "need": "Grant a real calendar source for Sam’s schedule",
-      "unblocks": "Today’s Meetings feed and pre meeting alarm",
-      "why": "Outlook connection is mail only; current meeting times came from verified invite evidence",
       "waiting": "ongoing"
     }
   ],
@@ -279,6 +282,14 @@
       "stage": "Discovery booked",
       "value": "TBD",
       "owner": "Sam"
+    },
+    {
+      "deal": "Hunter Amenities / Dan Hunter",
+      "units": "Largest quoted run; quantity TBD",
+      "product": "Hilton / Crabtree & Evelyn conditioner",
+      "stage": "Follow-up today; quote pending target price and annual volume",
+      "value": "TBD",
+      "owner": "Sam + James"
     }
   ]
 }

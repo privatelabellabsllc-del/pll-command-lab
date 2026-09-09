@@ -1,9 +1,5 @@
 {
-  "id": "ads-nightly-2026-09-08",
-  "request_id": "ads-nightly-2026-09-08",
-  "ts": "2026-09-09T01:02:00Z",
-  "agent": "Ads Agent",
-  "status": "completed",
-  "text": "Ads Agent nightly callback received for Sep 8. Preliminary report: all-in spend $54.47; managed spend $19.38 against the $36 cap, $16.62 under. ContractMfg spent $14.17 for 703 impressions and 17 clicks at $0.83 CPC; Geo Twin spent $5.21 for 2,278 impressions and 32 clicks at $0.16 CPC. Samples and Sales Campaign PLL are confirmed paused, with last spend Sep 3. Three new leads came through the unobserved website intake; Shopify notifications were zero. September totals are 21 leads, 5 qualified, and 3 booked calls; only 2 of 21 carry a click ID. No account changes. Cache refresh blocked because the callback contained no structured ads_intelligence, so brief.json was not refreshed.",
-  "spoken_text": "The Ads Agent reported preliminary September 8 results: managed spend was $19.38, safely under the $36 cap, with Geo Twin delivering the strongest click efficiency. Three leads came through the unobserved website intake, but attribution remains limited because only two of September\u2019s 21 leads carry a click ID. Samples and Sales Campaign PLL are paused, and no account changes were made. The structured cache was not refreshed because the callback did not include the required intelligence data."
+  "id": "morning-brief-2026-09-09-0710",
+  "ts": "2026-09-09T11:10:00Z",
+  "text": "Morning brief loaded for 2026-09-09."
 }
