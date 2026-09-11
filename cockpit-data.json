@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-10T11:04:35Z",
-  "generatedLabel": "Sep 10 2026 · morning refresh",
+  "generatedISO": "2026-09-11T11:04:00Z",
+  "generatedLabel": "Sep 11 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,40 +10,70 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Ship ConvertFlow lead gate",
+      "task": "FRI SEP 4 11:00 ET CONFLICT — Austin (Radiant Glow) overlaps Ari Levitin (DEWPAD R&D Review).",
       "owner": "Sam",
-      "next": "Keep both, test all four branches, then swap the approved gate live.",
+      "next": "Move Austin to 10:00 ET recommended; Austin has not responded. Ari confirmed by email; DEWPAD has 7 attendees.",
       "status": "waiting on Sam"
     },
     {
       "rank": 2,
-      "task": "Review Sales Desk deploy prompt",
+      "task": "Ads approvals — revert to Manual CPC, authorize conversion tracking, decide legacy campaigns (~$447/month).",
       "owner": "Sam",
-      "next": "Redline before deploy against one spine, owner, visible SLA aging, and next action.",
+      "next": "Provide the three decisions; Ads remains read-only until authorized.",
       "status": "waiting on Sam"
     },
     {
       "rank": 3,
-      "task": "Mark Higgins quote",
-      "owner": "Aidan",
-      "next": "Return costing; Sam may authorize one priorities nudge naming Higgins, Hilton, and Heirloom.",
-      "status": "blocked on Aidan, day 10"
+      "task": "Qualify Mark C., Victoria/Curly 911, Shameka Lee, Wahid Habib, Nikkie Aroh, Darryl, and Uri.",
+      "owner": "Email / Sales",
+      "next": "Capture product, units, timing, and next step; Shameka has a Calendly booking.",
+      "status": "in progress"
     },
     {
       "rank": 4,
-      "task": "Capabilities deck v2",
+      "task": "ConvertFlow redlines and four quote authorizations.",
       "owner": "Sam",
-      "next": "Approve and answer four open points.",
+      "next": "Approve redlines; authorize Ethnic Gals, Rannah/Aytay, Emma/Wagyu, and Victor quotes.",
       "status": "waiting on Sam"
     }
   ],
   "waitingOnSam": [
-    "Keep both ConvertFlow branches, test them, then approve the swap",
-    "Review the Sales Desk deploy prompt before it ships",
-    "Authorize one Aidan priorities nudge for Higgins, Hilton, and Heirloom",
-    "Approve capabilities deck v2 and answer its four open points",
-    "Decide whether to redirect the ketoconazole/chlorhexidine shampoo",
-    "Book the Certify Consulting and JJK Consulting intro calls"
+    {
+      "item": "Resolve Friday 11:00 double-booking (Executive recommends moving Austin to 10:00 ET)",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "Ads: revert to manual CPC",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "Ads: authorize conversion tracking install",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "Ads: decide whether legacy campaigns keep ~$447/month",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "ConvertFlow fork mockup redlines",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    },
+    {
+      "item": "Authorize quotes for Ethnic Gals, Rannah/Aytay, Emma/Wagyu, Victor",
+      "why": "Open decision from Sep 3 Executive check",
+      "impact": "high",
+      "since": "Sep 3"
+    }
   ],
   "agentHub": {
     "driveStatus": "PLL Command shared drive LIVE at /tasklet/shared/pll-command (read-write) — the backbone all agents read and write.",
@@ -78,7 +108,7 @@
         "lane": "Organic + AI-engine citations",
         "charter": true,
         "model": "cheap default",
-        "wired": "needs account hookup"
+        "wired": "needs Search Console + GA4"
       },
       {
         "agent": "Ads",
@@ -92,7 +122,7 @@
         "lane": "Content production",
         "charter": true,
         "model": "cheap default",
-        "wired": "needs account hookup"
+        "wired": "not yet stood up"
       }
     ],
     "lastDispatch": {
@@ -100,22 +130,12 @@
       "to": "content",
       "task": "Adopt R2150 directive 5.5: company + capabilities decks; one-page How We Work PDF; quote cover note template in Sam's voice.",
       "status": "queued",
-      "verification_note": "",
       "note": "agent not yet wired to a live account; takes effect at Sam's account hookup sit-down"
     }
   },
-  "meetings": [
-    {
-      "timeISO": "2026-09-10T13:00:00-04:00",
-      "time": "1:00 PM ET",
-      "title": "PL Labs <> Enso",
-      "who": "Gilad Warter, Enso Brands",
-      "join": "https://meet.google.com/hfh-uhcq-xrd",
-      "location": "Google Meet — Amazon-management service pitch to PLL; Aidan leads"
-    }
-  ],
-  "meetingsNote": "Only confirmed meeting from today's inbox invite/task list: 1:00 PM ET PL Labs <> Enso. This is an Amazon-management vendor pitch to PLL, not a manufacturing lead; Aidan leads.",
-  "callsSource": "Outlook inbox meeting invite / today's authoritative task list; Outlook connection is mail-only.",
+  "meetings": [],
+  "meetingsNote": "No reliable meeting invite or calendar notification was found in today’s Outlook inbox search; no meetings populated.",
+  "callsSource": "Outlook inbox search (mail-only connection); no reliable meeting notification found.",
   "setupNeeds": [
     {
       "need": "Approve creating the 'PLL Command' shared drive",
@@ -146,6 +166,12 @@
       "unblocks": "Aidan's agent",
       "why": "Signed out — brief feed is Outlook-only until reconnected",
       "waiting": "ongoing"
+    },
+    {
+      "need": "Confirm the meetings source: grant calendar access on Sam's Outlook (currently mail-only) OR name the calendar I should read",
+      "unblocks": "Today's Meetings feed + pre-meeting alarm",
+      "why": "The Outlook connection here reads mail only, not the calendar. Reliable daily meeting pull + accurate 2-min alarm needs a real calendar source",
+      "waiting": "Sep 2"
     }
   ],
   "aiSuggestions": [
@@ -160,45 +186,45 @@
   "agentAccountability": [
     {
       "agent": "Executive (COO)",
-      "lastDispatch": "R2150 directives and morning refresh",
+      "lastDispatch": "OS master build + cockpit (overnight Sep 2)",
       "status": "in progress",
       "honesty": "clean",
-      "note": "Runs all lanes; QC and honesty sweeps"
+      "note": "Runs all lanes; QC honesty sweeps"
     },
     {
       "agent": "Email / Sales",
-      "lastDispatch": "R2150-20260904-01",
-      "status": "queued",
-      "honesty": "clean",
-      "note": "Needs account hookup before acting"
+      "lastDispatch": "ConvertFlow outbound + NDA sends (Amanda, Dirk)",
+      "status": "under audit",
+      "honesty": "FLAG — told client(s) 'we started' before true (Aug 28)",
+      "note": "Charter honesty rule being embedded; behavior audit pending"
     },
     {
       "agent": "CRM Developer",
-      "lastDispatch": "R2150-20260904-02",
-      "status": "queued",
-      "honesty": "clean",
-      "note": "Needs account hookup before acting"
+      "lastDispatch": "Open defect sweep",
+      "status": "monitoring",
+      "honesty": "verify-every-fix policy",
+      "note": "Independently live-verify all claimed fixes + adjacent regressions"
     },
     {
       "agent": "SEO / GEO",
-      "lastDispatch": "R2150-20260904-03",
-      "status": "queued",
-      "honesty": "clean",
-      "note": "Needs account hookup before acting"
+      "lastDispatch": "not yet awakened",
+      "status": "not started",
+      "honesty": "n/a",
+      "note": "Needs Search Console + GA4 in its workspace to start"
     },
     {
       "agent": "Ads",
-      "lastDispatch": "R2150-20260904-04",
-      "status": "queued",
-      "honesty": "clean",
-      "note": "Needs account hookup; manual CPC remains Sam decision"
+      "lastDispatch": "Nightly brief + weekly optimization",
+      "status": "trust gap",
+      "honesty": "FLAG — filed false report Aug 2; independent verification required",
+      "note": "Zero conversion tracking; manual-CPC revert pending Sam"
     },
     {
       "agent": "Content",
-      "lastDispatch": "R2150-20260904-05",
-      "status": "queued",
-      "honesty": "clean",
-      "note": "Needs account hookup before acting"
+      "lastDispatch": "not yet stood up",
+      "status": "not started",
+      "honesty": "n/a",
+      "note": "Part of six-agent rollout"
     }
   ],
   "pipeline": [
@@ -227,6 +253,14 @@
       "owner": "Executive + Ronald"
     },
     {
+      "deal": "Talova (Marcello)",
+      "units": "reorder",
+      "product": "Coco Vanilla (viral)",
+      "stage": "Warm — reorder",
+      "value": "TBD",
+      "owner": "Sam"
+    },
+    {
       "deal": "Victor Armendarez",
       "units": "4,000",
       "product": "Curl Cream 2K + Edge Gel 2K",
@@ -238,7 +272,7 @@
       "deal": "Amanda Peters / Studio S5",
       "units": "~2,500",
       "product": "body wash + scrub",
-      "stage": "Warm, reply awaits send A or B",
+      "stage": "Warm (NDA sent Aug 27)",
       "value": "TBD",
       "owner": "Sam"
     },
@@ -249,22 +283,6 @@
       "stage": "Warm (NDA sent Aug 27)",
       "value": "TBD",
       "owner": "Sam"
-    },
-    {
-      "deal": "Awa NDiaye",
-      "units": "Not stated",
-      "product": "Not stated",
-      "stage": "Discovery booked",
-      "value": "TBD",
-      "owner": "Sam"
-    },
-    {
-      "deal": "Hunter Amenities / Dan Hunter",
-      "units": "Largest quoted run; quantity TBD",
-      "product": "Hilton / Crabtree & Evelyn conditioner",
-      "stage": "Follow-up today; quote pending target price and annual volume",
-      "value": "TBD",
-      "owner": "Sam + James"
     }
   ]
 }
