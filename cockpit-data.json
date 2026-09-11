@@ -1,82 +1,95 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-11T11:04:00Z",
-  "generatedLabel": "Sep 11 2026 · morning refresh",
+  "generatedISO": "2026-09-11T11:15:00Z",
+  "generatedLabel": "Sep 11 2026 \u00b7 morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
-    "note": "Verified Ads snapshot Aug 27–Sep 2: account $305.73, 528 clicks, $0.58 CPC, 1.61% CTR, zero conversions; six enabled campaigns and 21 enabled ads."
+    "note": "Verified Ads snapshot Aug 27\u2013Sep 2: account $305.73, 528 clicks, $0.58 CPC, 1.61% CTR, zero conversions; six enabled campaigns and 21 enabled ads."
   },
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "FRI SEP 4 11:00 ET CONFLICT — Austin (Radiant Glow) overlaps Ari Levitin (DEWPAD R&D Review).",
+      "task": "Eight primary CTA buttons on the live homepage have empty links. Get My Quote, Start Your Formula, Book a Free Consultation all go nowhere.",
       "owner": "Sam",
-      "next": "Move Austin to 10:00 ET recommended; Austin has not responded. Ari confirmed by email; DEWPAD has 7 attendees.",
+      "next": "Say 'fix the buttons'. Executive repairs them on the live site with a rollback saved. Ads are spending about $28 a day into a wall until this is done.",
       "status": "waiting on Sam"
     },
     {
       "rank": 2,
-      "task": "Ads approvals — revert to Manual CPC, authorize conversion tracking, decide legacy campaigns (~$447/month).",
-      "owner": "Sam",
-      "next": "Provide the three decisions; Ads remains read-only until authorized.",
-      "status": "waiting on Sam"
+      "task": "Three real inbound leads landed Thursday afternoon and evening and none has been answered.",
+      "owner": "Sam / Executive",
+      "next": "Eric Moniz confirmed 1,000 units on a hair oil or serum and proposed a noon meeting. Renate Williamson wants a six SKU textured hair line, turnkey. Siuyeung Law is a Hunter Amenities referral. Reply today.",
+      "status": "needs action today"
     },
     {
       "rank": 3,
-      "task": "Qualify Mark C., Victoria/Curly 911, Shameka Lee, Wahid Habib, Nikkie Aroh, Darryl, and Uri.",
-      "owner": "Email / Sales",
-      "next": "Capture product, units, timing, and next step; Shameka has a Calendly booking.",
-      "status": "in progress"
+      "task": "New manufacturer grade website, seven pages, built and previewable. Not published.",
+      "owner": "Sam",
+      "next": "Redline the preview, tell Executive where the quote form submits, and supply year founded, square footage, headcount and real certification status. No unverified claims went on the site.",
+      "status": "waiting on Sam"
     },
     {
       "rank": 4,
-      "task": "ConvertFlow redlines and four quote authorizations.",
+      "task": "Elijah Snider, Shaggy Hair Club, project proposal v6 is drafted and unsent.",
       "owner": "Sam",
-      "next": "Approve redlines; authorize Ethnic Gals, Rannah/Aytay, Emma/Wagyu, and Victor quotes.",
+      "next": "Six answers needed: sea salt spray size and quantity, whether $5 to $7 includes the tube, brand development deliverables, exclusivity end date, the brand's legal name, and whether the headline reads $2,800 or $3,255.",
       "status": "waiting on Sam"
+    },
+    {
+      "rank": 5,
+      "task": "Jack McGuire, AAL Care, asked to stop by around 1pm.",
+      "owner": "Sam",
+      "next": "Give a yes or no today. He is a vendor or business development contact, not a manufacturing lead.",
+      "status": "needs action today"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Resolve Friday 11:00 double-booking (Executive recommends moving Austin to 10:00 ET)",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "Fix the eight dead CTA buttons on the live homepage",
+      "why": "Every paid click lands on buttons that do nothing. This is the confirmed cause of zero measurable leads.",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 10"
     },
     {
-      "item": "Ads: revert to manual CPC",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "Where the new site quote form submits",
+      "why": "The new build posts nowhere. It cannot go live until this is answered.",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 10"
     },
     {
-      "item": "Ads: authorize conversion tracking install",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "Website verification facts: year founded, square footage, headcount, certification status, retailer logo substantiation",
+      "why": "Competitors lead with these. Nothing unverified was published.",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 10"
     },
     {
-      "item": "Ads: decide whether legacy campaigns keep ~$447/month",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "Elijah Snider proposal, six open answers",
+      "why": "Proposal is drafted and cannot send without them.",
       "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 10"
     },
     {
-      "item": "ConvertFlow fork mockup redlines",
-      "why": "Open decision from Sep 3 Executive check",
+      "item": "ConvertFlow fork: authorize four path test then swap",
+      "why": "Gate is built on the duplicate. Live popup untouched.",
+      "impact": "high",
+      "since": "Sep 9"
+    },
+    {
+      "item": "Ads: revert to manual CPC and authorize conversion tracking",
+      "why": "Open since the Sep 3 Executive check.",
       "impact": "high",
       "since": "Sep 3"
     },
     {
       "item": "Authorize quotes for Ethnic Gals, Rannah/Aytay, Emma/Wagyu, Victor",
-      "why": "Open decision from Sep 3 Executive check",
+      "why": "Four ICP brands never quoted.",
       "impact": "high",
       "since": "Sep 3"
     }
   ],
   "agentHub": {
-    "driveStatus": "PLL Command shared drive LIVE at /tasklet/shared/pll-command (read-write) — the backbone all agents read and write.",
+    "driveStatus": "PLL Command shared drive LIVE at /tasklet/shared/pll-command (read-write) \u2014 the backbone all agents read and write.",
     "built": "6 agent charters + dispatch ledger + model-use matrix + honesty QC sweep + meeting reminder/notes handler",
     "proof": "1 dispatch run end-to-end on a cheap model and independently verified by the Executive (SEO/GEO homepage check, done-verified Sep 2 03:46).",
     "honestyFlagsOpen": 0,
@@ -134,17 +147,23 @@
     }
   },
   "meetings": [],
-  "meetingsNote": "No reliable meeting invite or calendar notification was found in today’s Outlook inbox search; no meetings populated.",
+  "meetingsNote": "No reliable meeting invite or calendar notification was found in today\u2019s Outlook inbox search; no meetings populated.",
   "callsSource": "Outlook inbox search (mail-only connection); no reliable meeting notification found.",
   "setupNeeds": [
     {
+      "need": "CRM Developer Gmail connection is gone",
+      "detail": "privatelabellabsllc@gmail.com no longer appears in the connection list. The daily 8am CRM Developer inbox check and the CRM UPDATE REQUEST workflow cannot run until it is reconnected.",
+      "owner": "Sam",
+      "impact": "high"
+    },
+    {
       "need": "Approve creating the 'PLL Command' shared drive",
       "unblocks": "All agents (shared source of truth + ledger)",
-      "why": "One-click approval card — the foundation everything reads/writes",
+      "why": "One-click approval card \u2014 the foundation everything reads/writes",
       "waiting": "Sep 2"
     },
     {
-      "need": "Connect a meeting notetaker (Fireflies/Fathom/Otter) — later",
+      "need": "Connect a meeting notetaker (Fireflies/Fathom/Otter) \u2014 later",
       "unblocks": "Email/Sales + Executive",
       "why": "Real-time meeting notes + action items to you and me. Free tier possible; gated by approval",
       "waiting": "Sep 2"
@@ -164,7 +183,7 @@
     {
       "need": "Aidan reconnect WhatsApp + CRM sessions",
       "unblocks": "Aidan's agent",
-      "why": "Signed out — brief feed is Outlook-only until reconnected",
+      "why": "Signed out \u2014 brief feed is Outlook-only until reconnected",
       "waiting": "ongoing"
     },
     {
@@ -179,7 +198,7 @@
       "tool": "Meeting notetaker (Fireflies / Fathom / Otter / Read.ai)",
       "what": "Bot joins your Teams calls via calendar, transcribes live, auto-produces notes + action items",
       "why": "You want an agent in the meeting taking notes; Tasklet agents can't join calls, a notetaker can",
-      "cost": "Free tier to start; paid ~$10–30/user/mo if needed",
+      "cost": "Free tier to start; paid ~$10\u201330/user/mo if needed",
       "call": "TEST free tier"
     }
   ],
@@ -195,7 +214,7 @@
       "agent": "Email / Sales",
       "lastDispatch": "ConvertFlow outbound + NDA sends (Amanda, Dirk)",
       "status": "under audit",
-      "honesty": "FLAG — told client(s) 'we started' before true (Aug 28)",
+      "honesty": "FLAG \u2014 told client(s) 'we started' before true (Aug 28)",
       "note": "Charter honesty rule being embedded; behavior audit pending"
     },
     {
@@ -216,7 +235,7 @@
       "agent": "Ads",
       "lastDispatch": "Nightly brief + weekly optimization",
       "status": "trust gap",
-      "honesty": "FLAG — filed false report Aug 2; independent verification required",
+      "honesty": "FLAG \u2014 filed false report Aug 2; independent verification required",
       "note": "Zero conversion tracking; manual-CPC revert pending Sam"
     },
     {
@@ -238,7 +257,7 @@
     },
     {
       "deal": "Atlas Eternal (Ryne Bell)",
-      "units": "—",
+      "units": "\u2014",
       "product": "skincare",
       "stage": "Production",
       "value": "$26,500 ($13,250 paid)",
@@ -256,7 +275,7 @@
       "deal": "Talova (Marcello)",
       "units": "reorder",
       "product": "Coco Vanilla (viral)",
-      "stage": "Warm — reorder",
+      "stage": "Warm \u2014 reorder",
       "value": "TBD",
       "owner": "Sam"
     },
@@ -278,7 +297,7 @@
     },
     {
       "deal": "Dirk Llorens / Diogenes",
-      "units": "500–2,500",
+      "units": "500\u20132,500",
       "product": "post-training shampoo + body wash",
       "stage": "Warm (NDA sent Aug 27)",
       "value": "TBD",
