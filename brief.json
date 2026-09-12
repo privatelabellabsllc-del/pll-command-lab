@@ -581,7 +581,7 @@
     "achievableDepositsThisMonth": "Not stated in today’s verified sources."
   },
   "adsAgentBrief": {
-    "generatedAt": "2026-09-12T01:34:37Z",
+    "generatedAt": "2026-09-12T01:34:37.870Z",
     "status": "WEEKLY_ADS_RECOMMENDATION_PENDING_APPROVAL",
     "scopeWarning": "CAMPAIGN-SCOPE - EXACT AD ROSTER UNVERIFIED (ad-level pull rejected invalid fields; no roster overclaim).",
     "windows": {
@@ -598,7 +598,7 @@
         "end": "2026-09-04"
       }
     },
-    "summary": "Weekly Ads Agent review returned a read-only recommendation; it is pending Sam approval. The recommendation is sound and reversible, but Samples and Sales Campaign PLL are paused without recorded approval, while gclid capture and primary quote buttons remain broken.",
+    "summary": "WEEKLY ADS RECOMMENDATION: Pause 4 duplicate legacy-structure ad groups inside Geo Twin. ContractMfg-Haircare jumped $4.83 to $29.23 and 655 to 13,584 impr in one week, taking 79% of twin spend while purpose-built AG1 Skincare got 5 impressions. Twin CTR fell 1.87% to 1.40%. Redirects budget to matched landing pages. 14-day window. Approval required: yes.",
     "recommendation": {
       "text": "Read-only: correct ad-level field mapping and rerun roster/report next cycle; do not change Ads settings.",
       "approvalRequired": true,
@@ -608,7 +608,9 @@
       "receivedAt": "2026-09-12T01:34:37Z",
       "consultantNote": "Sound and reversible, and I back it. Two things Sam must see with it. First, the Samples campaign and Sales Campaign PLL both show as PAUSED this week; no approval for that is on record, so who paused them needs answering. Second, gclid capture is failing at 0 of 20 and the site's primary quote buttons are still dead, so better ad-group targeting still lands traffic on a broken route. Fix the route or the gain is unmeasurable."
     },
-    "approval_required": true
+    "approval_required": true,
+    "requestId": "ads-weekly-2026-09-11",
+    "consultantNote": "Sound and reversible, and I back it. Two things Sam must see with it. First, the Samples campaign and Sales Campaign PLL both show as PAUSED this week; no approval for that is on record, so who paused them needs answering. Second, gclid capture is failing at 0 of 20 and the site's primary quote buttons are still dead, so better ad-group targeting still lands traffic on a broken route. Fix the route or the gain is unmeasurable."
   },
   "adsIntelligence": {
     "updatedAt": "2026-09-12T01:34:37.870Z",
@@ -698,12 +700,18 @@
     "worst": "ContractMfg #2 low CTR; account includes legacy spend.",
     "watch": "Exact ad roster and managed aggregate require corrected ad-level report; inbox search capped at 50.",
     "recommendation": {
-      "text": "Read-only: correct ad-level field mapping and rerun roster/report next cycle; do not change Ads settings.",
+      "text": "Pause the four duplicated legacy-structure ad groups inside Geo Twin campaign 24164623336: ContractMfg-Haircare (200926047593), ContractMfg-Skincare (200926047833), ContractMfg-Cosmetic-Beauty (200926047753), ProductIntent-BeardOil (200926047793).",
       "approvalRequired": true,
+      "approval_required": "yes",
       "status": "pending_sam_approval",
-      "source": "Ads Agent",
+      "source": "Ads Agent (weekly strategy review)",
       "requestId": "ads-weekly-2026-09-11",
-      "receivedAt": "2026-09-12T01:34:37Z",
+      "receivedAt": "2026-09-12T01:34:37.870Z",
+      "action": "Pause the four duplicated legacy-structure ad groups inside Geo Twin campaign 24164623336: ContractMfg-Haircare (200926047593), ContractMfg-Skincare (200926047833), ContractMfg-Cosmetic-Beauty (200926047753), ProductIntent-BeardOil (200926047793).",
+      "rationale": "These are copies of the source campaign structure that rode along when the twin was created. They compete in the same auctions as the purpose-built AG1-AG4 groups and are winning, because their broader keywords match far more queries. The result is that 79% of twin budget flows through a group whose landing page and copy were never tuned for the geo twin, while the four groups built for it, each with a matched collection landing page, are starved.",
+      "expectedOutcome": "Twin impressions should fall sharply and CTR should rise toward the 2.0-2.4% range AG3 and AG4 already show. Skincare regains real presence. Clicks will drop and CPC will rise from $0.17 toward $0.30-0.50; that is the intended trade, buying fewer and more relevant clicks. Landing-page match improves, which should raise gclid-bearing form starts.",
+      "measurementWindow": "14 days, 2026-09-13 through 2026-09-26, comparing twin CTR, click distribution across AG1-AG4, and gclid-bearing lead count.",
+      "risk": "If the starved groups cannot fill the volume, twin traffic could drop more than expected. Fully reversible by re-enabling the four ad groups.",
       "consultantNote": "Sound and reversible, and I back it. Two things Sam must see with it. First, the Samples campaign and Sales Campaign PLL both show as PAUSED this week; no approval for that is on record, so who paused them needs answering. Second, gclid capture is failing at 0 of 20 and the site's primary quote buttons are still dead, so better ad-group targeting still lands traffic on a broken route. Fix the route or the gain is unmeasurable."
     },
     "answers": {
@@ -718,6 +726,344 @@
       "suggestions": "Fix report field mapping and verify roster/attribution.",
       "nextExperiment": "None until Sam approval and complete measurement.",
       "adsAgent": "Return one read-only recommendation only; no changes."
+    },
+    "weeklyReview": {
+      "requestId": "ads-weekly-2026-09-11",
+      "receivedAt": "2026-09-12T01:34:37.870Z",
+      "source": "pll-ads-agent",
+      "scope": "managed campaigns only; legacy Initial + New-Sales-Ad excluded from totals and shown separately",
+      "windows": {
+        "current": "2026-09-05 through 2026-09-11",
+        "prior": "2026-08-29 through 2026-09-04"
+      },
+      "today": {
+        "date": "2026-09-11",
+        "managedSpend": 9.56,
+        "managedClicks": 33,
+        "managedImpr": 2838,
+        "cap": 36,
+        "note": "9pm pull identical to 3pm pull for both managed campaigns; zero incremental delivery 3pm-9pm while legacy kept serving. Lag vs stall UNRESOLVED."
+      },
+      "current": {
+        "spend": 162.59,
+        "clicks": 349,
+        "impr": 21209,
+        "cpc": 0.47,
+        "avgDaily": 23.23
+      },
+      "prior": {
+        "spend": 232.49,
+        "clicks": 488,
+        "impr": 33169,
+        "cpc": 0.48,
+        "avgDaily": 33.21,
+        "comparability": "NOT like-for-like: prior window included Samples ($33.29) and Sales Campaign PLL ($25.41), both now PAUSED. Excluding them, prior managed = $173.79 / 224 clicks."
+      },
+      "campaignBreakdown": {
+        "managed": [
+          {
+            "id": "24049588003",
+            "name": "PLL-Search-ContractMfg-2026",
+            "status": "ENABLED",
+            "cost": 125.81,
+            "clicks": 130,
+            "impr": 5595,
+            "cpc": 0.97,
+            "ctr": 2.32,
+            "legacy": false
+          },
+          {
+            "id": "24164623336",
+            "name": "PLL-Search-ContractMfg-2026 #2",
+            "status": "ENABLED",
+            "cost": 36.78,
+            "clicks": 219,
+            "impr": 15614,
+            "cpc": 0.17,
+            "ctr": 1.4,
+            "legacy": false
+          }
+        ],
+        "legacy": [
+          {
+            "id": "21932822847",
+            "name": "Initial",
+            "status": "ENABLED",
+            "cost": 159.04,
+            "clicks": 70,
+            "impr": 983,
+            "cpc": 2.27,
+            "ctr": 7.12,
+            "legacy": true
+          },
+          {
+            "id": "21949259655",
+            "name": "New-Sales-Ad",
+            "status": "ENABLED",
+            "cost": 95.38,
+            "clicks": 31,
+            "impr": 215,
+            "cpc": 3.08,
+            "ctr": 14.42,
+            "legacy": true
+          }
+        ],
+        "adGroupsTwinCurrent": [
+          {
+            "name": "ContractMfg-Haircare",
+            "cost": 29.23,
+            "clicks": 177,
+            "impr": 13584,
+            "ctr": 1.3,
+            "cpc": 0.17,
+            "bid": 2.5
+          },
+          {
+            "name": "AG3 - Personal Care Mfg",
+            "cost": 6.15,
+            "clicks": 34,
+            "impr": 1643,
+            "ctr": 2.07,
+            "cpc": 0.18,
+            "bid": 2.5
+          },
+          {
+            "name": "ContractMfg-Cosmetic-Beauty",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 15,
+            "ctr": 0,
+            "cpc": null,
+            "bid": 2.5
+          },
+          {
+            "name": "AG2 - Haircare Mfg",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 5,
+            "ctr": 0,
+            "cpc": null,
+            "bid": 2.5
+          },
+          {
+            "name": "AG1 - Skincare Mfg",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 5,
+            "ctr": 0,
+            "cpc": null,
+            "bid": 2.5
+          },
+          {
+            "name": "ProductIntent-BeardOil",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 20,
+            "ctr": 0,
+            "cpc": null,
+            "bid": 1.75
+          },
+          {
+            "name": "AG4 - Beef Tallow Mfg",
+            "cost": 1.4,
+            "clicks": 8,
+            "impr": 341,
+            "ctr": 2.35,
+            "cpc": 0.17,
+            "bid": 2.5
+          },
+          {
+            "name": "ContractMfg-Skincare",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 1,
+            "ctr": 0,
+            "cpc": null,
+            "bid": 2.5
+          }
+        ],
+        "adGroupsTwinPrior": [
+          {
+            "name": "AG2 - Haircare Mfg",
+            "cost": 0.49,
+            "clicks": 1,
+            "impr": 3,
+            "ctr": 33.33,
+            "cpc": 0.49,
+            "bid": null
+          },
+          {
+            "name": "ContractMfg-Haircare",
+            "cost": 4.83,
+            "clicks": 16,
+            "impr": 655,
+            "ctr": 2.44,
+            "cpc": 0.3,
+            "bid": null
+          },
+          {
+            "name": "ContractMfg-Cosmetic-Beauty",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 18,
+            "ctr": 0,
+            "cpc": null,
+            "bid": null
+          },
+          {
+            "name": "ProductIntent-BeefTallow",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 12,
+            "ctr": 0,
+            "cpc": null,
+            "bid": null
+          },
+          {
+            "name": "AG3 - Personal Care Mfg",
+            "cost": 31.08,
+            "clicks": 94,
+            "impr": 5229,
+            "ctr": 1.8,
+            "cpc": 0.33,
+            "bid": null
+          },
+          {
+            "name": "AG1 - Skincare Mfg",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 1,
+            "ctr": 0,
+            "cpc": null,
+            "bid": null
+          },
+          {
+            "name": "ContractMfg-Skincare",
+            "cost": 0,
+            "clicks": 0,
+            "impr": 4,
+            "ctr": 0,
+            "cpc": null,
+            "bid": null
+          }
+        ],
+        "adGroupsMainCurrent": [
+          {
+            "name": "ProductIntent-HairOil",
+            "cost": 0.15,
+            "clicks": 1,
+            "impr": 48,
+            "ctr": 2.08,
+            "cpc": 0.15,
+            "bid": 1.75
+          },
+          {
+            "name": "ContractMfg-Haircare",
+            "cost": 108.92,
+            "clicks": 103,
+            "impr": 4126,
+            "ctr": 2.5,
+            "cpc": 1.06,
+            "bid": 2.5
+          },
+          {
+            "name": "ProductIntent-BeardOil",
+            "cost": 2.83,
+            "clicks": 6,
+            "impr": 215,
+            "ctr": 2.79,
+            "cpc": 0.47,
+            "bid": 1.75
+          },
+          {
+            "name": "ContractMfg-Cosmetic-Beauty",
+            "cost": 4.34,
+            "clicks": 5,
+            "impr": 172,
+            "ctr": 2.91,
+            "cpc": 0.87,
+            "bid": 2.5
+          },
+          {
+            "name": "ProductIntent-BeefTallow",
+            "cost": 5.85,
+            "clicks": 7,
+            "impr": 702,
+            "ctr": 1,
+            "cpc": 0.84,
+            "bid": 1.75
+          },
+          {
+            "name": "ContractMfg-Skincare",
+            "cost": 3.72,
+            "clicks": 8,
+            "impr": 332,
+            "ctr": 2.41,
+            "cpc": 0.47,
+            "bid": 2.5
+          }
+        ]
+      },
+      "adBreakdown": {
+        "count": 17,
+        "approvalStatuses": {
+          "APPROVED": 17
+        },
+        "disapproved": 0,
+        "verified": true,
+        "note": "17 ads with delivery in window, all APPROVED. Roster covers ads that served; zero-impression ads may exist and are not enumerated here."
+      },
+      "leads": {
+        "current": {
+          "total": 20,
+          "qualified": 1,
+          "bookedCall": 2,
+          "pending": 14,
+          "notQualified": 2,
+          "spam": 1,
+          "gclids": 0
+        },
+        "prior": {
+          "total": 21,
+          "qualified": 7,
+          "bookedCall": 5,
+          "pending": 8,
+          "notQualified": 1,
+          "gclids": 2
+        },
+        "septemberToDate": {
+          "total": 38,
+          "qualified": 8,
+          "bookedCall": 5,
+          "pending": 21,
+          "notQualified": 3,
+          "spam": 1,
+          "gclids": 2
+        },
+        "attributionVerified": false,
+        "attributionNote": "UNVERIFIED. 0 of 20 current-window leads carry a gclid; 2 of 38 in September. Paid CPL is NOT CALCULABLE. Lead counts are a FLOOR, not a total, because some form intake is unobserved. Qualified-rate drop 33% to 5% is confounded by maturation lag: 14 of 20 current leads are still pending and unworked."
+      },
+      "health": {
+        "capDaily": 36,
+        "managedAvgDaily": 23.23,
+        "capBreached": false,
+        "runawayGuard": "not triggered",
+        "conversionTracking": "OCI action 7731222672 active; gclid capture into ledger effectively failing (0 of 20)",
+        "escalations": "none triggered; CPL rule cannot be evaluated without attribution"
+      },
+      "best": {
+        "entity": "Geo Twin campaign 24164623336",
+        "evidence": "$36.78 for 219 clicks at $0.17 CPC vs main ContractMfg $125.81 for 130 clicks at $0.97. 68% more clicks on 29% of the spend."
+      },
+      "worst": {
+        "entity": "Ad group ContractMfg-Haircare (200926047593) inside Geo Twin",
+        "evidence": "13,584 impressions, 177 clicks, 1.30% CTR, $29.23 = 79% of twin spend. Grew from 655 impressions and $4.83 the prior week."
+      },
+      "waste": {
+        "evidence": "INFERRED, not from a search-terms report. The reporting tool exposes only ad_group, ad_group_ad, campaign and customer resources, so search_term_view is unavailable and no term-level waste list could be pulled this cycle.",
+        "signal": "Twin impressions rose 5,922 to 15,614 (+164%) while CTR fell 1.87% to 1.40% and CPC fell $0.33 to $0.17. Cheaper, higher-volume, less relevant inventory. Concentrated almost entirely in one duplicate ad group.",
+        "starved": "AG1 Skincare 5 impressions, AG2 Haircare 5, ContractMfg-Skincare 1 in twin. Skincare, one of the two named priority verticals, has effectively no paid presence."
+      }
     }
   },
   "facilityStatus": {
