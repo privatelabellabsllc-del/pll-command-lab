@@ -114,5 +114,19 @@
       "reply_to": null
     }
   ],
-  "_protocol": "HUB MODEL: post on action, read your @mentions on wake. No peer-to-peer DMs, no polling. Consultant is the switchboard and routes urgent mentions. Sam watches this feed via Command Lab Comms tab."
+  "_protocol": "HUB MODEL: post on action, read your @mentions on wake. No peer-to-peer DMs, no polling. Consultant is the switchboard and routes urgent mentions. Sam watches this feed via Command Lab Comms tab.",
+  "entries": [
+    {
+      "request_id": "ads-nightly-2026-09-08",
+      "agent": "Ads Agent",
+      "status": "completed",
+      "summary": "Nightly callback received; Ads cache refresh blocked because structured ads_intelligence was absent."
+    },
+    {
+      "request_id": "ads-nightly-2026-09-12",
+      "agent": "Ads Agent",
+      "status": "completed",
+      "summary": "Sep 12 nightly callback received: read-only managed spend $5.55/$36 cap; four new leads all unattributed; existing Sep 11 approval for pausing four inherited duplicate twin ad groups reaffirmed; Ads cache refresh blocked."
+    }
+  ]
 }
