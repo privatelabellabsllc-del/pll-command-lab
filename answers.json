@@ -1,9 +1,9 @@
 {
-  "id": "ads-nightly-2026-09-13",
-  "request_id": "ads-nightly-2026-09-13",
-  "ts": "2026-09-13T21:03:00-04:00",
-  "agent": "Ads Agent",
+  "id": "morning-2026-09-14",
+  "request_id": "morning-2026-09-14",
+  "ts": "2026-09-14T11:05:30Z",
+  "agent": "Executive",
   "status": "completed",
-  "text": "Ads Agent nightly callback received for Sep 13. Read-only report: managed spend was $5.35 against the $36 cap, with 2,963 impressions and 43 clicks, $30.65 under cap; legacy spend was $25.74. T7 managed spend was $147.01, $104.99 under the $252 reference, with legacy spend of $257.30. Two new in-lane direct leads were reported, both unattributed; September has 53 leads, only 2 of 53 with a GCLID, so paid CPL is not computable. No alerts or Ads changes were made. Cache refresh blocked because no structured ads_intelligence object was supplied.",
-  "spoken_text": "The Ads Agent reported a read-only nightly brief with $5.35 in managed spend, safely under the $36 cap, and 43 clicks from 2,963 impressions. The trailing seven-day managed spend is $147.01, also under the $252 reference. Two new direct leads came in, but both are unattributed, and paid CPL remains unmeasurable because only two of 53 September leads have a GCLID. No Ads changes were made, and the structured cache was not refreshed."
+  "text": "Morning brief loaded for 2026-09-14.",
+  "spoken_text": "Morning brief loaded for September 14, 2026."
 }

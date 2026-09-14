@@ -1,33 +1,37 @@
 {
-  "date": "2026-09-11",
-  "ts": "2026-09-11T11:04:00Z",
+  "date": "2026-09-14",
+  "ts": "2026-09-14T11:05:30Z",
   "brief": [
     {
-      "t": "Morning refresh for September 3: today’s calls are not verifiable from the connected Google Calendar; it is not Sam’s full schedule. Friday at 11:00 AM ET has a prominent double-booking that needs resolution.",
+      "t": "Road2150 today is measured on quotes out: the weekend produced seven real conversations, five after the quantity question, and Sam replied to all Sunday. The money depends on what leaves the building today.",
       "hot": true
     },
     {
-      "t": "Friday 11:00 AM ET conflict: Austin (Radiant Glow) has not responded, while Ari Levitin’s DEWPAD R&D Review has seven attendees and Ari confirmed by email. Executive recommends moving Austin to 10:00 AM ET.",
+      "t": "1:00 PM ET: Milieu Skin with Aarav Shah and Ronil Chaudhary. Send the NDA before the call; do not promise the cold-process cleanser until Ronald confirms the shear-sensitive oil process and review raw-material QC liability.",
       "hot": true
     },
     {
-      "t": "Waiting on Sam: revert Ads to Manual CPC, authorize conversion tracking, decide whether legacy campaigns keep about $447 per month, approve ConvertFlow redlines, and authorize the six pending quotes.",
+      "t": "Smart MD Labs is a calendar conflict: Charlie accepted 4:00 PM ET, then received a cancellation, while Sam emailed 8:00 PM ET. Fix the calendar before 4:00; the call must also keep cosmetic peptide serums separate from drug or telehealth claims.",
       "hot": true
     },
     {
-      "t": "Qualify new inbound: Mark C. peptide testing, Victoria/Curly 911 tech transfer, Shameka Lee braiding spray with Calendly booked, plus Wahid Habib, Nikkie Aroh, Darryl, and Uri bookings.",
+      "t": "R2150 decision: Cojones Soap needs a yes or no on crediting the sample fee against the first purchase order and whether PLL can run a hot-pour beef-tallow stick deodorant. Once confirmed, the 3,000-unit quote can go out.",
       "hot": true
     },
     {
-      "t": "Verified Ads snapshot for Aug 27–Sep 2: $305.73 account spend, 528 clicks, $0.58 CPC, 1.61% CTR, zero conversions; six enabled campaigns and 21 enabled ads.",
+      "t": "Quote desk: Billy Ellison is ready for the hand-care brief; Curly 911 is with Nikkie pending Ronald BOM; Morning Glory is waiting on label pricing. Madison Calkins and Beauty By Bri need the MOQ conversation today.",
+      "hot": true
+    },
+    {
+      "t": "Open decisions also include Amanda Peters, pausing four duplicate ad groups, routing the quote form to Sales Desk with a copy to Sam, identifying who paused the Samples and Sales campaigns, and standardizing the customer signature.",
       "hot": false
     }
   ],
   "next": [
-    "Resolve Friday 11:00 AM ET double-booking; recommend moving Austin to 10:00 AM ET",
-    "Answer Ads decisions: Manual CPC, conversion tracking, and legacy-campaign ~$447/month disposition",
-    "Review ConvertFlow fork mockup redlines and authorize pending quotes: Ethnic Gals, Rannah/Aytay, Emma/Wagyu, Victor",
-    "Qualify Mark C., Victoria/Curly 911, Shameka Lee, Wahid Habib, Nikkie Aroh, Darryl, and Uri"
+    "Send Milieu NDA and confirm today’s process/QC boundaries with Ronald",
+    "Resolve Charlie Reyes calendar and send a clean 8:00 PM ET confirmation/invite",
+    "Answer Cojones sample-credit and tallow-stick decisions so the 3,000-unit quote can go out",
+    "Run quote desk: Billy brief, Curly BOM, Morning Glory label price, and MOQ talks for Madison and Beauty By Bri"
   ],
   "kb": [
     {
@@ -404,7 +408,32 @@
       "a": "Mark Cafolla remains an active custom-peptide opportunity with NDA executed and packaging/sample specifications in progress. The old August 28 call record is historical; no September 1 call or newly verified outcome is present in today’s sources."
     }
   ],
-  "topTasks": [],
+  "topTasks": [
+    {
+      "rank": 1,
+      "task": "Cojones Soap: decide sample-fee credit and confirm beef-tallow stick capability",
+      "owner": "Sam / Ronald",
+      "status": "waiting on decision"
+    },
+    {
+      "rank": 2,
+      "task": "Milieu Skin: send NDA before 1:00 PM ET call; confirm process and raw-material QC boundaries",
+      "owner": "Sam / Executive / Ronald",
+      "status": "needs action today"
+    },
+    {
+      "rank": 3,
+      "task": "Charlie Reyes: repair conflicting 4:00 PM cancellation / 8:00 PM email and calendar",
+      "owner": "Sam / Executive",
+      "status": "needs action before 4:00 PM"
+    },
+    {
+      "rank": 4,
+      "task": "Quote desk: Billy, Curly 911, Morning Glory; MOQ conversations with Madison and Beauty By Bri",
+      "owner": "Executive / Nikkie / Ronald",
+      "status": "needs action today"
+    }
+  ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
@@ -556,30 +585,7 @@
       "status": "PROPOSED — NOT CONFIRMED"
     }
   ],
-  "pipelineStat": {
-    "total_value": "$26,500 Atlas Eternal; other active opportunities not stated",
-    "active_deals": 12,
-    "hot": [
-      "Tammye Hall — Sept 1 2pm ET booked call, format must be confirmed",
-      "Morning Glory — urgent label corrections while production status is unverified",
-      "Mark Higgins — ingredient brief received, formulation review before pricing",
-      "Gridlot — clean NDA blocked on approved template",
-      "Studio S5 — Sam direction needed on certification/credit/pricing"
-    ],
-    "stalled": [
-      "Enso — Sept 1 meeting proposal not confirmed by Sam",
-      "Talova/Marcello — Kenna revision receipt still needs verification",
-      "Terra Lotus — 19,000-unit sample shipment still needs confirmation",
-      "Amanda/Studio S5 — waiting on exact commercial answers"
-    ],
-    "activeDeals": 12,
-    "pipelineValue": 26500,
-    "inProduction": 2,
-    "depositsCollected": null,
-    "note": "September 3 verified lane: resolve Friday conflict, clear Sam decisions, qualify new inbound. Account Ads snapshot is Aug 27–Sep 2; zero conversions tracked.",
-    "monthlyTarget": "$150K",
-    "achievableDepositsThisMonth": "Not stated in today’s verified sources."
-  },
+  "pipelineStat": "Seven real conversations moved over the weekend; five answered the quantity question. Active quote lanes: Cojones 3,000 units, Billy 1,000, Curly 911, Morning Glory, plus MOQ-fit Madison Calkins and Beauty By Bri.",
   "adsAgentBrief": {
     "generatedAt": "2026-09-12T01:34:37.870Z",
     "status": "WEEKLY_ADS_RECOMMENDATION_PENDING_APPROVAL",
