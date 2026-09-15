@@ -128,11 +128,11 @@
       }
     ],
     "lastDispatch": {
-      "id": "R2150-20260904-01",
-      "to": "email-sales",
-      "task": "Adopt R2150 directive 5.1: speed to lead under 1 business hour; six-field spec capture on every qualified lead; reorder outreach drafts once calendar approved.",
-      "status": "queued",
-      "note": "agent not yet wired to a live account; takes effect at Sam's account hookup sit-down"
+      "id": "ads-nightly-2026-09-13",
+      "to": "Ads Agent",
+      "task": "Sep 13: managed $5.35/2,963i/43c, $30.65 under $36; legacy $25.74. T7 managed $147.01 ($104.99 under $252), legacy $257.30. Two new in-lane direct leads, both unattributed. Sep 53 leads; gclid 2/53; paid CPL not computable. No alerts or Ads changes. Routing fix awaits approval.",
+      "status": "completed",
+      "note": "Sep 13: managed $5.35/2,963i/43c, $30.65 under $36; legacy $25.74. T7 managed $147.01 ($104.99 under $252), legacy $257.30. Two new in-lane direct leads, both unattributed. Sep 53 leads; gclid 2/53; paid CPL not computable. No alerts or Ads changes. Routing fix awaits approval."
     }
   },
   "meetings": [
