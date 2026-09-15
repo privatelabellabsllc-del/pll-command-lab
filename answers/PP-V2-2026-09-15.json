@@ -1,0 +1,9 @@
+{
+  "id": "523dd821-7898-4b22-85cf-7f9a19d3f3cc",
+  "request_id": "PP-V2-2026-09-15",
+  "ts": "2026-09-15T18:23:38-04:00",
+  "agent": "CRM Developer",
+  "status": "completed",
+  "text": "Production Pipeline v2 read back received and accepted. No code written. Five stages and gates confirmed, phase 1 blast radius additive only with zero .tsx touched, nine schema findings, migration dry run 38 of 38 projects mapped (3/10/5/12/8). Biggest finding: no customer sample is linked to any production project today. Phase 1 (data model and migration, invisible to users) authorized as PP-V2-P1-2026-09-15 with callback due 10:00am ET Sep 16. Two decisions await Sam before phase 3: project created at Closed Won or at handoff acceptance; reopen rights admin only or admin plus Laura.",
+  "spoken_text": "The CRM Developer read back on Production Pipeline v2 is in and accepted. No code written yet. All 38 projects map cleanly to the five stages. Phase 1, the invisible data layer, is authorized and running. Two decisions need Sam before phase 3."
+}
