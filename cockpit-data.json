@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-14T11:05:30Z",
-  "generatedLabel": "Sep 14 2026 · morning refresh",
+  "generatedISO": "2026-09-15T11:03:50Z",
+  "generatedLabel": "Sep 15 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,21 +10,21 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Cojones Soap: decide sample-fee credit and confirm beef-tallow stick capability",
-      "owner": "Sam / Ronald",
-      "status": "waiting on decision"
+      "task": "Run today’s four booked calls: Natashia 9am, Aranve 1pm, Amanda/Newell 2pm, Meridith 3pm ET",
+      "owner": "Sam / team",
+      "status": "scheduled today"
     },
     {
       "rank": 2,
-      "task": "Milieu Skin: send NDA before 1:00 PM ET call; confirm process and raw-material QC boundaries",
-      "owner": "Sam / Executive / Ronald",
-      "status": "needs action today"
+      "task": "Aranve: confirm shipping details and goal date",
+      "owner": "Sam / Aidan / Laura",
+      "status": "needs action at 1:00 PM ET"
     },
     {
       "rank": 3,
-      "task": "Charlie Reyes: repair conflicting 4:00 PM cancellation / 8:00 PM email and calendar",
-      "owner": "Sam / Executive",
-      "status": "needs action before 4:00 PM"
+      "task": "Cojones Soap: decide sample-fee credit and confirm beef-tallow stick capability",
+      "owner": "Sam / Ronald",
+      "status": "waiting on decision"
     },
     {
       "rank": 4,
@@ -128,16 +128,49 @@
       }
     ],
     "lastDispatch": {
-      "id": "R2150-20260904-05",
-      "to": "content",
-      "task": "Adopt R2150 directive 5.5: company + capabilities decks; one-page How We Work PDF; quote cover note template in Sam's voice.",
+      "id": "R2150-20260904-01",
+      "to": "email-sales",
+      "task": "Adopt R2150 directive 5.1: speed to lead under 1 business hour; six-field spec capture on every qualified lead; reorder outreach drafts once calendar approved.",
       "status": "queued",
       "note": "agent not yet wired to a live account; takes effect at Sam's account hookup sit-down"
     }
   },
-  "meetings": [],
-  "meetingsNote": "No reliable calendar source is available from the mail-only Outlook connection; no meetings populated.",
-  "callsSource": "Outlook inbox search (mail-only connection); no reliable meeting notification found.",
+  "meetings": [
+    {
+      "timeISO": "2026-09-15T09:00:00-04:00",
+      "time": "9:00 AM ET",
+      "title": "Natashia De Jesus and Sam Salim",
+      "who": "Natashia De Jesus",
+      "join": "https://meet.google.com/xeb-xiug-qvj",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-15T13:00:00-04:00",
+      "time": "1:00 PM ET",
+      "title": "Aranve shipping details and goal date",
+      "who": "Laura Hoskins · Aaron · Aidan",
+      "join": "https://meet.google.com/abx-jgwi-wva",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-15T14:00:00-04:00",
+      "time": "2:00 PM ET",
+      "title": "Amanda Chadwick and Sam Salim",
+      "who": "Amanda Chadwick · Newell Co.",
+      "join": "https://meet.google.com/uru-ziha-xhz",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-15T15:00:00-04:00",
+      "time": "3:00 PM ET",
+      "title": "PLL Discovery Call: Meridith Mossman / Mossman Holdings",
+      "who": "Meridith Mossman",
+      "join": "https://meet.google.com/ntv-yguu-kiz",
+      "location": "Google Meet"
+    }
+  ],
+  "meetingsNote": "Today’s meetings were extracted from Outlook invitation emails; calendar scope remains unavailable, so only reliable invitations with explicit times and links are shown.",
+  "callsSource": "Outlook inbox search (mail-only connection); invitation emails for today",
   "setupNeeds": [
     {
       "need": "CRM Developer Gmail connection is gone",

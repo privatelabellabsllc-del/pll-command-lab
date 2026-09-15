@@ -1,37 +1,37 @@
 {
-  "date": "2026-09-14",
-  "ts": "2026-09-14T11:05:30Z",
+  "date": "2026-09-15",
+  "ts": "2026-09-15T11:03:50Z",
   "brief": [
     {
-      "t": "Road2150 today is measured on quotes out: the weekend produced seven real conversations, five after the quantity question, and Sam replied to all Sunday. The money depends on what leaves the building today.",
+      "t": "Today’s booked calls are Natashia De Jesus at 9:00 AM ET, Aranve shipping details at 1:00 PM, Amanda Chadwick/Newell at 2:00 PM, and Meridith Mossman at 3:00 PM. Use the meeting links in the Cockpit; all times are Eastern.",
       "hot": true
     },
     {
-      "t": "1:00 PM ET: Milieu Skin with Aarav Shah and Ronil Chaudhary. Send the NDA before the call; do not promise the cold-process cleanser until Ronald confirms the shear-sensitive oil process and review raw-material QC liability.",
+      "t": "Aranve is the 1:00 PM shipping-details meeting with Laura Hoskins, Aaron, Aidan, and Sam. Confirm the goal date and shipping details before the call.",
       "hot": true
     },
     {
-      "t": "Smart MD Labs is a calendar conflict: Charlie accepted 4:00 PM ET, then received a cancellation, while Sam emailed 8:00 PM ET. Fix the calendar before 4:00; the call must also keep cosmetic peptide serums separate from drug or telehealth claims.",
+      "t": "Meridith Mossman is a 3:00 PM discovery call for custom body powder, 500-unit starting MOQ, 6-ounce jar with puff; the NDA is signed and brief received.",
       "hot": true
     },
     {
-      "t": "R2150 decision: Cojones Soap needs a yes or no on crediting the sample fee against the first purchase order and whether PLL can run a hot-pour beef-tallow stick deodorant. Once confirmed, the 3,000-unit quote can go out.",
+      "t": "Road2150 remains quote-led: Cojones Soap needs the sample-fee-credit and beef-tallow-stick decisions before the 3,000-unit quote can go out.",
       "hot": true
     },
     {
-      "t": "Quote desk: Billy Ellison is ready for the hand-care brief; Curly 911 is with Nikkie pending Ronald BOM; Morning Glory is waiting on label pricing. Madison Calkins and Beauty By Bri need the MOQ conversation today.",
+      "t": "Quote desk remains active: Billy Ellison is ready for the hand-care brief; Curly 911 needs Ronald’s BOM; Morning Glory is waiting on label pricing; Madison Calkins and Beauty By Bri need MOQ conversations.",
       "hot": true
     },
     {
-      "t": "Open decisions also include Amanda Peters, pausing four duplicate ad groups, routing the quote form to Sales Desk with a copy to Sam, identifying who paused the Samples and Sales campaigns, and standardizing the customer signature.",
+      "t": "Ads cache was preserved exactly from the verified Sep 8–14 snapshot: managed $118.33, legacy $231.58, account total $349.91. No Ads settings or figures were changed in this refresh.",
       "hot": false
     }
   ],
   "next": [
-    "Send Milieu NDA and confirm today’s process/QC boundaries with Ronald",
-    "Resolve Charlie Reyes calendar and send a clean 8:00 PM ET confirmation/invite",
-    "Answer Cojones sample-credit and tallow-stick decisions so the 3,000-unit quote can go out",
-    "Run quote desk: Billy brief, Curly BOM, Morning Glory label price, and MOQ talks for Madison and Beauty By Bri"
+    "Prepare for Natashia De Jesus at 9:00 AM ET and capture the qualification outcome",
+    "Confirm Aranve shipping details and goal date before the 1:00 PM ET meeting",
+    "Run Amanda Chadwick/Newell at 2:00 PM ET and Meridith Mossman at 3:00 PM ET",
+    "Answer Cojones sample-credit and tallow-stick decisions so the 3,000-unit quote can go out"
   ],
   "kb": [
     {
@@ -411,21 +411,21 @@
   "topTasks": [
     {
       "rank": 1,
-      "task": "Cojones Soap: decide sample-fee credit and confirm beef-tallow stick capability",
-      "owner": "Sam / Ronald",
-      "status": "waiting on decision"
+      "task": "Run today’s four booked calls: Natashia 9am, Aranve 1pm, Amanda/Newell 2pm, Meridith 3pm ET",
+      "owner": "Sam / team",
+      "status": "scheduled today"
     },
     {
       "rank": 2,
-      "task": "Milieu Skin: send NDA before 1:00 PM ET call; confirm process and raw-material QC boundaries",
-      "owner": "Sam / Executive / Ronald",
-      "status": "needs action today"
+      "task": "Aranve: confirm shipping details and goal date",
+      "owner": "Sam / Aidan / Laura",
+      "status": "needs action at 1:00 PM ET"
     },
     {
       "rank": 3,
-      "task": "Charlie Reyes: repair conflicting 4:00 PM cancellation / 8:00 PM email and calendar",
-      "owner": "Sam / Executive",
-      "status": "needs action before 4:00 PM"
+      "task": "Cojones Soap: decide sample-fee credit and confirm beef-tallow stick capability",
+      "owner": "Sam / Ronald",
+      "status": "waiting on decision"
     },
     {
       "rank": 4,
@@ -585,7 +585,7 @@
       "status": "PROPOSED — NOT CONFIRMED"
     }
   ],
-  "pipelineStat": "Seven real conversations moved over the weekend; five answered the quantity question. Active quote lanes: Cojones 3,000 units, Billy 1,000, Curly 911, Morning Glory, plus MOQ-fit Madison Calkins and Beauty By Bri.",
+  "pipelineStat": "Four meetings are booked today: Natashia De Jesus, Aranve shipping details, Amanda Chadwick/Newell, and Meridith Mossman. Active quote lanes remain Cojones 3,000 units, Billy 1,000, Curly 911, Morning Glory, plus MOQ-fit Madison Calkins and Beauty By Bri.",
   "adsAgentBrief": "Nightly read-only refresh 2026-09-14: managed $89.46 current 7-day; account $349.91; roster enumerated, exact ads and legacy split unverified; no changes.",
   "adsIntelligence": {
     "updatedAt": "2026-09-15T01:09:10.722Z",
