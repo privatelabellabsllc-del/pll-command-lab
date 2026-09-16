@@ -82,90 +82,63 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Handle the Tammye 2pm call format, Morning Glory print-status escalation, Mark Higgins review, and the Gridlot/Studio S5 decisions.",
+      "top_task": "Secure Ronald’s deodorant capability answer before Cory’s 1:00 PM call.",
       "tasks": [
         {
-          "title": "Confirm Tammye Hall’s 2pm ET call format and agenda",
-          "due": "Today 2:00pm ET"
-        },
-        {
-          "title": "Verify whether Morning Glory labels have printed and direct the correction review",
+          "title": "Resolve Lisa’s Teams link and units before 3:00 PM ET",
           "due": "Today"
         },
         {
-          "title": "Review Mark Higgins’s ingredient brief and choose a chemist-call time",
+          "title": "Correct Email Agent threshold and promise behavior",
           "due": "Today"
         },
         {
-          "title": "Provide Gridlot NDA and Studio S5 commercial direction",
-          "due": "Today"
-        },
-        {
-          "title": "Confirm or decline Enso’s proposed 9:15am ET meeting",
+          "title": "Choose Delphos House’s Friday invite and cancel duplicate",
           "due": "Today"
         }
       ],
-      "notes": "The Sept 1 calendar also contains Payroll at 11am ET. No new day-update was available; do not treat unconfirmed proposals as booked."
+      "notes": "Today’s authoritative priority brief lists five calls and unresolved capability, meeting, and agent-correction decisions."
     },
-    "aidan": {
-      "display_name": "Aidan",
-      "top_task": "Drive Atlas Eternal production and support Mark Higgins formulation review and Terra Lotus shipment verification.",
+    "ronald": {
+      "display_name": "Ronald",
+      "top_task": "Confirm aluminum-free deodorant capability at 5,000 units per scent, including fill and cure.",
       "tasks": [
         {
-          "title": "Drive Atlas Eternal $26,500 production across four lanes",
-          "due": "On completion"
-        },
-        {
-          "title": "Support Mark Higgins brief review and confirm formulation inputs",
-          "due": "Today"
-        },
-        {
-          "title": "Confirm Terra Lotus Shampoo 5K, Body Wash 9K, and Conditioner 5K samples shipped",
-          "due": "Today"
+          "title": "Answer deodorant capability question",
+          "due": "Before 1:00 PM ET"
         }
       ],
-      "notes": "Atlas has $13,250 due on completion. Terra’s 19,000-unit sample shipment remains unconfirmed."
+      "notes": "Unconfirmed; do not represent as completed."
     },
-    "aaron": {
-      "display_name": "Aaron",
-      "top_task": "Verify Kenna’s revisions for the Talova reorder before Sam locks the PO.",
+    "executive": {
+      "display_name": "Executive",
+      "top_task": "Resolve Lisa’s real Teams room before her 3:00 PM call.",
       "tasks": [
         {
-          "title": "Confirm whether PLL received Kenna’s revised formula details",
-          "due": "Today"
+          "title": "Resolve Teams join link",
+          "due": "Before 3:00 PM ET"
         }
       ],
-      "notes": "Talova/Marcello remains a warm lane, but the Kenna-revision confirmation is not verified."
+      "notes": "No real room resolved in the authoritative brief."
     },
-    "james": {
-      "display_name": "James",
-      "top_task": "Escalate Morning Glory label corrections and resolve the AF Brand meeting ownership.",
+    "email_agent": {
+      "display_name": "Email Agent",
+      "top_task": "Correct calendar-time offers, MOQ threshold, and delivery promises.",
       "tasks": [
         {
-          "title": "Verify Morning Glory label print status and route the correction checklist",
+          "title": "Stop offering occupied times",
           "due": "Today"
         },
         {
-          "title": "Resolve ownership/attendance for the AF Brand Sept 2 meeting",
-          "due": "Tomorrow"
-        }
-      ],
-      "notes": "James is also copied on the AF Brand invite; Sam is marked declined and Laura accepted."
-    },
-    "nikkie": {
-      "display_name": "Nikkie",
-      "top_task": "Continue outbound sales and qualify active inbound opportunities.",
-      "tasks": [
-        {
-          "title": "Work active white-label inquiries and book qualified next steps",
-          "due": "Ongoing"
+          "title": "Use 1,000 custom MOQ",
+          "due": "Today"
         },
         {
-          "title": "Resolve outstanding Curly 911/Victoria timing details",
-          "due": "Ongoing"
+          "title": "Do not promise undelivered pricing",
+          "due": "Today"
         }
       ],
-      "notes": "Nikkie’s opportunities remain active and none should be described as closed without verified CRM evidence."
+      "notes": "Three specific defects are documented in the daily brief."
     }
   },
   "revenueActions": [
