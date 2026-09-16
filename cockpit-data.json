@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-15T11:03:50Z",
-  "generatedLabel": "Sep 15 2026 · morning refresh",
+  "generatedISO": "2026-09-16T11:05:09Z",
+  "generatedLabel": "Sep 16 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,71 +10,47 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Run today’s four booked calls: Natashia 9am, Aranve 1pm, Amanda/Newell 2pm, Meridith 3pm ET",
-      "owner": "Sam / team",
-      "status": "scheduled today"
+      "task": "Get Ronald’s aluminum-free deodorant capability answer before Cory’s 1:00 PM call",
+      "owner": "Sam / Ronald",
+      "status": "urgent before 1:00 PM ET"
     },
     {
       "rank": 2,
-      "task": "Aranve: confirm shipping details and goal date",
-      "owner": "Sam / Aidan / Laura",
-      "status": "needs action at 1:00 PM ET"
+      "task": "Resolve Lisa Alvarez’s real Teams room and clarify units",
+      "owner": "Sam / Executive",
+      "status": "needs action before 3:00 PM ET"
     },
     {
       "rank": 3,
-      "task": "Cojones Soap: decide sample-fee credit and confirm beef-tallow stick capability",
-      "owner": "Sam / Ronald",
-      "status": "waiting on decision"
+      "task": "Correct Email Agent: calendar reading, 1,000 MOQ, and no delivery promises",
+      "owner": "Sam / Email Agent",
+      "status": "needs correction today"
     },
     {
       "rank": 4,
-      "task": "Quote desk: Billy, Curly 911, Morning Glory; MOQ conversations with Madison and Beauty By Bri",
-      "owner": "Executive / Nikkie / Ronald",
-      "status": "needs action today"
+      "task": "Use Delphos House’s Friday invite and cancel the duplicate",
+      "owner": "Sam / Email Agent",
+      "status": "duplicate rooms"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Fix the eight dead CTA buttons on the live homepage",
-      "why": "Every paid click lands on buttons that do nothing. This is the confirmed cause of zero measurable leads.",
+      "item": "Ronald’s deodorant capability answer",
+      "why": "Cory’s 30,000-unit call depends on confirmed aluminum-free capability, fill, and cure reality.",
       "impact": "high",
-      "since": "Sep 10"
+      "since": "today"
     },
     {
-      "item": "Where the new site quote form submits",
-      "why": "The new build posts nowhere. It cannot go live until this is answered.",
+      "item": "Lisa Alvarez units and stock-base answer",
+      "why": "Her 3:00 PM qualification needs units and whether a pre-made clarifying base exists.",
       "impact": "high",
-      "since": "Sep 10"
+      "since": "today"
     },
     {
-      "item": "Website verification facts: year founded, square footage, headcount, certification status, retailer logo substantiation",
-      "why": "Competitors lead with these. Nothing unverified was published.",
+      "item": "Ads budget decision",
+      "why": "Managed and legacy spend are split; budget movement requires Sam.",
       "impact": "high",
-      "since": "Sep 10"
-    },
-    {
-      "item": "Elijah Snider proposal, six open answers",
-      "why": "Proposal is drafted and cannot send without them.",
-      "impact": "high",
-      "since": "Sep 10"
-    },
-    {
-      "item": "ConvertFlow fork: authorize four path test then swap",
-      "why": "Gate is built on the duplicate. Live popup untouched.",
-      "impact": "high",
-      "since": "Sep 9"
-    },
-    {
-      "item": "Ads: revert to manual CPC and authorize conversion tracking",
-      "why": "Open since the Sep 3 Executive check.",
-      "impact": "high",
-      "since": "Sep 3"
-    },
-    {
-      "item": "Authorize quotes for Ethnic Gals, Rannah/Aytay, Emma/Wagyu, Victor",
-      "why": "Four ICP brands never quoted.",
-      "impact": "high",
-      "since": "Sep 3"
+      "since": "Sep 15"
     }
   ],
   "agentHub": {
@@ -137,40 +113,48 @@
   },
   "meetings": [
     {
-      "timeISO": "2026-09-15T09:00:00-04:00",
-      "time": "9:00 AM ET",
-      "title": "Natashia De Jesus and Sam Salim",
-      "who": "Natashia De Jesus",
-      "join": "https://meet.google.com/xeb-xiug-qvj",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-15T13:00:00-04:00",
+      "timeISO": "2026-09-16T13:00:00-04:00",
       "time": "1:00 PM ET",
-      "title": "Aranve shipping details and goal date",
-      "who": "Laura Hoskins · Aaron · Aidan",
-      "join": "https://meet.google.com/abx-jgwi-wva",
+      "title": "Cory Anderson — Honcho Hygiene",
+      "who": "Cory Anderson",
+      "join": "https://meet.google.com/zmf-nkaa-fzm",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-15T14:00:00-04:00",
+      "timeISO": "2026-09-16T13:30:00-04:00",
+      "time": "1:30 PM ET",
+      "title": "Jake Rosen / Open Influence",
+      "who": "Makenna Peach · Alex · Callie",
+      "join": "https://meet.google.com/fww-unfn-ook",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-16T14:00:00-04:00",
       "time": "2:00 PM ET",
-      "title": "Amanda Chadwick and Sam Salim",
-      "who": "Amanda Chadwick · Newell Co.",
-      "join": "https://meet.google.com/uru-ziha-xhz",
+      "title": "Aarav Shah — Milieu Skin",
+      "who": "Aarav Shah",
+      "join": "https://meet.google.com/qsz-nzji-kan",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-15T15:00:00-04:00",
+      "timeISO": "2026-09-16T15:00:00-04:00",
       "time": "3:00 PM ET",
-      "title": "PLL Discovery Call: Meridith Mossman / Mossman Holdings",
-      "who": "Meridith Mossman",
-      "join": "https://meet.google.com/ntv-yguu-kiz",
-      "location": "Google Meet"
+      "title": "Lisa Alvarez — clarifying shampoo",
+      "who": "Lisa Alvarez",
+      "join": "",
+      "location": "Teams link unresolved"
+    },
+    {
+      "timeISO": "2026-09-16T16:00:00-04:00",
+      "time": "4:00 PM ET",
+      "title": "Rudy Sanchez — Reason for Call: Ephix",
+      "who": "Rudy Sanchez",
+      "join": "https://committedcoaches.zoom.us/my/rudysanchez",
+      "location": "Zoom"
     }
   ],
-  "meetingsNote": "Today’s meetings were extracted from Outlook invitation emails; calendar scope remains unavailable, so only reliable invitations with explicit times and links are shown.",
-  "callsSource": "Outlook inbox search (mail-only connection); invitation emails for today",
+  "meetingsNote": "Today’s meetings were extracted from the authoritative daily brief. Lisa Alvarez’s booking has no resolved Teams room; do not invent a join link.",
+  "callsSource": "DAILY-2026-09-16.md; Outlook meeting details",
   "setupNeeds": [
     {
       "need": "CRM Developer Gmail connection is gone",
@@ -270,44 +254,28 @@
   ],
   "pipeline": [
     {
-      "deal": "Cojones Soap Company (Frank Luca)",
-      "units": "3,000 across three SKUs",
-      "product": "stick deodorant, tallow balm, tallow cream",
-      "stage": "quote pending two decisions",
+      "deal": "Honcho Hygiene (Cory Anderson)",
+      "units": "30,000 across six scents",
+      "product": "aluminum-free deodorant",
+      "stage": "call 1:00 PM ET; capability answer needed",
       "value": "TBD",
       "owner": "Sam / Ronald"
-    },
-    {
-      "deal": "Billy Ellison, MD",
-      "units": "1,000",
-      "product": "hand care",
-      "stage": "brief ready",
-      "value": "TBD",
-      "owner": "Executive"
-    },
-    {
-      "deal": "Curly 911 (Victoria)",
-      "units": "TBD",
-      "product": "conditioner + scalp tonic",
-      "stage": "briefs received; BOM needed",
-      "value": "TBD",
-      "owner": "Nikkie / Ronald"
-    },
-    {
-      "deal": "Morning Glory (James Bailey)",
-      "units": "1,000+",
-      "product": "label pricing pending",
-      "stage": "quote pending supplier number",
-      "value": "TBD",
-      "owner": "Executive"
     },
     {
       "deal": "Milieu Skin (Aarav Shah)",
       "units": "TBD",
-      "product": "three fermented oil-based cleansers",
-      "stage": "call 1:00 PM ET; NDA pending",
+      "product": "three fermented cleansers",
+      "stage": "call 2:00 PM ET; units first",
       "value": "TBD",
-      "owner": "Sam / Ronald"
+      "owner": "Sam"
+    },
+    {
+      "deal": "Lisa Alvarez",
+      "units": "TBD",
+      "product": "detox/clarifying shampoo",
+      "stage": "call 3:00 PM ET; base, MOQ, turnaround open",
+      "value": "TBD",
+      "owner": "Sam / Executive"
     }
   ]
 }

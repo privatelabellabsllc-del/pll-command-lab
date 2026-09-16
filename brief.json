@@ -1,438 +1,83 @@
 {
-  "date": "2026-09-15",
-  "ts": "2026-09-15T11:03:50Z",
+  "date": "2026-09-16",
+  "ts": "2026-09-16T11:05:09Z",
   "brief": [
     {
-      "t": "Today’s booked calls are Natashia De Jesus at 9:00 AM ET, Aranve shipping details at 1:00 PM, Amanda Chadwick/Newell at 2:00 PM, and Meridith Mossman at 3:00 PM. Use the meeting links in the Cockpit; all times are Eastern.",
+      "t": "Today has five calls: Cory Anderson at 1:00 PM, Jake Rosen and Open Influence at 1:30 PM, Aarav Shah at 2:00 PM, Lisa Alvarez at 3:00 PM, and Rudy Sanchez at 4:00 PM ET. The 1:00–2:30 block has no gaps.",
       "hot": true
     },
     {
-      "t": "Aranve is the 1:00 PM shipping-details meeting with Laura Hoskins, Aaron, Aidan, and Sam. Confirm the goal date and shipping details before the call.",
+      "t": "Before Cory’s 30,000-unit deodorant call, Ronald must confirm whether PLL can make aluminum-free deodorant at 5,000 units per scent, including fill and cure reality.",
       "hot": true
     },
     {
-      "t": "Meridith Mossman is a 3:00 PM discovery call for custom body powder, 500-unit starting MOQ, 6-ounce jar with puff; the NDA is signed and brief received.",
+      "t": "Lisa Alvarez needs an answer on a detoxifying clarifying shampoo, existing base or custom, MOQ, and turnaround; units are still unknown and the real Teams room is unresolved.",
       "hot": true
     },
     {
-      "t": "Road2150 remains quote-led: Cojones Soap needs the sample-fee-credit and beef-tallow-stick decisions before the 3,000-unit quote can go out.",
+      "t": "Email Agent corrections: it offered an occupied time, misstated the custom MOQ as 500 instead of 1,000, and promised Yianni a pricing breakdown without an owner or BOM.",
       "hot": true
     },
     {
-      "t": "Quote desk remains active: Billy Ellison is ready for the hand-care brief; Curly 911 needs Ronald’s BOM; Morning Glory is waiting on label pricing; Madison Calkins and Beauty By Bri need MOQ conversations.",
+      "t": "Friday Delphos has two competing 2:00 PM invites; use Delphos House’s invite and cancel the Email Agent’s duplicate.",
       "hot": true
     },
     {
-      "t": "Ads cache was preserved exactly from the verified Sep 8–14 snapshot: managed $118.33, legacy $231.58, account total $349.91. No Ads settings or figures were changed in this refresh.",
+      "t": "Sep 9–15 Ads spend was managed $107.26 and legacy $230.44; managed spent $8.31 yesterday against a $36 cap. No Ads settings or figures were changed in this refresh.",
       "hot": false
     }
   ],
   "next": [
-    "Prepare for Natashia De Jesus at 9:00 AM ET and capture the qualification outcome",
-    "Confirm Aranve shipping details and goal date before the 1:00 PM ET meeting",
-    "Run Amanda Chadwick/Newell at 2:00 PM ET and Meridith Mossman at 3:00 PM ET",
-    "Answer Cojones sample-credit and tallow-stick decisions so the 3,000-unit quote can go out"
+    "Get Ronald’s deodorant capability answer before 1:00 PM",
+    "Resolve Lisa’s Teams room and clarify units before 3:00 PM",
+    "Correct Email Agent threshold, calendar-reading, and delivery-promise behavior",
+    "Choose Delphos House’s Friday invite and cancel the duplicate"
   ],
   "kb": [
     {
       "keys": [
-        "oreka",
-        "nadia",
-        "8555",
-        "peptide cream",
-        "closed"
+        "Cory Anderson",
+        "Honcho Hygiene",
+        "deodorant"
       ],
-      "a": "Oreka is an $8,555 closed deal already in production. Laura owns customer communication. It is a production follow-through item, not a new-sales chase."
+      "a": "Cory Anderson’s 1:00 PM call covers six deodorant scents at 5,000 units each, 30,000 total. Ronald has not yet confirmed aluminum-free capability, fill, or cure reality at that volume."
     },
     {
       "keys": [
-        "pure good",
-        "pure",
-        "good",
-        "329k",
-        "kenna meeting"
+        "Lisa Alvarez",
+        "clarifying shampoo"
       ],
-      "a": "Pure Good is roughly a $329,000 opportunity tied to the same Kenna meeting gate. It advances when the Kenna follow-up is resolved and a next commercial step is scheduled. Do not present it as closed or production-ready."
+      "a": "Lisa wants a bare-bones detox and clarifying shampoo for hard-water minerals, silicone buildup, and protein overload, with no proteins or heavy oils. Units are unknown; Sam must answer whether a stock base exists, while MOQ and turnaround remain open."
     },
     {
       "keys": [
-        "spanish lead",
-        "spanish speaking",
-        "retinol",
-        "hyaluronic",
-        "collagen",
-        "niacinamide",
-        "100",
-        "1.7 ounce",
-        "custom cream"
+        "Email Agent",
+        "MOQ",
+        "Yianni Koutsos"
       ],
-      "a": "A Spanish-speaking website lead wants 100 units of a 1.7-ounce custom cream with retinol, hyaluronic acid, collagen, and niacinamide. Sam already replied, and the open loop is a price. Provide pricing to close the conversation without overstating a commitment."
+      "a": "The Email Agent offered Natashia an occupied Wednesday slot, used 500 instead of the 1,000 custom-manufacturing minimum for Smoke’s Barbershop, and promised Yianni a pricing breakdown without BOM or owner. These are corrections, not completed work."
     },
     {
       "keys": [
-        "nikkie",
-        "nikkie aroh",
-        "curly 911",
-        "victoria",
-        "500u",
-        "rachel trautwein",
-        "mens haircare",
-        "shampoo",
-        "conditioner"
+        "Delphos House",
+        "Friday invite"
       ],
-      "a": "Nikkie is actively working Curly 911/Victoria's 500-unit opportunity and Rachel Trautwein's men's haircare launch for shampoo and conditioner. The Curly 911 call invite needs the time conflict checked, while Rachel still needs qualification on size and project details."
+      "a": "Two Friday 2:00 PM Delphos invites exist: the Email Agent’s Meet room and Delphos House’s own invite. Use Delphos House’s room and cancel the duplicate."
     },
     {
       "keys": [
-        "production pipeline",
-        "crm build",
-        "flowchart",
-        "gmp sign-off"
+        "Pipeline",
+        "Phase 3"
       ],
-      "a": "The Production Pipeline CRM build is approved and queued for execution. It should be executed only when Sam says go. The CRM session is currently logged out, so live verification remains blocked until Sam restores it."
-    },
-    {
-      "keys": [
-        "whatsapp",
-        "crm",
-        "sessions",
-        "login",
-        "logged out"
-      ],
-      "a": "WhatsApp and the CRM are both logged out today. Restoring WhatsApp unblocks the client sweep and Terra Lotus follow-up; restoring CRM access unblocks fix verification and operational lookup. Neither session should be described as connected until reauthenticated."
-    },
-    {
-      "keys": [
-        "ronald",
-        "ronald costing",
-        "bom",
-        "ingredients cost",
-        "quote inputs"
-      ],
-      "a": "Ronald supplies formula and BOM cost inputs where needed. His costing work must include the requested inputs before any quote is issued, and no quote should rely on a BOM alone. There is no new Ronald completion recorded in this refresh."
-    },
-    {
-      "keys": [
-        "tesfa",
-        "tesfatsion",
-        "bahrzaf",
-        "shampoo",
-        "conditioner",
-        "meeting"
-      ],
-      "a": "Tesfa Shiferaw at Bahrzaf has an active shampoo-and-conditioner project; the previously scheduled Monday conversation has no recorded outcome in this refresh. Keep the project in follow-up rather than claiming a completed meeting."
-    },
-    {
-      "keys": [
-        "ashley harmon",
-        "ashley",
-        "apothik",
-        "apothik skin",
-        "call today",
-        "2:30",
-        "3 pm eastern",
-        "monday"
-      ],
-      "a": "Ashley Harmon at Apothik wants a call today at 2:30 or 3 PM Eastern, or Monday. Sam should pick a slot; the Consultant will book it, and it should not be described as booked before that choice."
-    },
-    {
-      "keys": [
-        "tasnim broud",
-        "tasnim",
-        "ayyur",
-        "ritual oil",
-        "prototypes"
-      ],
-      "a": "Tasnim Broud at AYYUR is considering a ritual-oil package with a 30 mL frosted glass bottle and gold dropper/cap. She is open to PLL sourcing and has not selected a vendor. The commercial path is to move toward prototype quantities once packaging direction is confirmed."
-    },
-    {
-      "keys": [
-        "nabil saleh",
-        "nabil",
-        "cn1",
-        "cn1 fragrance",
-        "body lotion",
-        "tubes"
-      ],
-      "a": "Nabil Saleh at CN1 Fragrance is interested in 4,000-plus eight-ounce tubes of scented body lotion using his own fragrance oil. The next qualification points are formula, tube packaging, and timing. No new response is recorded in this refresh."
-    },
-    {
-      "keys": [
-        "4pm eastern",
-        "delphos house",
-        "launch strategy",
-        "max"
-      ],
-      "a": "Max at Delphos House previously proposed an August 18 launch-strategy call, but it was not confirmed and no outcome is recorded here. Aidan's raw-materials answer remains a separate Delphos follow-up."
-    },
-    {
-      "keys": [
-        "airlines amenities",
-        "dan hunter",
-        "hunter amenities",
-        "james pitenis",
-        "retail"
-      ],
-      "a": "Dan Hunter at Hunter Amenities wants to meet next Wednesday after inbound interest through James Pitenis. The retail and airline-amenities channel could bring real volume, but units are not qualified yet."
-    },
-    {
-      "keys": [
-        "crm developer",
-        "crm developer replies",
-        "overnight replies",
-        "crm fix"
-      ],
-      "a": "No CRM Developer replies arrived overnight. There is no new developer status to read back, so keep the CRM fix state unchanged until a reply is received and verified."
-    },
-    {
-      "keys": [
-        "delizioso skincare",
-        "delizioso nda",
-        "nda confirmed",
-        "moving forward"
-      ],
-      "a": "Delizioso Skincare's NDA is confirmed. The relationship is moving forward; no additional delivery or timing detail is recorded in this refresh."
-    },
-    {
-      "keys": [
-        "huntington bank alert",
-        "huntington",
-        "10000 ach",
-        "5000 withdrawal",
-        "supplier payroll"
-      ],
-      "a": "An overnight Huntington alert showed a $10,000 item plus a $5,000 ACH/withdrawal. It is flagged to Sam for confirmation and is likely normal supplier or payroll activity, but it remains unconfirmed."
-    },
-    {
-      "keys": [
-        "lisa christensen",
-        "lisa",
-        "order 1467",
-        "shopify",
-        "not shipped"
-      ],
-      "a": "Lisa Christensen’s order 1467 still shows not shipped after 10-plus days, although she received an on-its-way email. The live status needs checking and Laura owns an honest customer reply today; shipment is not confirmed from the email alone."
-    },
-    {
-      "keys": [
-        "ads",
-        "geo twin",
-        "manual cpc",
-        "contractmfg"
-      ],
-      "a": "The Geo Twin, PLL-Search-ContractMfg-2026 #2, was re-enabled and spent $10.12 on August 23 after zero spend August 20–22. Sam must decide whether to pause it or keep it in the Manual-CPC plan; the main campaigns remain on Maximize Conversions pending approval."
-    },
-    {
-      "keys": [
-        "staged builds",
-        "convertflow",
-        "two branch fork",
-        "floating widget",
-        "call/book widget",
-        "r&d wording",
-        "contact form"
-      ],
-      "a": "The ConvertFlow two-branch fork and Shopify floating Call/Book widget are staged on drafts, with the live site untouched. Sam must approve the R&D button wording and contact-form fields. Then the branching can be built and screens shown before any swap."
-    },
-    {
-      "keys": [
-        "unrecognized geo campaign",
-        "geo ad campaign",
-        "last nights ads report",
-        "sam authorization",
-        "pause geo"
-      ],
-      "a": "An unrecognized Geo ad campaign appeared in last night's Ads report. Sam must confirm whether it was authorized; if not, it should be paused. No authorization or pause is recorded yet."
-    },
-    {
-      "keys": [
-        "victor armendarez",
-        "victor",
-        "curl cream",
-        "edge gel",
-        "2000",
-        "pricing overdue",
-        "packaging compatibility"
-      ],
-      "a": "Victor Armendarez is pursuing 2,000 units each of Curl Cream and Edge Gel. Pricing is overdue because packaging compatibility and Ronald's full cost inputs still need confirmation; do not issue a quote until those inputs are complete."
-    },
-    {
-      "keys": [
-        "ethnic gals",
-        "ethnic",
-        "2000",
-        "unquoted"
-      ],
-      "a": "Ethnic Gals is a real 2,000-unit opportunity that has not yet been quoted. Build it in the unquoted-brand cleanup lane once the warm Talova and approved-send priorities are cleared."
-    },
-    {
-      "keys": [
-        "sam",
-        "ceo",
-        "single lane",
-        "today",
-        "priority"
-      ],
-      "a": "Sam’s Sept 1 lane is to protect the 2pm Tammye Hall call, resolve the urgent Morning Glory label review, review Mark Higgins’s ingredient brief, and provide direction on Gridlot’s NDA and Studio S5’s questions. Enso’s 9:15am proposal is not confirmed by Sam; Payroll is on the calendar at 11am ET. No new day-update entry was available."
-    },
-    {
-      "keys": [
-        "aidan",
-        "aidan status",
-        "production lanes",
-        "terra coordination"
-      ],
-      "a": "Aidan is driving Atlas Eternal’s $26,500 production across four lanes, with $13,250 due on completion, and is coordinating Terra Lotus’s 19,000-unit sample checkpoint. He should support Mark Higgins’s formulation review and confirm the three Terra sample sets shipped; neither Terra shipment nor any new completion is verified here."
-    },
-    {
-      "keys": [
-        "talova",
-        "talova labs",
-        "marcello",
-        "viral reorder",
-        "coco vanilla",
-        "kenna revisions",
-        "po"
-      ],
-      "a": "Talova Labs’ Marcello remains a warm reorder lane for Coco Vanilla. Before Sam locks the PO, PLL still needs a clean confirmation that Kenna’s small revisions were received; that confirmation is not present in today’s sources."
-    },
-    {
-      "keys": [
-        "terra lotus",
-        "terra",
-        "lotus",
-        "19000",
-        "three products",
-        "r&d",
-        "samples",
-        "shampoo 5k",
-        "body wash 9k",
-        "conditioner 5k",
-        "shipment"
-      ],
-      "a": "Terra Lotus has 19,000 units in R&D at a sample-shipment checkpoint: Shampoo 5K, Body Wash 9K, and Conditioner 5K. The current sources do not confirm shipment, so Aidan/Ronald must verify all three sets before the next commercial step."
-    },
-    {
-      "keys": [
-        "mark higgins",
-        "mark",
-        "mens deodorant",
-        "roll-on",
-        "500",
-        "1000",
-        "nda",
-        "outcome"
-      ],
-      "a": "Mark Higgins supplied the requested ingredient brief for two aluminum-free roll-on deodorant SKUs. It is ready for Sam and formulation-team review before pricing; a chemist-call time with Ron and Evelyn still needs to be selected and confirmed."
-    },
-    {
-      "keys": [
-        "tammye hall",
-        "tammye",
-        "2pm",
-        "manufacturing",
-        "fulfillment"
-      ],
-      "a": "Tammye Hall is booked for Tuesday, September 1 from 2:00–2:30pm ET with Google Meet link https://meet.google.com/ohj-dbga-fej. She previously missed a meeting because she expected a phone call, so confirm the format and agenda explicitly before this manufacturing-and-fulfillment discussion."
-    },
-    {
-      "keys": [
-        "morning glory",
-        "james bailey",
-        "1 of us holdings",
-        "label corrections",
-        "production",
-        "pre-print"
-      ],
-      "a": "James Bailey at 1 Of Us Holdings/Morning Glory requested urgent pre-print review of shampoo-label corrections while production is reportedly underway. Verify whether labels have printed, then route the full regulatory/artwork checklist; no client response or commitment is recorded from this refresh."
-    },
-    {
-      "keys": [
-        "gridlot",
-        "yianni koutsos",
-        "beef-tallow",
-        "august 27"
-      ],
-      "a": "Yianni Koutsos at Gridlot Partners says the previously sent NDA appears to belong to another project and needs a clean beef-tallow NDA. The approved PLL_NDA_Template.docx is still missing from the sending library; do not send a document until the correct template is verified, and keep Seb copied."
-    },
-    {
-      "keys": [
-        "af brand",
-        "toney wells",
-        "september 2",
-        "james",
-        "laura"
-      ],
-      "a": "AF Brand is on the calendar for Wednesday, September 2 from 3:00–4:00pm ET with James and Laura listed; Sam is marked declined and the organizer is declined. Resolve ownership and attendance before treating this as a live Sam meeting."
-    },
-    {
-      "keys": [
-        "cameron nelligan",
-        "cameron",
-        "sunkissd",
-        "lip balm",
-        "august 31"
-      ],
-      "a": "Cameron Nelligan’s Sunkissd discovery call was scheduled for August 31 at 6:00pm ET about a tallow-based lip balm and a 10,000-unit first order. Otter shared a recording notification, but no verified outcome or next commercial step is present in today’s sources."
-    },
-    {
-      "keys": [
-        "david aminov",
-        "david",
-        "manore",
-        "beef tallow balm",
-        "made man"
-      ],
-      "a": "David Aminov of Made Man Barber/MANORE discussed beef tallow balm, packaging, and pricing at 1,000, 2,500, and 5,000 units in 2-ounce jars. The August 31 call had a Google Meet link, but no verified outcome or attribution is recorded in this refresh."
-    },
-    {
-      "keys": [
-        "ari levitin",
-        "ari",
-        "dewpad",
-        "click industries",
-        "chemist call"
-      ],
-      "a": "Ari Levitin of Click Industries/DEWPAD had a chemist call scheduled August 31 to review custom formula pricing at 5,000, 10,000, 20,000, and 40,000 units, with a stated $3.50 target at 10,000. No verified call outcome or technical/commercial commitment is recorded here."
-    },
-    {
-      "keys": [
-        "mark cafolla",
-        "cafolla",
-        "discovery call",
-        "august 28",
-        "11am",
-        "video link",
-        "teams"
-      ],
-      "a": "Mark Cafolla remains an active custom-peptide opportunity with NDA executed and packaging/sample specifications in progress. The old August 28 call record is historical; no September 1 call or newly verified outcome is present in today’s sources."
+      "a": "Phase 3 is blocked on three answers: whether a project begins at handoff acceptance, whether reopening a checked item is admin-only, and how samples link to production projects. The admin-only preview still needs human eyes, and task 587 needs deletion by an admin."
     }
   ],
   "topTasks": [
-    {
-      "rank": 1,
-      "task": "Run today’s four booked calls: Natashia 9am, Aranve 1pm, Amanda/Newell 2pm, Meridith 3pm ET",
-      "owner": "Sam / team",
-      "status": "scheduled today"
-    },
-    {
-      "rank": 2,
-      "task": "Aranve: confirm shipping details and goal date",
-      "owner": "Sam / Aidan / Laura",
-      "status": "needs action at 1:00 PM ET"
-    },
-    {
-      "rank": 3,
-      "task": "Cojones Soap: decide sample-fee credit and confirm beef-tallow stick capability",
-      "owner": "Sam / Ronald",
-      "status": "waiting on decision"
-    },
-    {
-      "rank": 4,
-      "task": "Quote desk: Billy, Curly 911, Morning Glory; MOQ conversations with Madison and Beauty By Bri",
-      "owner": "Executive / Nikkie / Ronald",
-      "status": "needs action today"
-    }
+    "Ronald’s deodorant capability answer before Cory’s 1:00 PM call",
+    "Resolve Lisa’s Teams link and units before 3:00 PM",
+    "Correct Email Agent threshold and promise behavior",
+    "Deduplicate Friday Delphos invites",
+    "Rerun Ads cache and pull 3 Google lead-form conversions"
   ],
   "teamMembers": {
     "sam": {
@@ -524,68 +169,15 @@
     }
   },
   "revenueActions": [
-    {
-      "title": "Protect Tammye Hall call",
-      "why": "The Sept 1 2pm ET Meet is confirmed, but the client previously expected a phone call.",
-      "est_value": "Not stated",
-      "next_step": "Send/confirm the actual format and agenda, then run the manufacturing-and-fulfillment qualification call.",
-      "owner": "Sam / Consultant",
-      "timing": "Today 2:00pm ET",
-      "value": "Booked discovery call",
-      "status": "FORMAT CONFIRMATION NEEDED"
-    },
-    {
-      "title": "Resolve Morning Glory label corrections",
-      "why": "Client reports production is underway and requests urgent pre-print review.",
-      "est_value": "Existing production account",
-      "next_step": "Verify whether labels printed; then route net contents, INCI/order, company details, claims substantiation, warnings, legibility, lot/UPC, and artwork review.",
-      "owner": "Sam / James",
-      "timing": "Today",
-      "value": "Production continuity",
-      "status": "URGENT VERIFICATION"
-    },
-    {
-      "title": "Advance Mark Higgins quote lane",
-      "why": "The requested ingredient brief for two roll-on deodorants is now available for formulation review.",
-      "est_value": "Not stated",
-      "next_step": "Review with formulation, confirm the Ron/Evelyn call time, and price only after required inputs are validated.",
-      "owner": "Sam / Aidan / Ronald",
-      "timing": "Today",
-      "value": "Quote-ready after review",
-      "status": "FORMULATION REVIEW NEEDED"
-    },
-    {
-      "title": "Repair Gridlot NDA",
-      "why": "The prior NDA appears to belong to another project, blocking the beef-tallow opportunity.",
-      "est_value": "Not stated",
-      "next_step": "Locate/approve the clean PLL NDA template, keep Seb copied, and do not send until the document is verified.",
-      "owner": "Sam / Consultant",
-      "timing": "Today",
-      "value": "Active opportunity",
-      "status": "TEMPLATE MISSING"
-    },
-    {
-      "title": "Answer Studio S5 questions",
-      "why": "Amanda needs certification timing, credit mechanics, and separate packaging/labeling pricing before deciding.",
-      "est_value": "Not stated",
-      "next_step": "Sam supplies the exact commercial/regulatory direction; no commitments were made by Nina.",
-      "owner": "Sam",
-      "timing": "Today",
-      "value": "Active lead",
-      "status": "DIRECTION NEEDED"
-    },
-    {
-      "title": "Confirm Enso meeting proposal",
-      "why": "A Sept 1 9:15am ET review was accepted by Aidan but not confirmed by Sam.",
-      "est_value": "Not stated",
-      "next_step": "Confirm or decline before treating the meeting as booked; clarify scope and any account-access or fee decisions.",
-      "owner": "Sam / Aidan",
-      "timing": "Today 9:15am ET",
-      "value": "Launch/PPC review",
-      "status": "PROPOSED — NOT CONFIRMED"
-    }
+    "Prepare Cory’s 30,000-unit deodorant call",
+    "Qualify Lisa’s clarifying-shampoo units, base, MOQ, and turnaround",
+    "Prepare Aarav Shah’s three fermented-cleanser call with units first",
+    "Review four Outlook drafts: Riley, Madi, Jenkins, and Hina"
   ],
-  "pipelineStat": "Four meetings are booked today: Natashia De Jesus, Aranve shipping details, Amanda Chadwick/Newell, and Meridith Mossman. Active quote lanes remain Cojones 3,000 units, Billy 1,000, Curly 911, Morning Glory, plus MOQ-fit Madison Calkins and Beauty By Bri.",
+  "pipelineStat": {
+    "summary": "Five calls today; Cory 30,000 units across six scents; Lisa units unknown; Aarav three fermented cleansers.",
+    "source": "DAILY-2026-09-16.md"
+  },
   "adsAgentBrief": "Nightly read-only refresh 2026-09-14: managed $89.46 current 7-day; account $349.91; roster enumerated, exact ads and legacy split unverified; no changes.",
   "adsIntelligence": {
     "updatedAt": "2026-09-15T01:09:10.722Z",
