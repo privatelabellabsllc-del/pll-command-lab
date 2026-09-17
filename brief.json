@@ -3,11 +3,11 @@
   "ts": "2026-09-16T11:05:09Z",
   "brief": [
     {
-      "t": "Today has five calls: Cory Anderson at 1:00 PM, Jake Rosen and Open Influence at 1:30 PM, Aarav Shah at 2:00 PM, Lisa Alvarez at 3:00 PM, and Rudy Sanchez at 4:00 PM ET. The 1:00\u20132:30 block has no gaps.",
+      "t": "Today has five calls: Cory Anderson at 1:00 PM, Jake Rosen and Open Influence at 1:30 PM, Aarav Shah at 2:00 PM, Lisa Alvarez at 3:00 PM, and Rudy Sanchez at 4:00 PM ET. The 1:00–2:30 block has no gaps.",
       "hot": true
     },
     {
-      "t": "Before Cory\u2019s 30,000-unit deodorant call, Ronald must confirm whether PLL can make aluminum-free deodorant at 5,000 units per scent, including fill and cure reality.",
+      "t": "Before Cory’s 30,000-unit deodorant call, Ronald must confirm whether PLL can make aluminum-free deodorant at 5,000 units per scent, including fill and cure reality.",
       "hot": true
     },
     {
@@ -19,19 +19,19 @@
       "hot": true
     },
     {
-      "t": "Friday Delphos has two competing 2:00 PM invites; use Delphos House\u2019s invite and cancel the Email Agent\u2019s duplicate.",
+      "t": "Friday Delphos has two competing 2:00 PM invites; use Delphos House’s invite and cancel the Email Agent’s duplicate.",
       "hot": true
     },
     {
-      "t": "Sep 9\u201315 Ads spend was managed $107.26 and legacy $230.44; managed spent $8.31 yesterday against a $36 cap. No Ads settings or figures were changed in this refresh.",
+      "t": "Sep 9–15 Ads spend was managed $107.26 and legacy $230.44; managed spent $8.31 yesterday against a $36 cap. No Ads settings or figures were changed in this refresh.",
       "hot": false
     }
   ],
   "next": [
-    "Get Ronald\u2019s deodorant capability answer before 1:00 PM",
-    "Resolve Lisa\u2019s Teams room and clarify units before 3:00 PM",
+    "Get Ronald’s deodorant capability answer before 1:00 PM",
+    "Resolve Lisa’s Teams room and clarify units before 3:00 PM",
     "Correct Email Agent threshold, calendar-reading, and delivery-promise behavior",
-    "Choose Delphos House\u2019s Friday invite and cancel the duplicate"
+    "Choose Delphos House’s Friday invite and cancel the duplicate"
   ],
   "kb": [
     {
@@ -40,7 +40,7 @@
         "Honcho Hygiene",
         "deodorant"
       ],
-      "a": "Cory Anderson\u2019s 1:00 PM call covers six deodorant scents at 5,000 units each, 30,000 total. Ronald has not yet confirmed aluminum-free capability, fill, or cure reality at that volume."
+      "a": "Cory Anderson’s 1:00 PM call covers six deodorant scents at 5,000 units each, 30,000 total. Ronald has not yet confirmed aluminum-free capability, fill, or cure reality at that volume."
     },
     {
       "keys": [
@@ -55,14 +55,14 @@
         "MOQ",
         "Yianni Koutsos"
       ],
-      "a": "The Email Agent offered Natashia an occupied Wednesday slot, used 500 instead of the 1,000 custom-manufacturing minimum for Smoke\u2019s Barbershop, and promised Yianni a pricing breakdown without BOM or owner. These are corrections, not completed work."
+      "a": "The Email Agent offered Natashia an occupied Wednesday slot, used 500 instead of the 1,000 custom-manufacturing minimum for Smoke’s Barbershop, and promised Yianni a pricing breakdown without BOM or owner. These are corrections, not completed work."
     },
     {
       "keys": [
         "Delphos House",
         "Friday invite"
       ],
-      "a": "Two Friday 2:00 PM Delphos invites exist: the Email Agent\u2019s Meet room and Delphos House\u2019s own invite. Use Delphos House\u2019s room and cancel the duplicate."
+      "a": "Two Friday 2:00 PM Delphos invites exist: the Email Agent’s Meet room and Delphos House’s own invite. Use Delphos House’s room and cancel the duplicate."
     },
     {
       "keys": [
@@ -73,8 +73,8 @@
     }
   ],
   "topTasks": [
-    "Ronald\u2019s deodorant capability answer before Cory\u2019s 1:00 PM call",
-    "Resolve Lisa\u2019s Teams link and units before 3:00 PM",
+    "Ronald’s deodorant capability answer before Cory’s 1:00 PM call",
+    "Resolve Lisa’s Teams link and units before 3:00 PM",
     "Correct Email Agent threshold and promise behavior",
     "Deduplicate Friday Delphos invites",
     "Rerun Ads cache and pull 3 Google lead-form conversions"
@@ -82,10 +82,10 @@
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Secure Ronald\u2019s deodorant capability answer before Cory\u2019s 1:00 PM call.",
+      "top_task": "Secure Ronald’s deodorant capability answer before Cory’s 1:00 PM call.",
       "tasks": [
         {
-          "title": "Resolve Lisa\u2019s Teams link and units before 3:00 PM ET",
+          "title": "Resolve Lisa’s Teams link and units before 3:00 PM ET",
           "due": "Today"
         },
         {
@@ -93,11 +93,11 @@
           "due": "Today"
         },
         {
-          "title": "Choose Delphos House\u2019s Friday invite and cancel duplicate",
+          "title": "Choose Delphos House’s Friday invite and cancel duplicate",
           "due": "Today"
         }
       ],
-      "notes": "Today\u2019s authoritative priority brief lists five calls and unresolved capability, meeting, and agent-correction decisions."
+      "notes": "Today’s authoritative priority brief lists five calls and unresolved capability, meeting, and agent-correction decisions."
     },
     "ronald": {
       "display_name": "Ronald",
@@ -112,7 +112,7 @@
     },
     "executive": {
       "display_name": "Executive",
-      "top_task": "Resolve Lisa\u2019s real Teams room before her 3:00 PM call.",
+      "top_task": "Resolve Lisa’s real Teams room before her 3:00 PM call.",
       "tasks": [
         {
           "title": "Resolve Teams join link",
@@ -142,16 +142,16 @@
     }
   },
   "revenueActions": [
-    "Prepare Cory\u2019s 30,000-unit deodorant call",
-    "Qualify Lisa\u2019s clarifying-shampoo units, base, MOQ, and turnaround",
-    "Prepare Aarav Shah\u2019s three fermented-cleanser call with units first",
+    "Prepare Cory’s 30,000-unit deodorant call",
+    "Qualify Lisa’s clarifying-shampoo units, base, MOQ, and turnaround",
+    "Prepare Aarav Shah’s three fermented-cleanser call with units first",
     "Review four Outlook drafts: Riley, Madi, Jenkins, and Hina"
   ],
   "pipelineStat": {
     "summary": "Five calls today; Cory 30,000 units across six scents; Lisa units unknown; Aarav three fermented cleansers.",
     "source": "DAILY-2026-09-16.md"
   },
-  "adsAgentBrief": "Nightly read-only refresh 2026-09-16: managed $69.83 current 7-day, account $302.42; 14 inquiry messages, zero verified Ads-attributed leads; tracking broken; no changes.",
+  "adsAgentBrief": "Nightly read-only refresh 2026-09-16 corrected: managed $69.83 current 7-day, 315 clicks, CPC $0.22; account $302.42, 428 clicks; prior managed $192.32, 332 clicks; 14 inquiry messages, zero verified Ads-attributed leads; tracking broken; no changes.",
   "adsIntelligence": {
     "updatedAt": "2026-09-17T01:00:00Z",
     "source": "Google Ads API customer 2915572948, read-only campaign/ad reports and Outlook inbox; nightly refresh 2026-09-16 ET.",
@@ -165,25 +165,25 @@
     "current": {
       "managed": {
         "spend": 69.83,
-        "clicks": 284,
+        "clicks": 315,
         "impressions": 24202,
-        "cpc": 0.25,
-        "ctr": 0.0117,
+        "cpc": 0.22,
+        "ctr": 0.013,
         "conversions": 0
       },
       "legacy": {
         "spend": 232.59,
         "clicks": 113,
-        "impressions": 1278,
+        "impressions": 1279,
         "cpc": 2.06,
         "conversions": 4,
         "allConversions": 9
       },
       "account": {
         "spend": 302.42,
-        "clicks": 397,
-        "impressions": 25480,
-        "cpc": 0.76,
+        "clicks": 428,
+        "impressions": 25481,
+        "cpc": 0.71,
         "conversions": 4,
         "allConversions": 13
       },
@@ -232,7 +232,7 @@
       "today": {
         "spend": 5.26,
         "clicks": 41,
-        "impressions": 3011,
+        "impressions": 3020,
         "cpc": 0.13,
         "conversions": 0,
         "campaign": "PLL-Search-ContractMfg-2026 #2"
@@ -240,13 +240,18 @@
     },
     "prior": {
       "managed": {
-        "spend": 183.51,
-        "clicks": 323,
-        "impressions": 16911,
-        "cpc": 0.57,
+        "spend": 192.32,
+        "clicks": 332,
+        "impressions": 17297,
+        "cpc": 0.58,
         "conversions": 0
       },
-      "account": "NOT RETRIEVED IN THIS RUN; prior account reconciliation UNOBSERVABLE",
+      "account": {
+        "spend": 444.21,
+        "clicks": 465,
+        "impressions": 22668,
+        "cpc": 0.96
+      },
       "conversionActions": {
         "Lead form - Submit": {
           "conversions": 12,
@@ -255,7 +260,59 @@
         "Local actions - Directions": {
           "allConversions": 1
         }
-      }
+      },
+      "legacy": {
+        "spend": 251.89,
+        "clicks": 133,
+        "impressions": 5371,
+        "cpc": 1.89
+      },
+      "campaigns": [
+        {
+          "name": "PLL-Search-Samples-2026",
+          "status": "PAUSED",
+          "spend": 8.81,
+          "clicks": 9,
+          "impressions": 386
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "spend": 146.33,
+          "clicks": 143,
+          "impressions": 6642,
+          "cpc": 1.02
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026 #2",
+          "status": "ENABLED",
+          "spend": 37.18,
+          "clicks": 180,
+          "impressions": 10269,
+          "cpc": 0.21
+        },
+        {
+          "name": "Initial",
+          "status": "LEGACY",
+          "spend": 150.03,
+          "clicks": 63,
+          "impressions": 872
+        },
+        {
+          "name": "New-Sales-Ad",
+          "status": "LEGACY",
+          "spend": 97.29,
+          "clicks": 37,
+          "impressions": 275
+        },
+        {
+          "name": "Sales Campaign PLL",
+          "status": "LEGACY",
+          "spend": 4.57,
+          "clicks": 33,
+          "impressions": 4224
+        }
+      ]
     },
     "cap": {
       "configuredManagedDaily": 30.33,
@@ -272,7 +329,7 @@
       "costPerBookedCall": "NOT YET MEASURABLE",
       "note": "Conversion tracking not installed; only 3 of 58 September leads carried click IDs. Inbox counts are inquiry messages, not verified Ads attribution."
     },
-    "headline": "Managed spend $69.83 on 284 clicks and 24,202 impressions current 7-day; account $302.42. Platform recorded 4 Lead form - Submit conversions in legacy Initial, not managed, but conversion tracking is unreliable and lead delivery is unverified.",
+    "headline": "Managed spend $69.83 on 315 clicks and 24,202 impressions current 7-day; account $302.42 on 428 clicks. Platform recorded 4 Lead form - Submit conversions in legacy Initial, not managed, but conversion tracking is unreliable and lead delivery is unverified.",
     "best": "ContractMfg-2026: higher CTR (3.07%) and $0.98 CPC, but zero primary conversions.",
     "worst": "ContractMfg-2026 #2: 281 clicks and 23,093 impressions at $0.13 CPC, zero conversions; cheap traffic with no measured lead outcome.",
     "recommendation": {
@@ -281,9 +338,9 @@
       "text": "No changes. First reconcile and verify the 4 Google native lead-form submissions in Initial; attribution and site conversion tracking remain broken."
     },
     "answers": {
-      "today": "Sep 16 managed spend $5.26, 41 clicks, 3,011 impressions, $0.13 CPC, zero conversions.",
-      "seven/new ads": "Current managed 7-day: $69.83, 284 clicks, 24,202 impressions; exact enabled-ad roster unverified.",
-      "ctr/cpc": "Managed CTR 1.17%, CPC $0.25; #1 CTR 3.07%/$0.98 CPC, #2 CTR 1.22%/$0.13 CPC.",
+      "today": "Sep 16 managed spend $5.26, 41 clicks, 3,020 impressions, $0.13 CPC, zero conversions.",
+      "seven/new ads": "Current managed 7-day: $69.83, 315 clicks, 24,202 impressions; exact enabled-ad roster unverified.",
+      "ctr/cpc": "Managed CTR 1.30%, CPC $0.22; #1 CTR 3.07%/$0.98 CPC, #2 CTR 1.22%/$0.13 CPC.",
       "leads/emails/calls": "14 Shopify inquiry messages current window, 8 prior; verified Ads-attributed leads 0/not measurable; booked calls not measurable.",
       "budget/cap": "Configured managed cap $30.33/day; 7-day managed average $9.98/day, under cap.",
       "winners": "#1 has stronger CTR; no measured conversion winner.",
@@ -292,10 +349,65 @@
       "suggestions": "No changes until lead delivery is verified.",
       "nextExperiment": "None approved; measurement repair first.",
       "whatAdsAgentShouldDo": "Investigate lead-form delivery, attribution, and search-term quality; recommend one change only after Sam approval."
-    }
+    },
+    "correctionNote": "Corrected 2026-09-16 21:08 ET after Executive verification. The 9pm run published managed clicks 284 / CPC 0.25 and account clicks 397, derived account as managed plus legacy rather than pulling it, and excluded PLL-Search-Samples-2026 from the prior-window managed tier. All three tiers in all three windows now reconcile exactly against per-campaign rows pulled from the account.",
+    "today": {
+      "managed": {
+        "spend": 5.26,
+        "clicks": 41,
+        "impressions": 3020,
+        "cpc": 0.13,
+        "ctr": 0.0136,
+        "conversions": 0
+      },
+      "legacy": {
+        "spend": 33.06,
+        "clicks": 23,
+        "impressions": 262,
+        "cpc": 1.44
+      },
+      "account": {
+        "spend": 38.32,
+        "clicks": 64,
+        "impressions": 3282,
+        "cpc": 0.6
+      },
+      "campaigns": [
+        {
+          "name": "PLL-Search-ContractMfg-2026",
+          "status": "ENABLED",
+          "spend": 0,
+          "clicks": 0,
+          "impressions": 9
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026 #2",
+          "status": "ENABLED",
+          "spend": 5.26,
+          "clicks": 41,
+          "impressions": 3011,
+          "cpc": 0.13
+        },
+        {
+          "name": "Initial",
+          "status": "LEGACY",
+          "spend": 19.42,
+          "clicks": 10,
+          "impressions": 188
+        },
+        {
+          "name": "New-Sales-Ad",
+          "status": "LEGACY",
+          "spend": 13.64,
+          "clicks": 13,
+          "impressions": 74
+        }
+      ]
+    },
+    "weekOverWeek": "Managed spend $192.32 to $69.83, down 64%; clicks 332 to 315, down 5%; CPC $0.58 to $0.22, down 62%; impressions 17,297 to 24,202, up 40%."
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -303,6 +415,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
+    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
   }
 }
