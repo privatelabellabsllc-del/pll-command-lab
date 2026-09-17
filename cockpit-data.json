@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-16T11:05:09Z",
-  "generatedLabel": "Sep 16 2026 · morning refresh",
+  "generatedISO": "2026-09-17T11:05:49Z",
+  "generatedLabel": "Sep 17 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,47 +10,47 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Get Ronald’s aluminum-free deodorant capability answer before Cory’s 1:00 PM call",
-      "owner": "Sam / Ronald",
-      "status": "urgent before 1:00 PM ET"
+      "task": "Countersign Cory Anderson’s Honcho Hygiene NDA",
+      "owner": "Sam",
+      "status": "urgent today"
     },
     {
       "rank": 2,
-      "task": "Resolve Lisa Alvarez’s real Teams room and clarify units",
-      "owner": "Sam / Executive",
-      "status": "needs action before 3:00 PM ET"
+      "task": "Countersign Amanda Peters’s Studio S5 NDA",
+      "owner": "Sam",
+      "status": "urgent today"
     },
     {
       "rank": 3,
-      "task": "Correct Email Agent: calendar reading, 1,000 MOQ, and no delivery promises",
-      "owner": "Sam / Email Agent",
-      "status": "needs correction today"
+      "task": "Review Aarav Shah’s two NDA clause edits",
+      "owner": "Sam",
+      "status": "needs review today"
     },
     {
       "rank": 4,
-      "task": "Use Delphos House’s Friday invite and cancel the duplicate",
-      "owner": "Sam / Email Agent",
-      "status": "duplicate rooms"
+      "task": "Run today’s four calls, including 4:00 PM Ads consultation",
+      "owner": "Sam / team",
+      "status": "scheduled today"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Ronald’s deodorant capability answer",
-      "why": "Cory’s 30,000-unit call depends on confirmed aluminum-free capability, fill, and cure reality.",
+      "item": "Countersign Honcho Hygiene NDA",
+      "why": "Cory returned a signed mutual NDA; Sam’s countersignature is still pending.",
       "impact": "high",
       "since": "today"
     },
     {
-      "item": "Lisa Alvarez units and stock-base answer",
-      "why": "Her 3:00 PM qualification needs units and whether a pre-made clarifying base exists.",
+      "item": "Countersign Studio S5 NDA",
+      "why": "Amanda returned a signed mutual NDA; Sam’s countersignature is still pending.",
       "impact": "high",
       "since": "today"
     },
     {
-      "item": "Ads budget decision",
-      "why": "Managed and legacy spend are split; budget movement requires Sam.",
+      "item": "Review Milieu Skin NDA edits",
+      "why": "Aarav requested two clause edits before signing.",
       "impact": "high",
-      "since": "Sep 15"
+      "since": "today"
     }
   ],
   "agentHub": {
@@ -113,48 +113,40 @@
   },
   "meetings": [
     {
-      "timeISO": "2026-09-16T13:00:00-04:00",
-      "time": "1:00 PM ET",
-      "title": "Cory Anderson — Honcho Hygiene",
-      "who": "Cory Anderson",
-      "join": "https://meet.google.com/zmf-nkaa-fzm",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-16T13:30:00-04:00",
-      "time": "1:30 PM ET",
-      "title": "Jake Rosen / Open Influence",
-      "who": "Makenna Peach · Alex · Callie",
-      "join": "https://meet.google.com/fww-unfn-ook",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-16T14:00:00-04:00",
-      "time": "2:00 PM ET",
-      "title": "Aarav Shah — Milieu Skin",
-      "who": "Aarav Shah",
-      "join": "https://meet.google.com/qsz-nzji-kan",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-16T15:00:00-04:00",
-      "time": "3:00 PM ET",
-      "title": "Lisa Alvarez — clarifying shampoo",
-      "who": "Lisa Alvarez",
+      "timeISO": "2026-09-17T09:30:00-04:00",
+      "time": "9:30 AM ET",
+      "title": "Doug Crawshaw — What If Connect discovery",
+      "who": "Doug Crawshaw",
       "join": "",
-      "location": "Teams link unresolved"
+      "location": "Join link not available from supplied facts"
     },
     {
-      "timeISO": "2026-09-16T16:00:00-04:00",
+      "timeISO": "2026-09-17T10:00:00-04:00",
+      "time": "10:00 AM ET",
+      "title": "Angelina White — Super Plush Living Beauty discovery",
+      "who": "Angelina White",
+      "join": "",
+      "location": "Join link not available from supplied facts"
+    },
+    {
+      "timeISO": "2026-09-17T11:30:00-04:00",
+      "time": "11:30 AM ET",
+      "title": "Joe Schrank — thecosmeticmanufacturer.com industry meeting",
+      "who": "Joe Schrank",
+      "join": "",
+      "location": "Join link not available from supplied facts"
+    },
+    {
+      "timeISO": "2026-09-17T16:00:00-04:00",
       "time": "4:00 PM ET",
-      "title": "Rudy Sanchez — Reason for Call: Ephix",
-      "who": "Rudy Sanchez",
-      "join": "https://committedcoaches.zoom.us/my/rudysanchez",
-      "location": "Zoom"
+      "title": "Google Ads consultation follow-up",
+      "who": "Google representative",
+      "join": "",
+      "location": "Join link not available from supplied facts"
     }
   ],
-  "meetingsNote": "Today’s meetings were extracted from the authoritative daily brief. Lisa Alvarez’s booking has no resolved Teams room; do not invent a join link.",
-  "callsSource": "DAILY-2026-09-16.md; Outlook meeting details",
+  "meetingsNote": "Today’s four calls were supplied as verified facts. No reliable join links were available in the mail-only refresh context, so none were invented.",
+  "callsSource": "Verified facts supplied for 2026-09-17; Outlook is mail-only.",
   "setupNeeds": [
     {
       "need": "CRM Developer Gmail connection is gone",
@@ -255,27 +247,27 @@
   "pipeline": [
     {
       "deal": "Honcho Hygiene (Cory Anderson)",
-      "units": "30,000 across six scents",
-      "product": "aluminum-free deodorant",
-      "stage": "call 1:00 PM ET; capability answer needed",
-      "value": "TBD",
-      "owner": "Sam / Ronald"
-    },
-    {
-      "deal": "Milieu Skin (Aarav Shah)",
-      "units": "TBD",
-      "product": "three fermented cleansers",
-      "stage": "call 2:00 PM ET; units first",
+      "units": "35,000 across seven SKUs",
+      "product": "deodorant",
+      "stage": "signed mutual NDA; Sam countersignature pending; target launch production Q2/Q3 2027",
       "value": "TBD",
       "owner": "Sam"
     },
     {
-      "deal": "Lisa Alvarez",
+      "deal": "Studio S5 (Amanda Peters)",
       "units": "TBD",
-      "product": "detox/clarifying shampoo",
-      "stage": "call 3:00 PM ET; base, MOQ, turnaround open",
+      "product": "TBD",
+      "stage": "signed mutual NDA; Sam countersignature pending",
       "value": "TBD",
-      "owner": "Sam / Executive"
+      "owner": "Sam"
+    },
+    {
+      "deal": "Milieu Skin (Aarav Shah)",
+      "units": "TBD",
+      "product": "TBD",
+      "stage": "two NDA clause edits requested before signing",
+      "value": "TBD",
+      "owner": "Sam"
     }
   ]
 }
