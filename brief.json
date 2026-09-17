@@ -1,37 +1,37 @@
 {
-  "date": "2026-09-16",
-  "ts": "2026-09-16T11:05:09Z",
+  "date": "2026-09-17",
+  "ts": "2026-09-17T11:05:49Z",
   "brief": [
     {
-      "t": "Today has five calls: Cory Anderson at 1:00 PM, Jake Rosen and Open Influence at 1:30 PM, Aarav Shah at 2:00 PM, Lisa Alvarez at 3:00 PM, and Rudy Sanchez at 4:00 PM ET. The 1:00–2:30 block has no gaps.",
+      "t": "Today has four calls: Doug Crawshaw at 9:30 AM, Angelina White at 10:00 AM, Joe Schrank at 11:30 AM, and a Google Ads consultation follow-up at 4:00 PM ET. Joe is an industry meeting, not a lead.",
       "hot": true
     },
     {
-      "t": "Before Cory’s 30,000-unit deodorant call, Ronald must confirm whether PLL can make aluminum-free deodorant at 5,000 units per scent, including fill and cure reality.",
+      "t": "Cory Anderson of Honcho Hygiene returned a signed mutual NDA and deodorant brief: 35,000 units across seven SKUs, targeting launch production in Q2 or Q3 2027. Sam still needs to countersign.",
       "hot": true
     },
     {
-      "t": "Lisa Alvarez needs an answer on a detoxifying clarifying shampoo, existing base or custom, MOQ, and turnaround; units are still unknown and the real Teams room is unresolved.",
+      "t": "Amanda Peters of Studio S5 returned a signed mutual NDA. Sam still needs to countersign.",
       "hot": true
     },
     {
-      "t": "Email Agent corrections: it offered an occupied time, misstated the custom MOQ as 500 instead of 1,000, and promised Yianni a pricing breakdown without an owner or BOM.",
+      "t": "Aarav Shah of Milieu Skin requested two NDA clause edits before signing; the NDA is not yet signed.",
       "hot": true
     },
     {
-      "t": "Friday Delphos has two competing 2:00 PM invites; use Delphos House’s invite and cancel the Email Agent’s duplicate.",
-      "hot": true
+      "t": "Friday has Shameka Lee at 10:00 AM and Max Delphos at 2:00 PM ET.",
+      "hot": false
     },
     {
-      "t": "Sep 9–15 Ads spend was managed $107.26 and legacy $230.44; managed spent $8.31 yesterday against a $36 cap. No Ads settings or figures were changed in this refresh.",
+      "t": "Ads intelligence and the nightly Ads cache were preserved unchanged; this morning refresh made no Ads metric or recommendation changes.",
       "hot": false
     }
   ],
   "next": [
-    "Get Ronald’s deodorant capability answer before 1:00 PM",
-    "Resolve Lisa’s Teams room and clarify units before 3:00 PM",
-    "Correct Email Agent threshold, calendar-reading, and delivery-promise behavior",
-    "Choose Delphos House’s Friday invite and cancel the duplicate"
+    "Countersign Cory Anderson’s Honcho Hygiene NDA",
+    "Countersign Amanda Peters’s Studio S5 NDA",
+    "Review Aarav Shah’s two NDA clause edits",
+    "Run today’s calls, then take the 4:00 PM Google Ads consultation"
   ],
   "kb": [
     {
@@ -40,116 +40,124 @@
         "Honcho Hygiene",
         "deodorant"
       ],
-      "a": "Cory Anderson’s 1:00 PM call covers six deodorant scents at 5,000 units each, 30,000 total. Ronald has not yet confirmed aluminum-free capability, fill, or cure reality at that volume."
+      "a": "Cory Anderson returned a signed mutual NDA and a deodorant product brief for 35,000 units across seven SKUs, targeting launch production in Q2 or Q3 2027. Sam’s countersignature is still pending."
     },
     {
       "keys": [
-        "Lisa Alvarez",
-        "clarifying shampoo"
+        "Amanda Peters",
+        "Studio S5",
+        "NDA"
       ],
-      "a": "Lisa wants a bare-bones detox and clarifying shampoo for hard-water minerals, silicone buildup, and protein overload, with no proteins or heavy oils. Units are unknown; Sam must answer whether a stock base exists, while MOQ and turnaround remain open."
+      "a": "Amanda Peters returned a signed mutual NDA for Studio S5. Sam’s countersignature is still pending."
     },
     {
       "keys": [
-        "Email Agent",
-        "MOQ",
-        "Yianni Koutsos"
+        "Aarav Shah",
+        "Milieu Skin",
+        "NDA edits"
       ],
-      "a": "The Email Agent offered Natashia an occupied Wednesday slot, used 500 instead of the 1,000 custom-manufacturing minimum for Smoke’s Barbershop, and promised Yianni a pricing breakdown without BOM or owner. These are corrections, not completed work."
+      "a": "Aarav Shah requested two NDA clause edits before signing for Milieu Skin. The NDA is not yet signed, and the requested edits still need review."
     },
     {
       "keys": [
-        "Delphos House",
-        "Friday invite"
+        "Doug Crawshaw",
+        "What If Connect"
       ],
-      "a": "Two Friday 2:00 PM Delphos invites exist: the Email Agent’s Meet room and Delphos House’s own invite. Use Delphos House’s room and cancel the duplicate."
+      "a": "Doug Crawshaw has a 9:30 AM ET discovery call today for What If Connect."
     },
     {
       "keys": [
-        "Pipeline",
-        "Phase 3"
+        "Angelina White",
+        "Super Plush Living Beauty"
       ],
-      "a": "Phase 3 is blocked on three answers: whether a project begins at handoff acceptance, whether reopening a checked item is admin-only, and how samples link to production projects. The admin-only preview still needs human eyes, and task 587 needs deletion by an admin."
+      "a": "Angelina White has a 10:00 AM ET discovery call today for Super Plush Living Beauty."
+    },
+    {
+      "keys": [
+        "Joe Schrank",
+        "thecosmeticmanufacturer.com"
+      ],
+      "a": "Joe Schrank has an 11:30 AM ET industry meeting today. It is not a lead."
+    },
+    {
+      "keys": [
+        "Google Ads consultation"
+      ],
+      "a": "A Google Ads consultation follow-up with a Google representative is scheduled for 4:00 PM ET today."
+    },
+    {
+      "keys": [
+        "Friday calls",
+        "Shameka Lee",
+        "Max Delphos"
+      ],
+      "a": "Friday Sep 18 calls are scheduled with Shameka Lee at 10:00 AM ET and Max Delphos at 2:00 PM ET."
     }
   ],
   "topTasks": [
-    "Ronald’s deodorant capability answer before Cory’s 1:00 PM call",
-    "Resolve Lisa’s Teams link and units before 3:00 PM",
-    "Correct Email Agent threshold and promise behavior",
-    "Deduplicate Friday Delphos invites",
-    "Rerun Ads cache and pull 3 Google lead-form conversions"
+    "Countersign Honcho Hygiene NDA",
+    "Countersign Studio S5 NDA",
+    "Review Milieu Skin NDA clause edits",
+    "Run four calls: Doug, Angelina, Joe, and Google Ads"
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Secure Ronald’s deodorant capability answer before Cory’s 1:00 PM call.",
+      "top_task": "Countersign Cory Anderson’s and Amanda Peters’s returned NDAs.",
       "tasks": [
         {
-          "title": "Resolve Lisa’s Teams link and units before 3:00 PM ET",
+          "title": "Countersign Honcho Hygiene NDA",
           "due": "Today"
         },
         {
-          "title": "Correct Email Agent threshold and promise behavior",
+          "title": "Countersign Studio S5 NDA",
           "due": "Today"
         },
         {
-          "title": "Choose Delphos House’s Friday invite and cancel duplicate",
+          "title": "Review Milieu Skin’s two NDA clause edits",
           "due": "Today"
         }
       ],
-      "notes": "Today’s authoritative priority brief lists five calls and unresolved capability, meeting, and agent-correction decisions."
+      "notes": "Cory and Amanda returned signed NDAs; both still need Sam’s countersignature."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Confirm aluminum-free deodorant capability at 5,000 units per scent, including fill and cure.",
+      "top_task": "Support follow-up on Cory’s 35,000-unit, seven-SKU deodorant brief.",
       "tasks": [
         {
-          "title": "Answer deodorant capability question",
-          "due": "Before 1:00 PM ET"
+          "title": "Review deodorant brief when routed",
+          "due": "Today"
         }
       ],
-      "notes": "Unconfirmed; do not represent as completed."
+      "notes": "No completion is claimed."
     },
     "executive": {
       "display_name": "Executive",
-      "top_task": "Resolve Lisa’s real Teams room before her 3:00 PM call.",
+      "top_task": "Keep today’s call sequence and NDA follow-ups accurate.",
       "tasks": [
         {
-          "title": "Resolve Teams join link",
-          "due": "Before 3:00 PM ET"
+          "title": "Track four calls and open NDA actions",
+          "due": "Today"
         }
       ],
-      "notes": "No real room resolved in the authoritative brief."
+      "notes": "Joe Schrank is an industry meeting, not a lead."
     },
     "email_agent": {
       "display_name": "Email Agent",
-      "top_task": "Correct calendar-time offers, MOQ threshold, and delivery promises.",
-      "tasks": [
-        {
-          "title": "Stop offering occupied times",
-          "due": "Today"
-        },
-        {
-          "title": "Use 1,000 custom MOQ",
-          "due": "Today"
-        },
-        {
-          "title": "Do not promise undelivered pricing",
-          "due": "Today"
-        }
-      ],
-      "notes": "Three specific defects are documented in the daily brief."
+      "top_task": "No new outbound commitment from this refresh.",
+      "tasks": [],
+      "notes": "No agent action was asserted in today’s supplied facts."
     }
   },
   "revenueActions": [
-    "Prepare Cory’s 30,000-unit deodorant call",
-    "Qualify Lisa’s clarifying-shampoo units, base, MOQ, and turnaround",
-    "Prepare Aarav Shah’s three fermented-cleanser call with units first",
-    "Review four Outlook drafts: Riley, Madi, Jenkins, and Hina"
+    "Run Doug Crawshaw discovery call for What If Connect",
+    "Run Angelina White discovery call for Super Plush Living Beauty",
+    "Hold Joe Schrank industry meeting separately from lead pipeline",
+    "Take 4:00 PM Google Ads consultation follow-up"
   ],
   "pipelineStat": {
-    "summary": "Five calls today; Cory 30,000 units across six scents; Lisa units unknown; Aarav three fermented cleansers.",
-    "source": "DAILY-2026-09-16.md"
+    "summary": "Cory Anderson: 35,000 units across seven deodorant SKUs, target launch production Q2/Q3 2027; NDA countersignature pending. Amanda Peters NDA countersignature pending; Aarav Shah requested two NDA edits.",
+    "source": "MORNING-UPDATE.md supplied facts 2026-09-17"
   },
   "adsAgentBrief": "Nightly read-only refresh 2026-09-16 corrected: managed $69.83 current 7-day, 315 clicks, CPC $0.22; account $302.42, 428 clicks; prior managed $192.32, 332 clicks; 14 inquiry messages, zero verified Ads-attributed leads; tracking broken; no changes.",
   "adsIntelligence": {

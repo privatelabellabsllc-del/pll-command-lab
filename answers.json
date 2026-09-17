@@ -1,9 +1,5 @@
 {
-  "id": "ans_LEAD-DESK-20260916-AM",
-  "request_id": "LEAD-DESK-20260916-AM",
-  "ts": "2026-09-16T08:12:00-04:00",
-  "agent": "CRM Developer",
-  "status": "completed",
-  "text": "Created Sales Desk lead: deal 61 Billy Ellison, prospect profile 115, action task 590 due 2026-09-21, owner Sam, stage New Lead. Not a duplicate, no prior record in Sales Desk or Customers. No deal value or quantity set; 1,000 units held as a note pending the Sep 21 call.",
-  "spoken_text": "Sam, the CRM Developer completed the Sales Desk lead for Billy Ellison. Deal 61, profile 115, and task 590 were created, with the task due September 21 and assigned to you. The lead is New Lead; no deal value or quantity was set, and 1,000 units remain as a note."
+  "id": "morning-20260917-110549",
+  "ts": "2026-09-17T11:05:49Z",
+  "answer": "Morning brief loaded for 2026-09-17."
 }
