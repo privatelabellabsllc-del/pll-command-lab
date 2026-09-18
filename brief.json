@@ -1,163 +1,152 @@
 {
-  "date": "2026-09-17",
-  "ts": "2026-09-17T11:05:49Z",
+  "date": "2026-09-18",
+  "ts": "2026-09-18T11:15:11Z",
   "brief": [
     {
-      "t": "Today has four calls: Doug Crawshaw at 9:30 AM, Angelina White at 10:00 AM, Joe Schrank at 11:30 AM, and a Google Ads consultation follow-up at 4:00 PM ET. Joe is an industry meeting, not a lead.",
+      "t": "Get Ronald's yes or no today on whether PLL makes anhydrous/stick deodorant; it gates Cory, Mark Higgins, and Faten Dagher.",
       "hot": true
     },
     {
-      "t": "Cory Anderson of Honcho Hygiene returned a signed mutual NDA and deodorant brief: 35,000 units across seven SKUs, targeting launch production in Q2 or Q3 2027. Sam still needs to countersign.",
+      "t": "Aarav Shah's Milieu Skin NDA is stalled on two edits; Sam's approval would let the revision go out today.",
       "hot": true
     },
     {
-      "t": "Amanda Peters of Studio S5 returned a signed mutual NDA. Sam still needs to countersign.",
+      "t": "Amanda Peters's Studio S5 thread has conflicting ownership and a promised countersigned NDA that does not exist; Sam must choose one owner.",
       "hot": true
     },
     {
-      "t": "Aarav Shah of Milieu Skin requested two NDA clause edits before signing; the NDA is not yet signed.",
+      "t": "Aidan's quote queue is the real bottleneck: six quotes are waiting, including Cory, Bobby, Mark, Hilton, Heirloom, and Victor.",
       "hot": true
     },
     {
-      "t": "Friday has Shameka Lee at 10:00 AM and Max Delphos at 2:00 PM ET.",
-      "hot": false
+      "t": "Today's meetings are Shameka at 10:00 AM, EPHIX at 1:30 PM, and Delphos at 2:00 PM ET; Delphos has two different links and the Sam/Delphos link is the one with the external attendee.",
+      "hot": true
     },
     {
-      "t": "Ads intelligence and the nightly Ads cache were preserved unchanged; this morning refresh made no Ads metric or recommendation changes.",
+      "t": "Ads reporting is not reliable enough to enforce a cap: four campaigns appeared today versus six last night, Samples disappeared, and a paused campaign shows spend. No Ads cache changes were made.",
       "hot": false
     }
   ],
   "next": [
-    "Countersign Cory Anderson’s Honcho Hygiene NDA",
-    "Countersign Amanda Peters’s Studio S5 NDA",
-    "Review Aarav Shah’s two NDA clause edits",
-    "Run today’s calls, then take the 4:00 PM Google Ads consultation"
+    "Text Ronald for the deodorant yes/no",
+    "Approve Aarav's NDA edit",
+    "Choose who owns Amanda Peters's thread",
+    "Nudge Aidan on six overdue quotes"
   ],
   "kb": [
     {
       "keys": [
-        "Cory Anderson",
-        "Honcho Hygiene",
+        "Ronald",
         "deodorant"
       ],
-      "a": "Cory Anderson returned a signed mutual NDA and a deodorant product brief for 35,000 units across seven SKUs, targeting launch production in Q2 or Q3 2027. Sam’s countersignature is still pending."
-    },
-    {
-      "keys": [
-        "Amanda Peters",
-        "Studio S5",
-        "NDA"
-      ],
-      "a": "Amanda Peters returned a signed mutual NDA for Studio S5. Sam’s countersignature is still pending."
+      "a": "Sam needs Ronald's yes or no today on making anhydrous/stick deodorant. That decision gates Cory Anderson, Mark Higgins, and Faten Dagher."
     },
     {
       "keys": [
         "Aarav Shah",
         "Milieu Skin",
-        "NDA edits"
+        "NDA"
       ],
-      "a": "Aarav Shah requested two NDA clause edits before signing for Milieu Skin. The NDA is not yet signed, and the requested edits still need review."
+      "a": "Aarav asked for two NDA edits covering proprietary formulations, IP, and trade secrets. Sam approval would let PLL revise and return it today."
     },
     {
       "keys": [
-        "Doug Crawshaw",
-        "What If Connect"
+        "Amanda Peters",
+        "Studio S5"
       ],
-      "a": "Doug Crawshaw has a 9:30 AM ET discovery call today for What If Connect."
+      "a": "Amanda's signed NDA is on file, but no countersigned copy exists. The thread contains conflicting guidance, so Sam must choose whether Email Agent or the Executive desk owns first touch."
     },
     {
       "keys": [
-        "Angelina White",
-        "Super Plush Living Beauty"
+        "Aidan",
+        "quotes"
       ],
-      "a": "Angelina White has a 10:00 AM ET discovery call today for Super Plush Living Beauty."
+      "a": "Aidan holds six quote lanes: Cory, Bobby, Mark, Hilton, Heirloom, and Victor. Quote turnaround is the stated constraint, with Mark waiting since Aug 31."
     },
     {
       "keys": [
-        "Joe Schrank",
-        "thecosmeticmanufacturer.com"
+        "Merrick",
+        "Quarry"
       ],
-      "a": "Joe Schrank has an 11:30 AM ET industry meeting today. It is not a lead."
+      "a": "Merrick from Quarry wants a 30-minute call about three hair products for a 2027 launch. Units are not stated; first touch is held pending Sam's ownership decision."
     },
     {
       "keys": [
-        "Google Ads consultation"
-      ],
-      "a": "A Google Ads consultation follow-up with a Google representative is scheduled for 4:00 PM ET today."
-    },
-    {
-      "keys": [
-        "Friday calls",
         "Shameka Lee",
-        "Max Delphos"
+        "EPHIX",
+        "Delphos"
       ],
-      "a": "Friday Sep 18 calls are scheduled with Shameka Lee at 10:00 AM ET and Max Delphos at 2:00 PM ET."
+      "a": "Today's meetings are Shameka at 10:00 AM, EPHIX at 1:30 PM, and Delphos at 2:00 PM ET. Delphos has two links; use the Sam/Delphos link with contact@delphos.house."
     }
   ],
   "topTasks": [
-    "Countersign Honcho Hygiene NDA",
-    "Countersign Studio S5 NDA",
-    "Review Milieu Skin NDA clause edits",
-    "Run four calls: Doug, Angelina, Joe, and Google Ads"
+    "Get Ronald's deodorant decision",
+    "Approve Aarav NDA edit",
+    "Choose Amanda thread owner",
+    "Push Aidan's six-quote queue"
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Countersign Cory Anderson’s and Amanda Peters’s returned NDAs.",
+      "top_task": "Get Ronald's deodorant yes/no",
       "tasks": [
         {
-          "title": "Countersign Honcho Hygiene NDA",
+          "title": "Text Ronald on anhydrous/stick deodorant",
           "due": "Today"
         },
         {
-          "title": "Countersign Studio S5 NDA",
+          "title": "Approve Aarav's NDA edit",
           "due": "Today"
         },
         {
-          "title": "Review Milieu Skin’s two NDA clause edits",
+          "title": "Choose Amanda Peters thread owner",
           "due": "Today"
         }
       ],
-      "notes": "Cory and Amanda returned signed NDAs; both still need Sam’s countersignature."
+      "notes": "These decisions unblock multiple active lanes."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Support follow-up on Cory’s 35,000-unit, seven-SKU deodorant brief.",
+      "top_task": "Decide whether PLL makes anhydrous/stick deodorant",
       "tasks": [
         {
-          "title": "Review deodorant brief when routed",
+          "title": "Give deodorant format yes/no",
           "due": "Today"
         }
       ],
-      "notes": "No completion is claimed."
+      "notes": "Decision gates Cory, Mark, and Faten."
     },
     "executive": {
       "display_name": "Executive",
-      "top_task": "Keep today’s call sequence and NDA follow-ups accurate.",
+      "top_task": "Keep Amanda ownership and quote queue moving",
       "tasks": [
         {
-          "title": "Track four calls and open NDA actions",
+          "title": "Resolve Amanda ownership",
+          "due": "Today"
+        },
+        {
+          "title": "Nudge six quote lanes",
           "due": "Today"
         }
       ],
-      "notes": "Joe Schrank is an industry meeting, not a lead."
+      "notes": "Delphos link conflict is flagged."
     },
     "email_agent": {
       "display_name": "Email Agent",
-      "top_task": "No new outbound commitment from this refresh.",
+      "top_task": "Hold Merrick first touch until ownership is settled",
       "tasks": [],
-      "notes": "No agent action was asserted in today’s supplied facts."
+      "notes": "Do not contradict the active Amanda desk."
     }
   },
   "revenueActions": [
-    "Run Doug Crawshaw discovery call for What If Connect",
-    "Run Angelina White discovery call for Super Plush Living Beauty",
-    "Hold Joe Schrank industry meeting separately from lead pipeline",
-    "Take 4:00 PM Google Ads consultation follow-up"
+    "Get Ronald's deodorant format decision",
+    "Release Aarav's NDA revision if approved",
+    "Resolve Amanda ownership and book chemistry call",
+    "Move Aidan's six quote queue"
   ],
   "pipelineStat": {
-    "summary": "Cory Anderson: 35,000 units across seven deodorant SKUs, target launch production Q2/Q3 2027; NDA countersignature pending. Amanda Peters NDA countersignature pending; Aarav Shah requested two NDA edits.",
-    "source": "MORNING-UPDATE.md supplied facts 2026-09-17"
+    "summary": "Three deodorant opportunities are gated on the anhydrous/stick decision; Aidan's six-quote queue is the stated bottleneck. Amanda is an active 2-SKU/1,000-unit opportunity with signed NDA and unresolved desk ownership.",
+    "source": "DAILY-TASKS-2026-09-18.md"
   },
   "adsAgentBrief": "Nightly read-only refresh 2026-09-16 corrected: managed $69.83 current 7-day, 315 clicks, CPC $0.22; account $302.42, 428 clicks; prior managed $192.32, 332 clicks; 14 inquiry messages, zero verified Ads-attributed leads; tracking broken; no changes.",
   "adsIntelligence": {

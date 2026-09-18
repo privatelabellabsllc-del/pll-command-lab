@@ -1,56 +1,62 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-17T11:05:49Z",
-  "generatedLabel": "Sep 17 2026 · morning refresh",
+  "generatedISO": "2026-09-18T11:15:11Z",
+  "generatedLabel": "Sep 18 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
-    "note": "Verified Ads snapshot Aug 27–Sep 2: account $305.73, 528 clicks, $0.58 CPC, 1.61% CTR, zero conversions; six enabled campaigns and 21 enabled ads."
+    "note": "Ads reporting caveat from Sep 18 morning: account totals reconcile, but campaign roster changed (4 vs 6), Samples disappeared, and a paused campaign shows spend; do not enforce cap from this report."
   },
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Countersign Cory Anderson’s Honcho Hygiene NDA",
+      "task": "Get Ronald's deodorant yes/no",
       "owner": "Sam",
       "status": "urgent today"
     },
     {
       "rank": 2,
-      "task": "Countersign Amanda Peters’s Studio S5 NDA",
+      "task": "Approve Aarav's NDA edit",
       "owner": "Sam",
-      "status": "urgent today"
+      "status": "needs approval today"
     },
     {
       "rank": 3,
-      "task": "Review Aarav Shah’s two NDA clause edits",
+      "task": "Choose Amanda Peters thread owner",
       "owner": "Sam",
-      "status": "needs review today"
+      "status": "decision today"
     },
     {
       "rank": 4,
-      "task": "Run today’s four calls, including 4:00 PM Ads consultation",
-      "owner": "Sam / team",
-      "status": "scheduled today"
+      "task": "Push Aidan's six quote queue",
+      "owner": "Sam / Aidan",
+      "status": "urgent today"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Countersign Honcho Hygiene NDA",
-      "why": "Cory returned a signed mutual NDA; Sam’s countersignature is still pending.",
+      "item": "Ronald's deodorant decision",
+      "why": "Three opportunities are gated on whether PLL makes anhydrous/stick deodorant.",
       "impact": "high",
       "since": "today"
     },
     {
-      "item": "Countersign Studio S5 NDA",
-      "why": "Amanda returned a signed mutual NDA; Sam’s countersignature is still pending.",
+      "item": "Aarav's NDA edit approval",
+      "why": "Two edits are the only stated blocker to signature and formula return.",
+      "impact": "high",
+      "since": "Sep 16"
+    },
+    {
+      "item": "Amanda thread ownership",
+      "why": "Two desks gave contradictory guidance and a countersigned NDA was promised but not delivered.",
       "impact": "high",
       "since": "today"
     },
     {
-      "item": "Review Milieu Skin NDA edits",
-      "why": "Aarav requested two clause edits before signing.",
+      "item": "Laura coverage",
+      "why": "Laura is out Sep 17–29 with six open lanes.",
       "impact": "high",
-      "since": "today"
+      "since": "Sep 17"
     }
   ],
   "agentHub": {
@@ -106,47 +112,39 @@
     "lastDispatch": {
       "id": "ads-nightly-2026-09-13",
       "to": "Ads Agent",
-      "task": "Sep 13: managed $5.35/2,963i/43c, $30.65 under $36; legacy $25.74. T7 managed $147.01 ($104.99 under $252), legacy $257.30. Two new in-lane direct leads, both unattributed. Sep 53 leads; gclid 2/53; paid CPL not computable. No alerts or Ads changes. Routing fix awaits approval.",
+      "task": "Sep 13 managed/legacy spend and attribution refresh; routing fix awaits approval.",
       "status": "completed",
-      "note": "Sep 13: managed $5.35/2,963i/43c, $30.65 under $36; legacy $25.74. T7 managed $147.01 ($104.99 under $252), legacy $257.30. Two new in-lane direct leads, both unattributed. Sep 53 leads; gclid 2/53; paid CPL not computable. No alerts or Ads changes. Routing fix awaits approval."
+      "note": "Latest ledger dispatch; no newer record."
     }
   },
   "meetings": [
     {
-      "timeISO": "2026-09-17T09:30:00-04:00",
-      "time": "9:30 AM ET",
-      "title": "Doug Crawshaw — What If Connect discovery",
-      "who": "Doug Crawshaw",
-      "join": "",
-      "location": "Join link not available from supplied facts"
-    },
-    {
-      "timeISO": "2026-09-17T10:00:00-04:00",
+      "timeISO": "2026-09-18T10:00:00-04:00",
       "time": "10:00 AM ET",
-      "title": "Angelina White — Super Plush Living Beauty discovery",
-      "who": "Angelina White",
-      "join": "",
-      "location": "Join link not available from supplied facts"
+      "title": "Shameka Lee",
+      "who": "Shameka Lee",
+      "join": "https://meet.google.com/odx-ncxu-xyf",
+      "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-17T11:30:00-04:00",
-      "time": "11:30 AM ET",
-      "title": "Joe Schrank — thecosmeticmanufacturer.com industry meeting",
-      "who": "Joe Schrank",
-      "join": "",
-      "location": "Join link not available from supplied facts"
+      "timeISO": "2026-09-18T13:30:00-04:00",
+      "time": "1:30 PM ET",
+      "title": "EPHIX Shotlist — Hawke Media",
+      "who": "Desiree Moore, Karlie Bodine, Amanda Martinez",
+      "join": "https://meet.google.com/vrw-rhku-qfg",
+      "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-17T16:00:00-04:00",
-      "time": "4:00 PM ET",
-      "title": "Google Ads consultation follow-up",
-      "who": "Google representative",
-      "join": "",
-      "location": "Join link not available from supplied facts"
+      "timeISO": "2026-09-18T14:00:00-04:00",
+      "time": "2:00 PM ET",
+      "title": "Delphos / Max",
+      "who": "Delphos House",
+      "join": "https://meet.google.com/nxd-nrfr-ayi",
+      "location": "Google Meet"
     }
   ],
-  "meetingsNote": "Today’s four calls were supplied as verified facts. No reliable join links were available in the mail-only refresh context, so none were invented.",
-  "callsSource": "Verified facts supplied for 2026-09-17; Outlook is mail-only.",
+  "meetingsNote": "Delphos has two simultaneous events with different links. Use the Sam / Delphos link carrying contact@delphos.house; the Calendly-generated duplicate has no external attendee.",
+  "callsSource": "Outlook Calendar live search 2026-09-18, UTC converted to Eastern; duplicate entries de-duplicated.",
   "setupNeeds": [
     {
       "need": "CRM Developer Gmail connection is gone",
@@ -247,27 +245,27 @@
   "pipeline": [
     {
       "deal": "Honcho Hygiene (Cory Anderson)",
-      "units": "35,000 across seven SKUs",
-      "product": "deodorant",
-      "stage": "signed mutual NDA; Sam countersignature pending; target launch production Q2/Q3 2027",
+      "units": "~30,000 across six scents",
+      "product": "anhydrous deodorant",
+      "stage": "signed NDA + brief; routed to Aidan; format decision pending",
       "value": "TBD",
-      "owner": "Sam"
-    },
-    {
-      "deal": "Studio S5 (Amanda Peters)",
-      "units": "TBD",
-      "product": "TBD",
-      "stage": "signed mutual NDA; Sam countersignature pending",
-      "value": "TBD",
-      "owner": "Sam"
+      "owner": "Sam / Aidan"
     },
     {
       "deal": "Milieu Skin (Aarav Shah)",
       "units": "TBD",
       "product": "TBD",
-      "stage": "two NDA clause edits requested before signing",
+      "stage": "two NDA edits requested; approval pending",
       "value": "TBD",
       "owner": "Sam"
+    },
+    {
+      "deal": "Studio S5 (Amanda Peters)",
+      "units": "2 SKUs x 1,000",
+      "product": "TBD",
+      "stage": "signed NDA; ownership conflict; countersignature promised but absent",
+      "value": "TBD",
+      "owner": "TBD"
     }
   ]
 }
