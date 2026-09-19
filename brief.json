@@ -148,263 +148,330 @@
     "summary": "Three deodorant opportunities are gated on the anhydrous/stick decision; Aidan's six-quote queue is the stated bottleneck. Amanda is an active 2-SKU/1,000-unit opportunity with signed NDA and unresolved desk ownership.",
     "source": "DAILY-TASKS-2026-09-18.md"
   },
-  "adsAgentBrief": "Nightly read-only refresh 2026-09-16 corrected: managed $69.83 current 7-day, 315 clicks, CPC $0.22; account $302.42, 428 clicks; prior managed $192.32, 332 clicks; 14 inquiry messages, zero verified Ads-attributed leads; tracking broken; no changes.",
+  "adsAgentBrief": "Nightly read-only retry 2026-09-18: managed current 7-day $87.23, 291 clicks, CPC $0.30; account $323.11, 404 clicks; prior managed $162.40, 348 clicks; today managed $4.81; pause-history anomaly unresolved; no changes.",
   "adsIntelligence": {
-    "updatedAt": "2026-09-17T01:00:00Z",
-    "source": "Google Ads API customer 2915572948, read-only campaign/ad reports and Outlook inbox; nightly refresh 2026-09-16 ET.",
-    "integrity": "RECONCILED per-campaign. Managed + legacy = account for spend/clicks/impressions in each reported window; managed clicks/impressions are lower than account. Conversion actions segmented by name. Exact enabled-ad roster unverified.",
-    "scopeWarning": "CAMPAIGN-SCOPE - EXACT AD ROSTER UNVERIFIED. Live managed campaign enumeration: PLL-Search-ContractMfg-2026 (ENABLED), PLL-Search-ContractMfg-2026 #2 (ENABLED), PLL-Search-Samples-2026 (PAUSED).",
+    "updatedAt": "2026-09-18T21:00:00-04:00",
+    "source": "Google Ads API customer 2915572948, live campaign reports and independently pulled customer totals; Outlook inbox search; read-only nightly retry 2026-09-18 ET.",
+    "integrity": "RECONCILED per-campaign and independently against customer totals for today, current 7-day, and prior 7-day; managed + legacy = account for spend/clicks/impressions; managed clicks/impressions lower than account. Conversion actions segmented by name. Exact ad roster unverified.",
+    "scopeWarning": "CAMPAIGN-SCOPE - EXACT AD ROSTER UNVERIFIED. Live managed campaign enumeration: PLL-Search-Samples-2026 (PAUSED), PLL-Search-ContractMfg-2026 (PAUSED), PLL-Search-ContractMfg-2026 #2 (ENABLED).",
     "windows": {
-      "today": "2026-09-16",
-      "current": "2026-09-10 through 2026-09-16",
-      "prior": "2026-09-03 through 2026-09-09"
+      "today": "2026-09-18",
+      "current": "2026-09-12 through 2026-09-18",
+      "prior": "2026-09-05 through 2026-09-11"
     },
-    "current": {
+    "today": {
       "managed": {
-        "spend": 69.83,
-        "clicks": 315,
-        "impressions": 24202,
-        "cpc": 0.22,
-        "ctr": 0.013,
-        "conversions": 0
-      },
-      "legacy": {
-        "spend": 232.59,
-        "clicks": 113,
-        "impressions": 1279,
-        "cpc": 2.06,
-        "conversions": 4,
-        "allConversions": 9
-      },
-      "account": {
-        "spend": 302.42,
-        "clicks": 428,
-        "impressions": 25481,
-        "cpc": 0.71,
-        "conversions": 4,
-        "allConversions": 13
-      },
-      "campaigns": [
-        {
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 33.34,
-          "clicks": 34,
-          "impressions": 1109,
-          "cpc": 0.98,
-          "allConversions": 1
-        },
-        {
-          "name": "PLL-Search-ContractMfg-2026 #2",
-          "status": "ENABLED",
-          "spend": 36.5,
-          "clicks": 281,
-          "impressions": 23093,
-          "cpc": 0.13,
-          "allConversions": 0
-        },
-        {
-          "name": "PLL-Search-Samples-2026",
-          "status": "PAUSED",
-          "spend": 0,
-          "clicks": 0,
-          "impressions": 0
-        }
-      ],
-      "conversionActions": {
-        "Lead form - Submit": {
-          "conversions": 4,
-          "campaign": "Initial"
-        },
-        "Local actions - Other engagements": {
-          "allConversions": 3
-        },
-        "Local actions - Website visits": {
-          "allConversions": 3
-        },
-        "Local actions - Directions": {
-          "allConversions": 1
-        }
-      },
-      "today": {
-        "spend": 5.26,
-        "clicks": 41,
-        "impressions": 3020,
+        "spend": 4.81,
+        "clicks": 38,
+        "impressions": 3711,
         "cpc": 0.13,
-        "conversions": 0,
-        "campaign": "PLL-Search-ContractMfg-2026 #2"
-      }
-    },
-    "prior": {
-      "managed": {
-        "spend": 192.32,
-        "clicks": 332,
-        "impressions": 17297,
-        "cpc": 0.58,
-        "conversions": 0
-      },
-      "account": {
-        "spend": 444.21,
-        "clicks": 465,
-        "impressions": 22668,
-        "cpc": 0.96
-      },
-      "conversionActions": {
-        "Lead form - Submit": {
-          "conversions": 12,
-          "campaign": "Initial"
-        },
-        "Local actions - Directions": {
-          "allConversions": 1
-        }
+        "ctr": 0.0102
       },
       "legacy": {
-        "spend": 251.89,
-        "clicks": 133,
-        "impressions": 5371,
-        "cpc": 1.89
+        "spend": 37.07,
+        "clicks": 12,
+        "impressions": 116,
+        "cpc": 3.09,
+        "ctr": 0.1034
+      },
+      "account": {
+        "spend": 41.88,
+        "clicks": 50,
+        "impressions": 3827,
+        "cpc": 0.84,
+        "ctr": 0.0131
       },
       "campaigns": [
-        {
-          "name": "PLL-Search-Samples-2026",
-          "status": "PAUSED",
-          "spend": 8.81,
-          "clicks": 9,
-          "impressions": 386
-        },
-        {
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 146.33,
-          "clicks": 143,
-          "impressions": 6642,
-          "cpc": 1.02
-        },
-        {
-          "name": "PLL-Search-ContractMfg-2026 #2",
-          "status": "ENABLED",
-          "spend": 37.18,
-          "clicks": 180,
-          "impressions": 10269,
-          "cpc": 0.21
-        },
         {
           "name": "Initial",
-          "status": "LEGACY",
-          "spend": 150.03,
-          "clicks": 63,
-          "impressions": 872
+          "status": "ENABLED",
+          "spend": 16.24,
+          "clicks": 7,
+          "impressions": 97,
+          "cpc": 2.32,
+          "ctr": 0.0722
         },
         {
           "name": "New-Sales-Ad",
-          "status": "LEGACY",
-          "spend": 97.29,
-          "clicks": 37,
-          "impressions": 275
+          "status": "ENABLED",
+          "spend": 20.83,
+          "clicks": 5,
+          "impressions": 19,
+          "cpc": 4.17,
+          "ctr": 0.2632
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026",
+          "status": "NO ROW RETURNED",
+          "spend": 0.0,
+          "clicks": 0,
+          "impressions": 0,
+          "cpc": 0,
+          "ctr": 0
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026 #2",
+          "status": "ENABLED",
+          "spend": 4.81,
+          "clicks": 38,
+          "impressions": 3711,
+          "cpc": 0.13,
+          "ctr": 0.0102
+        },
+        {
+          "name": "PLL-Search-Samples-2026",
+          "status": "NO ROW RETURNED",
+          "spend": 0.0,
+          "clicks": 0,
+          "impressions": 0,
+          "cpc": 0,
+          "ctr": 0
         },
         {
           "name": "Sales Campaign PLL",
-          "status": "LEGACY",
-          "spend": 4.57,
-          "clicks": 33,
-          "impressions": 4224
+          "status": "NO ROW RETURNED",
+          "spend": 0.0,
+          "clicks": 0,
+          "impressions": 0,
+          "cpc": 0,
+          "ctr": 0
         }
       ]
     },
+    "current": {
+      "managed": {
+        "spend": 87.23,
+        "clicks": 291,
+        "impressions": 23904,
+        "cpc": 0.3,
+        "ctr": 0.0122
+      },
+      "legacy": {
+        "spend": 235.88,
+        "clicks": 113,
+        "impressions": 1333,
+        "cpc": 2.09,
+        "ctr": 0.0848
+      },
+      "account": {
+        "spend": 323.11,
+        "clicks": 404,
+        "impressions": 25237,
+        "cpc": 0.8,
+        "ctr": 0.016
+      },
+      "campaigns": [
+        {
+          "name": "Initial",
+          "status": "ENABLED",
+          "spend": 144.15,
+          "clicks": 66,
+          "impressions": 1127,
+          "cpc": 2.18,
+          "ctr": 0.0586
+        },
+        {
+          "name": "New-Sales-Ad",
+          "status": "ENABLED",
+          "spend": 91.73,
+          "clicks": 47,
+          "impressions": 206,
+          "cpc": 1.95,
+          "ctr": 0.2282
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026",
+          "status": "PAUSED",
+          "spend": 51.2,
+          "clicks": 9,
+          "impressions": 56,
+          "cpc": 5.69,
+          "ctr": 0.1607
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026 #2",
+          "status": "ENABLED",
+          "spend": 36.04,
+          "clicks": 282,
+          "impressions": 23848,
+          "cpc": 0.13,
+          "ctr": 0.0118
+        },
+        {
+          "name": "PLL-Search-Samples-2026",
+          "status": "NO ROW RETURNED",
+          "spend": 0.0,
+          "clicks": 0,
+          "impressions": 0,
+          "cpc": 0,
+          "ctr": 0
+        },
+        {
+          "name": "Sales Campaign PLL",
+          "status": "NO ROW RETURNED",
+          "spend": 0.0,
+          "clicks": 0,
+          "impressions": 0,
+          "cpc": 0,
+          "ctr": 0
+        }
+      ]
+    },
+    "prior": {
+      "managed": {
+        "spend": 162.4,
+        "clicks": 348,
+        "impressions": 21203,
+        "cpc": 0.47,
+        "ctr": 0.0164
+      },
+      "legacy": {
+        "spend": 256.17,
+        "clicks": 102,
+        "impressions": 1200,
+        "cpc": 2.51,
+        "ctr": 0.085
+      },
+      "account": {
+        "spend": 418.56,
+        "clicks": 450,
+        "impressions": 22403,
+        "cpc": 0.93,
+        "ctr": 0.0201
+      },
+      "campaigns": [
+        {
+          "name": "Initial",
+          "status": "ENABLED",
+          "spend": 159.04,
+          "clicks": 70,
+          "impressions": 983,
+          "cpc": 2.27,
+          "ctr": 0.0712
+        },
+        {
+          "name": "New-Sales-Ad",
+          "status": "ENABLED",
+          "spend": 97.13,
+          "clicks": 32,
+          "impressions": 217,
+          "cpc": 3.04,
+          "ctr": 0.1475
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026",
+          "status": "PAUSED",
+          "spend": 125.81,
+          "clicks": 130,
+          "impressions": 5594,
+          "cpc": 0.97,
+          "ctr": 0.0232
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026 #2",
+          "status": "ENABLED",
+          "spend": 36.58,
+          "clicks": 218,
+          "impressions": 15609,
+          "cpc": 0.17,
+          "ctr": 0.014
+        },
+        {
+          "name": "PLL-Search-Samples-2026",
+          "status": "NO ROW RETURNED",
+          "spend": 0.0,
+          "clicks": 0,
+          "impressions": 0,
+          "cpc": 0,
+          "ctr": 0
+        },
+        {
+          "name": "Sales Campaign PLL",
+          "status": "NO ROW RETURNED",
+          "spend": 0.0,
+          "clicks": 0,
+          "impressions": 0,
+          "cpc": 0,
+          "ctr": 0
+        }
+      ]
+    },
+    "conversionActions": {
+      "Lead form - Submit": {
+        "conversions": 12,
+        "allConversions": 12
+      },
+      "Local actions - Other engagements": {
+        "conversions": 0,
+        "allConversions": 4
+      },
+      "Local actions - Website visits": {
+        "conversions": 0,
+        "allConversions": 4
+      },
+      "Calls from ads": {
+        "conversions": 1.999266,
+        "allConversions": 1.999266
+      },
+      "Local actions - Directions": {
+        "conversions": 0,
+        "allConversions": 2
+      }
+    },
+    "pausedCampaignCheck": {
+      "campaign": "PLL-Search-ContractMfg-2026",
+      "currentStatus": "PAUSED",
+      "windowSpend": 51.2,
+      "dailySpend": {
+        "2026-09-12": 0.44,
+        "2026-09-13": 0.0,
+        "2026-09-14": 0.06,
+        "2026-09-15": 3.1,
+        "2026-09-16": 0.44,
+        "2026-09-17": 47.16
+      },
+      "pauseDate": "NOT VISIBLE IN AVAILABLE READ-ONLY REPORTS",
+      "answer": "Spend landed on Sep 12 ($0.44), Sep 14 ($0.06), Sep 15 ($3.10), Sep 16 ($0.44), and Sep 17 ($47.16); none on Sep 13 or Sep 18. Because Google Ads exposes current status but not status-change history here, exact pause date cannot be proven; the $47.16 on Sep 17 means it was serving before/while status later changed, not evidence of spend after an already-paused state."
+    },
     "cap": {
-      "configuredManagedDaily": 30.33,
-      "status": "under cap",
-      "basis": "ContractMfg $20.33/day + ContractMfg #2 $10/day; Samples paused. Current managed 7-day average $9.98/day, 33.0% of configured cap."
+      "configuredManagedDaily": "UNOBSERVABLE this retry: budget report not separately retrieved; prior configured reference $30.33/day is stale-risk and not used for breach determination.",
+      "status": "UNOBSERVABLE",
+      "basis": "No cap conclusion without a fresh configured-budget pull."
     },
     "leads": {
-      "currentWindowQualifiedInquiryMessages": 14,
-      "priorWindowQualifiedInquiryMessages": 8,
+      "currentWindowQualifiedInquiryMessages": "NOT RELIABLY MEASURED: broad inbox date search returned mixed mail and was not safely classifiable in bounded retry",
+      "priorWindowQualifiedInquiryMessages": "NOT RELIABLY MEASURED",
       "currentVerifiedAdsAttributed": "0 / NOT YET MEASURABLE",
       "priorVerifiedAdsAttributed": "0 / NOT YET MEASURABLE",
       "bookedCalls": "NOT YET MEASURABLE",
       "cpl": "NOT YET MEASURABLE",
       "costPerBookedCall": "NOT YET MEASURABLE",
-      "note": "Conversion tracking not installed; only 3 of 58 September leads carried click IDs. Inbox counts are inquiry messages, not verified Ads attribution."
+      "note": "Attribution requires UTM/GCLID/campaign record; no verified attribution established."
     },
-    "headline": "Managed spend $69.83 on 315 clicks and 24,202 impressions current 7-day; account $302.42 on 428 clicks. Platform recorded 4 Lead form - Submit conversions in legacy Initial, not managed, but conversion tracking is unreliable and lead delivery is unverified.",
-    "best": "ContractMfg-2026: higher CTR (3.07%) and $0.98 CPC, but zero primary conversions.",
-    "worst": "ContractMfg-2026 #2: 281 clicks and 23,093 impressions at $0.13 CPC, zero conversions; cheap traffic with no measured lead outcome.",
+    "headline": "Managed spend $87.23 on 291 clicks and 23,904 impressions current 7-day; independently pulled account $323.11 on 404 clicks.",
+    "best": "ContractMfg-2026 #2 delivered the most managed clicks at the lowest CPC; no verified lead winner.",
+    "worst": "ContractMfg-2026 had $51.20 spend while now paused, including $47.16 on Sep 17; pause timing is not exposed.",
     "recommendation": {
       "status": "PENDING SAM APPROVAL",
       "approval_required": "yes",
-      "text": "No changes. First reconcile and verify the 4 Google native lead-form submissions in Initial; attribution and site conversion tracking remain broken."
+      "text": "No changes. Resolve pause-history/tracking ambiguity and verify lead attribution before optimization."
     },
     "answers": {
-      "today": "Sep 16 managed spend $5.26, 41 clicks, 3,020 impressions, $0.13 CPC, zero conversions.",
-      "seven/new ads": "Current managed 7-day: $69.83, 315 clicks, 24,202 impressions; exact enabled-ad roster unverified.",
-      "ctr/cpc": "Managed CTR 1.30%, CPC $0.22; #1 CTR 3.07%/$0.98 CPC, #2 CTR 1.22%/$0.13 CPC.",
-      "leads/emails/calls": "14 Shopify inquiry messages current window, 8 prior; verified Ads-attributed leads 0/not measurable; booked calls not measurable.",
-      "budget/cap": "Configured managed cap $30.33/day; 7-day managed average $9.98/day, under cap.",
-      "winners": "#1 has stronger CTR; no measured conversion winner.",
-      "waste": "#2 has 281 clicks with zero conversions; attribution/tracking prevents firm waste conclusion.",
-      "optimization": "Read-only: verify native lead-form delivery and tracking before changes.",
-      "suggestions": "No changes until lead delivery is verified.",
+      "today": "Sep 18 managed spend $4.81, 38 clicks, 3,711 impressions, CPC $0.13.",
+      "seven/new ads": "Current 7-day managed $87.23, 291 clicks, 23,904 impressions; exact ad roster unverified.",
+      "ctr/cpc": "Managed current CTR 1.22%, CPC $0.30.",
+      "leads/emails/calls": "Verified Ads-attributed leads 0/not measurable; booked calls not measurable in this retry.",
+      "budget/cap": "Cap status UNOBSERVABLE because configured budgets were not freshly retrieved; no breach claim.",
+      "winners": "#2 has lowest CPC and most clicks; no measured lead winner.",
+      "waste": "Paused ContractMfg-2026 shows $47.16 on Sep 17; exact pause date unavailable, so timing is unresolved.",
+      "optimization": "Read-only: fix attribution and establish pause history before changes.",
+      "suggestions": "No changes until measurement and cap inputs are verified.",
       "nextExperiment": "None approved; measurement repair first.",
-      "whatAdsAgentShouldDo": "Investigate lead-form delivery, attribution, and search-term quality; recommend one change only after Sam approval."
-    },
-    "correctionNote": "Corrected 2026-09-16 21:08 ET after Executive verification. The 9pm run published managed clicks 284 / CPC 0.25 and account clicks 397, derived account as managed plus legacy rather than pulling it, and excluded PLL-Search-Samples-2026 from the prior-window managed tier. All three tiers in all three windows now reconcile exactly against per-campaign rows pulled from the account.",
-    "today": {
-      "managed": {
-        "spend": 5.26,
-        "clicks": 41,
-        "impressions": 3020,
-        "cpc": 0.13,
-        "ctr": 0.0136,
-        "conversions": 0
-      },
-      "legacy": {
-        "spend": 33.06,
-        "clicks": 23,
-        "impressions": 262,
-        "cpc": 1.44
-      },
-      "account": {
-        "spend": 38.32,
-        "clicks": 64,
-        "impressions": 3282,
-        "cpc": 0.6
-      },
-      "campaigns": [
-        {
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "ENABLED",
-          "spend": 0,
-          "clicks": 0,
-          "impressions": 9
-        },
-        {
-          "name": "PLL-Search-ContractMfg-2026 #2",
-          "status": "ENABLED",
-          "spend": 5.26,
-          "clicks": 41,
-          "impressions": 3011,
-          "cpc": 0.13
-        },
-        {
-          "name": "Initial",
-          "status": "LEGACY",
-          "spend": 19.42,
-          "clicks": 10,
-          "impressions": 188
-        },
-        {
-          "name": "New-Sales-Ad",
-          "status": "LEGACY",
-          "spend": 13.64,
-          "clicks": 13,
-          "impressions": 74
-        }
-      ]
-    },
-    "weekOverWeek": "Managed spend $192.32 to $69.83, down 64%; clicks 332 to 315, down 5%; CPC $0.58 to $0.22, down 62%; impressions 17,297 to 24,202, up 40%."
+      "whatAdsAgentShouldDo": "Verify configured budgets, pause history, lead attribution, and search-term quality; recommend one change only after approval."
+    }
   },
   "facilityStatus": {
-    "status": "Moved in — active operations at new building",
+    "status": "Moved in \u2014 active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -412,6 +479,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
+    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
   }
 }
