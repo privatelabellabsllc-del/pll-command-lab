@@ -1,45 +1,57 @@
 {
-  "date": "2026-09-18",
-  "ts": "2026-09-18T11:15:11Z",
+  "date": "2026-09-21",
+  "ts": "2026-09-21T11:07:13Z",
   "brief": [
     {
-      "t": "Get Ronald's yes or no today on whether PLL makes anhydrous/stick deodorant; it gates Cory, Mark Higgins, and Faten Dagher.",
+      "t": "Aidan has nine costing requests and has returned zero; put Honcho Hygiene’s 30,000-unit deodorant job first and set dates on every quote.",
       "hot": true
     },
     {
-      "t": "Aarav Shah's Milieu Skin NDA is stalled on two edits; Sam's approval would let the revision go out today.",
+      "t": "Confirm with Ronald whether PLL can make aluminum-free deodorant at 5,000 units per scent before pricing the Honcho job.",
       "hot": true
     },
     {
-      "t": "Amanda Peters's Studio S5 thread has conflicting ownership and a promised countersigned NDA that does not exist; Sam must choose one owner.",
+      "t": "Return Aarav Shah’s Milieu Skin NDA redline today; his two edits are reasonable and the formula transfer is blocked until signature.",
       "hot": true
     },
     {
-      "t": "Aidan's quote queue is the real bottleneck: six quotes are waiting, including Cory, Bobby, Mark, Hilton, Heirloom, and Victor.",
+      "t": "Ubiquity’s Oct 1 logo question is routed to Laura, who is out until Sep 29; Sam or Aidan must answer Lauren today.",
       "hot": true
     },
     {
-      "t": "Today's meetings are Shameka at 10:00 AM, EPHIX at 1:30 PM, and Delphos at 2:00 PM ET; Delphos has two different links and the Sam/Delphos link is the one with the external attendee.",
+      "t": "The Email Agent sent roughly 35 weekend messages, booked three calls, made pricing and delivery promises, and duplicated Aidan requests; Sam must answer the three Sep 15 control questions.",
       "hot": true
     },
     {
-      "t": "Ads reporting is not reliable enough to enforce a cap: four campaigns appeared today versus six last night, Samples disappeared, and a paused campaign shows spend. No Ads cache changes were made.",
+      "t": "Quarry sent a full three-SKU formulation brief and is shopping labs; speed matters while nine costing requests remain stuck.",
+      "hot": true
+    },
+    {
+      "t": "DNS is still missing DMARC and still uses the old SPF value on all three domains.",
       "hot": false
     }
   ],
   "next": [
-    "Text Ronald for the deodorant yes/no",
-    "Approve Aarav's NDA edit",
-    "Choose who owns Amanda Peters's thread",
-    "Nudge Aidan on six overdue quotes"
+    "Call Aidan and rank nine quotes, Honcho first",
+    "Authorize and return Aarav NDA redline",
+    "Send Ronald and Aaron the ten technical questions",
+    "Answer Ubiquity before Oct 1"
   ],
   "kb": [
     {
       "keys": [
-        "Ronald",
+        "Aidan",
+        "quotes"
+      ],
+      "a": "Aidan has nine costing requests with no returned quote, including Honcho Hygiene at 30,000 units across six scents. Sam needs to rank them in writing, put Honcho first, and assign a date to each."
+    },
+    {
+      "keys": [
+        "Honcho Hygiene",
+        "Cory Anderson",
         "deodorant"
       ],
-      "a": "Sam needs Ronald's yes or no today on making anhydrous/stick deodorant. That decision gates Cory Anderson, Mark Higgins, and Faten Dagher."
+      "a": "Honcho needs pricing for 30,000 units across six deodorant scents, with a five-day customer expectation. Ronald still must confirm PLL can make aluminum-free deodorant at 5,000 units per scent."
     },
     {
       "keys": [
@@ -47,106 +59,112 @@
         "Milieu Skin",
         "NDA"
       ],
-      "a": "Aarav asked for two NDA edits covering proprietary formulations, IP, and trade secrets. Sam approval would let PLL revise and return it today."
+      "a": "Aarav requested two reasonable NDA edits covering his incoming formulas and a narrower purpose. Return the redline today; then Ronald and Aaron should answer his ten technical transfer and QC questions."
     },
     {
       "keys": [
-        "Amanda Peters",
-        "Studio S5"
+        "Ubiquity",
+        "Lauren",
+        "Laura"
       ],
-      "a": "Amanda's signed NDA is on file, but no countersigned copy exists. The thread contains conflicting guidance, so Sam must choose whether Email Agent or the Executive desk owns first touch."
+      "a": "Lauren is waiting for an answer about putting Ubiquity’s logo on the product before the Oct 1 tradeshow. The request was routed to Laura, who is out until Sep 29, so Sam or Aidan must take it."
     },
     {
       "keys": [
-        "Aidan",
-        "quotes"
+        "Email Agent",
+        "weekend"
       ],
-      "a": "Aidan holds six quote lanes: Cory, Bobby, Mark, Hilton, Heirloom, and Victor. Quote turnaround is the stated constraint, with Mark waiting since Aug 31."
+      "a": "The Email Agent sent roughly 35 messages over the weekend, booked three calls, made pricing and delivery promises, and duplicated costing requests. Sam still needs to answer the three control questions from Sep 15."
     },
     {
       "keys": [
         "Merrick",
         "Quarry"
       ],
-      "a": "Merrick from Quarry wants a 30-minute call about three hair products for a 2027 launch. Units are not stated; first touch is held pending Sam's ownership decision."
+      "a": "Merrick sent a complete formulation brief for three SKUs and says Quarry is evaluating multiple labs. This is a real competitive opportunity where turnaround matters."
     },
     {
       "keys": [
-        "Shameka Lee",
-        "EPHIX",
-        "Delphos"
+        "Billy Ellison",
+        "Israel Olusegun",
+        "Jay"
       ],
-      "a": "Today's meetings are Shameka at 10:00 AM, EPHIX at 1:30 PM, and Delphos at 2:00 PM ET. Delphos has two links; use the Sam/Delphos link with contact@delphos.house."
+      "a": "Today’s calls are Billy at 10:30 AM, Israel at noon, and Jay at 12:30 PM ET. Billy joins at meet.google.com/ung-cjsa-unw, Israel at meet.google.com/osp-ukwa-nux, and Jay at meet.google.com/ppm-zkky-qte."
     }
   ],
   "topTasks": [
-    "Get Ronald's deodorant decision",
-    "Approve Aarav NDA edit",
-    "Choose Amanda thread owner",
-    "Push Aidan's six-quote queue"
+    "Call Aidan and rank nine quote requests",
+    "Authorize and return Aarav NDA redline",
+    "Confirm aluminum-free deodorant feasibility with Ronald",
+    "Answer Ubiquity logo question"
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Get Ronald's deodorant yes/no",
+      "top_task": "Call Aidan and rank nine quote requests",
       "tasks": [
         {
-          "title": "Text Ronald on anhydrous/stick deodorant",
+          "title": "Call Aidan; put Honcho first and date all nine quotes",
           "due": "Today"
         },
         {
-          "title": "Approve Aarav's NDA edit",
+          "title": "Authorize and return Aarav NDA redline",
           "due": "Today"
         },
         {
-          "title": "Choose Amanda Peters thread owner",
+          "title": "Answer Ubiquity logo question",
           "due": "Today"
         }
       ],
-      "notes": "These decisions unblock multiple active lanes."
+      "notes": "Also answer the Email Agent control questions and spend 15 minutes on DNS."
+    },
+    "aidan": {
+      "display_name": "Aidan",
+      "top_task": "Return nine costings in written priority order",
+      "tasks": [
+        {
+          "title": "Cost Honcho 30,000-unit deodorant first",
+          "due": "Today"
+        },
+        {
+          "title": "Return dates for remaining eight requests",
+          "due": "This week"
+        }
+      ],
+      "notes": "No quote has come back from the nine requests."
     },
     "ronald": {
       "display_name": "Ronald",
-      "top_task": "Decide whether PLL makes anhydrous/stick deodorant",
+      "top_task": "Confirm aluminum-free deodorant feasibility",
       "tasks": [
         {
-          "title": "Give deodorant format yes/no",
+          "title": "Answer whether PLL can make aluminum-free deodorant at 5,000 units per scent",
           "due": "Today"
         }
       ],
-      "notes": "Decision gates Cory, Mark, and Faten."
+      "notes": "This gates Honcho pricing."
     },
-    "executive": {
-      "display_name": "Executive",
-      "top_task": "Keep Amanda ownership and quote queue moving",
+    "aaron": {
+      "display_name": "Aaron",
+      "top_task": "Answer Milieu Skin technical and QC questions",
       "tasks": [
         {
-          "title": "Resolve Amanda ownership",
-          "due": "Today"
-        },
-        {
-          "title": "Nudge six quote lanes",
+          "title": "Review ten transfer, viscosity, water activity, and USP 61/62 questions",
           "due": "Today"
         }
       ],
-      "notes": "Delphos link conflict is flagged."
-    },
-    "email_agent": {
-      "display_name": "Email Agent",
-      "top_task": "Hold Merrick first touch until ownership is settled",
-      "tasks": [],
-      "notes": "Do not contradict the active Amanda desk."
+      "notes": "Coordinate with Ronald after NDA redline."
     }
   },
   "revenueActions": [
-    "Get Ronald's deodorant format decision",
-    "Release Aarav's NDA revision if approved",
-    "Resolve Amanda ownership and book chemistry call",
-    "Move Aidan's six quote queue"
+    "Clear Honcho 30,000-unit quote first",
+    "Process Quarry’s competitive three-SKU brief",
+    "Return Aarav NDA to unlock formula transfer",
+    "Answer Ubiquity before Oct 1 tradeshow"
   ],
   "pipelineStat": {
-    "summary": "Three deodorant opportunities are gated on the anhydrous/stick decision; Aidan's six-quote queue is the stated bottleneck. Amanda is an active 2-SKU/1,000-unit opportunity with signed NDA and unresolved desk ownership.",
-    "source": "DAILY-TASKS-2026-09-18.md"
+    "summary": "Nine costing requests are stalled with Aidan, including Honcho Hygiene at 30,000 units. Quarry is a competitive three-SKU opportunity; Milieu Skin is blocked on a two-edit NDA redline.",
+    "source": "DAILY-TASKS-2026-09-21.md"
   },
   "adsAgentBrief": "Nightly read-only retry 2026-09-18: managed current 7-day $87.23, 291 clicks, CPC $0.30; account $323.11, 404 clicks; prior managed $162.40, 348 clicks; today managed $4.81; pause-history anomaly unresolved; no changes.",
   "adsIntelligence": {
@@ -471,7 +489,7 @@
     }
   },
   "facilityStatus": {
-    "status": "Moved in \u2014 active operations at new building",
+    "status": "Moved in — active operations at new building",
     "address": "Private Label Labs, LLC, 24600 N. Industrial Dr., Farmington Hills, MI 48335",
     "customersInformed": true,
     "pendingSystems": [
@@ -479,6 +497,6 @@
       "USPS",
       "Shopify"
     ],
-    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending \u2014 no new evidence this run that those were completed."
+    "verificationRequired": "Final re-occupancy Building and Fire inspections both APPROVED Aug 13 (Permit #PRO260046, City of Farmington Hills). DTE start-service order completed Aug 1. UPS, USPS, and Shopify address changes and a test label/order path in each system remain pending — no new evidence this run that those were completed."
   }
 }

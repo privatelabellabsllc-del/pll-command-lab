@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-18T11:15:11Z",
-  "generatedLabel": "Sep 18 2026 · morning refresh",
+  "generatedISO": "2026-09-21T11:07:13Z",
+  "generatedLabel": "Sep 21 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,53 +10,53 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Get Ronald's deodorant yes/no",
+      "task": "Call Aidan and rank nine quote requests",
       "owner": "Sam",
       "status": "urgent today"
     },
     {
       "rank": 2,
-      "task": "Approve Aarav's NDA edit",
+      "task": "Authorize and return Aarav NDA redline",
       "owner": "Sam",
       "status": "needs approval today"
     },
     {
       "rank": 3,
-      "task": "Choose Amanda Peters thread owner",
-      "owner": "Sam",
-      "status": "decision today"
+      "task": "Confirm aluminum-free deodorant feasibility",
+      "owner": "Sam / Ronald",
+      "status": "urgent today"
     },
     {
       "rank": 4,
-      "task": "Push Aidan's six quote queue",
+      "task": "Answer Ubiquity logo question",
       "owner": "Sam / Aidan",
       "status": "urgent today"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Ronald's deodorant decision",
-      "why": "Three opportunities are gated on whether PLL makes anhydrous/stick deodorant.",
-      "impact": "high",
-      "since": "today"
-    },
-    {
-      "item": "Aarav's NDA edit approval",
-      "why": "Two edits are the only stated blocker to signature and formula return.",
+      "item": "Aidan quote queue",
+      "why": "Nine costing requests have no returned quote; Honcho is a 30,000-unit customer commitment.",
       "impact": "high",
       "since": "Sep 16"
     },
     {
-      "item": "Amanda thread ownership",
-      "why": "Two desks gave contradictory guidance and a countersigned NDA was promised but not delivered.",
+      "item": "Aarav NDA redline",
+      "why": "Two edits block formula transfer and technical review.",
       "impact": "high",
-      "since": "today"
+      "since": "Sep 16"
     },
     {
-      "item": "Laura coverage",
-      "why": "Laura is out Sep 17–29 with six open lanes.",
+      "item": "Ubiquity logo answer",
+      "why": "Oct 1 tradeshow deadline; Laura is out until Sep 29.",
       "impact": "high",
-      "since": "Sep 17"
+      "since": "Sep 19"
+    },
+    {
+      "item": "Email Agent controls",
+      "why": "Weekend sends created pricing, MOQ, delivery, booking, and duplicate-request risk.",
+      "impact": "high",
+      "since": "Sep 15"
     }
   ],
   "agentHub": {
@@ -119,32 +119,56 @@
   },
   "meetings": [
     {
-      "timeISO": "2026-09-18T10:00:00-04:00",
-      "time": "10:00 AM ET",
-      "title": "Shameka Lee",
-      "who": "Shameka Lee",
-      "join": "https://meet.google.com/odx-ncxu-xyf",
+      "timeISO": "2026-09-21T10:30:00-04:00",
+      "time": "10:30 AM ET",
+      "title": "PLL Discovery Call: Billy Ellison",
+      "who": "Billy Ellison",
+      "join": "https://meet.google.com/ung-cjsa-unw",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-18T13:30:00-04:00",
-      "time": "1:30 PM ET",
-      "title": "EPHIX Shotlist — Hawke Media",
-      "who": "Desiree Moore, Karlie Bodine, Amanda Martinez",
-      "join": "https://meet.google.com/vrw-rhku-qfg",
+      "timeISO": "2026-09-21T12:00:00-04:00",
+      "time": "12:00 PM ET",
+      "title": "Israel Olusegun and Sam Salim",
+      "who": "Israel Olusegun (support@astro7.ca)",
+      "join": "https://meet.google.com/osp-ukwa-nux",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-18T14:00:00-04:00",
-      "time": "2:00 PM ET",
-      "title": "Delphos / Max",
-      "who": "Delphos House",
-      "join": "https://meet.google.com/nxd-nrfr-ayi",
+      "timeISO": "2026-09-21T12:30:00-04:00",
+      "time": "12:30 PM ET",
+      "title": "Jay and Sam Salim",
+      "who": "Jay (j.newbold06@gmail.com)",
+      "join": "https://meet.google.com/ppm-zkky-qte",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-21T16:00:00-04:00",
+      "time": "4:00 PM ET",
+      "title": "PLL Discovery Call: Delphos House (Max)",
+      "who": "Delphos House (Max)",
+      "join": "https://meet.google.com/nuc-cdxk-kuo",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-21T18:00:00-04:00",
+      "time": "6:00 PM ET",
+      "title": "Sam | James AI",
+      "who": "James Pitenis",
+      "join": "https://meet.google.com/wpt-nmso-zqb",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-22T16:30:00-04:00",
+      "time": "Tue 4:30 PM ET",
+      "title": "Marvie Wright and Sam Salim",
+      "who": "Marvie Wright + Jackson",
+      "join": "https://meet.google.com/mub-zdrd-ipg",
       "location": "Google Meet"
     }
   ],
-  "meetingsNote": "Delphos has two simultaneous events with different links. Use the Sam / Delphos link carrying contact@delphos.house; the Calendly-generated duplicate has no external attendee.",
-  "callsSource": "Outlook Calendar live search 2026-09-18, UTC converted to Eastern; duplicate entries de-duplicated.",
+  "meetingsNote": "Outlook Calendar live search for Sep 21–22, UTC converted to Eastern. Jay had a duplicate at 12:30; de-duplicated by time and attendee. No conflicting join links found.",
+  "callsSource": "Outlook Calendar live search 2026-09-21 through 2026-09-22, UTC converted to Eastern; duplicate entries de-duplicated.",
   "setupNeeds": [
     {
       "need": "CRM Developer Gmail connection is gone",
@@ -245,27 +269,27 @@
   "pipeline": [
     {
       "deal": "Honcho Hygiene (Cory Anderson)",
-      "units": "~30,000 across six scents",
-      "product": "anhydrous deodorant",
-      "stage": "signed NDA + brief; routed to Aidan; format decision pending",
+      "units": "30,000 across six scents",
+      "product": "aluminum-free deodorant",
+      "stage": "costing stalled with Aidan; feasibility pending Ronald",
       "value": "TBD",
-      "owner": "Sam / Aidan"
+      "owner": "Sam / Aidan / Ronald"
     },
     {
       "deal": "Milieu Skin (Aarav Shah)",
       "units": "TBD",
       "product": "TBD",
-      "stage": "two NDA edits requested; approval pending",
+      "stage": "two NDA edits; redline awaiting authorization",
       "value": "TBD",
       "owner": "Sam"
     },
     {
-      "deal": "Studio S5 (Amanda Peters)",
-      "units": "2 SKUs x 1,000",
-      "product": "TBD",
-      "stage": "signed NDA; ownership conflict; countersignature promised but absent",
+      "deal": "Quarry (Merrick)",
+      "units": "TBD",
+      "product": "three hair SKUs",
+      "stage": "full brief received; competitive evaluation; costing needed",
       "value": "TBD",
-      "owner": "TBD"
+      "owner": "Sam / Aidan"
     }
   ]
 }
