@@ -1,62 +1,68 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-21T11:07:13Z",
-  "generatedLabel": "Sep 21 2026 · morning refresh",
+  "generatedISO": "2026-09-22T11:02:25Z",
+  "generatedLabel": "Sep 22 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
-    "note": "Ads reporting caveat from Sep 18 morning: account totals reconcile, but campaign roster changed (4 vs 6), Samples disappeared, and a paused campaign shows spend; do not enforce cap from this report."
+    "note": "Last verified Ads cache is Sep 18; Sep 21 nightly refresh failed with zero campaigns/accounts and nothing was published. Do not enforce cap from stale/unverified reporting."
   },
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Call Aidan and rank nine quote requests",
-      "owner": "Sam",
+      "task": "Get Aidan's real fill and labor number behind the $1.75 Hunter price",
+      "owner": "Sam / Aidan",
       "status": "urgent today"
     },
     {
       "rank": 2,
-      "task": "Authorize and return Aarav NDA redline",
+      "task": "Call Riley at Twincraft: thank him and ask what is in his overflow",
       "owner": "Sam",
-      "status": "needs approval today"
+      "status": "urgent today"
     },
     {
       "rank": 3,
-      "task": "Confirm aluminum-free deodorant feasibility",
-      "owner": "Sam / Ronald",
-      "status": "urgent today"
+      "task": "Follow up Newell Brands, then reply to Amanda Peters",
+      "owner": "Sam",
+      "status": "overdue / urgent today"
     },
     {
       "rank": 4,
-      "task": "Answer Ubiquity logo question",
-      "owner": "Sam / Aidan",
-      "status": "urgent today"
+      "task": "Honcho next steps: Sam's NDA signature, Ron's capability answer and return date",
+      "owner": "Sam / Ron",
+      "status": "blocked today"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Aidan quote queue",
-      "why": "Nine costing requests have no returned quote; Honcho is a 30,000-unit customer commitment.",
+      "item": "Honcho NDA signature",
+      "why": "Signature image or signed page 3 is needed for the countersigned NDA.",
       "impact": "high",
-      "since": "Sep 16"
+      "since": "Sep 21"
     },
     {
-      "item": "Aarav NDA redline",
-      "why": "Two edits block formula transfer and technical review.",
+      "item": "Google Calendar edit approval for Marvie room",
+      "why": "Marvie is today at 4:30 PM ET; only the Gmail account is listed as guest.",
       "impact": "high",
-      "since": "Sep 16"
+      "since": "Sep 22"
     },
     {
-      "item": "Ubiquity logo answer",
-      "why": "Oct 1 tradeshow deadline; Laura is out until Sep 29.",
+      "item": "Authorize hard send time block",
+      "why": "Backslash-n bug remains live; Delphos House received four dead join links.",
       "impact": "high",
-      "since": "Sep 19"
+      "since": "Sep 21"
     },
     {
-      "item": "Email Agent controls",
-      "why": "Weekend sends created pricing, MOQ, delivery, booking, and duplicate-request risk.",
+      "item": "Ron vacation return date",
+      "why": "Needed to pin the October Honcho three-way call.",
       "impact": "high",
-      "since": "Sep 15"
+      "since": "Sep 22"
+    },
+    {
+      "item": "Google Ads reauthorization",
+      "why": "Sep 21 nightly refresh returned zero campaigns and zero accounts; nothing was published.",
+      "impact": "medium",
+      "since": "Sep 21"
     }
   ],
   "agentHub": {
@@ -114,50 +120,10 @@
       "to": "Ads Agent",
       "task": "Sep 13 managed/legacy spend and attribution refresh; routing fix awaits approval.",
       "status": "completed",
-      "note": "Latest ledger dispatch; no newer record."
+      "note": "Latest dispatch record in live ledger; no newer record."
     }
   },
   "meetings": [
-    {
-      "timeISO": "2026-09-21T10:30:00-04:00",
-      "time": "10:30 AM ET",
-      "title": "PLL Discovery Call: Billy Ellison",
-      "who": "Billy Ellison",
-      "join": "https://meet.google.com/ung-cjsa-unw",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-21T12:00:00-04:00",
-      "time": "12:00 PM ET",
-      "title": "Israel Olusegun and Sam Salim",
-      "who": "Israel Olusegun (support@astro7.ca)",
-      "join": "https://meet.google.com/osp-ukwa-nux",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-21T12:30:00-04:00",
-      "time": "12:30 PM ET",
-      "title": "Jay and Sam Salim",
-      "who": "Jay (j.newbold06@gmail.com)",
-      "join": "https://meet.google.com/ppm-zkky-qte",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-21T16:00:00-04:00",
-      "time": "4:00 PM ET",
-      "title": "PLL Discovery Call: Delphos House (Max)",
-      "who": "Delphos House (Max)",
-      "join": "https://meet.google.com/nuc-cdxk-kuo",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-21T18:00:00-04:00",
-      "time": "6:00 PM ET",
-      "title": "Sam | James AI",
-      "who": "James Pitenis",
-      "join": "https://meet.google.com/wpt-nmso-zqb",
-      "location": "Google Meet"
-    },
     {
       "timeISO": "2026-09-22T16:30:00-04:00",
       "time": "Tue 4:30 PM ET",
@@ -165,52 +131,54 @@
       "who": "Marvie Wright + Jackson",
       "join": "https://meet.google.com/mub-zdrd-ipg",
       "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-23T13:30:00-04:00",
+      "time": "Wed 1:30 PM ET",
+      "title": "PLL & Jake Rosen Entertainment Introduction Call",
+      "who": "Open Influence + Jake Rosen Entertainment + James Pitenis",
+      "join": "https://meet.google.com/zfv-trzg-bta",
+      "location": "Google Meet"
     }
   ],
-  "meetingsNote": "Outlook Calendar live search for Sep 21–22, UTC converted to Eastern. Jay had a duplicate at 12:30; de-duplicated by time and attendee. No conflicting join links found.",
-  "callsSource": "Outlook Calendar live search 2026-09-21 through 2026-09-22, UTC converted to Eastern; duplicate entries de-duplicated.",
+  "meetingsNote": "Outlook Calendar live search for Sep 22–23, UTC converted to Eastern. Two events found; no duplicate or conflicting join links. Marvie Wright is today at 4:30 PM ET, but only the Gmail account is listed as a guest, so Sam must approve Google Calendar edit access or be signed into privatelabellabsllc@gmail.com to admit her.",
+  "callsSource": "Outlook Calendar live search 2026-09-22 through 2026-09-23, UTC converted to Eastern; duplicate entries de-duplicated.",
   "setupNeeds": [
     {
-      "need": "CRM Developer Gmail connection is gone",
-      "detail": "privatelabellabsllc@gmail.com no longer appears in the connection list. The daily 8am CRM Developer inbox check and the CRM UPDATE REQUEST workflow cannot run until it is reconnected.",
+      "need": "Google Ads reauthorization",
+      "detail": "The Sep 21 9 PM nightly cache refresh failed with zero campaigns and zero accounts. Nothing was published; preserve the last verified Ads cache until reauthorized.",
       "owner": "Sam",
       "impact": "high"
     },
     {
-      "need": "Approve creating the 'PLL Command' shared drive",
-      "unblocks": "All agents (shared source of truth + ledger)",
-      "why": "One-click approval card — the foundation everything reads/writes",
-      "waiting": "Sep 2"
+      "need": "Google Calendar edit access for Marvie room",
+      "detail": "Today Sep 22 at 4:30 PM ET, Marvie and her colleague have the Meet link but the underlying event lists only the Gmail account as guest.",
+      "owner": "Sam",
+      "impact": "high"
     },
     {
-      "need": "Connect a meeting notetaker (Fireflies/Fathom/Otter) — later",
-      "unblocks": "Email/Sales + Executive",
-      "why": "Real-time meeting notes + action items to you and me. Free tier possible; gated by approval",
-      "waiting": "Sep 2"
+      "need": "Authorize a hard send time block for Email Agent bug",
+      "detail": "Literal backslash-n bug remains live; corrupted link sent Sep 21 7:04 PM and Delphos House has four dead join links.",
+      "owner": "Sam",
+      "impact": "high"
     },
     {
-      "need": "Grant SEO/GEO agent its own Google Search Console + GA4 access (its workspace)",
-      "unblocks": "SEO/GEO Agent",
-      "why": "Can't do real organic/technical SEO work without console + analytics",
-      "waiting": "Sep 2"
+      "need": "Ron vacation return date",
+      "detail": "Needed to pin the first-week-of-October Honcho three-way call.",
+      "owner": "Sam",
+      "impact": "high"
     },
     {
-      "need": "Sit down with Laura to connect email, WhatsApp, named CRM login",
-      "unblocks": "Laura's agent",
-      "why": "Workspace live but connections empty; can't operate until connected",
-      "waiting": "ongoing"
+      "need": "Sam signature for Honcho NDA",
+      "detail": "Signature image or signed page 3 needed before countersigned NDA can be sent.",
+      "owner": "Sam",
+      "impact": "high"
     },
     {
-      "need": "Aidan reconnect WhatsApp + CRM sessions",
-      "unblocks": "Aidan's agent",
-      "why": "Signed out — brief feed is Outlook-only until reconnected",
-      "waiting": "ongoing"
-    },
-    {
-      "need": "Confirm the meetings source: grant calendar access on Sam's Outlook (currently mail-only) OR name the calendar I should read",
-      "unblocks": "Today's Meetings feed + pre-meeting alarm",
-      "why": "The Outlook connection here reads mail only, not the calendar. Reliable daily meeting pull + accurate 2-min alarm needs a real calendar source",
-      "waiting": "Sep 2"
+      "need": "Fireflies connected",
+      "detail": "23 recorded calls are available; no setup blocker remains.",
+      "owner": "Executive",
+      "impact": "low"
     }
   ],
   "aiSuggestions": [
@@ -225,71 +193,79 @@
   "agentAccountability": [
     {
       "agent": "Executive (COO)",
-      "lastDispatch": "OS master build + cockpit (overnight Sep 2)",
+      "lastDispatch": "Morning Command Lab refresh Sep 22",
       "status": "in progress",
       "honesty": "clean",
-      "note": "Runs all lanes; QC honesty sweeps"
+      "note": "Refreshes brief/cockpit; preserves verified Ads cache."
     },
     {
       "agent": "Email / Sales",
-      "lastDispatch": "ConvertFlow outbound + NDA sends (Amanda, Dirk)",
+      "lastDispatch": "Outbound control and link-defect audit",
       "status": "under audit",
-      "honesty": "FLAG — told client(s) 'we started' before true (Aug 28)",
-      "note": "Charter honesty rule being embedded; behavior audit pending"
+      "honesty": "FLAG — literal backslash-n bug still live",
+      "note": "Four dead Delphos House links; hard send time block awaits Sam."
     },
     {
       "agent": "CRM Developer",
-      "lastDispatch": "Open defect sweep",
+      "lastDispatch": "Quote desk / costing truth",
       "status": "monitoring",
       "honesty": "verify-every-fix policy",
-      "note": "Independently live-verify all claimed fixes + adjacent regressions"
+      "note": "54 quotes, 50 drafts, zero ever sent; Aidan costing bottleneck."
     },
     {
       "agent": "SEO / GEO",
       "lastDispatch": "not yet awakened",
       "status": "not started",
       "honesty": "n/a",
-      "note": "Needs Search Console + GA4 in its workspace to start"
+      "note": "Needs Search Console + GA4."
     },
     {
       "agent": "Ads",
-      "lastDispatch": "Nightly brief + weekly optimization",
-      "status": "trust gap",
-      "honesty": "FLAG — filed false report Aug 2; independent verification required",
-      "note": "Zero conversion tracking; manual-CPC revert pending Sam"
+      "lastDispatch": "Nightly refresh Sep 21",
+      "status": "blocked",
+      "honesty": "cache preserved; reauthorization needed",
+      "note": "Zero campaigns/accounts returned; nothing published."
     },
     {
       "agent": "Content",
       "lastDispatch": "not yet stood up",
       "status": "not started",
       "honesty": "n/a",
-      "note": "Part of six-agent rollout"
+      "note": "Part of six-agent rollout."
     }
   ],
   "pipeline": [
     {
-      "deal": "Honcho Hygiene (Cory Anderson)",
-      "units": "30,000 across six scents",
-      "product": "aluminum-free deodorant",
-      "stage": "costing stalled with Aidan; feasibility pending Ronald",
+      "deal": "Hunter Amenities (Dan Hunter)",
+      "units": "80,000/month",
+      "product": "conditioner program",
+      "stage": "pricing sent at $1.75 batch/fill; real fill/labor/overhead costing pending Aidan",
       "value": "TBD",
-      "owner": "Sam / Aidan / Ronald"
+      "owner": "Sam / Aidan"
     },
     {
-      "deal": "Milieu Skin (Aarav Shah)",
+      "deal": "Honcho Hygiene (Cory Anderson)",
+      "units": "30,000–35,000 opening; 3 SKUs (2 scented, 1 unscented)",
+      "product": "deodorant",
+      "stage": "corrected brief sent; NDA signature, Ron capability/110F answer, and return date pending",
+      "value": "$2.25–$3.25 target/unit",
+      "owner": "Sam / Ron"
+    },
+    {
+      "deal": "Newell Brands",
       "units": "TBD",
       "product": "TBD",
-      "stage": "two NDA edits; redline awaiting authorization",
+      "stage": "Sep 15 call; no follow-up in a week",
       "value": "TBD",
       "owner": "Sam"
     },
     {
-      "deal": "Quarry (Merrick)",
+      "deal": "Amanda Peters",
       "units": "TBD",
-      "product": "three hair SKUs",
-      "stage": "full brief received; competitive evaluation; costing needed",
+      "product": "TBD",
+      "stage": "inbound Sep 21; reply pending",
       "value": "TBD",
-      "owner": "Sam / Aidan"
+      "owner": "Sam"
     }
   ]
 }

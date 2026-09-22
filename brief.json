@@ -1,170 +1,200 @@
 {
-  "date": "2026-09-21",
-  "ts": "2026-09-21T11:07:13Z",
+  "date": "2026-09-22",
+  "ts": "2026-09-22T11:02:25Z",
   "brief": [
     {
-      "t": "Aidan has nine costing requests and has returned zero; put Honcho Hygiene’s 30,000-unit deodorant job first and set dates on every quote.",
+      "t": "Hunter Amenities is the largest deal in the building: 80,000 conditioner units per month. Sam is at $1.75 batch and fill, but Aidan still owes real fill, labor, and overhead costing; Q-0065 shows that line at $0.00.",
       "hot": true
     },
     {
-      "t": "Confirm with Ronald whether PLL can make aluminum-free deodorant at 5,000 units per scent before pricing the Honcho job.",
+      "t": "Call Riley at Twincraft to thank him and ask what else is in his overflow. He has referred Cory Anderson, Newell Brands, and Amanda Peters—the best acquisition channel PLL has.",
       "hot": true
     },
     {
-      "t": "Return Aarav Shah’s Milieu Skin NDA redline today; his two edits are reasonable and the formula transfer is blocked until signature.",
+      "t": "Newell Brands has had no follow-up since the Sep 15 call, and Amanda Peters reached out Sep 21 and is still unanswered. Clear both before moving to Honcho next steps.",
       "hot": true
     },
     {
-      "t": "Ubiquity’s Oct 1 logo question is routed to Laura, who is out until Sep 29; Sam or Aidan must answer Lauren today.",
+      "t": "Honcho is three SKUs—two scented and one unscented—with roughly 30,000 to 35,000 opening units, not seven SKUs or 15,000 total. Cory targets $2.25–$3.25 per finished filled unit; Twincraft MOQ is 20,000 per scent.",
       "hot": true
     },
     {
-      "t": "The Email Agent sent roughly 35 weekend messages, booked three calls, made pricing and delivery promises, and duplicated Aidan requests; Sam must answer the three Sep 15 control questions.",
+      "t": "The quote desk is the R2150 choke point: 15 requests went to Aidan since Sep 16, only one came back; 54 CRM quotes exist, 50 are still drafts, and zero have ever been sent.",
       "hot": true
     },
     {
-      "t": "Quarry sent a full three-SKU formulation brief and is shopping labs; speed matters while nine costing requests remain stuck.",
+      "t": "The Email Agent backslash-n bug is still live; a corrupted link went out Sep 21 at 7:04 PM and Delphos House has received four dead join links. Sam has not authorized a hard send time block.",
       "hot": true
     },
     {
-      "t": "DNS is still missing DMARC and still uses the old SPF value on all three domains.",
+      "t": "Fireflies is connected with 23 recorded calls available. Google Ads nightly refresh failed Sep 21 with zero campaigns and accounts; the last verified Ads cache remains unchanged.",
       "hot": false
     }
   ],
   "next": [
-    "Call Aidan and rank nine quotes, Honcho first",
-    "Authorize and return Aarav NDA redline",
-    "Send Ronald and Aaron the ten technical questions",
-    "Answer Ubiquity before Oct 1"
+    "Get Aidan's real fill and labor number behind the $1.75 Hunter price",
+    "Call Riley at Twincraft: thank him and ask what is in his overflow",
+    "Follow up Newell Brands, then reply to Amanda Peters",
+    "Move Honcho forward: Sam's NDA signature, Ron's capability answer, and return date"
   ],
   "kb": [
     {
       "keys": [
-        "Aidan",
-        "quotes"
+        "Hunter Amenities",
+        "Dan Hunter",
+        "Q-0065"
       ],
-      "a": "Aidan has nine costing requests with no returned quote, including Honcho Hygiene at 30,000 units across six scents. Sam needs to rank them in writing, put Honcho first, and assign a date to each."
+      "a": "Hunter Amenities is the largest deal in the building at 80,000 conditioner units per month. Sam is at $1.75 batch and fill, while Aidan still owes real fill, labor, and overhead costing; Q-0065 currently shows that line at $0.00."
     },
     {
       "keys": [
-        "Honcho Hygiene",
         "Cory Anderson",
-        "deodorant"
+        "Honcho Hygiene",
+        "Twincraft"
       ],
-      "a": "Honcho needs pricing for 30,000 units across six deodorant scents, with a five-day customer expectation. Ronald still must confirm PLL can make aluminum-free deodorant at 5,000 units per scent."
+      "a": "Honcho is three SKUs: two scented and one unscented, roughly 30,000–35,000 opening units. Cory targets $2.25–$3.25 per finished filled unit, and Twincraft referred him because its MOQ is 20,000 per scent."
     },
     {
       "keys": [
-        "Aarav Shah",
-        "Milieu Skin",
-        "NDA"
+        "Ron",
+        "Honcho capability"
       ],
-      "a": "Aarav requested two reasonable NDA edits covering his incoming formulas and a narrower purpose. Return the redline today; then Ronald and Aaron should answer his ten technical transfer and QC questions."
+      "a": "Ron still must answer whether PLL can make the anhydrous hot-pour stick and support 110F stability, and confirm his vacation return date. No Honcho sample date should be given until Ron reviews the brief."
     },
     {
       "keys": [
-        "Ubiquity",
-        "Lauren",
-        "Laura"
+        "Riley",
+        "Twincraft referrals"
       ],
-      "a": "Lauren is waiting for an answer about putting Ubiquity’s logo on the product before the Oct 1 tradeshow. The request was routed to Laura, who is out until Sep 29, so Sam or Aidan must take it."
+      "a": "Riley at Twincraft has referred Cory Anderson, Newell Brands, and Amanda Peters. Sam needs to thank him and ask what else is in his overflow; this is PLL’s best acquisition channel."
+    },
+    {
+      "keys": [
+        "Newell Brands"
+      ],
+      "a": "Newell Brands had a call on Sep 15 and has received no follow-up for a week. It is the third R2150 lane after Hunter costing and the Riley thank-you call."
+    },
+    {
+      "keys": [
+        "Amanda Peters"
+      ],
+      "a": "Amanda Peters reached out on Sep 21 and is still unanswered. Reply after the Newell follow-up, without inventing a sample date or commitment."
+    },
+    {
+      "keys": [
+        "Aidan",
+        "quote desk",
+        "Q-0065"
+      ],
+      "a": "Fifteen quote requests went to Aidan since Sep 16 and only one came back. The CRM has 54 quotes total, 50 still drafts, and zero ever sent; the real Hunter fill, labor, and overhead number is today’s choke-point task."
     },
     {
       "keys": [
         "Email Agent",
-        "weekend"
+        "backslash-n",
+        "Delphos House"
       ],
-      "a": "The Email Agent sent roughly 35 messages over the weekend, booked three calls, made pricing and delivery promises, and duplicated costing requests. Sam still needs to answer the three control questions from Sep 15."
+      "a": "The Email Agent backslash-n link bug is still live. A corrupted link went out Sep 21 at 7:04 PM, and Delphos House has received four emails with dead join links; Sam has not authorized a hard send time block."
     },
     {
       "keys": [
-        "Merrick",
-        "Quarry"
+        "Fireflies",
+        "recorded calls"
       ],
-      "a": "Merrick sent a complete formulation brief for three SKUs and says Quarry is evaluating multiple labs. This is a real competitive opportunity where turnaround matters."
+      "a": "Fireflies is now connected to this workspace, with 23 recorded calls available for transcript review."
     },
     {
       "keys": [
-        "Billy Ellison",
-        "Israel Olusegun",
-        "Jay"
+        "Marvie Wright",
+        "meeting"
       ],
-      "a": "Today’s calls are Billy at 10:30 AM, Israel at noon, and Jay at 12:30 PM ET. Billy joins at meet.google.com/ung-cjsa-unw, Israel at meet.google.com/osp-ukwa-nux, and Jay at meet.google.com/ppm-zkky-qte."
+      "a": "Marvie Wright is today, Sep 22 at 4:30 PM ET, at meet.google.com/mub-zdrd-ipg. She and her colleague have the link, but the underlying Google event lists only the Gmail account as a guest; Sam must approve Google Calendar edit access or be signed into privatelabellabsllc@gmail.com to admit her."
+    },
+    {
+      "keys": [
+        "Jake Rosen Entertainment",
+        "Open Influence"
+      ],
+      "a": "PLL and Jake Rosen Entertainment have an introduction call tomorrow, Sep 23 at 1:30 PM ET, at meet.google.com/zfv-trzg-bta, with Open Influence and James Pitenis."
     }
   ],
   "topTasks": [
-    "Call Aidan and rank nine quote requests",
-    "Authorize and return Aarav NDA redline",
-    "Confirm aluminum-free deodorant feasibility with Ronald",
-    "Answer Ubiquity logo question"
+    "Get Aidan's real fill and labor number behind the $1.75 Hunter price",
+    "Call Riley at Twincraft and ask what else is in his overflow",
+    "Follow up Newell Brands and reply to Amanda Peters",
+    "Get Honcho's countersigned NDA and Ron's capability/return-date answers"
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Call Aidan and rank nine quote requests",
+      "top_task": "Get Aidan's real fill and labor number behind the $1.75 Hunter price",
       "tasks": [
         {
-          "title": "Call Aidan; put Honcho first and date all nine quotes",
+          "title": "Press Aidan for Hunter fill/labor/overhead costing",
           "due": "Today"
         },
         {
-          "title": "Authorize and return Aarav NDA redline",
+          "title": "Call Riley at Twincraft and thank him; ask about overflow",
           "due": "Today"
         },
         {
-          "title": "Answer Ubiquity logo question",
+          "title": "Follow up Newell and Amanda; then sign Honcho NDA",
           "due": "Today"
         }
       ],
-      "notes": "Also answer the Email Agent control questions and spend 15 minutes on DNS."
+      "notes": "Also authorize a hard send time block for the live backslash-n bug if desired, and resolve Marvie room admission."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Return nine costings in written priority order",
+      "top_task": "Return Hunter real fill/labor/overhead costing",
       "tasks": [
         {
-          "title": "Cost Honcho 30,000-unit deodorant first",
+          "title": "Replace Q-0065 $0.00 fill/labor/overhead with real cost",
           "due": "Today"
         },
         {
-          "title": "Return dates for remaining eight requests",
-          "due": "This week"
-        }
-      ],
-      "notes": "No quote has come back from the nine requests."
-    },
-    "ronald": {
-      "display_name": "Ronald",
-      "top_task": "Confirm aluminum-free deodorant feasibility",
-      "tasks": [
-        {
-          "title": "Answer whether PLL can make aluminum-free deodorant at 5,000 units per scent",
+          "title": "Work the remaining quote queue; 54 total quotes, 50 drafts",
           "due": "Today"
         }
       ],
-      "notes": "This gates Honcho pricing."
+      "notes": "15 quote requests sent since Sep 16; only one returned."
     },
-    "aaron": {
-      "display_name": "Aaron",
-      "top_task": "Answer Milieu Skin technical and QC questions",
+    "ron": {
+      "display_name": "Ron",
+      "top_task": "Answer Honcho technical capability and stability questions",
       "tasks": [
         {
-          "title": "Review ten transfer, viscosity, water activity, and USP 61/62 questions",
+          "title": "Confirm anhydrous hot-pour stick capability and 110F stability",
+          "due": "Before October call"
+        },
+        {
+          "title": "Confirm vacation return date for three-way call",
           "due": "Today"
         }
       ],
-      "notes": "Coordinate with Ronald after NDA redline."
+      "notes": "Ron is on vacation; no Honcho sample date until he reviews the brief."
+    },
+    "riley": {
+      "display_name": "Riley at Twincraft",
+      "top_task": "Receive Sam thank-you and discuss overflow referrals",
+      "tasks": [
+        {
+          "title": "Call Riley about Cory, Newell, Amanda, and additional overflow",
+          "due": "Today"
+        }
+      ],
+      "notes": "Three referrals; best acquisition channel PLL has."
     }
   },
   "revenueActions": [
-    "Clear Honcho 30,000-unit quote first",
-    "Process Quarry’s competitive three-SKU brief",
-    "Return Aarav NDA to unlock formula transfer",
-    "Answer Ubiquity before Oct 1 tradeshow"
+    "Close Hunter costing gap behind $1.75 batch/fill price",
+    "Thank Riley and mine Twincraft overflow",
+    "Follow up Newell Brands and Amanda Peters",
+    "Advance corrected three-SKU Honcho brief and NDA"
   ],
   "pipelineStat": {
-    "summary": "Nine costing requests are stalled with Aidan, including Honcho Hygiene at 30,000 units. Quarry is a competitive three-SKU opportunity; Milieu Skin is blocked on a two-edit NDA redline.",
-    "source": "DAILY-TASKS-2026-09-21.md"
+    "summary": "Hunter Amenities is the largest deal at 80,000 units/month; Q-0065 still has $0.00 for fill/labor/overhead. Honcho is 3 SKUs and 30,000–35,000 opening units at a $2.25–$3.25 target; Newell and Amanda need follow-up.",
+    "source": "Sam verified morning facts Sep 22, 2026"
   },
   "adsAgentBrief": "Nightly read-only retry 2026-09-18: managed current 7-day $87.23, 291 clicks, CPC $0.30; account $323.11, 404 clicks; prior managed $162.40, 348 clicks; today managed $4.81; pause-history anomaly unresolved; no changes.",
   "adsIntelligence": {
