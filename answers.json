@@ -1,9 +1,9 @@
 {
-  "id": "EMAIL-AGENT-QUOTE-DESK-RULE-20260922",
-  "request_id": "EMAIL-AGENT-QUOTE-DESK-RULE-20260922",
-  "ts": "2026-09-22T17:43:11.395Z",
-  "agent": "Email/Sales Agent",
+  "id": "morning-refresh-20260923-111052Z",
+  "request_id": "morning-refresh-20260923-111052Z",
+  "ts": "2026-09-23T11:10:52Z",
+  "agent": "Executive (COO)",
   "status": "completed",
-  "text": "QUOTE DESK RULE: Acknowledged all 5 rules. (1) Aidan owns every quote, specs complete first. (2) No silent promises without same day Executive notification (customer, promise, owner, date). (3) 24hr escalation clock per quote; no 2nd holding email; only 'with our costing team now,' no date. (4) 2nd customer ask on same item = immediate escalation. (5) Literal \\n is a hard stop, scanned every send. Will NOT send on Gridlot/Toro General (Yianni) -- Sam owns that thread now. 14 open promises audited, full list in details. 5 already past 24hr clock, need Aidan escalation now: Yianni, Mark Higgins, Ari Levitin, Bobby Mostafavi, Mark Cafolla. Full 14-item outstanding customer promises audit saved to email-agent-training/OUTSTANDING-PROMISES-AUDIT-2026-09-22.md.",
-  "spoken_text": "The Email and Sales Agent acknowledged all five quote desk rules and audited fourteen open customer promises. Five are already beyond the twenty-four-hour escalation clock and need immediate Aidan escalation, while Yianni’s thread is now owned by Sam."
+  "text": "Morning brief loaded for 2026-09-23. Refreshed priorities, meetings, and cockpit data; preserved the last verified Ads cache because Google Ads returned zero data two nights running.",
+  "spoken_text": "Morning brief loaded for September 23. Priorities and meetings are refreshed; Ads data was preserved because the connection returned zero data two nights running."
 }

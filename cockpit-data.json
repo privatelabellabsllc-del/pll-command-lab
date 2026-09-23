@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-22T11:02:25Z",
-  "generatedLabel": "Sep 22 2026 · morning refresh",
+  "generatedISO": "2026-09-23T11:10:52Z",
+  "generatedLabel": "Sep 23 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,59 +10,41 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Get Aidan's real fill and labor number behind the $1.75 Hunter price",
-      "owner": "Sam / Aidan",
+      "task": "Finish Yianni / Toro General cost breakdown",
+      "owner": "Sam",
       "status": "urgent today"
     },
     {
       "rank": 2,
-      "task": "Call Riley at Twincraft: thank him and ask what is in his overflow",
+      "task": "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
       "owner": "Sam",
       "status": "urgent today"
     },
     {
       "rank": 3,
-      "task": "Follow up Newell Brands, then reply to Amanda Peters",
-      "owner": "Sam",
-      "status": "overdue / urgent today"
+      "task": "Get Aidan real fill/labor/overhead costing on Q-0065 for Dan Hunter",
+      "owner": "Sam / Aidan",
+      "status": "urgent today"
     },
     {
       "rank": 4,
-      "task": "Honcho next steps: Sam's NDA signature, Ron's capability answer and return date",
+      "task": "Advance Honcho at 15,000 + 15,000 + 5,000 units; reauthorize Google Ads",
       "owner": "Sam / Ron",
       "status": "blocked today"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Honcho NDA signature",
-      "why": "Signature image or signed page 3 is needed for the countersigned NDA.",
-      "impact": "high",
-      "since": "Sep 21"
-    },
-    {
-      "item": "Google Calendar edit approval for Marvie room",
-      "why": "Marvie is today at 4:30 PM ET; only the Gmail account is listed as guest.",
-      "impact": "high",
-      "since": "Sep 22"
-    },
-    {
-      "item": "Authorize hard send time block",
-      "why": "Backslash-n bug remains live; Delphos House received four dead join links.",
-      "impact": "high",
-      "since": "Sep 21"
-    },
-    {
-      "item": "Ron vacation return date",
-      "why": "Needed to pin the October Honcho three-way call.",
-      "impact": "high",
-      "since": "Sep 22"
-    },
-    {
       "item": "Google Ads reauthorization",
-      "why": "Sep 21 nightly refresh returned zero campaigns and zero accounts; nothing was published.",
-      "impact": "medium",
+      "why": "Google Ads returned zero campaigns/accounts two nights running; preserve the last verified Ads cache.",
+      "impact": "high",
       "since": "Sep 21"
+    },
+    {
+      "item": "Honcho next-step approvals",
+      "why": "Confirmed quantities are 15,000 + 15,000 + 5,000; move the corrected brief and pending technical/NDA steps forward.",
+      "impact": "high",
+      "since": "Sep 23"
     }
   ],
   "agentHub": {
@@ -125,60 +107,44 @@
   },
   "meetings": [
     {
-      "timeISO": "2026-09-22T16:30:00-04:00",
-      "time": "Tue 4:30 PM ET",
-      "title": "Marvie Wright and Sam Salim",
-      "who": "Marvie Wright + Jackson",
-      "join": "https://meet.google.com/mub-zdrd-ipg",
+      "timeISO": "2026-09-23T09:00:00-04:00",
+      "time": "Wed 9:00 AM ET",
+      "title": "PLL Discovery Call: Laifania Fleurantus",
+      "who": "Laifania Fleurantus",
+      "join": "https://meet.google.com/ywy-qfqz-tsh",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-23T13:30:00-04:00",
-      "time": "Wed 1:30 PM ET",
-      "title": "PLL & Jake Rosen Entertainment Introduction Call",
-      "who": "Open Influence + Jake Rosen Entertainment + James Pitenis",
-      "join": "https://meet.google.com/zfv-trzg-bta",
+      "timeISO": "2026-09-23T10:30:00-04:00",
+      "time": "Wed 10:30 AM ET",
+      "title": "PLL Discovery Call: Tracy Belle",
+      "who": "Tracy Belle",
+      "join": "https://meet.google.com/add-axuf-spd",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-23T15:00:00-04:00",
+      "time": "Wed 3:00 PM ET",
+      "title": "Amanda Peters / Studio S5",
+      "who": "Amanda Peters",
+      "join": "https://meet.google.com/nij-jjzd-srt",
       "location": "Google Meet"
     }
   ],
-  "meetingsNote": "Outlook Calendar live search for Sep 22–23, UTC converted to Eastern. Two events found; no duplicate or conflicting join links. Marvie Wright is today at 4:30 PM ET, but only the Gmail account is listed as a guest, so Sam must approve Google Calendar edit access or be signed into privatelabellabsllc@gmail.com to admit her.",
-  "callsSource": "Outlook Calendar live search 2026-09-22 through 2026-09-23, UTC converted to Eastern; duplicate entries de-duplicated.",
+  "meetingsNote": "Outlook Calendar live search for Sep 23–24, UTC converted to Eastern. Calendly/Google duplicate pairs were de-duplicated by time, attendee, and identical join link; no conflicting links. Amanda Peters / Studio S5 is listed at 3:00 PM ET with the calendar Meet link.",
+  "callsSource": "Outlook Calendar live search 2026-09-23 through 2026-09-24, UTC converted to Eastern; duplicate entries de-duplicated.",
   "setupNeeds": [
     {
       "need": "Google Ads reauthorization",
-      "detail": "The Sep 21 9 PM nightly cache refresh failed with zero campaigns and zero accounts. Nothing was published; preserve the last verified Ads cache until reauthorized.",
+      "detail": "Google Ads returned zero campaigns and zero accounts two nights running. Nothing new is published; preserve the last verified Ads cache until reauthorized.",
       "owner": "Sam",
       "impact": "high"
     },
     {
-      "need": "Google Calendar edit access for Marvie room",
-      "detail": "Today Sep 22 at 4:30 PM ET, Marvie and her colleague have the Meet link but the underlying event lists only the Gmail account as guest.",
-      "owner": "Sam",
+      "need": "Honcho next-step confirmation",
+      "detail": "Cory Anderson confirmed 15,000 + 15,000 + 5,000 units; corrected three-SKU brief and remaining technical/NDA steps need execution.",
+      "owner": "Sam / Ron",
       "impact": "high"
-    },
-    {
-      "need": "Authorize a hard send time block for Email Agent bug",
-      "detail": "Literal backslash-n bug remains live; corrupted link sent Sep 21 7:04 PM and Delphos House has four dead join links.",
-      "owner": "Sam",
-      "impact": "high"
-    },
-    {
-      "need": "Ron vacation return date",
-      "detail": "Needed to pin the first-week-of-October Honcho three-way call.",
-      "owner": "Sam",
-      "impact": "high"
-    },
-    {
-      "need": "Sam signature for Honcho NDA",
-      "detail": "Signature image or signed page 3 needed before countersigned NDA can be sent.",
-      "owner": "Sam",
-      "impact": "high"
-    },
-    {
-      "need": "Fireflies connected",
-      "detail": "23 recorded calls are available; no setup blocker remains.",
-      "owner": "Executive",
-      "impact": "low"
     }
   ],
   "aiSuggestions": [
@@ -193,7 +159,7 @@
   "agentAccountability": [
     {
       "agent": "Executive (COO)",
-      "lastDispatch": "Morning Command Lab refresh Sep 22",
+      "lastDispatch": "Morning Command Lab refresh Sep 23",
       "status": "in progress",
       "honesty": "clean",
       "note": "Refreshes brief/cockpit; preserves verified Ads cache."
@@ -236,36 +202,36 @@
   ],
   "pipeline": [
     {
+      "deal": "Yianni / Toro General",
+      "units": "TBD",
+      "product": "TBD",
+      "stage": "cost breakdown due today; Sam owns thread",
+      "value": "TBD",
+      "owner": "Sam"
+    },
+    {
+      "deal": "Juje proposal",
+      "units": "TBD",
+      "product": "TBD",
+      "stage": "proposal due to Kenna Whitnell, Kenni Kaufman, and Dan today",
+      "value": "TBD",
+      "owner": "Sam"
+    },
+    {
       "deal": "Hunter Amenities (Dan Hunter)",
       "units": "80,000/month",
       "product": "conditioner program",
-      "stage": "pricing sent at $1.75 batch/fill; real fill/labor/overhead costing pending Aidan",
+      "stage": "Q-0065 real fill/labor/overhead costing pending Aidan",
       "value": "TBD",
       "owner": "Sam / Aidan"
     },
     {
       "deal": "Honcho Hygiene (Cory Anderson)",
-      "units": "30,000–35,000 opening; 3 SKUs (2 scented, 1 unscented)",
+      "units": "15,000 + 15,000 + 5,000 confirmed",
       "product": "deodorant",
-      "stage": "corrected brief sent; NDA signature, Ron capability/110F answer, and return date pending",
+      "stage": "confirmed quantities; corrected brief and next steps pending",
       "value": "$2.25–$3.25 target/unit",
       "owner": "Sam / Ron"
-    },
-    {
-      "deal": "Newell Brands",
-      "units": "TBD",
-      "product": "TBD",
-      "stage": "Sep 15 call; no follow-up in a week",
-      "value": "TBD",
-      "owner": "Sam"
-    },
-    {
-      "deal": "Amanda Peters",
-      "units": "TBD",
-      "product": "TBD",
-      "stage": "inbound Sep 21; reply pending",
-      "value": "TBD",
-      "owner": "Sam"
     }
   ]
 }

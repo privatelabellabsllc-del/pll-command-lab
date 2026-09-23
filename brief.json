@@ -1,59 +1,43 @@
 {
-  "date": "2026-09-22",
-  "ts": "2026-09-22T11:02:25Z",
+  "date": "2026-09-23",
+  "ts": "2026-09-23T11:10:52Z",
   "brief": [
     {
-      "t": "Hunter Amenities is the largest deal in the building: 80,000 conditioner units per month. Sam is at $1.75 batch and fill, but Aidan still owes real fill, labor, and overhead costing; Q-0065 shows that line at $0.00.",
+      "t": "Yianni / Toro General cost breakdown is due today and is Sam-owned; do not let the quote desk send on that thread.",
       "hot": true
     },
     {
-      "t": "Call Riley at Twincraft to thank him and ask what else is in his overflow. He has referred Cory Anderson, Newell Brands, and Amanda Peters—the best acquisition channel PLL has.",
+      "t": "Send the Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan today.",
       "hot": true
     },
     {
-      "t": "Newell Brands has had no follow-up since the Sep 15 call, and Amanda Peters reached out Sep 21 and is still unanswered. Clear both before moving to Honcho next steps.",
+      "t": "Aidan must replace Q-0065 real fill, labor, and overhead costing for Dan Hunter; the current $0.00 line is not usable.",
       "hot": true
     },
     {
-      "t": "Honcho is three SKUs—two scented and one unscented—with roughly 30,000 to 35,000 opening units, not seven SKUs or 15,000 total. Cory targets $2.25–$3.25 per finished filled unit; Twincraft MOQ is 20,000 per scent.",
+      "t": "Honcho/Cory Anderson confirmed 15,000 + 15,000 + 5,000 units; keep the corrected three-SKU quantity and advance next steps.",
       "hot": true
     },
     {
-      "t": "The quote desk is the R2150 choke point: 15 requests went to Aidan since Sep 16, only one came back; 54 CRM quotes exist, 50 are still drafts, and zero have ever been sent.",
+      "t": "Today’s calls are Laifania Fleurantus at 9:00 AM, Tracy Belle at 10:30 AM, and Amanda Peters / Studio S5 at 3:00 PM ET.",
       "hot": true
     },
     {
-      "t": "The Email Agent backslash-n bug is still live; a corrupted link went out Sep 21 at 7:04 PM and Delphos House has received four dead join links. Sam has not authorized a hard send time block.",
+      "t": "Google Ads has returned zero data two nights running; reauthorization is required. Preserve the last verified Ads cache.",
       "hot": true
     },
     {
-      "t": "Fireflies is connected with 23 recorded calls available. Google Ads nightly refresh failed Sep 21 with zero campaigns and accounts; the last verified Ads cache remains unchanged.",
+      "t": "The live Ads metrics remain the last verified cache; no new Ads numbers or optimization should be published until the connection is restored.",
       "hot": false
     }
   ],
   "next": [
-    "Get Aidan's real fill and labor number behind the $1.75 Hunter price",
-    "Call Riley at Twincraft: thank him and ask what is in his overflow",
-    "Follow up Newell Brands, then reply to Amanda Peters",
-    "Move Honcho forward: Sam's NDA signature, Ron's capability answer, and return date"
+    "Finish Yianni / Toro General cost breakdown",
+    "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
+    "Get Aidan’s real fill/labor/overhead costing on Q-0065 for Dan Hunter",
+    "Advance Honcho at 15,000 + 15,000 + 5,000 units and reauthorize Google Ads"
   ],
   "kb": [
-    {
-      "keys": [
-        "Hunter Amenities",
-        "Dan Hunter",
-        "Q-0065"
-      ],
-      "a": "Hunter Amenities is the largest deal in the building at 80,000 conditioner units per month. Sam is at $1.75 batch and fill, while Aidan still owes real fill, labor, and overhead costing; Q-0065 currently shows that line at $0.00."
-    },
-    {
-      "keys": [
-        "Cory Anderson",
-        "Honcho Hygiene",
-        "Twincraft"
-      ],
-      "a": "Honcho is three SKUs: two scented and one unscented, roughly 30,000–35,000 opening units. Cory targets $2.25–$3.25 per finished filled unit, and Twincraft referred him because its MOQ is 20,000 per scent."
-    },
     {
       "keys": [
         "Ron",
@@ -82,14 +66,6 @@
     },
     {
       "keys": [
-        "Aidan",
-        "quote desk",
-        "Q-0065"
-      ],
-      "a": "Fifteen quote requests went to Aidan since Sep 16 and only one came back. The CRM has 54 quotes total, 50 still drafts, and zero ever sent; the real Hunter fill, labor, and overhead number is today’s choke-point task."
-    },
-    {
-      "keys": [
         "Email Agent",
         "backslash-n",
         "Delphos House"
@@ -105,59 +81,83 @@
     },
     {
       "keys": [
-        "Marvie Wright",
-        "meeting"
+        "Yianni",
+        "Toro General",
+        "Gridlot"
       ],
-      "a": "Marvie Wright is today, Sep 22 at 4:30 PM ET, at meet.google.com/mub-zdrd-ipg. She and her colleague have the link, but the underlying Google event lists only the Gmail account as a guest; Sam must approve Google Calendar edit access or be signed into privatelabellabsllc@gmail.com to admit her."
+      "a": "Yianni / Toro General’s cost breakdown is due today. Sam owns the thread; the quote desk should not send on it without Sam’s direction."
     },
     {
       "keys": [
-        "Jake Rosen Entertainment",
-        "Open Influence"
+        "Juje",
+        "Kenna Whitnell",
+        "Kenni Kaufman",
+        "Dan"
       ],
-      "a": "PLL and Jake Rosen Entertainment have an introduction call tomorrow, Sep 23 at 1:30 PM ET, at meet.google.com/zfv-trzg-bta, with Open Influence and James Pitenis."
+      "a": "The Juje proposal is due to Kenna Whitnell, Kenni Kaufman, and Dan today. Send the proposal without inventing terms or a commitment not yet approved."
+    },
+    {
+      "keys": [
+        "Aidan",
+        "quote desk",
+        "Q-0065",
+        "Dan Hunter"
+      ],
+      "a": "Aidan must provide real fill, labor, and overhead costing for Dan Hunter’s Q-0065; the current $0.00 line is not usable."
+    },
+    {
+      "keys": [
+        "Cory Anderson",
+        "Honcho Hygiene"
+      ],
+      "a": "Cory Anderson confirmed Honcho quantities of 15,000 + 15,000 + 5,000 units. Keep this confirmed quantity and the corrected three-SKU brief as the current basis for next steps."
     }
   ],
   "topTasks": [
-    "Get Aidan's real fill and labor number behind the $1.75 Hunter price",
-    "Call Riley at Twincraft and ask what else is in his overflow",
-    "Follow up Newell Brands and reply to Amanda Peters",
-    "Get Honcho's countersigned NDA and Ron's capability/return-date answers"
+    "Finish Yianni / Toro General cost breakdown due today",
+    "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
+    "Get Aidan’s real fill/labor/overhead costing on Q-0065 for Dan Hunter",
+    "Advance Honcho at 15,000 + 15,000 + 5,000 units",
+    "Reauthorize Google Ads after two zero-data nights"
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Get Aidan's real fill and labor number behind the $1.75 Hunter price",
+      "top_task": "Finish Yianni / Toro General cost breakdown due today",
       "tasks": [
         {
-          "title": "Press Aidan for Hunter fill/labor/overhead costing",
+          "title": "Finish Yianni / Toro General cost breakdown",
           "due": "Today"
         },
         {
-          "title": "Call Riley at Twincraft and thank him; ask about overflow",
+          "title": "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
           "due": "Today"
         },
         {
-          "title": "Follow up Newell and Amanda; then sign Honcho NDA",
+          "title": "Confirm Aidan Q-0065 real fill/labor/overhead costing",
+          "due": "Today"
+        },
+        {
+          "title": "Reauthorize Google Ads",
           "due": "Today"
         }
       ],
-      "notes": "Also authorize a hard send time block for the live backslash-n bug if desired, and resolve Marvie room admission."
+      "notes": "Today’s meetings: Laifania 9:00 AM, Tracy 10:30 AM, Amanda Peters / Studio S5 3:00 PM ET. Honcho is confirmed at 15,000 + 15,000 + 5,000 units."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Return Hunter real fill/labor/overhead costing",
+      "top_task": "Return real fill/labor/overhead costing on Q-0065 for Dan Hunter",
       "tasks": [
         {
           "title": "Replace Q-0065 $0.00 fill/labor/overhead with real cost",
           "due": "Today"
         },
         {
-          "title": "Work the remaining quote queue; 54 total quotes, 50 drafts",
+          "title": "Work the remaining quote queue",
           "due": "Today"
         }
       ],
-      "notes": "15 quote requests sent since Sep 16; only one returned."
+      "notes": "Yianni / Toro General cost breakdown is due today; Sam owns that thread and the quote desk must not send on it."
     },
     "ron": {
       "display_name": "Ron",
@@ -187,14 +187,14 @@
     }
   },
   "revenueActions": [
-    "Close Hunter costing gap behind $1.75 batch/fill price",
-    "Thank Riley and mine Twincraft overflow",
-    "Follow up Newell Brands and Amanda Peters",
-    "Advance corrected three-SKU Honcho brief and NDA"
+    "Finish Yianni / Toro General cost breakdown",
+    "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
+    "Close Hunter costing gap with real Q-0065 fill/labor/overhead",
+    "Advance Honcho confirmed 15,000 + 15,000 + 5,000 units"
   ],
   "pipelineStat": {
-    "summary": "Hunter Amenities is the largest deal at 80,000 units/month; Q-0065 still has $0.00 for fill/labor/overhead. Honcho is 3 SKUs and 30,000–35,000 opening units at a $2.25–$3.25 target; Newell and Amanda need follow-up.",
-    "source": "Sam verified morning facts Sep 22, 2026"
+    "summary": "Today’s revenue lanes are Yianni / Toro General costing, the Juje proposal, Hunter Q-0065 costing, and Honcho at 15,000 + 15,000 + 5,000 units. Google Ads reauthorization is blocked after two zero-data nights.",
+    "source": "Sam-confirmed morning facts Sep 23, 2026"
   },
   "adsAgentBrief": "Nightly read-only retry 2026-09-18: managed current 7-day $87.23, 291 clicks, CPC $0.30; account $323.11, 404 clicks; prior managed $162.40, 348 clicks; today managed $4.81; pause-history anomaly unresolved; no changes.",
   "adsIntelligence": {
