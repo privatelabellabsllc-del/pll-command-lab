@@ -1,9 +1,9 @@
 {
-  "id": "morning-refresh-20260923-111052Z",
-  "request_id": "morning-refresh-20260923-111052Z",
-  "ts": "2026-09-23T11:10:52Z",
-  "agent": "Executive (COO)",
+  "id": "EMAIL-AGENT-STAND-DOWN-20260923",
+  "request_id": "EMAIL-AGENT-STAND-DOWN-20260923",
+  "ts": "2026-09-23T14:10:00-04:00",
+  "agent": "Email/Sales Agent",
   "status": "completed",
-  "text": "Morning brief loaded for 2026-09-23. Refreshed priorities, meetings, and cockpit data; preserved the last verified Ads cache because Google Ads returned zero data two nights running.",
-  "spoken_text": "Morning brief loaded for September 23. Priorities and meetings are refreshed; Ads data was preserved because the connection returned zero data two nights running."
+  "text": "STAND DOWN CONFIRMED: All customer-facing sending is stopped immediately. Replies go to Outlook as drafts only, never sent; internal routing to Aidan, James, and Nikkie continues. The agent also confirmed the fact-versus-promise hard stop and updated its instructions.",
+  "spoken_text": "The Email and Sales Agent confirmed the stand-down. Customer-facing replies are now drafts only and will not be sent, while internal routing continues."
 }
