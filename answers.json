@@ -1,9 +1,5 @@
 {
-  "id": "EMAIL-AGENT-STAND-DOWN-20260923",
-  "request_id": "EMAIL-AGENT-STAND-DOWN-20260923",
-  "ts": "2026-09-23T14:10:00-04:00",
-  "agent": "Email/Sales Agent",
-  "status": "completed",
-  "text": "STAND DOWN CONFIRMED: All customer-facing sending is stopped immediately. Replies go to Outlook as drafts only, never sent; internal routing to Aidan, James, and Nikkie continues. The agent also confirmed the fact-versus-promise hard stop and updated its instructions.",
-  "spoken_text": "The Email and Sales Agent confirmed the stand-down. Customer-facing replies are now drafts only and will not be sent, while internal routing continues."
+  "id": "MORNING-BRIEF-20260924-110224Z",
+  "ts": "2026-09-24T11:02:24Z",
+  "text": "Morning brief loaded for 2026-09-24."
 }

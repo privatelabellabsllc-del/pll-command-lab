@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-23T11:10:52Z",
-  "generatedLabel": "Sep 23 2026 · morning refresh",
+  "generatedISO": "2026-09-24T11:02:24Z",
+  "generatedLabel": "Sep 24 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -10,41 +10,65 @@
   "r2150DoNext": [
     {
       "rank": 1,
-      "task": "Finish Yianni / Toro General cost breakdown",
-      "owner": "Sam",
+      "task": "Settle Juje pricing route with Kenna on 9:30 AM call",
+      "owner": "Sam / Kenna",
       "status": "urgent today"
     },
     {
       "rank": 2,
-      "task": "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
+      "task": "Resolve Amanda R&D scope and yesterday call terms; ship proposal",
       "owner": "Sam",
       "status": "urgent today"
     },
     {
       "rank": 3,
-      "task": "Get Aidan real fill/labor/overhead costing on Q-0065 for Dan Hunter",
-      "owner": "Sam / Aidan",
-      "status": "urgent today"
+      "task": "Get Yianni/Toro and Frank Luca quantity tiers by Friday",
+      "owner": "Aidan",
+      "status": "urgent Friday"
     },
     {
       "rank": 4,
-      "task": "Advance Honcho at 15,000 + 15,000 + 5,000 units; reauthorize Google Ads",
-      "owner": "Sam / Ron",
-      "status": "blocked today"
+      "task": "Replace Hunter Q-0065 $0.00 fill/labor/overhead with real costing",
+      "owner": "Aidan",
+      "status": "urgent today"
+    },
+    {
+      "rank": 5,
+      "task": "Replace Alma Henry’s dead Teams link and re-invite",
+      "owner": "Sam",
+      "status": "urgent today"
+    },
+    {
+      "rank": 6,
+      "task": "Book Israel Olusegun",
+      "owner": "Sam / Nikkie",
+      "status": "open today"
     }
   ],
   "waitingOnSam": [
     {
-      "item": "Google Ads reauthorization",
-      "why": "Google Ads returned zero campaigns/accounts two nights running; preserve the last verified Ads cache.",
+      "item": "Juje pricing route",
+      "why": "Ask Kenna whether proposal goes to Juje founders at PLL numbers or Brandhaus at PLL numbers for her re-quote; do not expose markup.",
       "impact": "high",
-      "since": "Sep 21"
+      "since": "Sep 24"
     },
     {
-      "item": "Honcho next-step approvals",
-      "why": "Confirmed quantities are 15,000 + 15,000 + 5,000; move the corrected brief and pending technical/NDA steps forward.",
+      "item": "Amanda Peters / Studio S5 terms",
+      "why": "Confirm $2,500 R&D per product ($5,000 total) and yesterday call terms before sending built proposal.",
       "impact": "high",
-      "since": "Sep 23"
+      "since": "Sep 24"
+    },
+    {
+      "item": "Alma Henry meeting link",
+      "why": "Friday 11:00 AM Calendly Teams link will fail; replace with Google Meet and re-invite.",
+      "impact": "high",
+      "since": "Sep 24"
+    },
+    {
+      "item": "Israel Olusegun booking",
+      "why": "No booking after Sep 21 no-show; use noon CRM review to schedule.",
+      "impact": "medium",
+      "since": "Sep 24"
     }
   ],
   "agentHub": {
@@ -100,50 +124,48 @@
     "lastDispatch": {
       "id": "ads-nightly-2026-09-13",
       "to": "Ads Agent",
-      "task": "Sep 13 managed/legacy spend and attribution refresh; routing fix awaits approval.",
+      "task": "Sep 13: managed $5.35/2,963i/43c, $30.65 under $36; legacy $25.74. T7 managed $147.01 ($104.99 under $252), legacy $257.30. Two new in-lane direct leads, both unattributed. Sep 53 leads; gclid 2/53; paid CPL not computable. No alerts or Ads changes. Routing fix awaits approval.",
       "status": "completed",
-      "note": "Latest dispatch record in live ledger; no newer record."
+      "note": ""
     }
   },
   "meetings": [
     {
-      "timeISO": "2026-09-23T09:00:00-04:00",
-      "time": "Wed 9:00 AM ET",
-      "title": "PLL Discovery Call: Laifania Fleurantus",
-      "who": "Laifania Fleurantus",
-      "join": "https://meet.google.com/ywy-qfqz-tsh",
+      "timeISO": "2026-09-24T09:30:00-04:00",
+      "time": "Thu 9:30 AM ET",
+      "title": "Michel Germain x PLL x KWC",
+      "who": "Sam, Aidan, Kenna Whitnell, Sara (KWC), E. Cook (Michel Germain)",
+      "join": "https://meet.google.com/bxh-ukcu-bnn",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-23T10:30:00-04:00",
-      "time": "Wed 10:30 AM ET",
-      "title": "PLL Discovery Call: Tracy Belle",
-      "who": "Tracy Belle",
-      "join": "https://meet.google.com/add-axuf-spd",
-      "location": "Google Meet"
-    },
-    {
-      "timeISO": "2026-09-23T15:00:00-04:00",
-      "time": "Wed 3:00 PM ET",
-      "title": "Amanda Peters / Studio S5",
-      "who": "Amanda Peters",
-      "join": "https://meet.google.com/nij-jjzd-srt",
-      "location": "Google Meet"
+      "timeISO": "2026-09-24T12:00:00-04:00",
+      "time": "Thu 12:00 PM ET",
+      "title": "Nikkie Aroh / Sam — CRM task review",
+      "who": "Sam, Nikkie Aroh",
+      "join": "Calendly Teams link (dead at PLL)",
+      "location": "Teams (dead; use phone or Google Meet)"
     }
   ],
-  "meetingsNote": "Outlook Calendar live search for Sep 23–24, UTC converted to Eastern. Calendly/Google duplicate pairs were de-duplicated by time, attendee, and identical join link; no conflicting links. Amanda Peters / Studio S5 is listed at 3:00 PM ET with the calendar Meet link.",
-  "callsSource": "Outlook Calendar live search 2026-09-23 through 2026-09-24, UTC converted to Eastern; duplicate entries de-duplicated.",
+  "meetingsNote": "Today’s verified meetings: Michel Germain x PLL x KWC at 9:30 AM ET with Google Meet; Nikkie Aroh / Sam CRM task review at noon with a dead Calendly Teams link — use phone or Google Meet. Tomorrow’s Alma Henry 11:00 AM Calendly Teams link is also dead and needs a Google Meet replacement. No conflicting links were reported.",
+  "callsSource": "Verified Outlook Calendar schedule supplied for Sep 24, 2026; Eastern times.",
   "setupNeeds": [
     {
-      "need": "Google Ads reauthorization",
-      "detail": "Google Ads returned zero campaigns and zero accounts two nights running. Nothing new is published; preserve the last verified Ads cache until reauthorized.",
+      "need": "Alma Henry Google Meet replacement",
+      "detail": "Tomorrow at 11:00 AM carries a dead Calendly Teams link; replace and re-invite today.",
       "owner": "Sam",
       "impact": "high"
     },
     {
-      "need": "Honcho next-step confirmation",
-      "detail": "Cory Anderson confirmed 15,000 + 15,000 + 5,000 units; corrected three-SKU brief and remaining technical/NDA steps need execution.",
-      "owner": "Sam / Ron",
+      "need": "Israel Olusegun booking",
+      "detail": "No calendar booking after Sep 21 no-show; schedule during/after noon CRM review.",
+      "owner": "Sam / Nikkie",
+      "impact": "medium"
+    },
+    {
+      "need": "Email Agent job safety",
+      "detail": "Instant lead reply and 7:00 AM missing-link jobs remain armed; stand down or assign safely.",
+      "owner": "Sam",
       "impact": "high"
     }
   ],
@@ -202,20 +224,28 @@
   ],
   "pipeline": [
     {
-      "deal": "Yianni / Toro General",
+      "deal": "Juje Boutique",
       "units": "TBD",
       "product": "TBD",
-      "stage": "cost breakdown due today; Sam owns thread",
+      "stage": "pricing route decision with Kenna on 9:30 AM call",
+      "value": "TBD",
+      "owner": "Sam / Kenna"
+    },
+    {
+      "deal": "Amanda Peters / Studio S5",
+      "units": "TBD",
+      "product": "TBD",
+      "stage": "proposal built; R&D scope and yesterday call terms pending",
       "value": "TBD",
       "owner": "Sam"
     },
     {
-      "deal": "Juje proposal",
+      "deal": "Yianni / Toro General",
       "units": "TBD",
       "product": "TBD",
-      "stage": "proposal due to Kenna Whitnell, Kenni Kaufman, and Dan today",
+      "stage": "complete quantity-tier breakdown due Friday",
       "value": "TBD",
-      "owner": "Sam"
+      "owner": "Aidan"
     },
     {
       "deal": "Hunter Amenities (Dan Hunter)",
@@ -224,14 +254,6 @@
       "stage": "Q-0065 real fill/labor/overhead costing pending Aidan",
       "value": "TBD",
       "owner": "Sam / Aidan"
-    },
-    {
-      "deal": "Honcho Hygiene (Cory Anderson)",
-      "units": "15,000 + 15,000 + 5,000 confirmed",
-      "product": "deodorant",
-      "stage": "confirmed quantities; corrected brief and next steps pending",
-      "value": "$2.25–$3.25 target/unit",
-      "owner": "Sam / Ron"
     }
   ]
 }

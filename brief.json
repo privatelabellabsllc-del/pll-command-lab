@@ -1,41 +1,37 @@
 {
-  "date": "2026-09-23",
-  "ts": "2026-09-23T11:10:52Z",
+  "date": "2026-09-24",
+  "ts": "2026-09-24T11:02:24Z",
   "brief": [
     {
-      "t": "Yianni / Toro General cost breakdown is due today and is Sam-owned; do not let the quote desk send on that thread.",
+      "t": "Kenna is on the 9:30 AM call and leaves the country today; settle the Juje pricing route live: founders at PLL numbers or Brandhaus at PLL numbers for her to re-quote.",
       "hot": true
     },
     {
-      "t": "Send the Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan today.",
+      "t": "Amanda Peters / Studio S5: the proposal is built; confirm whether the $2,500 R&D is per product ($5,000 total) and capture what was agreed yesterday before sending.",
       "hot": true
     },
     {
-      "t": "Aidan must replace Q-0065 real fill, labor, and overhead costing for Dan Hunter; the current $0.00 line is not usable.",
+      "t": "Aidan owes Yianni (Toro) and Frank Luca complete quantity-tier breakdowns by Friday; Hunter Q-0065 still needs real fill, labor, and overhead costing behind the $1.75 figure.",
       "hot": true
     },
     {
-      "t": "Honcho/Cory Anderson confirmed 15,000 + 15,000 + 5,000 units; keep the corrected three-SKU quantity and advance next steps.",
+      "t": "Alma Henry’s Friday 11:00 AM Calendly Teams link will fail; replace it with Google Meet and re-invite today.",
       "hot": true
     },
     {
-      "t": "Today’s calls are Laifania Fleurantus at 9:00 AM, Tracy Belle at 10:30 AM, and Amanda Peters / Studio S5 at 3:00 PM ET.",
+      "t": "Israel Olusegun still has no calendar booking after the Sep 21 no-show; use the noon CRM review with Nikkie to book him.",
       "hot": true
     },
     {
-      "t": "Google Ads has returned zero data two nights running; reauthorization is required. Preserve the last verified Ads cache.",
+      "t": "The Email Agent instant lead-reply job and the 7:00 AM missing-Outlook-links job are still armed; they need a stand-down or safe ownership fix.",
       "hot": true
-    },
-    {
-      "t": "The live Ads metrics remain the last verified cache; no new Ads numbers or optimization should be published until the connection is restored.",
-      "hot": false
     }
   ],
   "next": [
-    "Finish Yianni / Toro General cost breakdown",
-    "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
-    "Get Aidan’s real fill/labor/overhead costing on Q-0065 for Dan Hunter",
-    "Advance Honcho at 15,000 + 15,000 + 5,000 units and reauthorize Google Ads"
+    "Ask Kenna on the 9:30 AM call which Juje quoting route she authorizes",
+    "Resolve Amanda’s $2,500-per-product R&D scope and yesterday call terms, then ship the proposal",
+    "Get Aidan’s Yianni/Toro and Frank Luca quantity tiers and real Hunter Q-0065 costing by Friday",
+    "Replace Alma Henry’s dead Teams link and book Israel Olusegun"
   ],
   "kb": [
     {
@@ -60,12 +56,6 @@
     },
     {
       "keys": [
-        "Amanda Peters"
-      ],
-      "a": "Amanda Peters reached out on Sep 21 and is still unanswered. Reply after the Newell follow-up, without inventing a sample date or commitment."
-    },
-    {
-      "keys": [
         "Email Agent",
         "backslash-n",
         "Delphos House"
@@ -81,11 +71,10 @@
     },
     {
       "keys": [
-        "Yianni",
-        "Toro General",
-        "Gridlot"
+        "Cory Anderson",
+        "Honcho Hygiene"
       ],
-      "a": "Yianni / Toro General’s cost breakdown is due today. Sam owns the thread; the quote desk should not send on it without Sam’s direction."
+      "a": "Cory Anderson confirmed Honcho quantities of 15,000 + 15,000 + 5,000 units. Keep this confirmed quantity and the corrected three-SKU brief as the current basis for next steps."
     },
     {
       "keys": [
@@ -94,7 +83,21 @@
         "Kenni Kaufman",
         "Dan"
       ],
-      "a": "The Juje proposal is due to Kenna Whitnell, Kenni Kaufman, and Dan today. Send the proposal without inventing terms or a commitment not yet approved."
+      "a": "Juje pricing must be settled with Kenna on the 9:30 AM call: does the proposal go to the Juje founders at PLL numbers, or to Brandhaus at PLL numbers for Kenna to re-quote? Kenna’s unsigned agreement bars quoting a referred client except through her and bars disclosing her markup, so do not expose her margin."
+    },
+    {
+      "keys": [
+        "Amanda Peters",
+        "Studio S5"
+      ],
+      "a": "Amanda Peters / Studio S5 has a built proposal. Sam must confirm whether the $2,500 R&D is per product ($5,000 total) and capture what was agreed on yesterday’s call; Fireflies joined for 23 minutes but produced no transcript."
+    },
+    {
+      "keys": [
+        "Michel Germain",
+        "KWC"
+      ],
+      "a": "Michel Germain x PLL x KWC is today at 9:30 AM ET on Google Meet. Guests are Sam, Aidan, Kenna Whitnell, Sara from KWC, and E. Cook from Michel Germain; use the verified link in the Cockpit."
     },
     {
       "keys": [
@@ -103,61 +106,72 @@
         "Q-0065",
         "Dan Hunter"
       ],
-      "a": "Aidan must provide real fill, labor, and overhead costing for Dan Hunter’s Q-0065; the current $0.00 line is not usable."
+      "a": "Aidan owes Yianni/Toro and Frank Luca complete quantity-tier breakdowns by Friday. Hunter Q-0065 still shows $0.00 fill, labor, and overhead behind the $1.75 figure given to Dan, so the costing must be replaced with real numbers."
     },
     {
       "keys": [
-        "Cory Anderson",
-        "Honcho Hygiene"
+        "Yianni",
+        "Toro"
       ],
-      "a": "Cory Anderson confirmed Honcho quantities of 15,000 + 15,000 + 5,000 units. Keep this confirmed quantity and the corrected three-SKU brief as the current basis for next steps."
+      "a": "Yianni / Toro General’s complete quantity-tier breakdown is due by Friday at the latest. Aidan owes the numbers; Sam should keep the thread moving and verify the breakdown before it is sent."
+    },
+    {
+      "keys": [
+        "Israel Olusegun"
+      ],
+      "a": "Israel Olusegun no-showed Sep 21 because a link never reached him. Nothing has been booked since; use the noon CRM review with Nikkie Aroh to get a new time on the calendar."
     }
   ],
   "topTasks": [
-    "Finish Yianni / Toro General cost breakdown due today",
-    "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
-    "Get Aidan’s real fill/labor/overhead costing on Q-0065 for Dan Hunter",
-    "Advance Honcho at 15,000 + 15,000 + 5,000 units",
-    "Reauthorize Google Ads after two zero-data nights"
+    "Settle Juje pricing route with Kenna on the 9:30 AM call",
+    "Resolve Amanda Peters / Studio S5 R&D scope and yesterday call terms; ship proposal",
+    "Get Aidan’s Yianni/Toro and Frank Luca quantity tiers by Friday",
+    "Replace Hunter Q-0065 $0.00 fill/labor/overhead with real costing",
+    "Replace Alma Henry’s dead Teams link and re-invite",
+    "Book Israel Olusegun after the noon CRM review"
   ],
   "teamMembers": {
     "sam": {
       "display_name": "Sam",
-      "top_task": "Finish Yianni / Toro General cost breakdown due today",
+      "top_task": "Settle the Juje pricing route with Kenna on the 9:30 AM call",
       "tasks": [
         {
-          "title": "Finish Yianni / Toro General cost breakdown",
+          "title": "Settle Juje pricing route with Kenna",
+          "due": "Today 9:30 AM"
+        },
+        {
+          "title": "Resolve Amanda R&D scope and yesterday call terms; ship proposal",
           "due": "Today"
         },
         {
-          "title": "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
+          "title": "Replace Alma Henry Teams link and re-invite",
           "due": "Today"
         },
         {
-          "title": "Confirm Aidan Q-0065 real fill/labor/overhead costing",
-          "due": "Today"
-        },
-        {
-          "title": "Reauthorize Google Ads",
+          "title": "Book Israel Olusegun",
           "due": "Today"
         }
       ],
-      "notes": "Today’s meetings: Laifania 9:00 AM, Tracy 10:30 AM, Amanda Peters / Studio S5 3:00 PM ET. Honcho is confirmed at 15,000 + 15,000 + 5,000 units."
+      "notes": "Today: Michel Germain x PLL x KWC at 9:30 AM; Nikkie Aroh / Sam CRM task review at noon. Tomorrow Alma Henry has a dead Teams link."
     },
     "aidan": {
       "display_name": "Aidan",
-      "top_task": "Return real fill/labor/overhead costing on Q-0065 for Dan Hunter",
+      "top_task": "Return Yianni/Toro and Frank Luca quantity tiers plus Hunter Q-0065 real costing",
       "tasks": [
         {
-          "title": "Replace Q-0065 $0.00 fill/labor/overhead with real cost",
-          "due": "Today"
+          "title": "Complete Yianni/Toro quantity-tier breakdown",
+          "due": "Friday"
         },
         {
-          "title": "Work the remaining quote queue",
+          "title": "Complete Frank Luca quantity-tier breakdown",
+          "due": "Friday"
+        },
+        {
+          "title": "Replace Hunter Q-0065 $0.00 fill/labor/overhead",
           "due": "Today"
         }
       ],
-      "notes": "Yianni / Toro General cost breakdown is due today; Sam owns that thread and the quote desk must not send on it."
+      "notes": "Sam owns the customer-facing deadlines; verify numbers before sending."
     },
     "ron": {
       "display_name": "Ron",
@@ -187,14 +201,15 @@
     }
   },
   "revenueActions": [
-    "Finish Yianni / Toro General cost breakdown",
-    "Send Juje proposal to Kenna Whitnell, Kenni Kaufman, and Dan",
-    "Close Hunter costing gap with real Q-0065 fill/labor/overhead",
-    "Advance Honcho confirmed 15,000 + 15,000 + 5,000 units"
+    "Settle Juje pricing route and ship approved proposal",
+    "Resolve Amanda Peters / Studio S5 scope and terms",
+    "Deliver Yianni/Toro and Frank Luca quantity tiers by Friday",
+    "Fix Hunter Q-0065 costing",
+    "Replace Alma link and book Israel"
   ],
   "pipelineStat": {
-    "summary": "Today’s revenue lanes are Yianni / Toro General costing, the Juje proposal, Hunter Q-0065 costing, and Honcho at 15,000 + 15,000 + 5,000 units. Google Ads reauthorization is blocked after two zero-data nights.",
-    "source": "Sam-confirmed morning facts Sep 23, 2026"
+    "summary": "Today’s revenue work is the Juje route decision with Kenna, Amanda Peters / Studio S5 proposal clarification, Aidan’s Yianni/Toro and Frank Luca quantity tiers due Friday, and Hunter Q-0065 real costing.",
+    "source": "Sam-confirmed daily task list Sep 24, 2026"
   },
   "adsAgentBrief": "Nightly read-only refresh 2026-09-23: managed current 7-day $116.91, 215 clicks, 18,073 impressions, CPC $0.54; account $357.31, 320 clicks; prior managed $70.09, 315 clicks; cap UNOBSERVABLE; no changes.",
   "adsIntelligence": {
