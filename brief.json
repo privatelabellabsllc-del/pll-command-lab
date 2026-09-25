@@ -211,284 +211,1065 @@
     "summary": "Today’s revenue work is the Juje route decision with Kenna, Amanda Peters / Studio S5 proposal clarification, Aidan’s Yianni/Toro and Frank Luca quantity tiers due Friday, and Hunter Q-0065 real costing.",
     "source": "Sam-confirmed daily task list Sep 24, 2026"
   },
-  "adsAgentBrief": "Nightly read-only refresh 2026-09-23: managed current 7-day $116.91, 215 clicks, 18,073 impressions, CPC $0.54; account $357.31, 320 clicks; prior managed $70.09, 315 clicks; cap UNOBSERVABLE; no changes.",
+  "adsAgentBrief": "Nightly read-only refresh 2026-09-24: managed 7-day $79.95, 178 clicks, 14,063 impressions, derived CPC $0.45, 0 conversion actions; account $312.65, 277 clicks, 15,099 impressions, 8 segmented conversions. Account spend / Lead form - Submit action CPL $39.08 (8 action events; not inbox-qualified); managed CPL NOT YET MEASURABLE (no managed Lead form - Submit conversions). Budget and search-term quality UNOBSERVABLE; leads/booked calls not fully verified; no changes.",
   "adsIntelligence": {
-    "updatedAt": "2026-09-23T21:00:00-04:00",
-    "source": "Google Ads API customer 2915572948, independently pulled customer and per-campaign reports; Outlook inbox search; read-only nightly refresh 2026-09-23 ET.",
-    "integrity": "RECONCILED per-campaign and independently against customer totals for today, current 7-day, and prior 7-day; managed + legacy = account for spend/clicks/impressions; managed clicks/impressions lower than account. Conversion actions segmented by name. Exact enabled-ad roster unverified.",
-    "scopeWarning": "CAMPAIGN-SCOPE - EXACT AD ROSTER UNVERIFIED. Live campaign enumeration: PLL-Search-Samples-2026 (PAUSED), PLL-Search-ContractMfg-2026 (PAUSED), PLL-Search-ContractMfg-2026 #2 (ENABLED).",
+    "updatedAt": "2026-09-24T21:00:00-04:00",
+    "source": "Google Ads API customer 2915572948: independent customer and per-campaign rows; ad_group_ad roster/performance; action-name segmented conversion reports; Outlook lead inbox search; read-only nightly refresh 2026-09-24 ET.",
+    "integrity": "PASS: for today, current 7-day, and prior 7-day, every per-campaign report sum matched independently pulled customer totals for spend/clicks/impressions; MANAGED + LEGACY = ACCOUNT for each measure; MANAGED clicks/impressions < ACCOUNT; all enumerated managed campaigns included with explicit NO ROW RETURNED where applicable; derived CPC recalculated as spend/clicks; conversion actions queried separately by segments.conversion_action_name; managed ad-level metrics reconcile to managed campaign totals. Budget amount and search-term waste evidence are UNOBSERVABLE, not clean.",
+    "scopeWarning": "Live-enumerated 3 PLL-Search-* campaigns: PLL-Search-Samples-2026 (PAUSED); PLL-Search-ContractMfg-2026 (PAUSED); PLL-Search-ContractMfg-2026 #2 (ENABLED). Newly observed managed campaigns vs prior cache: none. Exact managed Search ad_group_ad roster verified: 17 enabled ads across all 3 managed campaigns ({\"PLL-Search-Samples-2026\":{\"enabled\":1,\"all\":1,\"status\":\"PAUSED\"},\"PLL-Search-ContractMfg-2026\":{\"enabled\":6,\"all\":6,\"status\":\"PAUSED\"},\"PLL-Search-ContractMfg-2026 #2\":{\"enabled\":10,\"all\":18,\"status\":\"ENABLED\"}}).",
     "windows": {
-      "today": "2026-09-23",
-      "current": "2026-09-17 through 2026-09-23",
-      "prior": "2026-09-10 through 2026-09-16"
+      "today": "2026-09-24",
+      "current": "2026-09-18 through 2026-09-24",
+      "prior": "2026-09-11 through 2026-09-17"
     },
     "today": {
       "managed": {
-        "spend": 19.71,
+        "spend": 19.32,
         "clicks": 8,
-        "impressions": 37,
-        "cpc": 2.46,
-        "ctr": 0.2162,
+        "impressions": 39,
+        "cpc": 2.415,
+        "ctr": 0.205128,
         "conversions": 0
       },
       "legacy": {
-        "spend": 33.236101,
+        "spend": 23.958723,
         "clicks": 11,
-        "impressions": 70,
-        "cpc": 3.02,
-        "ctr": 0.1571,
-        "conversions": 1
+        "impressions": 147,
+        "cpc": 2.1781,
+        "ctr": 0.07483,
+        "conversions": 0
       },
       "account": {
-        "spend": 52.946101,
+        "spend": 43.278723,
         "clicks": 19,
-        "impressions": 107,
-        "cpc": 2.79,
-        "ctr": 0.1776,
-        "conversions": 1
+        "impressions": 186,
+        "cpc": 2.2778,
+        "ctr": 0.102151,
+        "conversions": 0
       },
       "campaigns": [
         {
+          "name": "Initial",
+          "id": "21932822847",
+          "status": "ENABLED",
+          "spend": 16.602598,
+          "clicks": 8,
+          "impressions": 132,
+          "cpc": 2.0753,
+          "ctr": 0.060606,
+          "conversions": 0
+        },
+        {
+          "name": "New-Sales-Ad",
+          "id": "21949259655",
+          "status": "ENABLED",
+          "spend": 7.356125,
+          "clicks": 3,
+          "impressions": 15,
+          "cpc": 2.452,
+          "ctr": 0.2,
+          "conversions": 0
+        },
+        {
+          "name": "Sales Campaign PLL",
+          "id": "22755299462",
+          "status": "PAUSED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
           "name": "PLL-Search-Samples-2026",
+          "id": "24040031889",
           "status": "PAUSED",
           "statusInReport": "NO ROW RETURNED"
         },
         {
           "name": "PLL-Search-ContractMfg-2026",
+          "id": "24049588003",
           "status": "PAUSED",
           "statusInReport": "NO ROW RETURNED"
         },
         {
           "name": "PLL-Search-ContractMfg-2026 #2",
+          "id": "24164623336",
           "status": "ENABLED",
-          "spend": 19.71,
+          "spend": 19.32,
           "clicks": 8,
-          "impressions": 37,
-          "cpc": 2.46,
-          "ctr": 0.2162
-        },
-        {
-          "name": "Initial",
-          "status": "ENABLED",
-          "spend": 17.288947,
-          "clicks": 7,
-          "impressions": 60
-        },
-        {
-          "name": "New-Sales-Ad",
-          "status": "ENABLED",
-          "spend": 15.947154,
-          "clicks": 4,
-          "impressions": 10
-        },
-        {
-          "name": "Sales Campaign PLL",
-          "status": "PAUSED",
-          "statusInReport": "NO ROW RETURNED"
+          "impressions": 39,
+          "cpc": 2.415,
+          "ctr": 0.205128,
+          "conversions": 0
         }
-      ]
+      ],
+      "conversionActions": [],
+      "conversionActionsByCampaign": {}
     },
     "current": {
       "managed": {
-        "spend": 116.910237,
-        "clicks": 215,
-        "impressions": 18073,
-        "cpc": 0.54,
-        "ctr": 0.0119,
-        "conversions": 1
-      },
-      "legacy": {
-        "spend": 240.397046,
-        "clicks": 105,
-        "impressions": 1111,
-        "cpc": 2.29,
-        "ctr": 0.0945,
-        "conversions": 8.998531
-      },
-      "account": {
-        "spend": 357.307283,
-        "clicks": 320,
-        "impressions": 19184,
-        "cpc": 1.12,
-        "ctr": 0.0167,
-        "conversions": 9.998531
-      },
-      "campaigns": [
-        {
-          "name": "PLL-Search-Samples-2026",
-          "status": "PAUSED",
-          "statusInReport": "NO ROW RETURNED"
-        },
-        {
-          "name": "PLL-Search-ContractMfg-2026",
-          "status": "PAUSED",
-          "spend": 51.2,
-          "clicks": 4,
-          "impressions": 23,
-          "cpc": 12.8,
-          "ctr": 0.1739
-        },
-        {
-          "name": "PLL-Search-ContractMfg-2026 #2",
-          "status": "ENABLED",
-          "spend": 65.710237,
-          "clicks": 211,
-          "impressions": 18050,
-          "cpc": 0.31,
-          "ctr": 0.0117
-        },
-        {
-          "name": "Initial",
-          "status": "ENABLED",
-          "spend": 168.834424,
-          "clicks": 78,
-          "impressions": 963
-        },
-        {
-          "name": "New-Sales-Ad",
-          "status": "ENABLED",
-          "spend": 79.660154,
-          "clicks": 37,
-          "impressions": 148
-        },
-        {
-          "name": "Sales Campaign PLL",
-          "status": "PAUSED",
-          "statusInReport": "NO ROW RETURNED"
-        }
-      ]
-    },
-    "prior": {
-      "managed": {
-        "spend": 70.086294,
-        "clicks": 315,
-        "impressions": 24201,
-        "cpc": 0.22,
-        "ctr": 0.013,
+        "spend": 79.946153,
+        "clicks": 178,
+        "impressions": 14063,
+        "cpc": 0.4491,
+        "ctr": 0.012657,
         "conversions": 0
       },
       "legacy": {
-        "spend": 234.715941,
-        "clicks": 114,
-        "impressions": 1283,
-        "cpc": 2.06,
-        "ctr": 0.0889,
-        "conversions": 2
+        "spend": 232.708218,
+        "clicks": 99,
+        "impressions": 1036,
+        "cpc": 2.3506,
+        "ctr": 0.09556,
+        "conversions": 8
       },
       "account": {
-        "spend": 304.802235,
-        "clicks": 429,
-        "impressions": 25484,
-        "cpc": 0.71,
-        "ctr": 0.0168,
-        "conversions": 2
+        "spend": 312.654371,
+        "clicks": 277,
+        "impressions": 15099,
+        "cpc": 1.1287,
+        "ctr": 0.018346,
+        "conversions": 8
       },
       "campaigns": [
         {
+          "name": "Initial",
+          "id": "21932822847",
+          "status": "ENABLED",
+          "spend": 143.494939,
+          "clicks": 68,
+          "impressions": 908,
+          "cpc": 2.1102,
+          "ctr": 0.07489,
+          "conversions": 8
+        },
+        {
+          "name": "New-Sales-Ad",
+          "id": "21949259655",
+          "status": "ENABLED",
+          "spend": 89.213279,
+          "clicks": 31,
+          "impressions": 128,
+          "cpc": 2.8778,
+          "ctr": 0.242188,
+          "conversions": 0
+        },
+        {
+          "name": "Sales Campaign PLL",
+          "id": "22755299462",
+          "status": "PAUSED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
           "name": "PLL-Search-Samples-2026",
+          "id": "24040031889",
           "status": "PAUSED",
           "statusInReport": "NO ROW RETURNED"
         },
         {
           "name": "PLL-Search-ContractMfg-2026",
+          "id": "24049588003",
           "status": "PAUSED",
-          "spend": 33.770854,
-          "clicks": 35,
-          "impressions": 1113,
-          "cpc": 0.97,
-          "ctr": 0.0314
+          "statusInReport": "NO ROW RETURNED"
         },
         {
           "name": "PLL-Search-ContractMfg-2026 #2",
+          "id": "24164623336",
           "status": "ENABLED",
-          "spend": 36.31544,
-          "clicks": 280,
-          "impressions": 23088,
-          "cpc": 0.13,
-          "ctr": 0.0121
-        },
+          "spend": 79.946153,
+          "clicks": 178,
+          "impressions": 14063,
+          "cpc": 0.4491,
+          "ctr": 0.012657,
+          "conversions": 0
+        }
+      ],
+      "conversionActions": [
+        {
+          "action": "Lead form - Submit",
+          "conversions": 8
+        }
+      ],
+      "conversionActionsByCampaign": {
+        "Initial — Lead form - Submit": 8
+      }
+    },
+    "prior": {
+      "managed": {
+        "spend": 91.719288,
+        "clicks": 284,
+        "impressions": 23022,
+        "cpc": 0.323,
+        "ctr": 0.012336,
+        "conversions": 1.000735
+      },
+      "legacy": {
+        "spend": 227.458009,
+        "clicks": 115,
+        "impressions": 1339,
+        "cpc": 1.9779,
+        "ctr": 0.085885,
+        "conversions": 4.998531
+      },
+      "account": {
+        "spend": 319.177297,
+        "clicks": 399,
+        "impressions": 24361,
+        "cpc": 0.7999,
+        "ctr": 0.016379,
+        "conversions": 5.999266
+      },
+      "campaigns": [
         {
           "name": "Initial",
+          "id": "21932822847",
           "status": "ENABLED",
-          "spend": 141.923545,
-          "clicks": 74,
-          "impressions": 1109
+          "spend": 149.066518,
+          "clicks": 70,
+          "impressions": 1143,
+          "cpc": 2.1295,
+          "ctr": 0.061242,
+          "conversions": 4
         },
         {
           "name": "New-Sales-Ad",
+          "id": "21949259655",
           "status": "ENABLED",
-          "spend": 92.792396,
-          "clicks": 40,
-          "impressions": 174
+          "spend": 78.391491,
+          "clicks": 45,
+          "impressions": 196,
+          "cpc": 1.742,
+          "ctr": 0.229592,
+          "conversions": 0.998531
         },
         {
           "name": "Sales Campaign PLL",
+          "id": "22755299462",
           "status": "PAUSED",
           "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "name": "PLL-Search-Samples-2026",
+          "id": "24040031889",
+          "status": "PAUSED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026",
+          "id": "24049588003",
+          "status": "PAUSED",
+          "spend": 55.695037,
+          "clicks": 11,
+          "impressions": 60,
+          "cpc": 5.0632,
+          "ctr": 0.183333,
+          "conversions": 1.000735
+        },
+        {
+          "name": "PLL-Search-ContractMfg-2026 #2",
+          "id": "24164623336",
+          "status": "ENABLED",
+          "spend": 36.024251,
+          "clicks": 273,
+          "impressions": 22962,
+          "cpc": 0.132,
+          "ctr": 0.011889,
+          "conversions": 0
+        }
+      ],
+      "conversionActions": [
+        {
+          "action": "Lead form - Submit",
+          "conversions": 4
+        },
+        {
+          "action": "Calls from ads",
+          "conversions": 1.999266
+        }
+      ],
+      "conversionActionsByCampaign": {
+        "Initial — Lead form - Submit": 4,
+        "New-Sales-Ad — Calls from ads": 0.998531,
+        "PLL-Search-ContractMfg-2026 — Calls from ads": 1.000735
+      }
+    },
+    "conversionActions": {
+      "today": [],
+      "current": [
+        {
+          "action": "Lead form - Submit",
+          "conversions": 8
+        }
+      ],
+      "prior": [
+        {
+          "action": "Lead form - Submit",
+          "conversions": 4
+        },
+        {
+          "action": "Calls from ads",
+          "conversions": 1.999266
         }
       ]
     },
-    "conversionActions": {
-      "Lead form - Submit": {
-        "conversions": 8,
-        "allConversions": 8,
-        "campaign": "Initial"
+    "adRoster": {
+      "scope": "Managed PLL-Search-* Search campaigns only",
+      "records": 25,
+      "enabled": 17,
+      "complete": true,
+      "countsByCampaign": {
+        "PLL-Search-Samples-2026": {
+          "enabled": 1,
+          "all": 1,
+          "status": "PAUSED"
+        },
+        "PLL-Search-ContractMfg-2026": {
+          "enabled": 6,
+          "all": 6,
+          "status": "PAUSED"
+        },
+        "PLL-Search-ContractMfg-2026 #2": {
+          "enabled": 10,
+          "all": 18,
+          "status": "ENABLED"
+        }
       },
-      "Calls from ads": {
-        "conversions": 1.998531,
-        "allConversions": 1.998531,
-        "campaign": "New-Sales-Ad"
-      },
-      "Local actions - Directions": {
-        "conversions": 0,
-        "allConversions": 2
-      },
-      "Local actions - Other engagements": {
-        "conversions": 0,
-        "allConversions": 57
-      },
-      "Local actions - Website visits": {
-        "conversions": 0,
-        "allConversions": 1
-      }
+      "note": "Date-free generic ad_group_ad listing returned 29 total ad_group_ad resources (21 ENABLED, 8 REMOVED) and was joined to all 21 ad groups. All managed campaigns are Search. This does not assert an account-wide Performance Max asset roster."
+    },
+    "adBreakdown": {
+      "today": [
+        {
+          "campaign": "PLL-Search-Samples-2026",
+          "campaignId": "24040031889",
+          "adGroup": "Samples-PrivateLabel-Products",
+          "adId": "817481283338",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-HairOil",
+          "adId": "817412024830",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Haircare",
+          "adId": "817412025043",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-BeardOil",
+          "adId": "817412046418",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Cosmetic-Beauty",
+          "adId": "817481260556",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-BeefTallow",
+          "adId": "817481283335",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Skincare",
+          "adId": "817481293367",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-HairOil",
+          "adId": "821559429510",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Skincare",
+          "adId": "821605391443",
+          "status": "ENABLED",
+          "spend": 0,
+          "clicks": 0,
+          "impressions": 6,
+          "cpc": null,
+          "ctr": 0,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-BeardOil",
+          "adId": "821605391458",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Cosmetic-Beauty",
+          "adId": "821605391485",
+          "status": "ENABLED",
+          "spend": 16.83,
+          "clicks": 7,
+          "impressions": 29,
+          "cpc": 2.4043,
+          "ctr": 0.241379,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-BeefTallow",
+          "adId": "821679105251",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Haircare",
+          "adId": "821679137756",
+          "status": "ENABLED",
+          "spend": 2.49,
+          "clicks": 1,
+          "impressions": 4,
+          "cpc": 2.49,
+          "ctr": 0.25,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821872209306",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821917617331",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821917740910",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821917793164",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821917793422",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821988584312",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821988612917",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821988617984",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821988671018",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821988703859",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821988704636",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821988705053",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        }
+      ],
+      "current": [
+        {
+          "campaign": "PLL-Search-Samples-2026",
+          "campaignId": "24040031889",
+          "adGroup": "Samples-PrivateLabel-Products",
+          "adId": "817481283338",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-HairOil",
+          "adId": "817412024830",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Haircare",
+          "adId": "817412025043",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-BeardOil",
+          "adId": "817412046418",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Cosmetic-Beauty",
+          "adId": "817481260556",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-BeefTallow",
+          "adId": "817481283335",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Skincare",
+          "adId": "817481293367",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-HairOil",
+          "adId": "821559429510",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Skincare",
+          "adId": "821605391443",
+          "status": "ENABLED",
+          "spend": 0,
+          "clicks": 0,
+          "impressions": 14,
+          "cpc": null,
+          "ctr": 0,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-BeardOil",
+          "adId": "821605391458",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Cosmetic-Beauty",
+          "adId": "821605391485",
+          "status": "ENABLED",
+          "spend": 53.8,
+          "clicks": 22,
+          "impressions": 131,
+          "cpc": 2.4455,
+          "ctr": 0.167939,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-BeefTallow",
+          "adId": "821679105251",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Haircare",
+          "adId": "821679137756",
+          "status": "ENABLED",
+          "spend": 26.146153,
+          "clicks": 156,
+          "impressions": 13838,
+          "cpc": 0.1676,
+          "ctr": 0.011273,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821872209306",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821917617331",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821917740910",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821917793164",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821917793422",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821988584312",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821988612917",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821988617984",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821988671018",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821988703859",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821988704636",
+          "status": "ENABLED",
+          "spend": 0,
+          "clicks": 0,
+          "impressions": 44,
+          "cpc": null,
+          "ctr": 0,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821988705053",
+          "status": "ENABLED",
+          "spend": 0,
+          "clicks": 0,
+          "impressions": 36,
+          "cpc": null,
+          "ctr": 0,
+          "conversions": 0
+        }
+      ],
+      "prior": [
+        {
+          "campaign": "PLL-Search-Samples-2026",
+          "campaignId": "24040031889",
+          "adGroup": "Samples-PrivateLabel-Products",
+          "adId": "817481283338",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-HairOil",
+          "adId": "817412024830",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Haircare",
+          "adId": "817412025043",
+          "status": "ENABLED",
+          "spend": 10.029999,
+          "clicks": 4,
+          "impressions": 14,
+          "cpc": 2.5075,
+          "ctr": 0.285714,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-BeardOil",
+          "adId": "817412046418",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Cosmetic-Beauty",
+          "adId": "817481260556",
+          "status": "ENABLED",
+          "spend": 45.525038,
+          "clicks": 5,
+          "impressions": 32,
+          "cpc": 9.105,
+          "ctr": 0.15625,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ProductIntent-BeefTallow",
+          "adId": "817481283335",
+          "status": "ENABLED",
+          "spend": 0,
+          "clicks": 0,
+          "impressions": 1,
+          "cpc": null,
+          "ctr": 0,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026",
+          "campaignId": "24049588003",
+          "adGroup": "ContractMfg-Skincare",
+          "adId": "817481293367",
+          "status": "ENABLED",
+          "spend": 0.14,
+          "clicks": 2,
+          "impressions": 13,
+          "cpc": 0.07,
+          "ctr": 0.153846,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-HairOil",
+          "adId": "821559429510",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Skincare",
+          "adId": "821605391443",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-BeardOil",
+          "adId": "821605391458",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Cosmetic-Beauty",
+          "adId": "821605391485",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ProductIntent-BeefTallow",
+          "adId": "821679105251",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "ContractMfg-Haircare",
+          "adId": "821679137756",
+          "status": "ENABLED",
+          "spend": 34.920285,
+          "clicks": 267,
+          "impressions": 22632,
+          "cpc": 0.1308,
+          "ctr": 0.011797,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821872209306",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821917617331",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821917740910",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821917793164",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821917793422",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821988584312",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821988612917",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821988617984",
+          "status": "REMOVED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG1 - Skincare Mfg",
+          "adId": "821988671018",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG2 - Haircare Mfg",
+          "adId": "821988703859",
+          "status": "ENABLED",
+          "statusInReport": "NO ROW RETURNED"
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG3 - Personal Care Mfg",
+          "adId": "821988704636",
+          "status": "ENABLED",
+          "spend": 0,
+          "clicks": 0,
+          "impressions": 32,
+          "cpc": null,
+          "ctr": 0,
+          "conversions": 0
+        },
+        {
+          "campaign": "PLL-Search-ContractMfg-2026 #2",
+          "campaignId": "24164623336",
+          "adGroup": "AG4 - Beef Tallow Mfg",
+          "adId": "821988705053",
+          "status": "ENABLED",
+          "spend": 1.103966,
+          "clicks": 6,
+          "impressions": 298,
+          "cpc": 0.184,
+          "ctr": 0.020134,
+          "conversions": 0
+        }
+      ]
     },
     "cap": {
-      "configuredManagedDaily": "UNOBSERVABLE: budget field report rejected by API (UNRECOGNIZED_FIELD campaign.campaign_budget.amount_micros).",
+      "configuredManagedDaily": null,
       "status": "UNOBSERVABLE",
-      "basis": "No fresh configured-budget pull; no cap-breach claim."
+      "basis": "Fresh configured budget amount could not be retrieved; Google Ads generic report rejected campaign_budget.amount_micros (UNRECOGNIZED_FIELD: campaign.campaign_budget.amount_micros). No cap compliance or breach claim made."
     },
     "leads": {
-      "currentWindowQualifiedInquiryMessages": "NOT RELIABLY MEASURED: bounded Outlook date search returned mixed mail and could not be safely classified.",
-      "priorWindowQualifiedInquiryMessages": "NOT RELIABLY MEASURED",
-      "currentVerifiedAdsAttributed": "0 / NOT YET MEASURABLE",
-      "priorVerifiedAdsAttributed": "0 / NOT YET MEASURABLE",
-      "bookedCalls": "NOT YET MEASURABLE",
-      "cpl": "NOT YET MEASURABLE",
+      "currentWindowQualifiedInquiryMessages": "NOT RELIABLY MEASURED: Outlook search returned active reply threads and mixed mail; a defensible complete unique qualified-inquiry count could not be established.",
+      "priorWindowQualifiedInquiryMessages": "NOT RELIABLY MEASURED: Outlook search returned active reply threads and mixed mail; a defensible complete unique qualified-inquiry count could not be established.",
+      "shopifyContactFormMessages": {
+        "current": 8,
+        "prior": 15,
+        "note": "Exact receipt timestamps filtered to America/New_York 7-day boundaries; raw form volume is not equivalent to qualified inquiry count."
+      },
+      "googleAdsTrackedLeadFormActionEvents": {
+        "current": 8,
+        "prior": 4,
+        "note": "Segmented Google Ads conversion-action rows tied to campaign/source records; not manually reconciled to unique or qualified inbox inquiries."
+      },
+      "emailVerifiedAdsAttributedInquiries": "NOT YET MEASURABLE: exact per-message GCLID/Google Ads campaign attribution was not verifiable; contact-form records included organic/direct and chatgpt.com sources.",
+      "bookedCalls": "NOT YET MEASURABLE (calendar/CRM not in the authorized refresh scope; carried forward as not re-verified).",
+      "trackedActionAccountCpl": 39.08,
+      "trackedActionManagedCpl": "NOT YET MEASURABLE (no managed Lead form - Submit conversions)",
       "costPerBookedCall": "NOT YET MEASURABLE",
-      "note": "Attribution requires UTM/GCLID/campaign/source record; no verified Ads attribution established."
+      "note": "Qualified-inquiry CPL is not asserted. The numeric CPL below is spend divided by Google Ads Lead form - Submit conversion-action events only; it is not manual lead-quality validation."
     },
-    "headline": "Managed spend $116.91 on 215 clicks and 18,073 impressions current 7-day; independently pulled account $357.31 on 320 clicks.",
-    "best": "ContractMfg-2026 #2 delivered 211 managed clicks at $0.31 CPC; no verified lead winner.",
-    "worst": "Paused ContractMfg-2026 spent $51.20 current 7-day, including $47.16 on Sep 17; exact pause timing is not exposed.",
+    "searchTermEvidence": "UNOBSERVABLE: the authorized generic Google Ads report resource list exposes campaign, customer, ad_group and ad_group_ad only; no search_term_view report was available. No waste rate asserted.",
+    "headline": "Managed current 7-day spend $79.95, 178 clicks, 14,063 impressions, 0 segmented conversion-action events; 17 enabled managed search ads in exact roster. Account current spend $312.65, 277 clicks, 15,099 impressions, 8 conversions.",
+    "best": "PLL-Search-ContractMfg-2026 #2 produced all current-period managed delivery: 178 clicks at derived $0.4492 CPC; no qualified inbox lead is attributed to this campaign.",
+    "worst": "No managed campaign with measurable conversions in the current window; the active #2 campaign CTR was 1.27%, and no search-term report was available to quantify waste.",
     "recommendation": {
-      "status": "PENDING SAM APPROVAL",
+      "status": "READ-ONLY; PENDING APPROVAL BEFORE ANY CHANGE",
       "approval_required": "yes",
-      "text": "No changes. Resolve pause-history, budget-read, and lead-attribution ambiguity before optimization."
+      "text": "Before any optimization, obtain a supported read-only search-term quality report and a fresh configured-budget amount for the managed campaign roster; do not change bids, budgets, keywords, ads, or targeting in this refresh."
+    },
+    "weekOverWeek": {
+      "spendPct": -12.84,
+      "clicksPct": -37.32,
+      "impressionsPct": -38.91,
+      "ctrPct": 2.6,
+      "cpcPct": 39.04
     },
     "answers": {
-      "today": "Sep 23 managed spend $19.71, 8 clicks, 37 impressions, $2.46 CPC, zero managed conversions.",
-      "seven/new ads": "Current 7-day managed $116.91, 215 clicks, 18,073 impressions; exact enabled-ad roster unverified.",
-      "ctr/cpc": "Managed CTR 1.19%, CPC $0.54; #2 CTR 1.17%/$0.31 CPC.",
-      "leads/emails/calls": "Verified Ads-attributed leads 0/not measurable; qualified inquiry counts and booked calls not reliably measurable in this run.",
-      "budget/cap": "Cap status UNOBSERVABLE because configured budgets could not be retrieved; no breach claim.",
-      "winners": "#2 has most managed clicks and lowest managed CPC; no measured lead winner.",
-      "waste": "Paused ContractMfg-2026 shows $51.20 current-window spend, including $47.16 Sep 17; pause timing unresolved.",
-      "optimization": "Read-only: fix budget-read, pause-history, and attribution before changes.",
-      "suggestions": "No changes until measurement inputs are verified.",
-      "nextExperiment": "None approved; measurement repair first.",
-      "whatAdsAgentShouldDo": "Verify configured budgets, pause history, lead attribution, and search-term quality; recommend one change only after approval."
-    },
-    "weekOverWeek": "Managed spend $70.09 prior to $116.91 current, up 67%; clicks 315 to 215, down 32%; CPC $0.22 to $0.54, up 145%; impressions 24,201 to 18,073, down 25%."
+      "today": "Sep 24: managed $19.32, 8 clicks, 39 impressions, CPC $2.42, 0 conversion actions; account $43.28, 19 clicks, 186 impressions.",
+      "seven/new ads": "Sep 18–24 managed: $79.95, 178 clicks, 14,063 impressions; live list has 3 managed campaigns and the complete managed roster has 17 enabled Search ads. This refresh created or changed no ads.",
+      "ctr/cpc": "Managed current CTR 1.27%, derived CPC $0.45; account CTR 1.83%, CPC $1.13.",
+      "leads/emails/calls": "Qualified total inbox inquiries NOT RELIABLY MEASURED; 8 current and 15 prior Shopify form messages were found after ET boundary filtering, not all qualified. Google Ads tracked Lead form - Submit actions: 8 current, 4 prior; not manually qualified/reconciled to unique emails. Booked calls NOT YET MEASURABLE.",
+      "budget/cap": "Configured daily budget amount UNOBSERVABLE: Google Ads generic report rejected campaign_budget.amount_micros. No utilization or breach claim; no budget changes.",
+      "winners": "Current-period managed delivery came from PLL-Search-ContractMfg-2026 #2 (178 clicks at $0.45 derived CPC); no qualified lead winner is measured.",
+      "waste": "Search-term/waste data UNOBSERVABLE because the authorized report resources do not expose search_term_view; no waste estimate made.",
+      "optimization": "Read-only only. Obtain configured budgets and a supported search-term report before considering an optimization; no settings changed.",
+      "suggestions": "No change or spend suggestion from this data. First close the budget/search-term measurement gaps.",
+      "nextExperiment": "No experiment proposed until live budget and search-term evidence are available; any campaign change requires Sam approval.",
+      "whatAdsAgentShouldDo": "Verify live configured budgets and search-term quality, independently reconcile the next pull, and return one evidence-based recommendation without applying changes."
+    }
   },
   "facilityStatus": {
     "status": "Moved in — active operations at new building",
