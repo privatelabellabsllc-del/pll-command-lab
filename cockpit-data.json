@@ -1,7 +1,7 @@
 {
   "schema": "pll-cockpit-v1",
-  "generatedISO": "2026-09-24T11:02:24Z",
-  "generatedLabel": "Sep 24 2026 · morning refresh",
+  "generatedISO": "2026-09-25T11:00:00Z",
+  "generatedLabel": "Sep 25 2026 · morning refresh",
   "spend": {
     "monthToDateUSD": 1000,
     "capUSD": 2000,
@@ -131,24 +131,32 @@
   },
   "meetings": [
     {
-      "timeISO": "2026-09-24T09:30:00-04:00",
-      "time": "Thu 9:30 AM ET",
-      "title": "Michel Germain x PLL x KWC",
-      "who": "Sam, Aidan, Kenna Whitnell, Sara (KWC), E. Cook (Michel Germain)",
-      "join": "https://meet.google.com/bxh-ukcu-bnn",
+      "timeISO": "2026-09-25T11:00:00-04:00",
+      "time": "Fri 11:00 AM ET",
+      "title": "Alma Henry and Sam Salim",
+      "who": "Sam Salim, Alma Henry",
+      "join": "https://meet.google.com/okp-qnma-dqh",
       "location": "Google Meet"
     },
     {
-      "timeISO": "2026-09-24T12:00:00-04:00",
-      "time": "Thu 12:00 PM ET",
-      "title": "Nikkie Aroh / Sam — CRM task review",
-      "who": "Sam, Nikkie Aroh",
-      "join": "Calendly Teams link (dead at PLL)",
-      "location": "Teams (dead; use phone or Google Meet)"
+      "timeISO": "2026-09-25T14:00:00-04:00",
+      "time": "Fri 2:00 PM ET",
+      "title": "Mark and Sam Salim",
+      "who": "Sam Salim, Mark",
+      "join": "https://meet.google.com/mou-otuc-cyn",
+      "location": "Google Meet"
+    },
+    {
+      "timeISO": "2026-09-25T16:30:00-04:00",
+      "time": "Fri 4:30 PM ET",
+      "title": "Samantha Longmire and Sam Salim",
+      "who": "Sam Salim, Samantha Longmire",
+      "join": "https://meet.google.com/jrm-yxyn-fht",
+      "location": "Google Meet"
     }
   ],
-  "meetingsNote": "Today’s verified meetings: Michel Germain x PLL x KWC at 9:30 AM ET with Google Meet; Nikkie Aroh / Sam CRM task review at noon with a dead Calendly Teams link — use phone or Google Meet. Tomorrow’s Alma Henry 11:00 AM Calendly Teams link is also dead and needs a Google Meet replacement. No conflicting links were reported.",
-  "callsSource": "Verified Outlook Calendar schedule supplied for Sep 24, 2026; Eastern times.",
+  "meetingsNote": "Verified from Outlook Calendar for Sep 25; duplicate Calendly/Google invite pairs were deduplicated. No differing join links for matching meeting times.",
+  "callsSource": "Outlook Calendar, live search for Sep 25–26, 2026; UTC converted to Eastern.",
   "setupNeeds": [
     {
       "need": "Alma Henry Google Meet replacement",
