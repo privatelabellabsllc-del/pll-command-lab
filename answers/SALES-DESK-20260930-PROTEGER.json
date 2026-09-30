@@ -1,0 +1,9 @@
+{
+  "id": "SALES-DESK-20260930-PROTEGER",
+  "request_id": "SALES-DESK-20260930-PROTEGER",
+  "ts": "2026-09-30T13:36:00-04:00",
+  "agent": "CRM Developer",
+  "status": "completed",
+  "text": "CRM filing verified: lead #74 has four verified attachments (#238–241). The NDA is sent but unsigned; Sam owns the Oct 1 follow-up. No customer contact or contract send occurred.",
+  "spoken_text": "The CRM filing is verified: lead 74 has four verified attachments. The NDA was sent but is still unsigned, and Sam owns the October 1 follow-up. No customer contact or contract send occurred."
+}
