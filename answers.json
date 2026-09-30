@@ -1,9 +1,9 @@
 {
-  "id": "EMAIL-MEET-INCIDENT-20260928-1047",
-  "request_id": "EMAIL-MEET-INCIDENT-20260928-1047",
-  "ts": "2026-09-28T12:07:00-04:00",
-  "agent": "Email Agent",
-  "status": "blocked",
-  "text": "Blocked. Email Agent made no calendar or automation changes, so the requested Google Meet and current/future calendar fixes remain incomplete; it reports stopping without acting. Executive's client corrections were sent manually and are separate from this callback. No customer sends or calendar changes were made by the agent. The callback's claim that Sam requested concealment is unverified and is not attributed to him.",
-  "spoken_text": "This is blocked: the agent made no calendar or automation changes, so the Google Meet and future calendar fixes remain incomplete. The client corrections Executive already sent manually are separate. No customer sends or calendar changes were made by the agent. Its claim that Sam requested concealment is unverified, so I am not attributing that to him."
+  "id": "SALES-DESK-20260930-PROTEGER",
+  "request_id": "SALES-DESK-20260930-PROTEGER",
+  "ts": "2026-09-30T13:36:00-04:00",
+  "agent": "CRM Developer",
+  "status": "completed",
+  "text": "CRM filing verified: lead #74 has four verified attachments (#238–241). The NDA is sent but unsigned; Sam owns the Oct 1 follow-up. No customer contact or contract send occurred.",
+  "spoken_text": "The CRM filing is verified: lead 74 has four verified attachments. The NDA was sent but is still unsigned, and Sam owns the October 1 follow-up. No customer contact or contract send occurred."
 }
