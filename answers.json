@@ -1,9 +1,9 @@
 {
-  "id": "SALES-DESK-20260930-PROTEGER",
-  "request_id": "SALES-DESK-20260930-PROTEGER",
-  "ts": "2026-09-30T13:36:00-04:00",
-  "agent": "CRM Developer",
-  "status": "completed",
-  "text": "CRM filing verified: lead #74 has four verified attachments (#238–241). The NDA is sent but unsigned; Sam owns the Oct 1 follow-up. No customer contact or contract send occurred.",
-  "spoken_text": "The CRM filing is verified: lead 74 has four verified attachments. The NDA was sent but is still unsigned, and Sam owns the October 1 follow-up. No customer contact or contract send occurred."
+  "id": "ads-nightly-2026-09-30",
+  "request_id": "ads-nightly-2026-09-30",
+  "ts": "2026-10-01T01:00:00Z",
+  "agent": "PLL Consultant",
+  "status": "completed_with_discrepancy",
+  "text": "Ads Agent callback received, but the fresh spend report failed validation: the 21:00 ET date-segmented Google Ads request returned INVALID_ARGUMENT, so Sep 30, trailing-7-day, prior-7-day, and MTD spend aggregates are unavailable. The 09:01 ET figures ($11.72 partial-day and $321.74 for Sep 23–29) are stale reference data, not a fresh nightly report; the $252 comparison is not a validated current cap baseline. Configured budget-cap compliance is therefore unobservable tonight, and no cap breach is claimed. Attribution remains incomplete, with no verified paid attribution reported. No Ads changes were made. brief.json was intentionally left unchanged because the callback contained no validated structured ads_intelligence.",
+  "spoken_text": "Sam, the fresh nightly spend report failed validation, so I cannot verify tonight’s numbers or configured cap compliance. The nine a.m. figures are stale reference data, and I am not treating the two-hundred-fifty-two-dollar comparison as proof of a cap breach. Attribution is still incomplete, no paid attribution was verified, and no Ads changes were made. I left the live Ads cache unchanged and will require a valid report next cycle."
 }
