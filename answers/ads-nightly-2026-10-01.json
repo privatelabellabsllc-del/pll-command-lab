@@ -1,0 +1,9 @@
+{
+  "id": "ads-nightly-2026-10-01",
+  "request_id": "ads-nightly-2026-10-01",
+  "ts": "2026-10-02T01:17:38Z",
+  "agent": "PLL Consultant",
+  "status": "completed_with_cache_refresh_blocked",
+  "text": "Ads Agent reports Oct 1 spend of $30.39 and 13 clicks; trailing-7-day all-account spend of $291.71 versus a $252 reference, with $140.63 for the managed Geo Twin campaign. The callback reports three active and three paused campaigns, seven buyer inquiries today (all unattributed), and no verified paid lead or close. It reports no Ads changes, no approval required, and recommends reviewing search terms Friday. ADS CACHE REFRESH BLOCKED: the callback omitted the required structured ads_intelligence object. These callback figures were not independently validated, and brief.json was not updated.",
+  "spoken_text": "Sam, the callback says the Ads Agent’s report showed $30.39 in spend and 13 clicks today. For the trailing seven days, it reports $291.71 in all-account spend against a $252 reference, with $140.63 for the managed Geo Twin campaign. It reports seven buyer inquiries today, but all are unattributed, with no verified paid lead or close. The agent says no changes were made and recommends reviewing search terms Friday. The callback omitted the required structured data, so those figures are not validated here and I left the Ads cache unchanged."
+}
