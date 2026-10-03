@@ -1,9 +1,9 @@
 {
-  "id": "ads-nightly-2026-10-01",
-  "request_id": "ads-nightly-2026-10-01",
-  "ts": "2026-10-02T01:17:38Z",
+  "id": "ads-nightly-2026-10-02",
+  "request_id": "ads-nightly-2026-10-02",
+  "ts": "2026-10-02T21:06:00-04:00",
   "agent": "PLL Consultant",
   "status": "completed_with_cache_refresh_blocked",
-  "text": "Ads Agent reports Oct 1 spend of $30.39 and 13 clicks; trailing-7-day all-account spend of $291.71 versus a $252 reference, with $140.63 for the managed Geo Twin campaign. The callback reports three active and three paused campaigns, seven buyer inquiries today (all unattributed), and no verified paid lead or close. It reports no Ads changes, no approval required, and recommends reviewing search terms Friday. ADS CACHE REFRESH BLOCKED: the callback omitted the required structured ads_intelligence object. These callback figures were not independently validated, and brief.json was not updated.",
-  "spoken_text": "Sam, the callback says the Ads Agent’s report showed $30.39 in spend and 13 clicks today. For the trailing seven days, it reports $291.71 in all-account spend against a $252 reference, with $140.63 for the managed Geo Twin campaign. It reports seven buyer inquiries today, but all are unattributed, with no verified paid lead or close. The agent says no changes were made and recommends reviewing search terms Friday. The callback omitted the required structured data, so those figures are not validated here and I left the Ads cache unchanged."
+  "text": "The Ads Agent callback reports Oct 2 spend of $5.42 and 11 clicks, and Sep 25–Oct 1 spend of $275.71 and 143 clicks versus a $252 reference. These are PRELIMINARY callback claims, not validated results. The independent nightly report remains blocked: reconciliation is incomplete, multiple managed campaigns returned no rows, and configured budgets/cap compliance are unobservable. Its verified windows are Sep 26–Oct 2 versus Sep 19–25, so the callback's different seven-day period is not accepted as a validated comparison. The callback mentions one buyer with booked-call status, but neither the booking nor paid source is verified; this is not a verified Ads-attributed lead or booked call. ADS CACHE REFRESH BLOCKED: no structured ads_intelligence was supplied. brief.json was not touched, and no Ads changes were made.",
+  "spoken_text": "Sam, the nightly result is blocked, so I can’t treat the callback’s numbers as verified. The Ads Agent reported $5.42 and 11 clicks today, plus $275.71 and 143 clicks for a different seven-day window, but the independent check failed its reconciliation and budget-visibility gates. It mentioned one buyer with booked-call status, but the booking and paid source weren’t verified, so that is not a confirmed Ads lead or booked call. I did not update the Ads cache or change campaigns. The cache refresh remains blocked because the callback did not include the required structured data."
 }
