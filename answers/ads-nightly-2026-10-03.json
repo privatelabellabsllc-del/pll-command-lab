@@ -1,0 +1,9 @@
+{
+  "id": "ads-nightly-2026-10-03",
+  "request_id": "ads-nightly-2026-10-03",
+  "ts": "2026-10-03T21:04:00-04:00",
+  "agent": "PLL Consultant",
+  "status": "completed_with_cache_refresh_blocked",
+  "text": "Ads Agent's Oct 3 callback reports preliminary spend of $8.88 and 9 clicks today, and $242.88 and 134 clicks for Sep 26–Oct 2, $9.12 below a $252 weekly reference. These are callback-reported figures, not independently reconciled or verified here. The callback reports two observed buyer inquiries today, zero verified paid-qualified October leads, and paid CPL unknown; Geo Twin was enabled with $0 reported today. ADS CACHE REFRESH BLOCKED: the callback supplied only a summary, not the required structured ads_intelligence, so brief.json was not updated or published. No Ads changes were made. Callback recommends repairing per-SKU and click/source intake delivery; review is required before live form changes.",
+  "spoken_text": "Sam, the nightly cache refresh is blocked because Ads Agent returned a summary rather than the required structured data. Its preliminary report says $8.88 and 9 clicks today, and $242.88 with 134 clicks over the prior seven days, but I have not independently verified those figures. It reports two buyer inquiries today, with no verified paid-qualified October leads and paid cost per lead still unknown. I did not update the cache or change any Ads settings. The callback recommends fixing per-SKU and click-source intake delivery, with review before any live form changes."
+}
